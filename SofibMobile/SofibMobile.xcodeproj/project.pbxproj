@@ -1,0 +1,731 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5590B139A4FE3ABCDE44DB05 /* Pods_SofibMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 692EC0DDA0C42F4D176CB70A /* Pods_SofibMobile.framework */; };
+		8B75A464F4E22CD2FFF01D38 /* Pods_SofibMobileUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5B9CF158A964CF92923935B /* Pods_SofibMobileUITests.framework */; };
+		A4E7D1A61DC93F1E00C4E977 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E7D1A51DC93F1E00C4E977 /* AppDelegate.swift */; };
+		A4E7D1A81DC93F1E00C4E977 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E7D1A71DC93F1E00C4E977 /* ViewController.swift */; };
+		A4E7D1AB1DC93F1E00C4E977 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4E7D1A91DC93F1E00C4E977 /* Main.storyboard */; };
+		A4E7D1AD1DC93F1E00C4E977 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4E7D1AC1DC93F1E00C4E977 /* Assets.xcassets */; };
+		A4E7D1B01DC93F1E00C4E977 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4E7D1AE1DC93F1E00C4E977 /* LaunchScreen.storyboard */; };
+		A4E7D1BB1DC93F1E00C4E977 /* SofibMobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E7D1BA1DC93F1E00C4E977 /* SofibMobileTests.swift */; };
+		A4E7D1C61DC93F1E00C4E977 /* SofibMobileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E7D1C51DC93F1E00C4E977 /* SofibMobileUITests.swift */; };
+		A4E7D1D41DC93FDD00C4E977 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = A4E7D1D31DC93FDD00C4E977 /* Podfile */; };
+		AB53F331E20BE7AE24348020 /* Pods_SofibMobileTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0154AE74FE7A796EE681480 /* Pods_SofibMobileTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A4E7D1B71DC93F1E00C4E977 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4E7D19A1DC93F1E00C4E977 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4E7D1A11DC93F1E00C4E977;
+			remoteInfo = SofibMobile;
+		};
+		A4E7D1C21DC93F1E00C4E977 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4E7D19A1DC93F1E00C4E977 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4E7D1A11DC93F1E00C4E977;
+			remoteInfo = SofibMobile;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1C6C69E5A5E9FD9F9ABD22BF /* Pods-SofibMobileTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SofibMobileTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SofibMobileTests/Pods-SofibMobileTests.debug.xcconfig"; sourceTree = "<group>"; };
+		252E058316473D19A91D0566 /* Pods-SofibMobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SofibMobile.release.xcconfig"; path = "Pods/Target Support Files/Pods-SofibMobile/Pods-SofibMobile.release.xcconfig"; sourceTree = "<group>"; };
+		5A60DC2194A36FA88E08C869 /* Pods-SofibMobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SofibMobile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SofibMobile/Pods-SofibMobile.debug.xcconfig"; sourceTree = "<group>"; };
+		692EC0DDA0C42F4D176CB70A /* Pods_SofibMobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SofibMobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4E7D1A21DC93F1E00C4E977 /* SofibMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SofibMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4E7D1A51DC93F1E00C4E977 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A4E7D1A71DC93F1E00C4E977 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A4E7D1AA1DC93F1E00C4E977 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A4E7D1AC1DC93F1E00C4E977 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A4E7D1AF1DC93F1E00C4E977 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A4E7D1B11DC93F1E00C4E977 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4E7D1B61DC93F1E00C4E977 /* SofibMobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SofibMobileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4E7D1BA1DC93F1E00C4E977 /* SofibMobileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SofibMobileTests.swift; sourceTree = "<group>"; };
+		A4E7D1BC1DC93F1E00C4E977 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4E7D1C11DC93F1E00C4E977 /* SofibMobileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SofibMobileUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4E7D1C51DC93F1E00C4E977 /* SofibMobileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SofibMobileUITests.swift; sourceTree = "<group>"; };
+		A4E7D1C71DC93F1E00C4E977 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4E7D1D31DC93FDD00C4E977 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		B001FA803D742E3012EF65E7 /* Pods-SofibMobileUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SofibMobileUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SofibMobileUITests/Pods-SofibMobileUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B0154AE74FE7A796EE681480 /* Pods_SofibMobileTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SofibMobileTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0DF30AC78AAD58F0395F673 /* Pods-SofibMobileUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SofibMobileUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SofibMobileUITests/Pods-SofibMobileUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E5B9CF158A964CF92923935B /* Pods_SofibMobileUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SofibMobileUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2B8E8E90B7E04A82644D7E3 /* Pods-SofibMobileTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SofibMobileTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SofibMobileTests/Pods-SofibMobileTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A4E7D19F1DC93F1E00C4E977 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5590B139A4FE3ABCDE44DB05 /* Pods_SofibMobile.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4E7D1B31DC93F1E00C4E977 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB53F331E20BE7AE24348020 /* Pods_SofibMobileTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4E7D1BE1DC93F1E00C4E977 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B75A464F4E22CD2FFF01D38 /* Pods_SofibMobileUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		63BAF757664CEF32C739B4DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				692EC0DDA0C42F4D176CB70A /* Pods_SofibMobile.framework */,
+				B0154AE74FE7A796EE681480 /* Pods_SofibMobileTests.framework */,
+				E5B9CF158A964CF92923935B /* Pods_SofibMobileUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A4E7D1991DC93F1E00C4E977 = {
+			isa = PBXGroup;
+			children = (
+				A4E7D1D31DC93FDD00C4E977 /* Podfile */,
+				A4E7D1A41DC93F1E00C4E977 /* SofibMobile */,
+				A4E7D1B91DC93F1E00C4E977 /* SofibMobileTests */,
+				A4E7D1C41DC93F1E00C4E977 /* SofibMobileUITests */,
+				A4E7D1A31DC93F1E00C4E977 /* Products */,
+				DB7E1E2FB7F1AF520D74029E /* Pods */,
+				63BAF757664CEF32C739B4DC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A4E7D1A31DC93F1E00C4E977 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A4E7D1A21DC93F1E00C4E977 /* SofibMobile.app */,
+				A4E7D1B61DC93F1E00C4E977 /* SofibMobileTests.xctest */,
+				A4E7D1C11DC93F1E00C4E977 /* SofibMobileUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A4E7D1A41DC93F1E00C4E977 /* SofibMobile */ = {
+			isa = PBXGroup;
+			children = (
+				A4E7D1A51DC93F1E00C4E977 /* AppDelegate.swift */,
+				A4E7D1A71DC93F1E00C4E977 /* ViewController.swift */,
+				A4E7D1A91DC93F1E00C4E977 /* Main.storyboard */,
+				A4E7D1AC1DC93F1E00C4E977 /* Assets.xcassets */,
+				A4E7D1AE1DC93F1E00C4E977 /* LaunchScreen.storyboard */,
+				A4E7D1B11DC93F1E00C4E977 /* Info.plist */,
+			);
+			path = SofibMobile;
+			sourceTree = "<group>";
+		};
+		A4E7D1B91DC93F1E00C4E977 /* SofibMobileTests */ = {
+			isa = PBXGroup;
+			children = (
+				A4E7D1BA1DC93F1E00C4E977 /* SofibMobileTests.swift */,
+				A4E7D1BC1DC93F1E00C4E977 /* Info.plist */,
+			);
+			path = SofibMobileTests;
+			sourceTree = "<group>";
+		};
+		A4E7D1C41DC93F1E00C4E977 /* SofibMobileUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A4E7D1C51DC93F1E00C4E977 /* SofibMobileUITests.swift */,
+				A4E7D1C71DC93F1E00C4E977 /* Info.plist */,
+			);
+			path = SofibMobileUITests;
+			sourceTree = "<group>";
+		};
+		DB7E1E2FB7F1AF520D74029E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5A60DC2194A36FA88E08C869 /* Pods-SofibMobile.debug.xcconfig */,
+				252E058316473D19A91D0566 /* Pods-SofibMobile.release.xcconfig */,
+				1C6C69E5A5E9FD9F9ABD22BF /* Pods-SofibMobileTests.debug.xcconfig */,
+				F2B8E8E90B7E04A82644D7E3 /* Pods-SofibMobileTests.release.xcconfig */,
+				B001FA803D742E3012EF65E7 /* Pods-SofibMobileUITests.debug.xcconfig */,
+				D0DF30AC78AAD58F0395F673 /* Pods-SofibMobileUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A4E7D1A11DC93F1E00C4E977 /* SofibMobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4E7D1CA1DC93F1E00C4E977 /* Build configuration list for PBXNativeTarget "SofibMobile" */;
+			buildPhases = (
+				A96C2D6D6AEF6DE0F2B9CCC6 /* [CP] Check Pods Manifest.lock */,
+				A4E7D19E1DC93F1E00C4E977 /* Sources */,
+				A4E7D19F1DC93F1E00C4E977 /* Frameworks */,
+				A4E7D1A01DC93F1E00C4E977 /* Resources */,
+				48B8977B05291DB6483690B3 /* [CP] Embed Pods Frameworks */,
+				E37279C1ADFAC0FBDB818709 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SofibMobile;
+			productName = SofibMobile;
+			productReference = A4E7D1A21DC93F1E00C4E977 /* SofibMobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A4E7D1B51DC93F1E00C4E977 /* SofibMobileTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4E7D1CD1DC93F1E00C4E977 /* Build configuration list for PBXNativeTarget "SofibMobileTests" */;
+			buildPhases = (
+				3BF23968E50672EB128D8DE7 /* [CP] Check Pods Manifest.lock */,
+				A4E7D1B21DC93F1E00C4E977 /* Sources */,
+				A4E7D1B31DC93F1E00C4E977 /* Frameworks */,
+				A4E7D1B41DC93F1E00C4E977 /* Resources */,
+				B2B0335141C4FFF70CF377AD /* [CP] Embed Pods Frameworks */,
+				C638ED1207169113936751BC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A4E7D1B81DC93F1E00C4E977 /* PBXTargetDependency */,
+			);
+			name = SofibMobileTests;
+			productName = SofibMobileTests;
+			productReference = A4E7D1B61DC93F1E00C4E977 /* SofibMobileTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A4E7D1C01DC93F1E00C4E977 /* SofibMobileUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4E7D1D01DC93F1E00C4E977 /* Build configuration list for PBXNativeTarget "SofibMobileUITests" */;
+			buildPhases = (
+				5BF84988C7DB42691729C738 /* [CP] Check Pods Manifest.lock */,
+				A4E7D1BD1DC93F1E00C4E977 /* Sources */,
+				A4E7D1BE1DC93F1E00C4E977 /* Frameworks */,
+				A4E7D1BF1DC93F1E00C4E977 /* Resources */,
+				0E975DBA89EB6BC4C06E56C3 /* [CP] Embed Pods Frameworks */,
+				33FD295ED5FF73369D0402F7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A4E7D1C31DC93F1E00C4E977 /* PBXTargetDependency */,
+			);
+			name = SofibMobileUITests;
+			productName = SofibMobileUITests;
+			productReference = A4E7D1C11DC93F1E00C4E977 /* SofibMobileUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A4E7D19A1DC93F1E00C4E977 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = vortexbird;
+				TargetAttributes = {
+					A4E7D1A11DC93F1E00C4E977 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 9U6WSH9MS8;
+						ProvisioningStyle = Automatic;
+					};
+					A4E7D1B51DC93F1E00C4E977 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A4E7D1A11DC93F1E00C4E977;
+					};
+					A4E7D1C01DC93F1E00C4E977 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A4E7D1A11DC93F1E00C4E977;
+					};
+				};
+			};
+			buildConfigurationList = A4E7D19D1DC93F1E00C4E977 /* Build configuration list for PBXProject "SofibMobile" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A4E7D1991DC93F1E00C4E977;
+			productRefGroup = A4E7D1A31DC93F1E00C4E977 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A4E7D1A11DC93F1E00C4E977 /* SofibMobile */,
+				A4E7D1B51DC93F1E00C4E977 /* SofibMobileTests */,
+				A4E7D1C01DC93F1E00C4E977 /* SofibMobileUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A4E7D1A01DC93F1E00C4E977 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4E7D1B01DC93F1E00C4E977 /* LaunchScreen.storyboard in Resources */,
+				A4E7D1AD1DC93F1E00C4E977 /* Assets.xcassets in Resources */,
+				A4E7D1D41DC93FDD00C4E977 /* Podfile in Resources */,
+				A4E7D1AB1DC93F1E00C4E977 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4E7D1B41DC93F1E00C4E977 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4E7D1BF1DC93F1E00C4E977 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E975DBA89EB6BC4C06E56C3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SofibMobileUITests/Pods-SofibMobileUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		33FD295ED5FF73369D0402F7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SofibMobileUITests/Pods-SofibMobileUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3BF23968E50672EB128D8DE7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		48B8977B05291DB6483690B3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SofibMobile/Pods-SofibMobile-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5BF84988C7DB42691729C738 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A96C2D6D6AEF6DE0F2B9CCC6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B2B0335141C4FFF70CF377AD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SofibMobileTests/Pods-SofibMobileTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C638ED1207169113936751BC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SofibMobileTests/Pods-SofibMobileTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E37279C1ADFAC0FBDB818709 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SofibMobile/Pods-SofibMobile-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A4E7D19E1DC93F1E00C4E977 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4E7D1A81DC93F1E00C4E977 /* ViewController.swift in Sources */,
+				A4E7D1A61DC93F1E00C4E977 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4E7D1B21DC93F1E00C4E977 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4E7D1BB1DC93F1E00C4E977 /* SofibMobileTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4E7D1BD1DC93F1E00C4E977 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4E7D1C61DC93F1E00C4E977 /* SofibMobileUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A4E7D1B81DC93F1E00C4E977 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4E7D1A11DC93F1E00C4E977 /* SofibMobile */;
+			targetProxy = A4E7D1B71DC93F1E00C4E977 /* PBXContainerItemProxy */;
+		};
+		A4E7D1C31DC93F1E00C4E977 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4E7D1A11DC93F1E00C4E977 /* SofibMobile */;
+			targetProxy = A4E7D1C21DC93F1E00C4E977 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A4E7D1A91DC93F1E00C4E977 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4E7D1AA1DC93F1E00C4E977 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A4E7D1AE1DC93F1E00C4E977 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4E7D1AF1DC93F1E00C4E977 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A4E7D1C81DC93F1E00C4E977 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A4E7D1C91DC93F1E00C4E977 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A4E7D1CB1DC93F1E00C4E977 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A60DC2194A36FA88E08C869 /* Pods-SofibMobile.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9U6WSH9MS8;
+				INFOPLIST_FILE = SofibMobile/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vortexbird.SofibMobile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		A4E7D1CC1DC93F1E00C4E977 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 252E058316473D19A91D0566 /* Pods-SofibMobile.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9U6WSH9MS8;
+				INFOPLIST_FILE = SofibMobile/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vortexbird.SofibMobile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		A4E7D1CE1DC93F1E00C4E977 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C6C69E5A5E9FD9F9ABD22BF /* Pods-SofibMobileTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SofibMobileTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vortexbird.SofibMobileTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SofibMobile.app/SofibMobile";
+			};
+			name = Debug;
+		};
+		A4E7D1CF1DC93F1E00C4E977 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2B8E8E90B7E04A82644D7E3 /* Pods-SofibMobileTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SofibMobileTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vortexbird.SofibMobileTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SofibMobile.app/SofibMobile";
+			};
+			name = Release;
+		};
+		A4E7D1D11DC93F1E00C4E977 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B001FA803D742E3012EF65E7 /* Pods-SofibMobileUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = SofibMobileUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vortexbird.SofibMobileUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = SofibMobile;
+			};
+			name = Debug;
+		};
+		A4E7D1D21DC93F1E00C4E977 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0DF30AC78AAD58F0395F673 /* Pods-SofibMobileUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = SofibMobileUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vortexbird.SofibMobileUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = SofibMobile;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A4E7D19D1DC93F1E00C4E977 /* Build configuration list for PBXProject "SofibMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4E7D1C81DC93F1E00C4E977 /* Debug */,
+				A4E7D1C91DC93F1E00C4E977 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4E7D1CA1DC93F1E00C4E977 /* Build configuration list for PBXNativeTarget "SofibMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4E7D1CB1DC93F1E00C4E977 /* Debug */,
+				A4E7D1CC1DC93F1E00C4E977 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4E7D1CD1DC93F1E00C4E977 /* Build configuration list for PBXNativeTarget "SofibMobileTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4E7D1CE1DC93F1E00C4E977 /* Debug */,
+				A4E7D1CF1DC93F1E00C4E977 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4E7D1D01DC93F1E00C4E977 /* Build configuration list for PBXNativeTarget "SofibMobileUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4E7D1D11DC93F1E00C4E977 /* Debug */,
+				A4E7D1D21DC93F1E00C4E977 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A4E7D19A1DC93F1E00C4E977 /* Project object */;
+}
