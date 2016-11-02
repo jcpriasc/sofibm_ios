@@ -27,7 +27,6 @@ class FiltrosSolicitudAtencionController: UIViewController, UIPickerViewDelegate
     @IBOutlet var txtSolicitudAtencion: UITextField!
     @IBOutlet var txtNombre: UITextField!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -60,7 +59,6 @@ class FiltrosSolicitudAtencionController: UIViewController, UIPickerViewDelegate
         trasladoPickerView.delegate = self
         trasladoPickerView.tag = 5
         pickerTraslados.inputView = trasladoPickerView
-        
         
         
         //Se crea el toolBar para el picker

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		11227A291DC970C00035959B /* ViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11227A281DC970C00035959B /* ViewControllerTest.swift */; };
+		11227A2C1DC971C80035959B /* FiltrosSolicitudAtencionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11227A2B1DC971C80035959B /* FiltrosSolicitudAtencionController.swift */; };
 		5590B139A4FE3ABCDE44DB05 /* Pods_SofibMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 692EC0DDA0C42F4D176CB70A /* Pods_SofibMobile.framework */; };
 		8B75A464F4E22CD2FFF01D38 /* Pods_SofibMobileUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5B9CF158A964CF92923935B /* Pods_SofibMobileUITests.framework */; };
 		A4E7D1A61DC93F1E00C4E977 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E7D1A51DC93F1E00C4E977 /* AppDelegate.swift */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		11227A281DC970C00035959B /* ViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTest.swift; sourceTree = "<group>"; };
+		11227A2B1DC971C80035959B /* FiltrosSolicitudAtencionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiltrosSolicitudAtencionController.swift; sourceTree = "<group>"; };
 		1C6C69E5A5E9FD9F9ABD22BF /* Pods-SofibMobileTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SofibMobileTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SofibMobileTests/Pods-SofibMobileTests.debug.xcconfig"; sourceTree = "<group>"; };
 		252E058316473D19A91D0566 /* Pods-SofibMobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SofibMobile.release.xcconfig"; path = "Pods/Target Support Files/Pods-SofibMobile/Pods-SofibMobile.release.xcconfig"; sourceTree = "<group>"; };
 		5A60DC2194A36FA88E08C869 /* Pods-SofibMobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SofibMobile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SofibMobile/Pods-SofibMobile.debug.xcconfig"; sourceTree = "<group>"; };
@@ -93,6 +95,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11227A2A1DC971AB0035959B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				11227A2B1DC971C80035959B /* FiltrosSolicitudAtencionController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		63BAF757664CEF32C739B4DC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +139,7 @@
 		A4E7D1A41DC93F1E00C4E977 /* SofibMobile */ = {
 			isa = PBXGroup;
 			children = (
+				11227A2A1DC971AB0035959B /* Controllers */,
 				A4E7D1A51DC93F1E00C4E977 /* AppDelegate.swift */,
 				A4E7D1A71DC93F1E00C4E977 /* ViewController.swift */,
 				A4E7D1A91DC93F1E00C4E977 /* Main.storyboard */,
@@ -457,6 +468,7 @@
 				A4E7D1A81DC93F1E00C4E977 /* ViewController.swift in Sources */,
 				A4E7D1A61DC93F1E00C4E977 /* AppDelegate.swift in Sources */,
 				11227A291DC970C00035959B /* ViewControllerTest.swift in Sources */,
+				11227A2C1DC971C80035959B /* FiltrosSolicitudAtencionController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
