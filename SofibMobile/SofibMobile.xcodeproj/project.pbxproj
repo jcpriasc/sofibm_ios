@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11227A291DC970C00035959B /* ViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11227A281DC970C00035959B /* ViewControllerTest.swift */; };
 		5590B139A4FE3ABCDE44DB05 /* Pods_SofibMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 692EC0DDA0C42F4D176CB70A /* Pods_SofibMobile.framework */; };
 		8B75A464F4E22CD2FFF01D38 /* Pods_SofibMobileUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5B9CF158A964CF92923935B /* Pods_SofibMobileUITests.framework */; };
 		A4E7D1A61DC93F1E00C4E977 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E7D1A51DC93F1E00C4E977 /* AppDelegate.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		11227A281DC970C00035959B /* ViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTest.swift; sourceTree = "<group>"; };
 		1C6C69E5A5E9FD9F9ABD22BF /* Pods-SofibMobileTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SofibMobileTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SofibMobileTests/Pods-SofibMobileTests.debug.xcconfig"; sourceTree = "<group>"; };
 		252E058316473D19A91D0566 /* Pods-SofibMobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SofibMobile.release.xcconfig"; path = "Pods/Target Support Files/Pods-SofibMobile/Pods-SofibMobile.release.xcconfig"; sourceTree = "<group>"; };
 		5A60DC2194A36FA88E08C869 /* Pods-SofibMobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SofibMobile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SofibMobile/Pods-SofibMobile.debug.xcconfig"; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				A4E7D1AC1DC93F1E00C4E977 /* Assets.xcassets */,
 				A4E7D1AE1DC93F1E00C4E977 /* LaunchScreen.storyboard */,
 				A4E7D1B11DC93F1E00C4E977 /* Info.plist */,
+				11227A281DC970C00035959B /* ViewControllerTest.swift */,
 			);
 			path = SofibMobile;
 			sourceTree = "<group>";
@@ -453,6 +456,7 @@
 			files = (
 				A4E7D1A81DC93F1E00C4E977 /* ViewController.swift in Sources */,
 				A4E7D1A61DC93F1E00C4E977 /* AppDelegate.swift in Sources */,
+				11227A291DC970C00035959B /* ViewControllerTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
