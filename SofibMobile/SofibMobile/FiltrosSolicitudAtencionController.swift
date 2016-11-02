@@ -62,6 +62,7 @@ class FiltrosSolicitudAtencionController: UIViewController, UIPickerViewDelegate
         pickerTraslados.inputView = trasladoPickerView
         
         
+        
         //Se crea el toolBar para el picker
         let toolBar = UIToolbar(frame: CGRect(x: 0, y: self.view.frame.size.height/6, width: self.view.frame.size.width, height: 40.0))
         toolBar.layer.position = CGPoint(x: self.view.frame.size.width/2, y: self.view.frame.size.height-20.0)
