@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AUZ-n3-4vl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AUZ-n3-4vl">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -20,11 +20,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m0B-94-Qks">
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" name="alternateSelectedControlColor" catalog="System" colorSpace="catalog"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="barTintColor" red="0.0" green="0.40000000000000002" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </textAttributes>
                                 <items>
                                     <navigationItem title="Sofib Mobile" id="0bz-8j-FeJ">
-                                        <barButtonItem key="rightBarButtonItem" title="Opc" id="H5V-Q0-h5F">
+                                        <barButtonItem key="rightBarButtonItem" image="icon_search" id="H5V-Q0-h5F">
                                             <color key="tintColor" red="0.97368378720000004" green="1" blue="0.97773081490000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </barButtonItem>
                                     </navigationItem>
@@ -79,12 +83,20 @@
                                     </textField>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uIR-9g-Hae">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="DhZ-If-FqP"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="icon_buscar"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="m0B-94-Qks" firstAttribute="leading" secondItem="WxN-Il-hMw" secondAttribute="leading" id="14M-9d-sgd"/>
                             <constraint firstItem="m0B-94-Qks" firstAttribute="width" secondItem="WxN-Il-hMw" secondAttribute="width" id="JUB-FE-SjD"/>
+                            <constraint firstItem="bEh-Xs-6CB" firstAttribute="top" secondItem="uIR-9g-Hae" secondAttribute="bottom" constant="62" id="Js3-w2-2Ku"/>
                             <constraint firstItem="Dv4-92-bbx" firstAttribute="height" secondItem="WxN-Il-hMw" secondAttribute="height" multiplier="0.6" id="Llf-bE-mBy"/>
+                            <constraint firstItem="uIR-9g-Hae" firstAttribute="centerX" secondItem="WxN-Il-hMw" secondAttribute="centerX" id="Rkp-PM-r7m"/>
                             <constraint firstItem="m0B-94-Qks" firstAttribute="height" secondItem="WxN-Il-hMw" secondAttribute="height" multiplier="0.07" id="WQI-OT-wYQ"/>
                             <constraint firstItem="m0B-94-Qks" firstAttribute="top" secondItem="rP2-cr-J7L" secondAttribute="bottom" constant="8" id="Wf6-yg-WOP"/>
                             <constraint firstItem="Dv4-92-bbx" firstAttribute="centerY" secondItem="WxN-Il-hMw" secondAttribute="centerY" multiplier="0.9" id="ZmB-Xf-FPq"/>
@@ -105,7 +117,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZTw-3M-yWY" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="212" y="100"/>
+            <point key="canvasLocation" x="212" y="99.400299850074973"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="6hj-6y-OiT">
@@ -126,4 +138,8 @@
             <point key="canvasLocation" x="999" y="139"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icon_buscar" width="48" height="48"/>
+        <image name="icon_search" width="24" height="24"/>
+    </resources>
 </document>

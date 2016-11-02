@@ -64,11 +64,13 @@ class FiltrosSolicitudAtencionController: UIViewController, UIPickerViewDelegate
         //Se crea el toolBar para el picker
         let toolBar = UIToolbar(frame: CGRect(x: 0, y: self.view.frame.size.height/6, width: self.view.frame.size.width, height: 40.0))
         toolBar.layer.position = CGPoint(x: self.view.frame.size.width/2, y: self.view.frame.size.height-20.0)
-        toolBar.barStyle = UIBarStyle.blackTranslucent
+        toolBar.barStyle = UIBarStyle.default
         toolBar.tintColor = UIColor.white
-        toolBar.backgroundColor = UIColor.blue
-        
-        
+        toolBar.barTintColor = #colorLiteral(red: 0, green: 0.4, blue: 0.7019607843, alpha: 1)
+        toolBar.isOpaque = true
+        toolBar.backgroundColor = #colorLiteral(red: 0, green: 0.4, blue: 0.7019607843, alpha: 1)
+        toolBar.isTranslucent = true
+        toolBar.alpha = 1
         let defaultButton = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.plain, target: self, action: #selector(FiltrosSolicitudAtencionController.tappedToolBarBtn))
         
         let doneButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.done, target: self, action: #selector(FiltrosSolicitudAtencionController.donePressed))
