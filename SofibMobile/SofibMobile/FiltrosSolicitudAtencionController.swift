@@ -27,6 +27,7 @@ class FiltrosSolicitudAtencionController: UIViewController, UIPickerViewDelegate
     @IBOutlet var txtSolicitudAtencion: UITextField!
     @IBOutlet var txtNombre: UITextField!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
