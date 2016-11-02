@@ -11,7 +11,12 @@ import UIKit
 class ConsultaSolicitudesAtencionController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     let solicitudesAtencion = ["Solicitud 1", "Solicitud 2", "Solicitud 3", "Solicitud 4"]
+   
     
+    override func viewWillAppear(_ animated: Bool) {
+      
+
+    }
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
@@ -26,6 +31,7 @@ class ConsultaSolicitudesAtencionController: UIViewController, UITableViewDataSo
         cell.identificacionTxt.text = solicitudesAtencion[indexPath.row]
         cell.nombreTxt.text = solicitudesAtencion[indexPath.row]
         cell.convenioTxt.text = solicitudesAtencion[indexPath.row]
+        
         return (cell)
     }
     
@@ -40,6 +46,7 @@ class ConsultaSolicitudesAtencionController: UIViewController, UITableViewDataSo
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
 
     /*

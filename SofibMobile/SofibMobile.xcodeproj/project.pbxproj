@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		11227A291DC970C00035959B /* ViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11227A281DC970C00035959B /* ViewControllerTest.swift */; };
 		11227A2C1DC971C80035959B /* FiltrosSolicitudAtencionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11227A2B1DC971C80035959B /* FiltrosSolicitudAtencionController.swift */; };
+		11227A311DCA44060035959B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 11227A331DCA44060035959B /* Localizable.strings */; };
+		11227A3D1DCA79420035959B /* Localizable.plist in Resources */ = {isa = PBXBuildFile; fileRef = 11227A3C1DCA79420035959B /* Localizable.plist */; };
 		5590B139A4FE3ABCDE44DB05 /* Pods_SofibMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 692EC0DDA0C42F4D176CB70A /* Pods_SofibMobile.framework */; };
 		8B75A464F4E22CD2FFF01D38 /* Pods_SofibMobileUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5B9CF158A964CF92923935B /* Pods_SofibMobileUITests.framework */; };
 		A44A5B011DC972F400A6553D /* ConsultaSolicitudesAtencionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44A5AFF1DC972F400A6553D /* ConsultaSolicitudesAtencionController.swift */; };
@@ -44,6 +46,12 @@
 /* Begin PBXFileReference section */
 		11227A281DC970C00035959B /* ViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTest.swift; sourceTree = "<group>"; };
 		11227A2B1DC971C80035959B /* FiltrosSolicitudAtencionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiltrosSolicitudAtencionController.swift; sourceTree = "<group>"; };
+		11227A321DCA44060035959B /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		11227A341DCA44080035959B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		11227A391DCA4D600035959B /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		11227A3A1DCA545F0035959B /* es */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = es; path = es.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		11227A3B1DCA545F0035959B /* es */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = es; path = es.lproj/Main.storyboard; sourceTree = "<group>"; };
+		11227A3C1DCA79420035959B /* Localizable.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Localizable.plist; sourceTree = "<group>"; };
 		1C6C69E5A5E9FD9F9ABD22BF /* Pods-SofibMobileTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SofibMobileTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SofibMobileTests/Pods-SofibMobileTests.debug.xcconfig"; sourceTree = "<group>"; };
 		252E058316473D19A91D0566 /* Pods-SofibMobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SofibMobile.release.xcconfig"; path = "Pods/Target Support Files/Pods-SofibMobile/Pods-SofibMobile.release.xcconfig"; sourceTree = "<group>"; };
 		5A60DC2194A36FA88E08C869 /* Pods-SofibMobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SofibMobile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SofibMobile/Pods-SofibMobile.debug.xcconfig"; sourceTree = "<group>"; };
@@ -153,6 +161,8 @@
 				A4E7D1AE1DC93F1E00C4E977 /* LaunchScreen.storyboard */,
 				A4E7D1B11DC93F1E00C4E977 /* Info.plist */,
 				11227A281DC970C00035959B /* ViewControllerTest.swift */,
+				11227A331DCA44060035959B /* Localizable.strings */,
+				11227A3C1DCA79420035959B /* Localizable.plist */,
 			);
 			path = SofibMobile;
 			sourceTree = "<group>";
@@ -287,6 +297,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = A4E7D1991DC93F1E00C4E977;
 			productRefGroup = A4E7D1A31DC93F1E00C4E977 /* Products */;
@@ -305,6 +316,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11227A311DCA44060035959B /* Localizable.strings in Resources */,
+				11227A3D1DCA79420035959B /* Localizable.plist in Resources */,
 				A4E7D1B01DC93F1E00C4E977 /* LaunchScreen.storyboard in Resources */,
 				A4E7D1AD1DC93F1E00C4E977 /* Assets.xcassets in Resources */,
 				A4E7D1D41DC93FDD00C4E977 /* Podfile in Resources */,
@@ -512,10 +525,21 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		11227A331DCA44060035959B /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11227A321DCA44060035959B /* Base */,
+				11227A341DCA44080035959B /* en */,
+				11227A391DCA4D600035959B /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		A4E7D1A91DC93F1E00C4E977 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				A4E7D1AA1DC93F1E00C4E977 /* Base */,
+				11227A3B1DCA545F0035959B /* es */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -524,6 +548,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				A4E7D1AF1DC93F1E00C4E977 /* Base */,
+				11227A3A1DCA545F0035959B /* es */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -535,6 +560,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -585,6 +611,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";

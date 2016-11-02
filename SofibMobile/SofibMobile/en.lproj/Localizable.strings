@@ -1,0 +1,21 @@
+/* 
+  Localizable.strings
+  SofibMobile
+
+  Created by Cesar Lopez on 2/11/16.
+  Copyright © 2016 vortexbird. All rights reserved.
+*/
+"aceptar" = "Done";
+"busqueda_avanzada" = "Advance Search";
+"identificacion" = "Id";
+"solicitud_atencion" = "Medical Attention Petition Atención";
+"nombre" = "Name";
+"seleccionar_convenio" = "Select Contract";
+"seleccionar_estado" = "Select State";
+"seleccionar_ciudad_inicial" = "Select Initial City";
+"seleccionar_ciudad_actual" = "Select Curent City";
+"seleccionar_traslado" = "Select Transfered";
+
+// Solicitudes de atencion
+"solicitud_atencion" = "Medical Attention Petition";
+"convenio" = "Contract";

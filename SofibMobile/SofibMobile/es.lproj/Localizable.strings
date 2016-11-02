@@ -1,0 +1,22 @@
+/* 
+  Localizable.strings
+  SofibMobile
+
+  Created by Cesar Lopez on 2/11/16.
+  Copyright © 2016 vortexbird. All rights reserved.
+*/
+"aceptar" = "Aceptar";
+"busqueda_avanzada" = "Búsqueda Avanzada";
+"identificacion" = "Identificación";
+"solicitud_atencion" = "Solicitud Atención";
+"nombre" = "Nombre";
+"seleccionar_convenio" = "Seleccion Convenio";
+"seleccionar_estado" = "Seleccionar Estado";
+"seleccionar_ciudad_inicial" = "Seleccionar Ciudad Inicial";
+"seleccionar_ciudad_actual" = "Seleccionar Ciudad Actual";
+"seleccionar_traslado" = "Seleccionar Traslado";
+
+
+// Solicitudes de atencion
+"solicitud_atencion" = "Solicitud Atención";
+"convenio" = "Convenio";

@@ -15,6 +15,12 @@ class FiltrosSolicitudAtencionController: UIViewController, UIPickerViewDelegate
     @IBOutlet var pickerCiudadInicial: UITextField!
     @IBOutlet var pickerCiudadFinal: UITextField!
     @IBOutlet var pickerTraslados: UITextField!
+    @IBOutlet var lblBusquedaAvanzada: UILabel!
+    
+    
+    @IBOutlet var txtIdentificacion: UITextField!
+    @IBOutlet var txtSolicitudAtencion: UITextField!
+    @IBOutlet var txtNombre: UITextField!
     
     var convenios = ["SVB-AG", "INSURANCE XYZ", "FATUM HEALTH", "EJEMPLO1", "FATUM SBV"]
     var estados = ["PENDIENTE", "ACEPTADA", "RECHAZADA", "FINALIZADO", "EN ESPERA"]
@@ -23,9 +29,19 @@ class FiltrosSolicitudAtencionController: UIViewController, UIPickerViewDelegate
     var traslados = ["SI", "NO"]
     
     
-    @IBOutlet var txtIdentificacion: UITextField!
-    @IBOutlet var txtSolicitudAtencion: UITextField!
-    @IBOutlet var txtNombre: UITextField!
+    override func viewWillAppear(_ animated: Bool) {
+        
+        lblBusquedaAvanzada.text = NSLocalizedString("busqueda_avanzada", comment: "Busqueda Avanzada")
+        txtIdentificacion.placeholder = NSLocalizedString("identificacion", comment: "Identificacion")
+        txtSolicitudAtencion.placeholder = NSLocalizedString("solicitud_atencion", comment: "Solicitud Atencion")
+        txtNombre.placeholder = NSLocalizedString("nombre", comment: "Nombre")
+
+        pickeConvenio.placeholder = NSLocalizedString("seleccionar_convenio", comment: "seleccionar_convenio")
+        pickerEstado.placeholder = NSLocalizedString("seleccionar_estado", comment: "seleccionar_estado")
+        pickerCiudadInicial.placeholder = NSLocalizedString("seleccionar_ciudad_inicial", comment: "seleccionar_ciudad_inicial")
+        pickerCiudadFinal.placeholder = NSLocalizedString("seleccionar_ciudad_actual", comment: "seleccionar_ciudad_actual")
+        pickerTraslados.placeholder = NSLocalizedString("seleccionar_traslado", comment: "seleccionar_traslado")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +50,7 @@ class FiltrosSolicitudAtencionController: UIViewController, UIPickerViewDelegate
         self.txtSolicitudAtencion.delegate = self
         self.txtNombre.delegate = self
         
-        //Se crea el picker para convenios
+       //Se crea el picker para convenios
         let convenioPickerView = UIPickerView()
         convenioPickerView.delegate = self
         convenioPickerView.tag = 1
@@ -66,9 +82,9 @@ class FiltrosSolicitudAtencionController: UIViewController, UIPickerViewDelegate
         toolBar.layer.position = CGPoint(x: self.view.frame.size.width/2, y: self.view.frame.size.height-20.0)
         toolBar.barStyle = UIBarStyle.default
         toolBar.tintColor = UIColor.white
-        toolBar.barTintColor = #colorLiteral(red: 0, green: 0.4, blue: 0.7019607843, alpha: 1)
+        toolBar.barTintColor = UIColor.init(colorLiteralRed: 0.0, green: 0.40000000000000002, blue: 0.70196078429999997, alpha: 1)
         toolBar.isOpaque = true
-        toolBar.backgroundColor = #colorLiteral(red: 0, green: 0.4, blue: 0.7019607843, alpha: 1)
+        toolBar.backgroundColor = UIColor.init(colorLiteralRed: 0.0, green: 0.40000000000000002, blue: 0.70196078429999997, alpha: 1)
         toolBar.isTranslucent = true
         toolBar.alpha = 1
         let defaultButton = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.plain, target: self, action: #selector(FiltrosSolicitudAtencionController.tappedToolBarBtn))

@@ -110,9 +110,9 @@
                         <outlet property="pickerCiudadInicial" destination="ktl-wb-rWE" id="o2f-xZ-i5H"/>
                         <outlet property="pickerEstado" destination="ggw-cx-mZj" id="K0b-d4-bum"/>
                         <outlet property="pickerTraslados" destination="ynb-bW-7Pj" id="wht-8R-bsP"/>
-                        <outlet property="txtIdentificacion" destination="oR2-8P-Awd" id="S9n-E8-TKX"/>
+                        <outlet property="txtIdentificacion" destination="oR2-8P-Awd" id="xj0-Bv-UJ4"/>
                         <outlet property="txtNombre" destination="4a5-Yh-Mrd" id="CRG-3h-PEe"/>
-                        <outlet property="txtSolicitudAtencion" destination="CPN-By-PEx" id="PiD-qK-fgK"/>
+                        <outlet property="txtSolicitudAtencion" destination="CPN-By-PEx" id="pZT-pg-LGk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZTw-3M-yWY" sceneMemberID="firstResponder"/>
@@ -249,10 +249,6 @@
                                         <connections>
                                             <outlet property="convenioTxt" destination="oKJ-r9-mpl" id="Glm-rv-ykp"/>
                                             <outlet property="identificacionTxt" destination="XWt-b3-niG" id="20f-8j-Cst"/>
-                                            <outlet property="lblConvenio" destination="KuC-50-evR" id="F5K-On-pms"/>
-                                            <outlet property="lblIdentificacion" destination="HKO-cx-OTs" id="gZY-Tu-uFO"/>
-                                            <outlet property="lblNombre" destination="nNV-Ch-9aJ" id="2Eb-fc-gsD"/>
-                                            <outlet property="lblSolicitudAtencion" destination="CJZ-Xc-cwV" id="oJ1-qU-aT7"/>
                                             <outlet property="nombreTxt" destination="Uzz-2v-mNM" id="wGC-q4-IeW"/>
                                             <outlet property="solicitudAtencionTxt" destination="zZs-yk-rf9" id="ZnL-0X-r16"/>
                                         </connections>

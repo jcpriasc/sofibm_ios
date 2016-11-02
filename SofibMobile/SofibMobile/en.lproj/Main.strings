@@ -1,0 +1,63 @@
+
+/* Class = "UINavigationItem"; title = "Sofib Mobile"; ObjectID = "0bz-8j-FeJ"; */
+"0bz-8j-FeJ.title" = "Sofib Mobile";
+
+/* Class = "UITextField"; placeholder = "Nombre"; ObjectID = "4a5-Yh-Mrd"; */
+"4a5-Yh-Mrd.placeholder" = "Nombre";
+
+/* Class = "UITextField"; placeholder = "Seleccionar Ciudad Actual"; ObjectID = "5gJ-rk-Tfm"; */
+"5gJ-rk-Tfm.placeholder" = "Seleccionar Ciudad Actual";
+
+/* Class = "UIBarButtonItem"; title = "Atras"; ObjectID = "6Vi-fZ-NGl"; */
+"6Vi-fZ-NGl.title" = "Atras";
+
+/* Class = "UILabel"; text = "Solicitud de Atención"; ObjectID = "CJZ-Xc-cwV"; */
+"CJZ-Xc-cwV.text" = "Solicitud de Atención";
+
+/* Class = "UITextField"; placeholder = "Solicitud de Atención"; ObjectID = "CPN-By-PEx"; */
+"CPN-By-PEx.placeholder" = "Solicitud de Atención";
+
+/* Class = "UITextField"; placeholder = "Seleccionar Convenio"; ObjectID = "E3d-UE-Qb4"; */
+"E3d-UE-Qb4.placeholder" = "Seleccionar Convenio";
+
+/* Class = "UILabel"; text = "Identificación"; ObjectID = "HKO-cx-OTs"; */
+"HKO-cx-OTs.text" = "Identificación";
+
+/* Class = "UILabel"; text = "Convenio"; ObjectID = "KuC-50-evR"; */
+"KuC-50-evR.text" = "Convenio";
+
+/* Class = "UILabel"; text = "Búsqueda Avanzada"; ObjectID = "L3Y-Fd-agP"; */
+"L3Y-Fd-agP.text" = "Búsqueda Avanzada";
+
+/* Class = "UILabel"; text = "JUAN DAVID ARAGON"; ObjectID = "Uzz-2v-mNM"; */
+"Uzz-2v-mNM.text" = "JUAN DAVID ARAGON";
+
+/* Class = "UILabel"; text = "3185226441"; ObjectID = "XWt-b3-niG"; */
+"XWt-b3-niG.text" = "3185226441";
+
+/* Class = "UITextField"; placeholder = "Seleccionar Estado"; ObjectID = "ggw-cx-mZj"; */
+"ggw-cx-mZj.placeholder" = "Seleccionar Estado";
+
+/* Class = "UINavigationItem"; title = "Sofib Mobile"; ObjectID = "h97-tt-yTb"; */
+"h97-tt-yTb.title" = "Sofib Mobile";
+
+/* Class = "UITextField"; placeholder = "Seleccionar Ciudad Iinicial"; ObjectID = "ktl-wb-rWE"; */
+"ktl-wb-rWE.placeholder" = "Seleccionar Ciudad Iinicial";
+
+/* Class = "UILabel"; text = "Nombre"; ObjectID = "nNV-Ch-9aJ"; */
+"nNV-Ch-9aJ.text" = "Nombre";
+
+/* Class = "UILabel"; text = "UTILITY SERVICES PRUEBA"; ObjectID = "oKJ-r9-mpl"; */
+"oKJ-r9-mpl.text" = "UTILITY SERVICES PRUEBA";
+
+/* Class = "UITextField"; placeholder = "Identificación"; ObjectID = "oR2-8P-Awd"; */
+"oR2-8P-Awd.placeholder" = "Identificación";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "uIR-9g-Hae"; */
+"uIR-9g-Hae.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "Seleccionar Traslado"; ObjectID = "ynb-bW-7Pj"; */
+"ynb-bW-7Pj.placeholder" = "Seleccionar Traslado";
+
+/* Class = "UILabel"; text = "163"; ObjectID = "zZs-yk-rf9"; */
+"zZs-yk-rf9.text" = "163";

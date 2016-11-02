@@ -18,9 +18,19 @@ class SolicitudAtencionTableViewCell: UITableViewCell {
     @IBOutlet weak var nombreTxt: UILabel!
     @IBOutlet weak var convenioTxt: UILabel!
     
+    @IBOutlet var lblNombre: UILabel!
+    @IBOutlet var lblConvenio: UILabel!
+    @IBOutlet var lblSolicitudAtencion: UILabel!
+    @IBOutlet var lblIdentificacion: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
+        
         // Initialization code
+        lblNombre.text = NSLocalizedString("nombre", comment: "Nombre")
+        lblSolicitudAtencion.text = NSLocalizedString("solicitud_atencion", comment: "solicitud_atencion")
+        lblIdentificacion.text = NSLocalizedString("identificacion", comment: "identificacion")
+        lblConvenio.text = NSLocalizedString("convenio", comment: "convenio")
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
