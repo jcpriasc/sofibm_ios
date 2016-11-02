@@ -12,7 +12,7 @@
 		5590B139A4FE3ABCDE44DB05 /* Pods_SofibMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 692EC0DDA0C42F4D176CB70A /* Pods_SofibMobile.framework */; };
 		8B75A464F4E22CD2FFF01D38 /* Pods_SofibMobileUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5B9CF158A964CF92923935B /* Pods_SofibMobileUITests.framework */; };
 		A44A5B011DC972F400A6553D /* ConsultaSolicitudesAtencionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44A5AFF1DC972F400A6553D /* ConsultaSolicitudesAtencionController.swift */; };
-		A44A5B021DC972F400A6553D /* ConsultaSolicitudesAtencionController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A44A5B001DC972F400A6553D /* ConsultaSolicitudesAtencionController.xib */; };
+		A44A5B041DC9832A00A6553D /* SolicitudAtencionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44A5B031DC9832A00A6553D /* SolicitudAtencionTableViewCell.swift */; };
 		A4E7D1A61DC93F1E00C4E977 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E7D1A51DC93F1E00C4E977 /* AppDelegate.swift */; };
 		A4E7D1A81DC93F1E00C4E977 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E7D1A71DC93F1E00C4E977 /* ViewController.swift */; };
 		A4E7D1AB1DC93F1E00C4E977 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4E7D1A91DC93F1E00C4E977 /* Main.storyboard */; };
@@ -49,7 +49,7 @@
 		5A60DC2194A36FA88E08C869 /* Pods-SofibMobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SofibMobile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SofibMobile/Pods-SofibMobile.debug.xcconfig"; sourceTree = "<group>"; };
 		692EC0DDA0C42F4D176CB70A /* Pods_SofibMobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SofibMobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A44A5AFF1DC972F400A6553D /* ConsultaSolicitudesAtencionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsultaSolicitudesAtencionController.swift; sourceTree = "<group>"; };
-		A44A5B001DC972F400A6553D /* ConsultaSolicitudesAtencionController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConsultaSolicitudesAtencionController.xib; sourceTree = "<group>"; };
+		A44A5B031DC9832A00A6553D /* SolicitudAtencionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SolicitudAtencionTableViewCell.swift; sourceTree = "<group>"; };
 		A4E7D1A21DC93F1E00C4E977 /* SofibMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SofibMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4E7D1A51DC93F1E00C4E977 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4E7D1A71DC93F1E00C4E977 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -104,7 +104,7 @@
 			children = (
 				11227A2B1DC971C80035959B /* FiltrosSolicitudAtencionController.swift */,
 				A44A5AFF1DC972F400A6553D /* ConsultaSolicitudesAtencionController.swift */,
-				A44A5B001DC972F400A6553D /* ConsultaSolicitudesAtencionController.xib */,
+				A44A5B031DC9832A00A6553D /* SolicitudAtencionTableViewCell.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -309,7 +309,6 @@
 				A4E7D1AD1DC93F1E00C4E977 /* Assets.xcassets in Resources */,
 				A4E7D1D41DC93FDD00C4E977 /* Podfile in Resources */,
 				A4E7D1AB1DC93F1E00C4E977 /* Main.storyboard in Resources */,
-				A44A5B021DC972F400A6553D /* ConsultaSolicitudesAtencionController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,6 +474,7 @@
 				A44A5B011DC972F400A6553D /* ConsultaSolicitudesAtencionController.swift in Sources */,
 				A4E7D1A81DC93F1E00C4E977 /* ViewController.swift in Sources */,
 				A4E7D1A61DC93F1E00C4E977 /* AppDelegate.swift in Sources */,
+				A44A5B041DC9832A00A6553D /* SolicitudAtencionTableViewCell.swift in Sources */,
 				11227A291DC970C00035959B /* ViewControllerTest.swift in Sources */,
 				11227A2C1DC971C80035959B /* FiltrosSolicitudAtencionController.swift in Sources */,
 			);

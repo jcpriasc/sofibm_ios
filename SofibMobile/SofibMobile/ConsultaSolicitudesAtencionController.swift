@@ -8,8 +8,28 @@
 
 import UIKit
 
-class ConsultaSolicitudesAtencionController: UIViewController {
+class ConsultaSolicitudesAtencionController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    let solicitudesAtencion = ["Solicitud 1", "Solicitud 2", "Solicitud 3", "Solicitud 4"]
+    
+    
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
+        return (solicitudesAtencion.count)
+    }
+    
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! SolicitudAtencionTableViewCell
+        
+        cell.solicitudAtencionTxt.text = solicitudesAtencion[indexPath.row]
+        cell.identificacionTxt.text = solicitudesAtencion[indexPath.row]
+        cell.nombreTxt.text = solicitudesAtencion[indexPath.row]
+        cell.convenioTxt.text = solicitudesAtencion[indexPath.row]
+        return (cell)
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
