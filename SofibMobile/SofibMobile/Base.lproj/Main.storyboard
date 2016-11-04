@@ -295,7 +295,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U6C-8k-beJ"/>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VIV-fV-bHc">
                                 <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="barTintColor" red="0.0" green="0.40000000000000002" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -348,29 +347,45 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Za-7Q-6oL">
                                 <color key="backgroundColor" red="0.098039215686274508" green="0.43529411764705883" blue="0.69411764705882351" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.098039215690000001" green="0.43529411759999997" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="aCePtAR">
+                                <state key="normal" title="Aceptar">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" red="0.098039215690000001" green="0.43529411759999997" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Solicitud de Atención" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tfe-1S-vbg">
+                                <frame key="frameInset" minX="16" minY="201" width="137" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.59161788230000001" blue="0.34973502159999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Solicitud de Atención" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6du-Wx-Hgr">
+                                <frame key="frameInset" minX="16" minY="226" width="137" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.59161788230000001" blue="0.34973502159999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Solicitud de Atención" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BdT-eJ-WhL">
+                                <frame key="frameInset" minX="16" minY="251" width="137" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.59161788230000001" blue="0.34973502159999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="gqg-Kt-WKy" firstAttribute="top" secondItem="2Za-7Q-6oL" secondAttribute="bottom" id="Aa6-t8-veU"/>
-                            <constraint firstItem="U6C-8k-beJ" firstAttribute="height" secondItem="cdT-Rv-jlm" secondAttribute="height" multiplier="0.8" id="GfL-ci-QgQ"/>
                             <constraint firstItem="VIV-fV-bHc" firstAttribute="top" secondItem="XaS-zF-G2l" secondAttribute="bottom" constant="10" id="HAl-dF-qYd"/>
                             <constraint firstItem="12N-ph-new" firstAttribute="width" secondItem="cdT-Rv-jlm" secondAttribute="width" id="HcR-WG-OoZ"/>
-                            <constraint firstItem="U6C-8k-beJ" firstAttribute="width" secondItem="cdT-Rv-jlm" secondAttribute="width" id="QaN-ms-N4M"/>
                             <constraint firstItem="2Za-7Q-6oL" firstAttribute="width" secondItem="cdT-Rv-jlm" secondAttribute="width" id="TY0-O7-jVI"/>
                             <constraint firstItem="VIV-fV-bHc" firstAttribute="leading" secondItem="cdT-Rv-jlm" secondAttribute="leading" id="UsL-1E-jD6"/>
                             <constraint firstItem="12N-ph-new" firstAttribute="height" secondItem="cdT-Rv-jlm" secondAttribute="height" multiplier="0.15" id="VSM-xp-kLe"/>
                             <constraint firstItem="2Za-7Q-6oL" firstAttribute="leading" secondItem="cdT-Rv-jlm" secondAttribute="leading" id="Xl4-2x-eut"/>
-                            <constraint firstItem="2Za-7Q-6oL" firstAttribute="top" secondItem="U6C-8k-beJ" secondAttribute="bottom" id="a7W-C7-YiO"/>
                             <constraint firstItem="12N-ph-new" firstAttribute="leading" secondItem="cdT-Rv-jlm" secondAttribute="leading" id="aMV-19-dPE"/>
-                            <constraint firstItem="U6C-8k-beJ" firstAttribute="top" secondItem="VIV-fV-bHc" secondAttribute="bottom" id="afQ-Ky-VlE"/>
                             <constraint firstItem="12N-ph-new" firstAttribute="top" secondItem="VIV-fV-bHc" secondAttribute="bottom" id="eub-cn-qda"/>
                             <constraint firstItem="VIV-fV-bHc" firstAttribute="width" secondItem="cdT-Rv-jlm" secondAttribute="width" id="f51-U1-vi8"/>
-                            <constraint firstItem="U6C-8k-beJ" firstAttribute="leading" secondItem="cdT-Rv-jlm" secondAttribute="leading" id="gW0-T0-jHI"/>
                             <constraint firstItem="VIV-fV-bHc" firstAttribute="height" secondItem="cdT-Rv-jlm" secondAttribute="height" multiplier="0.07" id="p99-be-Lnk"/>
                         </constraints>
                     </view>
@@ -388,6 +403,6 @@
         <image name="row_right" width="64" height="64"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="RyA-Da-AuA"/>
+        <segue reference="XjM-ne-pUO"/>
     </inferredMetricsTieBreakers>
 </document>
