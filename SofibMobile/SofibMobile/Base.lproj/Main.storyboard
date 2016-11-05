@@ -661,12 +661,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QK3-Tu-Sid" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4479.7101449275369" y="956.25000000000011"/>
+            <point key="canvasLocation" x="4489" y="967"/>
         </scene>
         <!--Detalle Solicitud Atencion Controller-->
         <scene sceneID="j7l-Wy-POe">
             <objects>
-                <viewController id="5MZ-oO-TYo" customClass="DetalleSolicitudAtencionController" customModule="SofibMobile" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="testView" id="5MZ-oO-TYo" customClass="DetalleSolicitudAtencionController" customModule="SofibMobile" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XMq-WS-vSr"/>
                         <viewControllerLayoutGuide type="bottom" id="UuG-J5-dFO"/>
@@ -685,6 +685,9 @@
                                     <navigationItem title="Sofib Mobile" id="6yb-Rb-zUL">
                                         <barButtonItem key="leftBarButtonItem" systemItem="reply" id="JCz-AZ-rwx">
                                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <connections>
+                                                <segue destination="KP0-Nb-KJu" kind="show" id="gcC-yr-SYE"/>
+                                            </connections>
                                         </barButtonItem>
                                         <rightBarButtonItems>
                                             <barButtonItem image="icon_settings" id="Boa-8A-LE9">
@@ -697,10 +700,6 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="QsZ-HT-oie">
-                                <color key="backgroundColor" red="0.098039215690000001" green="0.43529411759999997" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" red="0.098039215690000001" green="0.43529411759999997" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </stackView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iXy-cX-5RE">
                                 <frame key="frameInset" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -713,83 +712,23 @@
                                 </items>
                             </toolbar>
                         </subviews>
-                        <color key="backgroundColor" red="0.99963909387588501" green="1" blue="0.99975615739822388" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="0.51696437490181246" blue="0.41536005654894004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="KTV-J5-J1R" firstAttribute="width" secondItem="vSF-Vb-Qp3" secondAttribute="width" id="1Ws-jk-zVh"/>
-                            <constraint firstItem="QsZ-HT-oie" firstAttribute="top" secondItem="KTV-J5-J1R" secondAttribute="bottom" id="Cti-YJ-jYG"/>
-                            <constraint firstItem="QsZ-HT-oie" firstAttribute="width" secondItem="vSF-Vb-Qp3" secondAttribute="width" id="UXY-sW-sCv"/>
-                            <constraint firstItem="QsZ-HT-oie" firstAttribute="height" secondItem="vSF-Vb-Qp3" secondAttribute="height" multiplier="0.15" id="Vx6-J9-Kah"/>
                             <constraint firstItem="KTV-J5-J1R" firstAttribute="leading" secondItem="vSF-Vb-Qp3" secondAttribute="leading" id="f9u-gU-cIc"/>
                             <constraint firstItem="KTV-J5-J1R" firstAttribute="top" secondItem="XMq-WS-vSr" secondAttribute="bottom" constant="10" id="mJK-4K-hJk"/>
                             <constraint firstItem="KTV-J5-J1R" firstAttribute="height" secondItem="vSF-Vb-Qp3" secondAttribute="height" multiplier="0.07" id="pJT-Yt-yQz"/>
-                            <constraint firstItem="QsZ-HT-oie" firstAttribute="leading" secondItem="vSF-Vb-Qp3" secondAttribute="leading" id="s3h-aX-Mdj"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YVH-c7-I97" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5518" y="958"/>
-        </scene>
-        <!--Detalle Solicitud Atencion Controller-->
-        <scene sceneID="Cam-Y3-b59">
-            <objects>
-                <viewController id="g6D-Xn-vqf" customClass="DetalleSolicitudAtencionController" customModule="SofibMobile" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="LZR-En-nAj"/>
-                        <viewControllerLayoutGuide type="bottom" id="Sx8-y8-9Wa"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Z9V-jP-aTN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OeL-K6-GJJ">
-                                <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="barTintColor" red="0.0" green="0.40000000000000002" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <textAttributes key="titleTextAttributes">
-                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </textAttributes>
-                                <items>
-                                    <navigationItem title="Sofib Mobile" id="hqP-tV-ci0">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="reply" id="5hv-Bz-0Go">
-                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </barButtonItem>
-                                        <rightBarButtonItems>
-                                            <barButtonItem image="icon_settings" id="GGC-9B-lhF">
-                                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            </barButtonItem>
-                                            <barButtonItem image="icon_search" id="cwI-M0-oRj">
-                                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            </barButtonItem>
-                                        </rightBarButtonItems>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6aG-ww-tvj">
-                                <color key="backgroundColor" red="0.098039215690000001" green="0.43529411759999997" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" red="0.098039215690000001" green="0.43529411759999997" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </stackView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="6aG-ww-tvj" firstAttribute="leading" secondItem="Z9V-jP-aTN" secondAttribute="leading" id="FPc-fR-81q"/>
-                            <constraint firstItem="OeL-K6-GJJ" firstAttribute="height" secondItem="Z9V-jP-aTN" secondAttribute="height" multiplier="0.07" id="Oxe-ZX-wmQ"/>
-                            <constraint firstItem="OeL-K6-GJJ" firstAttribute="leading" secondItem="Z9V-jP-aTN" secondAttribute="leading" id="Pe3-wS-BV6"/>
-                            <constraint firstItem="6aG-ww-tvj" firstAttribute="height" secondItem="Z9V-jP-aTN" secondAttribute="height" multiplier="0.15" id="QLE-cb-fbn"/>
-                            <constraint firstItem="6aG-ww-tvj" firstAttribute="top" secondItem="OeL-K6-GJJ" secondAttribute="bottom" id="Qy4-BZ-nus"/>
-                            <constraint firstItem="6aG-ww-tvj" firstAttribute="width" secondItem="Z9V-jP-aTN" secondAttribute="width" id="SfB-Ut-QZp"/>
-                            <constraint firstItem="OeL-K6-GJJ" firstAttribute="top" secondItem="LZR-En-nAj" secondAttribute="bottom" constant="10" id="T2b-jr-a3b"/>
-                            <constraint firstItem="OeL-K6-GJJ" firstAttribute="width" secondItem="Z9V-jP-aTN" secondAttribute="width" id="YKd-rn-6BG"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eBM-SG-Emj" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4396" y="272"/>
+            <point key="canvasLocation" x="5940" y="629"/>
         </scene>
         <!--Detalle Solicitud Atencion Controller-->
         <scene sceneID="cjx-AF-NRK">
             <objects>
-                <viewController id="AAr-DR-7N2" customClass="DetalleSolicitudAtencionController" customModule="SofibMobile" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="testView2" id="AAr-DR-7N2" customClass="DetalleSolicitudAtencionController" customModule="SofibMobile" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="neG-QJ-3sK"/>
                         <viewControllerLayoutGuide type="bottom" id="v40-Bc-yUW"/>
@@ -808,6 +747,9 @@
                                     <navigationItem title="Sofib Mobile" id="Rke-Wv-3k7">
                                         <barButtonItem key="leftBarButtonItem" systemItem="reply" id="h1R-is-ss7">
                                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <connections>
+                                                <segue destination="KP0-Nb-KJu" kind="show" id="iRS-nC-u8z"/>
+                                            </connections>
                                         </barButtonItem>
                                         <rightBarButtonItems>
                                             <barButtonItem image="icon_settings" id="7zj-v2-eDa">
@@ -820,27 +762,19 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="oWk-Fd-rJZ">
-                                <color key="backgroundColor" red="0.098039215690000001" green="0.43529411759999997" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" red="0.098039215690000001" green="0.43529411759999997" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.3121066190601437" green="1" blue="0.24340422348074109" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="GUU-ad-UuT" firstAttribute="top" secondItem="neG-QJ-3sK" secondAttribute="bottom" constant="10" id="3sE-M9-UmI"/>
                             <constraint firstItem="GUU-ad-UuT" firstAttribute="leading" secondItem="LTJ-bA-WEG" secondAttribute="leading" id="7nn-eo-VMG"/>
-                            <constraint firstItem="oWk-Fd-rJZ" firstAttribute="width" secondItem="LTJ-bA-WEG" secondAttribute="width" id="8GR-hO-T9Y"/>
-                            <constraint firstItem="oWk-Fd-rJZ" firstAttribute="leading" secondItem="LTJ-bA-WEG" secondAttribute="leading" id="8Uu-ib-7Ax"/>
-                            <constraint firstItem="oWk-Fd-rJZ" firstAttribute="top" secondItem="GUU-ad-UuT" secondAttribute="bottom" id="C2A-5h-Ju8"/>
                             <constraint firstItem="GUU-ad-UuT" firstAttribute="height" secondItem="LTJ-bA-WEG" secondAttribute="height" multiplier="0.07" id="NLW-UH-U6i"/>
                             <constraint firstItem="GUU-ad-UuT" firstAttribute="width" secondItem="LTJ-bA-WEG" secondAttribute="width" id="UeY-Xo-YEF"/>
-                            <constraint firstItem="oWk-Fd-rJZ" firstAttribute="height" secondItem="LTJ-bA-WEG" secondAttribute="height" multiplier="0.15" id="vFx-dB-KXm"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hss-cU-eaI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3663" y="187"/>
+            <point key="canvasLocation" x="5910" y="1337"/>
         </scene>
         <!--Detalle Solicitud Atencion Controller-->
         <scene sceneID="pfP-Jf-IbJ">
@@ -886,9 +820,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wFr-T0-PEx">
-                                <frame key="frameInset" minX="160" minY="318" width="46" height="30"/>
+                                <frame key="frameInset" minX="158" minY="318" width="50" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="medica"/>
                                 <connections>
                                     <segue destination="KP0-Nb-KJu" kind="show" id="SIF-nv-7KI"/>
                                 </connections>
@@ -906,6 +840,14 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="Fxz-9F-0iz"/>
                                 </items>
                             </toolbar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KIU-Ef-n9I">
+                                <frame key="frameInset" minX="145" minY="428" width="57" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="logistica"/>
+                                <connections>
+                                    <segue destination="Ev5-Qi-qyB" kind="show" id="X5t-Bs-b48"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -924,6 +866,109 @@
             </objects>
             <point key="canvasLocation" x="3352.8000000000002" y="957.57121439280365"/>
         </scene>
+        <!--Opciones Secundarias Log View Controller-->
+        <scene sceneID="O1c-fr-W7q">
+            <objects>
+                <viewController id="Ev5-Qi-qyB" customClass="OpcionesSecundariasLogViewController" customModule="SofibMobile" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Rxw-W3-WCw"/>
+                        <viewControllerLayoutGuide type="bottom" id="OVf-JE-p6g"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="etv-iB-WrS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M71-AW-cCf">
+                                <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="barTintColor" red="0.0" green="0.40000000000000002" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Sofib Mobile" id="uio-w0-Lkb">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="reply" id="Ngj-j7-Erq">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <connections>
+                                                <segue destination="8BK-OZ-b94" kind="show" id="6va-XW-UX1"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" image="icon_settings" id="YIX-hi-9He">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kiJ-67-Y1u">
+                                <frame key="frameInset" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="mKD-Cc-W5l"/>
+                                    <barButtonItem systemItem="search" id="j6h-5e-JuD"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="OMN-Y8-l3G"/>
+                                    <barButtonItem image="icon_menu" id="2Bs-CU-y9R"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="zHV-Qb-HaN"/>
+                                </items>
+                            </toolbar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="63" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dxB-7m-MJ6">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellOpcion" rowHeight="63" id="Gwl-xD-wZa" customClass="OpcionesSecundariasViewCell" customModule="SofibMobile" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="63"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Gwl-xD-wZa" id="pbE-6c-ypR">
+                                            <frame key="frameInset" width="375" height="62"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_more" translatesAutoresizingMaskIntoConstraints="NO" id="MmA-Wb-Epp"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yJ1-j6-oGH">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.068957276639999995" green="0.35346406699999999" blue="0.56864321230000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="yJ1-j6-oGH" firstAttribute="height" secondItem="pbE-6c-ypR" secondAttribute="height" multiplier="0.5" id="3WC-XX-hAW"/>
+                                                <constraint firstItem="yJ1-j6-oGH" firstAttribute="width" secondItem="pbE-6c-ypR" secondAttribute="width" id="7FK-dX-Axb"/>
+                                                <constraint firstItem="MmA-Wb-Epp" firstAttribute="leading" secondItem="pbE-6c-ypR" secondAttribute="leading" constant="15" id="9nb-f7-sfV"/>
+                                                <constraint firstItem="MmA-Wb-Epp" firstAttribute="top" secondItem="pbE-6c-ypR" secondAttribute="top" constant="15" id="OEd-8B-BfC"/>
+                                                <constraint firstAttribute="bottom" secondItem="MmA-Wb-Epp" secondAttribute="bottom" constant="15" id="Qvk-HC-gJ0"/>
+                                                <constraint firstItem="yJ1-j6-oGH" firstAttribute="leading" secondItem="MmA-Wb-Epp" secondAttribute="trailing" constant="15" id="bvS-d7-PNd"/>
+                                                <constraint firstItem="yJ1-j6-oGH" firstAttribute="top" secondItem="pbE-6c-ypR" secondAttribute="top" constant="20" id="j1t-oB-4nN"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <constraints>
+                                            <constraint firstItem="MmA-Wb-Epp" firstAttribute="height" secondItem="Gwl-xD-wZa" secondAttribute="height" priority="250" id="0IV-LQ-fen"/>
+                                            <constraint firstItem="MmA-Wb-Epp" firstAttribute="width" secondItem="Gwl-xD-wZa" secondAttribute="width" multiplier="0.1" id="PYB-G5-mPO"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="imgOpcion" destination="MmA-Wb-Epp" id="ai2-Fn-vNo"/>
+                                            <outlet property="lblOpcion" destination="yJ1-j6-oGH" id="M3S-MY-t0i"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Ev5-Qi-qyB" id="wPl-Ic-UJ8"/>
+                                    <outlet property="delegate" destination="Ev5-Qi-qyB" id="RCL-Co-PXF"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="M71-AW-cCf" firstAttribute="leading" secondItem="etv-iB-WrS" secondAttribute="leading" id="D14-KX-i77"/>
+                            <constraint firstItem="M71-AW-cCf" firstAttribute="height" secondItem="etv-iB-WrS" secondAttribute="height" multiplier="0.07" id="I05-zs-9SG"/>
+                            <constraint firstItem="dxB-7m-MJ6" firstAttribute="height" secondItem="etv-iB-WrS" secondAttribute="height" multiplier="0.83" id="KNg-ht-Hfi"/>
+                            <constraint firstItem="M71-AW-cCf" firstAttribute="width" secondItem="etv-iB-WrS" secondAttribute="width" id="NPi-Zb-BdZ"/>
+                            <constraint firstItem="dxB-7m-MJ6" firstAttribute="leading" secondItem="etv-iB-WrS" secondAttribute="leading" id="TEU-Qj-NMU"/>
+                            <constraint firstItem="dxB-7m-MJ6" firstAttribute="top" secondItem="Rxw-W3-WCw" secondAttribute="bottom" constant="61" id="bfP-Qc-vz5"/>
+                            <constraint firstItem="dxB-7m-MJ6" firstAttribute="width" secondItem="etv-iB-WrS" secondAttribute="width" id="gQc-XX-sBa"/>
+                            <constraint firstItem="M71-AW-cCf" firstAttribute="top" secondItem="Rxw-W3-WCw" secondAttribute="bottom" constant="10" id="y4e-Cy-uy3"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0qk-YU-3Hm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4489" y="1870"/>
+        </scene>
     </scenes>
     <resources>
         <image name="icon_buscar" width="48" height="48"/>
@@ -938,5 +983,10 @@
         <segue reference="pgR-eB-Xdl"/>
         <segue reference="HSt-uP-ArV"/>
         <segue reference="BON-BY-cd9"/>
+        <segue reference="MwS-BS-3H1"/>
+        <segue reference="Asi-3Z-Hfd"/>
+        <segue reference="6va-XW-UX1"/>
+        <segue reference="BOr-YO-rwJ"/>
+        <segue reference="SIF-nv-7KI"/>
     </inferredMetricsTieBreakers>
 </document>
