@@ -1,32 +1,30 @@
 //
-//  OpcionesSecundariasViewController.swift
+//  OpcionesSecundariasLogViewController.swift
 //  SofibMobile
 //
-//  Created by JUAN CAMILO PUENTE RIASCOS on 11/4/16.
+//  Created by JUAN CAMILO PUENTE RIASCOS on 11/5/16.
 //  Copyright © 2016 vortexbird. All rights reserved.
 //
 
 import UIKit
 
-class OpcionesSecundariasViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
-
-    let opciones = [NSLocalizedString("lbl_autorizaciones", comment: "lbl_autorizaciones"),
-                    NSLocalizedString("lbl_servicio_asistencial", comment: "lbl_servicio_asistencial"),
-                    NSLocalizedString("lbl_informes_medicos", comment: "lbl_informes_medicos"),
-                    NSLocalizedString("lbl_documentos_medicos", comment: "lbl_documentos_medicos"),
-                    NSLocalizedString("lbl_bitacoras", comment: "lbl_bitacoras"),
-                    NSLocalizedString("lbl_epicrisis", comment: "lbl_epicrisis"),
-                    NSLocalizedString("lbl_procedimientos_adicionales", comment: "lbl_procedimientos_adicionales"),
-                    NSLocalizedString("lbl_funcionarios_externos", comment: "lbl_funcionarios_externos"),
-                    NSLocalizedString("lbl_consultar_solicitudes_aprobacion", comment: "lbl_consultar_solicitudes_aprobacion")]
+class OpcionesSecundariasLogViewController: UIViewController , UITableViewDataSource, UITableViewDelegate{
     
+    let opciones = [NSLocalizedString("lbl_servicio_no_asistencial", comment: "lbl_servicio_no_asistencial"),
+                    NSLocalizedString("lbl_titulo_giro", comment: "lbl_titulo_giro"),
+                    NSLocalizedString("lbl_titulo_nota_credito_giro", comment: "lbl_titulo_nota_credito_giro"),
+                    NSLocalizedString("lbl_titulo_factura", comment: "lbl_titulo_factura"),
+                    NSLocalizedString("lbl_titulo_notas_credito_debito", comment: "lbl_titulo_notas_credito_debito"),
+                    NSLocalizedString("lbl_titulo_utilizaciones", comment: "lbl_titulo_utilizaciones"),
+                    NSLocalizedString("lbl_titulo_encuesta_satisfaccion", comment: "lbl_titulo_encuesta_satisfaccion"),
+                    NSLocalizedString("lbl_consultar_solicitudes_aprobacion", comment: "lbl_consultar_solicitudes_aprobacion")]
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         return (opciones.count)
     }
     
-
+    
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cellOpcion = tableView.dequeueReusableCell(withIdentifier: "cellOpcion", for: indexPath) as! OpcionesSecundariasViewCell
@@ -38,21 +36,19 @@ class OpcionesSecundariasViewController: UIViewController, UITableViewDataSource
         
         switch opcionSeleccionada {
         case 0:
-            cellOpcion.imgOpcion.image = UIImage(named: "icon_autorizaciones")
+            cellOpcion.imgOpcion.image = UIImage(named: "icon_no_asistenciales")
         case 1:
-            cellOpcion.imgOpcion.image = UIImage(named: "icon_servicios_asistenciales")
+            cellOpcion.imgOpcion.image = UIImage(named: "icon_giros")
         case 2:
-            cellOpcion.imgOpcion.image = UIImage(named: "icon_informes_medicos")
+            cellOpcion.imgOpcion.image = UIImage(named: "icon_nota_credito_giro")
         case 3:
-            cellOpcion.imgOpcion.image = UIImage(named: "icon_documentos_medicos")
+            cellOpcion.imgOpcion.image = UIImage(named: "icon_factura")
         case 4:
-            cellOpcion.imgOpcion.image = UIImage(named: "icon_bitacoras")
+            cellOpcion.imgOpcion.image = UIImage(named: "icon_nota_credito_debito")
         case 5:
-            cellOpcion.imgOpcion.image = UIImage(named: "icon_epicrisis")
+            cellOpcion.imgOpcion.image = UIImage(named: "icon_utilizaciones")
         case 6:
-            cellOpcion.imgOpcion.image = UIImage(named: "icon_procedimientos_ad")
-        case 7:
-            cellOpcion.imgOpcion.image = UIImage(named: "icon_funcionarios")
+            cellOpcion.imgOpcion.image = UIImage(named: "icon_encuestas")
         default:
             cellOpcion.imgOpcion.image = UIImage(named: "icon_aprobacion")
         }
@@ -86,24 +82,24 @@ class OpcionesSecundariasViewController: UIViewController, UITableViewDataSource
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
 
 }
