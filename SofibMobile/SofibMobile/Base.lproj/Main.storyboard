@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AUZ-n3-4vl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AUZ-n3-4vl">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -27,7 +28,11 @@
                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="Sofib Mobile" id="0bz-8j-FeJ"/>
+                                    <navigationItem title="Sofib Mobile" id="0bz-8j-FeJ">
+                                        <barButtonItem key="rightBarButtonItem" image="icon_settings" id="uMN-jX-PGj">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </barButtonItem>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Dv4-92-bbx">
@@ -85,7 +90,7 @@
                                 </constraints>
                                 <state key="normal" title="Button" image="icon_buscar"/>
                                 <connections>
-                                    <segue destination="n6j-wK-tzI" kind="show" id="XjM-ne-pUO"/>
+                                    <segue destination="n6j-wK-tzI" kind="presentation" id="MwS-BS-3H1"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -117,7 +122,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZTw-3M-yWY" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="212" y="99.400299850074973"/>
+            <point key="canvasLocation" x="314" y="958"/>
         </scene>
         <!--Consulta Solicitudes Atencion Controller-->
         <scene sceneID="6hj-6y-OiT">
@@ -143,8 +148,11 @@
                                         <barButtonItem key="leftBarButtonItem" systemItem="reply" id="CY0-SA-tkK">
                                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <connections>
-                                                <segue destination="AUZ-n3-4vl" kind="show" id="dyd-Gp-Tem"/>
+                                                <segue destination="AUZ-n3-4vl" kind="show" id="BON-BY-cd9"/>
                                             </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" image="icon_settings" id="Vs8-Bu-ueh">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
@@ -156,7 +164,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="97"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ofK-9g-rx0" id="AA5-oZ-mII">
-                                            <frame key="frameInset" width="375" height="96.5"/>
+                                            <frame key="frameInset" width="375" height="96"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Solicitud de Atención" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CJZ-Xc-cwV">
@@ -255,7 +263,7 @@
                                             <outlet property="lblSolicitudAtencion" destination="CJZ-Xc-cwV" id="oJ1-qU-aT7"/>
                                             <outlet property="nombreTxt" destination="Uzz-2v-mNM" id="wGC-q4-IeW"/>
                                             <outlet property="solicitudAtencionTxt" destination="zZs-yk-rf9" id="ZnL-0X-r16"/>
-                                            <segue destination="Te1-RW-kUZ" kind="show" id="mjd-lM-tcl"/>
+                                            <segue destination="Te1-RW-kUZ" kind="show" id="pgR-eB-Xdl"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -268,7 +276,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="HY5-Ve-egD" firstAttribute="leading" secondItem="2RF-fJ-FlY" secondAttribute="leading" id="BnV-4Q-YqN"/>
-                            <constraint firstItem="f1h-ma-gQM" firstAttribute="height" secondItem="2RF-fJ-FlY" secondAttribute="height" id="F3V-fm-dix"/>
+                            <constraint firstItem="f1h-ma-gQM" firstAttribute="height" secondItem="2RF-fJ-FlY" secondAttribute="height" multiplier="0.85" id="F3V-fm-dix"/>
                             <constraint firstItem="HY5-Ve-egD" firstAttribute="height" secondItem="2RF-fJ-FlY" secondAttribute="height" multiplier="0.07" id="SUK-iO-3a9"/>
                             <constraint firstItem="HY5-Ve-egD" firstAttribute="top" secondItem="yiq-At-H0F" secondAttribute="bottom" constant="10" id="WSm-uz-y56"/>
                             <constraint firstItem="f1h-ma-gQM" firstAttribute="leading" secondItem="2RF-fJ-FlY" secondAttribute="leading" id="ZVn-OC-Cvt"/>
@@ -278,10 +286,11 @@
                             <constraint firstItem="HY5-Ve-egD" firstAttribute="width" secondItem="2RF-fJ-FlY" secondAttribute="width" id="yEl-SE-P6g"/>
                         </constraints>
                     </view>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w2e-8U-iUH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="999" y="81"/>
+            <point key="canvasLocation" x="1432.8" y="957.57121439280365"/>
         </scene>
         <!--Detalle Solicitud Atencion Controller-->
         <scene sceneID="viz-6i-MoK">
@@ -306,52 +315,19 @@
                                         <barButtonItem key="leftBarButtonItem" systemItem="reply" id="RjJ-DI-Ewf">
                                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <connections>
-                                                <segue destination="n6j-wK-tzI" kind="show" id="RyA-Da-AuA"/>
+                                                <segue destination="n6j-wK-tzI" kind="showDetail" id="HSt-uP-ArV"/>
                                             </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" image="icon_settings" id="i9Y-r1-syk">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="12N-ph-new">
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5FW-lj-cfK">
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="852" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BIF-hd-9az">
-                                                <frame key="frameInset" minX="8" minY="16" width="26" height="17"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2016031602" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gr1-xF-2br">
-                                                <frame key="frameInset" minX="8" minY="41" width="82" height="17"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MERYL LOUISE STREEP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XaP-aD-U6K">
-                                                <frame key="frameInset" minX="8" minY="66" width="154" height="17"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" red="0.098039215686274508" green="0.43529411764705883" blue="0.69411764705882351" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </view>
-                                </subviews>
                                 <color key="backgroundColor" red="0.098039215686274508" green="0.43529411764705883" blue="0.69411764705882351" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.098039215690000001" green="0.43529411759999997" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Za-7Q-6oL">
-                                <color key="backgroundColor" red="0.098039215686274508" green="0.43529411764705883" blue="0.69411764705882351" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" red="0.098039215690000001" green="0.43529411759999997" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Aceptar">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" red="0.098039215690000001" green="0.43529411759999997" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Solicitud de Atención" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tfe-1S-vbg">
                                 <frame key="frameInset" minX="16" minY="201" width="137" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -373,36 +349,395 @@
                                 <color key="textColor" red="0.0" green="0.59161788230000001" blue="0.34973502159999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aly-Nt-zoA">
+                                <state key="normal" image="icon_more"/>
+                                <connections>
+                                    <segue destination="8BK-OZ-b94" kind="show" id="Uai-DN-GAb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="gqg-Kt-WKy" firstAttribute="top" secondItem="2Za-7Q-6oL" secondAttribute="bottom" id="Aa6-t8-veU"/>
                             <constraint firstItem="VIV-fV-bHc" firstAttribute="top" secondItem="XaS-zF-G2l" secondAttribute="bottom" constant="10" id="HAl-dF-qYd"/>
                             <constraint firstItem="12N-ph-new" firstAttribute="width" secondItem="cdT-Rv-jlm" secondAttribute="width" id="HcR-WG-OoZ"/>
-                            <constraint firstItem="2Za-7Q-6oL" firstAttribute="width" secondItem="cdT-Rv-jlm" secondAttribute="width" id="TY0-O7-jVI"/>
+                            <constraint firstItem="aly-Nt-zoA" firstAttribute="centerX" secondItem="cdT-Rv-jlm" secondAttribute="centerX" id="M1c-C3-pLn"/>
+                            <constraint firstItem="gqg-Kt-WKy" firstAttribute="top" secondItem="aly-Nt-zoA" secondAttribute="bottom" constant="10" id="NOD-T3-4iX"/>
                             <constraint firstItem="VIV-fV-bHc" firstAttribute="leading" secondItem="cdT-Rv-jlm" secondAttribute="leading" id="UsL-1E-jD6"/>
                             <constraint firstItem="12N-ph-new" firstAttribute="height" secondItem="cdT-Rv-jlm" secondAttribute="height" multiplier="0.15" id="VSM-xp-kLe"/>
-                            <constraint firstItem="2Za-7Q-6oL" firstAttribute="leading" secondItem="cdT-Rv-jlm" secondAttribute="leading" id="Xl4-2x-eut"/>
+                            <constraint firstItem="aly-Nt-zoA" firstAttribute="width" secondItem="cdT-Rv-jlm" secondAttribute="width" priority="250" id="Z0h-bT-wHY"/>
                             <constraint firstItem="12N-ph-new" firstAttribute="leading" secondItem="cdT-Rv-jlm" secondAttribute="leading" id="aMV-19-dPE"/>
+                            <constraint firstItem="aly-Nt-zoA" firstAttribute="height" secondItem="cdT-Rv-jlm" secondAttribute="height" priority="250" id="bkl-3K-Hu6"/>
                             <constraint firstItem="12N-ph-new" firstAttribute="top" secondItem="VIV-fV-bHc" secondAttribute="bottom" id="eub-cn-qda"/>
                             <constraint firstItem="VIV-fV-bHc" firstAttribute="width" secondItem="cdT-Rv-jlm" secondAttribute="width" id="f51-U1-vi8"/>
                             <constraint firstItem="VIV-fV-bHc" firstAttribute="height" secondItem="cdT-Rv-jlm" secondAttribute="height" multiplier="0.07" id="p99-be-Lnk"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="btnAceptar" destination="2Za-7Q-6oL" id="vVg-VS-ldl"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZOj-h2-XAT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2082" y="432"/>
+            <point key="canvasLocation" x="2413.5999999999999" y="957.57121439280365"/>
+        </scene>
+        <!--Detalle Solicitud Atencion Controller-->
+        <scene sceneID="kVM-xz-iOc">
+            <objects>
+                <viewController id="KP0-Nb-KJu" customClass="DetalleSolicitudAtencionController" customModule="SofibMobile" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kFJ-O3-FAP"/>
+                        <viewControllerLayoutGuide type="bottom" id="H1e-TR-Udk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RUz-Iu-9Ki">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pAp-nm-cQf">
+                                <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="barTintColor" red="0.0" green="0.40000000000000002" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Sofib Mobile" id="50z-18-zay">
+                                        <barButtonItem key="rightBarButtonItem" image="icon_settings" id="EWM-ms-9ra">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="CuT-NF-wwl">
+                                <color key="backgroundColor" red="0.098039215690000001" green="0.43529411759999997" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.098039215690000001" green="0.43529411759999997" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </stackView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CT2-4s-qNP">
+                                <frame key="frameInset" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="m0K-Pl-n5g"/>
+                                    <barButtonItem systemItem="search" id="W7S-MQ-M7w">
+                                        <connections>
+                                            <segue destination="AUZ-n3-4vl" kind="show" id="aMW-0x-8xR"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="FNl-Lp-jCy"/>
+                                    <barButtonItem image="icon_menu" id="NyY-3R-paj"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Mro-hP-8h5"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CuT-NF-wwl" firstAttribute="top" secondItem="pAp-nm-cQf" secondAttribute="bottom" id="2UL-AW-HgT"/>
+                            <constraint firstItem="CuT-NF-wwl" firstAttribute="height" secondItem="RUz-Iu-9Ki" secondAttribute="height" multiplier="0.15" id="Go0-1t-5ww"/>
+                            <constraint firstItem="pAp-nm-cQf" firstAttribute="width" secondItem="RUz-Iu-9Ki" secondAttribute="width" id="NMH-1n-gzE"/>
+                            <constraint firstItem="pAp-nm-cQf" firstAttribute="height" secondItem="RUz-Iu-9Ki" secondAttribute="height" multiplier="0.07" id="WIa-Fk-MIc"/>
+                            <constraint firstItem="pAp-nm-cQf" firstAttribute="top" secondItem="kFJ-O3-FAP" secondAttribute="bottom" constant="10" id="YLT-gm-W0D"/>
+                            <constraint firstItem="pAp-nm-cQf" firstAttribute="leading" secondItem="RUz-Iu-9Ki" secondAttribute="leading" id="aOT-Ee-W3b"/>
+                            <constraint firstItem="CuT-NF-wwl" firstAttribute="width" secondItem="RUz-Iu-9Ki" secondAttribute="width" id="ugc-Zv-7xf"/>
+                            <constraint firstItem="CuT-NF-wwl" firstAttribute="leading" secondItem="RUz-Iu-9Ki" secondAttribute="leading" id="w2m-kn-ybe"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QK3-Tu-Sid" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4481" y="958"/>
+        </scene>
+        <!--Detalle Solicitud Atencion Controller-->
+        <scene sceneID="j7l-Wy-POe">
+            <objects>
+                <viewController id="5MZ-oO-TYo" customClass="DetalleSolicitudAtencionController" customModule="SofibMobile" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XMq-WS-vSr"/>
+                        <viewControllerLayoutGuide type="bottom" id="UuG-J5-dFO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vSF-Vb-Qp3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KTV-J5-J1R">
+                                <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="barTintColor" red="0.0" green="0.40000000000000002" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Sofib Mobile" id="6yb-Rb-zUL">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="reply" id="JCz-AZ-rwx">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </barButtonItem>
+                                        <rightBarButtonItems>
+                                            <barButtonItem image="icon_settings" id="Boa-8A-LE9">
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </barButtonItem>
+                                            <barButtonItem image="icon_search" id="P4s-Fr-AO5">
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </barButtonItem>
+                                        </rightBarButtonItems>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="QsZ-HT-oie">
+                                <color key="backgroundColor" red="0.098039215690000001" green="0.43529411759999997" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.098039215690000001" green="0.43529411759999997" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KTV-J5-J1R" firstAttribute="width" secondItem="vSF-Vb-Qp3" secondAttribute="width" id="1Ws-jk-zVh"/>
+                            <constraint firstItem="QsZ-HT-oie" firstAttribute="top" secondItem="KTV-J5-J1R" secondAttribute="bottom" id="Cti-YJ-jYG"/>
+                            <constraint firstItem="QsZ-HT-oie" firstAttribute="width" secondItem="vSF-Vb-Qp3" secondAttribute="width" id="UXY-sW-sCv"/>
+                            <constraint firstItem="QsZ-HT-oie" firstAttribute="height" secondItem="vSF-Vb-Qp3" secondAttribute="height" multiplier="0.15" id="Vx6-J9-Kah"/>
+                            <constraint firstItem="KTV-J5-J1R" firstAttribute="leading" secondItem="vSF-Vb-Qp3" secondAttribute="leading" id="f9u-gU-cIc"/>
+                            <constraint firstItem="KTV-J5-J1R" firstAttribute="top" secondItem="XMq-WS-vSr" secondAttribute="bottom" constant="10" id="mJK-4K-hJk"/>
+                            <constraint firstItem="KTV-J5-J1R" firstAttribute="height" secondItem="vSF-Vb-Qp3" secondAttribute="height" multiplier="0.07" id="pJT-Yt-yQz"/>
+                            <constraint firstItem="QsZ-HT-oie" firstAttribute="leading" secondItem="vSF-Vb-Qp3" secondAttribute="leading" id="s3h-aX-Mdj"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YVH-c7-I97" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2302" y="-148"/>
+        </scene>
+        <!--Detalle Solicitud Atencion Controller-->
+        <scene sceneID="rFz-Ml-dMY">
+            <objects>
+                <viewController id="8VH-sQ-zVA" customClass="DetalleSolicitudAtencionController" customModule="SofibMobile" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BzP-dz-I9g"/>
+                        <viewControllerLayoutGuide type="bottom" id="YRX-y8-2z3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9a4-Y2-AYo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r9Y-fw-NuW">
+                                <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="barTintColor" red="0.0" green="0.40000000000000002" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Sofib Mobile" id="2Wc-j6-xM5">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="reply" id="uPf-Fj-Wda">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </barButtonItem>
+                                        <rightBarButtonItems>
+                                            <barButtonItem image="icon_settings" id="Drj-re-rMJ">
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </barButtonItem>
+                                            <barButtonItem image="icon_search" id="nqB-C0-jTR">
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </barButtonItem>
+                                        </rightBarButtonItems>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Ylf-a6-dca">
+                                <color key="backgroundColor" red="0.098039215690000001" green="0.43529411759999997" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.098039215690000001" green="0.43529411759999997" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ylf-a6-dca" firstAttribute="leading" secondItem="9a4-Y2-AYo" secondAttribute="leading" id="2rg-jS-AI9"/>
+                            <constraint firstItem="r9Y-fw-NuW" firstAttribute="height" secondItem="9a4-Y2-AYo" secondAttribute="height" multiplier="0.07" id="46z-DS-GfF"/>
+                            <constraint firstItem="r9Y-fw-NuW" firstAttribute="leading" secondItem="9a4-Y2-AYo" secondAttribute="leading" id="RPX-px-xc9"/>
+                            <constraint firstItem="r9Y-fw-NuW" firstAttribute="width" secondItem="9a4-Y2-AYo" secondAttribute="width" id="S6K-Iv-awZ"/>
+                            <constraint firstItem="Ylf-a6-dca" firstAttribute="width" secondItem="9a4-Y2-AYo" secondAttribute="width" id="TGG-Ww-3F6"/>
+                            <constraint firstItem="r9Y-fw-NuW" firstAttribute="top" secondItem="BzP-dz-I9g" secondAttribute="bottom" constant="10" id="Xe4-TA-oWy"/>
+                            <constraint firstItem="Ylf-a6-dca" firstAttribute="height" secondItem="9a4-Y2-AYo" secondAttribute="height" multiplier="0.15" id="rf7-hb-mhM"/>
+                            <constraint firstItem="Ylf-a6-dca" firstAttribute="top" secondItem="r9Y-fw-NuW" secondAttribute="bottom" id="tKj-5y-fO3"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BXM-tj-wcR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2302" y="-148"/>
+        </scene>
+        <!--Detalle Solicitud Atencion Controller-->
+        <scene sceneID="Cam-Y3-b59">
+            <objects>
+                <viewController id="g6D-Xn-vqf" customClass="DetalleSolicitudAtencionController" customModule="SofibMobile" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LZR-En-nAj"/>
+                        <viewControllerLayoutGuide type="bottom" id="Sx8-y8-9Wa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Z9V-jP-aTN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OeL-K6-GJJ">
+                                <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="barTintColor" red="0.0" green="0.40000000000000002" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Sofib Mobile" id="hqP-tV-ci0">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="reply" id="5hv-Bz-0Go">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </barButtonItem>
+                                        <rightBarButtonItems>
+                                            <barButtonItem image="icon_settings" id="GGC-9B-lhF">
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </barButtonItem>
+                                            <barButtonItem image="icon_search" id="cwI-M0-oRj">
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </barButtonItem>
+                                        </rightBarButtonItems>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6aG-ww-tvj">
+                                <color key="backgroundColor" red="0.098039215690000001" green="0.43529411759999997" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.098039215690000001" green="0.43529411759999997" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6aG-ww-tvj" firstAttribute="leading" secondItem="Z9V-jP-aTN" secondAttribute="leading" id="FPc-fR-81q"/>
+                            <constraint firstItem="OeL-K6-GJJ" firstAttribute="height" secondItem="Z9V-jP-aTN" secondAttribute="height" multiplier="0.07" id="Oxe-ZX-wmQ"/>
+                            <constraint firstItem="OeL-K6-GJJ" firstAttribute="leading" secondItem="Z9V-jP-aTN" secondAttribute="leading" id="Pe3-wS-BV6"/>
+                            <constraint firstItem="6aG-ww-tvj" firstAttribute="height" secondItem="Z9V-jP-aTN" secondAttribute="height" multiplier="0.15" id="QLE-cb-fbn"/>
+                            <constraint firstItem="6aG-ww-tvj" firstAttribute="top" secondItem="OeL-K6-GJJ" secondAttribute="bottom" id="Qy4-BZ-nus"/>
+                            <constraint firstItem="6aG-ww-tvj" firstAttribute="width" secondItem="Z9V-jP-aTN" secondAttribute="width" id="SfB-Ut-QZp"/>
+                            <constraint firstItem="OeL-K6-GJJ" firstAttribute="top" secondItem="LZR-En-nAj" secondAttribute="bottom" constant="10" id="T2b-jr-a3b"/>
+                            <constraint firstItem="OeL-K6-GJJ" firstAttribute="width" secondItem="Z9V-jP-aTN" secondAttribute="width" id="YKd-rn-6BG"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eBM-SG-Emj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2302" y="-148"/>
+        </scene>
+        <!--Detalle Solicitud Atencion Controller-->
+        <scene sceneID="cjx-AF-NRK">
+            <objects>
+                <viewController id="AAr-DR-7N2" customClass="DetalleSolicitudAtencionController" customModule="SofibMobile" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="neG-QJ-3sK"/>
+                        <viewControllerLayoutGuide type="bottom" id="v40-Bc-yUW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LTJ-bA-WEG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GUU-ad-UuT">
+                                <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="barTintColor" red="0.0" green="0.40000000000000002" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Sofib Mobile" id="Rke-Wv-3k7">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="reply" id="h1R-is-ss7">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </barButtonItem>
+                                        <rightBarButtonItems>
+                                            <barButtonItem image="icon_settings" id="7zj-v2-eDa">
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </barButtonItem>
+                                            <barButtonItem image="icon_search" id="WES-dN-rxF">
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </barButtonItem>
+                                        </rightBarButtonItems>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="oWk-Fd-rJZ">
+                                <color key="backgroundColor" red="0.098039215690000001" green="0.43529411759999997" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.098039215690000001" green="0.43529411759999997" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GUU-ad-UuT" firstAttribute="top" secondItem="neG-QJ-3sK" secondAttribute="bottom" constant="10" id="3sE-M9-UmI"/>
+                            <constraint firstItem="GUU-ad-UuT" firstAttribute="leading" secondItem="LTJ-bA-WEG" secondAttribute="leading" id="7nn-eo-VMG"/>
+                            <constraint firstItem="oWk-Fd-rJZ" firstAttribute="width" secondItem="LTJ-bA-WEG" secondAttribute="width" id="8GR-hO-T9Y"/>
+                            <constraint firstItem="oWk-Fd-rJZ" firstAttribute="leading" secondItem="LTJ-bA-WEG" secondAttribute="leading" id="8Uu-ib-7Ax"/>
+                            <constraint firstItem="oWk-Fd-rJZ" firstAttribute="top" secondItem="GUU-ad-UuT" secondAttribute="bottom" id="C2A-5h-Ju8"/>
+                            <constraint firstItem="GUU-ad-UuT" firstAttribute="height" secondItem="LTJ-bA-WEG" secondAttribute="height" multiplier="0.07" id="NLW-UH-U6i"/>
+                            <constraint firstItem="GUU-ad-UuT" firstAttribute="width" secondItem="LTJ-bA-WEG" secondAttribute="width" id="UeY-Xo-YEF"/>
+                            <constraint firstItem="oWk-Fd-rJZ" firstAttribute="height" secondItem="LTJ-bA-WEG" secondAttribute="height" multiplier="0.15" id="vFx-dB-KXm"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hss-cU-eaI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2302" y="-150"/>
+        </scene>
+        <!--Detalle Solicitud Atencion Controller-->
+        <scene sceneID="pfP-Jf-IbJ">
+            <objects>
+                <viewController id="8BK-OZ-b94" customClass="DetalleSolicitudAtencionController" customModule="SofibMobile" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2jN-ay-69g"/>
+                        <viewControllerLayoutGuide type="bottom" id="ubu-bL-DqS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Xyn-Ss-t1k">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NeV-V2-sHX">
+                                <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="barTintColor" red="0.0" green="0.40000000000000002" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Sofib Mobile" id="Rsw-Lw-Uft">
+                                        <barButtonItem key="rightBarButtonItem" image="icon_settings" id="Mbl-Ss-qdw">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gOo-AK-8rC">
+                                <color key="backgroundColor" red="0.098039215690000001" green="0.43529411759999997" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.098039215690000001" green="0.43529411759999997" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lista de menu tipo de consulta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fy5-Q4-7ph">
+                                <frame key="frameInset" minX="49" minY="192" width="268" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wFr-T0-PEx">
+                                <frame key="frameInset" minX="160" minY="318" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="KP0-Nb-KJu" kind="show" id="SIF-nv-7KI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NeV-V2-sHX" firstAttribute="top" secondItem="2jN-ay-69g" secondAttribute="bottom" constant="10" id="2Zc-0j-5TC"/>
+                            <constraint firstItem="gOo-AK-8rC" firstAttribute="top" secondItem="NeV-V2-sHX" secondAttribute="bottom" id="3IS-ql-AcX"/>
+                            <constraint firstItem="gOo-AK-8rC" firstAttribute="height" secondItem="Xyn-Ss-t1k" secondAttribute="height" multiplier="0.15" id="Do7-ux-Q4g"/>
+                            <constraint firstItem="NeV-V2-sHX" firstAttribute="width" secondItem="Xyn-Ss-t1k" secondAttribute="width" id="LQJ-qO-2wN"/>
+                            <constraint firstItem="NeV-V2-sHX" firstAttribute="leading" secondItem="Xyn-Ss-t1k" secondAttribute="leading" id="QDD-oD-Ryt"/>
+                            <constraint firstItem="NeV-V2-sHX" firstAttribute="height" secondItem="Xyn-Ss-t1k" secondAttribute="height" multiplier="0.07" id="gnl-6Q-4MH"/>
+                            <constraint firstItem="gOo-AK-8rC" firstAttribute="leading" secondItem="Xyn-Ss-t1k" secondAttribute="leading" id="vZe-jJ-rii"/>
+                            <constraint firstItem="gOo-AK-8rC" firstAttribute="width" secondItem="Xyn-Ss-t1k" secondAttribute="width" id="vwe-it-zoP"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gj0-Hv-ipq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3352.8000000000002" y="957.57121439280365"/>
         </scene>
     </scenes>
     <resources>
         <image name="icon_buscar" width="48" height="48"/>
+        <image name="icon_menu" width="24" height="24"/>
+        <image name="icon_more" width="48" height="48"/>
+        <image name="icon_search" width="24" height="24"/>
+        <image name="icon_settings" width="24" height="24"/>
         <image name="row_right" width="64" height="64"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="RyA-Da-AuA"/>
+        <segue reference="HSt-uP-ArV"/>
+        <segue reference="aMW-0x-8xR"/>
     </inferredMetricsTieBreakers>
 </document>

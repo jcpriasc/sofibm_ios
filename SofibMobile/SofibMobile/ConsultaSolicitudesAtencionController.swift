@@ -10,7 +10,7 @@ import UIKit
 
 class ConsultaSolicitudesAtencionController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
-    let solicitudesAtencion = ["Solicitud 1", "Solicitud 2", "Solicitud 3", "Solicitud 4"]
+    let solicitudesAtencion = ["Solicitud 1", "Solicitud 2", "Solicitud 3", "Solicitud 4", "Solicitud 5", "Solicitud 6", "Solicitud 7", "Solicitud 9"]
    
     
     override func viewWillAppear(_ animated: Bool) {

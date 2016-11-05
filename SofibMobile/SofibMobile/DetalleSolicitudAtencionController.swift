@@ -12,10 +12,10 @@ class DetalleSolicitudAtencionController: UIViewController {
 
     
     
-    @IBOutlet var btnAceptar: UIButton!
+    
     
     override func viewWillAppear(_ animated: Bool) {
-         btnAceptar.setTitle(NSLocalizedString("aceptar", comment: "aceptar"), for: UIControlState.normal)
+        
     }
     
     override func viewDidLoad() {
