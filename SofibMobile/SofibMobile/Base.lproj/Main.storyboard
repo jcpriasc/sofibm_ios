@@ -17,7 +17,7 @@
                         <viewControllerLayoutGuide type="bottom" id="bEh-Xs-6CB"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="WxN-Il-hMw">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m0B-94-Qks">
@@ -133,7 +133,7 @@
                         <viewControllerLayoutGuide type="bottom" id="reI-Oq-quL"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="2RF-fJ-FlY">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" backIndicatorImage="icon_buscar" backIndicatorTransitionMaskImage="icon_buscar" translatesAutoresizingMaskIntoConstraints="NO" id="HY5-Ve-egD">
@@ -161,10 +161,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="97" id="ofK-9g-rx0" customClass="SolicitudAtencionTableViewCell" customModule="SofibMobile" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="97"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="97"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ofK-9g-rx0" id="AA5-oZ-mII">
-                                            <frame key="frameInset" width="320" height="96"/>
+                                            <frame key="frameInset" width="375" height="96"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Solicitud de Atención" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CJZ-Xc-cwV">
@@ -301,7 +301,7 @@
                         <viewControllerLayoutGuide type="bottom" id="gqg-Kt-WKy"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="cdT-Rv-jlm">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VIV-fV-bHc">
@@ -350,7 +350,7 @@
                                 <color key="backgroundColor" white="0.79954398230270107" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="6yy-ia-uri">
-                                <frame key="frameInset" minX="10" minY="147" width="320" height="17"/>
+                                <frame key="frameInset" minX="10" minY="147" width="375" height="20"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Credencial Paciente" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zWe-nt-Thc">
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -556,13 +556,13 @@
         <!--Opciones Secundarias View Controller-->
         <scene sceneID="kVM-xz-iOc">
             <objects>
-                <viewController id="KP0-Nb-KJu" customClass="OpcionesSecundariasViewController" customModule="SofibMobile" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="tableViewMedicoController" id="KP0-Nb-KJu" customClass="OpcionesSecundariasViewController" customModule="SofibMobile" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kFJ-O3-FAP"/>
                         <viewControllerLayoutGuide type="bottom" id="H1e-TR-Udk"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="RUz-Iu-9Ki">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pAp-nm-cQf">
@@ -602,10 +602,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellOpcion" rowHeight="63" id="rSC-Wd-mH4" customClass="OpcionesSecundariasViewCell" customModule="SofibMobile" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="63"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="63"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rSC-Wd-mH4" id="XK5-YC-bzf">
-                                            <frame key="frameInset" width="320" height="62"/>
+                                            <frame key="frameInset" width="375" height="62"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_more" translatesAutoresizingMaskIntoConstraints="NO" id="Npr-aa-IRh"/>
@@ -662,16 +662,16 @@
             </objects>
             <point key="canvasLocation" x="4489" y="967"/>
         </scene>
-        <!--Detalle Solicitud Atencion Controller-->
+        <!--Opciones Principales View Controller-->
         <scene sceneID="pfP-Jf-IbJ">
             <objects>
-                <viewController id="8BK-OZ-b94" customClass="DetalleSolicitudAtencionController" customModule="SofibMobile" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8BK-OZ-b94" customClass="OpcionesPrincipalesViewController" customModule="SofibMobile" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2jN-ay-69g"/>
                         <viewControllerLayoutGuide type="bottom" id="ubu-bL-DqS"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Xyn-Ss-t1k">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NeV-V2-sHX">
@@ -694,28 +694,7 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gOo-AK-8rC">
-                                <color key="backgroundColor" red="0.098039215690000001" green="0.43529411759999997" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" red="0.098039215690000001" green="0.43529411759999997" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lista de menu tipo de consulta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fy5-Q4-7ph">
-                                <frame key="frameInset" minX="49" minY="192" width="268" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wFr-T0-PEx">
-                                <frame key="frameInset" minX="158" minY="318" width="50" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="medica"/>
-                                <connections>
-                                    <segue destination="KP0-Nb-KJu" kind="show" id="SIF-nv-7KI"/>
-                                </connections>
-                            </button>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uwt-sh-Njw">
-                                <frame key="frameInset" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uwt-sh-Njw">
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="dT8-1A-F6G"/>
                                     <barButtonItem systemItem="search" id="FLb-4f-yXZ">
@@ -726,25 +705,63 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="Fxz-9F-0iz"/>
                                 </items>
                             </toolbar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KIU-Ef-n9I">
-                                <frame key="frameInset" minX="145" minY="428" width="57" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="logistica"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="owG-6Q-Rxb">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellOpcion" rowHeight="54" id="nUR-ad-QMT" customClass="OpcionesSecundariasViewCell" customModule="SofibMobile" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="54"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nUR-ad-QMT" id="azn-Ah-p2l">
+                                            <frame key="frameInset" width="375" height="53"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_more" translatesAutoresizingMaskIntoConstraints="NO" id="t9G-xG-50p"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DZe-NF-VQ6">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.068957276639999995" green="0.35346406699999999" blue="0.56864321230000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="DZe-NF-VQ6" firstAttribute="width" secondItem="azn-Ah-p2l" secondAttribute="width" id="8z8-bE-JzM"/>
+                                                <constraint firstAttribute="bottom" secondItem="t9G-xG-50p" secondAttribute="bottom" constant="10" id="DbJ-eG-lL5"/>
+                                                <constraint firstItem="t9G-xG-50p" firstAttribute="top" secondItem="azn-Ah-p2l" secondAttribute="top" constant="10" id="Dli-9K-dbs"/>
+                                                <constraint firstItem="DZe-NF-VQ6" firstAttribute="leading" secondItem="t9G-xG-50p" secondAttribute="trailing" constant="10" id="Eqr-Lf-vMq"/>
+                                                <constraint firstItem="t9G-xG-50p" firstAttribute="leading" secondItem="azn-Ah-p2l" secondAttribute="leading" constant="10" id="QAB-Ay-xCS"/>
+                                                <constraint firstItem="DZe-NF-VQ6" firstAttribute="height" secondItem="azn-Ah-p2l" secondAttribute="height" multiplier="0.5" id="X2c-5R-2oe"/>
+                                                <constraint firstItem="DZe-NF-VQ6" firstAttribute="top" secondItem="azn-Ah-p2l" secondAttribute="top" constant="20" id="Zqc-cI-XWi"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <constraints>
+                                            <constraint firstItem="t9G-xG-50p" firstAttribute="width" secondItem="nUR-ad-QMT" secondAttribute="width" multiplier="0.1" id="D4o-yJ-jVW"/>
+                                            <constraint firstItem="t9G-xG-50p" firstAttribute="height" secondItem="nUR-ad-QMT" secondAttribute="height" priority="250" id="NIQ-qR-Dmh"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="imgOpcion" destination="t9G-xG-50p" id="cnM-r3-GxV"/>
+                                            <outlet property="lblOpcion" destination="DZe-NF-VQ6" id="iCd-m5-pOs"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                                 <connections>
-                                    <segue destination="0YR-M3-gvk" kind="show" id="eZa-SR-rzn"/>
+                                    <outlet property="dataSource" destination="8BK-OZ-b94" id="yil-EL-TNR"/>
+                                    <outlet property="delegate" destination="8BK-OZ-b94" id="iMj-aQ-H4a"/>
                                 </connections>
-                            </button>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="owG-6Q-Rxb" firstAttribute="leading" secondItem="Xyn-Ss-t1k" secondAttribute="leading" id="18w-IZ-df2"/>
+                            <constraint firstItem="Uwt-sh-Njw" firstAttribute="top" secondItem="owG-6Q-Rxb" secondAttribute="bottom" id="1Ll-0M-WKS"/>
                             <constraint firstItem="NeV-V2-sHX" firstAttribute="top" secondItem="2jN-ay-69g" secondAttribute="bottom" constant="10" id="2Zc-0j-5TC"/>
-                            <constraint firstItem="gOo-AK-8rC" firstAttribute="top" secondItem="NeV-V2-sHX" secondAttribute="bottom" id="3IS-ql-AcX"/>
-                            <constraint firstItem="gOo-AK-8rC" firstAttribute="height" secondItem="Xyn-Ss-t1k" secondAttribute="height" multiplier="0.15" id="Do7-ux-Q4g"/>
+                            <constraint firstAttribute="trailing" secondItem="Uwt-sh-Njw" secondAttribute="trailing" id="F0E-Sv-Krp"/>
+                            <constraint firstItem="ubu-bL-DqS" firstAttribute="top" secondItem="Uwt-sh-Njw" secondAttribute="bottom" id="Gqu-4D-h9y"/>
+                            <constraint firstItem="owG-6Q-Rxb" firstAttribute="height" secondItem="Xyn-Ss-t1k" secondAttribute="height" multiplier="0.82" id="GsJ-FD-G9g"/>
                             <constraint firstItem="NeV-V2-sHX" firstAttribute="width" secondItem="Xyn-Ss-t1k" secondAttribute="width" id="LQJ-qO-2wN"/>
+                            <constraint firstItem="owG-6Q-Rxb" firstAttribute="top" secondItem="NeV-V2-sHX" secondAttribute="bottom" id="NXI-ad-ciR"/>
+                            <constraint firstItem="Uwt-sh-Njw" firstAttribute="leading" secondItem="Xyn-Ss-t1k" secondAttribute="leading" id="P5g-Kt-gk0"/>
                             <constraint firstItem="NeV-V2-sHX" firstAttribute="leading" secondItem="Xyn-Ss-t1k" secondAttribute="leading" id="QDD-oD-Ryt"/>
                             <constraint firstItem="NeV-V2-sHX" firstAttribute="height" secondItem="Xyn-Ss-t1k" secondAttribute="height" multiplier="0.07" id="gnl-6Q-4MH"/>
-                            <constraint firstItem="gOo-AK-8rC" firstAttribute="leading" secondItem="Xyn-Ss-t1k" secondAttribute="leading" id="vZe-jJ-rii"/>
-                            <constraint firstItem="gOo-AK-8rC" firstAttribute="width" secondItem="Xyn-Ss-t1k" secondAttribute="width" id="vwe-it-zoP"/>
+                            <constraint firstItem="owG-6Q-Rxb" firstAttribute="width" secondItem="Xyn-Ss-t1k" secondAttribute="width" id="hiF-i0-rdF"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -755,13 +772,13 @@
         <!--Opciones Secundarias Log View Controller-->
         <scene sceneID="iNB-zj-9PN">
             <objects>
-                <viewController id="0YR-M3-gvk" customClass="OpcionesSecundariasLogViewController" customModule="SofibMobile" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="tableViewLogisticoController" id="0YR-M3-gvk" customClass="OpcionesSecundariasLogViewController" customModule="SofibMobile" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wTD-xA-9Vb"/>
                         <viewControllerLayoutGuide type="bottom" id="S0d-vI-qiq"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="GmQ-wD-XzA">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yqC-tD-ytX">
@@ -797,10 +814,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellOpcion" rowHeight="63" id="E9A-R3-poM" customClass="OpcionesSecundariasViewCell" customModule="SofibMobile" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="63"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="63"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="E9A-R3-poM" id="jep-xM-TeK">
-                                            <frame key="frameInset" width="320" height="62"/>
+                                            <frame key="frameInset" width="375" height="62"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_more" translatesAutoresizingMaskIntoConstraints="NO" id="bbF-Jh-Ecn"/>
@@ -866,7 +883,7 @@
                         <viewControllerLayoutGuide type="bottom" id="g4u-jI-PwH"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="2Om-Vq-ada">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PFn-PF-QgH">
@@ -899,10 +916,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellOpcion" rowHeight="63" id="uLj-V3-4M8" customClass="OpcionesSecundariasViewCell" customModule="SofibMobile" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="63"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="63"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uLj-V3-4M8" id="wKY-SJ-fGx">
-                                            <frame key="frameInset" width="320" height="62"/>
+                                            <frame key="frameInset" width="375" height="62"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_more" translatesAutoresizingMaskIntoConstraints="NO" id="Nnf-GC-unU"/>
@@ -968,7 +985,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Evo-e5-vpc"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="LMg-T8-LvY">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oLB-NM-atC">
@@ -1001,10 +1018,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellOpcion" rowHeight="63" id="P7f-LO-Tht" customClass="OpcionesSecundariasViewCell" customModule="SofibMobile" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="63"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="63"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="P7f-LO-Tht" id="1oO-6Z-Kkp">
-                                            <frame key="frameInset" width="320" height="62"/>
+                                            <frame key="frameInset" width="375" height="62"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_more" translatesAutoresizingMaskIntoConstraints="NO" id="a0P-FT-Q4N"/>
@@ -1070,7 +1087,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Rxt-Iq-cNS"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="6xC-fK-CqM">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZiZ-6r-eHP">
@@ -1103,10 +1120,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellOpcion" rowHeight="63" id="0tJ-vA-A9H" customClass="OpcionesSecundariasViewCell" customModule="SofibMobile" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="63"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="63"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0tJ-vA-A9H" id="K8K-VQ-4Gz">
-                                            <frame key="frameInset" width="320" height="62"/>
+                                            <frame key="frameInset" width="375" height="62"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_more" translatesAutoresizingMaskIntoConstraints="NO" id="akq-B5-sDG"/>
@@ -1172,7 +1189,7 @@
                         <viewControllerLayoutGuide type="bottom" id="lRv-Ag-69W"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tsg-y4-l2A">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VWn-8S-zyb">
@@ -1205,10 +1222,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellOpcion" rowHeight="63" id="Gqk-Mp-gvo" customClass="OpcionesSecundariasViewCell" customModule="SofibMobile" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="63"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="63"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Gqk-Mp-gvo" id="nkg-WS-rp8">
-                                            <frame key="frameInset" width="320" height="62"/>
+                                            <frame key="frameInset" width="375" height="62"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_more" translatesAutoresizingMaskIntoConstraints="NO" id="wNB-vC-d8R"/>
@@ -1274,7 +1291,7 @@
                         <viewControllerLayoutGuide type="bottom" id="AQM-ll-7Qs"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="YFP-a9-Y1g">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="emE-XR-pFt">
@@ -1307,10 +1324,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellOpcion" rowHeight="63" id="y4r-8j-w0P" customClass="OpcionesSecundariasViewCell" customModule="SofibMobile" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="63"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="63"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="y4r-8j-w0P" id="5Gt-a1-IsP">
-                                            <frame key="frameInset" width="320" height="62"/>
+                                            <frame key="frameInset" width="375" height="62"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_more" translatesAutoresizingMaskIntoConstraints="NO" id="SiG-vh-8nF"/>
@@ -1376,7 +1393,7 @@
                         <viewControllerLayoutGuide type="bottom" id="MA2-Pm-wdX"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="wBd-VX-cCh">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zO4-oA-LTY">
@@ -1409,10 +1426,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellOpcion" rowHeight="63" id="pov-3Y-OUf" customClass="OpcionesSecundariasViewCell" customModule="SofibMobile" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="63"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="63"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pov-3Y-OUf" id="5yo-IQ-7Wd">
-                                            <frame key="frameInset" width="320" height="62"/>
+                                            <frame key="frameInset" width="375" height="62"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_more" translatesAutoresizingMaskIntoConstraints="NO" id="e5s-a5-BIh"/>
@@ -1478,7 +1495,7 @@
                         <viewControllerLayoutGuide type="bottom" id="I74-2N-Zc6"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="6fH-dQ-rKR">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ymJ-Wg-nnE">
@@ -1511,10 +1528,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellOpcion" rowHeight="63" id="S2V-w6-puv" customClass="OpcionesSecundariasViewCell" customModule="SofibMobile" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="63"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="63"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="S2V-w6-puv" id="rqt-yS-dJm">
-                                            <frame key="frameInset" width="320" height="62"/>
+                                            <frame key="frameInset" width="375" height="62"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_more" translatesAutoresizingMaskIntoConstraints="NO" id="cgD-Ng-Dq5"/>
@@ -1580,7 +1597,7 @@
                         <viewControllerLayoutGuide type="bottom" id="44Y-Qz-tus"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="wqO-zV-u1G">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VW5-X3-a29">
@@ -1591,9 +1608,6 @@
                                 </textAttributes>
                                 <items>
                                     <navigationItem title="Sofib Mobile" id="NQK-la-504">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="reply" id="iXf-mc-t0t">
-                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" image="icon_settings" id="Ch9-9r-XcY">
                                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </barButtonItem>
@@ -1605,7 +1619,11 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="kcZ-ZY-sul"/>
                                     <barButtonItem systemItem="search" id="n1Q-N5-mhR"/>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="Mha-ci-nqf"/>
-                                    <barButtonItem image="icon_menu" id="15D-1Z-yj3"/>
+                                    <barButtonItem image="icon_menu" id="15D-1Z-yj3">
+                                        <connections>
+                                            <segue destination="KP0-Nb-KJu" kind="show" id="6Ui-03-mtX"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="PN7-dG-TWI"/>
                                 </items>
                             </toolbar>
@@ -1613,10 +1631,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="82" id="nEO-Gg-6h4" customClass="AutorizacionesViewCell" customModule="SofibMobile" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="82"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="82"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" tableViewCell="nEO-Gg-6h4" id="XbI-ph-7uH">
-                                            <frame key="frameInset" minX="0.0%" minY="0.0%" width="320" height="81"/>
+                                            <frame key="frameInset" minX="0.0%" minY="0.0%" width="375" height="81"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabel" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Omt-Sz-W7n">
@@ -1686,7 +1704,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="aMW-0x-8xR"/>
         <segue reference="X5d-X6-8yd"/>
-        <segue reference="pgR-eB-Xdl"/>
+        <segue reference="BOr-YO-rwJ"/>
         <segue reference="HSt-uP-ArV"/>
     </inferredMetricsTieBreakers>
 </document>
