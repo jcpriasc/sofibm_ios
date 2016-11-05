@@ -660,7 +660,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QK3-Tu-Sid" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4489" y="967"/>
+            <point key="canvasLocation" x="3999" y="958"/>
         </scene>
         <!--Detalle Solicitud Atencion Controller-->
         <scene sceneID="j7l-Wy-POe">
@@ -818,14 +818,14 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="Fxz-9F-0iz"/>
                                 </items>
                             </toolbar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="owG-6Q-Rxb">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="66" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="owG-6Q-Rxb">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellOpcion" rowHeight="54" id="nUR-ad-QMT" customClass="OpcionesSecundariasViewCell" customModule="SofibMobile" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="54"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellOpcion" rowHeight="66" id="nUR-ad-QMT" customClass="OpcionesSecundariasViewCell" customModule="SofibMobile" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="66"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nUR-ad-QMT" id="azn-Ah-p2l">
-                                            <frame key="frameInset" width="375" height="53"/>
+                                            <frame key="frameInset" width="375" height="65"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_more" translatesAutoresizingMaskIntoConstraints="NO" id="t9G-xG-50p"/>
@@ -837,10 +837,10 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="DZe-NF-VQ6" firstAttribute="width" secondItem="azn-Ah-p2l" secondAttribute="width" id="8z8-bE-JzM"/>
-                                                <constraint firstAttribute="bottom" secondItem="t9G-xG-50p" secondAttribute="bottom" constant="10" id="DbJ-eG-lL5"/>
-                                                <constraint firstItem="t9G-xG-50p" firstAttribute="top" secondItem="azn-Ah-p2l" secondAttribute="top" constant="10" id="Dli-9K-dbs"/>
-                                                <constraint firstItem="DZe-NF-VQ6" firstAttribute="leading" secondItem="t9G-xG-50p" secondAttribute="trailing" constant="10" id="Eqr-Lf-vMq"/>
-                                                <constraint firstItem="t9G-xG-50p" firstAttribute="leading" secondItem="azn-Ah-p2l" secondAttribute="leading" constant="10" id="QAB-Ay-xCS"/>
+                                                <constraint firstAttribute="bottom" secondItem="t9G-xG-50p" secondAttribute="bottom" constant="15" id="DbJ-eG-lL5"/>
+                                                <constraint firstItem="t9G-xG-50p" firstAttribute="top" secondItem="azn-Ah-p2l" secondAttribute="top" constant="15" id="Dli-9K-dbs"/>
+                                                <constraint firstItem="DZe-NF-VQ6" firstAttribute="leading" secondItem="t9G-xG-50p" secondAttribute="trailing" constant="15" id="Eqr-Lf-vMq"/>
+                                                <constraint firstItem="t9G-xG-50p" firstAttribute="leading" secondItem="azn-Ah-p2l" secondAttribute="leading" constant="15" id="QAB-Ay-xCS"/>
                                                 <constraint firstItem="DZe-NF-VQ6" firstAttribute="height" secondItem="azn-Ah-p2l" secondAttribute="height" multiplier="0.5" id="X2c-5R-2oe"/>
                                                 <constraint firstItem="DZe-NF-VQ6" firstAttribute="top" secondItem="azn-Ah-p2l" secondAttribute="top" constant="20" id="Zqc-cI-XWi"/>
                                             </constraints>
