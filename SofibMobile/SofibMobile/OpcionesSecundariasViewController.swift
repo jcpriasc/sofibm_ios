@@ -1,21 +1,30 @@
 //
-//  DetalleSolicitudAtencionController.swift
+//  OpcionesSecundariasViewController.swift
 //  SofibMobile
 //
-//  Created by Cesar Lopez on 2/11/16.
+//  Created by JUAN CAMILO PUENTE RIASCOS on 11/4/16.
 //  Copyright © 2016 vortexbird. All rights reserved.
 //
 
 import UIKit
 
-class DetalleSolicitudAtencionController:  UIViewController {
+class OpcionesSecundariasViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
 
+    let opciones = ["Solicitud 1"]
     
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
+        return (opciones.count)
+    }
     
-    
-    
-    override func viewWillAppear(_ animated: Bool) {
+
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    {
+        let cellOpcion = tableView.dequeueReusableCell(withIdentifier: "cellOpcion", for: indexPath) as! OpcionesSecundariasViewCell
         
+        cellOpcion.imgOpcion.image = UIImage(named: "icon_aprobacion")
+        cellOpcion.lblOpcion.text = opciones[indexPath.row]
+        return cellOpcion
     }
     
     override func viewDidLoad() {
