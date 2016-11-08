@@ -65,9 +65,8 @@ class OpcionesSecundariasLogViewController: UIViewController , UITableViewDataSo
         
         switch opcionSeleccionada {
         case 0:
-            let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "testView")
+            let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "servicioNoAsistencialController")
             self.show(vc as! UIViewController, sender: vc)
-            print("The first letter of the alphabet")
         case 1:
             let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "testView2")
             self.show(vc as! UIViewController, sender: vc)
