@@ -35,16 +35,5 @@ class ServicioNoAsistencialViewCellController: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func setdata(servicioNoAsistencial: Dictionary<String, Any>){
-        
-        print("factura \(servicioNoAsistencial)")
-        
-        if let numeroFactura = servicioNoAsistencial["codSolicitud"] as? Int{
-            print("codSolicitud: \(numeroFactura)")
-            self.txtNumeroSolicitud.text = "\(numeroFactura)"
-        }else{
-            print("No entro")
-        }
-    }
 
 }

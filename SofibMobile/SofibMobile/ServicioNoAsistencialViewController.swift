@@ -13,9 +13,6 @@ class ServicioNoAsistencialViewController: UIViewController, UITableViewDataSour
 
     let servicioNoAsistencial = ["Solicitud 1", "Solicitud 2", "Solicitud 3", "Solicitud 4", "Solicitud 5", "Solicitud 6", "Solicitud 7", "Solicitud 9"]
     
-    let idCelda = "cell"
-    @IBOutlet var lstServicioNoAsistencial: UITableView!
-    var servicios = NSArray();
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,20 +46,6 @@ class ServicioNoAsistencialViewController: UIViewController, UITableViewDataSour
         return (cell)
  
         
-        //Opcional biding o validacion de opcionales para crear la celda
-        
-        /*if let factura = self.servicios[indexPath.row] as? Dictionary<String, Any>{
-            
-            let cell = self.lstServicioNoAsistencial.dequeueReusableCell(withIdentifier: self.idCelda) as! ServicioNoAsistencialViewCellController
-            
-            cell.setdata(servicioNoAsistencial: factura)
-            //print("objeto diccionario \(factura)")
-            return cell
-        }
-        
-        return UITableViewCell();
-         */
-        
     }
     
     override func didReceiveMemoryWarning() {
@@ -70,26 +53,7 @@ class ServicioNoAsistencialViewController: UIViewController, UITableViewDataSour
         // Dispose of any resources that can be recreated.
     }
 
-    
-    func obtenerServiciosNoAsistenciales(){
-        Alamofire.request("http://pruebas-sectorsalud.coomeva.com.co/saludmp-ws/jax-rs/saludmp-sofibmobile/serviciosNoAsistenciales/SAC/ABCD1234/852").responseJSON { response in
-            print(response.request)  // original URL request
-            print(response.response) // HTTP URL response
-            print(response.data)     // server data
-            print(response.result)   // result of response serialization
-            
-            if let JSON = response.result.value as? NSArray{
-                
-                self.servicios = JSON
-                self.lstServicioNoAsistencial.reloadData()
-                
-                //for objecty in JSON{
-                //    print("objeto \(objecty)")
-                //}
-                //print("JSON: \(JSON)")
-            }
-        }
-    }
+  
 
     
 }
