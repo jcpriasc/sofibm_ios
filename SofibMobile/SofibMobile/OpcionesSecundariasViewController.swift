@@ -72,9 +72,18 @@ class OpcionesSecundariasViewController: UIViewController, UITableViewDataSource
             let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "autorizacionesView")
             self.show(vc as! UIViewController, sender: vc)
         case 1:
-            let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "testView2")
-            self.show(vc as! UIViewController, sender: vc)
             print("The last letter of the alphabet")
+        case 2:
+            let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "informesMedicosView")
+            self.show(vc as! UIViewController, sender: vc)
+        case 3:
+            let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "documentosMedicosView")
+            self.show(vc as! UIViewController, sender: vc)
+        case 4:
+            print("The last letter of the alphabet")
+        case 5:
+            let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "epicrisisView")
+            self.show(vc as! UIViewController, sender: vc)
         default:
             print("Some other character")
         }
