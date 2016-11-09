@@ -23,6 +23,9 @@ class SolicitudAprobacionViewCellController: UITableViewCell {
         super.awakeFromNib()
         
         // Initialization code
+        lblFechaSolicitud.text = NSLocalizedString("lbl_fecha_solicitud", comment: "lbl_fecha_solicitud")
+        lblEstado.text = NSLocalizedString("lbl_estado", comment: "lbl_estado")
+        lblNombrePaciente.text = NSLocalizedString("lbl_nombre_paciente", comment: "lbl_nombre_paciente")
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {

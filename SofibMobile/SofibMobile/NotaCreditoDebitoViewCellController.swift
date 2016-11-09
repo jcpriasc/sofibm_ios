@@ -24,6 +24,10 @@ class NotaCreditoDebitoViewCellController: UITableViewCell {
         super.awakeFromNib()
         
         // Initialization code
+        lblFechaAprobacion.text = NSLocalizedString("lbl_fecha_aprobacion", comment: "lbl_fecha_aprobacion")
+        lblFechaExpedicion.text = NSLocalizedString("lbl_fecha_expedicion", comment: "lbl_fecha_expedicion")
+        lblNumeroFactura.text = NSLocalizedString("lbl_numero_factura", comment: "lbl_numero_factura")
+        lblNumeroNota.text = NSLocalizedString("lbl_numero_nota", comment: "lbl_numero_nota")
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {

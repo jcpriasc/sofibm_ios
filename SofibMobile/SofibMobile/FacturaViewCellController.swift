@@ -25,6 +25,10 @@ class FacturaViewCellController: UITableViewCell {
         super.awakeFromNib()
         
         // Initialization code
+        lblValorTotalFactura.text = NSLocalizedString("lbl_valor_total_factura", comment: "lbl_valor_total_factura")
+        lblEstado.text = NSLocalizedString("lbl_estado", comment: "lbl_estado")
+        lblFechaExpedicion.text = NSLocalizedString("lbl_fecha_expedicion", comment: "lbl_fecha_expedicion")
+        lblNumeroFactura.text = NSLocalizedString("lbl_numero_factura", comment: "lbl_numero_factura")
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {

@@ -161,10 +161,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="97" id="ofK-9g-rx0" customClass="SolicitudAtencionTableViewCell" customModule="SofibMobile" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="1000" height="97"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="97"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ofK-9g-rx0" id="AA5-oZ-mII">
-                                            <frame key="frameInset" width="1000" height="97"/>
+                                            <frame key="frameInset" width="375" height="97"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Solicitud de Atención" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CJZ-Xc-cwV">
@@ -602,10 +602,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellOpcion" rowHeight="63" id="rSC-Wd-mH4" customClass="OpcionesSecundariasViewCell" customModule="SofibMobile" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="1000" height="63"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="63"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rSC-Wd-mH4" id="XK5-YC-bzf">
-                                            <frame key="frameInset" width="1000" height="63"/>
+                                            <frame key="frameInset" width="375" height="63"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_more" translatesAutoresizingMaskIntoConstraints="NO" id="Npr-aa-IRh"/>
@@ -709,10 +709,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellOpcion" rowHeight="63" id="nUR-ad-QMT" customClass="OpcionesSecundariasViewCell" customModule="SofibMobile" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="1000" height="63"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="63"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nUR-ad-QMT" id="azn-Ah-p2l">
-                                            <frame key="frameInset" width="1000" height="62"/>
+                                            <frame key="frameInset" width="375" height="62"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_more" translatesAutoresizingMaskIntoConstraints="NO" id="t9G-xG-50p"/>
@@ -805,10 +805,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellOpcion" rowHeight="63" id="E9A-R3-poM" customClass="OpcionesSecundariasViewCell" customModule="SofibMobile" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="1000" height="63"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="63"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="E9A-R3-poM" id="jep-xM-TeK">
-                                            <frame key="frameInset" width="1000" height="63"/>
+                                            <frame key="frameInset" width="375" height="63"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_more" translatesAutoresizingMaskIntoConstraints="NO" id="bbF-Jh-Ecn"/>
@@ -915,10 +915,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellOpcion" rowHeight="63" id="0tJ-vA-A9H" customClass="OpcionesSecundariasViewCell" customModule="SofibMobile" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="1000" height="63"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="63"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0tJ-vA-A9H" id="K8K-VQ-4Gz">
-                                            <frame key="frameInset" width="1000" height="63"/>
+                                            <frame key="frameInset" width="375" height="63"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_more" translatesAutoresizingMaskIntoConstraints="NO" id="akq-B5-sDG"/>
@@ -1018,10 +1018,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="82" id="nEO-Gg-6h4" customClass="AutorizacionesViewCell" customModule="SofibMobile" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="1000" height="82"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="82"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" tableViewCell="nEO-Gg-6h4" id="XbI-ph-7uH">
-                                            <frame key="frameInset" minX="0.0%" minY="0.0%" width="1000" height="82"/>
+                                            <frame key="frameInset" minX="0.0%" minY="0.0%" width="375" height="82"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabel" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Omt-Sz-W7n">
@@ -1117,10 +1117,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="83" id="KGT-fp-9mm" customClass="ServicioNoAsistencialViewCellController" customModule="SofibMobile" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="1000" height="83"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="83"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGT-fp-9mm" id="8fP-LH-zSY">
-                                            <frame key="frameInset" width="1000" height="83"/>
+                                            <frame key="frameInset" width="375" height="83"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Número Solicitud" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cd6-cj-h58">
@@ -1202,6 +1202,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="sMU-Ri-KKp" id="hzJ-FL-lN0"/>
+                                    <outlet property="delegate" destination="sMU-Ri-KKp" id="H1H-Da-ptn"/>
+                                </connections>
                             </tableView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="99T-Kq-gJL">
                                 <items>
@@ -1272,10 +1276,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="136" id="sqa-Ip-sLs" customClass="GiroViewCellController" customModule="SofibMobile" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="1000" height="136"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="136"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sqa-Ip-sLs" id="16b-4t-6Qf">
-                                            <frame key="frameInset" width="1000" height="136"/>
+                                            <frame key="frameInset" width="375" height="136"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Identificación" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m1d-gw-51Z">
@@ -1391,6 +1395,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="tXs-pV-0GH" id="BQA-GX-nMK"/>
+                                    <outlet property="delegate" destination="tXs-pV-0GH" id="vPm-Sb-y88"/>
+                                </connections>
                             </tableView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Cy-UZ-XUC">
                                 <items>
@@ -1461,10 +1469,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="138" id="69Z-qT-5qG" customClass="NotaCreditoGiroViewCellController" customModule="SofibMobile" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="1000" height="138"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="138"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="69Z-qT-5qG" id="E9D-vJ-7fh">
-                                            <frame key="frameInset" width="1000" height="138"/>
+                                            <frame key="frameInset" width="375" height="138"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Consecutivo Nota Crédito" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jdI-uo-xzm">
@@ -1561,6 +1569,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="C08-71-CnS" id="9LC-3v-4JT"/>
+                                    <outlet property="delegate" destination="C08-71-CnS" id="jo7-yu-S8k"/>
+                                </connections>
                             </tableView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8hb-aZ-dRc">
                                 <items>
@@ -1631,10 +1643,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="101" id="zqU-qp-I5E" customClass="FacturaViewCellController" customModule="SofibMobile" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="1000" height="101"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="101"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zqU-qp-I5E" id="yJX-cS-du6">
-                                            <frame key="frameInset" width="1000" height="101"/>
+                                            <frame key="frameInset" width="375" height="101"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Número Factura" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nXr-xD-PD7">
@@ -1732,6 +1744,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="fnA-1V-9Z2" id="0Qp-Ps-zjJ"/>
+                                    <outlet property="delegate" destination="fnA-1V-9Z2" id="vxs-U5-C1K"/>
+                                </connections>
                             </tableView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ibg-dT-PNf">
                                 <items>
@@ -1802,10 +1818,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="97" id="Qfe-ln-34e" customClass="NotaCreditoDebitoViewCellController" customModule="SofibMobile" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="1000" height="97"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="97"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Qfe-ln-34e" id="kwx-Mz-2wE">
-                                            <frame key="frameInset" width="1000" height="97"/>
+                                            <frame key="frameInset" width="375" height="97"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Número Nota" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zrq-Bu-HIQ">
@@ -1903,6 +1919,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="QhT-Im-ntB" id="OP4-uc-QDJ"/>
+                                    <outlet property="delegate" destination="QhT-Im-ntB" id="SC0-8j-dEH"/>
+                                </connections>
                             </tableView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AbZ-PY-xFZ">
                                 <items>
@@ -1973,10 +1993,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="83" id="pxC-05-KZD" customClass="UtilizacionesViewCellController" customModule="SofibMobile" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="1000" height="83"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="83"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pxC-05-KZD" id="8Uy-DD-cqg">
-                                            <frame key="frameInset" width="1000" height="83"/>
+                                            <frame key="frameInset" width="375" height="83"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Convenio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rvb-HE-fe9">
@@ -2058,6 +2078,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="R2h-49-DaH" id="PEx-e7-gh5"/>
+                                    <outlet property="delegate" destination="R2h-49-DaH" id="8OT-eQ-rgR"/>
+                                </connections>
                             </tableView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MMI-hp-aS3">
                                 <items>
@@ -2128,10 +2152,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="94" id="4lV-qL-deS" customClass="EncuestaViewCellController" customModule="SofibMobile" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="1000" height="94"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="94"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4lV-qL-deS" id="77B-6D-ZGb">
-                                            <frame key="frameInset" width="1000" height="94"/>
+                                            <frame key="frameInset" width="375" height="94"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pregunta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Jv-uo-AVN">
@@ -2204,6 +2228,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="84J-L2-AAz" id="REy-h6-Al7"/>
+                                    <outlet property="delegate" destination="84J-L2-AAz" id="gtd-xP-VdD"/>
+                                </connections>
                             </tableView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EKt-0a-5ia">
                                 <items>
@@ -2359,6 +2387,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="b1F-e8-CC5" id="ETT-Ix-ItO"/>
+                                    <outlet property="delegate" destination="b1F-e8-CC5" id="EbE-Jf-fvA"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -2370,7 +2402,7 @@
                             <constraint firstItem="BBa-in-1gj" firstAttribute="leading" secondItem="c4X-nu-p1u" secondAttribute="leading" id="IWa-cm-3NC"/>
                             <constraint firstItem="jOX-y6-tIC" firstAttribute="width" secondItem="c4X-nu-p1u" secondAttribute="width" id="K2W-Mb-ia5"/>
                             <constraint firstItem="jOX-y6-tIC" firstAttribute="height" secondItem="c4X-nu-p1u" secondAttribute="height" multiplier="0.07" id="PVo-Ua-aew"/>
-                            <constraint firstItem="bk0-fX-YhY" firstAttribute="height" secondItem="c4X-nu-p1u" secondAttribute="height" multiplier="0.81" id="SMj-4j-ibk"/>
+                            <constraint firstItem="bk0-fX-YhY" firstAttribute="height" secondItem="c4X-nu-p1u" secondAttribute="height" multiplier="0.8" id="SMj-4j-ibk"/>
                             <constraint firstItem="bk0-fX-YhY" firstAttribute="width" secondItem="c4X-nu-p1u" secondAttribute="width" id="dda-Ps-mS0"/>
                             <constraint firstItem="jOX-y6-tIC" firstAttribute="top" secondItem="IbP-HH-Dlm" secondAttribute="bottom" constant="10" id="oaT-qx-ctn"/>
                             <constraint firstAttribute="trailing" secondItem="bk0-fX-YhY" secondAttribute="trailing" id="rSa-kg-Ya5"/>
@@ -2417,10 +2449,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="83" id="8Rp-BS-KOW" customClass="ServicioNoAsistencialViewCellController" customModule="SofibMobile" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="1000" height="83"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="83"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8Rp-BS-KOW" id="UuV-e1-ZBe">
-                                            <frame key="frameInset" width="1000" height="83"/>
+                                            <frame key="frameInset" width="375" height="83"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Número Solicitud" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Zg-Jx-mG4">
@@ -2576,10 +2608,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="83" id="ykh-QY-jjw" customClass="ServicioNoAsistencialViewCellController" customModule="SofibMobile" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="1000" height="83"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="83"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ykh-QY-jjw" id="ui1-ta-ZUV">
-                                            <frame key="frameInset" width="1000" height="83"/>
+                                            <frame key="frameInset" width="375" height="83"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Número Solicitud" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rUW-rZ-cDl">
@@ -2735,10 +2767,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="83" id="97O-pV-bQz" customClass="ServicioNoAsistencialViewCellController" customModule="SofibMobile" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="1000" height="83"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="83"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="97O-pV-bQz" id="GGk-cV-727">
-                                            <frame key="frameInset" width="1000" height="83"/>
+                                            <frame key="frameInset" width="375" height="83"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Número Solicitud" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2VC-dY-Wtb">
@@ -2894,10 +2926,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="83" id="kcf-1S-OAa" customClass="ServicioNoAsistencialViewCellController" customModule="SofibMobile" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="1000" height="83"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="83"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kcf-1S-OAa" id="wLs-f5-kww">
-                                            <frame key="frameInset" width="1000" height="83"/>
+                                            <frame key="frameInset" width="375" height="83"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Número Solicitud" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xwd-uG-KYN">
@@ -3053,10 +3085,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="83" id="pXv-1f-1kS" customClass="ServicioNoAsistencialViewCellController" customModule="SofibMobile" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="1000" height="83"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="83"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pXv-1f-1kS" id="gKG-bJ-9nh">
-                                            <frame key="frameInset" width="1000" height="83"/>
+                                            <frame key="frameInset" width="375" height="83"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Número Solicitud" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7mw-Z3-Fre">
@@ -3212,10 +3244,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="83" id="tyv-oD-5Vj" customClass="ServicioNoAsistencialViewCellController" customModule="SofibMobile" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="1000" height="83"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="83"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tyv-oD-5Vj" id="xaO-yq-vow">
-                                            <frame key="frameInset" width="1000" height="83"/>
+                                            <frame key="frameInset" width="375" height="83"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Número Solicitud" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lFf-3F-5ll">
@@ -3530,10 +3562,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="83" id="V0W-KB-6ei" customClass="ServicioNoAsistencialViewCellController" customModule="SofibMobile" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="1000" height="83"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="83"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="V0W-KB-6ei" id="JmG-BJ-k6I">
-                                            <frame key="frameInset" width="1000" height="83"/>
+                                            <frame key="frameInset" width="375" height="83"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Número Solicitud" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Gs-dA-dXg">
@@ -3664,10 +3696,10 @@
         <image name="row_right" width="64" height="64"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="MHD-vY-sNT"/>
+        <segue reference="BON-BY-cd9"/>
         <segue reference="HSt-uP-ArV"/>
         <segue reference="pgR-eB-Xdl"/>
-        <segue reference="Uai-DN-GAb"/>
-        <segue reference="BON-BY-cd9"/>
+        <segue reference="MHD-vY-sNT"/>
+        <segue reference="6ui-Qf-AKp"/>
     </inferredMetricsTieBreakers>
 </document>

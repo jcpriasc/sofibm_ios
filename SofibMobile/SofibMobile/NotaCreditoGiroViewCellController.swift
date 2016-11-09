@@ -25,6 +25,10 @@ class NotaCreditoGiroViewCellController: UITableViewCell {
         super.awakeFromNib()
         
         // Initialization code
+        lblConsecutivoNotaCredito.text = NSLocalizedString("lbl_consecutivo_nota_credito", comment: "lbl_consecutivo_nota_credito")
+        lblIdGiroAsociado.text = NSLocalizedString("lbl_id_giro_asociado", comment: "lbl_id_giro_asociado")
+        lblNombreBeneficiario.text = NSLocalizedString("lbl_nombre_beneficiario", comment: "lbl_nombre_beneficiario")
+        lblTipoGiro.text = NSLocalizedString("lbl_tipo_giro", comment: "lbl_tipo_giro")
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {

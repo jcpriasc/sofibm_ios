@@ -24,6 +24,9 @@ class UtilizacionesViewCellController: UITableViewCell {
         super.awakeFromNib()
         
         // Initialization code
+        lblHasta.text = NSLocalizedString("lbl_hasta", comment: "lbl_hasta")
+        lblDesde.text = NSLocalizedString("lbl_desde", comment: "lbl_desde")
+        lblConvenio.text = NSLocalizedString("lbl_convenio", comment: "lbl_convenio")
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {

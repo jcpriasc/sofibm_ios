@@ -29,6 +29,12 @@ class GiroViewCellController: UITableViewCell {
         super.awakeFromNib()
         
         // Initialization code
+        lblidentificacion.text = NSLocalizedString("identificacion", comment: "identificacion")
+        lblEstado.text = NSLocalizedString("lbl_estado", comment: "lbl_estado")
+        lblBeneficiario.text = NSLocalizedString("lbl_beneficiario", comment: "lbl_beneficiario")
+        lblIdentificacionBeneficiario.text = NSLocalizedString("lbl_identificacion_beneficiario", comment: "lbl_identificacion_beneficiario")
+        lblTipoGiro.text = NSLocalizedString("lbl_tipo_giro", comment: "lbl_tipo_giro")
+        
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {

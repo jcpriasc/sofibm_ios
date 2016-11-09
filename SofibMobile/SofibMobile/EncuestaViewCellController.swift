@@ -22,6 +22,9 @@ class EncuestaViewCellController: UITableViewCell {
         super.awakeFromNib()
         
         // Initialization code
+        lblObservacion.text = NSLocalizedString("lbl_observacion", comment: "lbl_observacion")
+        lblRespuesta.text = NSLocalizedString("lbl_respuesta", comment: "lbl_respuesta")
+        lblPregunta.text = NSLocalizedString("lbl_pregunta", comment: "lbl_pregunta")
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
