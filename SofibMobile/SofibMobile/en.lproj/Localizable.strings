@@ -15,6 +15,9 @@
 "seleccionar_ciudad_inicial" = "Select Initial City";
 "seleccionar_ciudad_actual" = "Select Curent City";
 "seleccionar_traslado" = "Select Transfered";
+"seleccionar_ciudad" = "Select City";
+"seleccionar_tipo_registro" = "Select Record Type";
+"seleccionar_tipo_servicio" = "Select Service Type";
 
 // Solicitudes de atencion
 "solicitud_atencion" = "Medical Attention Petition";

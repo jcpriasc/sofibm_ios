@@ -80,6 +80,8 @@ class OpcionesSecundariasViewController: UIViewController, UITableViewDataSource
             let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "documentosMedicosView")
             self.show(vc as! UIViewController, sender: vc)
         case 4:
+            let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "bitacorasView")
+            self.show(vc as! UIViewController, sender: vc)
             print("The last letter of the alphabet")
         case 5:
             let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "epicrisisView")
