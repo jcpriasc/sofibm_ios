@@ -68,12 +68,26 @@ class OpcionesSecundariasLogViewController: UIViewController , UITableViewDataSo
             let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "servicioNoAsistencialController")
             self.show(vc as! UIViewController, sender: vc)
         case 1:
-            let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "testView2")
+            let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "girosController")
             self.show(vc as! UIViewController, sender: vc)
-            print("The last letter of the alphabet")
+        case 2:
+            let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "notasCreditoGirosController")
+            self.show(vc as! UIViewController, sender: vc)
+        case 3:
+            let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "facturasController")
+            self.show(vc as! UIViewController, sender: vc)
+        case 4:
+            let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "notaCreditoDebitoController")
+            self.show(vc as! UIViewController, sender: vc)
+        case 5:
+            let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "utilizacionesController")
+            self.show(vc as! UIViewController, sender: vc)
+        case 6:
+            let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "encuestaController")
+            self.show(vc as! UIViewController, sender: vc)
         default:
-            print("Some other character")
-        }
+            let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "solicitudesAprobacionController")
+            self.show(vc as! UIViewController, sender: vc)        }
         
         return indexPath
     }
