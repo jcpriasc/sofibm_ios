@@ -17,8 +17,6 @@ class FiltrosSolicitudAtencionController: UIViewController, UIPickerViewDelegate
     @IBOutlet var pickerTraslados: UITextField!
     @IBOutlet var lblBusquedaAvanzada: UILabel!
     
-    
-    @IBOutlet var navigationBar: UINavigationBar!
     @IBOutlet var txtIdentificacion: UITextField!
     @IBOutlet var txtSolicitudAtencion: UITextField!
     @IBOutlet var txtNombre: UITextField!
@@ -31,10 +29,6 @@ class FiltrosSolicitudAtencionController: UIViewController, UIPickerViewDelegate
     
     
     override func viewWillAppear(_ animated: Bool) {
-        
-        
-      
-        
         
         lblBusquedaAvanzada.text = NSLocalizedString("busqueda_avanzada", comment: "Busqueda Avanzada")
         txtIdentificacion.placeholder = NSLocalizedString("identificacion", comment: "Identificacion")
