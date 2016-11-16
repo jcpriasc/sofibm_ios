@@ -32,6 +32,12 @@
 		11E362681DD2B70500354EB4 /* EncuestaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E362671DD2B70500354EB4 /* EncuestaViewController.swift */; };
 		11E3626A1DD2B71C00354EB4 /* SolicitudAprobacionViewCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E362691DD2B71C00354EB4 /* SolicitudAprobacionViewCellController.swift */; };
 		11E3626C1DD2B72900354EB4 /* SolicitudAprobacionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E3626B1DD2B72900354EB4 /* SolicitudAprobacionViewController.swift */; };
+		11F894311DDD044700A58E45 /* GiroManutencionViewCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F894301DDD044700A58E45 /* GiroManutencionViewCellController.swift */; };
+		11F894331DDD046300A58E45 /* GiroManutencionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F894321DDD046300A58E45 /* GiroManutencionViewController.swift */; };
+		11F894351DDD048200A58E45 /* GiroConceptoViewCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F894341DDD048200A58E45 /* GiroConceptoViewCellController.swift */; };
+		11F894371DDD049200A58E45 /* GiroConceptoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F894361DDD049200A58E45 /* GiroConceptoViewController.swift */; };
+		11F894391DDD04B900A58E45 /* GiroHistoricoViewCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F894381DDD04B900A58E45 /* GiroHistoricoViewCellController.swift */; };
+		11F8943B1DDD04C700A58E45 /* GiroHistoricoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F8943A1DDD04C700A58E45 /* GiroHistoricoViewController.swift */; };
 		5590B139A4FE3ABCDE44DB05 /* Pods_SofibMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 692EC0DDA0C42F4D176CB70A /* Pods_SofibMobile.framework */; };
 		8B75A464F4E22CD2FFF01D38 /* Pods_SofibMobileUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5B9CF158A964CF92923935B /* Pods_SofibMobileUITests.framework */; };
 		A43D62D61DCD89320044AB22 /* OpcionesSecundariasViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43D62D51DCD89320044AB22 /* OpcionesSecundariasViewCell.swift */; };
@@ -112,6 +118,12 @@
 		11E362671DD2B70500354EB4 /* EncuestaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncuestaViewController.swift; sourceTree = "<group>"; };
 		11E362691DD2B71C00354EB4 /* SolicitudAprobacionViewCellController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SolicitudAprobacionViewCellController.swift; sourceTree = "<group>"; };
 		11E3626B1DD2B72900354EB4 /* SolicitudAprobacionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SolicitudAprobacionViewController.swift; sourceTree = "<group>"; };
+		11F894301DDD044700A58E45 /* GiroManutencionViewCellController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiroManutencionViewCellController.swift; sourceTree = "<group>"; };
+		11F894321DDD046300A58E45 /* GiroManutencionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiroManutencionViewController.swift; sourceTree = "<group>"; };
+		11F894341DDD048200A58E45 /* GiroConceptoViewCellController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiroConceptoViewCellController.swift; sourceTree = "<group>"; };
+		11F894361DDD049200A58E45 /* GiroConceptoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiroConceptoViewController.swift; sourceTree = "<group>"; };
+		11F894381DDD04B900A58E45 /* GiroHistoricoViewCellController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiroHistoricoViewCellController.swift; sourceTree = "<group>"; };
+		11F8943A1DDD04C700A58E45 /* GiroHistoricoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiroHistoricoViewController.swift; sourceTree = "<group>"; };
 		1C6C69E5A5E9FD9F9ABD22BF /* Pods-SofibMobileTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SofibMobileTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SofibMobileTests/Pods-SofibMobileTests.debug.xcconfig"; sourceTree = "<group>"; };
 		252E058316473D19A91D0566 /* Pods-SofibMobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SofibMobile.release.xcconfig"; path = "Pods/Target Support Files/Pods-SofibMobile/Pods-SofibMobile.release.xcconfig"; sourceTree = "<group>"; };
 		5A60DC2194A36FA88E08C869 /* Pods-SofibMobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SofibMobile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SofibMobile/Pods-SofibMobile.debug.xcconfig"; sourceTree = "<group>"; };
@@ -229,6 +241,12 @@
 				A4C5E3B01DDBC7A900294883 /* FuncionariosTableViewCell.swift */,
 				11A7E5741DDBB68D0003275B /* ServiciosAdicionadosViewCellController.swift */,
 				11A7E5761DDBB6A50003275B /* ServiciosAdicionadosViewController.swift */,
+				11F894301DDD044700A58E45 /* GiroManutencionViewCellController.swift */,
+				11F894321DDD046300A58E45 /* GiroManutencionViewController.swift */,
+				11F894341DDD048200A58E45 /* GiroConceptoViewCellController.swift */,
+				11F894361DDD049200A58E45 /* GiroConceptoViewController.swift */,
+				11F894381DDD04B900A58E45 /* GiroHistoricoViewCellController.swift */,
+				11F8943A1DDD04C700A58E45 /* GiroHistoricoViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -619,17 +637,21 @@
 				A4B6F0931DD2E0D8000F5A97 /* EpicrisisViewController.swift in Sources */,
 				A4B6F08F1DD2DB25000F5A97 /* DocumentosMedicosViewCell.swift in Sources */,
 				A4B6F0911DD2E072000F5A97 /* EpicrisisViewCell.swift in Sources */,
+				11F894351DDD048200A58E45 /* GiroConceptoViewCellController.swift in Sources */,
 				11E362541DD2B61600354EB4 /* GiroViewController.swift in Sources */,
 				A4E7D1A61DC93F1E00C4E977 /* AppDelegate.swift in Sources */,
 				11E362641DD2B6E400354EB4 /* UtilizacionesViewController.swift in Sources */,
+				11F894311DDD044700A58E45 /* GiroManutencionViewCellController.swift in Sources */,
 				11E3626C1DD2B72900354EB4 /* SolicitudAprobacionViewController.swift in Sources */,
 				A43D62DA1DCDD36F0044AB22 /* AutorizacionesViewController.swift in Sources */,
 				A44581031DCD845B00838456 /* OpcionesSecundariasViewController.swift in Sources */,
 				11E3625E1DD2B69400354EB4 /* NotaCreditoDebitoViewController.swift in Sources */,
 				11E3625A1DD2B66F00354EB4 /* FacturaViewCellController.swift in Sources */,
 				A4C5E3A91DDB61CA00294883 /* BitacoraViewCell.swift in Sources */,
+				11F894371DDD049200A58E45 /* GiroConceptoViewController.swift in Sources */,
 				11E3625C1DD2B67D00354EB4 /* FacturaViewController.swift in Sources */,
 				11E362621DD2B6D400354EB4 /* UtilizacionesViewCellController.swift in Sources */,
+				11F894331DDD046300A58E45 /* GiroManutencionViewController.swift in Sources */,
 				A44A5B041DC9832A00A6553D /* SolicitudAtencionTableViewCell.swift in Sources */,
 				11E362661DD2B6F900354EB4 /* EncuestaViewCellController.swift in Sources */,
 				A4C5E3B11DDBC7A900294883 /* FuncionariosTableViewCell.swift in Sources */,
@@ -639,7 +661,9 @@
 				A43D62DC1DCDD4640044AB22 /* AutorizacionesViewCell.swift in Sources */,
 				A4B6F0891DD2BB42000F5A97 /* InformesMedicosViewCell.swift in Sources */,
 				11227A291DC970C00035959B /* ViewControllerTest.swift in Sources */,
+				11F894391DDD04B900A58E45 /* GiroHistoricoViewCellController.swift in Sources */,
 				11E3624B1DD2760B00354EB4 /* ServicioNoAsistencialViewCellController.swift in Sources */,
+				11F8943B1DDD04C700A58E45 /* GiroHistoricoViewController.swift in Sources */,
 				A4B6F08D1DD2DAF5000F5A97 /* DocumentosMedicosViewController.swift in Sources */,
 				11A7E5771DDBB6A50003275B /* ServiciosAdicionadosViewController.swift in Sources */,
 				11E3626A1DD2B71C00354EB4 /* SolicitudAprobacionViewCellController.swift in Sources */,
