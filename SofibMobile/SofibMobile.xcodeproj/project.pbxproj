@@ -46,6 +46,12 @@
 		A4B6F08F1DD2DB25000F5A97 /* DocumentosMedicosViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B6F08E1DD2DB25000F5A97 /* DocumentosMedicosViewCell.swift */; };
 		A4B6F0911DD2E072000F5A97 /* EpicrisisViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B6F0901DD2E072000F5A97 /* EpicrisisViewCell.swift */; };
 		A4B6F0931DD2E0D8000F5A97 /* EpicrisisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B6F0921DD2E0D8000F5A97 /* EpicrisisViewController.swift */; };
+		A4C5E3A71DDB619A00294883 /* BitacoraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C5E3A61DDB619A00294883 /* BitacoraViewController.swift */; };
+		A4C5E3A91DDB61CA00294883 /* BitacoraViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C5E3A81DDB61CA00294883 /* BitacoraViewCell.swift */; };
+		A4C5E3AB1DDBB34A00294883 /* ProcedimientosAdicionalesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C5E3AA1DDBB34A00294883 /* ProcedimientosAdicionalesViewCell.swift */; };
+		A4C5E3AD1DDBB37900294883 /* ProcedimientosAdicionalesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C5E3AC1DDBB37900294883 /* ProcedimientosAdicionalesViewController.swift */; };
+		A4C5E3AF1DDBC78C00294883 /* FuncionariosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C5E3AE1DDBC78C00294883 /* FuncionariosViewController.swift */; };
+		A4C5E3B11DDBC7A900294883 /* FuncionariosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C5E3B01DDBC7A900294883 /* FuncionariosTableViewCell.swift */; };
 		A4E7D1A61DC93F1E00C4E977 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E7D1A51DC93F1E00C4E977 /* AppDelegate.swift */; };
 		A4E7D1A81DC93F1E00C4E977 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E7D1A71DC93F1E00C4E977 /* ViewController.swift */; };
 		A4E7D1AB1DC93F1E00C4E977 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4E7D1A91DC93F1E00C4E977 /* Main.storyboard */; };
@@ -120,6 +126,12 @@
 		A4B6F08E1DD2DB25000F5A97 /* DocumentosMedicosViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentosMedicosViewCell.swift; sourceTree = "<group>"; };
 		A4B6F0901DD2E072000F5A97 /* EpicrisisViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpicrisisViewCell.swift; sourceTree = "<group>"; };
 		A4B6F0921DD2E0D8000F5A97 /* EpicrisisViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpicrisisViewController.swift; sourceTree = "<group>"; };
+		A4C5E3A61DDB619A00294883 /* BitacoraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitacoraViewController.swift; sourceTree = "<group>"; };
+		A4C5E3A81DDB61CA00294883 /* BitacoraViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitacoraViewCell.swift; sourceTree = "<group>"; };
+		A4C5E3AA1DDBB34A00294883 /* ProcedimientosAdicionalesViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProcedimientosAdicionalesViewCell.swift; sourceTree = "<group>"; };
+		A4C5E3AC1DDBB37900294883 /* ProcedimientosAdicionalesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProcedimientosAdicionalesViewController.swift; sourceTree = "<group>"; };
+		A4C5E3AE1DDBC78C00294883 /* FuncionariosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FuncionariosViewController.swift; sourceTree = "<group>"; };
+		A4C5E3B01DDBC7A900294883 /* FuncionariosTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FuncionariosTableViewCell.swift; sourceTree = "<group>"; };
 		A4E7D1A21DC93F1E00C4E977 /* SofibMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SofibMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4E7D1A51DC93F1E00C4E977 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4E7D1A71DC93F1E00C4E977 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -205,6 +217,12 @@
 				11E362691DD2B71C00354EB4 /* SolicitudAprobacionViewCellController.swift */,
 				11E3626B1DD2B72900354EB4 /* SolicitudAprobacionViewController.swift */,
 				A43FED201DD55F43007B0BFF /* FiltroBitacoraViewController.swift */,
+				A4C5E3A61DDB619A00294883 /* BitacoraViewController.swift */,
+				A4C5E3A81DDB61CA00294883 /* BitacoraViewCell.swift */,
+				A4C5E3AA1DDBB34A00294883 /* ProcedimientosAdicionalesViewCell.swift */,
+				A4C5E3AC1DDBB37900294883 /* ProcedimientosAdicionalesViewController.swift */,
+				A4C5E3AE1DDBC78C00294883 /* FuncionariosViewController.swift */,
+				A4C5E3B01DDBC7A900294883 /* FuncionariosTableViewCell.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -590,6 +608,8 @@
 				11E362581DD2B65A00354EB4 /* NotaCreditoGiroViewController.swift in Sources */,
 				A4E7D1A81DC93F1E00C4E977 /* ViewController.swift in Sources */,
 				A4B6F08B1DD2C539000F5A97 /* InformesMedicosViewController.swift in Sources */,
+				A4C5E3A71DDB619A00294883 /* BitacoraViewController.swift in Sources */,
+				A4C5E3AB1DDBB34A00294883 /* ProcedimientosAdicionalesViewCell.swift in Sources */,
 				A4B6F0931DD2E0D8000F5A97 /* EpicrisisViewController.swift in Sources */,
 				A4B6F08F1DD2DB25000F5A97 /* DocumentosMedicosViewCell.swift in Sources */,
 				A4B6F0911DD2E072000F5A97 /* EpicrisisViewCell.swift in Sources */,
@@ -601,11 +621,14 @@
 				A44581031DCD845B00838456 /* OpcionesSecundariasViewController.swift in Sources */,
 				11E3625E1DD2B69400354EB4 /* NotaCreditoDebitoViewController.swift in Sources */,
 				11E3625A1DD2B66F00354EB4 /* FacturaViewCellController.swift in Sources */,
+				A4C5E3A91DDB61CA00294883 /* BitacoraViewCell.swift in Sources */,
 				11E3625C1DD2B67D00354EB4 /* FacturaViewController.swift in Sources */,
 				11E362621DD2B6D400354EB4 /* UtilizacionesViewCellController.swift in Sources */,
 				A44A5B041DC9832A00A6553D /* SolicitudAtencionTableViewCell.swift in Sources */,
 				11E362661DD2B6F900354EB4 /* EncuestaViewCellController.swift in Sources */,
 				11E3624B1DD2760B00354EB4 /* ServicioNoAsistencialViewCellController.swift in Sources */,
+				A4C5E3B11DDBC7A900294883 /* FuncionariosTableViewCell.swift in Sources */,
+				A4C5E3AD1DDBB37900294883 /* ProcedimientosAdicionalesViewController.swift in Sources */,
 				11E362501DD28CB700354EB4 /* ServicioNoAsistencial.swift in Sources */,
 				A43D62DC1DCDD4640044AB22 /* AutorizacionesViewCell.swift in Sources */,
 				A4B6F0891DD2BB42000F5A97 /* InformesMedicosViewCell.swift in Sources */,
@@ -621,6 +644,7 @@
 				A43D62D81DCDADD20044AB22 /* OpcionesSecundariasLogViewController.swift in Sources */,
 				11E362601DD2B6B900354EB4 /* NotaCreditoDebitoViewCellController.swift in Sources */,
 				11E362681DD2B70500354EB4 /* EncuestaViewController.swift in Sources */,
+				A4C5E3AF1DDBC78C00294883 /* FuncionariosViewController.swift in Sources */,
 				11227A3F1DCAA2060035959B /* DetalleSolicitudAtencionController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

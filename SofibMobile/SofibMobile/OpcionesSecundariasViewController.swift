@@ -86,6 +86,12 @@ class OpcionesSecundariasViewController: UIViewController, UITableViewDataSource
         case 5:
             let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "epicrisisView")
             self.show(vc as! UIViewController, sender: vc)
+        case 6:
+            let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "procedimientosAdicionalesView")
+            self.show(vc as! UIViewController, sender: vc)
+        case 7:
+            let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "funcionariosExternosView")
+            self.show(vc as! UIViewController, sender: vc)
         default:
             print("Some other character")
         }
