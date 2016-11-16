@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AUZ-n3-4vl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="RaK-Pm-Nrt">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -8,6 +8,88 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="dww-Ky-vpO">
+            <objects>
+                <viewController id="RaK-Pm-Nrt" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lgP-4k-fKF"/>
+                        <viewControllerLayoutGuide type="bottom" id="B76-sh-nj3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vxc-IA-3UV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_login" translatesAutoresizingMaskIntoConstraints="NO" id="6tx-Vr-dmt"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Usuario" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uCY-Zi-rhD">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JuV-wi-k8p">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Jhq-2T-nhE">
+                                <segments>
+                                    <segment title="Interno"/>
+                                    <segment title="Externo"/>
+                                </segments>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tipo de Usuario" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yeh-Pg-9dQ">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zqt-tJ-IOw">
+                                <state key="normal" image="ic_arrow_login"/>
+                                <connections>
+                                    <segue destination="AUZ-n3-4vl" kind="show" id="qk9-a6-RGQ"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IbD-mx-sX4"/>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yeh-Pg-9dQ" firstAttribute="centerX" secondItem="vxc-IA-3UV" secondAttribute="centerX" id="1e2-oG-uuP"/>
+                            <constraint firstItem="6tx-Vr-dmt" firstAttribute="width" secondItem="vxc-IA-3UV" secondAttribute="width" id="3fZ-BO-v2I"/>
+                            <constraint firstItem="Zqt-tJ-IOw" firstAttribute="centerX" secondItem="vxc-IA-3UV" secondAttribute="centerX" id="3og-Dv-Zyo"/>
+                            <constraint firstItem="JuV-wi-k8p" firstAttribute="height" secondItem="vxc-IA-3UV" secondAttribute="height" priority="250" id="6ed-yp-0Pi"/>
+                            <constraint firstItem="IbD-mx-sX4" firstAttribute="leading" secondItem="vxc-IA-3UV" secondAttribute="leading" id="8Q8-WT-ik2"/>
+                            <constraint firstItem="Zqt-tJ-IOw" firstAttribute="width" secondItem="vxc-IA-3UV" secondAttribute="width" priority="250" id="8fg-fF-IP7"/>
+                            <constraint firstItem="Zqt-tJ-IOw" firstAttribute="top" secondItem="JuV-wi-k8p" secondAttribute="bottom" constant="30" id="CsE-ir-Rko"/>
+                            <constraint firstItem="IbD-mx-sX4" firstAttribute="top" secondItem="vxc-IA-3UV" secondAttribute="top" id="Enk-r7-Kyf"/>
+                            <constraint firstItem="Zqt-tJ-IOw" firstAttribute="height" secondItem="vxc-IA-3UV" secondAttribute="height" priority="250" id="Hs9-vP-NHj"/>
+                            <constraint firstAttribute="trailing" secondItem="IbD-mx-sX4" secondAttribute="trailing" id="IKP-kl-Nf1"/>
+                            <constraint firstItem="Jhq-2T-nhE" firstAttribute="centerX" secondItem="vxc-IA-3UV" secondAttribute="centerX" id="Nec-g9-cdA"/>
+                            <constraint firstItem="6tx-Vr-dmt" firstAttribute="top" secondItem="vxc-IA-3UV" secondAttribute="top" id="Q0g-cE-p52"/>
+                            <constraint firstItem="yeh-Pg-9dQ" firstAttribute="top" secondItem="IbD-mx-sX4" secondAttribute="bottom" constant="17" id="Q9b-Gp-qyF"/>
+                            <constraint firstItem="IbD-mx-sX4" firstAttribute="height" secondItem="vxc-IA-3UV" secondAttribute="height" multiplier="0.4" id="YSR-Lz-CyR"/>
+                            <constraint firstItem="uCY-Zi-rhD" firstAttribute="width" secondItem="vxc-IA-3UV" secondAttribute="width" multiplier="0.75" id="bJy-ek-v3v"/>
+                            <constraint firstItem="uCY-Zi-rhD" firstAttribute="height" secondItem="vxc-IA-3UV" secondAttribute="height" priority="250" id="bhW-hb-f2Q"/>
+                            <constraint firstItem="JuV-wi-k8p" firstAttribute="top" secondItem="uCY-Zi-rhD" secondAttribute="bottom" constant="20" id="bue-ec-TcR"/>
+                            <constraint firstItem="uCY-Zi-rhD" firstAttribute="top" secondItem="Jhq-2T-nhE" secondAttribute="bottom" constant="30" id="csI-Xr-47n"/>
+                            <constraint firstItem="IbD-mx-sX4" firstAttribute="width" secondItem="vxc-IA-3UV" secondAttribute="width" id="d4X-St-xR5"/>
+                            <constraint firstItem="yeh-Pg-9dQ" firstAttribute="width" secondItem="vxc-IA-3UV" secondAttribute="width" priority="250" id="gW1-yn-Vaq"/>
+                            <constraint firstItem="Jhq-2T-nhE" firstAttribute="top" secondItem="yeh-Pg-9dQ" secondAttribute="bottom" constant="17" id="gmB-zc-X7f"/>
+                            <constraint firstItem="uCY-Zi-rhD" firstAttribute="centerX" secondItem="vxc-IA-3UV" secondAttribute="centerX" id="mOb-2m-JZN"/>
+                            <constraint firstItem="Jhq-2T-nhE" firstAttribute="width" secondItem="vxc-IA-3UV" secondAttribute="width" priority="250" id="okD-H2-0v0"/>
+                            <constraint firstItem="6tx-Vr-dmt" firstAttribute="height" secondItem="vxc-IA-3UV" secondAttribute="height" id="qN9-mA-UVA"/>
+                            <constraint firstItem="JuV-wi-k8p" firstAttribute="width" secondItem="vxc-IA-3UV" secondAttribute="width" multiplier="0.75" id="r07-sH-Qeb"/>
+                            <constraint firstItem="yeh-Pg-9dQ" firstAttribute="height" secondItem="vxc-IA-3UV" secondAttribute="height" priority="250" id="rPV-j2-l3Z"/>
+                            <constraint firstItem="B76-sh-nj3" firstAttribute="top" secondItem="6tx-Vr-dmt" secondAttribute="bottom" id="stz-fz-vLb"/>
+                            <constraint firstAttribute="trailing" secondItem="6tx-Vr-dmt" secondAttribute="trailing" id="tBT-Li-6b0"/>
+                            <constraint firstItem="JuV-wi-k8p" firstAttribute="centerX" secondItem="vxc-IA-3UV" secondAttribute="centerX" id="tqd-b6-IQh"/>
+                            <constraint firstItem="6tx-Vr-dmt" firstAttribute="leading" secondItem="vxc-IA-3UV" secondAttribute="leading" id="tyq-xp-6AO"/>
+                            <constraint firstItem="Jhq-2T-nhE" firstAttribute="height" secondItem="vxc-IA-3UV" secondAttribute="height" priority="250" id="u7f-zG-RvR"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zfO-LE-Rwm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-742.02898550724649" y="189.94565217391306"/>
+        </scene>
         <!--Filtros Solicitud Atencion Controller-->
         <scene sceneID="x1L-d0-9aK">
             <objects>
@@ -122,7 +204,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZTw-3M-yWY" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="314" y="958"/>
+            <point key="canvasLocation" x="314" y="958.00000000000011"/>
         </scene>
         <!--Consulta Solicitudes Atencion Controller-->
         <scene sceneID="6hj-6y-OiT">
@@ -148,7 +230,7 @@
                                         <barButtonItem key="leftBarButtonItem" systemItem="reply" id="CY0-SA-tkK">
                                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <connections>
-                                                <segue destination="AUZ-n3-4vl" kind="show" id="BON-BY-cd9"/>
+                                                <segue destination="AUZ-n3-4vl" kind="presentation" id="BON-BY-cd9"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" image="icon_settings" id="Vs8-Bu-ueh">
@@ -161,10 +243,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="97" id="ofK-9g-rx0" customClass="SolicitudAtencionTableViewCell" customModule="SofibMobile" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="1000" height="97"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="97"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ofK-9g-rx0" id="AA5-oZ-mII">
-                                            <frame key="frameInset" width="1000" height="96"/>
+                                            <frame key="frameInset" width="375" height="96"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Solicitud de Atención" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CJZ-Xc-cwV">
@@ -263,7 +345,7 @@
                                             <outlet property="lblSolicitudAtencion" destination="CJZ-Xc-cwV" id="oJ1-qU-aT7"/>
                                             <outlet property="nombreTxt" destination="Uzz-2v-mNM" id="wGC-q4-IeW"/>
                                             <outlet property="solicitudAtencionTxt" destination="zZs-yk-rf9" id="ZnL-0X-r16"/>
-                                            <segue destination="Te1-RW-kUZ" kind="show" id="pgR-eB-Xdl"/>
+                                            <segue destination="Te1-RW-kUZ" kind="presentation" id="pgR-eB-Xdl"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -290,7 +372,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w2e-8U-iUH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1432.8" y="957.57121439280365"/>
+            <point key="canvasLocation" x="1432.8000000000002" y="957.57121439280365"/>
         </scene>
         <!--Detalle Solicitud Atencion Controller-->
         <scene sceneID="viz-6i-MoK">
@@ -315,7 +397,7 @@
                                         <barButtonItem key="leftBarButtonItem" systemItem="reply" id="RjJ-DI-Ewf">
                                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <connections>
-                                                <segue destination="n6j-wK-tzI" kind="showDetail" id="HSt-uP-ArV"/>
+                                                <segue destination="n6j-wK-tzI" kind="presentation" id="HSt-uP-ArV"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" image="icon_settings" id="i9Y-r1-syk">
@@ -345,12 +427,10 @@
                                 <color key="backgroundColor" red="0.69411764705882351" green="0.13490927660421101" blue="0.10439131510488847" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.098039215690000001" green="0.43529411759999997" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </stackView>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V3n-1B-htz">
-                                <frame key="frameInset" minX="10" minY="137" width="304"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V3n-1B-htz">
                                 <color key="backgroundColor" white="0.79954398230270107" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="6yy-ia-uri">
-                                <frame key="frameInset" minX="10" minY="147" width="375" height="20"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="6yy-ia-uri">
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Credencial Paciente" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zWe-nt-Thc">
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -364,8 +444,7 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleAspectFill" misplaced="YES" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="vvq-PX-F9G">
-                                <frame key="frameInset" minX="10" minY="184" width="375" height="17"/>
+                            <stackView opaque="NO" contentMode="scaleAspectFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="vvq-PX-F9G">
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Convenio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AhX-LY-9Rv">
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -380,8 +459,7 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleAspectFill" misplaced="YES" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Fdb-OU-vkF">
-                                <frame key="frameInset" minX="10" minY="206" width="375" height="17"/>
+                            <stackView opaque="NO" contentMode="scaleAspectFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Fdb-OU-vkF">
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ciudad Inicial" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q02-gK-pYM">
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -396,8 +474,7 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleAspectFill" misplaced="YES" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="zEV-i2-3TS">
-                                <frame key="frameInset" minX="10" minY="228" width="375" height="17"/>
+                            <stackView opaque="NO" contentMode="scaleAspectFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="zEV-i2-3TS">
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ciudad Final" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bk7-Zf-idb">
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -412,8 +489,7 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleAspectFill" misplaced="YES" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="seK-IJ-cvx">
-                                <frame key="frameInset" minX="10" minY="250" width="375" height="17"/>
+                            <stackView opaque="NO" contentMode="scaleAspectFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="seK-IJ-cvx">
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Traslado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8B2-U3-xCy">
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -428,8 +504,7 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleAspectFill" misplaced="YES" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="2oq-yw-RmV">
-                                <frame key="frameInset" minX="10" minY="272" width="375" height="34"/>
+                            <stackView opaque="NO" contentMode="scaleAspectFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="2oq-yw-RmV">
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TRg-hF-btS">
                                         <attributedString key="attributedText">
@@ -450,8 +525,7 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleAspectFill" misplaced="YES" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="AWX-Vn-YdW">
-                                <frame key="frameInset" minX="10" minY="311" width="375" height="17"/>
+                            <stackView opaque="NO" contentMode="scaleAspectFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="AWX-Vn-YdW">
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gRZ-ch-cVe">
                                         <attributedString key="attributedText">
@@ -476,11 +550,10 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aly-Nt-zoA">
                                 <state key="normal" image="icon_more"/>
                                 <connections>
-                                    <segue destination="8BK-OZ-b94" kind="show" id="Uai-DN-GAb"/>
+                                    <segue destination="8BK-OZ-b94" kind="presentation" id="Uai-DN-GAb"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleAspectFill" misplaced="YES" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="XTG-Om-FyB">
-                                <frame key="frameInset" minX="10" minY="333" width="375" height="17"/>
+                            <stackView opaque="NO" contentMode="scaleAspectFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="XTG-Om-FyB">
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Jz-w4-6BC">
                                         <attributedString key="attributedText">
@@ -583,7 +656,7 @@
                                         <barButtonItem key="leftBarButtonItem" systemItem="reply" id="9Jl-rY-Q90">
                                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <connections>
-                                                <segue destination="8BK-OZ-b94" kind="show" id="X5d-X6-8yd"/>
+                                                <segue destination="8BK-OZ-b94" kind="presentation" id="X5d-X6-8yd"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" image="icon_settings" id="EWM-ms-9ra">
@@ -597,7 +670,7 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="m0K-Pl-n5g"/>
                                     <barButtonItem systemItem="search" id="W7S-MQ-M7w">
                                         <connections>
-                                            <segue destination="AUZ-n3-4vl" kind="show" id="aMW-0x-8xR"/>
+                                            <segue destination="AUZ-n3-4vl" kind="presentation" id="aMW-0x-8xR"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="FNl-Lp-jCy"/>
@@ -609,10 +682,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellOpcion" rowHeight="63" id="rSC-Wd-mH4" customClass="OpcionesSecundariasViewCell" customModule="SofibMobile" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="1000" height="63"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="63"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rSC-Wd-mH4" id="XK5-YC-bzf">
-                                            <frame key="frameInset" width="1000" height="62"/>
+                                            <frame key="frameInset" width="375" height="62"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_more" translatesAutoresizingMaskIntoConstraints="NO" id="Npr-aa-IRh"/>
@@ -692,7 +765,7 @@
                                         <barButtonItem key="leftBarButtonItem" systemItem="reply" id="YhF-nU-PgV">
                                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <connections>
-                                                <segue destination="Te1-RW-kUZ" kind="show" id="BOr-YO-rwJ"/>
+                                                <segue destination="Te1-RW-kUZ" kind="presentation" id="BOr-YO-rwJ"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" image="icon_settings" id="Mbl-Ss-qdw">
@@ -706,7 +779,7 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="dT8-1A-F6G"/>
                                     <barButtonItem systemItem="search" id="FLb-4f-yXZ">
                                         <connections>
-                                            <segue destination="AUZ-n3-4vl" kind="show" id="Asi-3Z-Hfd"/>
+                                            <segue destination="AUZ-n3-4vl" kind="presentation" id="Asi-3Z-Hfd"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="Fxz-9F-0iz"/>
@@ -716,10 +789,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellOpcion" rowHeight="63" id="nUR-ad-QMT" customClass="OpcionesSecundariasViewCell" customModule="SofibMobile" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="1000" height="63"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="63"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nUR-ad-QMT" id="azn-Ah-p2l">
-                                            <frame key="frameInset" width="1000" height="62"/>
+                                            <frame key="frameInset" width="375" height="62"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_more" translatesAutoresizingMaskIntoConstraints="NO" id="t9G-xG-50p"/>
@@ -799,7 +872,7 @@
                                         <barButtonItem key="leftBarButtonItem" systemItem="reply" id="bZY-g4-DI5">
                                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <connections>
-                                                <segue destination="8BK-OZ-b94" kind="show" id="6ui-Qf-AKp"/>
+                                                <segue destination="8BK-OZ-b94" kind="presentation" id="6ui-Qf-AKp"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" image="icon_settings" id="gCg-fa-20d">
@@ -812,10 +885,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellOpcion" rowHeight="63" id="E9A-R3-poM" customClass="OpcionesSecundariasViewCell" customModule="SofibMobile" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="1000" height="63"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="63"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="E9A-R3-poM" id="jep-xM-TeK">
-                                            <frame key="frameInset" width="1000" height="62"/>
+                                            <frame key="frameInset" width="375" height="62"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_more" translatesAutoresizingMaskIntoConstraints="NO" id="bbF-Jh-Ecn"/>
@@ -980,7 +1053,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Viz-Ht-jnl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3668" y="-48"/>
+            <point key="canvasLocation" x="3668" y="-48.000000000000007"/>
         </scene>
         <!--Autorizaciones View Controller-->
         <scene sceneID="Sjb-g9-Emw">
@@ -1015,7 +1088,7 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="Mha-ci-nqf"/>
                                     <barButtonItem image="icon_menu" id="15D-1Z-yj3">
                                         <connections>
-                                            <segue destination="KP0-Nb-KJu" kind="show" id="6Ui-03-mtX"/>
+                                            <segue destination="KP0-Nb-KJu" kind="presentation" id="6Ui-03-mtX"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="PN7-dG-TWI"/>
@@ -1025,10 +1098,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="82" id="nEO-Gg-6h4" customClass="AutorizacionesViewCell" customModule="SofibMobile" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="1000" height="82"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="82"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" tableViewCell="nEO-Gg-6h4" id="XbI-ph-7uH">
-                                            <frame key="frameInset" minX="0.0%" minY="0.0%" width="1000" height="81"/>
+                                            <frame key="frameInset" minX="0.0%" minY="0.0%" width="375" height="81"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabel" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Omt-Sz-W7n">
@@ -1111,7 +1184,7 @@
                                         <barButtonItem key="leftBarButtonItem" systemItem="reply" id="eOA-KW-cAi">
                                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <connections>
-                                                <segue destination="0YR-M3-gvk" kind="show" id="iwC-m0-CfA"/>
+                                                <segue destination="0YR-M3-gvk" kind="presentation" id="iwC-m0-CfA"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" image="icon_settings" id="rAQ-r3-CUo">
@@ -1124,10 +1197,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="83" id="KGT-fp-9mm" customClass="ServicioNoAsistencialViewCellController" customModule="SofibMobile" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="1000" height="83"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="83"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGT-fp-9mm" id="8fP-LH-zSY">
-                                            <frame key="frameInset" width="1000" height="82"/>
+                                            <frame key="frameInset" width="375" height="82"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Número Solicitud" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cd6-cj-h58">
@@ -1206,7 +1279,7 @@
                                             <outlet property="txtIdentificacion" destination="PWl-QM-xbT" id="Fcf-ph-kOb"/>
                                             <outlet property="txtNombre" destination="5I0-e3-H9g" id="cuo-Gd-xvk"/>
                                             <outlet property="txtNumeroSolicitud" destination="Kik-TI-NkK" id="A2z-AU-DWU"/>
-                                            <segue destination="8oP-z3-0g3" kind="show" id="Z5o-d0-ZF8"/>
+                                            <segue destination="8oP-z3-0g3" kind="presentation" id="Z5o-d0-ZF8"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -1220,7 +1293,7 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="G9f-zO-hpe"/>
                                     <barButtonItem systemItem="search" id="iJL-T9-Ewl">
                                         <connections>
-                                            <segue destination="AUZ-n3-4vl" kind="show" id="wgh-0C-yND"/>
+                                            <segue destination="AUZ-n3-4vl" kind="presentation" id="wgh-0C-yND"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="VwI-fb-JCK"/>
@@ -1275,7 +1348,7 @@
                                         <barButtonItem key="leftBarButtonItem" systemItem="reply" id="W5V-KB-oap">
                                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <connections>
-                                                <segue destination="0YR-M3-gvk" kind="show" id="rZg-0H-oql"/>
+                                                <segue destination="0YR-M3-gvk" kind="presentation" id="rZg-0H-oql"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" image="icon_settings" id="Bg6-y0-knf">
@@ -1288,10 +1361,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="136" id="sqa-Ip-sLs" customClass="GiroViewCellController" customModule="SofibMobile" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="1000" height="136"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="136"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sqa-Ip-sLs" id="16b-4t-6Qf">
-                                            <frame key="frameInset" width="1000" height="135"/>
+                                            <frame key="frameInset" width="375" height="135"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Identificación" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m1d-gw-51Z">
@@ -1404,7 +1477,7 @@
                                             <outlet property="txtIdentificacion" destination="a2D-ao-hCy" id="jNf-ep-rWx"/>
                                             <outlet property="txtIdentificacionBeneficiario" destination="D1u-cQ-kLS" id="3kq-5n-NnH"/>
                                             <outlet property="txtTipoGiro" destination="hbv-bF-Cce" id="1Yg-qh-x6i"/>
-                                            <segue destination="jfT-3h-PSx" kind="show" id="Iwh-mI-fHv"/>
+                                            <segue destination="jfT-3h-PSx" kind="presentation" id="Iwh-mI-fHv"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -1418,7 +1491,7 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="5yy-gZ-AO6"/>
                                     <barButtonItem systemItem="search" id="JKE-RL-JW0">
                                         <connections>
-                                            <segue destination="AUZ-n3-4vl" kind="show" id="w84-1k-7KP"/>
+                                            <segue destination="AUZ-n3-4vl" kind="presentation" id="w84-1k-7KP"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="HL4-qg-qwd"/>
@@ -1473,7 +1546,7 @@
                                         <barButtonItem key="leftBarButtonItem" systemItem="reply" id="ZJE-uC-EVE">
                                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <connections>
-                                                <segue destination="0YR-M3-gvk" kind="show" id="Ix9-lI-qAz"/>
+                                                <segue destination="0YR-M3-gvk" kind="presentation" id="Ix9-lI-qAz"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" image="icon_settings" id="DV7-S5-3jw">
@@ -1583,7 +1656,7 @@
                                             <outlet property="txtIdGiroAsociado" destination="GlB-um-POG" id="8ag-TR-muc"/>
                                             <outlet property="txtNombreBeneficiario" destination="xG7-ak-akU" id="rj0-N9-qRe"/>
                                             <outlet property="txtTipoGiro" destination="mGw-Gi-k2f" id="g9u-1S-kn6"/>
-                                            <segue destination="Fq8-vK-a3w" kind="show" id="aQa-z7-fSD"/>
+                                            <segue destination="Fq8-vK-a3w" kind="presentation" id="aQa-z7-fSD"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -1597,7 +1670,7 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="Di4-bd-g1z"/>
                                     <barButtonItem systemItem="search" id="nRe-EM-Ug3">
                                         <connections>
-                                            <segue destination="AUZ-n3-4vl" kind="show" id="w4C-gc-vd4"/>
+                                            <segue destination="AUZ-n3-4vl" kind="presentation" id="w4C-gc-vd4"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="4BN-j5-nSg"/>
@@ -1652,7 +1725,7 @@
                                         <barButtonItem key="leftBarButtonItem" systemItem="reply" id="JOb-NZ-1lj">
                                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <connections>
-                                                <segue destination="0YR-M3-gvk" kind="show" id="eF7-Ci-97T"/>
+                                                <segue destination="0YR-M3-gvk" kind="presentation" id="eF7-Ci-97T"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" image="icon_settings" id="2lk-Ab-whi">
@@ -1665,10 +1738,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="101" id="zqU-qp-I5E" customClass="FacturaViewCellController" customModule="SofibMobile" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="1000" height="101"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="101"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zqU-qp-I5E" id="yJX-cS-du6">
-                                            <frame key="frameInset" width="1000" height="100"/>
+                                            <frame key="frameInset" width="375" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Número Factura" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nXr-xD-PD7">
@@ -1763,7 +1836,7 @@
                                             <outlet property="txtFechaExpedicion" destination="DRr-r4-pPx" id="Bmp-Tw-jrM"/>
                                             <outlet property="txtNumeroFactura" destination="fUf-3o-vaP" id="fAw-qk-yHn"/>
                                             <outlet property="txtValorTotalFactura" destination="Rxm-Cn-2UA" id="B3b-mm-DSy"/>
-                                            <segue destination="B5L-Xm-oyr" kind="show" id="Dlk-8L-BaP"/>
+                                            <segue destination="B5L-Xm-oyr" kind="presentation" id="Dlk-8L-BaP"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -1777,7 +1850,7 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="Hpj-fY-Eff"/>
                                     <barButtonItem systemItem="search" id="OtH-52-5qm">
                                         <connections>
-                                            <segue destination="AUZ-n3-4vl" kind="show" id="6eV-Lo-V1h"/>
+                                            <segue destination="AUZ-n3-4vl" kind="presentation" id="6eV-Lo-V1h"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="m7T-Qs-e6p"/>
@@ -1832,7 +1905,7 @@
                                         <barButtonItem key="leftBarButtonItem" systemItem="reply" id="Gd7-3A-5tO">
                                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <connections>
-                                                <segue destination="0YR-M3-gvk" kind="show" id="JdX-DZ-xCp"/>
+                                                <segue destination="0YR-M3-gvk" kind="presentation" id="JdX-DZ-xCp"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" image="icon_settings" id="2vJ-IN-Kqq">
@@ -1943,7 +2016,7 @@
                                             <outlet property="txtFechaExpedicion" destination="eci-T4-1Lf" id="XyU-wY-A7c"/>
                                             <outlet property="txtNumeroFactura" destination="L2e-Nq-uKL" id="oIt-t2-CbQ"/>
                                             <outlet property="txtNumeroNota" destination="Erf-Kb-VOT" id="jFL-JE-X3z"/>
-                                            <segue destination="LDD-oB-Efn" kind="show" id="NKJ-B4-E6s"/>
+                                            <segue destination="LDD-oB-Efn" kind="presentation" id="NKJ-B4-E6s"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -1957,7 +2030,7 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="2xc-U6-fGS"/>
                                     <barButtonItem systemItem="search" id="caK-zx-FbW">
                                         <connections>
-                                            <segue destination="AUZ-n3-4vl" kind="show" id="y8N-ON-ZeT"/>
+                                            <segue destination="AUZ-n3-4vl" kind="presentation" id="y8N-ON-ZeT"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="Rid-86-X3K"/>
@@ -1986,7 +2059,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pdn-Lz-Y65" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3789.5999999999999" y="3184.8575712143929"/>
+            <point key="canvasLocation" x="3789.6000000000004" y="3184.8575712143929"/>
         </scene>
         <!--Utilizaciones View Controller-->
         <scene sceneID="xeO-VK-aB5">
@@ -2012,7 +2085,7 @@
                                         <barButtonItem key="leftBarButtonItem" systemItem="reply" id="dbi-r4-Yyx">
                                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <connections>
-                                                <segue destination="0YR-M3-gvk" kind="show" id="gEB-ZA-f9D"/>
+                                                <segue destination="0YR-M3-gvk" kind="presentation" id="gEB-ZA-f9D"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" image="icon_settings" id="sKk-Yp-PeS">
@@ -2025,10 +2098,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="83" id="pxC-05-KZD" customClass="UtilizacionesViewCellController" customModule="SofibMobile" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="1000" height="83"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="83"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pxC-05-KZD" id="8Uy-DD-cqg">
-                                            <frame key="frameInset" width="1000" height="82"/>
+                                            <frame key="frameInset" width="375" height="82"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Convenio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rvb-HE-fe9">
@@ -2107,7 +2180,7 @@
                                             <outlet property="txtConvenio" destination="Vh6-PQ-7sa" id="ym5-es-gnT"/>
                                             <outlet property="txtDesde" destination="gva-7U-qTE" id="5WF-ra-oC9"/>
                                             <outlet property="txtHasta" destination="hMc-wk-12C" id="hOa-M2-8xI"/>
-                                            <segue destination="VUL-Ow-Iio" kind="show" id="Ywk-Ku-7C3"/>
+                                            <segue destination="VUL-Ow-Iio" kind="presentation" id="Ywk-Ku-7C3"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -2121,7 +2194,7 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="4O3-SE-jAD"/>
                                     <barButtonItem systemItem="search" id="kHj-ao-cPB">
                                         <connections>
-                                            <segue destination="AUZ-n3-4vl" kind="show" id="DL9-cy-Oek"/>
+                                            <segue destination="AUZ-n3-4vl" kind="presentation" id="DL9-cy-Oek"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="ZLz-XD-0Pq"/>
@@ -2176,7 +2249,7 @@
                                         <barButtonItem key="leftBarButtonItem" systemItem="reply" id="fCy-YK-oJB">
                                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <connections>
-                                                <segue destination="0YR-M3-gvk" kind="show" id="rva-Zf-0G7"/>
+                                                <segue destination="0YR-M3-gvk" kind="presentation" id="rva-Zf-0G7"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" image="icon_settings" id="LaD-ig-ynr">
@@ -2263,7 +2336,7 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="kxO-Ot-P1E"/>
                                     <barButtonItem systemItem="search" id="ysd-Ro-BlM">
                                         <connections>
-                                            <segue destination="AUZ-n3-4vl" kind="show" id="8Sr-DL-byo"/>
+                                            <segue destination="AUZ-n3-4vl" kind="presentation" id="8Sr-DL-byo"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="M0n-Lk-7dC"/>
@@ -2318,7 +2391,7 @@
                                         <barButtonItem key="leftBarButtonItem" systemItem="reply" id="h6R-5A-tTu">
                                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <connections>
-                                                <segue destination="0YR-M3-gvk" kind="show" id="MHD-vY-sNT"/>
+                                                <segue destination="0YR-M3-gvk" kind="presentation" id="MHD-vY-sNT"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" image="icon_settings" id="06N-dU-S0h">
@@ -2332,7 +2405,7 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="ClE-7T-qL2"/>
                                     <barButtonItem systemItem="search" id="vlv-6M-gwu">
                                         <connections>
-                                            <segue destination="AUZ-n3-4vl" kind="show" id="mJG-Tu-K11"/>
+                                            <segue destination="AUZ-n3-4vl" kind="presentation" id="mJG-Tu-K11"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="9CR-re-xHJ"/>
@@ -2344,10 +2417,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="99" id="Lxq-Td-zgi" customClass="SolicitudAprobacionViewCellController" customModule="SofibMobile" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="1000" height="99"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="99"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Lxq-Td-zgi" id="Hbm-Zn-izE">
-                                            <frame key="frameInset" width="1000" height="98"/>
+                                            <frame key="frameInset" width="375" height="98"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre Paciente" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U1i-yD-Ac2">
@@ -2417,7 +2490,7 @@
                                             <outlet property="txtEstado" destination="PM9-zP-fp3" id="8cT-LA-Biz"/>
                                             <outlet property="txtFechaSolicitud" destination="a9U-l3-21X" id="76W-C6-ZIV"/>
                                             <outlet property="txtNombrePaciente" destination="4H5-Dg-aIl" id="AXP-8X-W6E"/>
-                                            <segue destination="E1Y-zh-5Jn" kind="show" id="JE4-rD-2w7"/>
+                                            <segue destination="E1Y-zh-5Jn" kind="presentation" id="JE4-rD-2w7"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -2567,7 +2640,7 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="LM0-Ut-BEj"/>
                                     <barButtonItem image="icon_menu" id="Jmw-qi-xTJ">
                                         <connections>
-                                            <segue destination="KP0-Nb-KJu" kind="show" id="42S-ZR-kMg"/>
+                                            <segue destination="KP0-Nb-KJu" kind="presentation" id="42S-ZR-kMg"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="amF-mQ-jPl"/>
@@ -2707,7 +2780,7 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="Oev-rQ-Tlt"/>
                                     <barButtonItem image="icon_menu" id="3wZ-Hy-Kr6">
                                         <connections>
-                                            <segue destination="KP0-Nb-KJu" kind="show" id="XjI-Ua-LH8"/>
+                                            <segue destination="KP0-Nb-KJu" kind="presentation" id="XjI-Ua-LH8"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="P2h-v2-2Fy"/>
@@ -2760,7 +2833,7 @@
                                         <barButtonItem key="leftBarButtonItem" systemItem="reply" id="SRD-ny-wkv">
                                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <connections>
-                                                <segue destination="H9v-2G-AuJ" kind="show" id="QrR-ik-dTU"/>
+                                                <segue destination="H9v-2G-AuJ" kind="presentation" id="QrR-ik-dTU"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" image="icon_settings" id="x5r-mE-4iU">
@@ -2773,10 +2846,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="182" id="97O-pV-bQz" customClass="BitacoraViewCell" customModule="SofibMobile" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="1000" height="182"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="182"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="97O-pV-bQz" id="GGk-cV-727">
-                                            <frame key="frameInset" width="1000" height="181"/>
+                                            <frame key="frameInset" width="375" height="181"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Solicitud de Atención" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2VC-dY-Wtb">
@@ -2895,7 +2968,7 @@
                                             <outlet property="txtSolicitud" destination="a3D-az-LD1" id="ifN-k6-bMg"/>
                                             <outlet property="txtTipoAccion" destination="g6m-08-B9B" id="IjH-Vg-a1I"/>
                                             <outlet property="txtTipoRegistro" destination="VGu-a7-TOU" id="RJM-9J-Z7K"/>
-                                            <segue destination="HrZ-kY-HK4" kind="show" id="ENk-h1-ek5"/>
+                                            <segue destination="HrZ-kY-HK4" kind="presentation" id="ENk-h1-ek5"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -2934,7 +3007,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Vs-iU-s7B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8248.7999999999993" y="906.29685157421295"/>
+            <point key="canvasLocation" x="8248.8000000000011" y="906.29685157421295"/>
         </scene>
         <!--Informes Medicos View Controller-->
         <scene sceneID="Tli-9L-IXE">
@@ -3108,7 +3181,7 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="mI4-9k-rI4"/>
                                     <barButtonItem image="icon_menu" id="o94-nC-Ts8">
                                         <connections>
-                                            <segue destination="KP0-Nb-KJu" kind="show" id="Av2-rh-FB2"/>
+                                            <segue destination="KP0-Nb-KJu" kind="presentation" id="Av2-rh-FB2"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="idv-eP-IUH"/>
@@ -3171,10 +3244,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="52" id="pXv-1f-1kS" customClass="EpicrisisViewCell" customModule="SofibMobile" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="1000" height="52"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="52"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pXv-1f-1kS" id="gKG-bJ-9nh">
-                                            <frame key="frameInset" width="1000" height="51"/>
+                                            <frame key="frameInset" width="375" height="51"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Número Solicitud" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7mw-Z3-Fre">
@@ -3218,7 +3291,7 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="vS4-Bj-oVK"/>
                                     <barButtonItem image="icon_menu" id="UmT-Io-SYj">
                                         <connections>
-                                            <segue destination="KP0-Nb-KJu" kind="show" id="6VX-eh-Q6E"/>
+                                            <segue destination="KP0-Nb-KJu" kind="presentation" id="6VX-eh-Q6E"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="smh-Bo-CTv"/>
@@ -3281,10 +3354,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="83" id="tyv-oD-5Vj" customClass="ServicioNoAsistencialViewCellController" customModule="SofibMobile" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="1000" height="83"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="83"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tyv-oD-5Vj" id="xaO-yq-vow">
-                                            <frame key="frameInset" width="1000" height="82"/>
+                                            <frame key="frameInset" width="375" height="82"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Número Solicitud" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lFf-3F-5ll">
@@ -3404,7 +3477,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YWQ-9O-W2v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6913" y="-3364"/>
+            <point key="canvasLocation" x="6913" y="-3364.0000000000005"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="7ZW-Vc-aij">
@@ -3440,10 +3513,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="83" id="c1w-Vu-JYr" customClass="ServicioNoAsistencialViewCellController" customModule="SofibMobile" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="1000" height="83"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="83"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="c1w-Vu-JYr" id="1Rj-9N-GeU">
-                                            <frame key="frameInset" width="1000" height="82"/>
+                                            <frame key="frameInset" width="375" height="82"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Número Solicitud" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nzC-xa-dno">
@@ -3563,7 +3636,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jrh-Fg-7vb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6913" y="-4351"/>
+            <point key="canvasLocation" x="6913" y="-4351.0000000000009"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="VDs-oX-qAB">
@@ -3599,10 +3672,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="83" id="V0W-KB-6ei" customClass="ServicioNoAsistencialViewCellController" customModule="SofibMobile" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="1000" height="83"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="83"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="V0W-KB-6ei" id="JmG-BJ-k6I">
-                                            <frame key="frameInset" width="1000" height="82"/>
+                                            <frame key="frameInset" width="375" height="82"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Número Solicitud" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Gs-dA-dXg">
@@ -3722,7 +3795,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="moa-Di-5Ol" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6913" y="-5394"/>
+            <point key="canvasLocation" x="6913" y="-5394.0000000000009"/>
         </scene>
         <!--Filtro Bitacora View Controller-->
         <scene sceneID="ClR-G9-edY">
@@ -3786,7 +3859,7 @@
                                 </constraints>
                                 <state key="normal" title="Button" image="icon_buscar"/>
                                 <connections>
-                                    <segue destination="eRr-uF-luM" kind="show" id="2eq-s1-2b7"/>
+                                    <segue destination="eRr-uF-luM" kind="presentation" id="2eq-s1-2b7"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -4043,7 +4116,7 @@
                                         <barButtonItem key="leftBarButtonItem" systemItem="reply" id="suT-DR-0qm">
                                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <connections>
-                                                <segue destination="sMU-Ri-KKp" kind="show" id="ZEA-D3-2AW"/>
+                                                <segue destination="sMU-Ri-KKp" kind="presentation" id="ZEA-D3-2AW"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" image="icon_settings" id="CsX-5R-qJZ">
@@ -4095,7 +4168,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RMq-EE-koo">
                                         <state key="normal" image="icon_more"/>
                                         <connections>
-                                            <segue destination="QTn-kQ-3DX" kind="show" id="8xV-ir-niL"/>
+                                            <segue destination="QTn-kQ-3DX" kind="presentation" id="8xV-ir-niL"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cancelado" lineBreakMode="clip" numberOfLines="3" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SPd-M8-qg0">
@@ -4157,7 +4230,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Mv-pk-8dW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1747.5" y="4015.1408450704225"/>
+            <point key="canvasLocation" x="-1747.5" y="4015.140845070423"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="c3r-OQ-t0F">
@@ -4202,7 +4275,7 @@
                                         <barButtonItem key="leftBarButtonItem" systemItem="reply" id="Xsc-XD-4YM">
                                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <connections>
-                                                <segue destination="tXs-pV-0GH" kind="show" id="sFH-Qy-wes"/>
+                                                <segue destination="tXs-pV-0GH" kind="presentation" id="sFH-Qy-wes"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" image="icon_settings" id="nNd-in-Lfd">
@@ -4387,7 +4460,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H53-BI-btR">
                                         <state key="normal" image="icon_more"/>
                                         <connections>
-                                            <segue destination="qFA-b3-G0O" kind="show" id="cNy-Ca-KGc"/>
+                                            <segue destination="qFA-b3-G0O" kind="presentation" id="cNy-Ca-KGc"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -4492,7 +4565,7 @@
                                         <barButtonItem key="leftBarButtonItem" systemItem="reply" id="SBo-1R-zmw">
                                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <connections>
-                                                <segue destination="C08-71-CnS" kind="show" id="YTG-ga-c3q"/>
+                                                <segue destination="C08-71-CnS" kind="presentation" id="YTG-ga-c3q"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" image="icon_settings" id="NBX-gg-PMc">
@@ -4663,7 +4736,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GTO-j2-oqf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1095.6521739130435" y="4011.684782608696"/>
+            <point key="canvasLocation" x="1095.6521739130437" y="4011.684782608696"/>
         </scene>
         <!--Detalle Solicitud Atencion Controller-->
         <scene sceneID="GxA-i6-0pb">
@@ -4688,7 +4761,7 @@
                                         <barButtonItem key="leftBarButtonItem" systemItem="reply" id="pin-Kv-Zj0">
                                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <connections>
-                                                <segue destination="fnA-1V-9Z2" kind="show" id="KUu-ws-zmf"/>
+                                                <segue destination="fnA-1V-9Z2" kind="presentation" id="KUu-ws-zmf"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" image="icon_settings" id="sZG-FX-zVy">
@@ -4828,7 +4901,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nEy-fO-mLI">
                                         <state key="normal" image="icon_more"/>
                                         <connections>
-                                            <segue destination="2iW-1D-Xox" kind="show" id="agN-Qe-fB0"/>
+                                            <segue destination="2iW-1D-Xox" kind="presentation" id="agN-Qe-fB0"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -4897,7 +4970,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Mz-bx-gEY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2531.25" y="4010.9154929577467"/>
+            <point key="canvasLocation" x="2531.25" y="4010.9154929577462"/>
         </scene>
         <!--Detalle Solicitud Atencion Controller-->
         <scene sceneID="B7k-AK-BHv">
@@ -4922,7 +4995,7 @@
                                         <barButtonItem key="leftBarButtonItem" systemItem="reply" id="9Gh-v0-Lgl">
                                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <connections>
-                                                <segue destination="QhT-Im-ntB" kind="show" id="uLW-5D-66R"/>
+                                                <segue destination="QhT-Im-ntB" kind="presentation" id="uLW-5D-66R"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" image="icon_settings" id="K08-ub-ius">
@@ -5040,7 +5113,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IHQ-kd-Iin">
                                         <state key="normal" image="icon_more"/>
                                         <connections>
-                                            <segue destination="TVS-s8-jH5" kind="show" id="m6x-RJ-A9x"/>
+                                            <segue destination="TVS-s8-jH5" kind="presentation" id="m6x-RJ-A9x"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -5230,7 +5303,7 @@
                     <connections>
                         <segue destination="BgR-5O-zry" kind="relationship" relationship="viewControllers" id="zw9-qR-nKp"/>
                         <segue destination="too-OI-VmK" kind="relationship" relationship="viewControllers" id="4Gx-4E-VWz"/>
-                        <segue destination="blT-LL-Pcn" kind="show" id="fq1-Kd-mbJ"/>
+                        <segue destination="blT-LL-Pcn" kind="presentation" id="fq1-Kd-mbJ"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZRj-O9-Ej2" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -5279,7 +5352,7 @@
                                         <barButtonItem key="leftBarButtonItem" systemItem="reply" id="1WU-Rc-ht8">
                                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <connections>
-                                                <segue destination="b1F-e8-CC5" kind="show" id="OQ1-5o-SLo"/>
+                                                <segue destination="b1F-e8-CC5" kind="presentation" id="OQ1-5o-SLo"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" image="icon_settings" id="dlQ-6M-p4r">
@@ -5601,7 +5674,7 @@
                                         <barButtonItem key="leftBarButtonItem" systemItem="reply" id="1Ih-2a-LOC">
                                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <connections>
-                                                <segue destination="8oP-z3-0g3" kind="show" id="WhP-bE-U8f"/>
+                                                <segue destination="8oP-z3-0g3" kind="presentation" id="WhP-bE-U8f"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" image="icon_settings" id="XX1-mK-HGY">
@@ -5733,7 +5806,7 @@
                                         <barButtonItem key="leftBarButtonItem" systemItem="reply" id="1hV-D3-oCK">
                                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <connections>
-                                                <segue destination="8oP-z3-0g3" kind="show" id="lQa-vf-RR2"/>
+                                                <segue destination="8oP-z3-0g3" kind="presentation" id="lQa-vf-RR2"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" image="icon_settings" id="ZYX-O7-Sp3">
@@ -5829,7 +5902,7 @@
                                         <barButtonItem key="leftBarButtonItem" systemItem="reply" id="XC2-8P-NRr">
                                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <connections>
-                                                <segue destination="8oP-z3-0g3" kind="show" id="BfY-DR-KxF"/>
+                                                <segue destination="8oP-z3-0g3" kind="presentation" id="BfY-DR-KxF"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" image="icon_settings" id="GaE-7J-vQ3">
@@ -6063,7 +6136,7 @@
                                         <barButtonItem key="leftBarButtonItem" systemItem="reply" id="kri-Y6-7Oi">
                                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <connections>
-                                                <segue destination="eRr-uF-luM" kind="show" id="w0W-vE-135"/>
+                                                <segue destination="eRr-uF-luM" kind="presentation" id="w0W-vE-135"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" image="icon_settings" id="6Ya-OH-UyY">
@@ -6261,10 +6334,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="158" id="nme-sa-GL8" customClass="FuncionariosTableViewCell" customModule="SofibMobile" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="1000" height="158"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="158"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nme-sa-GL8" id="Rrw-XZ-no8">
-                                            <frame key="frameInset" width="1000" height="157"/>
+                                            <frame key="frameInset" width="375" height="157"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Funcionario Externo Área Médica" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BCE-C8-GYf">
@@ -6392,6 +6465,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="background_login" width="240" height="426"/>
+        <image name="ic_arrow_login" width="32" height="32"/>
         <image name="icon_buscar" width="48" height="48"/>
         <image name="icon_descarga" width="24" height="24"/>
         <image name="icon_menu" width="24" height="24"/>
@@ -6401,13 +6476,14 @@
         <image name="row_right" width="64" height="64"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="DL9-cy-Oek"/>
-        <segue reference="gEB-ZA-f9D"/>
+        <segue reference="qk9-a6-RGQ"/>
+        <segue reference="MwS-BS-3H1"/>
         <segue reference="BfY-DR-KxF"/>
-        <segue reference="Uai-DN-GAb"/>
-        <segue reference="pgR-eB-Xdl"/>
-        <segue reference="HSt-uP-ArV"/>
-        <segue reference="6Ui-03-mtX"/>
-        <segue reference="2eq-s1-2b7"/>
+        <segue reference="MHD-vY-sNT"/>
+        <segue reference="6ui-Qf-AKp"/>
+        <segue reference="BOr-YO-rwJ"/>
+        <segue reference="w0W-vE-135"/>
+        <segue reference="6VX-eh-Q6E"/>
     </inferredMetricsTieBreakers>
+    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>
