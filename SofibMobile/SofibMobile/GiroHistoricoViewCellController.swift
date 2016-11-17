@@ -11,11 +11,11 @@ import UIKit
 class GiroHistoricoViewCellController: UITableViewCell {
     
     
-    @IBOutlet var txtTipoGiro: UILabel!
-    @IBOutlet var txtEstado: UILabel!
-    @IBOutlet var txtConvenio: UILabel!
-    @IBOutlet var txtCiudad: UILabel!
     @IBOutlet var txtId: UILabel!
+    @IBOutlet var txtCiudad: UILabel!
+    @IBOutlet var txtConvenio: UILabel!
+    @IBOutlet var txtEstado: UILabel!
+    @IBOutlet var txtTipoGiro: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
