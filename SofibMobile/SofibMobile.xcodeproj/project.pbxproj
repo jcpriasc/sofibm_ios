@@ -53,6 +53,8 @@
 		A44581031DCD845B00838456 /* OpcionesSecundariasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44581021DCD845B00838456 /* OpcionesSecundariasViewController.swift */; };
 		A44A5B011DC972F400A6553D /* ConsultaSolicitudesAtencionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44A5AFF1DC972F400A6553D /* ConsultaSolicitudesAtencionController.swift */; };
 		A44A5B041DC9832A00A6553D /* SolicitudAtencionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44A5B031DC9832A00A6553D /* SolicitudAtencionTableViewCell.swift */; };
+		A467DA531DDD4E5E004FE4D8 /* DetalleAutorizacionesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467DA521DDD4E5E004FE4D8 /* DetalleAutorizacionesViewCell.swift */; };
+		A467DA551DDD50D5004FE4D8 /* DetalleAutorizacionesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467DA541DDD50D5004FE4D8 /* DetalleAutorizacionesViewController.swift */; };
 		A4B6F0891DD2BB42000F5A97 /* InformesMedicosViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B6F0881DD2BB42000F5A97 /* InformesMedicosViewCell.swift */; };
 		A4B6F08B1DD2C539000F5A97 /* InformesMedicosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B6F08A1DD2C539000F5A97 /* InformesMedicosViewController.swift */; };
 		A4B6F08D1DD2DAF5000F5A97 /* DocumentosMedicosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B6F08C1DD2DAF5000F5A97 /* DocumentosMedicosViewController.swift */; };
@@ -145,6 +147,8 @@
 		A44581021DCD845B00838456 /* OpcionesSecundariasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpcionesSecundariasViewController.swift; sourceTree = "<group>"; };
 		A44A5AFF1DC972F400A6553D /* ConsultaSolicitudesAtencionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsultaSolicitudesAtencionController.swift; sourceTree = "<group>"; };
 		A44A5B031DC9832A00A6553D /* SolicitudAtencionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SolicitudAtencionTableViewCell.swift; sourceTree = "<group>"; };
+		A467DA521DDD4E5E004FE4D8 /* DetalleAutorizacionesViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleAutorizacionesViewCell.swift; sourceTree = "<group>"; };
+		A467DA541DDD50D5004FE4D8 /* DetalleAutorizacionesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleAutorizacionesViewController.swift; sourceTree = "<group>"; };
 		A4B6F0881DD2BB42000F5A97 /* InformesMedicosViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InformesMedicosViewCell.swift; sourceTree = "<group>"; };
 		A4B6F08A1DD2C539000F5A97 /* InformesMedicosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InformesMedicosViewController.swift; sourceTree = "<group>"; };
 		A4B6F08C1DD2DAF5000F5A97 /* DocumentosMedicosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentosMedicosViewController.swift; sourceTree = "<group>"; };
@@ -261,6 +265,8 @@
 				11F894421DDD166F00A58E45 /* FacturaGlosaViewController.swift */,
 				11F894441DDD168800A58E45 /* FacturaImpuestoViewCellController.swift */,
 				11F894461DDD169900A58E45 /* FacturaImpuestoViewController.swift */,
+				A467DA521DDD4E5E004FE4D8 /* DetalleAutorizacionesViewCell.swift */,
+				A467DA541DDD50D5004FE4D8 /* DetalleAutorizacionesViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -432,7 +438,7 @@
 				TargetAttributes = {
 					A4E7D1A11DC93F1E00C4E977 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 42255M3ZYH;
+						DevelopmentTeam = 9U6WSH9MS8;
 						ProvisioningStyle = Automatic;
 					};
 					A4E7D1B51DC93F1E00C4E977 = {
@@ -677,6 +683,8 @@
 				11E362501DD28CB700354EB4 /* ServicioNoAsistencial.swift in Sources */,
 				A43D62DC1DCDD4640044AB22 /* AutorizacionesViewCell.swift in Sources */,
 				A4B6F0891DD2BB42000F5A97 /* InformesMedicosViewCell.swift in Sources */,
+				A467DA551DDD50D5004FE4D8 /* DetalleAutorizacionesViewController.swift in Sources */,
+				A467DA531DDD4E5E004FE4D8 /* DetalleAutorizacionesViewCell.swift in Sources */,
 				11227A291DC970C00035959B /* ViewControllerTest.swift in Sources */,
 				11F894391DDD04B900A58E45 /* GiroHistoricoViewCellController.swift in Sources */,
 				11F894471DDD169900A58E45 /* FacturaImpuestoViewController.swift in Sources */,
@@ -862,10 +870,10 @@
 			baseConfigurationReference = 5A60DC2194A36FA88E08C869 /* Pods-SofibMobile.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 42255M3ZYH;
+				DEVELOPMENT_TEAM = 9U6WSH9MS8;
 				INFOPLIST_FILE = SofibMobile/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.vortexbird.SofibMobile65;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vortexbird.SofibMobile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -876,10 +884,10 @@
 			baseConfigurationReference = 252E058316473D19A91D0566 /* Pods-SofibMobile.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 42255M3ZYH;
+				DEVELOPMENT_TEAM = 9U6WSH9MS8;
 				INFOPLIST_FILE = SofibMobile/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.vortexbird.SofibMobile65;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vortexbird.SofibMobile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
