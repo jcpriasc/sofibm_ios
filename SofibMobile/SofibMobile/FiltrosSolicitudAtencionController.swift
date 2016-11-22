@@ -26,7 +26,7 @@ class FiltrosSolicitudAtencionController: UIViewController, UIPickerViewDelegate
     var ciudadesIncial = ["CALI", "BOGOTA", "CARTAGENA", "MEDELLIN", "PEREIRA"]
     var ciudadesActual = ["CALI", "BOGOTA", "CARTAGENA", "MEDELLIN", "PEREIRA"]
     var traslados = ["SI", "NO"]
-    
+    static var myJson : NSArray?
     
     override func viewWillAppear(_ animated: Bool) {
         
@@ -198,6 +198,40 @@ class FiltrosSolicitudAtencionController: UIViewController, UIPickerViewDelegate
         
         return nil
     }
+    
+    @IBAction func consumirServicio(_ sender: AnyObject) {
+        
+        let url = URL(string: "http://pruebas-sectorsalud.coomeva.com.co/saludmp-ws/jax-rs/saludmp-sofibmobile/solicitudes/SAC/ABCD1234/0/0/0/0/0/0/0/NA")
+        
+        let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
+            if error != nil
+            {
+                print ("ERROR")
+            }
+            else
+            {
+                if let content = data
+                {
+                    do
+                    {
+                        //Array
+                        FiltrosSolicitudAtencionController.myJson = try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSArray
+                        let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "consultaSolicitudAtencionView")
+                        self.show(vc as! UIViewController, sender: vc)
+                        
+                        
+                    }
+                    catch
+                    {
+                        
+                    }
+                }
+            }
+        }
+        task.resume()
+
+    }
+    
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         

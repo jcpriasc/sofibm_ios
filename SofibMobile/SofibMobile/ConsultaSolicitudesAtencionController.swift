@@ -10,7 +10,7 @@ import UIKit
 
 class ConsultaSolicitudesAtencionController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
-    let solicitudesAtencion = ["Solicitud 1", "Solicitud 2", "Solicitud 3", "Solicitud 4", "Solicitud 5", "Solicitud 6", "Solicitud 7", "Solicitud 9"]
+    let solicitudesAtencion: NSArray = FiltrosSolicitudAtencionController.myJson!;
    
     
     override func viewWillAppear(_ animated: Bool) {
@@ -27,10 +27,18 @@ class ConsultaSolicitudesAtencionController: UIViewController, UITableViewDataSo
     {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! SolicitudAtencionTableViewCell
         
+        print(solicitudesAtencion[indexPath.row])
+        
+        if let solicitud = self.solicitudesAtencion[indexPath.row] as? Dictionary<String, Any>{
+            cell.solicitudAtencionTxt.text = solicitud["consSolicitud"] as! String?;
+            cell.identificacionTxt.text = solicitud["identificacion"] as! String?;
+            cell.nombreTxt.text = solicitud["nombre"] as! String?;
+            cell.convenioTxt.text = solicitud["convenio"] as! String?;
+        }
+        
+        /*
         cell.solicitudAtencionTxt.text = solicitudesAtencion[indexPath.row]
-        cell.identificacionTxt.text = solicitudesAtencion[indexPath.row]
-        cell.nombreTxt.text = solicitudesAtencion[indexPath.row]
-        cell.convenioTxt.text = solicitudesAtencion[indexPath.row]
+        */
         
         return (cell)
     }

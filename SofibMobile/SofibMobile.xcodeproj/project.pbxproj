@@ -53,6 +53,7 @@
 		11F894471DDD169900A58E45 /* FacturaImpuestoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F894461DDD169900A58E45 /* FacturaImpuestoViewController.swift */; };
 		5590B139A4FE3ABCDE44DB05 /* Pods_SofibMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 692EC0DDA0C42F4D176CB70A /* Pods_SofibMobile.framework */; };
 		8B75A464F4E22CD2FFF01D38 /* Pods_SofibMobileUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5B9CF158A964CF92923935B /* Pods_SofibMobileUITests.framework */; };
+		A42B2D8E1DE3C45E00314BD1 /* JSON_fun.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A42B2D8C1DE3C45E00314BD1 /* JSON_fun.xcdatamodeld */; };
 		A43D62D61DCD89320044AB22 /* OpcionesSecundariasViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43D62D51DCD89320044AB22 /* OpcionesSecundariasViewCell.swift */; };
 		A43D62D81DCDADD20044AB22 /* OpcionesSecundariasLogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43D62D71DCDADD20044AB22 /* OpcionesSecundariasLogViewController.swift */; };
 		A43D62DA1DCDD36F0044AB22 /* AutorizacionesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43D62D91DCDD36F0044AB22 /* AutorizacionesViewController.swift */; };
@@ -155,6 +156,7 @@
 		252E058316473D19A91D0566 /* Pods-SofibMobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SofibMobile.release.xcconfig"; path = "Pods/Target Support Files/Pods-SofibMobile/Pods-SofibMobile.release.xcconfig"; sourceTree = "<group>"; };
 		5A60DC2194A36FA88E08C869 /* Pods-SofibMobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SofibMobile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SofibMobile/Pods-SofibMobile.debug.xcconfig"; sourceTree = "<group>"; };
 		692EC0DDA0C42F4D176CB70A /* Pods_SofibMobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SofibMobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A42B2D8D1DE3C45E00314BD1 /* JSON_fun.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JSON_fun.xcdatamodel; sourceTree = "<group>"; };
 		A43D62D51DCD89320044AB22 /* OpcionesSecundariasViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpcionesSecundariasViewCell.swift; sourceTree = "<group>"; };
 		A43D62D71DCDADD20044AB22 /* OpcionesSecundariasLogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpcionesSecundariasLogViewController.swift; sourceTree = "<group>"; };
 		A43D62D91DCDD36F0044AB22 /* AutorizacionesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutorizacionesViewController.swift; sourceTree = "<group>"; };
@@ -350,6 +352,7 @@
 				11227A281DC970C00035959B /* ViewControllerTest.swift */,
 				11227A331DCA44060035959B /* Localizable.strings */,
 				11227A3C1DCA79420035959B /* Localizable.plist */,
+				A42B2D8C1DE3C45E00314BD1 /* JSON_fun.xcdatamodeld */,
 			);
 			path = SofibMobile;
 			sourceTree = "<group>";
@@ -462,7 +465,7 @@
 				TargetAttributes = {
 					A4E7D1A11DC93F1E00C4E977 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 42255M3ZYH;
+						DevelopmentTeam = 9U6WSH9MS8;
 						ProvisioningStyle = Automatic;
 					};
 					A4E7D1B51DC93F1E00C4E977 = {
@@ -703,6 +706,7 @@
 				11E3625C1DD2B67D00354EB4 /* FacturaViewController.swift in Sources */,
 				11E362621DD2B6D400354EB4 /* UtilizacionesViewCellController.swift in Sources */,
 				11F894331DDD046300A58E45 /* GiroManutencionViewController.swift in Sources */,
+				A42B2D8E1DE3C45E00314BD1 /* JSON_fun.xcdatamodeld in Sources */,
 				11F8943F1DDD10B500A58E45 /* FacturaInformacionViewController.swift in Sources */,
 				A44A5B041DC9832A00A6553D /* SolicitudAtencionTableViewCell.swift in Sources */,
 				11E362661DD2B6F900354EB4 /* EncuestaViewCellController.swift in Sources */,
@@ -902,10 +906,10 @@
 			baseConfigurationReference = 5A60DC2194A36FA88E08C869 /* Pods-SofibMobile.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 42255M3ZYH;
+				DEVELOPMENT_TEAM = 9U6WSH9MS8;
 				INFOPLIST_FILE = SofibMobile/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.vortexbird.SofibMobile98765;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vortexbird.SofibMobile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -916,10 +920,10 @@
 			baseConfigurationReference = 252E058316473D19A91D0566 /* Pods-SofibMobile.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 42255M3ZYH;
+				DEVELOPMENT_TEAM = 9U6WSH9MS8;
 				INFOPLIST_FILE = SofibMobile/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.vortexbird.SofibMobile98765;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vortexbird.SofibMobile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -1023,6 +1027,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A42B2D8C1DE3C45E00314BD1 /* JSON_fun.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A42B2D8D1DE3C45E00314BD1 /* JSON_fun.xcdatamodel */,
+			);
+			currentVersion = A42B2D8D1DE3C45E00314BD1 /* JSON_fun.xcdatamodel */;
+			name = JSON_fun.xcdatamodeld;
+			path = "../../../../Downloads/JSON fun/JSON fun/JSON_fun.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A4E7D19A1DC93F1E00C4E977 /* Project object */;
 }
