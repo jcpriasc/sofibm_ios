@@ -10,6 +10,7 @@ import UIKit
 
 class FacturaViewController:  UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    let jsonFactura: NSArray = OpcionesSecundariasLogViewController.jsonFacturas!;
     let lstFactura = ["Solicitud 1", "Solicitud 2", "Solicitud 3", "Solicitud 4", "Solicitud 5", "Solicitud 6", "Solicitud 7", "Solicitud 9"]
     
     
@@ -30,18 +31,20 @@ class FacturaViewController:  UIViewController, UITableViewDataSource, UITableVi
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return (lstFactura.count)
+        return (jsonFactura.count)
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! FacturaViewCellController
-        
-        cell.txtValorTotalFactura.text = lstFactura[indexPath.row]
-        cell.txtEstado.text = lstFactura[indexPath.row]
-        cell.txtFechaExpedicion.text = lstFactura[indexPath.row]
-        cell.txtNumeroFactura.text = lstFactura[indexPath.row]
+
+        if let solicitud = self.jsonFactura[indexPath.row] as? Dictionary<String, Any>{
+            cell.txtValorTotalFactura.text = solicitud["valorTotalFactura"] as! String?;
+            cell.txtEstado.text = solicitud["estado"] as! String?;
+            cell.txtFechaExpedicion.text = solicitud["fechaExpedicion"] as! String?;
+            cell.txtNumeroFactura.text = solicitud["facturaNro"] as! String?;
+        }
 
         return (cell)
         

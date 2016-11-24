@@ -10,6 +10,7 @@ import UIKit
 
 class EncuestaViewController:  UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    let jsonEncuesta: NSArray = OpcionesSecundariasLogViewController.jsonEncuesta!;
     let lstEncuesta = ["Solicitud 1", "Solicitud 2", "Solicitud 3", "Solicitud 4", "Solicitud 5", "Solicitud 6", "Solicitud 7", "Solicitud 9"]
     
     
@@ -30,7 +31,7 @@ class EncuestaViewController:  UIViewController, UITableViewDataSource, UITableV
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return (lstEncuesta.count)
+        return (jsonEncuesta.count)
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
@@ -38,9 +39,11 @@ class EncuestaViewController:  UIViewController, UITableViewDataSource, UITableV
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! EncuestaViewCellController
         
-        cell.txtPregunta.text = lstEncuesta[indexPath.row]
-        cell.txtRespuesta.text = lstEncuesta[indexPath.row]
-        cell.txtObservacion.text = lstEncuesta[indexPath.row]
+        if let solicitud = self.jsonEncuesta[indexPath.row] as? Dictionary<String, Any>{
+            cell.txtPregunta.text = solicitud["pregunta"] as! String?;
+            cell.txtRespuesta.text = solicitud["respuesta"] as! String?;
+            cell.txtObservacion.text = solicitud["observacion"] as! String?;
+        }
         
         return (cell)
         

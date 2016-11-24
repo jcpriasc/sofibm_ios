@@ -10,6 +10,7 @@ import UIKit
 
 class NotaCreditoGiroViewController:  UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    let jsonNotaCreditoGiro: NSArray = OpcionesSecundariasLogViewController.jsonNotasCreditosGiros!;
     let lstNotaCreditoGiro = ["Solicitud 1", "Solicitud 2", "Solicitud 3", "Solicitud 4", "Solicitud 5", "Solicitud 6", "Solicitud 7", "Solicitud 9"]
     
     
@@ -30,7 +31,7 @@ class NotaCreditoGiroViewController:  UIViewController, UITableViewDataSource, U
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return (lstNotaCreditoGiro.count)
+        return (jsonNotaCreditoGiro.count)
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
@@ -38,10 +39,12 @@ class NotaCreditoGiroViewController:  UIViewController, UITableViewDataSource, U
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! NotaCreditoGiroViewCellController
         
-        cell.txtTipoGiro.text = lstNotaCreditoGiro[indexPath.row]
-        cell.txtNombreBeneficiario.text = lstNotaCreditoGiro[indexPath.row]
-        cell.txtIdGiroAsociado.text = lstNotaCreditoGiro[indexPath.row]
-        cell.txtConsecutivoNotaCredito.text = lstNotaCreditoGiro[indexPath.row]
+        if let solicitud = self.jsonNotaCreditoGiro[indexPath.row] as? Dictionary<String, Any>{
+            cell.txtTipoGiro.text = solicitud["tipoGiro"] as! String?;
+            cell.txtNombreBeneficiario.text = solicitud["beneficiario"] as! String?;
+            cell.txtIdGiroAsociado.text = solicitud["giroAsociado"] as! String?;
+            cell.txtConsecutivoNotaCredito.text = solicitud["notaCredito"] as! String?;
+        }
 
         return (cell)
         

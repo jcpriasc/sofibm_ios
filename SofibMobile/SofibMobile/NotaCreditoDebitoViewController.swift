@@ -10,8 +10,8 @@ import UIKit
 
 class NotaCreditoDebitoViewController:  UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    let jsonNotaCreditoDebito: NSArray = OpcionesSecundariasLogViewController.jsonNotasCreditoDebito!;
     let lstNotaCreditoDebito = ["Solicitud 1", "Solicitud 2", "Solicitud 3", "Solicitud 4", "Solicitud 5", "Solicitud 6", "Solicitud 7", "Solicitud 9"]
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +30,7 @@ class NotaCreditoDebitoViewController:  UIViewController, UITableViewDataSource,
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return (lstNotaCreditoDebito.count)
+        return (jsonNotaCreditoDebito.count)
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
@@ -38,10 +38,12 @@ class NotaCreditoDebitoViewController:  UIViewController, UITableViewDataSource,
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! NotaCreditoDebitoViewCellController
         
-        cell.txtNumeroNota.text = lstNotaCreditoDebito[indexPath.row]
-        cell.txtNumeroFactura.text = lstNotaCreditoDebito[indexPath.row]
-        cell.txtFechaExpedicion.text = lstNotaCreditoDebito[indexPath.row]
-        cell.txtFechaAprobacion.text = lstNotaCreditoDebito[indexPath.row]
+        if let solicitud = self.jsonNotaCreditoDebito[indexPath.row] as? Dictionary<String, Any>{
+            cell.txtNumeroNota.text = solicitud["numeroNota"] as! String?;
+            cell.txtNumeroFactura.text = solicitud["numeroFactura"] as! String?;
+            cell.txtFechaExpedicion.text = solicitud["fechaExpedicion"] as! String?;
+            cell.txtFechaAprobacion.text = solicitud["fechaAprobacion"] as! String?;
+        }
         
         return (cell)
         

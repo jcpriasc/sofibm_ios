@@ -10,6 +10,7 @@ import UIKit
 
 class UtilizacionesViewController:  UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    let jsonUtilizaciones: NSArray = OpcionesSecundariasLogViewController.jsonUtilizaciones!;
     let lstUtilizaciones = ["Solicitud 1", "Solicitud 2", "Solicitud 3", "Solicitud 4", "Solicitud 5", "Solicitud 6", "Solicitud 7", "Solicitud 9"]
     
     
@@ -30,7 +31,7 @@ class UtilizacionesViewController:  UIViewController, UITableViewDataSource, UIT
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return (lstUtilizaciones.count)
+        return (jsonUtilizaciones.count)
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
@@ -38,9 +39,11 @@ class UtilizacionesViewController:  UIViewController, UITableViewDataSource, UIT
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! UtilizacionesViewCellController
         
-        cell.txtConvenio.text = lstUtilizaciones[indexPath.row]
-        cell.txtDesde.text = lstUtilizaciones[indexPath.row]
-        cell.txtHasta.text = lstUtilizaciones[indexPath.row]
+        if let solicitud = self.jsonUtilizaciones[indexPath.row] as? Dictionary<String, Any>{
+            cell.txtConvenio.text = solicitud["convenio"] as! String?;
+            cell.txtDesde.text = solicitud["desde"] as! String?;
+            cell.txtHasta.text = solicitud["hasta"] as! String?;
+        }
         
         return (cell)
         

@@ -10,6 +10,7 @@ import UIKit
 
 class GiroViewController:  UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    let jsonGiro: NSArray = OpcionesSecundariasLogViewController.jsonGiros!;
     let lstGiros = ["Solicitud 1", "Solicitud 2", "Solicitud 3", "Solicitud 4", "Solicitud 5", "Solicitud 6", "Solicitud 7", "Solicitud 9"]
     
     
@@ -30,7 +31,7 @@ class GiroViewController:  UIViewController, UITableViewDataSource, UITableViewD
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return (lstGiros.count)
+        return (jsonGiro.count)
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
@@ -38,12 +39,13 @@ class GiroViewController:  UIViewController, UITableViewDataSource, UITableViewD
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! GiroViewCellController
         
-        cell.txtEstado.text = lstGiros[indexPath.row]
-        cell.txtBeneficiario.text = lstGiros[indexPath.row]
-        cell.txtIdentificacionBeneficiario.text = lstGiros[indexPath.row]
-        cell.txtTipoGiro.text = lstGiros[indexPath.row]
-        cell.txtIdentificacion.text = lstGiros[indexPath.row]
-        
+        if let solicitud = self.jsonGiro[indexPath.row] as? Dictionary<String, Any>{
+            cell.txtEstado.text = solicitud["estado"] as! String?;
+            cell.txtBeneficiario.text = solicitud["beneficiario"] as! String?;
+            cell.txtIdentificacionBeneficiario.text = solicitud["identificacionBeneficiario"] as! String?;
+            cell.txtTipoGiro.text = solicitud["tipoGiro"] as! String?;
+            cell.txtIdentificacion.text = solicitud["id"] as! String?;
+        }
         
         return (cell)
         

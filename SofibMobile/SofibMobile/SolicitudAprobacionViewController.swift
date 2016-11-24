@@ -10,6 +10,7 @@ import UIKit
 
 class SolicitudAprobacionViewController:  UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    let jsonSolicitudAprobacion: NSArray = OpcionesSecundariasLogViewController.jsonSolicitudAprobacion!;
     let lstSolicitudAprobacion = ["Solicitud 1", "Solicitud 2", "Solicitud 3", "Solicitud 4", "Solicitud 5", "Solicitud 6", "Solicitud 7", "Solicitud 9"]
     
     
@@ -30,7 +31,7 @@ class SolicitudAprobacionViewController:  UIViewController, UITableViewDataSourc
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return (lstSolicitudAprobacion.count)
+        return (jsonSolicitudAprobacion.count)
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
@@ -38,9 +39,11 @@ class SolicitudAprobacionViewController:  UIViewController, UITableViewDataSourc
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! SolicitudAprobacionViewCellController
         
-        cell.txtNombrePaciente.text = lstSolicitudAprobacion[indexPath.row]
-        cell.txtFechaSolicitud.text = lstSolicitudAprobacion[indexPath.row]
-        cell.txtEstado.text = lstSolicitudAprobacion[indexPath.row]
+        if let solicitud = self.jsonSolicitudAprobacion[indexPath.row] as? Dictionary<String, Any>{
+            cell.txtNombrePaciente.text = solicitud["nombrePaciente"] as! String?;
+            cell.txtFechaSolicitud.text = solicitud["fechaSolicitud"] as! String?;
+            cell.txtEstado.text = solicitud["estado"] as! String?;
+        }
         
         return (cell)
         

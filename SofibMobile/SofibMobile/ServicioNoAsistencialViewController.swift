@@ -11,6 +11,7 @@ import Alamofire
 
 class ServicioNoAsistencialViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    let jsonServicioNoAsistencial: NSArray = OpcionesSecundariasLogViewController.jsonServicioNoAsistencial!;
     let servicioNoAsistencial = ["Solicitud 1", "Solicitud 2", "Solicitud 3", "Solicitud 4", "Solicitud 5", "Solicitud 6", "Solicitud 7", "Solicitud 9"]
     
     
@@ -31,7 +32,7 @@ class ServicioNoAsistencialViewController: UIViewController, UITableViewDataSour
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return (servicioNoAsistencial.count)
+        return (jsonServicioNoAsistencial.count)
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
@@ -39,9 +40,12 @@ class ServicioNoAsistencialViewController: UIViewController, UITableViewDataSour
        
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ServicioNoAsistencialViewCellController
         
-        cell.txtNumeroSolicitud.text = servicioNoAsistencial[indexPath.row]
-        cell.txtIdentificacion.text = servicioNoAsistencial[indexPath.row]
-        cell.txtNombre.text = servicioNoAsistencial[indexPath.row]
+        
+        if let solicitud = self.jsonServicioNoAsistencial[indexPath.row] as? Dictionary<String, Any>{
+            cell.txtNumeroSolicitud.text = solicitud["codSolicitud"] as! String?;
+            cell.txtIdentificacion.text = solicitud["tipoSolicitud"] as! String?;
+            cell.txtNombre.text = solicitud["ciudad"] as! String?;
+        }
         
         return (cell)
  
