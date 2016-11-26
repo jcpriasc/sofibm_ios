@@ -109,6 +109,8 @@ class FiltrosSolicitudAtencionController: UIViewController, UIPickerViewDelegate
         pickerCiudadFinal.inputAccessoryView = toolBar
         pickerTraslados.inputAccessoryView = toolBar
         // Do any additional setup after loading the view.
+        
+        
     }
     
     override func didReceiveMemoryWarning() {

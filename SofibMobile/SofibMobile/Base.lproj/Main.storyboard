@@ -4627,10 +4627,10 @@
             </objects>
             <point key="canvasLocation" x="-289" y="4006"/>
         </scene>
-        <!--Detalle Solicitud Atencion Controller-->
+        <!--Detalle Nota Credito Giro View Controller-->
         <scene sceneID="ZgC-Sd-Nfm">
             <objects>
-                <viewController id="Fq8-vK-a3w" customClass="DetalleSolicitudAtencionController" customModule="SofibMobile" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Fq8-vK-a3w" customClass="DetalleNotaCreditoGiroViewController" customModule="SofibMobile" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="NJO-Ud-2rG"/>
                         <viewControllerLayoutGuide type="bottom" id="woN-Mw-vte"/>
@@ -4779,7 +4779,6 @@
                                     <constraint firstAttribute="trailing" secondItem="a64-SR-Crh" secondAttribute="trailing" constant="10" id="47v-aj-vLm"/>
                                     <constraint firstItem="vna-GP-ieX" firstAttribute="top" secondItem="tpb-ml-vXV" secondAttribute="bottom" constant="1" id="7FG-fl-mwu"/>
                                     <constraint firstItem="tpb-ml-vXV" firstAttribute="top" secondItem="a64-SR-Crh" secondAttribute="bottom" constant="24" id="8ec-mS-7mU"/>
-                                    <constraint firstItem="9ea-Ln-shy" firstAttribute="trailing" secondItem="MHG-Ii-RYJ" secondAttribute="trailing" id="8nr-3k-ayv"/>
                                     <constraint firstItem="a64-SR-Crh" firstAttribute="leading" secondItem="tpb-ml-vXV" secondAttribute="leading" id="BoC-cj-OSC"/>
                                     <constraint firstItem="QMi-ho-9Bl" firstAttribute="top" secondItem="2ht-me-iha" secondAttribute="bottom" constant="2" id="C0N-1F-FZf"/>
                                     <constraint firstItem="P4b-vA-xIJ" firstAttribute="top" secondItem="a64-SR-Crh" secondAttribute="bottom" constant="25" id="DLs-tO-Ayo"/>
@@ -4787,11 +4786,13 @@
                                     <constraint firstItem="P4b-vA-xIJ" firstAttribute="leading" secondItem="tpb-ml-vXV" secondAttribute="trailing" constant="8" symbolic="YES" id="GbA-9d-Blx"/>
                                     <constraint firstItem="tpb-ml-vXV" firstAttribute="leading" secondItem="vna-GP-ieX" secondAttribute="leading" id="GlO-bt-lGM"/>
                                     <constraint firstItem="MHG-Ii-RYJ" firstAttribute="top" secondItem="LGd-EF-w72" secondAttribute="bottom" constant="1" id="JAQ-XW-L5g"/>
+                                    <constraint firstItem="9ea-Ln-shy" firstAttribute="leading" secondItem="QMi-ho-9Bl" secondAttribute="trailing" constant="5" id="Jdh-LH-Poi"/>
                                     <constraint firstItem="XqG-H2-0q9" firstAttribute="top" secondItem="QMi-ho-9Bl" secondAttribute="bottom" constant="1" id="KV6-t8-ftk"/>
                                     <constraint firstItem="2ht-me-iha" firstAttribute="top" secondItem="vna-GP-ieX" secondAttribute="bottom" constant="2" id="OFD-Z1-u39"/>
                                     <constraint firstItem="2ht-me-iha" firstAttribute="leading" secondItem="QMi-ho-9Bl" secondAttribute="leading" id="Off-Dm-xeB"/>
                                     <constraint firstItem="LGd-EF-w72" firstAttribute="leading" secondItem="XqG-H2-0q9" secondAttribute="trailing" constant="8" symbolic="YES" id="Orj-Hh-Jm7"/>
                                     <constraint firstItem="6Fm-5C-sH6" firstAttribute="top" secondItem="vna-GP-ieX" secondAttribute="bottom" constant="1" id="RF7-mC-mUV"/>
+                                    <constraint firstItem="9ea-Ln-shy" firstAttribute="top" secondItem="6Fm-5C-sH6" secondAttribute="bottom" constant="5" id="RPS-Qn-Qpc"/>
                                     <constraint firstItem="6n2-pA-hHP" firstAttribute="width" secondItem="Teg-g3-cYR" secondAttribute="width" multiplier="0.95" id="T9O-tc-hSP"/>
                                     <constraint firstItem="QMi-ho-9Bl" firstAttribute="leading" secondItem="XqG-H2-0q9" secondAttribute="leading" id="Vcb-ZW-kFA"/>
                                     <constraint firstItem="ajB-Oe-dlR" firstAttribute="leading" secondItem="vna-GP-ieX" secondAttribute="trailing" constant="8" symbolic="YES" id="WZB-1U-Kga"/>
@@ -4801,12 +4802,10 @@
                                     <constraint firstItem="MHG-Ii-RYJ" firstAttribute="leading" secondItem="wmz-xf-itO" secondAttribute="trailing" constant="8" symbolic="YES" id="eqZ-jT-Mxd"/>
                                     <constraint firstAttribute="bottom" secondItem="MHG-Ii-RYJ" secondAttribute="bottom" constant="325" id="fdY-b4-VN6"/>
                                     <constraint firstItem="XqG-H2-0q9" firstAttribute="leading" secondItem="wmz-xf-itO" secondAttribute="leading" id="gxj-mO-jPJ"/>
-                                    <constraint firstItem="9ea-Ln-shy" firstAttribute="top" secondItem="ajB-Oe-dlR" secondAttribute="bottom" constant="23" id="iTG-J4-qRh"/>
                                     <constraint firstItem="vna-GP-ieX" firstAttribute="leading" secondItem="2ht-me-iha" secondAttribute="leading" id="jnz-QJ-vFw"/>
                                     <constraint firstItem="6n2-pA-hHP" firstAttribute="leading" secondItem="Teg-g3-cYR" secondAttribute="leading" constant="10" id="kpw-Eh-oi3"/>
-                                    <constraint firstItem="LGd-EF-w72" firstAttribute="top" secondItem="9ea-Ln-shy" secondAttribute="bottom" constant="1" id="lom-8P-Z5I"/>
-                                    <constraint firstItem="9ea-Ln-shy" firstAttribute="leading" secondItem="QMi-ho-9Bl" secondAttribute="trailing" constant="5" id="mWX-wV-fhe"/>
                                     <constraint firstItem="6Fm-5C-sH6" firstAttribute="leading" secondItem="2ht-me-iha" secondAttribute="trailing" constant="8" symbolic="YES" id="oWB-pe-5Vj"/>
+                                    <constraint firstItem="LGd-EF-w72" firstAttribute="top" secondItem="9ea-Ln-shy" secondAttribute="bottom" constant="1" id="pse-Fb-ko4"/>
                                     <constraint firstItem="6n2-pA-hHP" firstAttribute="top" secondItem="a64-SR-Crh" secondAttribute="bottom" constant="13" id="vP0-bQ-IET"/>
                                     <constraint firstItem="wmz-xf-itO" firstAttribute="top" secondItem="XqG-H2-0q9" secondAttribute="bottom" constant="2" id="zst-MX-0su"/>
                                 </constraints>
@@ -4827,6 +4826,24 @@
                             <constraint firstItem="GS7-xs-gTz" firstAttribute="leading" secondItem="NQ3-Ps-A9s" secondAttribute="leading" id="zxf-TF-hLu"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lblCiudad" destination="tpb-ml-vXV" id="3go-xc-Jfm"/>
+                        <outlet property="lblConsecutivoNota" destination="Du2-xE-hrJ" id="uFQ-4k-sk7"/>
+                        <outlet property="lblEstado" destination="2ht-me-iha" id="UuW-nC-11X"/>
+                        <outlet property="lblFechaLiquidacion" destination="wmz-xf-itO" id="eg3-Ls-1wi"/>
+                        <outlet property="lblFechaRegistro" destination="XqG-H2-0q9" id="qY2-gs-BUz"/>
+                        <outlet property="lblIdGiroAsociado" destination="1ZH-Qi-7iU" id="NFj-c5-d1W"/>
+                        <outlet property="lblNombreBeneficiario" destination="H7c-iL-gep" id="LJL-uh-c8H"/>
+                        <outlet property="lblTipoBeneficiario" destination="vna-GP-ieX" id="M0a-Mh-bFH"/>
+                        <outlet property="lblTipoGiro" destination="D5A-ru-ykV" id="3uy-Ro-Ipe"/>
+                        <outlet property="lblValorNota" destination="QMi-ho-9Bl" id="bxm-FR-iMW"/>
+                        <outlet property="txtCiudad" destination="P4b-vA-xIJ" id="SRX-2R-Bez"/>
+                        <outlet property="txtEstado" destination="6Fm-5C-sH6" id="3Hm-lm-7MW"/>
+                        <outlet property="txtFechaLiquidacion" destination="MHG-Ii-RYJ" id="zfn-dV-qwG"/>
+                        <outlet property="txtFechaRegistro" destination="LGd-EF-w72" id="hDv-bY-NZO"/>
+                        <outlet property="txtTipoBeneficiario" destination="ajB-Oe-dlR" id="AH1-gk-S02"/>
+                        <outlet property="txtValorNota" destination="9ea-Ln-shy" id="fvU-vn-sax"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GTO-j2-oqf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -5899,7 +5916,7 @@
                                                 <rect key="frame" x="0.0" y="28" width="345" height="70"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yNZ-pM-COh" id="ELS-M5-WaT">
-                                                    <frame key="frameInset" width="345" height="70"/>
+                                                    <frame key="frameInset" width="345" height="69"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uvk-g1-k57">
@@ -6871,7 +6888,7 @@
                                                 <rect key="frame" x="0.0" y="28" width="345" height="111"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mjl-eL-ChH" id="BDH-pe-TyK">
-                                                    <frame key="frameInset" width="345" height="111"/>
+                                                    <frame key="frameInset" width="345.5" height="110"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xRn-o1-nhi">
@@ -9636,8 +9653,8 @@
         <segue reference="NKJ-B4-E6s"/>
         <segue reference="LID-nY-gg0"/>
         <segue reference="EDS-xH-zyS"/>
-        <segue reference="Sct-K1-gGV"/>
-        <segue reference="4E7-6R-wT6"/>
+        <segue reference="VKi-9A-NA2"/>
+        <segue reference="mPr-0Y-1xk"/>
         <segue reference="Ix9-lI-qAz"/>
         <segue reference="Iwh-mI-fHv"/>
         <segue reference="PKJ-yY-coa"/>

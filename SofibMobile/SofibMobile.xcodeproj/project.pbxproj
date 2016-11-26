@@ -20,6 +20,8 @@
 		1154248E1DDD48C7004EE9E9 /* UtilizacionesTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1154248D1DDD48C7004EE9E9 /* UtilizacionesTabViewController.swift */; };
 		115424901DDD48E0004EE9E9 /* AdministracionesTabViewCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1154248F1DDD48E0004EE9E9 /* AdministracionesTabViewCellController.swift */; };
 		115424921DDD48EF004EE9E9 /* AdministracionesTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115424911DDD48EF004EE9E9 /* AdministracionesTabViewController.swift */; };
+		115A2C911DE893FB003B1C00 /* NotaCreditoGiro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A2C901DE893FB003B1C00 /* NotaCreditoGiro.swift */; };
+		115A2C931DE8D985003B1C00 /* DetalleNotaCreditoGiroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A2C921DE8D985003B1C00 /* DetalleNotaCreditoGiroViewController.swift */; };
 		11A7E5751DDBB68D0003275B /* ServiciosAdicionadosViewCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A7E5741DDBB68D0003275B /* ServiciosAdicionadosViewCellController.swift */; };
 		11A7E5771DDBB6A50003275B /* ServiciosAdicionadosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A7E5761DDBB6A50003275B /* ServiciosAdicionadosViewController.swift */; };
 		11E362451DCDC10700354EB4 /* OpcionesPrincipalesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E362441DCDC10700354EB4 /* OpcionesPrincipalesViewController.swift */; };
@@ -120,6 +122,8 @@
 		1154248D1DDD48C7004EE9E9 /* UtilizacionesTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilizacionesTabViewController.swift; sourceTree = "<group>"; };
 		1154248F1DDD48E0004EE9E9 /* AdministracionesTabViewCellController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdministracionesTabViewCellController.swift; sourceTree = "<group>"; };
 		115424911DDD48EF004EE9E9 /* AdministracionesTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdministracionesTabViewController.swift; sourceTree = "<group>"; };
+		115A2C901DE893FB003B1C00 /* NotaCreditoGiro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotaCreditoGiro.swift; sourceTree = "<group>"; };
+		115A2C921DE8D985003B1C00 /* DetalleNotaCreditoGiroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleNotaCreditoGiroViewController.swift; sourceTree = "<group>"; };
 		11A7E5741DDBB68D0003275B /* ServiciosAdicionadosViewCellController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiciosAdicionadosViewCellController.swift; sourceTree = "<group>"; };
 		11A7E5761DDBB6A50003275B /* ServiciosAdicionadosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiciosAdicionadosViewController.swift; sourceTree = "<group>"; };
 		11E362441DCDC10700354EB4 /* OpcionesPrincipalesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpcionesPrincipalesViewController.swift; sourceTree = "<group>"; };
@@ -291,6 +295,7 @@
 				1154248D1DDD48C7004EE9E9 /* UtilizacionesTabViewController.swift */,
 				1154248F1DDD48E0004EE9E9 /* AdministracionesTabViewCellController.swift */,
 				115424911DDD48EF004EE9E9 /* AdministracionesTabViewController.swift */,
+				115A2C921DE8D985003B1C00 /* DetalleNotaCreditoGiroViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -299,6 +304,7 @@
 			isa = PBXGroup;
 			children = (
 				11E3624F1DD28CB700354EB4 /* ServicioNoAsistencial.swift */,
+				115A2C901DE893FB003B1C00 /* NotaCreditoGiro.swift */,
 			);
 			name = Modelo;
 			sourceTree = "<group>";
@@ -686,6 +692,7 @@
 				11E362541DD2B61600354EB4 /* GiroViewController.swift in Sources */,
 				A4E7D1A61DC93F1E00C4E977 /* AppDelegate.swift in Sources */,
 				1154248E1DDD48C7004EE9E9 /* UtilizacionesTabViewController.swift in Sources */,
+				115A2C911DE893FB003B1C00 /* NotaCreditoGiro.swift in Sources */,
 				11E362641DD2B6E400354EB4 /* UtilizacionesViewController.swift in Sources */,
 				115424881DDD3FFE004EE9E9 /* NotaServicioViewCellController.swift in Sources */,
 				11F894431DDD166F00A58E45 /* FacturaGlosaViewController.swift in Sources */,
@@ -730,6 +737,7 @@
 				11E362451DCDC10700354EB4 /* OpcionesPrincipalesViewController.swift in Sources */,
 				11E3624D1DD281CD00354EB4 /* ServicioNoAsistencialViewController.swift in Sources */,
 				11E362561DD2B64700354EB4 /* NotaCreditoGiroViewCellController.swift in Sources */,
+				115A2C931DE8D985003B1C00 /* DetalleNotaCreditoGiroViewController.swift in Sources */,
 				A43D62D61DCD89320044AB22 /* OpcionesSecundariasViewCell.swift in Sources */,
 				A43FED211DD55F43007B0BFF /* FiltroBitacoraViewController.swift in Sources */,
 				A43D62D81DCDADD20044AB22 /* OpcionesSecundariasLogViewController.swift in Sources */,
