@@ -55,6 +55,7 @@
 		11F894471DDD169900A58E45 /* FacturaImpuestoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F894461DDD169900A58E45 /* FacturaImpuestoViewController.swift */; };
 		5590B139A4FE3ABCDE44DB05 /* Pods_SofibMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 692EC0DDA0C42F4D176CB70A /* Pods_SofibMobile.framework */; };
 		8B75A464F4E22CD2FFF01D38 /* Pods_SofibMobileUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5B9CF158A964CF92923935B /* Pods_SofibMobileUITests.framework */; };
+		A4204D4C1DEA2610002AE700 /* SolicitudesAtencion.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4204D4B1DEA2610002AE700 /* SolicitudesAtencion.swift */; };
 		A43D62D61DCD89320044AB22 /* OpcionesSecundariasViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43D62D51DCD89320044AB22 /* OpcionesSecundariasViewCell.swift */; };
 		A43D62D81DCDADD20044AB22 /* OpcionesSecundariasLogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43D62D71DCDADD20044AB22 /* OpcionesSecundariasLogViewController.swift */; };
 		A43D62DA1DCDD36F0044AB22 /* AutorizacionesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43D62D91DCDD36F0044AB22 /* AutorizacionesViewController.swift */; };
@@ -159,6 +160,7 @@
 		252E058316473D19A91D0566 /* Pods-SofibMobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SofibMobile.release.xcconfig"; path = "Pods/Target Support Files/Pods-SofibMobile/Pods-SofibMobile.release.xcconfig"; sourceTree = "<group>"; };
 		5A60DC2194A36FA88E08C869 /* Pods-SofibMobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SofibMobile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SofibMobile/Pods-SofibMobile.debug.xcconfig"; sourceTree = "<group>"; };
 		692EC0DDA0C42F4D176CB70A /* Pods_SofibMobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SofibMobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4204D4B1DEA2610002AE700 /* SolicitudesAtencion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SolicitudesAtencion.swift; sourceTree = "<group>"; };
 		A43D62D51DCD89320044AB22 /* OpcionesSecundariasViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpcionesSecundariasViewCell.swift; sourceTree = "<group>"; };
 		A43D62D71DCDADD20044AB22 /* OpcionesSecundariasLogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpcionesSecundariasLogViewController.swift; sourceTree = "<group>"; };
 		A43D62D91DCDD36F0044AB22 /* AutorizacionesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutorizacionesViewController.swift; sourceTree = "<group>"; };
@@ -305,6 +307,7 @@
 			children = (
 				11E3624F1DD28CB700354EB4 /* ServicioNoAsistencial.swift */,
 				115A2C901DE893FB003B1C00 /* NotaCreditoGiro.swift */,
+				A4204D4B1DEA2610002AE700 /* SolicitudesAtencion.swift */,
 			);
 			name = Modelo;
 			sourceTree = "<group>";
@@ -683,6 +686,7 @@
 				11E362581DD2B65A00354EB4 /* NotaCreditoGiroViewController.swift in Sources */,
 				A4E7D1A81DC93F1E00C4E977 /* ViewController.swift in Sources */,
 				A4B6F08B1DD2C539000F5A97 /* InformesMedicosViewController.swift in Sources */,
+				A4204D4C1DEA2610002AE700 /* SolicitudesAtencion.swift in Sources */,
 				A4C5E3A71DDB619A00294883 /* BitacoraViewController.swift in Sources */,
 				A4C5E3AB1DDBB34A00294883 /* ProcedimientosAdicionalesViewCell.swift in Sources */,
 				A4B6F0931DD2E0D8000F5A97 /* EpicrisisViewController.swift in Sources */,

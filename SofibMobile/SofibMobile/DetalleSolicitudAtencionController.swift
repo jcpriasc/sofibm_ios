@@ -11,10 +11,31 @@ import UIKit
 class DetalleSolicitudAtencionController:  UIViewController {
 
     
-    
+    @IBOutlet weak var lblNumeroSolicitud: UILabel!
+    @IBOutlet weak var lblIdentificacion: UILabel!
+    @IBOutlet weak var lblNombrePaciente: UILabel!
+    @IBOutlet weak var txtCredencial: UILabel!
+    @IBOutlet weak var txtConvenio: UILabel!
+    @IBOutlet weak var txtCiudadInicial: UILabel!
+    @IBOutlet weak var txtCiudadFinal: UILabel!
+    @IBOutlet weak var txtTraslado: UILabel!
+    @IBOutlet weak var txtFechaProgramada: UILabel!
+    @IBOutlet weak var txtEstado: UILabel!
+    @IBOutlet weak var txtFechaCreado: UILabel!
     
     
     override func viewWillAppear(_ animated: Bool) {
+        lblNumeroSolicitud.text = ConsultaSolicitudesAtencionController.solicitudAtencionSeleccionada.consSolicitud
+        lblIdentificacion.text = ConsultaSolicitudesAtencionController.solicitudAtencionSeleccionada.identificacion
+        lblNombrePaciente.text = ConsultaSolicitudesAtencionController.solicitudAtencionSeleccionada.nombre
+        txtCredencial.text = ConsultaSolicitudesAtencionController.solicitudAtencionSeleccionada.credencial
+        txtConvenio.text = ConsultaSolicitudesAtencionController.solicitudAtencionSeleccionada.convenio
+        txtCiudadInicial.text = ConsultaSolicitudesAtencionController.solicitudAtencionSeleccionada.ciudadInicial
+        txtCiudadFinal.text = ConsultaSolicitudesAtencionController.solicitudAtencionSeleccionada.ciudadActual
+        txtTraslado.text = ConsultaSolicitudesAtencionController.solicitudAtencionSeleccionada.traslado
+        txtFechaProgramada.text = ConsultaSolicitudesAtencionController.solicitudAtencionSeleccionada.fechaProg
+        txtEstado.text = ConsultaSolicitudesAtencionController.solicitudAtencionSeleccionada.estado
+        txtFechaCreado.text = ConsultaSolicitudesAtencionController.solicitudAtencionSeleccionada.fechaCreado
         
     }
     

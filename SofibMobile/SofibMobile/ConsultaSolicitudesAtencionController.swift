@@ -10,8 +10,9 @@ import UIKit
 
 class ConsultaSolicitudesAtencionController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
-    let solicitudesAtencion: NSArray = FiltrosSolicitudAtencionController.myJson!;
+    let solicitudesAtencion: NSArray = FiltrosSolicitudAtencionController.solicitudesAtencionJson!;
    
+    static var solicitudAtencionSeleccionada = SolicitudesAtencion()
     
     override func viewWillAppear(_ animated: Bool) {
       
@@ -41,6 +42,34 @@ class ConsultaSolicitudesAtencionController: UIViewController, UITableViewDataSo
         */
         
         return (cell)
+    }
+    
+    public func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath?{
+        
+        let opcionSeleccionada = indexPath[1]
+        
+        if let solicitud = self.solicitudesAtencion[opcionSeleccionada] as? Dictionary<String, Any>{
+            
+            ConsultaSolicitudesAtencionController.solicitudAtencionSeleccionada.consSolicitud = (solicitud["consSolicitud"] as! String?)!;
+            ConsultaSolicitudesAtencionController.solicitudAtencionSeleccionada.identificacion = (solicitud["identificacion"] as! String?)!;
+            ConsultaSolicitudesAtencionController.solicitudAtencionSeleccionada.nombre = (solicitud["nombre"] as! String?)!;
+            ConsultaSolicitudesAtencionController.solicitudAtencionSeleccionada.credencial = (solicitud["credencial"] as! String?)!;
+            ConsultaSolicitudesAtencionController.solicitudAtencionSeleccionada.convenio = (solicitud["convenio"] as! String?)!;
+            ConsultaSolicitudesAtencionController.solicitudAtencionSeleccionada.ciudadInicial = (solicitud["ciudadInicial"] as! String?)!;
+            ConsultaSolicitudesAtencionController.solicitudAtencionSeleccionada.ciudadActual = (solicitud["ciudadActual"] as! String?)!;
+            ConsultaSolicitudesAtencionController.solicitudAtencionSeleccionada.traslado = (solicitud["traslado"] as! String?)!;
+            ConsultaSolicitudesAtencionController.solicitudAtencionSeleccionada.fechaProg = (solicitud["fechaProg"] as! String?)!;
+            ConsultaSolicitudesAtencionController.solicitudAtencionSeleccionada.estado = (solicitud["estado"] as! String?)!;
+            ConsultaSolicitudesAtencionController.solicitudAtencionSeleccionada.fechaCreado = (solicitud["fechaCreado"] as! String?)!;
+            
+            let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "detalleSolicitudAtencionView")
+            self.show(vc as! UIViewController, sender: vc)
+            
+            
+        }
+        
+    
+        return indexPath
     }
     
     

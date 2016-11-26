@@ -26,7 +26,7 @@ class FiltrosSolicitudAtencionController: UIViewController, UIPickerViewDelegate
     var ciudadesIncial = ["CALI", "BOGOTA", "CARTAGENA", "MEDELLIN", "PEREIRA"]
     var ciudadesActual = ["CALI", "BOGOTA", "CARTAGENA", "MEDELLIN", "PEREIRA"]
     var traslados = ["SI", "NO"]
-    static var myJson : NSArray?
+    static var solicitudesAtencionJson : NSArray?
     
     override func viewWillAppear(_ animated: Bool) {
         
@@ -217,7 +217,7 @@ class FiltrosSolicitudAtencionController: UIViewController, UIPickerViewDelegate
                     do
                     {
                         //Array
-                        FiltrosSolicitudAtencionController.myJson = try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSArray
+                        FiltrosSolicitudAtencionController.solicitudesAtencionJson = try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSArray
                         let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "consultaSolicitudAtencionView")
                         self.show(vc as! UIViewController, sender: vc)
                         
