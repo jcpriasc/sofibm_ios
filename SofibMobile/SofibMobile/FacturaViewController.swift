@@ -13,6 +13,7 @@ class FacturaViewController:  UIViewController, UITableViewDataSource, UITableVi
     let jsonFactura: NSArray = OpcionesSecundariasLogViewController.jsonFacturas!;
     let lstFactura = ["Solicitud 1", "Solicitud 2", "Solicitud 3", "Solicitud 4", "Solicitud 5", "Solicitud 6", "Solicitud 7", "Solicitud 9"]
     
+    static var facturaSeleccionada = Factura()
     
     override func viewDidLoad() {
         super.viewDidLoad()
