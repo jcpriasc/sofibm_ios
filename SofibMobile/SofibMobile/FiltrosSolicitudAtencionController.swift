@@ -276,10 +276,16 @@ class FiltrosSolicitudAtencionController: UIViewController, UIPickerViewDelegate
                     {
                         //Array
                         FiltrosSolicitudAtencionController.solicitudesAtencionJson = try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSArray
-                        print(FiltrosSolicitudAtencionController.solicitudesAtencionJson!.count)
-                        let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "consultaSolicitudAtencionView")
-                        self.show(vc as! UIViewController, sender: vc)
-                        
+                        if ((FiltrosSolicitudAtencionController.solicitudesAtencionJson) != nil && (FiltrosSolicitudAtencionController.solicitudesAtencionJson?.count)!>0){
+                            let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "consultaSolicitudAtencionView")
+                            self.show(vc as! UIViewController, sender: vc)
+                        }else{
+                            //print(NSLocalizedString("lbl_sin_resultados", comment: "lbl_sin_resultados"));
+                            let alert = UIAlertController(title: NSLocalizedString("lbl_alerta", comment: "lbl_alerta"), message: NSLocalizedString("lbl_sin_resultados", comment: "lbl_sin_resultados"), preferredStyle: UIAlertControllerStyle.alert)
+                            alert.addAction(UIAlertAction(title: NSLocalizedString("lbl_aceptar", comment: "lbl_aceptar"), style: UIAlertActionStyle.default, handler: nil))
+                            self.present(alert, animated: true, completion: nil)
+                            
+                        }
                         
                     }
                     catch

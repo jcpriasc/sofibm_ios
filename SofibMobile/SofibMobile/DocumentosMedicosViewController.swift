@@ -10,20 +10,21 @@ import UIKit
 
 class DocumentosMedicosViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    let documentosMedicos = ["documentosMedicos 1", "documentosMedicos 2", "documentosMedicos 3", "documentosMedicos 4", "documentosMedicos 5", "documentosMedicos 6", "documentosMedicos 7", "documentosMedicos 9"]
-
+    //let documentosMedicos = ["documentosMedicos 1", "documentosMedicos 2", "documentosMedicos 3", "documentosMedicos 4", "documentosMedicos 5", "documentosMedicos 6", "documentosMedicos 7", "documentosMedicos 9"]
+    let jsonDocumentosMedicos: NSArray = OpcionesSecundariasViewController.jsonDocumentosMedicos!
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return (documentosMedicos.count)
+        return (jsonDocumentosMedicos.count)
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! DocumentosMedicosViewCell
-        
-        cell.txtNombre.text = documentosMedicos[indexPath.row]
-        cell.txtTipoDocumento.text = documentosMedicos[indexPath.row]
+        if let resultadoConsulta = self.jsonDocumentosMedicos[indexPath.row] as? Dictionary<String, Any>{
+            cell.txtNombre.text = resultadoConsulta["nombreDocumento"] as! String?;
+            cell.txtTipoDocumento.text = resultadoConsulta["tipoArchivo"] as! String?;
+        }
 
         return (cell)
     }

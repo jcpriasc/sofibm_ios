@@ -82,25 +82,30 @@ class OpcionesSecundariasViewController: UIViewController, UITableViewDataSource
         
         switch opcionSeleccionada {
         case 0:
+            //ya
             obtenerAutorizaciones()
         case 1:
             obtenerServiciosAsistenciales()
         case 2:
+            //ya
             obtenerInformesMedicos()
         case 3:
+            //ya
             obtenerDocumentosMedicos()
         case 4:
             let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "bitacorasView")
             self.show(vc as! UIViewController, sender: vc)
             print("The last letter of the alphabet")
         case 5:
+            //ya
             obtenerEpicrisis()
         case 6:
+            //ya
             obtenerProcedimientoAdicionales()
         case 7:
             obtenerFuncionariosExternos()
         default:
-            print("Some other character")
+            obtenerSolicitudesAprobacion()
         }
         
         return indexPath
@@ -136,10 +141,17 @@ class OpcionesSecundariasViewController: UIViewController, UITableViewDataSource
                     {
                         //Array
                         OpcionesSecundariasViewController.jsonAutorizaciones = try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSArray
-                        //poner validacion de array vacio
-                        let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "autorizacionesView")
-                        self.show(vc as! UIViewController, sender: vc)
                         
+                        if ((OpcionesSecundariasViewController.jsonAutorizaciones?.count)!>0){
+                            let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "autorizacionesView")
+                            self.show(vc as! UIViewController, sender: vc)
+                        }else{
+                            //print(NSLocalizedString("lbl_sin_resultados", comment: "lbl_sin_resultados"));
+                            let alert = UIAlertController(title: NSLocalizedString("lbl_alerta", comment: "lbl_alerta"), message: NSLocalizedString("lbl_sin_resultados", comment: "lbl_sin_resultados"), preferredStyle: UIAlertControllerStyle.alert)
+                            alert.addAction(UIAlertAction(title: NSLocalizedString("lbl_aceptar", comment: "lbl_aceptar"), style: UIAlertActionStyle.default, handler: nil))
+                            self.present(alert, animated: true, completion: nil)
+                            
+                        }
                         
                     }
                     catch
@@ -211,9 +223,16 @@ class OpcionesSecundariasViewController: UIViewController, UITableViewDataSource
                     {
                         //Array
                         OpcionesSecundariasViewController.jsonInformesMedicos = try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSArray
-                        //poner validacion de array vacio
-                        let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "informesMedicosView")
-                        self.show(vc as! UIViewController, sender: vc)
+                        if ((OpcionesSecundariasViewController.jsonInformesMedicos?.count)!>0){
+                            let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "informesMedicosView")
+                            self.show(vc as! UIViewController, sender: vc)
+                        }else{
+                            //print(NSLocalizedString("lbl_sin_resultados", comment: "lbl_sin_resultados"));
+                            let alert = UIAlertController(title: NSLocalizedString("lbl_alerta", comment: "lbl_alerta"), message: NSLocalizedString("lbl_sin_resultados", comment: "lbl_sin_resultados"), preferredStyle: UIAlertControllerStyle.alert)
+                            alert.addAction(UIAlertAction(title: NSLocalizedString("lbl_aceptar", comment: "lbl_aceptar"), style: UIAlertActionStyle.default, handler: nil))
+                            self.present(alert, animated: true, completion: nil)
+                            
+                        }
                         
                         
                     }
@@ -245,9 +264,16 @@ class OpcionesSecundariasViewController: UIViewController, UITableViewDataSource
                     {
                         //Array
                         OpcionesSecundariasViewController.jsonDocumentosMedicos = try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSArray
-                        //poner validacion de array vacio
-                        let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "documentosMedicosView")
-                        self.show(vc as! UIViewController, sender: vc)
+                        if ((OpcionesSecundariasViewController.jsonDocumentosMedicos?.count)!>0){
+                            let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "documentosMedicosView")
+                            self.show(vc as! UIViewController, sender: vc)
+                        }else{
+                            //print(NSLocalizedString("lbl_sin_resultados", comment: "lbl_sin_resultados"));
+                            let alert = UIAlertController(title: NSLocalizedString("lbl_alerta", comment: "lbl_alerta"), message: NSLocalizedString("lbl_sin_resultados", comment: "lbl_sin_resultados"), preferredStyle: UIAlertControllerStyle.alert)
+                            alert.addAction(UIAlertAction(title: NSLocalizedString("lbl_aceptar", comment: "lbl_aceptar"), style: UIAlertActionStyle.default, handler: nil))
+                            self.present(alert, animated: true, completion: nil)
+                            
+                        }
                         
                         
                     }
@@ -279,9 +305,16 @@ class OpcionesSecundariasViewController: UIViewController, UITableViewDataSource
                     {
                         //Array
                         OpcionesSecundariasViewController.jsonEpicrisis = try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSArray
-                        //poner validacion de array vacio
-                        let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "epicrisisView")
-                        self.show(vc as! UIViewController, sender: vc)
+                        if ((OpcionesSecundariasViewController.jsonEpicrisis?.count)!>0){
+                            let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "epicrisisView")
+                            self.show(vc as! UIViewController, sender: vc)
+                        }else{
+                            //print(NSLocalizedString("lbl_sin_resultados", comment: "lbl_sin_resultados"));
+                            let alert = UIAlertController(title: NSLocalizedString("lbl_alerta", comment: "lbl_alerta"), message: NSLocalizedString("lbl_sin_resultados", comment: "lbl_sin_resultados"), preferredStyle: UIAlertControllerStyle.alert)
+                            alert.addAction(UIAlertAction(title: NSLocalizedString("lbl_aceptar", comment: "lbl_aceptar"), style: UIAlertActionStyle.default, handler: nil))
+                            self.present(alert, animated: true, completion: nil)
+                            
+                        }
                         
                         
                     }
@@ -313,9 +346,16 @@ class OpcionesSecundariasViewController: UIViewController, UITableViewDataSource
                     {
                         //Array
                         OpcionesSecundariasViewController.jsonProcedimientosAdicionales = try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSArray
-                        //poner validacion de array vacio
-                        let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "procedimientosAdicionalesView")
-                        self.show(vc as! UIViewController, sender: vc)
+                        if ((OpcionesSecundariasViewController.jsonProcedimientosAdicionales?.count)!>0){
+                            let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "procedimientosAdicionalesView")
+                            self.show(vc as! UIViewController, sender: vc)
+                        }else{
+                            //print(NSLocalizedString("lbl_sin_resultados", comment: "lbl_sin_resultados"));
+                            let alert = UIAlertController(title: NSLocalizedString("lbl_alerta", comment: "lbl_alerta"), message: NSLocalizedString("lbl_sin_resultados", comment: "lbl_sin_resultados"), preferredStyle: UIAlertControllerStyle.alert)
+                            alert.addAction(UIAlertAction(title: NSLocalizedString("lbl_aceptar", comment: "lbl_aceptar"), style: UIAlertActionStyle.default, handler: nil))
+                            self.present(alert, animated: true, completion: nil)
+                            
+                        }
                         
                         
                     }
@@ -347,9 +387,16 @@ class OpcionesSecundariasViewController: UIViewController, UITableViewDataSource
                     {
                         //Array
                         OpcionesSecundariasViewController.jsonFuncionariosExternos = try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSArray
-                        //poner validacion de array vacio
-                        let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "funcionariosExternosView")
-                        self.show(vc as! UIViewController, sender: vc)
+                        if ((OpcionesSecundariasViewController.jsonFuncionariosExternos?.count)!>0){
+                            let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "funcionariosExternosView")
+                            self.show(vc as! UIViewController, sender: vc)
+                        }else{
+                            //print(NSLocalizedString("lbl_sin_resultados", comment: "lbl_sin_resultados"));
+                            let alert = UIAlertController(title: NSLocalizedString("lbl_alerta", comment: "lbl_alerta"), message: NSLocalizedString("lbl_sin_resultados", comment: "lbl_sin_resultados"), preferredStyle: UIAlertControllerStyle.alert)
+                            alert.addAction(UIAlertAction(title: NSLocalizedString("lbl_aceptar", comment: "lbl_aceptar"), style: UIAlertActionStyle.default, handler: nil))
+                            self.present(alert, animated: true, completion: nil)
+                            
+                        }
                         
                         
                     }
@@ -366,7 +413,8 @@ class OpcionesSecundariasViewController: UIViewController, UITableViewDataSource
     
     func obtenerSolicitudesAprobacion(){
         
-        let url = URL(string: PropertiesProject.URL+PropertiesProject.complement_aprobacion+params)
+        let url = URL(string: PropertiesProject.URL+PropertiesProject.complement_aprobacion+"/SAC/ABCD1234/0/0/0/"+ConsultaSolicitudesAtencionController.solicitudAtencionSeleccionada.consSolicitud+"/l")
+        print(PropertiesProject.URL+PropertiesProject.complement_aprobacion+"/SAC/ABCD1234/0/0/0/"+ConsultaSolicitudesAtencionController.solicitudAtencionSeleccionada.consSolicitud+"/l")
         
         let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
             if error != nil
@@ -381,9 +429,16 @@ class OpcionesSecundariasViewController: UIViewController, UITableViewDataSource
                     {
                         //Array
                         OpcionesSecundariasViewController.jsonSolicitudAprobacion = try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSArray
-                        //poner validacion de array vacio
-                        let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "")
-                        self.show(vc as! UIViewController, sender: vc)
+                        if ((OpcionesSecundariasViewController.jsonSolicitudAprobacion?.count)!>0){
+                            let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "")
+                            self.show(vc as! UIViewController, sender: vc)
+                        }else{
+                            //print(NSLocalizedString("lbl_sin_resultados", comment: "lbl_sin_resultados"));
+                            let alert = UIAlertController(title: NSLocalizedString("lbl_alerta", comment: "lbl_alerta"), message: NSLocalizedString("lbl_sin_resultados", comment: "lbl_sin_resultados"), preferredStyle: UIAlertControllerStyle.alert)
+                            alert.addAction(UIAlertAction(title: NSLocalizedString("lbl_aceptar", comment: "lbl_aceptar"), style: UIAlertActionStyle.default, handler: nil))
+                            self.present(alert, animated: true, completion: nil)
+                            
+                        }
                         
                         
                     }
