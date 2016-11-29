@@ -10,18 +10,23 @@ import UIKit
 
 class FuncionariosViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    let funcionarios = ["funcionarios 1", "funcionarios 2", "funcionarios 3", "funcionarios 4", "funcionarios 5", "funcionarios 6", "funcionarios 7", "funcionarios 9"]
-    
+    //let funcionarios = ["funcionarios 1", "funcionarios 2", "funcionarios 3", "funcionarios 4", "funcionarios 5", "funcionarios 6", "funcionarios 7", "funcionarios 9"]
+    let jsonFuncionariosExternos: NSArray = OpcionesSecundariasViewController.jsonFuncionariosExternos!
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return (funcionarios.count)
+        return (jsonFuncionariosExternos.count)
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! FuncionariosTableViewCell
-        
+        if let resultadoConsulta = self.jsonFuncionariosExternos[indexPath.row] as? Dictionary<String, Any>{
+            cell.txtFuncionario.text = resultadoConsulta["prestadorSolicitud"] as! String?;
+            cell.txtFecha.text = resultadoConsulta["fechaCita"] as! String?;
+            cell.txtMedico.text = resultadoConsulta["nombreMedico"] as! String?;
+            cell.txtEspecialidad.text = resultadoConsulta["especialidad"] as! String?;
+        }
         /*cell.lblNombreProcedimiento.text = procedimientosAdicionales[indexPath.row]
          cell.lblCiudad.text = procedimientosAdicionales[indexPath.row]
          cell.lblPrestador.text = procedimientosAdicionales[indexPath.row]*/

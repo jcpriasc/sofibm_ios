@@ -11,23 +11,41 @@ import UIKit
 class InformesMedicosViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     
-    let informesMedicos = ["informesMedicos 1", "informesMedicos 2", "informesMedicos 3", "informesMedicos 4", "informesMedicos 5", "informesMedicos 6", "informesMedicos 7", "informesMedicos 9"]
+    //let informesMedicos = ["informesMedicos 1", "informesMedicos 2", "informesMedicos 3", "informesMedicos 4", "informesMedicos 5", "informesMedicos 6", "informesMedicos 7", "informesMedicos 9"]
+    let jsonInformesMedicos: NSArray = OpcionesSecundariasViewController.jsonInformesMedicos!
     
 
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return (informesMedicos.count)
+        return (jsonInformesMedicos.count)
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! InformesMedicosViewCell
         
-        cell.txtFechaRegistro.text = informesMedicos[indexPath.row]
-        cell.txtCiudad.text = informesMedicos[indexPath.row]
-        cell.txtDadoAlta.text = informesMedicos[indexPath.row]
-        cell.txtFallecido.text = informesMedicos[indexPath.row]
-        cell.txtEstado.text = informesMedicos[indexPath.row]
+        if let resultadoConsulta = self.jsonInformesMedicos[indexPath.row] as? Dictionary<String, Any>{
+            
+            let dadoAlta = resultadoConsulta["dadoAlta"] as! Bool?;
+            let fallecido = resultadoConsulta["fallecido"] as! Bool?;
+            
+            if dadoAlta! {
+                cell.txtDadoAlta.text = NSLocalizedString("lbl_si", comment: "lbl_si")
+            }else{
+                cell.txtDadoAlta.text = NSLocalizedString("lbl_no", comment: "lbl_no")
+            }
+            
+            if fallecido! {
+                cell.txtFallecido.text = NSLocalizedString("lbl_si", comment: "lbl_si")
+            }else{
+                cell.txtFallecido.text = NSLocalizedString("lbl_no", comment: "lbl_no")
+            }
+            
+            cell.txtFechaRegistro.text = resultadoConsulta["creadoFecha"] as! String?;
+            cell.txtCiudad.text = resultadoConsulta["ciudad"] as! String?;
+            cell.txtEstado.text = resultadoConsulta["pacienteEstado"] as! String?;
+        }
+        
         return (cell)
     }
 

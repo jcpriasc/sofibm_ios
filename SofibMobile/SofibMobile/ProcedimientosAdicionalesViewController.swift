@@ -11,21 +11,26 @@ import UIKit
 class ProcedimientosAdicionalesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     
-    let procedimientosAdicionales = ["procedimientosAdicionales 1", "procedimientosAdicionales 2", "procedimientosAdicionales 3", "procedimientosAdicionales 4", "procedimientosAdicionales 5", "procedimientosAdicionales 6", "procedimientosAdicionales 7", "procedimientosAdicionales 9"]
+    //let procedimientosAdicionales = ["procedimientosAdicionales 1", "procedimientosAdicionales 2", "procedimientosAdicionales 3", "procedimientosAdicionales 4", "procedimientosAdicionales 5", //"procedimientosAdicionales 6", "procedimientosAdicionales 7", "procedimientosAdicionales 9"]
+    
+    let jsonProcedimientosAdicionales: NSArray = OpcionesSecundariasViewController.jsonProcedimientosAdicionales!
     
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return (procedimientosAdicionales.count)
+        return (jsonProcedimientosAdicionales.count)
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ProcedimientosAdicionalesViewCell
+
+        if let resultadoConsulta = self.jsonProcedimientosAdicionales[indexPath.row] as? Dictionary<String, Any>{
+            cell.txtNombreProcedimiento.text = resultadoConsulta["procedimientoSolicitado"] as! String?;
+            cell.txtCiudad.text = resultadoConsulta["ciudad"] as! String?;
+            cell.txtPrestador.text = resultadoConsulta["prestadorNombre"] as! String?;
+        }
         
-        /*cell.lblNombreProcedimiento.text = procedimientosAdicionales[indexPath.row]
-        cell.lblCiudad.text = procedimientosAdicionales[indexPath.row]
-        cell.lblPrestador.text = procedimientosAdicionales[indexPath.row]*/
         
         return (cell)
     }
