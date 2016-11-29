@@ -105,7 +105,7 @@ class OpcionesSecundariasViewController: UIViewController, UITableViewDataSource
         case 7:
             obtenerFuncionariosExternos()
         default:
-            print("Some other character")
+            obtenerSolicitudesAprobacion()
         }
         
         return indexPath
@@ -413,7 +413,8 @@ class OpcionesSecundariasViewController: UIViewController, UITableViewDataSource
     
     func obtenerSolicitudesAprobacion(){
         
-        let url = URL(string: PropertiesProject.URL+PropertiesProject.complement_aprobacion+params)
+        let url = URL(string: PropertiesProject.URL+PropertiesProject.complement_aprobacion+"/SAC/ABCD1234/0/0/0/"+ConsultaSolicitudesAtencionController.solicitudAtencionSeleccionada.consSolicitud+"/l")
+        print(PropertiesProject.URL+PropertiesProject.complement_aprobacion+"/SAC/ABCD1234/0/0/0/"+ConsultaSolicitudesAtencionController.solicitudAtencionSeleccionada.consSolicitud+"/l")
         
         let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
             if error != nil
