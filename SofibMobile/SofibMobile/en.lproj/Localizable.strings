@@ -219,3 +219,6 @@
 "lbl_tab_impuesto"= "Taxes";
 "lbl_tab_nota_credito"= "Credit Note";
 "lbl_cargando"= "Please wait...";
+"lbl_sin_resultados"="No data found";
+"lbl_alerta"="Alert";
+"lbl_aceptar"="Ok";

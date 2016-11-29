@@ -221,3 +221,6 @@
 "lbl_cargando"= "Un momento por favor...";
 "lbl_doble_back"= "Por favor presione ATRÁS de nuevo para salir";
 "action_settings"= "Ajustes";
+"lbl_sin_resultados"="No se han encontrado datos";
+"lbl_alerta"="Alerta";
+"lbl_aceptar"="Aceptar";
