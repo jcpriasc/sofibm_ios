@@ -16,6 +16,6 @@ class ServicioNoAsistencial{
     var estado: String = ""
     var aprobada: String = ""
     var justificacion: String = ""
-    var consServicio: String = ""
+    var consServicio: Double = 0
 
 }

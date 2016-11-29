@@ -40,9 +40,9 @@ class EncuestaViewController:  UIViewController, UITableViewDataSource, UITableV
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! EncuestaViewCellController
         
         if let solicitud = self.jsonEncuesta[indexPath.row] as? Dictionary<String, Any>{
-            cell.txtPregunta.text = solicitud["pregunta"] as! String?;
-            cell.txtRespuesta.text = solicitud["respuesta"] as! String?;
-            cell.txtObservacion.text = solicitud["observacion"] as! String?;
+            cell.txtPregunta.text = (solicitud["pregunta"] as? String ?? "");
+            cell.txtRespuesta.text = (solicitud["respuesta"] as? String ?? "");
+            cell.txtObservacion.text = (solicitud["observacion"] as? String ?? "");
         }
         
         return (cell)

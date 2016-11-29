@@ -41,10 +41,10 @@ class FacturaViewController:  UIViewController, UITableViewDataSource, UITableVi
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! FacturaViewCellController
 
         if let solicitud = self.jsonFactura[indexPath.row] as? Dictionary<String, Any>{
-            cell.txtValorTotalFactura.text = solicitud["valorTotalFactura"] as! String?;
-            cell.txtEstado.text = solicitud["estado"] as! String?;
-            cell.txtFechaExpedicion.text = solicitud["fechaExpedicion"] as! String?;
-            cell.txtNumeroFactura.text = solicitud["facturaNro"] as! String?;
+            cell.txtValorTotalFactura.text = (solicitud["valorTotalFactura"] as? String ?? "");
+            cell.txtEstado.text = (solicitud["estado"] as? String ?? "");
+            cell.txtFechaExpedicion.text = (solicitud["fechaExpedicion"] as? String ?? "");
+            cell.txtNumeroFactura.text = (solicitud["facturaNro"] as? String ?? "");
         }
 
         return (cell)
@@ -58,18 +58,18 @@ class FacturaViewController:  UIViewController, UITableViewDataSource, UITableVi
         
         if let solicitud = self.jsonFactura[opcionSeleccionada] as? Dictionary<String, Any>{
             
-            FacturaViewController.facturaSeleccionada.numeroFactura = (solicitud["facturaNro"] as! String?)!;
-            FacturaViewController.facturaSeleccionada.fechaExpedicion = (solicitud["fechaExpedicion"] as! String?)!;
-            FacturaViewController.facturaSeleccionada.estado = (solicitud["estado"] as! String?)!;
-            FacturaViewController.facturaSeleccionada.valorTotalFactura = (solicitud["valorTotalFactura"] as! String?)!;
-            FacturaViewController.facturaSeleccionada.ciudad = (solicitud["ciudad"] as! String?)!;
-            FacturaViewController.facturaSeleccionada.fechaRadicacion = (solicitud["fechaRadicacion"] as! String?)!;
-            FacturaViewController.facturaSeleccionada.fechaAprobacionRechazo = (solicitud["fechaAprobacion"] as! String?)!;
-            FacturaViewController.facturaSeleccionada.fechaAnulacion = (solicitud["fechaAnulacion"] as! String?)!;
-            FacturaViewController.facturaSeleccionada.valorIva = (solicitud["valorIva"] as! String?)!;
-            FacturaViewController.facturaSeleccionada.valorTotalPagar = (solicitud["valorTotalPagar"] as! String?)!;
-            FacturaViewController.facturaSeleccionada.prestadorProveedor = (solicitud["proveedor"] as! String?)!;
-            FacturaViewController.facturaSeleccionada.tipoServicio = (solicitud["tipoSolicitud"] as! String?)!;
+            FacturaViewController.facturaSeleccionada.numeroFactura = (solicitud["facturaNro"] as? String ?? "");
+            FacturaViewController.facturaSeleccionada.fechaExpedicion = (solicitud["fechaExpedicion"] as? String ?? "");
+            FacturaViewController.facturaSeleccionada.estado = (solicitud["estado"] as? String ?? "");
+            FacturaViewController.facturaSeleccionada.valorTotalFactura = (solicitud["valorTotalFactura"] as? String ?? "");
+            FacturaViewController.facturaSeleccionada.ciudad = (solicitud["ciudad"] as? String ?? "");
+            FacturaViewController.facturaSeleccionada.fechaRadicacion = (solicitud["fechaRadicacion"] as? String ?? "");
+            FacturaViewController.facturaSeleccionada.fechaAprobacionRechazo = (solicitud["fechaAprobacion"] as? String ?? "");
+            FacturaViewController.facturaSeleccionada.fechaAnulacion = (solicitud["fechaAnulacion"] as? String ?? "");
+            FacturaViewController.facturaSeleccionada.valorIva = (solicitud["valorIva"] as? String ?? "");
+            FacturaViewController.facturaSeleccionada.valorTotalPagar = (solicitud["valorTotalPagar"] as? String ?? "");
+            FacturaViewController.facturaSeleccionada.prestadorProveedor = (solicitud["proveedor"] as? String ?? "");
+            FacturaViewController.facturaSeleccionada.tipoServicio = (solicitud["tipoSolicitud"] as? String ?? "");
     
         }
         

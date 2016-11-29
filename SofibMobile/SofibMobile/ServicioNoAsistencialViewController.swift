@@ -43,9 +43,9 @@ class ServicioNoAsistencialViewController: UIViewController, UITableViewDataSour
         
         
         if let solicitud = self.jsonServicioNoAsistencial[indexPath.row] as? Dictionary<String, Any>{
-            cell.txtNumeroSolicitud.text = solicitud["codSolicitud"] as! String?;
-            cell.txtIdentificacion.text = solicitud["tipoSolicitud"] as! String?;
-            cell.txtNombre.text = solicitud["ciudad"] as! String?;
+            cell.txtNumeroSolicitud.text = (solicitud["codSolicitud"] as? String ?? "");
+            cell.txtIdentificacion.text = (solicitud["tipoSolicitud"] as? String ?? "");
+            cell.txtNombre.text = (solicitud["ciudad"] as? String ?? "");
         }
         
         return (cell)
@@ -58,15 +58,15 @@ class ServicioNoAsistencialViewController: UIViewController, UITableViewDataSour
         let opcionSeleccionada = indexPath[1]
         
         if let solicitud = self.jsonServicioNoAsistencial[opcionSeleccionada] as? Dictionary<String, Any>{
+        
+            ServicioNoAsistencialViewController.servicioNoAsistencial.numeroSolicitud = (solicitud["codSolicitud"] as? String ?? "");
+            ServicioNoAsistencialViewController.servicioNoAsistencial.tipoSolicitud = (solicitud["tipoSolicitud"] as? String ?? "");
+            ServicioNoAsistencialViewController.servicioNoAsistencial.ciudad = (solicitud["ciudad"] as? String ?? "");
+            ServicioNoAsistencialViewController.servicioNoAsistencial.estado = (solicitud["estado"] as? String ?? "");
+            ServicioNoAsistencialViewController.servicioNoAsistencial.justificacion = (solicitud["justificacionCancelado"] as? String ?? "");
+            ServicioNoAsistencialViewController.servicioNoAsistencial.consServicio = (solicitud["consservicio"] as! Double?)!;
             
-            ServicioNoAsistencialViewController.servicioNoAsistencial.numeroSolicitud = (solicitud["codSolicitud"] as! String?)!;
-            ServicioNoAsistencialViewController.servicioNoAsistencial.tipoSolicitud = (solicitud["tipoSolicitud"] as! String?)!;
-            ServicioNoAsistencialViewController.servicioNoAsistencial.ciudad = (solicitud["ciudad"] as! String?)!;
-            ServicioNoAsistencialViewController.servicioNoAsistencial.estado = (solicitud["estado"] as! String?)!;
-            ServicioNoAsistencialViewController.servicioNoAsistencial.justificacion = (solicitud["justificacionCancelado"] as! String?)!;
-            ServicioNoAsistencialViewController.servicioNoAsistencial.consServicio = (solicitud["consservicio"] as! String?)!;
-            
-            
+             //result["artworkUrl60"] as? String ?? ""
         }
         
         return indexPath

@@ -42,9 +42,9 @@ class UtilizacionesViewController:  UIViewController, UITableViewDataSource, UIT
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! UtilizacionesViewCellController
         
         if let solicitud = self.jsonUtilizaciones[indexPath.row] as? Dictionary<String, Any>{
-            cell.txtConvenio.text = solicitud["convenio"] as! String?;
-            cell.txtDesde.text = solicitud["desde"] as! String?;
-            cell.txtHasta.text = solicitud["hasta"] as! String?;
+            cell.txtConvenio.text = (solicitud["convenio"] as? String ?? "");
+            cell.txtDesde.text = (solicitud["desde"] as? String ?? "");
+            cell.txtHasta.text = (solicitud["hasta"] as? String ?? "");
         }
         
         return (cell)

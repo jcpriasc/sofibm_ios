@@ -41,11 +41,11 @@ class GiroViewController:  UIViewController, UITableViewDataSource, UITableViewD
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! GiroViewCellController
         
         if let solicitud = self.jsonGiro[indexPath.row] as? Dictionary<String, Any>{
-            cell.txtEstado.text = solicitud["estado"] as! String?;
-            cell.txtBeneficiario.text = solicitud["beneficiario"] as! String?;
-            cell.txtIdentificacionBeneficiario.text = solicitud["identificacionBeneficiario"] as! String?;
-            cell.txtTipoGiro.text = solicitud["tipoGiro"] as! String?;
-            cell.txtIdentificacion.text = solicitud["id"] as! String?;
+            cell.txtEstado.text = (solicitud["estado"] as? String ?? "");
+            cell.txtBeneficiario.text = (solicitud["beneficiario"] as? String ?? "");
+            cell.txtIdentificacionBeneficiario.text = (solicitud["identificacionBeneficiario"] as? String ?? "");
+            cell.txtTipoGiro.text = (solicitud["tipoGiro"] as? String ?? "");
+            cell.txtIdentificacion.text = (solicitud["id"] as? String ?? "");
         }
         
         return (cell)
@@ -59,25 +59,25 @@ class GiroViewController:  UIViewController, UITableViewDataSource, UITableViewD
         
         if let solicitud = self.jsonGiro[opcionSeleccionada] as? Dictionary<String, Any>{
             
-            GiroViewController.giroSeleccionado.consecutivo = (solicitud["cons"] as! String?)!;
-            GiroViewController.giroSeleccionado.numeroSolicitud = (solicitud["id"] as! String?)!;
+            GiroViewController.giroSeleccionado.consecutivo = (solicitud["cons"] as! Double?)!;
+            GiroViewController.giroSeleccionado.numeroSolicitud = (solicitud["id"] as? String ?? "");
             GiroViewController.giroSeleccionado.tipoGiro = (solicitud["tipoGiro"] as! String?)!;
-            GiroViewController.giroSeleccionado.identificacionBeneficiario = (solicitud["identificacionBeneficiario"] as! String?)!;
-            GiroViewController.giroSeleccionado.beneficiario = (solicitud["beneficiario"] as! String?)!;
-            GiroViewController.giroSeleccionado.estado = (solicitud["estado"] as! String?)!;
-            GiroViewController.giroSeleccionado.ciudad = (solicitud["ciudad"] as! String?)!;
-            GiroViewController.giroSeleccionado.tipoBeneficiario = (solicitud["tipoBeneficiario"] as! String?)!;
-            GiroViewController.giroSeleccionado.tipoIdentificacionBeneficiario = (solicitud["tipoIdentificacionBeneficiario"] as! String?)!;
-            GiroViewController.giroSeleccionado.fechaInicio = (solicitud["fechaInicio"] as! String?)!;
-            GiroViewController.giroSeleccionado.fechaFin = (solicitud["fechaFin"] as! String?)!;
-            GiroViewController.giroSeleccionado.valorMonedaExtranjero = (solicitud["valorMonedaExtranjera"] as! String?)!;
-            GiroViewController.giroSeleccionado.valorMonedaLocal = (solicitud["valorMonedaLocal"] as! String?)!;
-            GiroViewController.giroSeleccionado.registraDevolucion = (solicitud["registraDevolucion"] as! String?)!;
-            GiroViewController.giroSeleccionado.valorDevolucion = (solicitud["valorDevolucion"] as! String?)!;
-            GiroViewController.giroSeleccionado.legalizado = (solicitud["legalizado"] as! String?)!;
-            GiroViewController.giroSeleccionado.valorLegalizado = (solicitud["valorLegalizado"] as! String?)!;
-            GiroViewController.giroSeleccionado.justificacionAnulacion = (solicitud["justificacionAnulacion"] as! String?)!;
-            GiroViewController.giroSeleccionado.aprobadoGiro = (solicitud["aprobadorGiro"] as! String?)!;
+            GiroViewController.giroSeleccionado.identificacionBeneficiario = (solicitud["identificacionBeneficiario"] as? String ?? "");
+            GiroViewController.giroSeleccionado.beneficiario = (solicitud["beneficiario"] as? String ?? "");
+            GiroViewController.giroSeleccionado.estado = (solicitud["estado"] as? String ?? "");
+            GiroViewController.giroSeleccionado.ciudad = (solicitud["ciudad"] as? String ?? "");
+            GiroViewController.giroSeleccionado.tipoBeneficiario = (solicitud["tipoBeneficiario"] as? String ?? "");
+            GiroViewController.giroSeleccionado.tipoIdentificacionBeneficiario = (solicitud["tipoIdentificacionBeneficiario"] as? String ?? "");
+            GiroViewController.giroSeleccionado.fechaInicio = (solicitud["fechaInicio"] as? String ?? "");
+            GiroViewController.giroSeleccionado.fechaFin = (solicitud["fechaFin"] as? String ?? "");
+            GiroViewController.giroSeleccionado.valorMonedaExtranjero = (solicitud["valorMonedaExtranjera"] as? String ?? "");
+            GiroViewController.giroSeleccionado.valorMonedaLocal = (solicitud["valorMonedaLocal"] as? String ?? "");
+            GiroViewController.giroSeleccionado.registraDevolucion = (solicitud["registraDevolucion"] as? String ?? "");
+            GiroViewController.giroSeleccionado.valorDevolucion = (solicitud["valorDevolucion"] as? String ?? "");
+            GiroViewController.giroSeleccionado.legalizado = (solicitud["legalizado"] as? String ?? "");
+            GiroViewController.giroSeleccionado.valorLegalizado = (solicitud["valorLegalizado"] as? String ?? "");
+            GiroViewController.giroSeleccionado.justificacionAnulacion = (solicitud["justificacionAnulacion"] as? String ?? "");
+            GiroViewController.giroSeleccionado.aprobadoGiro = (solicitud["aprobadorGiro"] as? String ?? "");
             
         }
         

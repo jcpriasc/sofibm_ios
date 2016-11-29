@@ -41,10 +41,10 @@ class NotaCreditoGiroViewController:  UIViewController, UITableViewDataSource, U
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! NotaCreditoGiroViewCellController
         
         if let solicitud = self.jsonNotaCreditoGiro[indexPath.row] as? Dictionary<String, Any>{
-            cell.txtTipoGiro.text = solicitud["tipoGiro"] as! String?;
-            cell.txtNombreBeneficiario.text = solicitud["beneficiario"] as! String?;
-            cell.txtIdGiroAsociado.text = solicitud["giroAsociado"] as! String?;
-            cell.txtConsecutivoNotaCredito.text = solicitud["notaCredito"] as! String?;
+            cell.txtTipoGiro.text = (solicitud["tipoGiro"] as? String ?? "");
+            cell.txtNombreBeneficiario.text = (solicitud["beneficiario"] as? String ?? "");
+            cell.txtIdGiroAsociado.text = (solicitud["giroAsociado"] as? String ?? "");
+            cell.txtConsecutivoNotaCredito.text = (solicitud["notaCredito"] as? String ?? "");
         }
 
         return (cell)
@@ -58,16 +58,16 @@ class NotaCreditoGiroViewController:  UIViewController, UITableViewDataSource, U
         
         if let solicitud = self.jsonNotaCreditoGiro[opcionSeleccionada] as? Dictionary<String, Any>{
             
-            NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.consecutivoNota = (solicitud["notaCredito"] as! String?)!;
-            NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.idGiroAsociado = (solicitud["giroAsociado"] as! String?)!;
-            NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.nombreBeneficiario = (solicitud["beneficiario"] as! String?)!;
-            NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.tipoGiro = (solicitud["tipoGiro"] as! String?)!;
-            NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.ciudad = (solicitud["ciudad"] as! String?)!;
-            NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.tipoBeneficiario = (solicitud["tipoBeneficiario"] as! String?)!;
-            NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.estado = (solicitud["estado"] as! String?)!;
-            NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.valorNota = (solicitud["valorNota"] as! String?)!;
-            NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.fechaRegistro = (solicitud["fechaRegistro"] as! String?)!;
-            NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.fechaLiquidacion = (solicitud["fechaLiquidacion"] as! String?)!;
+            NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.consecutivoNota = (solicitud["notaCredito"] as? String ?? "");
+            NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.idGiroAsociado = (solicitud["giroAsociado"] as? String ?? "");
+            NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.nombreBeneficiario = (solicitud["beneficiario"] as? String ?? "");
+            NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.tipoGiro = (solicitud["tipoGiro"] as? String ?? "");
+            NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.ciudad = (solicitud["ciudad"] as? String ?? "");
+            NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.tipoBeneficiario = (solicitud["tipoBeneficiario"] as? String ?? "");
+            NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.estado = (solicitud["estado"] as? String ?? "");
+            NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.valorNota = (solicitud["valorNota"] as? String ?? "");
+            NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.fechaRegistro = (solicitud["fechaRegistro"] as? String ?? "");
+            NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.fechaLiquidacion = (solicitud["fechaLiquidacion"] as? String ?? "");
             
         }
         

@@ -11,7 +11,7 @@ import Foundation
 
 class Giro{
     
-    var consecutivo: String = ""
+    var consecutivo: Double = 0
     var numeroSolicitud: String = ""
     var tipoGiro: String = ""
     var identificacionBeneficiario: String = ""

@@ -41,9 +41,9 @@ class SolicitudAprobacionViewController:  UIViewController, UITableViewDataSourc
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! SolicitudAprobacionViewCellController
         
         if let solicitud = self.jsonSolicitudAprobacion[indexPath.row] as? Dictionary<String, Any>{
-            cell.txtNombrePaciente.text = solicitud["nombrePaciente"] as! String?;
-            cell.txtFechaSolicitud.text = solicitud["fechaSolicitud"] as! String?;
-            cell.txtEstado.text = solicitud["estado"] as! String?;
+            cell.txtNombrePaciente.text = (solicitud["nombrePaciente"] as? String ?? "");
+            cell.txtFechaSolicitud.text = (solicitud["fechaSolicitud"] as? String ?? "");
+            cell.txtEstado.text = (solicitud["estado"] as? String ?? "");
         }
         
         return (cell)
@@ -56,19 +56,19 @@ class SolicitudAprobacionViewController:  UIViewController, UITableViewDataSourc
         
         if let solicitud = self.jsonSolicitudAprobacion[opcionSeleccionada] as? Dictionary<String, Any>{
             
-            SolicitudAprobacionViewController.solicitudAprobacionSeleccionado.nombrePaciente = (solicitud["nombrePaciente"] as! String?)!;
-            SolicitudAprobacionViewController.solicitudAprobacionSeleccionado.estado = (solicitud["estado"] as! String?)!;
-            SolicitudAprobacionViewController.solicitudAprobacionSeleccionado.fechaSolicitud = (solicitud["fechaSolicitud"] as! String?)!;
-            SolicitudAprobacionViewController.solicitudAprobacionSeleccionado.descripcion = (solicitud["solicitudDescripcion"] as! String?)!;
-            SolicitudAprobacionViewController.solicitudAprobacionSeleccionado.tipoAutorizacion = (solicitud["tipoAutorizacion"] as! String?)!;
-            SolicitudAprobacionViewController.solicitudAprobacionSeleccionado.tipoEntidad = (solicitud["tipoEntidad"] as! String?)!;
-            SolicitudAprobacionViewController.solicitudAprobacionSeleccionado.solicitante = (solicitud["solicitante"] as! String?)!;
-            SolicitudAprobacionViewController.solicitudAprobacionSeleccionado.autoriza = (solicitud["autoriza"] as! String?)!;
-            SolicitudAprobacionViewController.solicitudAprobacionSeleccionado.fechaAutorizacion = (solicitud["fechaAutorizacion"] as! String?)!;
-            SolicitudAprobacionViewController.solicitudAprobacionSeleccionado.servicio = (solicitud["servicio"] as! String?)!;
-            SolicitudAprobacionViewController.solicitudAprobacionSeleccionado.proveedor = (solicitud["proveedor"] as! String?)!;
-            SolicitudAprobacionViewController.solicitudAprobacionSeleccionado.prestador = (solicitud["prestador"] as! String?)!;
-            SolicitudAprobacionViewController.solicitudAprobacionSeleccionado.justificacion = (solicitud["justificacion"] as! String?)!;
+            SolicitudAprobacionViewController.solicitudAprobacionSeleccionado.nombrePaciente = (solicitud["nombrePaciente"] as? String ?? "");
+            SolicitudAprobacionViewController.solicitudAprobacionSeleccionado.estado = (solicitud["estado"] as? String ?? "");
+            SolicitudAprobacionViewController.solicitudAprobacionSeleccionado.fechaSolicitud = (solicitud["fechaSolicitud"] as? String ?? "");
+            SolicitudAprobacionViewController.solicitudAprobacionSeleccionado.descripcion = (solicitud["solicitudDescripcion"] as? String ?? "");
+            SolicitudAprobacionViewController.solicitudAprobacionSeleccionado.tipoAutorizacion = (solicitud["tipoAutorizacion"] as? String ?? "");
+            SolicitudAprobacionViewController.solicitudAprobacionSeleccionado.tipoEntidad = (solicitud["tipoEntidad"] as? String ?? "");
+            SolicitudAprobacionViewController.solicitudAprobacionSeleccionado.solicitante = (solicitud["solicitante"] as? String ?? "");
+            SolicitudAprobacionViewController.solicitudAprobacionSeleccionado.autoriza = (solicitud["autoriza"] as? String ?? "");
+            SolicitudAprobacionViewController.solicitudAprobacionSeleccionado.fechaAutorizacion = (solicitud["fechaAutorizacion"] as? String ?? "");
+            SolicitudAprobacionViewController.solicitudAprobacionSeleccionado.servicio = (solicitud["servicio"] as? String ?? "");
+            SolicitudAprobacionViewController.solicitudAprobacionSeleccionado.proveedor = (solicitud["proveedor"] as? String ?? "");
+            SolicitudAprobacionViewController.solicitudAprobacionSeleccionado.prestador = (solicitud["prestador"] as? String ?? "");
+            SolicitudAprobacionViewController.solicitudAprobacionSeleccionado.justificacion = (solicitud["justificacion"] as? String ?? "");
             
         }
         

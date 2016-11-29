@@ -41,10 +41,10 @@ class NotaCreditoDebitoViewController:  UIViewController, UITableViewDataSource,
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! NotaCreditoDebitoViewCellController
         
         if let solicitud = self.jsonNotaCreditoDebito[indexPath.row] as? Dictionary<String, Any>{
-            cell.txtNumeroNota.text = solicitud["numeroNota"] as! String?;
-            cell.txtNumeroFactura.text = solicitud["numeroFactura"] as! String?;
-            cell.txtFechaExpedicion.text = solicitud["fechaExpedicion"] as! String?;
-            cell.txtFechaAprobacion.text = solicitud["fechaAprobacion"] as! String?;
+            cell.txtNumeroNota.text = (solicitud["numeroNota"] as? String ?? "");
+            cell.txtNumeroFactura.text = (solicitud["numeroFactura"] as? String ?? "");
+            cell.txtFechaExpedicion.text = (solicitud["fechaExpedicion"] as? String ?? "");
+            cell.txtFechaAprobacion.text = (solicitud["fechaAprobacion"] as? String ?? "");
         }
         
         return (cell)
@@ -57,17 +57,17 @@ class NotaCreditoDebitoViewController:  UIViewController, UITableViewDataSource,
         
         if let solicitud = self.jsonNotaCreditoDebito[opcionSeleccionada] as? Dictionary<String, Any>{
             
-            NotaCreditoDebitoViewController.notaCreditoDebitoSeleccionado.consNota = (solicitud["consNota"] as! String?)!;
-            NotaCreditoDebitoViewController.notaCreditoDebitoSeleccionado.numeroNota = (solicitud["numeroNota"] as! String?)!;
-            NotaCreditoDebitoViewController.notaCreditoDebitoSeleccionado.numeroFactura = (solicitud["numeroFactura"] as! String?)!;
-            NotaCreditoDebitoViewController.notaCreditoDebitoSeleccionado.fechaExpedicion = (solicitud["fechaExpedicion"] as! String?)!;
-            NotaCreditoDebitoViewController.notaCreditoDebitoSeleccionado.fechaAprobacion = (solicitud["fechaAprobacion"] as! String?)!;
-            NotaCreditoDebitoViewController.notaCreditoDebitoSeleccionado.ciudad = (solicitud["ciudad"] as! String?)!;
-            NotaCreditoDebitoViewController.notaCreditoDebitoSeleccionado.proveedor = (solicitud["proveedor"] as! String?)!;
-            NotaCreditoDebitoViewController.notaCreditoDebitoSeleccionado.motivo = (solicitud["motivo"] as! String?)!;
-            NotaCreditoDebitoViewController.notaCreditoDebitoSeleccionado.estado = (solicitud["estado"] as! String?)!;
-            NotaCreditoDebitoViewController.notaCreditoDebitoSeleccionado.tipoNota = (solicitud["tipoNota"] as! String?)!;
-            NotaCreditoDebitoViewController.notaCreditoDebitoSeleccionado.valorTotalNotaCredito = (solicitud["valorTotalNotaCredito"] as! String?)!;
+            NotaCreditoDebitoViewController.notaCreditoDebitoSeleccionado.consNota = (solicitud["consNota"] as! Double?)!;
+            NotaCreditoDebitoViewController.notaCreditoDebitoSeleccionado.numeroNota = (solicitud["numeroNota"] as? String ?? "");
+            NotaCreditoDebitoViewController.notaCreditoDebitoSeleccionado.numeroFactura = (solicitud["numeroFactura"] as? String ?? "");
+            NotaCreditoDebitoViewController.notaCreditoDebitoSeleccionado.fechaExpedicion = (solicitud["fechaExpedicion"] as? String ?? "");
+            NotaCreditoDebitoViewController.notaCreditoDebitoSeleccionado.fechaAprobacion = (solicitud["fechaAprobacion"] as? String ?? "");
+            NotaCreditoDebitoViewController.notaCreditoDebitoSeleccionado.ciudad = (solicitud["ciudad"] as? String ?? "");
+            NotaCreditoDebitoViewController.notaCreditoDebitoSeleccionado.proveedor = (solicitud["proveedor"] as? String ?? "");
+            NotaCreditoDebitoViewController.notaCreditoDebitoSeleccionado.motivo = (solicitud["motivo"] as? String ?? "");
+            NotaCreditoDebitoViewController.notaCreditoDebitoSeleccionado.estado = (solicitud["estado"] as? String ?? "");
+            NotaCreditoDebitoViewController.notaCreditoDebitoSeleccionado.tipoNota = (solicitud["tipoNota"] as? String ?? "");
+            NotaCreditoDebitoViewController.notaCreditoDebitoSeleccionado.valorTotalNotaCredito = (solicitud["valorTotalNotaCredito"] as? String ?? "");
             
         }
         
