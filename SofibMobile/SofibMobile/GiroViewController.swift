@@ -53,6 +53,37 @@ class GiroViewController:  UIViewController, UITableViewDataSource, UITableViewD
         
     }
     
+    public func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath?
+    {
+        let opcionSeleccionada = indexPath[1]
+        
+        if let solicitud = self.jsonGiro[opcionSeleccionada] as? Dictionary<String, Any>{
+            
+            GiroViewController.giroSeleccionado.consecutivo = (solicitud["cons"] as! String?)!;
+            GiroViewController.giroSeleccionado.numeroSolicitud = (solicitud["id"] as! String?)!;
+            GiroViewController.giroSeleccionado.tipoGiro = (solicitud["tipoGiro"] as! String?)!;
+            GiroViewController.giroSeleccionado.identificacionBeneficiario = (solicitud["identificacionBeneficiario"] as! String?)!;
+            GiroViewController.giroSeleccionado.beneficiario = (solicitud["beneficiario"] as! String?)!;
+            GiroViewController.giroSeleccionado.estado = (solicitud["estado"] as! String?)!;
+            GiroViewController.giroSeleccionado.ciudad = (solicitud["ciudad"] as! String?)!;
+            GiroViewController.giroSeleccionado.tipoBeneficiario = (solicitud["tipoBeneficiario"] as! String?)!;
+            GiroViewController.giroSeleccionado.tipoIdentificacionBeneficiario = (solicitud["tipoIdentificacionBeneficiario"] as! String?)!;
+            GiroViewController.giroSeleccionado.fechaInicio = (solicitud["fechaInicio"] as! String?)!;
+            GiroViewController.giroSeleccionado.fechaFin = (solicitud["fechaFin"] as! String?)!;
+            GiroViewController.giroSeleccionado.valorMonedaExtranjero = (solicitud["valorMonedaExtranjera"] as! String?)!;
+            GiroViewController.giroSeleccionado.valorMonedaLocal = (solicitud["valorMonedaLocal"] as! String?)!;
+            GiroViewController.giroSeleccionado.registraDevolucion = (solicitud["registraDevolucion"] as! String?)!;
+            GiroViewController.giroSeleccionado.valorDevolucion = (solicitud["valorDevolucion"] as! String?)!;
+            GiroViewController.giroSeleccionado.legalizado = (solicitud["legalizado"] as! String?)!;
+            GiroViewController.giroSeleccionado.valorLegalizado = (solicitud["valorLegalizado"] as! String?)!;
+            GiroViewController.giroSeleccionado.justificacionAnulacion = (solicitud["justificacionAnulacion"] as! String?)!;
+            GiroViewController.giroSeleccionado.aprobadoGiro = (solicitud["aprobadorGiro"] as! String?)!;
+            
+        }
+        
+        return indexPath
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

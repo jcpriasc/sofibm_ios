@@ -50,6 +50,31 @@ class SolicitudAprobacionViewController:  UIViewController, UITableViewDataSourc
         
     }
     
+    public func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath?
+    {
+        let opcionSeleccionada = indexPath[1]
+        
+        if let solicitud = self.jsonSolicitudAprobacion[opcionSeleccionada] as? Dictionary<String, Any>{
+            
+            SolicitudAprobacionViewController.solicitudAprobacionSeleccionado.nombrePaciente = (solicitud["nombrePaciente"] as! String?)!;
+            SolicitudAprobacionViewController.solicitudAprobacionSeleccionado.estado = (solicitud["estado"] as! String?)!;
+            SolicitudAprobacionViewController.solicitudAprobacionSeleccionado.fechaSolicitud = (solicitud["fechaSolicitud"] as! String?)!;
+            SolicitudAprobacionViewController.solicitudAprobacionSeleccionado.descripcion = (solicitud["solicitudDescripcion"] as! String?)!;
+            SolicitudAprobacionViewController.solicitudAprobacionSeleccionado.tipoAutorizacion = (solicitud["tipoAutorizacion"] as! String?)!;
+            SolicitudAprobacionViewController.solicitudAprobacionSeleccionado.tipoEntidad = (solicitud["tipoEntidad"] as! String?)!;
+            SolicitudAprobacionViewController.solicitudAprobacionSeleccionado.solicitante = (solicitud["solicitante"] as! String?)!;
+            SolicitudAprobacionViewController.solicitudAprobacionSeleccionado.autoriza = (solicitud["autoriza"] as! String?)!;
+            SolicitudAprobacionViewController.solicitudAprobacionSeleccionado.fechaAutorizacion = (solicitud["fechaAutorizacion"] as! String?)!;
+            SolicitudAprobacionViewController.solicitudAprobacionSeleccionado.servicio = (solicitud["servicio"] as! String?)!;
+            SolicitudAprobacionViewController.solicitudAprobacionSeleccionado.proveedor = (solicitud["proveedor"] as! String?)!;
+            SolicitudAprobacionViewController.solicitudAprobacionSeleccionado.prestador = (solicitud["prestador"] as! String?)!;
+            SolicitudAprobacionViewController.solicitudAprobacionSeleccionado.justificacion = (solicitud["justificacion"] as! String?)!;
+            
+        }
+        
+        return indexPath
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

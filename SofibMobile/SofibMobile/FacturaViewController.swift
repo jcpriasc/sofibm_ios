@@ -52,6 +52,30 @@ class FacturaViewController:  UIViewController, UITableViewDataSource, UITableVi
         
     }
     
+    public func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath?
+    {
+        let opcionSeleccionada = indexPath[1]
+        
+        if let solicitud = self.jsonFactura[opcionSeleccionada] as? Dictionary<String, Any>{
+            
+            FacturaViewController.facturaSeleccionada.numeroFactura = (solicitud["facturaNro"] as! String?)!;
+            FacturaViewController.facturaSeleccionada.fechaExpedicion = (solicitud["fechaExpedicion"] as! String?)!;
+            FacturaViewController.facturaSeleccionada.estado = (solicitud["estado"] as! String?)!;
+            FacturaViewController.facturaSeleccionada.valorTotalFactura = (solicitud["valorTotalFactura"] as! String?)!;
+            FacturaViewController.facturaSeleccionada.ciudad = (solicitud["ciudad"] as! String?)!;
+            FacturaViewController.facturaSeleccionada.fechaRadicacion = (solicitud["fechaRadicacion"] as! String?)!;
+            FacturaViewController.facturaSeleccionada.fechaAprobacionRechazo = (solicitud["fechaAprobacion"] as! String?)!;
+            FacturaViewController.facturaSeleccionada.fechaAnulacion = (solicitud["fechaAnulacion"] as! String?)!;
+            FacturaViewController.facturaSeleccionada.valorIva = (solicitud["valorIva"] as! String?)!;
+            FacturaViewController.facturaSeleccionada.valorTotalPagar = (solicitud["valorTotalPagar"] as! String?)!;
+            FacturaViewController.facturaSeleccionada.prestadorProveedor = (solicitud["proveedor"] as! String?)!;
+            FacturaViewController.facturaSeleccionada.tipoServicio = (solicitud["tipoSolicitud"] as! String?)!;
+    
+        }
+        
+        return indexPath
+    }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

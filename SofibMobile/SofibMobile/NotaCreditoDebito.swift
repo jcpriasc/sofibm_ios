@@ -20,4 +20,6 @@ class NotaCreditoDebito{
     var estado: String = ""
     var tipoNota: String = ""
     var valorTotalNotaCredito: String = ""
+    var consNota: String = ""
+
 }

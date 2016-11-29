@@ -51,6 +51,29 @@ class NotaCreditoDebitoViewController:  UIViewController, UITableViewDataSource,
         
     }
     
+    public func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath?
+    {
+        let opcionSeleccionada = indexPath[1]
+        
+        if let solicitud = self.jsonNotaCreditoDebito[opcionSeleccionada] as? Dictionary<String, Any>{
+            
+            NotaCreditoDebitoViewController.notaCreditoDebitoSeleccionado.consNota = (solicitud["consNota"] as! String?)!;
+            NotaCreditoDebitoViewController.notaCreditoDebitoSeleccionado.numeroNota = (solicitud["numeroNota"] as! String?)!;
+            NotaCreditoDebitoViewController.notaCreditoDebitoSeleccionado.numeroFactura = (solicitud["numeroFactura"] as! String?)!;
+            NotaCreditoDebitoViewController.notaCreditoDebitoSeleccionado.fechaExpedicion = (solicitud["fechaExpedicion"] as! String?)!;
+            NotaCreditoDebitoViewController.notaCreditoDebitoSeleccionado.fechaAprobacion = (solicitud["fechaAprobacion"] as! String?)!;
+            NotaCreditoDebitoViewController.notaCreditoDebitoSeleccionado.ciudad = (solicitud["ciudad"] as! String?)!;
+            NotaCreditoDebitoViewController.notaCreditoDebitoSeleccionado.proveedor = (solicitud["proveedor"] as! String?)!;
+            NotaCreditoDebitoViewController.notaCreditoDebitoSeleccionado.motivo = (solicitud["motivo"] as! String?)!;
+            NotaCreditoDebitoViewController.notaCreditoDebitoSeleccionado.estado = (solicitud["estado"] as! String?)!;
+            NotaCreditoDebitoViewController.notaCreditoDebitoSeleccionado.tipoNota = (solicitud["tipoNota"] as! String?)!;
+            NotaCreditoDebitoViewController.notaCreditoDebitoSeleccionado.valorTotalNotaCredito = (solicitud["valorTotalNotaCredito"] as! String?)!;
+            
+        }
+        
+        return indexPath
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

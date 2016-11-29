@@ -53,6 +53,27 @@ class ServicioNoAsistencialViewController: UIViewController, UITableViewDataSour
         
     }
     
+    public func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath?
+    {
+        let opcionSeleccionada = indexPath[1]
+        
+        if let solicitud = self.jsonServicioNoAsistencial[opcionSeleccionada] as? Dictionary<String, Any>{
+            
+            ServicioNoAsistencialViewController.servicioNoAsistencial.numeroSolicitud = (solicitud["codSolicitud"] as! String?)!;
+            ServicioNoAsistencialViewController.servicioNoAsistencial.tipoSolicitud = (solicitud["tipoSolicitud"] as! String?)!;
+            ServicioNoAsistencialViewController.servicioNoAsistencial.ciudad = (solicitud["ciudad"] as! String?)!;
+            ServicioNoAsistencialViewController.servicioNoAsistencial.estado = (solicitud["estado"] as! String?)!;
+            ServicioNoAsistencialViewController.servicioNoAsistencial.justificacion = (solicitud["justificacionCancelado"] as! String?)!;
+            ServicioNoAsistencialViewController.servicioNoAsistencial.consServicio = (solicitud["consservicio"] as! String?)!;
+            
+            
+        }
+        
+        return indexPath
+    }
+
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
