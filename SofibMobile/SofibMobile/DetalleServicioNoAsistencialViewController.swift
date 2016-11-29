@@ -23,6 +23,18 @@ class DetalleServicioNoAsistencialViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        lblEstado.text = NSLocalizedString("lbl_estado", comment: "lbl_estado")
+        lblJustificacionCancelado.text = NSLocalizedString("lbl_justificacion_cancelacion", comment: "lbl_justificacion_cancelacion")
+        
+        lblCiudad.text = ServicioNoAsistencialViewController.servicioNoAsistencial.ciudad
+        lblTipoSolicitud.text = "\(NSLocalizedString("lbl_numero_solicitud", comment: "lbl_numero_solicitud")) \(ServicioNoAsistencialViewController.servicioNoAsistencial.tipoSolicitud)"
+        lblNumeroSolicitud.text = "\(NSLocalizedString("lbl_numero_solicitud", comment: "lbl_numero_solicitud")) \(ServicioNoAsistencialViewController.servicioNoAsistencial.numeroSolicitud)"
+        
+        txtJustificacion.text = ServicioNoAsistencialViewController.servicioNoAsistencial.justificacion
+        txtEstado.text = ServicioNoAsistencialViewController.servicioNoAsistencial.estado
+        
+
 
         // Do any additional setup after loading the view.
     }

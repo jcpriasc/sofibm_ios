@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1121738C1DED2C2800BA0DAB /* DetalleSolicitudAprobacionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1121738B1DED2C2800BA0DAB /* DetalleSolicitudAprobacionViewController.swift */; };
 		11227A291DC970C00035959B /* ViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11227A281DC970C00035959B /* ViewControllerTest.swift */; };
 		11227A2C1DC971C80035959B /* FiltrosSolicitudAtencionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11227A2B1DC971C80035959B /* FiltrosSolicitudAtencionController.swift */; };
 		11227A311DCA44060035959B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 11227A331DCA44060035959B /* Localizable.strings */; };
@@ -18,6 +19,9 @@
 		11309A8A1DED0E9F00E79070 /* Utilizaciones.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11309A891DED0E9F00E79070 /* Utilizaciones.swift */; };
 		11309A8C1DED0EE300E79070 /* SolicitudAprobacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11309A8B1DED0EE300E79070 /* SolicitudAprobacion.swift */; };
 		11309A8E1DED104400E79070 /* DetalleServicioNoAsistencialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11309A8D1DED104400E79070 /* DetalleServicioNoAsistencialViewController.swift */; };
+		11309A901DED1EB300E79070 /* DetalleGiroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11309A8F1DED1EB300E79070 /* DetalleGiroViewController.swift */; };
+		11309A921DED238000E79070 /* DetalleFacturaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11309A911DED238000E79070 /* DetalleFacturaViewController.swift */; };
+		11309A941DED293E00E79070 /* DetalleNotaCreditoDebitoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11309A931DED293E00E79070 /* DetalleNotaCreditoDebitoViewController.swift */; };
 		115424841DDD3FD1004EE9E9 /* NotaImpuestoViewCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115424831DDD3FD1004EE9E9 /* NotaImpuestoViewCellController.swift */; };
 		115424861DDD3FE7004EE9E9 /* NotaImpuestoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115424851DDD3FE7004EE9E9 /* NotaImpuestoViewController.swift */; };
 		115424881DDD3FFE004EE9E9 /* NotaServicioViewCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115424871DDD3FFE004EE9E9 /* NotaServicioViewCellController.swift */; };
@@ -114,6 +118,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1121738B1DED2C2800BA0DAB /* DetalleSolicitudAprobacionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleSolicitudAprobacionViewController.swift; sourceTree = "<group>"; };
 		11227A281DC970C00035959B /* ViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTest.swift; sourceTree = "<group>"; };
 		11227A2B1DC971C80035959B /* FiltrosSolicitudAtencionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiltrosSolicitudAtencionController.swift; sourceTree = "<group>"; };
 		11227A321DCA44060035959B /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -128,6 +133,9 @@
 		11309A891DED0E9F00E79070 /* Utilizaciones.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilizaciones.swift; sourceTree = "<group>"; };
 		11309A8B1DED0EE300E79070 /* SolicitudAprobacion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SolicitudAprobacion.swift; sourceTree = "<group>"; };
 		11309A8D1DED104400E79070 /* DetalleServicioNoAsistencialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleServicioNoAsistencialViewController.swift; sourceTree = "<group>"; };
+		11309A8F1DED1EB300E79070 /* DetalleGiroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleGiroViewController.swift; sourceTree = "<group>"; };
+		11309A911DED238000E79070 /* DetalleFacturaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleFacturaViewController.swift; sourceTree = "<group>"; };
+		11309A931DED293E00E79070 /* DetalleNotaCreditoDebitoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleNotaCreditoDebitoViewController.swift; sourceTree = "<group>"; };
 		115424831DDD3FD1004EE9E9 /* NotaImpuestoViewCellController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotaImpuestoViewCellController.swift; sourceTree = "<group>"; };
 		115424851DDD3FE7004EE9E9 /* NotaImpuestoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotaImpuestoViewController.swift; sourceTree = "<group>"; };
 		115424871DDD3FFE004EE9E9 /* NotaServicioViewCellController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotaServicioViewCellController.swift; sourceTree = "<group>"; };
@@ -313,6 +321,10 @@
 				115424911DDD48EF004EE9E9 /* AdministracionesTabViewController.swift */,
 				115A2C921DE8D985003B1C00 /* DetalleNotaCreditoGiroViewController.swift */,
 				11309A8D1DED104400E79070 /* DetalleServicioNoAsistencialViewController.swift */,
+				11309A8F1DED1EB300E79070 /* DetalleGiroViewController.swift */,
+				11309A911DED238000E79070 /* DetalleFacturaViewController.swift */,
+				11309A931DED293E00E79070 /* DetalleNotaCreditoDebitoViewController.swift */,
+				1121738B1DED2C2800BA0DAB /* DetalleSolicitudAprobacionViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -708,6 +720,7 @@
 				A4E7D1A81DC93F1E00C4E977 /* ViewController.swift in Sources */,
 				A4B6F08B1DD2C539000F5A97 /* InformesMedicosViewController.swift in Sources */,
 				A4204D4C1DEA2610002AE700 /* SolicitudesAtencion.swift in Sources */,
+				11309A921DED238000E79070 /* DetalleFacturaViewController.swift in Sources */,
 				A4C5E3A71DDB619A00294883 /* BitacoraViewController.swift in Sources */,
 				A4C5E3AB1DDBB34A00294883 /* ProcedimientosAdicionalesViewCell.swift in Sources */,
 				A4B6F0931DD2E0D8000F5A97 /* EpicrisisViewController.swift in Sources */,
@@ -725,6 +738,7 @@
 				11F894311DDD044700A58E45 /* GiroManutencionViewCellController.swift in Sources */,
 				11E3626C1DD2B72900354EB4 /* SolicitudAprobacionViewController.swift in Sources */,
 				A43D62DA1DCDD36F0044AB22 /* AutorizacionesViewController.swift in Sources */,
+				11309A941DED293E00E79070 /* DetalleNotaCreditoDebitoViewController.swift in Sources */,
 				115424901DDD48E0004EE9E9 /* AdministracionesTabViewCellController.swift in Sources */,
 				11309A8E1DED104400E79070 /* DetalleServicioNoAsistencialViewController.swift in Sources */,
 				1154248A1DDD400D004EE9E9 /* NotaServicioViewController.swift in Sources */,
@@ -743,10 +757,12 @@
 				11E362661DD2B6F900354EB4 /* EncuestaViewCellController.swift in Sources */,
 				A4C5E3B11DDBC7A900294883 /* FuncionariosTableViewCell.swift in Sources */,
 				A4C5E3AD1DDBB37900294883 /* ProcedimientosAdicionalesViewController.swift in Sources */,
+				11309A901DED1EB300E79070 /* DetalleGiroViewController.swift in Sources */,
 				115424921DDD48EF004EE9E9 /* AdministracionesTabViewController.swift in Sources */,
 				11A7E5751DDBB68D0003275B /* ServiciosAdicionadosViewCellController.swift in Sources */,
 				11E362501DD28CB700354EB4 /* ServicioNoAsistencial.swift in Sources */,
 				A43D62DC1DCDD4640044AB22 /* AutorizacionesViewCell.swift in Sources */,
+				1121738C1DED2C2800BA0DAB /* DetalleSolicitudAprobacionViewController.swift in Sources */,
 				A4B6F0891DD2BB42000F5A97 /* InformesMedicosViewCell.swift in Sources */,
 				A467DA551DDD50D5004FE4D8 /* DetalleAutorizacionesViewController.swift in Sources */,
 				11309A8C1DED0EE300E79070 /* SolicitudAprobacion.swift in Sources */,
