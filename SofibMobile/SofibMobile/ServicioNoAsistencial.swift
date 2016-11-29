@@ -6,31 +6,16 @@
 //  Copyright © 2016 vortexbird. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
-class ServicioNoAsistencial: UIViewController {
-
+class ServicioNoAsistencial{
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    var numeroSolicitud: String = ""
+    var tipoSolicitud: String = ""
+    var ciudad: String = ""
+    var estado: String = ""
+    var aprobada: String = ""
+    var justificacion: String = ""
+    var consServicio: String = ""
 
 }
