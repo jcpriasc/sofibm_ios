@@ -21,6 +21,19 @@ class OpcionesSecundariasViewController: UIViewController, UITableViewDataSource
                     NSLocalizedString("lbl_consultar_solicitudes_aprobacion", comment: "lbl_consultar_solicitudes_aprobacion")]
     
     
+    static var jsonAutorizaciones: NSArray?
+    static var jsonServiciosAsistenciales: NSArray?
+    static var jsonInformesMedicos: NSArray?
+    static var jsonDocumentosMedicos: NSArray?
+    static var jsonBitacora: NSArray?
+    static var jsonEpicrisis: NSArray?
+    static var jsonProcedimientosAdicionales: NSArray?
+    static var jsonFuncionariosExternos: NSArray?
+    static var jsonSolicitudAprobacion: NSArray?
+    
+    let params: String = "/SAC/ABCD1234/"+ConsultaSolicitudesAtencionController.solicitudAtencionSeleccionada.consSolicitud
+    
+    
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         return (opciones.count)
@@ -69,29 +82,23 @@ class OpcionesSecundariasViewController: UIViewController, UITableViewDataSource
         
         switch opcionSeleccionada {
         case 0:
-            let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "autorizacionesView")
-            self.show(vc as! UIViewController, sender: vc)
+            obtenerAutorizaciones()
         case 1:
-            print("The last letter of the alphabet")
+            obtenerServiciosAsistenciales()
         case 2:
-            let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "informesMedicosView")
-            self.show(vc as! UIViewController, sender: vc)
+            obtenerInformesMedicos()
         case 3:
-            let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "documentosMedicosView")
-            self.show(vc as! UIViewController, sender: vc)
+            obtenerDocumentosMedicos()
         case 4:
             let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "bitacorasView")
             self.show(vc as! UIViewController, sender: vc)
             print("The last letter of the alphabet")
         case 5:
-            let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "epicrisisView")
-            self.show(vc as! UIViewController, sender: vc)
+            obtenerEpicrisis()
         case 6:
-            let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "procedimientosAdicionalesView")
-            self.show(vc as! UIViewController, sender: vc)
+            obtenerProcedimientoAdicionales()
         case 7:
-            let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "funcionariosExternosView")
-            self.show(vc as! UIViewController, sender: vc)
+            obtenerFuncionariosExternos()
         default:
             print("Some other character")
         }
@@ -109,6 +116,279 @@ class OpcionesSecundariasViewController: UIViewController, UITableViewDataSource
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    
+    func obtenerAutorizaciones(){
+        
+        let url = URL(string: PropertiesProject.URL+PropertiesProject.complement_Autorizaciones+params)
+        
+        let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
+            if error != nil
+            {
+                print ("ERROR")
+            }
+            else
+            {
+                if let content = data
+                {
+                    do
+                    {
+                        //Array
+                        OpcionesSecundariasViewController.jsonAutorizaciones = try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSArray
+                        //poner validacion de array vacio
+                        let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "autorizacionesView")
+                        self.show(vc as! UIViewController, sender: vc)
+                        
+                        
+                    }
+                    catch
+                    {
+                        
+                    }
+                }
+            }
+        }
+        task.resume()
+        
+    }
+    
+    func obtenerServiciosAsistenciales(){
+        
+        let url = URL(string: PropertiesProject.URL+PropertiesProject.complement_ServiciosAsistenciales+params)
+        
+        let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
+            if error != nil
+            {
+                print ("ERROR")
+            }
+            else
+            {
+                if let content = data
+                {
+                    do
+                    {
+                        //Array
+                        OpcionesSecundariasViewController.jsonServiciosAsistenciales = try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSArray
+                        //poner validacion de array vacio
+                        let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "")
+                        self.show(vc as! UIViewController, sender: vc)
+                        
+                        
+                    }
+                    catch
+                    {
+                        
+                    }
+                }
+            }
+        }
+        task.resume()
+        
+    }
+    
+    func obtenerInformesMedicos(){
+        
+        let url = URL(string: PropertiesProject.URL+PropertiesProject.complement_InformesMedicos+params)
+        
+        let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
+            if error != nil
+            {
+                print ("ERROR")
+            }
+            else
+            {
+                if let content = data
+                {
+                    do
+                    {
+                        //Array
+                        OpcionesSecundariasViewController.jsonInformesMedicos = try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSArray
+                        //poner validacion de array vacio
+                        let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "informesMedicosView")
+                        self.show(vc as! UIViewController, sender: vc)
+                        
+                        
+                    }
+                    catch
+                    {
+                        
+                    }
+                }
+            }
+        }
+        task.resume()
+        
+    }
+    
+    func obtenerDocumentosMedicos(){
+        
+        let url = URL(string: PropertiesProject.URL+PropertiesProject.complement_DocumentosMedicos+params)
+        
+        let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
+            if error != nil
+            {
+                print ("ERROR")
+            }
+            else
+            {
+                if let content = data
+                {
+                    do
+                    {
+                        //Array
+                        OpcionesSecundariasViewController.jsonDocumentosMedicos = try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSArray
+                        //poner validacion de array vacio
+                        let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "documentosMedicosView")
+                        self.show(vc as! UIViewController, sender: vc)
+                        
+                        
+                    }
+                    catch
+                    {
+                        
+                    }
+                }
+            }
+        }
+        task.resume()
+        
+    }
+    
+    func obtenerEpicrisis(){
+        
+        let url = URL(string: PropertiesProject.URL+PropertiesProject.complement_Epicrisis+params)
+        
+        let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
+            if error != nil
+            {
+                print ("ERROR")
+            }
+            else
+            {
+                if let content = data
+                {
+                    do
+                    {
+                        //Array
+                        OpcionesSecundariasViewController.jsonEpicrisis = try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSArray
+                        //poner validacion de array vacio
+                        let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "epicrisisView")
+                        self.show(vc as! UIViewController, sender: vc)
+                        
+                        
+                    }
+                    catch
+                    {
+                        
+                    }
+                }
+            }
+        }
+        task.resume()
+        
+    }
+    
+    func obtenerProcedimientoAdicionales(){
+        
+        let url = URL(string: PropertiesProject.URL+PropertiesProject.complement_ProcedimientoAdicionales+params)
+        
+        let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
+            if error != nil
+            {
+                print ("ERROR")
+            }
+            else
+            {
+                if let content = data
+                {
+                    do
+                    {
+                        //Array
+                        OpcionesSecundariasViewController.jsonProcedimientosAdicionales = try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSArray
+                        //poner validacion de array vacio
+                        let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "procedimientosAdicionalesView")
+                        self.show(vc as! UIViewController, sender: vc)
+                        
+                        
+                    }
+                    catch
+                    {
+                        
+                    }
+                }
+            }
+        }
+        task.resume()
+        
+    }
+    
+    func obtenerFuncionariosExternos(){
+        
+        let url = URL(string: PropertiesProject.URL+PropertiesProject.complement_FuncionariosExternos+params)
+        
+        let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
+            if error != nil
+            {
+                print ("ERROR")
+            }
+            else
+            {
+                if let content = data
+                {
+                    do
+                    {
+                        //Array
+                        OpcionesSecundariasViewController.jsonFuncionariosExternos = try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSArray
+                        //poner validacion de array vacio
+                        let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "funcionariosExternosView")
+                        self.show(vc as! UIViewController, sender: vc)
+                        
+                        
+                    }
+                    catch
+                    {
+                        
+                    }
+                }
+            }
+        }
+        task.resume()
+        
+    }
+    
+    func obtenerSolicitudesAprobacion(){
+        
+        let url = URL(string: PropertiesProject.URL+PropertiesProject.complement_aprobacion+params)
+        
+        let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
+            if error != nil
+            {
+                print ("ERROR")
+            }
+            else
+            {
+                if let content = data
+                {
+                    do
+                    {
+                        //Array
+                        OpcionesSecundariasViewController.jsonSolicitudAprobacion = try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSArray
+                        //poner validacion de array vacio
+                        let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "")
+                        self.show(vc as! UIViewController, sender: vc)
+                        
+                        
+                    }
+                    catch
+                    {
+                        
+                    }
+                }
+            }
+        }
+        task.resume()
+        
     }
     
 

@@ -28,7 +28,7 @@ class FiltrosSolicitudAtencionController: UIViewController, UIPickerViewDelegate
     var traslados = ["SI", "NO"]
     static var solicitudesAtencionJson : NSArray?
     
-    let service =  "solicitudes";
+    let service =  "/solicitudes";
     
     override func viewWillAppear(_ animated: Bool) {
         
