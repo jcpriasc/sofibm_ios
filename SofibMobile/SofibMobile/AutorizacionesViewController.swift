@@ -11,13 +11,13 @@ import UIKit
 class AutorizacionesViewController: UIViewController , UITableViewDataSource, UITableViewDelegate{
 
     
-    
-    let autorizaciones = ["Solicitud de ampliación de estadía generada por un informe médico",
-                          "Procedimiento:MEDICAMENTOS COADYUVANTES PARA CANCER (SOLO OROPLUS)        Procedimiento en Idioma Extranjero:sdas asd<br/> Costo Total: $0.00<br/> Moneda Extranjera: $0.00<br/>"]
+    let jsonAutorizaciones: NSArray = OpcionesSecundariasViewController.jsonAutorizaciones!
+    //let autorizaciones = ["Solicitud de ampliación de estadía generada por un informe médico",
+      //                    "Procedimiento:MEDICAMENTOS COADYUVANTES PARA CANCER (SOLO OROPLUS)        Procedimiento en Idioma Extranjero:sdas asd<br/> Costo Total: $0.00<br/> Moneda Extranjera: $0.00<br/>"]
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return (autorizaciones.count)
+        return (jsonAutorizaciones.count)
     }
     
     
@@ -25,8 +25,10 @@ class AutorizacionesViewController: UIViewController , UITableViewDataSource, UI
     {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! AutorizacionesViewCell
         
+        if let resultadoConsulta = self.jsonAutorizaciones[indexPath.row] as? Dictionary<String, Any>{
+            cell.lblAutorizaciones.text = resultadoConsulta["solicitudDescripcion"] as! String?;
+        }
         
-        cell.lblAutorizaciones.text = autorizaciones[indexPath.row]
         return cell
     }
     

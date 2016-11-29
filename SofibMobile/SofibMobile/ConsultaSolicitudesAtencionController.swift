@@ -28,7 +28,7 @@ class ConsultaSolicitudesAtencionController: UIViewController, UITableViewDataSo
     {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! SolicitudAtencionTableViewCell
         
-        print(solicitudesAtencion[indexPath.row])
+        print(self.solicitudesAtencion[indexPath.row])
         
         if let solicitud = self.solicitudesAtencion[indexPath.row] as? Dictionary<String, Any>{
             cell.solicitudAtencionTxt.text = solicitud["consSolicitud"] as! String?;
@@ -38,8 +38,8 @@ class ConsultaSolicitudesAtencionController: UIViewController, UITableViewDataSo
         }
         
         /*
-        cell.solicitudAtencionTxt.text = solicitudesAtencion[indexPath.row]
-        */
+         cell.solicitudAtencionTxt.text = solicitudesAtencion[indexPath.row]
+         */
         
         return (cell)
     }

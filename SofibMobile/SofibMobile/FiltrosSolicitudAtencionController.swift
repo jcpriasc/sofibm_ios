@@ -28,6 +28,8 @@ class FiltrosSolicitudAtencionController: UIViewController, UIPickerViewDelegate
     var traslados = ["SI", "NO"]
     static var solicitudesAtencionJson : NSArray?
     
+    let service =  "/solicitudes";
+    
     override func viewWillAppear(_ animated: Bool) {
         
         lblBusquedaAvanzada.text = NSLocalizedString("busqueda_avanzada", comment: "Busqueda Avanzada")
@@ -203,8 +205,64 @@ class FiltrosSolicitudAtencionController: UIViewController, UIPickerViewDelegate
     
     @IBAction func consumirServicio(_ sender: AnyObject) {
         
-        let url = URL(string: "http://pruebas-sectorsalud.coomeva.com.co/saludmp-ws/jax-rs/saludmp-sofibmobile/solicitudes/SAC/ABCD1234/0/0/0/0/0/0/0/NA")
         
+        
+        
+        var convenio = "0";
+        var estado = "0";
+        var ciudadInicial = "0";
+        var ciudadActual = "0";
+        var traslado = "NA";
+        var identificacion = "0";
+        var solAtencion = "0";
+        var nombre = "0";
+        
+        
+        if((pickeConvenio.text) != nil && (pickeConvenio.text) != ""){
+            convenio = pickeConvenio.text!
+        }
+        
+        if((pickerEstado.text) != nil && (pickerEstado.text) != ""){
+            estado = pickerEstado.text!
+        }
+        
+        if((pickerCiudadInicial.text) != nil && (pickerCiudadInicial.text) != ""){
+            ciudadInicial=pickerCiudadInicial.text!
+        }
+        
+        if((pickerCiudadFinal.text) != nil && (pickerCiudadFinal.text) != ""){
+            ciudadActual=pickerCiudadFinal.text!
+        }
+        
+        if((pickerTraslados.text) != nil && (pickerTraslados.text) != ""){
+        
+        }
+        
+        if((txtIdentificacion.text) != nil && (txtIdentificacion.text) != ""){
+            identificacion = txtIdentificacion.text!
+        }
+        
+        if((txtSolicitudAtencion.text) != nil && (txtSolicitudAtencion.text) != ""){
+            solAtencion = txtSolicitudAtencion.text!
+        }
+        
+        if((txtNombre.text) != nil && (txtNombre.text) != ""){
+            nombre = txtNombre.text!
+        }
+        
+        
+        var listParams: String = "/SAC/ABCD1234/0";
+        listParams+="/"+solAtencion;
+        listParams+="/"+nombre;
+        listParams+="/"+convenio;
+        listParams+="/"+estado;
+        listParams+="/"+ciudadInicial;
+        listParams+="/"+ciudadActual;
+        listParams+="/"+traslado;
+        
+        let url = URL(string: PropertiesProject.URL+service+listParams)
+        print(PropertiesProject.URL+service+listParams)
+
         let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
             if error != nil
             {
@@ -218,6 +276,7 @@ class FiltrosSolicitudAtencionController: UIViewController, UIPickerViewDelegate
                     {
                         //Array
                         FiltrosSolicitudAtencionController.solicitudesAtencionJson = try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSArray
+                        print(FiltrosSolicitudAtencionController.solicitudesAtencionJson!.count)
                         let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "consultaSolicitudAtencionView")
                         self.show(vc as! UIViewController, sender: vc)
                         
