@@ -13,6 +13,8 @@ class UtilizacionesViewController:  UIViewController, UITableViewDataSource, UIT
     let jsonUtilizaciones: NSArray = OpcionesSecundariasLogViewController.jsonUtilizaciones!;
     let lstUtilizaciones = ["Solicitud 1", "Solicitud 2", "Solicitud 3", "Solicitud 4", "Solicitud 5", "Solicitud 6", "Solicitud 7", "Solicitud 9"]
     
+    static var utilizacionesSeleccionado = Utilizaciones()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()

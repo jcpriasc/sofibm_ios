@@ -13,6 +13,7 @@ class GiroViewController:  UIViewController, UITableViewDataSource, UITableViewD
     let jsonGiro: NSArray = OpcionesSecundariasLogViewController.jsonGiros!;
     let lstGiros = ["Solicitud 1", "Solicitud 2", "Solicitud 3", "Solicitud 4", "Solicitud 5", "Solicitud 6", "Solicitud 7", "Solicitud 9"]
     
+    static var giroSeleccionado = Giro()
     
     override func viewDidLoad() {
         super.viewDidLoad()

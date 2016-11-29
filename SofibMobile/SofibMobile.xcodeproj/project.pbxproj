@@ -17,6 +17,7 @@
 		11309A881DED0DBF00E79070 /* NotaCreditoDebito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11309A871DED0DBF00E79070 /* NotaCreditoDebito.swift */; };
 		11309A8A1DED0E9F00E79070 /* Utilizaciones.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11309A891DED0E9F00E79070 /* Utilizaciones.swift */; };
 		11309A8C1DED0EE300E79070 /* SolicitudAprobacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11309A8B1DED0EE300E79070 /* SolicitudAprobacion.swift */; };
+		11309A8E1DED104400E79070 /* DetalleServicioNoAsistencialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11309A8D1DED104400E79070 /* DetalleServicioNoAsistencialViewController.swift */; };
 		115424841DDD3FD1004EE9E9 /* NotaImpuestoViewCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115424831DDD3FD1004EE9E9 /* NotaImpuestoViewCellController.swift */; };
 		115424861DDD3FE7004EE9E9 /* NotaImpuestoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115424851DDD3FE7004EE9E9 /* NotaImpuestoViewController.swift */; };
 		115424881DDD3FFE004EE9E9 /* NotaServicioViewCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115424871DDD3FFE004EE9E9 /* NotaServicioViewCellController.swift */; };
@@ -125,6 +126,7 @@
 		11309A871DED0DBF00E79070 /* NotaCreditoDebito.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotaCreditoDebito.swift; sourceTree = "<group>"; };
 		11309A891DED0E9F00E79070 /* Utilizaciones.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilizaciones.swift; sourceTree = "<group>"; };
 		11309A8B1DED0EE300E79070 /* SolicitudAprobacion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SolicitudAprobacion.swift; sourceTree = "<group>"; };
+		11309A8D1DED104400E79070 /* DetalleServicioNoAsistencialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleServicioNoAsistencialViewController.swift; sourceTree = "<group>"; };
 		115424831DDD3FD1004EE9E9 /* NotaImpuestoViewCellController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotaImpuestoViewCellController.swift; sourceTree = "<group>"; };
 		115424851DDD3FE7004EE9E9 /* NotaImpuestoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotaImpuestoViewController.swift; sourceTree = "<group>"; };
 		115424871DDD3FFE004EE9E9 /* NotaServicioViewCellController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotaServicioViewCellController.swift; sourceTree = "<group>"; };
@@ -308,6 +310,7 @@
 				1154248F1DDD48E0004EE9E9 /* AdministracionesTabViewCellController.swift */,
 				115424911DDD48EF004EE9E9 /* AdministracionesTabViewController.swift */,
 				115A2C921DE8D985003B1C00 /* DetalleNotaCreditoGiroViewController.swift */,
+				11309A8D1DED104400E79070 /* DetalleServicioNoAsistencialViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -719,6 +722,7 @@
 				11E3626C1DD2B72900354EB4 /* SolicitudAprobacionViewController.swift in Sources */,
 				A43D62DA1DCDD36F0044AB22 /* AutorizacionesViewController.swift in Sources */,
 				115424901DDD48E0004EE9E9 /* AdministracionesTabViewCellController.swift in Sources */,
+				11309A8E1DED104400E79070 /* DetalleServicioNoAsistencialViewController.swift in Sources */,
 				1154248A1DDD400D004EE9E9 /* NotaServicioViewController.swift in Sources */,
 				A44581031DCD845B00838456 /* OpcionesSecundariasViewController.swift in Sources */,
 				11E3625E1DD2B69400354EB4 /* NotaCreditoDebitoViewController.swift in Sources */,

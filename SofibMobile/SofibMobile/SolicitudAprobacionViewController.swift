@@ -13,7 +13,8 @@ class SolicitudAprobacionViewController:  UIViewController, UITableViewDataSourc
     let jsonSolicitudAprobacion: NSArray = OpcionesSecundariasLogViewController.jsonSolicitudAprobacion!;
     let lstSolicitudAprobacion = ["Solicitud 1", "Solicitud 2", "Solicitud 3", "Solicitud 4", "Solicitud 5", "Solicitud 6", "Solicitud 7", "Solicitud 9"]
     
-    
+    static var solicitudAprobacionSeleccionado = SolicitudAprobacion()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
