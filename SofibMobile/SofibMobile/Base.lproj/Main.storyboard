@@ -1878,7 +1878,6 @@
                                             <outlet property="txtFechaExpedicion" destination="DRr-r4-pPx" id="Bmp-Tw-jrM"/>
                                             <outlet property="txtNumeroFactura" destination="fUf-3o-vaP" id="fAw-qk-yHn"/>
                                             <outlet property="txtValorTotalFactura" destination="Rxm-Cn-2UA" id="B3b-mm-DSy"/>
-                                            <segue destination="B5L-Xm-oyr" kind="presentation" id="Dlk-8L-BaP"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -5081,7 +5080,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nEy-fO-mLI">
                                         <state key="normal" image="icon_more"/>
                                         <connections>
-                                            <action selector="action_ver_detalle:" destination="B5L-Xm-oyr" eventType="touchUpInside" id="CYv-h0-Ec7"/>
+                                            <action selector="action_detalle:" destination="B5L-Xm-oyr" eventType="touchUpInside" id="FBg-rz-Q5i"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -5152,7 +5151,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="action_ver_detalle" destination="nEy-fO-mLI" id="VJ2-ZI-lzf"/>
                         <outlet property="lblCiudad" destination="oe9-Lq-dyq" id="JRF-9I-KTy"/>
                         <outlet property="lblEstado" destination="DjI-jT-x8J" id="UL1-Nj-Y0k"/>
                         <outlet property="lblFechaAnulacion" destination="Uyd-aq-hE8" id="887-vl-SQV"/>
@@ -7257,7 +7255,7 @@
                                                 <rect key="frame" x="0.0" y="28" width="345" height="167"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aT7-rO-TZw" id="Nsc-7d-UBm">
-                                                    <frame key="frameInset" width="345.5" height="166"/>
+                                                    <frame key="frameInset" width="345" height="166"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Proveedor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gAF-xE-Wh3">
@@ -8303,7 +8301,7 @@
                                                 <rect key="frame" x="0.0" y="28" width="345" height="91"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lTD-tM-hYH" id="Gra-1G-tn9">
-                                                    <frame key="frameInset" width="345.5" height="90"/>
+                                                    <frame key="frameInset" width="345" height="90"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VBy-kX-DJM">
@@ -8695,7 +8693,7 @@
                                                 <rect key="frame" x="0.0" y="28" width="345" height="149"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="US6-qk-n0m" id="Lqo-GT-S08">
-                                                    <frame key="frameInset" width="345.5" height="148"/>
+                                                    <frame key="frameInset" width="345" height="148"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tipo de Seguro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eB5-6i-4c6">
@@ -9699,7 +9697,7 @@
                                                 <rect key="frame" x="0.0" y="28" width="345" height="121"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bXN-KQ-jIM" id="gGn-95-KfC">
-                                                    <frame key="frameInset" width="345.5" height="120"/>
+                                                    <frame key="frameInset" width="345" height="120"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descripcion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QqF-r6-FeI">
@@ -9826,18 +9824,18 @@
         <image name="row_right" width="64" height="64"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="GkM-Tg-j1A"/>
+        <segue reference="uTY-gR-FXH"/>
         <segue reference="upQ-3x-mg1"/>
         <segue reference="Pkr-0O-VMb"/>
-        <segue reference="2eq-s1-2b7"/>
+        <segue reference="GkM-Tg-j1A"/>
         <segue reference="NKJ-B4-E6s"/>
         <segue reference="PKJ-yY-coa"/>
         <segue reference="gEB-ZA-f9D"/>
-        <segue reference="Iwh-mI-fHv"/>
         <segue reference="BfY-DR-KxF"/>
-        <segue reference="EDS-xH-zyS"/>
-        <segue reference="uTY-gR-FXH"/>
         <segue reference="LID-nY-gg0"/>
+        <segue reference="EDS-xH-zyS"/>
+        <segue reference="Iwh-mI-fHv"/>
+        <segue reference="2eq-s1-2b7"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>

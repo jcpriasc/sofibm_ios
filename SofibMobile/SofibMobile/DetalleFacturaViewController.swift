@@ -70,9 +70,10 @@ class DetalleFacturaViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    @IBAction func action_ver_detalle(_ sender: AnyObject) {
+    @IBAction func action_detalle(_ sender: AnyObject) {
+        obtenerDetalle()
     }
+
     
     func obtenerDetalle(){
         
