@@ -21,6 +21,8 @@ class DetalleServicioNoAsistencialViewController: UIViewController {
     @IBOutlet var lblEstado: UILabel!
     @IBOutlet var lblJustificacionCancelado: UILabel!
     
+    static var jsonDetalleServicioNoAsistencial: NSDictionary?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -44,7 +46,57 @@ class DetalleServicioNoAsistencialViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func action_ver_detalle(_ sender: AnyObject) {
+        
+        obtenerDetalle()
+        
+    }
 
+    
+    func obtenerDetalle(){
+        
+        let url = URL(string: "http://pruebas-sectorsalud.coomeva.com.co/saludmp-ws/jax-rs/saludmp-sofibmobile/serviciosNoAsistenciales/detalle/SAC/ABCD1234/715")
+        
+        let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
+            if error != nil
+            {
+                print ("ERROR")
+            }
+            else
+            {
+                if let content = data
+                {
+                    do
+                    {
+                        //Array
+                        DetalleServicioNoAsistencialViewController.jsonDetalleServicioNoAsistencial = try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSDictionary
+                        
+                        if ((DetalleServicioNoAsistencialViewController.jsonDetalleServicioNoAsistencial) != nil && (DetalleServicioNoAsistencialViewController.jsonDetalleServicioNoAsistencial?.count)!>0){
+                            let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "tabServicioNoAsistencial")
+                            self.show(vc as! UIViewController, sender: vc)
+                        }else{
+                            //print(NSLocalizedString("lbl_sin_resultados", comment: "lbl_sin_resultados"));
+                            let alert = UIAlertController(title: NSLocalizedString("lbl_alerta", comment: "lbl_alerta"), message: NSLocalizedString("lbl_sin_resultados", comment: "lbl_sin_resultados"), preferredStyle: UIAlertControllerStyle.alert)
+                            alert.addAction(UIAlertAction(title: NSLocalizedString("lbl_aceptar", comment: "lbl_aceptar"), style: UIAlertActionStyle.default, handler: nil))
+                            self.present(alert, animated: true, completion: nil)
+                            
+                        }
+                        
+                    }
+                    catch
+                    {
+                        
+                    }
+                }
+            }
+        }
+        task.resume()
+        
+    }
+
+    
+    
+    
     /*
     // MARK: - Navigation
 
