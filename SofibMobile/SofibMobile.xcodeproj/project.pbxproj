@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		110B9C961DEE4CC90020585A /* SercioNoAsistecialTabServicioProveedorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110B9C951DEE4CC90020585A /* SercioNoAsistecialTabServicioProveedorViewController.swift */; };
+		110B9C981DEE4CEF0020585A /* ServicioNoAsistencialTabDocumentacionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110B9C971DEE4CEF0020585A /* ServicioNoAsistencialTabDocumentacionViewController.swift */; };
+		110B9C9A1DEE4D190020585A /* ServicioNoAsistencialTabServiciosAdicionadosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110B9C991DEE4D190020585A /* ServicioNoAsistencialTabServiciosAdicionadosViewController.swift */; };
+		110B9C9C1DEE52CA0020585A /* ServicioNoAsistencialTabServicioAdicionadoViewCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110B9C9B1DEE52CA0020585A /* ServicioNoAsistencialTabServicioAdicionadoViewCellController.swift */; };
+		110B9C9E1DEE5A0A0020585A /* DetalleServicioNoAsistencial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110B9C9D1DEE5A0A0020585A /* DetalleServicioNoAsistencial.swift */; };
+		110B9CA01DEE79D30020585A /* UtilizacionesTabUtilizacionesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110B9C9F1DEE79D30020585A /* UtilizacionesTabUtilizacionesViewController.swift */; };
+		110B9CA21DEE7A2E0020585A /* UtilizacionesTabAdministracionesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110B9CA11DEE7A2E0020585A /* UtilizacionesTabAdministracionesViewController.swift */; };
+		110B9CA41DEE7A540020585A /* UtilizacionesTabUtilizacionesViewCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110B9CA31DEE7A540020585A /* UtilizacionesTabUtilizacionesViewCellController.swift */; };
+		110B9CA61DEE7A700020585A /* UtilizacionesTabAdministracionesViewCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110B9CA51DEE7A700020585A /* UtilizacionesTabAdministracionesViewCellController.swift */; };
+		110B9CA81DEF1DD40020585A /* DetalleFactura.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110B9CA71DEF1DD40020585A /* DetalleFactura.swift */; };
+		110B9CAA1DEF1EBD0020585A /* DetalleGiro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110B9CA91DEF1EBD0020585A /* DetalleGiro.swift */; };
+		110B9CAC1DEF20340020585A /* DetalleNotaCreditoDebito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110B9CAB1DEF20340020585A /* DetalleNotaCreditoDebito.swift */; };
+		110B9CAE1DEF29A30020585A /* FacturaTabFacturaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110B9CAD1DEF29A30020585A /* FacturaTabFacturaViewController.swift */; };
 		1121738C1DED2C2800BA0DAB /* DetalleSolicitudAprobacionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1121738B1DED2C2800BA0DAB /* DetalleSolicitudAprobacionViewController.swift */; };
 		11227A291DC970C00035959B /* ViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11227A281DC970C00035959B /* ViewControllerTest.swift */; };
 		11227A2C1DC971C80035959B /* FiltrosSolicitudAtencionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11227A2B1DC971C80035959B /* FiltrosSolicitudAtencionController.swift */; };
@@ -32,6 +45,7 @@
 		115424921DDD48EF004EE9E9 /* AdministracionesTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115424911DDD48EF004EE9E9 /* AdministracionesTabViewController.swift */; };
 		115A2C911DE893FB003B1C00 /* NotaCreditoGiro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A2C901DE893FB003B1C00 /* NotaCreditoGiro.swift */; };
 		115A2C931DE8D985003B1C00 /* DetalleNotaCreditoGiroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A2C921DE8D985003B1C00 /* DetalleNotaCreditoGiroViewController.swift */; };
+		1181F0261DEF2BDD00E92A15 /* FacturaTabFacturaViewCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1181F0251DEF2BDD00E92A15 /* FacturaTabFacturaViewCellController.swift */; };
 		11A7E5751DDBB68D0003275B /* ServiciosAdicionadosViewCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A7E5741DDBB68D0003275B /* ServiciosAdicionadosViewCellController.swift */; };
 		11A7E5771DDBB6A50003275B /* ServiciosAdicionadosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A7E5761DDBB6A50003275B /* ServiciosAdicionadosViewController.swift */; };
 		11E362451DCDC10700354EB4 /* OpcionesPrincipalesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E362441DCDC10700354EB4 /* OpcionesPrincipalesViewController.swift */; };
@@ -121,6 +135,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		110B9C951DEE4CC90020585A /* SercioNoAsistecialTabServicioProveedorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SercioNoAsistecialTabServicioProveedorViewController.swift; sourceTree = "<group>"; };
+		110B9C971DEE4CEF0020585A /* ServicioNoAsistencialTabDocumentacionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicioNoAsistencialTabDocumentacionViewController.swift; sourceTree = "<group>"; };
+		110B9C991DEE4D190020585A /* ServicioNoAsistencialTabServiciosAdicionadosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicioNoAsistencialTabServiciosAdicionadosViewController.swift; sourceTree = "<group>"; };
+		110B9C9B1DEE52CA0020585A /* ServicioNoAsistencialTabServicioAdicionadoViewCellController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicioNoAsistencialTabServicioAdicionadoViewCellController.swift; sourceTree = "<group>"; };
+		110B9C9D1DEE5A0A0020585A /* DetalleServicioNoAsistencial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleServicioNoAsistencial.swift; sourceTree = "<group>"; };
+		110B9C9F1DEE79D30020585A /* UtilizacionesTabUtilizacionesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilizacionesTabUtilizacionesViewController.swift; sourceTree = "<group>"; };
+		110B9CA11DEE7A2E0020585A /* UtilizacionesTabAdministracionesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilizacionesTabAdministracionesViewController.swift; sourceTree = "<group>"; };
+		110B9CA31DEE7A540020585A /* UtilizacionesTabUtilizacionesViewCellController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilizacionesTabUtilizacionesViewCellController.swift; sourceTree = "<group>"; };
+		110B9CA51DEE7A700020585A /* UtilizacionesTabAdministracionesViewCellController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilizacionesTabAdministracionesViewCellController.swift; sourceTree = "<group>"; };
+		110B9CA71DEF1DD40020585A /* DetalleFactura.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleFactura.swift; sourceTree = "<group>"; };
+		110B9CA91DEF1EBD0020585A /* DetalleGiro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleGiro.swift; sourceTree = "<group>"; };
+		110B9CAB1DEF20340020585A /* DetalleNotaCreditoDebito.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleNotaCreditoDebito.swift; sourceTree = "<group>"; };
+		110B9CAD1DEF29A30020585A /* FacturaTabFacturaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacturaTabFacturaViewController.swift; sourceTree = "<group>"; };
 		1121738B1DED2C2800BA0DAB /* DetalleSolicitudAprobacionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleSolicitudAprobacionViewController.swift; sourceTree = "<group>"; };
 		11227A281DC970C00035959B /* ViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTest.swift; sourceTree = "<group>"; };
 		11227A2B1DC971C80035959B /* FiltrosSolicitudAtencionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiltrosSolicitudAtencionController.swift; sourceTree = "<group>"; };
@@ -149,6 +176,7 @@
 		115424911DDD48EF004EE9E9 /* AdministracionesTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdministracionesTabViewController.swift; sourceTree = "<group>"; };
 		115A2C901DE893FB003B1C00 /* NotaCreditoGiro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotaCreditoGiro.swift; sourceTree = "<group>"; };
 		115A2C921DE8D985003B1C00 /* DetalleNotaCreditoGiroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleNotaCreditoGiroViewController.swift; sourceTree = "<group>"; };
+		1181F0251DEF2BDD00E92A15 /* FacturaTabFacturaViewCellController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacturaTabFacturaViewCellController.swift; sourceTree = "<group>"; };
 		11A7E5741DDBB68D0003275B /* ServiciosAdicionadosViewCellController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiciosAdicionadosViewCellController.swift; sourceTree = "<group>"; };
 		11A7E5761DDBB6A50003275B /* ServiciosAdicionadosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiciosAdicionadosViewController.swift; sourceTree = "<group>"; };
 		11E362441DCDC10700354EB4 /* OpcionesPrincipalesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpcionesPrincipalesViewController.swift; sourceTree = "<group>"; };
@@ -332,6 +360,16 @@
 				11309A931DED293E00E79070 /* DetalleNotaCreditoDebitoViewController.swift */,
 				1121738B1DED2C2800BA0DAB /* DetalleSolicitudAprobacionViewController.swift */,
 				A46F985E1DEF202C000B19BE /* DetalleBitacoraViewController.swift */,
+				110B9C951DEE4CC90020585A /* SercioNoAsistecialTabServicioProveedorViewController.swift */,
+				110B9C971DEE4CEF0020585A /* ServicioNoAsistencialTabDocumentacionViewController.swift */,
+				110B9C991DEE4D190020585A /* ServicioNoAsistencialTabServiciosAdicionadosViewController.swift */,
+				110B9C9B1DEE52CA0020585A /* ServicioNoAsistencialTabServicioAdicionadoViewCellController.swift */,
+				110B9C9F1DEE79D30020585A /* UtilizacionesTabUtilizacionesViewController.swift */,
+				110B9CA11DEE7A2E0020585A /* UtilizacionesTabAdministracionesViewController.swift */,
+				110B9CA31DEE7A540020585A /* UtilizacionesTabUtilizacionesViewCellController.swift */,
+				110B9CA51DEE7A700020585A /* UtilizacionesTabAdministracionesViewCellController.swift */,
+				110B9CAD1DEF29A30020585A /* FacturaTabFacturaViewController.swift */,
+				1181F0251DEF2BDD00E92A15 /* FacturaTabFacturaViewCellController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -350,6 +388,10 @@
 				A4204D4D1DEA429D002AE700 /* PropertiesProject.swift */,
 				A46F985A1DEE63D6000B19BE /* Autorizacion.swift */,
 				A46F985C1DEE8DF8000B19BE /* Bitacora.swift */,
+				110B9C9D1DEE5A0A0020585A /* DetalleServicioNoAsistencial.swift */,
+				110B9CA71DEF1DD40020585A /* DetalleFactura.swift */,
+				110B9CA91DEF1EBD0020585A /* DetalleGiro.swift */,
+				110B9CAB1DEF20340020585A /* DetalleNotaCreditoDebito.swift */,
 			);
 			name = Modelo;
 			sourceTree = "<group>";
@@ -728,6 +770,7 @@
 				11E362581DD2B65A00354EB4 /* NotaCreditoGiroViewController.swift in Sources */,
 				A4E7D1A81DC93F1E00C4E977 /* ViewController.swift in Sources */,
 				A4B6F08B1DD2C539000F5A97 /* InformesMedicosViewController.swift in Sources */,
+				1181F0261DEF2BDD00E92A15 /* FacturaTabFacturaViewCellController.swift in Sources */,
 				A4204D4C1DEA2610002AE700 /* SolicitudesAtencion.swift in Sources */,
 				11309A921DED238000E79070 /* DetalleFacturaViewController.swift in Sources */,
 				A4C5E3A71DDB619A00294883 /* BitacoraViewController.swift in Sources */,
@@ -743,21 +786,27 @@
 				1154248E1DDD48C7004EE9E9 /* UtilizacionesTabViewController.swift in Sources */,
 				115A2C911DE893FB003B1C00 /* NotaCreditoGiro.swift in Sources */,
 				11E362641DD2B6E400354EB4 /* UtilizacionesViewController.swift in Sources */,
+				110B9CA81DEF1DD40020585A /* DetalleFactura.swift in Sources */,
 				115424881DDD3FFE004EE9E9 /* NotaServicioViewCellController.swift in Sources */,
 				11F894431DDD166F00A58E45 /* FacturaGlosaViewController.swift in Sources */,
 				11F894311DDD044700A58E45 /* GiroManutencionViewCellController.swift in Sources */,
 				11E3626C1DD2B72900354EB4 /* SolicitudAprobacionViewController.swift in Sources */,
 				A43D62DA1DCDD36F0044AB22 /* AutorizacionesViewController.swift in Sources */,
 				11309A941DED293E00E79070 /* DetalleNotaCreditoDebitoViewController.swift in Sources */,
+				110B9CAA1DEF1EBD0020585A /* DetalleGiro.swift in Sources */,
 				115424901DDD48E0004EE9E9 /* AdministracionesTabViewCellController.swift in Sources */,
 				11309A8E1DED104400E79070 /* DetalleServicioNoAsistencialViewController.swift in Sources */,
 				1154248A1DDD400D004EE9E9 /* NotaServicioViewController.swift in Sources */,
 				A44581031DCD845B00838456 /* OpcionesSecundariasViewController.swift in Sources */,
+				110B9CA61DEE7A700020585A /* UtilizacionesTabAdministracionesViewCellController.swift in Sources */,
 				11E3625E1DD2B69400354EB4 /* NotaCreditoDebitoViewController.swift in Sources */,
 				11E3625A1DD2B66F00354EB4 /* FacturaViewCellController.swift in Sources */,
 				11F894451DDD168800A58E45 /* FacturaImpuestoViewCellController.swift in Sources */,
 				11309A881DED0DBF00E79070 /* NotaCreditoDebito.swift in Sources */,
+				110B9CA21DEE7A2E0020585A /* UtilizacionesTabAdministracionesViewController.swift in Sources */,
 				A4C5E3A91DDB61CA00294883 /* BitacoraViewCell.swift in Sources */,
+				110B9CAC1DEF20340020585A /* DetalleNotaCreditoDebito.swift in Sources */,
+				110B9CA41DEE7A540020585A /* UtilizacionesTabUtilizacionesViewCellController.swift in Sources */,
 				11F894371DDD049200A58E45 /* GiroConceptoViewController.swift in Sources */,
 				11E3625C1DD2B67D00354EB4 /* FacturaViewController.swift in Sources */,
 				11E362621DD2B6D400354EB4 /* UtilizacionesViewCellController.swift in Sources */,
@@ -765,6 +814,8 @@
 				11F8943F1DDD10B500A58E45 /* FacturaInformacionViewController.swift in Sources */,
 				A44A5B041DC9832A00A6553D /* SolicitudAtencionTableViewCell.swift in Sources */,
 				11E362661DD2B6F900354EB4 /* EncuestaViewCellController.swift in Sources */,
+				110B9C9A1DEE4D190020585A /* ServicioNoAsistencialTabServiciosAdicionadosViewController.swift in Sources */,
+				110B9C981DEE4CEF0020585A /* ServicioNoAsistencialTabDocumentacionViewController.swift in Sources */,
 				A4C5E3B11DDBC7A900294883 /* FuncionariosTableViewCell.swift in Sources */,
 				A4C5E3AD1DDBB37900294883 /* ProcedimientosAdicionalesViewController.swift in Sources */,
 				11309A901DED1EB300E79070 /* DetalleGiroViewController.swift in Sources */,
@@ -783,8 +834,12 @@
 				11F894391DDD04B900A58E45 /* GiroHistoricoViewCellController.swift in Sources */,
 				11F894471DDD169900A58E45 /* FacturaImpuestoViewController.swift in Sources */,
 				11F8943D1DDD108C00A58E45 /* FacturaInformacionViewCellController.swift in Sources */,
+				110B9CAE1DEF29A30020585A /* FacturaTabFacturaViewController.swift in Sources */,
 				11309A841DED0BBA00E79070 /* Giro.swift in Sources */,
+				110B9C961DEE4CC90020585A /* SercioNoAsistecialTabServicioProveedorViewController.swift in Sources */,
+				110B9C9E1DEE5A0A0020585A /* DetalleServicioNoAsistencial.swift in Sources */,
 				1154248C1DDD48AF004EE9E9 /* UtilizacionesTabViewCellController.swift in Sources */,
+				110B9CA01DEE79D30020585A /* UtilizacionesTabUtilizacionesViewController.swift in Sources */,
 				11E3624B1DD2760B00354EB4 /* ServicioNoAsistencialViewCellController.swift in Sources */,
 				115424861DDD3FE7004EE9E9 /* NotaImpuestoViewController.swift in Sources */,
 				11F8943B1DDD04C700A58E45 /* GiroHistoricoViewController.swift in Sources */,
@@ -801,6 +856,7 @@
 				11309A8A1DED0E9F00E79070 /* Utilizaciones.swift in Sources */,
 				A43FED211DD55F43007B0BFF /* FiltroBitacoraViewController.swift in Sources */,
 				A43D62D81DCDADD20044AB22 /* OpcionesSecundariasLogViewController.swift in Sources */,
+				110B9C9C1DEE52CA0020585A /* ServicioNoAsistencialTabServicioAdicionadoViewCellController.swift in Sources */,
 				11E362601DD2B6B900354EB4 /* NotaCreditoDebitoViewCellController.swift in Sources */,
 				11E362681DD2B70500354EB4 /* EncuestaViewController.swift in Sources */,
 				A4C5E3AF1DDBC78C00294883 /* FuncionariosViewController.swift in Sources */,
