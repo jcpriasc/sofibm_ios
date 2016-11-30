@@ -14,6 +14,8 @@ class UtilizacionesViewController:  UIViewController, UITableViewDataSource, UIT
     let lstUtilizaciones = ["Solicitud 1", "Solicitud 2", "Solicitud 3", "Solicitud 4", "Solicitud 5", "Solicitud 6", "Solicitud 7", "Solicitud 9"]
     
     static var utilizacionesSeleccionado = Utilizaciones()
+    
+    static var jsonDetalleUtilizaciones: NSDictionary?
 
     
     override func viewDidLoad() {
@@ -51,10 +53,66 @@ class UtilizacionesViewController:  UIViewController, UITableViewDataSource, UIT
         
     }
     
+    public func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath?
+    {
+        let opcionSeleccionada = indexPath[1]
+        
+        if let solicitud = self.jsonUtilizaciones[opcionSeleccionada] as? Dictionary<String, Any>{
+            
+            UtilizacionesViewController.utilizacionesSeleccionado.consConvenio = (solicitud["consConvenio"] as! Double?)!;
+            UtilizacionesViewController.utilizacionesSeleccionado.convenio = (solicitud["convenio"] as? String ?? "");
+            UtilizacionesViewController.utilizacionesSeleccionado.desde = (solicitud["desde"] as? String ?? "");
+            UtilizacionesViewController.utilizacionesSeleccionado.hasta = (solicitud["hasta"] as? String ?? "");
+            obtenerDetalle()
+        }
+        
+        return indexPath
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    func obtenerDetalle(){
+        
+        let url = URL(string: "http://pruebas-sectorsalud.coomeva.com.co/saludmp-ws/jax-rs/saludmp-sofibmobile/utilizaciones/detalle/SAC/ABCD1234/852/44/01-04-2011/30-04-2011")
+        
+        let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
+            if error != nil
+            {
+                print ("ERROR")
+            }
+            else
+            {
+                if let content = data
+                {
+                    do
+                    {
+                        //Array
+                        UtilizacionesViewController.jsonDetalleUtilizaciones = try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSDictionary
+                        
+                        if ((UtilizacionesViewController.jsonDetalleUtilizaciones) != nil && (UtilizacionesViewController.jsonDetalleUtilizaciones?.count)!>0){
+                            let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "tabUtilizaciones")
+                            self.show(vc as! UIViewController, sender: vc)
+                        }else{
+                            //print(NSLocalizedString("lbl_sin_resultados", comment: "lbl_sin_resultados"));
+                            let alert = UIAlertController(title: NSLocalizedString("lbl_alerta", comment: "lbl_alerta"), message: NSLocalizedString("lbl_sin_resultados", comment: "lbl_sin_resultados"), preferredStyle: UIAlertControllerStyle.alert)
+                            alert.addAction(UIAlertAction(title: NSLocalizedString("lbl_aceptar", comment: "lbl_aceptar"), style: UIAlertActionStyle.default, handler: nil))
+                            self.present(alert, animated: true, completion: nil)
+                            
+                        }
+                        
+                    }
+                    catch
+                    {
+                        
+                    }
+                }
+            }
+        }
+        task.resume()
+        
+    }
 
 }

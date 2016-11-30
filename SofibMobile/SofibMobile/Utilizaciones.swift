@@ -10,7 +10,7 @@ import Foundation
 
 class Utilizaciones{
     
-    var consConvenio: String = ""
+    var consConvenio: Double = 0
     var convenio: String = ""
     var desde: String = ""
     var hasta: String = ""

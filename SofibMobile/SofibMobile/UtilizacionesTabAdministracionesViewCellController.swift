@@ -21,7 +21,7 @@ class UtilizacionesTabAdministracionesViewCellController: UITableViewCell {
     
     @IBOutlet var txtTotal: UILabel!
     @IBOutlet var txtTrm: UILabel!
-    @IBOutlet var txtSubTotal: UILabel!
+    @IBOutlet var txtSubtotal: UILabel!
     @IBOutlet var txtPorcentajeIva: UILabel!
     @IBOutlet var txtValorIva: UILabel!
     @IBOutlet var txtFechaCreado: UILabel!
@@ -31,13 +31,12 @@ class UtilizacionesTabAdministracionesViewCellController: UITableViewCell {
         super.awakeFromNib()
         
         // Initialization code
-        lblTotal.text = NSLocalizedString("lbl_tipo_seguro", comment: "lbl_tipo_seguro")
-        lblTrm.text = NSLocalizedString("lbl_tipo_seguro", comment: "lbl_tipo_seguro")
-        lblSubTotal.text = NSLocalizedString("lbl_tipo_seguro", comment: "lbl_tipo_seguro")
-        lblPorcentajeIva.text = NSLocalizedString("lbl_tipo_seguro", comment: "lbl_tipo_seguro")
-        lblValorIva.text = NSLocalizedString("lbl_tipo_seguro", comment: "lbl_tipo_seguro")
-        lblFechaCreado.text = NSLocalizedString("lbl_tipo_seguro", comment: "lbl_tipo_seguro")
-
+        lblTotal.text = NSLocalizedString("lbl_total", comment: "lbl_total")
+        lblTrm.text = NSLocalizedString("lbl_trm", comment: "lbl_trm")
+        lblSubTotal.text = NSLocalizedString("lbl_subtotal", comment: "lbl_subtotal")
+        lblPorcentajeIva.text = NSLocalizedString("lbl_porcentaje_iva", comment: "lbl_porcentaje_iva")
+        lblValorIva.text = NSLocalizedString("lbl_valor_iva", comment: "lbl_valor_iva")
+        lblFechaCreado.text = NSLocalizedString("lbl_fecha_creado", comment: "lbl_fecha_creado")
        
     }
     

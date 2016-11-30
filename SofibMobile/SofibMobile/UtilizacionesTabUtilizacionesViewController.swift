@@ -8,14 +8,47 @@
 
 import UIKit
 
-class UtilizacionesTabUtilizacionesViewController: UIViewController {
+class UtilizacionesTabUtilizacionesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    static var jsonTabUtilizaciones: NSArray?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        if let solicitud =  UtilizacionesViewController.jsonDetalleUtilizaciones as? Dictionary<String, Any>{
+            UtilizacionesTabUtilizacionesViewController.jsonTabUtilizaciones = solicitud["utilizaciones"] as? NSArray
+            
+        }
         // Do any additional setup after loading the view.
     }
 
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
+        return (UtilizacionesTabUtilizacionesViewController.jsonTabUtilizaciones!.count)
+    }
+    
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! UtilizacionesTabUtilizacionesViewCellController
+        
+        if let solicitud = UtilizacionesTabUtilizacionesViewController.jsonTabUtilizaciones?[indexPath.row] as? Dictionary<String, Any>{
+            cell.txtTipoSeguro.text = (solicitud["tipoSeguro"] as? String ?? " ");
+            cell.txtSeguroNumero.text = (solicitud["seguroNumero"] as? String ?? " ");
+            cell.txtPrestadorProveedor.text = (solicitud["prestador"] as? String ?? " ");
+            cell.txtConcepto.text = (solicitud["concepto"] as? String ?? " ");
+            cell.txtTotal.text = (solicitud["total"] as? String ?? " ");
+            cell.txtTotalGlosa.text = (solicitud["totalGlosa"] as? String ?? " ");
+            cell.txtFechaCreado.text = (solicitud["fechaCreado"] as? String ?? " ");
+
+        }
+        
+        return (cell)
+        
+        
+    }
+
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

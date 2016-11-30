@@ -2232,7 +2232,6 @@
                                             <outlet property="txtConvenio" destination="Vh6-PQ-7sa" id="ym5-es-gnT"/>
                                             <outlet property="txtDesde" destination="gva-7U-qTE" id="5WF-ra-oC9"/>
                                             <outlet property="txtHasta" destination="hMc-wk-12C" id="hOa-M2-8xI"/>
-                                            <segue destination="VUL-Ow-Iio" kind="presentation" id="Ywk-Ku-7C3"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -5748,7 +5747,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="2L1-Ct-6Qa">
             <objects>
-                <tabBarController id="VUL-Ow-Iio" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabUtilizaciones" id="VUL-Ow-Iio" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="VUt-cB-l94">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -6600,10 +6599,10 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="96" id="i6X-mL-h2C" customClass="GiroManutencionViewCellController" customModule="SofibMobile" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="28" width="346" height="96"/>
+                                                <rect key="frame" x="0.0" y="28" width="345" height="96"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="i6X-mL-h2C" id="IRl-CQ-oA7">
-                                                    <frame key="frameInset" width="346" height="95"/>
+                                                    <frame key="frameInset" width="345" height="95"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="flG-nN-QGS">
@@ -8676,10 +8675,10 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="149" id="US6-qk-n0m" customClass="UtilizacionesTabUtilizacionesViewCellController" customModule="SofibMobile" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="28" width="346" height="149"/>
+                                                <rect key="frame" x="0.0" y="28" width="345" height="149"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="US6-qk-n0m" id="Lqo-GT-S08">
-                                                    <frame key="frameInset" width="346" height="148"/>
+                                                    <frame key="frameInset" width="345.5" height="148"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tipo de Seguro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eB5-6i-4c6">
@@ -8761,34 +8760,36 @@
                                                         </label>
                                                     </subviews>
                                                     <constraints>
-                                                        <constraint firstItem="Tfw-pz-HEX" firstAttribute="leading" secondItem="eB5-6i-4c6" secondAttribute="trailing" constant="5" id="06Q-t5-Hw3"/>
-                                                        <constraint firstItem="OEA-Uv-nN4" firstAttribute="top" secondItem="Tfw-pz-HEX" secondAttribute="bottom" constant="1" id="0fQ-GS-Qd7"/>
-                                                        <constraint firstItem="Wva-s6-KV0" firstAttribute="top" secondItem="nTR-3C-5Xx" secondAttribute="bottom" constant="1" id="3CS-6k-44B"/>
-                                                        <constraint firstItem="hpV-zV-qXJ" firstAttribute="top" secondItem="Wva-s6-KV0" secondAttribute="bottom" constant="1" id="3gG-ri-V9y"/>
-                                                        <constraint firstItem="Wva-s6-KV0" firstAttribute="leading" secondItem="Lqo-GT-S08" secondAttribute="leading" constant="7" id="9qX-OM-tS4"/>
-                                                        <constraint firstItem="gUj-cH-bcX" firstAttribute="top" secondItem="rTw-lh-FMy" secondAttribute="bottom" constant="2" id="BC6-U4-LdV"/>
-                                                        <constraint firstItem="nGR-Lg-9OZ" firstAttribute="leading" secondItem="Lqo-GT-S08" secondAttribute="leadingMargin" id="HuT-Ru-cJL"/>
-                                                        <constraint firstItem="nTR-3C-5Xx" firstAttribute="top" secondItem="Tfw-pz-HEX" secondAttribute="bottom" constant="1" id="MFh-pM-uG0"/>
-                                                        <constraint firstItem="rTw-lh-FMy" firstAttribute="leading" secondItem="Wq6-Pc-Anw" secondAttribute="trailing" constant="5" id="NIx-CK-H6X"/>
-                                                        <constraint firstItem="nGR-Lg-9OZ" firstAttribute="top" secondItem="Xof-BP-Sy8" secondAttribute="bottom" constant="1" id="PVM-zE-0hu"/>
-                                                        <constraint firstItem="OEA-Uv-nN4" firstAttribute="leading" secondItem="Lqo-GT-S08" secondAttribute="leadingMargin" id="R3i-Vu-M5g"/>
-                                                        <constraint firstItem="hpV-zV-qXJ" firstAttribute="leading" secondItem="Lqo-GT-S08" secondAttribute="leadingMargin" id="RKc-c6-uoe"/>
-                                                        <constraint firstItem="rTw-lh-FMy" firstAttribute="top" secondItem="f9M-8m-Hff" secondAttribute="bottom" constant="2" id="S7j-Q3-Ina"/>
-                                                        <constraint firstItem="gUj-cH-bcX" firstAttribute="leading" secondItem="Lqo-GT-S08" secondAttribute="leadingMargin" id="Xz4-rH-Z3U"/>
-                                                        <constraint firstItem="eB5-6i-4c6" firstAttribute="leading" secondItem="Lqo-GT-S08" secondAttribute="leadingMargin" id="bL6-6e-q6I"/>
-                                                        <constraint firstItem="SNu-Td-6qk" firstAttribute="leading" secondItem="Wva-s6-KV0" secondAttribute="trailing" constant="5" id="dkV-cd-gff"/>
-                                                        <constraint firstItem="nTR-3C-5Xx" firstAttribute="leading" secondItem="OEA-Uv-nN4" secondAttribute="trailing" constant="5" id="eId-Yy-uFP"/>
-                                                        <constraint firstItem="qr2-Yb-JgY" firstAttribute="leading" secondItem="gUj-cH-bcX" secondAttribute="trailing" constant="5" id="gcw-s8-6lk"/>
-                                                        <constraint firstItem="Xof-BP-Sy8" firstAttribute="top" secondItem="SNu-Td-6qk" secondAttribute="bottom" constant="1" id="hXn-to-uYw"/>
-                                                        <constraint firstItem="f9M-8m-Hff" firstAttribute="top" secondItem="Xof-BP-Sy8" secondAttribute="bottom" constant="1" id="jlx-9A-5zM"/>
-                                                        <constraint firstItem="qr2-Yb-JgY" firstAttribute="top" secondItem="rTw-lh-FMy" secondAttribute="bottom" constant="2" id="lY7-Jo-Iub"/>
-                                                        <constraint firstItem="f9M-8m-Hff" firstAttribute="leading" secondItem="nGR-Lg-9OZ" secondAttribute="trailing" constant="5" id="mPe-Ra-jzc"/>
-                                                        <constraint firstItem="SNu-Td-6qk" firstAttribute="top" secondItem="nTR-3C-5Xx" secondAttribute="bottom" constant="1" id="pIU-0r-1fm"/>
-                                                        <constraint firstItem="eB5-6i-4c6" firstAttribute="top" secondItem="Lqo-GT-S08" secondAttribute="topMargin" id="rlr-wl-8yk"/>
-                                                        <constraint firstItem="Wq6-Pc-Anw" firstAttribute="leading" secondItem="Lqo-GT-S08" secondAttribute="leading" constant="8" id="rlz-iG-a3m"/>
-                                                        <constraint firstItem="Tfw-pz-HEX" firstAttribute="top" secondItem="Lqo-GT-S08" secondAttribute="topMargin" id="tud-fE-ZFe"/>
-                                                        <constraint firstItem="Xof-BP-Sy8" firstAttribute="leading" secondItem="hpV-zV-qXJ" secondAttribute="trailing" constant="5" id="x1J-Te-7jl"/>
-                                                        <constraint firstItem="Wq6-Pc-Anw" firstAttribute="top" secondItem="f9M-8m-Hff" secondAttribute="bottom" constant="2" id="xKj-gh-bfq"/>
+                                                        <constraint firstItem="SNu-Td-6qk" firstAttribute="leading" secondItem="Wva-s6-KV0" secondAttribute="trailing" constant="5" id="0ip-Uk-fJn"/>
+                                                        <constraint firstItem="rTw-lh-FMy" firstAttribute="top" secondItem="f9M-8m-Hff" secondAttribute="bottom" constant="1" id="1Cr-L1-f4P"/>
+                                                        <constraint firstItem="nTR-3C-5Xx" firstAttribute="leading" secondItem="OEA-Uv-nN4" secondAttribute="trailing" constant="5" id="1aZ-9p-Pd4"/>
+                                                        <constraint firstItem="Tfw-pz-HEX" firstAttribute="top" secondItem="Lqo-GT-S08" secondAttribute="topMargin" id="27F-nr-EpQ"/>
+                                                        <constraint firstItem="qr2-Yb-JgY" firstAttribute="top" secondItem="rTw-lh-FMy" secondAttribute="bottom" constant="1" id="2yt-Xf-OUq"/>
+                                                        <constraint firstItem="nGR-Lg-9OZ" firstAttribute="leading" secondItem="Lqo-GT-S08" secondAttribute="leadingMargin" id="3Mo-k5-ysz"/>
+                                                        <constraint firstItem="Wva-s6-KV0" firstAttribute="top" secondItem="nTR-3C-5Xx" secondAttribute="bottom" constant="1" id="6BK-Dk-tke"/>
+                                                        <constraint firstItem="nTR-3C-5Xx" firstAttribute="width" secondItem="Lqo-GT-S08" secondAttribute="width" multiplier="0.5" id="BeM-Ci-kEL"/>
+                                                        <constraint firstItem="eB5-6i-4c6" firstAttribute="top" secondItem="Lqo-GT-S08" secondAttribute="topMargin" id="Bfe-ja-Dl6"/>
+                                                        <constraint firstItem="Wq6-Pc-Anw" firstAttribute="leading" secondItem="Lqo-GT-S08" secondAttribute="leadingMargin" id="Fih-kU-vlE"/>
+                                                        <constraint firstItem="Tfw-pz-HEX" firstAttribute="leading" secondItem="eB5-6i-4c6" secondAttribute="trailing" constant="5" id="Ifc-gR-du9"/>
+                                                        <constraint firstItem="Xof-BP-Sy8" firstAttribute="top" secondItem="Wva-s6-KV0" secondAttribute="bottom" constant="1" id="KcK-Cc-3ed"/>
+                                                        <constraint firstItem="eB5-6i-4c6" firstAttribute="leading" secondItem="Lqo-GT-S08" secondAttribute="leadingMargin" id="Opz-Ki-Jop"/>
+                                                        <constraint firstItem="Wq6-Pc-Anw" firstAttribute="top" secondItem="f9M-8m-Hff" secondAttribute="bottom" constant="1" id="Sim-gC-N8b"/>
+                                                        <constraint firstItem="nTR-3C-5Xx" firstAttribute="top" secondItem="Tfw-pz-HEX" secondAttribute="bottom" constant="1" id="ULa-w9-xZg"/>
+                                                        <constraint firstItem="gUj-cH-bcX" firstAttribute="top" secondItem="rTw-lh-FMy" secondAttribute="bottom" constant="1" id="Xcm-CC-hFH"/>
+                                                        <constraint firstItem="f9M-8m-Hff" firstAttribute="top" secondItem="Xof-BP-Sy8" secondAttribute="bottom" constant="1" id="cEM-VL-Usg"/>
+                                                        <constraint firstItem="f9M-8m-Hff" firstAttribute="leading" secondItem="nGR-Lg-9OZ" secondAttribute="trailing" constant="5" id="iFC-ls-iKF"/>
+                                                        <constraint firstItem="hpV-zV-qXJ" firstAttribute="top" secondItem="Wva-s6-KV0" secondAttribute="bottom" constant="1" id="jaF-mk-RDK"/>
+                                                        <constraint firstItem="qr2-Yb-JgY" firstAttribute="leading" secondItem="gUj-cH-bcX" secondAttribute="trailing" constant="5" id="oJx-yk-lmA"/>
+                                                        <constraint firstItem="Wva-s6-KV0" firstAttribute="leading" secondItem="Lqo-GT-S08" secondAttribute="leading" constant="10" id="orJ-WI-xDI"/>
+                                                        <constraint firstItem="SNu-Td-6qk" firstAttribute="top" secondItem="nTR-3C-5Xx" secondAttribute="bottom" constant="1" id="pGt-lh-Bvi"/>
+                                                        <constraint firstItem="OEA-Uv-nN4" firstAttribute="top" secondItem="eB5-6i-4c6" secondAttribute="bottom" constant="1" id="r7e-fo-oDd"/>
+                                                        <constraint firstItem="rTw-lh-FMy" firstAttribute="leading" secondItem="Wq6-Pc-Anw" secondAttribute="trailing" constant="5" id="rI2-5d-O21"/>
+                                                        <constraint firstItem="hpV-zV-qXJ" firstAttribute="leading" secondItem="Lqo-GT-S08" secondAttribute="leadingMargin" id="v6x-hn-pfh"/>
+                                                        <constraint firstItem="nGR-Lg-9OZ" firstAttribute="top" secondItem="hpV-zV-qXJ" secondAttribute="bottom" constant="1" id="w2U-oS-b1i"/>
+                                                        <constraint firstItem="OEA-Uv-nN4" firstAttribute="leading" secondItem="Lqo-GT-S08" secondAttribute="leadingMargin" id="wKH-Dp-UDw"/>
+                                                        <constraint firstItem="Xof-BP-Sy8" firstAttribute="leading" secondItem="hpV-zV-qXJ" secondAttribute="trailing" constant="5" id="wwc-fw-URm"/>
+                                                        <constraint firstItem="gUj-cH-bcX" firstAttribute="leading" secondItem="Lqo-GT-S08" secondAttribute="leadingMargin" id="y4Y-xa-CQD"/>
+                                                        <constraint firstItem="f9M-8m-Hff" firstAttribute="width" secondItem="Lqo-GT-S08" secondAttribute="width" multiplier="0.7" id="zgH-2G-vZa"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
                                                 <connections>
@@ -8904,7 +8905,7 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="134" id="gCv-ws-t1T" customClass="UtilizacionesTabAdministracionesViewCellController" customModule="SofibMobile" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="28" width="345" height="134"/>
+                                                <rect key="frame" x="0.0" y="28" width="346" height="134"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gCv-ws-t1T" id="Ysd-Hl-5C2">
                                                     <frame key="frameInset" width="345.5" height="133"/>
@@ -9013,7 +9014,6 @@
                                                     <outlet property="lblValorIva" destination="4nO-JX-RCH" id="WAk-FK-g1K"/>
                                                     <outlet property="txtFechaCreado" destination="whf-Iy-50l" id="LHh-MA-mZi"/>
                                                     <outlet property="txtPorcentajeIva" destination="Fzo-9g-Glj" id="PC2-xQ-Fjw"/>
-                                                    <outlet property="txtSubTotal" destination="pgR-ah-WVg" id="s7V-mM-bNJ"/>
                                                     <outlet property="txtSubtotal" destination="pgR-ah-WVg" id="evE-zu-FVU"/>
                                                     <outlet property="txtTotal" destination="Q3n-8o-RZl" id="SiM-LI-hLZ"/>
                                                     <outlet property="txtTrm" destination="GSi-N7-OQX" id="Skp-E0-Q6h"/>
@@ -9809,14 +9809,14 @@
         <image name="row_right" width="64" height="64"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="9nJ-zS-xUW"/>
-        <segue reference="BfY-DR-KxF"/>
-        <segue reference="iwC-m0-CfA"/>
-        <segue reference="1eB-vW-eKC"/>
+        <segue reference="RIT-KH-hq1"/>
+        <segue reference="PKJ-yY-coa"/>
+        <segue reference="gEB-ZA-f9D"/>
+        <segue reference="BON-BY-cd9"/>
         <segue reference="2eq-s1-2b7"/>
         <segue reference="NKJ-B4-E6s"/>
-        <segue reference="ZCy-zm-gpS"/>
         <segue reference="Iwh-mI-fHv"/>
+        <segue reference="BfY-DR-KxF"/>
         <segue reference="EDS-xH-zyS"/>
         <segue reference="uTY-gR-FXH"/>
         <segue reference="Dlk-8L-BaP"/>

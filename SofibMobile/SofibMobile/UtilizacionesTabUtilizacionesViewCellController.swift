@@ -38,6 +38,8 @@ class UtilizacionesTabUtilizacionesViewCellController: UITableViewCell {
         lblTotal.text = NSLocalizedString("lbl_total", comment: "lbl_total")
         lblTotalGlosa.text = NSLocalizedString("lbl_total_glosa", comment: "lbl_total_glosa")
         lblFechaCreado.text = NSLocalizedString("lbl_fecha_creado", comment: "lbl_fecha_creado")
+        
+    
     
     }
     
