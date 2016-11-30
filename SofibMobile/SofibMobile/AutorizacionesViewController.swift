@@ -10,6 +10,8 @@ import UIKit
 
 class AutorizacionesViewController: UIViewController , UITableViewDataSource, UITableViewDelegate{
 
+    let params: String = "/SAC/ABCD1234/"
+    static var autorizacionSeleccionada = Autorizacion()
     
     let jsonAutorizaciones: NSArray = OpcionesSecundariasViewController.jsonAutorizaciones!
     //let autorizaciones = ["Solicitud de ampliación de estadía generada por un informe médico",
@@ -30,6 +32,27 @@ class AutorizacionesViewController: UIViewController , UITableViewDataSource, UI
         }
         
         return cell
+    }
+    
+    public func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath?
+    {
+        let opcionSeleccionada = indexPath[1]
+        
+        if let resultadoConsulta = self.jsonAutorizaciones[opcionSeleccionada] as? Dictionary<String, Any>{
+            AutorizacionesViewController.autorizacionSeleccionada.consDetAutorizacion = String(resultadoConsulta["consDetAutorizacion"] as? Int ?? 0);
+            AutorizacionesViewController.autorizacionSeleccionada.descripcion = resultadoConsulta["solicitudDescripcion"] as? String ?? ""
+            AutorizacionesViewController.autorizacionSeleccionada.ciudad = resultadoConsulta["ciudad"] as? String ?? ""
+            AutorizacionesViewController.autorizacionSeleccionada.tipoSolicitud = resultadoConsulta["solicitudTipo"] as? String ?? ""
+            AutorizacionesViewController.autorizacionSeleccionada.fechaSolicitud = resultadoConsulta["solicitaCreadoFecha"] as? String ?? ""
+            AutorizacionesViewController.autorizacionSeleccionada.estado = resultadoConsulta["estado"] as? String ?? ""
+            AutorizacionesViewController.autorizacionSeleccionada.fechaAprobacion = resultadoConsulta["autorizaCreadoFecha"] as? String ?? ""
+            AutorizacionesViewController.autorizacionSeleccionada.fechaRechazo = resultadoConsulta["fechaRechazo"] as? String ?? ""
+            
+            consultarDetalle(codigo: String(resultadoConsulta["consDetAutorizacion"] as? Int ?? 0))
+            
+        }
+        
+        return indexPath
     }
     
     
@@ -54,5 +77,47 @@ class AutorizacionesViewController: UIViewController , UITableViewDataSource, UI
         // Pass the selected object to the new view controller.
     }
     */
+    
+    
+    func consultarDetalle(codigo: String){
+        
+        let url = URL(string: PropertiesProject.URL+PropertiesProject.complement_detalle_autorizaciones+params+codigo)
+        print(PropertiesProject.URL+PropertiesProject.complement_detalle_autorizaciones+params+codigo)
+        let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
+            if error != nil
+            {
+                print ("ERROR")
+            }
+            else
+            {
+                if let content = data
+                {
+                    do
+                    {
+                        //Array
+                        let jsonSolicitudDetalleAutorizacion: NSArray? = try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSArray
+                        if ((jsonSolicitudDetalleAutorizacion?.count)!>0){
+                            AutorizacionesViewController.autorizacionSeleccionada.detalleAutorizacion = jsonSolicitudDetalleAutorizacion
+                            let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "detalleAutorizacionController")
+                            self.show(vc as! UIViewController, sender: vc)
+                        }else{
+                            //print(NSLocalizedString("lbl_sin_resultados", comment: "lbl_sin_resultados"));
+                            let alert = UIAlertController(title: NSLocalizedString("lbl_alerta", comment: "lbl_alerta"), message: NSLocalizedString("lbl_sin_resultados", comment: "lbl_sin_resultados"), preferredStyle: UIAlertControllerStyle.alert)
+                            alert.addAction(UIAlertAction(title: NSLocalizedString("lbl_aceptar", comment: "lbl_aceptar"), style: UIAlertActionStyle.default, handler: nil))
+                            self.present(alert, animated: true, completion: nil)
+                        }
+                        
+                    }
+                    catch
+                    {
+                        
+                    }
+                }
+            }
+        }
+        task.resume()
+        
+    }
+    
 
 }

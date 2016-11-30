@@ -103,9 +103,11 @@ class OpcionesSecundariasViewController: UIViewController, UITableViewDataSource
             //ya
             obtenerProcedimientoAdicionales()
         case 7:
+            //ya
             obtenerFuncionariosExternos()
         default:
-            obtenerSolicitudesAprobacion()
+            //ya
+            obtenerSolicitudAprobacion()
         }
         
         return indexPath
@@ -411,10 +413,10 @@ class OpcionesSecundariasViewController: UIViewController, UITableViewDataSource
         
     }
     
-    func obtenerSolicitudesAprobacion(){
+
+    func obtenerSolicitudAprobacion(){
         
         let url = URL(string: PropertiesProject.URL+PropertiesProject.complement_aprobacion+"/SAC/ABCD1234/0/0/0/"+ConsultaSolicitudesAtencionController.solicitudAtencionSeleccionada.consSolicitud+"/l")
-        print(PropertiesProject.URL+PropertiesProject.complement_aprobacion+"/SAC/ABCD1234/0/0/0/"+ConsultaSolicitudesAtencionController.solicitudAtencionSeleccionada.consSolicitud+"/l")
         
         let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
             if error != nil
@@ -428,18 +430,16 @@ class OpcionesSecundariasViewController: UIViewController, UITableViewDataSource
                     do
                     {
                         //Array
-                        OpcionesSecundariasViewController.jsonSolicitudAprobacion = try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSArray
-                        if ((OpcionesSecundariasViewController.jsonSolicitudAprobacion?.count)!>0){
-                            let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "")
+                        OpcionesSecundariasLogViewController.jsonSolicitudAprobacion = try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSArray
+                        if ((OpcionesSecundariasLogViewController.jsonSolicitudAprobacion?.count)!>0){
+                            let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "solicitudesAprobacionController")
                             self.show(vc as! UIViewController, sender: vc)
                         }else{
                             //print(NSLocalizedString("lbl_sin_resultados", comment: "lbl_sin_resultados"));
                             let alert = UIAlertController(title: NSLocalizedString("lbl_alerta", comment: "lbl_alerta"), message: NSLocalizedString("lbl_sin_resultados", comment: "lbl_sin_resultados"), preferredStyle: UIAlertControllerStyle.alert)
                             alert.addAction(UIAlertAction(title: NSLocalizedString("lbl_aceptar", comment: "lbl_aceptar"), style: UIAlertActionStyle.default, handler: nil))
                             self.present(alert, animated: true, completion: nil)
-                            
                         }
-                        
                         
                     }
                     catch
