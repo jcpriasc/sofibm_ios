@@ -16,6 +16,8 @@ class FiltroBitacoraViewController: UIViewController, UIPickerViewDelegate, UIPi
     @IBOutlet var pickerTipoRegistro: UITextField!
     @IBOutlet var pickerTipoServicio: UITextField!
     
+    static var jsonBitacoras: NSArray?
+    
     var tipoServicio = ["Medicamentos", "Prestador por fuera de la red", "Servicio de Alojamiento", "Servicio de Ambulancia Aérea", "Servicio de Ambulancia Terrestre"]
     var tipoRegistro = ["Devolución", "Solicitud de Atención", "Solicitud No Asistencial", "Giro", "Nota Crédito"]
     var ciudades = ["CALI", "BOGOTA", "CARTAGENA", "MEDELLIN", "PEREIRA"]
@@ -31,6 +33,78 @@ class FiltroBitacoraViewController: UIViewController, UIPickerViewDelegate, UIPi
 
     }
     
+    @IBAction func action_consultar_bitacora(_ sender: AnyObject) {
+        
+        var tipoRegistro: String = "0"
+        var tipoServicio: String = "0"
+        var ciudad: String = "0"
+        var nombrePaciente: String = "0"
+        
+        if((pickerCiudad.text) != nil && (pickerCiudad.text) != ""){
+            ciudad = pickerCiudad.text!
+        }
+        
+        if((pickerTipoRegistro.text) != nil && (pickerTipoRegistro.text) != ""){
+            tipoRegistro = pickerTipoRegistro.text!
+        }
+        
+        if((pickerTipoServicio.text) != nil && (pickerTipoServicio.text) != ""){
+            tipoServicio=pickerTipoServicio.text!
+        }
+        
+        if((txtNombrePaciente.text) != nil && (txtNombrePaciente.text) != ""){
+            nombrePaciente = txtNombrePaciente.text!
+        }
+        
+        var listParams: String = "/SAC/ABCD1234/0"+ConsultaSolicitudesAtencionController.solicitudAtencionSeleccionada.consSolicitud;
+        listParams+="/"+nombrePaciente;
+        listParams+="/"+ciudad;
+        listParams+="/"+tipoRegistro;
+        listParams+="/"+tipoServicio;
+        listParams+="/dnsepr07";
+        listParams+="/0";
+        listParams+="/0";
+        listParams+="/NA";
+        
+        let url = URL(string: PropertiesProject.URL+PropertiesProject.complement_Bitacoras+listParams)
+        print(PropertiesProject.URL+PropertiesProject.complement_Bitacoras+listParams)
+        let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
+            if error != nil
+            {
+                print ("ERROR")
+            }
+            else
+            {
+                if let content = data
+                {
+                    do
+                    {
+                        //Array
+                        FiltroBitacoraViewController.jsonBitacoras = try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSArray
+                        
+                        if ((FiltroBitacoraViewController.jsonBitacoras?.count)!>0){
+                            let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "bitacorasController")
+                            self.show(vc as! UIViewController, sender: vc)
+                        }else{
+                            //print(NSLocalizedString("lbl_sin_resultados", comment: "lbl_sin_resultados"));
+                            let alert = UIAlertController(title: NSLocalizedString("lbl_alerta", comment: "lbl_alerta"), message: NSLocalizedString("lbl_sin_resultados", comment: "lbl_sin_resultados"), preferredStyle: UIAlertControllerStyle.alert)
+                            alert.addAction(UIAlertAction(title: NSLocalizedString("lbl_aceptar", comment: "lbl_aceptar"), style: UIAlertActionStyle.default, handler: nil))
+                            self.present(alert, animated: true, completion: nil)
+                            
+                        }
+                        
+                    }
+                    catch
+                    {
+                        
+                    }
+                }
+            }
+        }
+        task.resume()
+
+        
+    }
     
     
     override func viewDidLoad() {
