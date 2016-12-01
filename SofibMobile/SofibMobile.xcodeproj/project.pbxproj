@@ -572,7 +572,7 @@
 				TargetAttributes = {
 					A4E7D1A11DC93F1E00C4E977 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 9U6WSH9MS8;
+						DevelopmentTeam = 63959RX9BZ;
 						ProvisioningStyle = Automatic;
 					};
 					A4E7D1B51DC93F1E00C4E977 = {
@@ -1046,10 +1046,11 @@
 			baseConfigurationReference = 5A60DC2194A36FA88E08C869 /* Pods-SofibMobile.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 9U6WSH9MS8;
+				DEVELOPMENT_TEAM = 63959RX9BZ;
 				INFOPLIST_FILE = SofibMobile/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.vortexbird.SofibMobile;
+				PRODUCT_BUNDLE_IDENTIFIER = co.com.coomeva.appsofibmobile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -1060,10 +1061,11 @@
 			baseConfigurationReference = 252E058316473D19A91D0566 /* Pods-SofibMobile.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 9U6WSH9MS8;
+				DEVELOPMENT_TEAM = 63959RX9BZ;
 				INFOPLIST_FILE = SofibMobile/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.vortexbird.SofibMobile;
+				PRODUCT_BUNDLE_IDENTIFIER = co.com.coomeva.appsofibmobile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
