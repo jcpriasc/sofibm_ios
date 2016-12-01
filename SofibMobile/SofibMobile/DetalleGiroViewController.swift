@@ -40,6 +40,9 @@ class DetalleGiroViewController: UIViewController {
     @IBOutlet var txtAprobadoGiro: UILabel!
     @IBOutlet var txtJustificacionAnulacion: UILabel!
     
+    static var jsonDetalleGiro: NSDictionary?
+    let params: String = "/SAC/ABCD1234/"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -81,7 +84,58 @@ class DetalleGiroViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func action_detalle(_ sender: AnyObject) {
+        obtenerDetalle()
+    }
 
+    func obtenerDetalle(){
+        
+        let codigo = Int(GiroViewController.giroSeleccionado.consecutivo)
+        let codigoTexto = String(codigo)
+        let url = URL(string: PropertiesProject.URL+PropertiesProject.complement_giro_detalle+params+codigoTexto)
+        
+        print(url)
+        //let url = URL(string: "http://pruebas-sectorsalud.coomeva.com.co/saludmp-ws/jax-rs/saludmp-sofibmobile/giro/detalle/SAC/ABCD1234/475")
+        
+        let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
+            if error != nil
+            {
+                print ("ERROR")
+            }
+            else
+            {
+                if let content = data
+                {
+                    do
+                    {
+                        //Array
+                        DetalleGiroViewController.jsonDetalleGiro = try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSDictionary
+                        
+                        if ((DetalleGiroViewController.jsonDetalleGiro) != nil && (DetalleGiroViewController.jsonDetalleGiro?.count)!>0){
+                            let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "tabGiro")
+                            self.show(vc as! UIViewController, sender: vc)
+                        }else{
+                            //print(NSLocalizedString("lbl_sin_resultados", comment: "lbl_sin_resultados"));
+                            let alert = UIAlertController(title: NSLocalizedString("lbl_alerta", comment: "lbl_alerta"), message: NSLocalizedString("lbl_sin_resultados", comment: "lbl_sin_resultados"), preferredStyle: UIAlertControllerStyle.alert)
+                            alert.addAction(UIAlertAction(title: NSLocalizedString("lbl_aceptar", comment: "lbl_aceptar"), style: UIAlertActionStyle.default, handler: nil))
+                            self.present(alert, animated: true, completion: nil)
+                            
+                        }
+                        
+                    }
+                    catch
+                    {
+                        let alert = UIAlertController(title: NSLocalizedString("lbl_alerta", comment: "lbl_alerta"), message: NSLocalizedString("lbl_sin_resultados", comment: "lbl_sin_resultados"), preferredStyle: UIAlertControllerStyle.alert)
+                        alert.addAction(UIAlertAction(title: NSLocalizedString("lbl_aceptar", comment: "lbl_aceptar"), style: UIAlertActionStyle.default, handler: nil))
+                        self.present(alert, animated: true, completion: nil)
+                    }
+                }
+            }
+        }
+        task.resume()
+        
+    }
+    
     /*
     // MARK: - Navigation
 

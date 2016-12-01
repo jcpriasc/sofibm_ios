@@ -17,7 +17,7 @@ class UtilizacionesViewController:  UIViewController, UITableViewDataSource, UIT
     
     static var jsonDetalleUtilizaciones: NSDictionary?
 
-    
+    let params: String = "/SAC/ABCD1234/"+ConsultaSolicitudesAtencionController.solicitudAtencionSeleccionada.consSolicitud
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -76,9 +76,20 @@ class UtilizacionesViewController:  UIViewController, UITableViewDataSource, UIT
     
     func obtenerDetalle(){
         
-        let url = URL(string: "http://pruebas-sectorsalud.coomeva.com.co/saludmp-ws/jax-rs/saludmp-sofibmobile/utilizaciones/detalle/SAC/ABCD1234/852/44/01-04-2011/30-04-2011")
+        let codigo = Int(UtilizacionesViewController.utilizacionesSeleccionado.consConvenio)
+        let codigoTexto = String(codigo)
         
-        let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
+        let fechaInicio = UtilizacionesViewController.utilizacionesSeleccionado.desde
+        let fechaInicioR = fechaInicio.replacingOccurrences(of: "/", with: "-")
+        
+        let fechaFin = UtilizacionesViewController.utilizacionesSeleccionado.hasta
+        let fechaFinR = fechaFin.replacingOccurrences(of: "/", with: "-")
+        
+        let url = URL(string: PropertiesProject.URL+PropertiesProject.complement_utilizaciones_detalle+params+"/"+codigoTexto+"/"+fechaInicioR+"/"+fechaFinR)
+        
+        //let url = URL(string: "http://pruebas-sectorsalud.coomeva.com.co/saludmp-ws/jax-rs/saludmp-sofibmobile/utilizaciones/detalle/SAC/ABCD1234/852/44/01-04-2011/30-04-2011")
+       
+          let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
             if error != nil
             {
                 print ("ERROR")
@@ -106,7 +117,10 @@ class UtilizacionesViewController:  UIViewController, UITableViewDataSource, UIT
                     }
                     catch
                     {
-                        
+                        let alert = UIAlertController(title: NSLocalizedString("lbl_alerta", comment: "lbl_alerta"), message: NSLocalizedString("lbl_sin_resultados", comment: "lbl_sin_resultados"), preferredStyle: UIAlertControllerStyle.alert)
+                        alert.addAction(UIAlertAction(title: NSLocalizedString("lbl_aceptar", comment: "lbl_aceptar"), style: UIAlertActionStyle.default, handler: nil))
+                        self.present(alert, animated: true, completion: nil)
+
                     }
                 }
             }

@@ -70,6 +70,8 @@ class FacturaViewController:  UIViewController, UITableViewDataSource, UITableVi
             FacturaViewController.facturaSeleccionada.valorTotalPagar = (solicitud["valorTotalPagar"] as? String ?? "");
             FacturaViewController.facturaSeleccionada.prestadorProveedor = (solicitud["proveedor"] as? String ?? "");
             FacturaViewController.facturaSeleccionada.tipoServicio = (solicitud["tipoSolicitud"] as? String ?? "");
+            FacturaViewController.facturaSeleccionada.consFactura = (solicitud["consFactura"] as! Double?)!;
+            
     
             let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "detalleFactura")
             self.show(vc as! UIViewController, sender: vc)

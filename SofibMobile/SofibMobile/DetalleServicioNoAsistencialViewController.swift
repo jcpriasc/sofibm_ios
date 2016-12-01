@@ -22,6 +22,7 @@ class DetalleServicioNoAsistencialViewController: UIViewController {
     @IBOutlet var lblJustificacionCancelado: UILabel!
     
     static var jsonDetalleServicioNoAsistencial: NSDictionary?
+    let params: String = "/SAC/ABCD1234/"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,7 +56,12 @@ class DetalleServicioNoAsistencialViewController: UIViewController {
     
     func obtenerDetalle(){
         
-        let url = URL(string: "http://pruebas-sectorsalud.coomeva.com.co/saludmp-ws/jax-rs/saludmp-sofibmobile/serviciosNoAsistenciales/detalle/SAC/ABCD1234/715")
+        let codigo = Int(ServicioNoAsistencialViewController.servicioNoAsistencial.consServicio)
+        let codigoTexto = String(codigo)
+        let url = URL(string: PropertiesProject.URL+PropertiesProject.complement_serviciosNoAsistenciales_detalle+params+codigoTexto)
+        
+        print(url)
+       // let url = URL(string: "http://pruebas-sectorsalud.coomeva.com.co/saludmp-ws/jax-rs/saludmp-sofibmobile/serviciosNoAsistenciales/detalle/SAC/ABCD1234/715")
         
         let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
             if error != nil
@@ -85,7 +91,9 @@ class DetalleServicioNoAsistencialViewController: UIViewController {
                     }
                     catch
                     {
-                        
+                        let alert = UIAlertController(title: NSLocalizedString("lbl_alerta", comment: "lbl_alerta"), message: NSLocalizedString("lbl_sin_resultados", comment: "lbl_sin_resultados"), preferredStyle: UIAlertControllerStyle.alert)
+                        alert.addAction(UIAlertAction(title: NSLocalizedString("lbl_aceptar", comment: "lbl_aceptar"), style: UIAlertActionStyle.default, handler: nil))
+                        self.present(alert, animated: true, completion: nil)
                     }
                 }
             }
