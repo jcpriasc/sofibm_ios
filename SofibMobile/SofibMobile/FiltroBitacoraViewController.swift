@@ -18,9 +18,10 @@ class FiltroBitacoraViewController: UIViewController, UIPickerViewDelegate, UIPi
     
     static var jsonBitacoras: NSArray?
     
-    var tipoServicio = ["Medicamentos", "Prestador por fuera de la red", "Servicio de Alojamiento", "Servicio de Ambulancia Aérea", "Servicio de Ambulancia Terrestre"]
+    /*var tipoServicio = ["Medicamentos", "Prestador por fuera de la red", "Servicio de Alojamiento", "Servicio de Ambulancia Aérea", "Servicio de Ambulancia Terrestre"]
     var tipoRegistro = ["Devolución", "Solicitud de Atención", "Solicitud No Asistencial", "Giro", "Nota Crédito"]
     var ciudades = ["CALI", "BOGOTA", "CARTAGENA", "MEDELLIN", "PEREIRA"]
+    */
     
     
     override func viewWillAppear(_ animated: Bool) {
@@ -196,15 +197,15 @@ class FiltroBitacoraViewController: UIViewController, UIPickerViewDelegate, UIPi
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         
         if pickerView.tag == 1 {
-            return ciudades.count
+            return CargarPickers.ciudadJson!.count
         }
         
         if pickerView.tag == 2 {
-            return tipoRegistro.count
+            return CargarPickers.tipoRegistrosJson!.count
         }
         
         if pickerView.tag == 3 {
-            return tipoServicio.count
+            return CargarPickers.tipoServiciosJson!.count
         }
         
         return 0
@@ -213,15 +214,27 @@ class FiltroBitacoraViewController: UIViewController, UIPickerViewDelegate, UIPi
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         
         if pickerView.tag == 1 {
-            return ciudades[row]
+            var ciudadIniSeleccionado = "";
+            if let data = CargarPickers.ciudadJson![row] as? Dictionary<String, Any>{
+                ciudadIniSeleccionado = (data["ciudad"] as! String?)!;
+            }
+            return ciudadIniSeleccionado
         }
         
         if pickerView.tag == 2 {
-            return tipoRegistro[row]
+            var tipoRegistroSeleccionado = "";
+            if let data = CargarPickers.tipoRegistrosJson![row] as? Dictionary<String, Any>{
+                tipoRegistroSeleccionado = (data["descripcion"] as! String?)!;
+            }
+            return tipoRegistroSeleccionado
         }
         
         if pickerView.tag == 3 {
-            return tipoServicio[row]
+            var tipoServicioSeleccionado = "";
+            if let data = CargarPickers.tipoServiciosJson![row] as? Dictionary<String, Any>{
+                tipoServicioSeleccionado = (data["descripcion"] as! String?)!;
+            }
+            return tipoServicioSeleccionado
         }
         
         return nil
@@ -230,15 +243,21 @@ class FiltroBitacoraViewController: UIViewController, UIPickerViewDelegate, UIPi
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         
         if pickerView.tag == 1 {
-            pickerCiudad.text = ciudades[row]
+            if let data = CargarPickers.ciudadJson![row] as? Dictionary<String, Any>{
+                pickerCiudad.text = (data["ciudad"] as! String?)!;
+            }
         }
         
         if pickerView.tag == 2 {
-            pickerTipoRegistro.text = tipoRegistro[row]
+            if let data = CargarPickers.tipoRegistrosJson![row] as? Dictionary<String, Any>{
+                pickerTipoRegistro.text = (data["descripcion"] as! String?)!;
+            }
         }
         
         if pickerView.tag == 3 {
-            pickerTipoServicio.text = tipoServicio[row]
+            if let data = CargarPickers.tipoServiciosJson![row] as? Dictionary<String, Any>{
+                pickerTipoServicio.text = (data["descripcion"] as! String?)!;
+            }
         }
         
     }
