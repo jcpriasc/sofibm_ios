@@ -22,4 +22,5 @@ class Factura{
     var valorTotalPagar: String = ""
     var prestadorProveedor: String = ""
     var tipoServicio: String = ""
+    var consFactura: Double = 0
 }

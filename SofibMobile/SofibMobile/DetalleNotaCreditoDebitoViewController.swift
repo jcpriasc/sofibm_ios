@@ -29,6 +29,9 @@ class DetalleNotaCreditoDebitoViewController: UIViewController {
     @IBOutlet var txtTipoNota: UILabel!
     @IBOutlet var txtValorTotalNotaCredito: UILabel!
     
+    static var jsonDetalleNotaCreditoDebito: NSDictionary?
+    let params: String = "/SAC/ABCD1234/"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -62,14 +65,54 @@ class DetalleNotaCreditoDebitoViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func action_detalle(_ sender: AnyObject) {
+        obtenerDetalle()
     }
-    */
+    
+    
+    func obtenerDetalle(){
+        
+        let codigo = Int(NotaCreditoDebitoViewController.notaCreditoDebitoSeleccionado.consNota)
+        let codigoTexto = String(codigo)
+        let url = URL(string: PropertiesProject.URL+PropertiesProject.complement_nota_detalle+params+codigoTexto)
+        
+        //let url = URL(string: "http://pruebas-sectorsalud.coomeva.com.co/saludmp-ws/jax-rs/saludmp-sofibmobile/nota/detalle/SAC/ABCD1234/153")
+        
+        let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
+            if error != nil
+            {
+                print ("ERROR")
+            }
+            else
+            {
+                if let content = data
+                {
+                    do
+                    {
+                        //Array
+                        DetalleNotaCreditoDebitoViewController.jsonDetalleNotaCreditoDebito = try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSDictionary
+                        
+                        if ((DetalleNotaCreditoDebitoViewController.jsonDetalleNotaCreditoDebito) != nil && (DetalleNotaCreditoDebitoViewController.jsonDetalleNotaCreditoDebito?.count)!>0){
+                            let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "tabNotaCreditoDebito")
+                            self.show(vc as! UIViewController, sender: vc)
+                        }else{
+                            //print(NSLocalizedString("lbl_sin_resultados", comment: "lbl_sin_resultados"));
+                            let alert = UIAlertController(title: NSLocalizedString("lbl_alerta", comment: "lbl_alerta"), message: NSLocalizedString("lbl_sin_resultados", comment: "lbl_sin_resultados"), preferredStyle: UIAlertControllerStyle.alert)
+                            alert.addAction(UIAlertAction(title: NSLocalizedString("lbl_aceptar", comment: "lbl_aceptar"), style: UIAlertActionStyle.default, handler: nil))
+                            self.present(alert, animated: true, completion: nil)
+                            
+                        }
+                        
+                    }
+                    catch
+                    {
+                        
+                    }
+                }
+            }
+        }
+        task.resume()
+        
+    }
 
 }

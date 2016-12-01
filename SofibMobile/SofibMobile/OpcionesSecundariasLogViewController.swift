@@ -18,6 +18,7 @@ class OpcionesSecundariasLogViewController: UIViewController , UITableViewDataSo
     static var jsonUtilizaciones: NSArray?
     static var jsonEncuesta: NSArray?
     static var jsonSolicitudAprobacion: NSArray?
+    let params: String = "/SAC/ABCD1234/"+ConsultaSolicitudesAtencionController.solicitudAtencionSeleccionada.consSolicitud
     
     let opciones = [NSLocalizedString("lbl_servicio_no_asistencial", comment: "lbl_servicio_no_asistencial"),
                     NSLocalizedString("lbl_titulo_giro", comment: "lbl_titulo_giro"),
@@ -119,7 +120,8 @@ class OpcionesSecundariasLogViewController: UIViewController , UITableViewDataSo
     
     func obtenerServiciosNoAsistenciales(){
       
-        let url = URL(string: "http://pruebas-sectorsalud.coomeva.com.co/saludmp-ws/jax-rs/saludmp-sofibmobile/serviciosNoAsistenciales/SAC/ABCD1234/852")
+        let url = URL(string: PropertiesProject.URL+PropertiesProject.complement_serviciosNoAsistenciales+params)
+        //let url = URL(string: "http://pruebas-sectorsalud.coomeva.com.co/saludmp-ws/jax-rs/saludmp-sofibmobile/serviciosNoAsistenciales/SAC/ABCD1234/852")
         
         let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
             if error != nil
@@ -132,16 +134,24 @@ class OpcionesSecundariasLogViewController: UIViewController , UITableViewDataSo
                 {
                     do
                     {
-                        //Array
-                        OpcionesSecundariasLogViewController.jsonServicioNoAsistencial = try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSArray
-                        let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "servicioNoAsistencialController")
-                        self.show(vc as! UIViewController, sender: vc)
                         
+                        OpcionesSecundariasLogViewController.jsonServicioNoAsistencial = try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSArray
+                        if ((OpcionesSecundariasLogViewController.jsonServicioNoAsistencial?.count)!>0){
+                            let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "servicioNoAsistencialController")
+                            self.show(vc as! UIViewController, sender: vc)
+                        }else{
+                            let alert = UIAlertController(title: NSLocalizedString("lbl_alerta", comment: "lbl_alerta"), message: NSLocalizedString("lbl_sin_resultados", comment: "lbl_sin_resultados"), preferredStyle: UIAlertControllerStyle.alert)
+                            alert.addAction(UIAlertAction(title: NSLocalizedString("lbl_aceptar", comment: "lbl_aceptar"), style: UIAlertActionStyle.default, handler: nil))
+                            self.present(alert, animated: true, completion: nil)
+
+                        }
                         
                     }
                     catch
                     {
-                        
+                        let alert = UIAlertController(title: NSLocalizedString("lbl_alerta", comment: "lbl_alerta"), message: NSLocalizedString("lbl_sin_resultados", comment: "lbl_sin_resultados"), preferredStyle: UIAlertControllerStyle.alert)
+                        alert.addAction(UIAlertAction(title: NSLocalizedString("lbl_aceptar", comment: "lbl_aceptar"), style: UIAlertActionStyle.default, handler: nil))
+                        self.present(alert, animated: true, completion: nil)
                     }
                 }
             }
@@ -152,7 +162,8 @@ class OpcionesSecundariasLogViewController: UIViewController , UITableViewDataSo
     
     func obtenerGiros(){
         
-        let url = URL(string: "http://pruebas-sectorsalud.coomeva.com.co/saludmp-ws/jax-rs/saludmp-sofibmobile/giro/SAC/ABCD1234/852")
+        let url = URL(string: PropertiesProject.URL+PropertiesProject.complement_giro+params)
+        //let url = URL(string: "http://pruebas-sectorsalud.coomeva.com.co/saludmp-ws/jax-rs/saludmp-sofibmobile/giro/SAC/ABCD1234/852")
         
         let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
             if error != nil
@@ -165,16 +176,26 @@ class OpcionesSecundariasLogViewController: UIViewController , UITableViewDataSo
                 {
                     do
                     {
-                        //Array
+                    
                         OpcionesSecundariasLogViewController.jsonGiros = try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSArray
-                        let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "girosController")
-                        self.show(vc as! UIViewController, sender: vc)
+                        if ((OpcionesSecundariasLogViewController.jsonGiros?.count)!>0){
+                            let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "girosController")
+                            self.show(vc as! UIViewController, sender: vc)
+                        }else{
+                            let alert = UIAlertController(title: NSLocalizedString("lbl_alerta", comment: "lbl_alerta"), message: NSLocalizedString("lbl_sin_resultados", comment: "lbl_sin_resultados"), preferredStyle: UIAlertControllerStyle.alert)
+                            alert.addAction(UIAlertAction(title: NSLocalizedString("lbl_aceptar", comment: "lbl_aceptar"), style: UIAlertActionStyle.default, handler: nil))
+                            self.present(alert, animated: true, completion: nil)
+                            
+                        }
+                        
                         
                         
                     }
                     catch
                     {
-                        
+                        let alert = UIAlertController(title: NSLocalizedString("lbl_alerta", comment: "lbl_alerta"), message: NSLocalizedString("lbl_sin_resultados", comment: "lbl_sin_resultados"), preferredStyle: UIAlertControllerStyle.alert)
+                        alert.addAction(UIAlertAction(title: NSLocalizedString("lbl_aceptar", comment: "lbl_aceptar"), style: UIAlertActionStyle.default, handler: nil))
+                        self.present(alert, animated: true, completion: nil)
                     }
                 }
             }
@@ -185,7 +206,8 @@ class OpcionesSecundariasLogViewController: UIViewController , UITableViewDataSo
 
     func obtenerNotasCreditoGiros(){
         
-        let url = URL(string: "http://pruebas-sectorsalud.coomeva.com.co/saludmp-ws/jax-rs/saludmp-sofibmobile/giro/notaCredito/SAC/ABCD1234/789")
+        let url = URL(string: PropertiesProject.URL+PropertiesProject.complement_giro_notaCredito+params)
+        //let url = URL(string: "http://pruebas-sectorsalud.coomeva.com.co/saludmp-ws/jax-rs/saludmp-sofibmobile/giro/notaCredito/SAC/ABCD1234/789")
         
         let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
             if error != nil
@@ -198,16 +220,23 @@ class OpcionesSecundariasLogViewController: UIViewController , UITableViewDataSo
                 {
                     do
                     {
-                        //Array
                         OpcionesSecundariasLogViewController.jsonNotasCreditosGiros = try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSArray
-                        let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "notasCreditoGirosController")
-                        self.show(vc as! UIViewController, sender: vc)
-                        
+                        if ((OpcionesSecundariasLogViewController.jsonNotasCreditosGiros != nil) && (OpcionesSecundariasLogViewController.jsonNotasCreditosGiros?.count)!>0){
+                            let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "notasCreditoGirosController")
+                            self.show(vc as! UIViewController, sender: vc)
+                        }else{
+                            let alert = UIAlertController(title: NSLocalizedString("lbl_alerta", comment: "lbl_alerta"), message: NSLocalizedString("lbl_sin_resultados", comment: "lbl_sin_resultados"), preferredStyle: UIAlertControllerStyle.alert)
+                            alert.addAction(UIAlertAction(title: NSLocalizedString("lbl_aceptar", comment: "lbl_aceptar"), style: UIAlertActionStyle.default, handler: nil))
+                            self.present(alert, animated: true, completion: nil)
+                            
+                        }
                         
                     }
                     catch
                     {
-                        
+                        let alert = UIAlertController(title: NSLocalizedString("lbl_alerta", comment: "lbl_alerta"), message: NSLocalizedString("lbl_sin_resultados", comment: "lbl_sin_resultados"), preferredStyle: UIAlertControllerStyle.alert)
+                        alert.addAction(UIAlertAction(title: NSLocalizedString("lbl_aceptar", comment: "lbl_aceptar"), style: UIAlertActionStyle.default, handler: nil))
+                        self.present(alert, animated: true, completion: nil)
                     }
                 }
             }
@@ -218,7 +247,8 @@ class OpcionesSecundariasLogViewController: UIViewController , UITableViewDataSo
     
     func obtenerFacturas(){
         
-        let url = URL(string: "http://pruebas-sectorsalud.coomeva.com.co/saludmp-ws/jax-rs/saludmp-sofibmobile/factura/SAC/ABCD1234/852")
+        let url = URL(string: PropertiesProject.URL+PropertiesProject.complement_factura+params)
+        //let url = URL(string: "http://pruebas-sectorsalud.coomeva.com.co/saludmp-ws/jax-rs/saludmp-sofibmobile/factura/SAC/ABCD1234/852")
         
         let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
             if error != nil
@@ -231,16 +261,23 @@ class OpcionesSecundariasLogViewController: UIViewController , UITableViewDataSo
                 {
                     do
                     {
-                        //Array
                         OpcionesSecundariasLogViewController.jsonFacturas = try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSArray
-                        let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "facturasController")
-                        self.show(vc as! UIViewController, sender: vc)
-                        
+                        if ((OpcionesSecundariasLogViewController.jsonFacturas?.count)!>0){
+                            let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "facturasController")
+                            self.show(vc as! UIViewController, sender: vc)
+                        }else{
+                            let alert = UIAlertController(title: NSLocalizedString("lbl_alerta", comment: "lbl_alerta"), message: NSLocalizedString("lbl_sin_resultados", comment: "lbl_sin_resultados"), preferredStyle: UIAlertControllerStyle.alert)
+                            alert.addAction(UIAlertAction(title: NSLocalizedString("lbl_aceptar", comment: "lbl_aceptar"), style: UIAlertActionStyle.default, handler: nil))
+                            self.present(alert, animated: true, completion: nil)
+                            
+                        }
                         
                     }
                     catch
                     {
-                        
+                        let alert = UIAlertController(title: NSLocalizedString("lbl_alerta", comment: "lbl_alerta"), message: NSLocalizedString("lbl_sin_resultados", comment: "lbl_sin_resultados"), preferredStyle: UIAlertControllerStyle.alert)
+                        alert.addAction(UIAlertAction(title: NSLocalizedString("lbl_aceptar", comment: "lbl_aceptar"), style: UIAlertActionStyle.default, handler: nil))
+                        self.present(alert, animated: true, completion: nil)
                     }
                 }
             }
@@ -251,7 +288,8 @@ class OpcionesSecundariasLogViewController: UIViewController , UITableViewDataSo
     
     func obtenerNotaCreditoDebito(){
         
-        let url = URL(string: "http://pruebas-sectorsalud.coomeva.com.co/saludmp-ws/jax-rs/saludmp-sofibmobile/nota/SAC/ABCD1234/848")
+        let url = URL(string: PropertiesProject.URL+PropertiesProject.complement_nota+params)
+        //let url = URL(string: "http://pruebas-sectorsalud.coomeva.com.co/saludmp-ws/jax-rs/saludmp-sofibmobile/nota/SAC/ABCD1234/848")
         
         let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
             if error != nil
@@ -264,16 +302,24 @@ class OpcionesSecundariasLogViewController: UIViewController , UITableViewDataSo
                 {
                     do
                     {
-                        //Array
                         OpcionesSecundariasLogViewController.jsonNotasCreditoDebito = try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSArray
-                        let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "notaCreditoDebitoController")
-                        self.show(vc as! UIViewController, sender: vc)
-                        
+                        if ((OpcionesSecundariasLogViewController.jsonNotasCreditoDebito?.count)!>0){
+                            let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "notaCreditoDebitoController")
+                            self.show(vc as! UIViewController, sender: vc)
+                        }else{
+                            let alert = UIAlertController(title: NSLocalizedString("lbl_alerta", comment: "lbl_alerta"), message: NSLocalizedString("lbl_sin_resultados", comment: "lbl_sin_resultados"), preferredStyle: UIAlertControllerStyle.alert)
+                            alert.addAction(UIAlertAction(title: NSLocalizedString("lbl_aceptar", comment: "lbl_aceptar"), style: UIAlertActionStyle.default, handler: nil))
+                            self.present(alert, animated: true, completion: nil)
+                            
+                        }
+
                         
                     }
                     catch
                     {
-                        
+                        let alert = UIAlertController(title: NSLocalizedString("lbl_alerta", comment: "lbl_alerta"), message: NSLocalizedString("lbl_sin_resultados", comment: "lbl_sin_resultados"), preferredStyle: UIAlertControllerStyle.alert)
+                        alert.addAction(UIAlertAction(title: NSLocalizedString("lbl_aceptar", comment: "lbl_aceptar"), style: UIAlertActionStyle.default, handler: nil))
+                        self.present(alert, animated: true, completion: nil)
                     }
                 }
             }
@@ -284,7 +330,8 @@ class OpcionesSecundariasLogViewController: UIViewController , UITableViewDataSo
     
     func obtenerUtilizaciones(){
         
-        let url = URL(string: "http://pruebas-sectorsalud.coomeva.com.co/saludmp-ws/jax-rs/saludmp-sofibmobile/utilizaciones/SAC/ABCD1234/852")
+        let url = URL(string: PropertiesProject.URL+PropertiesProject.complement_utilizaciones+params)
+        //let url = URL(string: "http://pruebas-sectorsalud.coomeva.com.co/saludmp-ws/jax-rs/saludmp-sofibmobile/utilizaciones/SAC/ABCD1234/852")
         
         let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
             if error != nil
@@ -297,16 +344,23 @@ class OpcionesSecundariasLogViewController: UIViewController , UITableViewDataSo
                 {
                     do
                     {
-                        //Array
                         OpcionesSecundariasLogViewController.jsonUtilizaciones = try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSArray
-                        let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "utilizacionesController")
-                        self.show(vc as! UIViewController, sender: vc)
-                        
+                        if ((OpcionesSecundariasLogViewController.jsonUtilizaciones?.count)!>0){
+                            let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "utilizacionesController")
+                            self.show(vc as! UIViewController, sender: vc)
+                        }else{
+                            let alert = UIAlertController(title: NSLocalizedString("lbl_alerta", comment: "lbl_alerta"), message: NSLocalizedString("lbl_sin_resultados", comment: "lbl_sin_resultados"), preferredStyle: UIAlertControllerStyle.alert)
+                            alert.addAction(UIAlertAction(title: NSLocalizedString("lbl_aceptar", comment: "lbl_aceptar"), style: UIAlertActionStyle.default, handler: nil))
+                            self.present(alert, animated: true, completion: nil)
+                            
+                        }
                         
                     }
                     catch
                     {
-                        
+                        let alert = UIAlertController(title: NSLocalizedString("lbl_alerta", comment: "lbl_alerta"), message: NSLocalizedString("lbl_sin_resultados", comment: "lbl_sin_resultados"), preferredStyle: UIAlertControllerStyle.alert)
+                        alert.addAction(UIAlertAction(title: NSLocalizedString("lbl_aceptar", comment: "lbl_aceptar"), style: UIAlertActionStyle.default, handler: nil))
+                        self.present(alert, animated: true, completion: nil)
                     }
                 }
             }
@@ -317,7 +371,8 @@ class OpcionesSecundariasLogViewController: UIViewController , UITableViewDataSo
     
     func obtenerEncuesta(){
         
-        let url = URL(string: "http://pruebas-sectorsalud.coomeva.com.co/saludmp-ws/jax-rs/saludmp-sofibmobile/encuesta/SAC/ABCD1234/730")
+        let url = URL(string: PropertiesProject.URL+PropertiesProject.complement_encuesta+params)
+        //let url = URL(string: "http://pruebas-sectorsalud.coomeva.com.co/saludmp-ws/jax-rs/saludmp-sofibmobile/encuesta/SAC/ABCD1234/730")
         
         let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
             if error != nil
@@ -330,16 +385,23 @@ class OpcionesSecundariasLogViewController: UIViewController , UITableViewDataSo
                 {
                     do
                     {
-                        //Array
-                        OpcionesSecundariasLogViewController.jsonEncuesta = try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSArray
-                        let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "encuestaController")
-                        self.show(vc as! UIViewController, sender: vc)
-                        
+                         OpcionesSecundariasLogViewController.jsonEncuesta = try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSArray
+                        if (( OpcionesSecundariasLogViewController.jsonEncuesta?.count)!>0){
+                            let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "encuestaController")
+                            self.show(vc as! UIViewController, sender: vc)
+                        }else{
+                            let alert = UIAlertController(title: NSLocalizedString("lbl_alerta", comment: "lbl_alerta"), message: NSLocalizedString("lbl_sin_resultados", comment: "lbl_sin_resultados"), preferredStyle: UIAlertControllerStyle.alert)
+                            alert.addAction(UIAlertAction(title: NSLocalizedString("lbl_aceptar", comment: "lbl_aceptar"), style: UIAlertActionStyle.default, handler: nil))
+                            self.present(alert, animated: true, completion: nil)
+                            
+                        }
                         
                     }
                     catch
                     {
-                        
+                        let alert = UIAlertController(title: NSLocalizedString("lbl_alerta", comment: "lbl_alerta"), message: NSLocalizedString("lbl_sin_resultados", comment: "lbl_sin_resultados"), preferredStyle: UIAlertControllerStyle.alert)
+                        alert.addAction(UIAlertAction(title: NSLocalizedString("lbl_aceptar", comment: "lbl_aceptar"), style: UIAlertActionStyle.default, handler: nil))
+                        self.present(alert, animated: true, completion: nil)
                     }
                 }
             }
@@ -350,7 +412,8 @@ class OpcionesSecundariasLogViewController: UIViewController , UITableViewDataSo
     
     func obtenerSolicitudAprobacion(){
         
-        let url = URL(string: "http://pruebas-sectorsalud.coomeva.com.co/saludmp-ws/jax-rs/saludmp-sofibmobile/aprobacion/SAC/ABCD1234/0/0/0/0/l")
+        let url = URL(string: PropertiesProject.URL+PropertiesProject.complement_aprobacion+"/SAC/ABCD1234/0/0/0/"+ConsultaSolicitudesAtencionController.solicitudAtencionSeleccionada.consSolicitud+"/l")
+        //let url = URL(string: "http://pruebas-sectorsalud.coomeva.com.co/saludmp-ws/jax-rs/saludmp-sofibmobile/aprobacion/SAC/ABCD1234/0/0/0/0/l")
         
         let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
             if error != nil
@@ -363,16 +426,23 @@ class OpcionesSecundariasLogViewController: UIViewController , UITableViewDataSo
                 {
                     do
                     {
-                        //Array
                         OpcionesSecundariasLogViewController.jsonSolicitudAprobacion = try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSArray
-                        let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "solicitudesAprobacionController")
-                        self.show(vc as! UIViewController, sender: vc)
-                        
-                        
+                        if (( OpcionesSecundariasLogViewController.jsonSolicitudAprobacion?.count)!>0){
+                            let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "solicitudesAprobacionController")
+                            self.show(vc as! UIViewController, sender: vc)
+
+                        }else{
+                            let alert = UIAlertController(title: NSLocalizedString("lbl_alerta", comment: "lbl_alerta"), message: NSLocalizedString("lbl_sin_resultados", comment: "lbl_sin_resultados"), preferredStyle: UIAlertControllerStyle.alert)
+                            alert.addAction(UIAlertAction(title: NSLocalizedString("lbl_aceptar", comment: "lbl_aceptar"), style: UIAlertActionStyle.default, handler: nil))
+                            self.present(alert, animated: true, completion: nil)
+                            
+                        }
                     }
                     catch
                     {
-                        
+                        let alert = UIAlertController(title: NSLocalizedString("lbl_alerta", comment: "lbl_alerta"), message: NSLocalizedString("lbl_sin_resultados", comment: "lbl_sin_resultados"), preferredStyle: UIAlertControllerStyle.alert)
+                        alert.addAction(UIAlertAction(title: NSLocalizedString("lbl_aceptar", comment: "lbl_aceptar"), style: UIAlertActionStyle.default, handler: nil))
+                        self.present(alert, animated: true, completion: nil)
                     }
                 }
             }

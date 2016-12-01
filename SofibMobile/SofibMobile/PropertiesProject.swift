@@ -25,5 +25,18 @@ class PropertiesProject{
     static var complement_ProcedimientoAdicionales: String = "/ProcedimientoAdicionales"
     static var complement_aprobacion: String = "/aprobacion"
     
-
+    static var complement_serviciosNoAsistenciales: String = "/serviciosNoAsistenciales"
+    static var complement_giro: String = "/giro"
+    static var complement_giro_notaCredito: String = "giro/notaCredito"
+    static var complement_factura: String = "/factura"
+    static var complement_nota: String = "/nota"
+    static var complement_utilizaciones: String = "/utilizaciones"
+    static var complement_encuesta: String = "/encuesta"
+    static var complement_aprobacion_logistica: String = "/aprobacion"
+    
+    static var complement_serviciosNoAsistenciales_detalle: String = "/serviciosNoAsistenciales/detalle"
+    static var complement_giro_detalle: String = "/giro/detalle"
+    static var complement_factura_detalle: String = "/factura/detalle"
+    static var complement_nota_detalle: String = "/nota/detalle"
+    static var complement_utilizaciones_detalle: String = "/utilizaciones/detalle"
 }

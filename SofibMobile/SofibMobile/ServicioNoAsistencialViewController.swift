@@ -11,6 +11,7 @@ import Alamofire
 
 class ServicioNoAsistencialViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    
     let jsonServicioNoAsistencial: NSArray = OpcionesSecundariasLogViewController.jsonServicioNoAsistencial!;
     let servicioNoAsistencial = ["Solicitud 1", "Solicitud 2", "Solicitud 3", "Solicitud 4", "Solicitud 5", "Solicitud 6", "Solicitud 7", "Solicitud 9"]
     
