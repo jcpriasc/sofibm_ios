@@ -11,6 +11,7 @@ import Foundation
 class PropertiesProject{
     
     static var URL: String = "http://pruebas-sectorsalud.coomeva.com.co/saludmp-ws/jax-rs/saludmp-sofibmobile"
+    static var URL_PROFILE: String = "http://pruebas-sectorsalud.coomeva.com.co/saludmp-ws/jax-rs/saludmp-autOficinaVirtual"
     
     static var complement_Autorizaciones: String = "/Autorizaciones"
     static var complement_detalle_autorizaciones: String = "/Autorizaciones/Detalle"
@@ -24,6 +25,12 @@ class PropertiesProject{
     static var complement_FuncionariosExternos: String = "/FuncionariosExternos"
     static var complement_ProcedimientoAdicionales: String = "/ProcedimientoAdicionales"
     static var complement_aprobacion: String = "/aprobacion"
+    
+    static var complement_convenios: String = "/convenios"
+    static var complement_estados: String = "/estados"
+    static var complement_ciudades: String = "/ciudades"
+    static var complement_tipos_registros: String = "/tipoRegistros"
+    static var complement_tipos_servicios: String = "/tipoServicios"
     
 
 }

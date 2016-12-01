@@ -21,10 +21,10 @@ class FiltrosSolicitudAtencionController: UIViewController, UIPickerViewDelegate
     @IBOutlet var txtSolicitudAtencion: UITextField!
     @IBOutlet var txtNombre: UITextField!
     
-    var convenios = ["SVB-AG", "INSURANCE XYZ", "FATUM HEALTH", "EJEMPLO1", "FATUM SBV"]
+    /*var convenios = ["SVB-AG", "INSURANCE XYZ", "FATUM HEALTH", "EJEMPLO1", "FATUM SBV"]
     var estados = ["PENDIENTE", "ACEPTADA", "RECHAZADA", "FINALIZADO", "EN ESPERA"]
     var ciudadesIncial = ["CALI", "BOGOTA", "CARTAGENA", "MEDELLIN", "PEREIRA"]
-    var ciudadesActual = ["CALI", "BOGOTA", "CARTAGENA", "MEDELLIN", "PEREIRA"]
+    var ciudadesActual = ["CALI", "BOGOTA", "CARTAGENA", "MEDELLIN", "PEREIRA"]*/
     var traslados = ["SI", "NO"]
     static var solicitudesAtencionJson : NSArray?
     
@@ -156,19 +156,19 @@ class FiltrosSolicitudAtencionController: UIViewController, UIPickerViewDelegate
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         
         if pickerView.tag == 1 {
-            return convenios.count
+            return CargarPickers.conveniosJson!.count
         }
         
         if pickerView.tag == 2 {
-            return estados.count
+            return CargarPickers.estadosJson!.count
         }
         
         if pickerView.tag == 3 {
-            return ciudadesIncial.count
+            return CargarPickers.ciudadJson!.count
         }
         
         if pickerView.tag == 4 {
-            return ciudadesActual.count
+            return CargarPickers.ciudadJson!.count
         }
         
         if pickerView.tag ==  5{
@@ -181,19 +181,35 @@ class FiltrosSolicitudAtencionController: UIViewController, UIPickerViewDelegate
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         
         if pickerView.tag == 1 {
-            return convenios[row]
+            var convenioSeleccionado = "";
+            if let data = CargarPickers.conveniosJson![row] as? Dictionary<String, Any>{
+                convenioSeleccionado = (data["nombre"] as! String?)!;
+            }
+            return convenioSeleccionado
         }
         
         if pickerView.tag == 2 {
-            return estados[row]
+            var estadoSeleccionado = "";
+            if let data = CargarPickers.estadosJson![row] as? Dictionary<String, Any>{
+                estadoSeleccionado = (data["descripcion"] as! String?)!;
+            }
+            return estadoSeleccionado
         }
         
         if pickerView.tag == 3 {
-            return ciudadesIncial[row]
+            var ciudadIniSeleccionado = "";
+            if let data = CargarPickers.ciudadJson![row] as? Dictionary<String, Any>{
+                ciudadIniSeleccionado = (data["ciudad"] as! String?)!;
+            }
+            return ciudadIniSeleccionado
         }
         
         if pickerView.tag == 4 {
-            return ciudadesActual[row]
+            var ciudadFinSeleccionado = "";
+            if let data = CargarPickers.ciudadJson![row] as? Dictionary<String, Any>{
+                ciudadFinSeleccionado = (data["ciudad"] as! String?)!;
+            }
+            return ciudadFinSeleccionado
         }
         
         if pickerView.tag == 5 {
@@ -303,19 +319,28 @@ class FiltrosSolicitudAtencionController: UIViewController, UIPickerViewDelegate
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         
         if pickerView.tag == 1 {
-            pickeConvenio.text = convenios[row]
+            if let data = CargarPickers.conveniosJson![row] as? Dictionary<String, Any>{
+                pickeConvenio.text = data["nombre"] as! String?;
+            }
+            
         }
         
         if pickerView.tag == 2 {
-            pickerEstado.text = estados[row]
+            if let data = CargarPickers.estadosJson![row] as? Dictionary<String, Any>{
+                pickerEstado.text = data["descripcion"] as! String?;
+            }
         }
         
         if pickerView.tag == 3 {
-            pickerCiudadInicial.text = ciudadesIncial[row]
+            if let data = CargarPickers.ciudadJson![row] as? Dictionary<String, Any>{
+                pickerCiudadInicial.text = data["ciudad"] as! String?;
+            }
         }
         
         if pickerView.tag == 4 {
-            pickerCiudadFinal.text = ciudadesActual[row]
+            if let data = CargarPickers.ciudadJson![row] as? Dictionary<String, Any>{
+                pickerCiudadFinal.text = data["ciudad"] as! String?;
+            }
         }
         
         if pickerView.tag == 5 {
