@@ -23,6 +23,9 @@ class FiltroBitacoraViewController: UIViewController, UIPickerViewDelegate, UIPi
     var ciudades = ["CALI", "BOGOTA", "CARTAGENA", "MEDELLIN", "PEREIRA"]
     */
     
+    let ciudadPickerView = UIPickerView()
+    let tipoRegistroPickerView = UIPickerView()
+    let tipoServicioPickerView = UIPickerView()
     
     override func viewWillAppear(_ animated: Bool) {
         
@@ -42,22 +45,28 @@ class FiltroBitacoraViewController: UIViewController, UIPickerViewDelegate, UIPi
         var nombrePaciente: String = "0"
         
         if((pickerCiudad.text) != nil && (pickerCiudad.text) != ""){
-            ciudad = pickerCiudad.text!
+            if let data = CargarPickers.ciudadJson![ciudadPickerView.selectedRow(inComponent: 0)] as? Dictionary<String, Any>{
+                ciudad = (data["codigo"] as! String?)!;
+            }
         }
         
         if((pickerTipoRegistro.text) != nil && (pickerTipoRegistro.text) != ""){
-            tipoRegistro = pickerTipoRegistro.text!
+            if let data = CargarPickers.tipoRegistrosJson![tipoRegistroPickerView.selectedRow(inComponent: 0)] as? Dictionary<String, Any>{
+                tipoRegistro = (data["codigo"] as! String?)!;
+            }
         }
         
         if((pickerTipoServicio.text) != nil && (pickerTipoServicio.text) != ""){
-            tipoServicio=pickerTipoServicio.text!
+            if let data = CargarPickers.tipoServiciosJson![tipoServicioPickerView.selectedRow(inComponent: 0)] as? Dictionary<String, Any>{
+                tipoServicio = (data["codigo"] as! String?)!;
+            }
         }
         
         if((txtNombrePaciente.text) != nil && (txtNombrePaciente.text) != ""){
             nombrePaciente = txtNombrePaciente.text!
         }
         
-        var listParams: String = "/SAC/ABCD1234/0"+ConsultaSolicitudesAtencionController.solicitudAtencionSeleccionada.consSolicitud;
+        var listParams: String = "/SAC/ABCD1234/"+ConsultaSolicitudesAtencionController.solicitudAtencionSeleccionada.consSolicitud;
         listParams+="/"+nombrePaciente;
         listParams+="/"+ciudad;
         listParams+="/"+tipoRegistro;
@@ -112,17 +121,17 @@ class FiltroBitacoraViewController: UIViewController, UIPickerViewDelegate, UIPi
         super.viewDidLoad()
         
         //Se crea el picker para ciudad
-        let ciudadPickerView = UIPickerView()
+        
         ciudadPickerView.delegate = self
         ciudadPickerView.tag = 1
         pickerCiudad.inputView = ciudadPickerView
         //Se crea el picker para tipo registro
-        let tipoRegistroPickerView = UIPickerView()
+        
         tipoRegistroPickerView.delegate = self
         tipoRegistroPickerView.tag = 2
         pickerTipoRegistro.inputView = tipoRegistroPickerView
         //Se crea el picker para tipo servicio
-        let tipoServicioPickerView = UIPickerView()
+        
         tipoServicioPickerView.delegate = self
         tipoServicioPickerView.tag = 3
         pickerTipoServicio.inputView = tipoServicioPickerView

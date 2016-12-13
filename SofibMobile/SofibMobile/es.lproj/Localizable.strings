@@ -226,3 +226,5 @@
 "lbl_aceptar"="Aceptar";
 "lbl_si"="Si";
 "lbl_no"="No";
+"lbl_validacion_usuario"="El usuario y la contraseña son obligatorias";
+"lbl_usuario_incorrecto"="El usuario y la contraseña son incorrectas";

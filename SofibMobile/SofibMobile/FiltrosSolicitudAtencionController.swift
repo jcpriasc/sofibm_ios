@@ -22,13 +22,18 @@ class FiltrosSolicitudAtencionController: UIViewController, UIPickerViewDelegate
     @IBOutlet var txtNombre: UITextField!
     
     /*var convenios = ["SVB-AG", "INSURANCE XYZ", "FATUM HEALTH", "EJEMPLO1", "FATUM SBV"]
-    var estados = ["PENDIENTE", "ACEPTADA", "RECHAZADA", "FINALIZADO", "EN ESPERA"]
-    var ciudadesIncial = ["CALI", "BOGOTA", "CARTAGENA", "MEDELLIN", "PEREIRA"]
-    var ciudadesActual = ["CALI", "BOGOTA", "CARTAGENA", "MEDELLIN", "PEREIRA"]*/
+     var estados = ["PENDIENTE", "ACEPTADA", "RECHAZADA", "FINALIZADO", "EN ESPERA"]
+     var ciudadesIncial = ["CALI", "BOGOTA", "CARTAGENA", "MEDELLIN", "PEREIRA"]
+     var ciudadesActual = ["CALI", "BOGOTA", "CARTAGENA", "MEDELLIN", "PEREIRA"]*/
     var traslados = ["SI", "NO"]
     static var solicitudesAtencionJson : NSArray?
     
     let service =  "/solicitudes";
+    
+    let convenioPickerView = UIPickerView()
+    let eestadoPickerView = UIPickerView()
+    let ciudadInicialPickerView = UIPickerView()
+    let ciudadFinalPickerView = UIPickerView()
     
     override func viewWillAppear(_ animated: Bool) {
         
@@ -36,7 +41,7 @@ class FiltrosSolicitudAtencionController: UIViewController, UIPickerViewDelegate
         txtIdentificacion.placeholder = NSLocalizedString("identificacion", comment: "Identificacion")
         txtSolicitudAtencion.placeholder = NSLocalizedString("solicitud_atencion", comment: "Solicitud Atencion")
         txtNombre.placeholder = NSLocalizedString("nombre", comment: "Nombre")
-
+        
         pickeConvenio.placeholder = NSLocalizedString("seleccionar_convenio", comment: "seleccionar_convenio")
         pickerEstado.placeholder = NSLocalizedString("seleccionar_estado", comment: "seleccionar_estado")
         pickerCiudadInicial.placeholder = NSLocalizedString("seleccionar_ciudad_inicial", comment: "seleccionar_ciudad_inicial")
@@ -51,23 +56,23 @@ class FiltrosSolicitudAtencionController: UIViewController, UIPickerViewDelegate
         self.txtSolicitudAtencion.delegate = self
         self.txtNombre.delegate = self
         
-       //Se crea el picker para convenios
-        let convenioPickerView = UIPickerView()
+        //Se crea el picker para convenios
+        
         convenioPickerView.delegate = self
         convenioPickerView.tag = 1
         pickeConvenio.inputView = convenioPickerView
         //Se crea el picker para estado
-        let eestadoPickerView = UIPickerView()
+        
         eestadoPickerView.delegate = self
         eestadoPickerView.tag = 2
         pickerEstado.inputView = eestadoPickerView
         //Se crea el picker para ciudades iniciales
-        let ciudadInicialPickerView = UIPickerView()
+        
         ciudadInicialPickerView.delegate = self
         ciudadInicialPickerView.tag = 3
         pickerCiudadInicial.inputView = ciudadInicialPickerView
         //Se crea el picker para ciudades finales
-        let ciudadFinalPickerView = UIPickerView()
+        
         ciudadFinalPickerView.delegate = self
         ciudadFinalPickerView.tag = 4
         pickerCiudadFinal.inputView = ciudadFinalPickerView
@@ -178,6 +183,8 @@ class FiltrosSolicitudAtencionController: UIViewController, UIPickerViewDelegate
         return 0
     }
     
+    
+    
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         
         if pickerView.tag == 1 {
@@ -221,9 +228,6 @@ class FiltrosSolicitudAtencionController: UIViewController, UIPickerViewDelegate
     
     @IBAction func consumirServicio(_ sender: AnyObject) {
         
-        
-        
-        
         var convenio = "0";
         var estado = "0";
         var ciudadInicial = "0";
@@ -233,25 +237,28 @@ class FiltrosSolicitudAtencionController: UIViewController, UIPickerViewDelegate
         var solAtencion = "0";
         var nombre = "0";
         
-        
         if((pickeConvenio.text) != nil && (pickeConvenio.text) != ""){
-            convenio = pickeConvenio.text!
+            if let data = CargarPickers.conveniosJson![convenioPickerView.selectedRow(inComponent: 0)] as? Dictionary<String, Any>{
+               convenio = (data["codigo"] as! String?)!
+            }
         }
         
         if((pickerEstado.text) != nil && (pickerEstado.text) != ""){
-            estado = pickerEstado.text!
+            if let data = CargarPickers.estadosJson![eestadoPickerView.selectedRow(inComponent: 0)] as? Dictionary<String, Any>{
+                estado = (data["codigo"] as! String?)!;
+            }
         }
         
         if((pickerCiudadInicial.text) != nil && (pickerCiudadInicial.text) != ""){
-            ciudadInicial=pickerCiudadInicial.text!
+            if let data = CargarPickers.ciudadJson![ciudadInicialPickerView.selectedRow(inComponent: 0)] as? Dictionary<String, Any>{
+                ciudadInicial = (data["codigo"] as! String?)!;
+            }
         }
         
         if((pickerCiudadFinal.text) != nil && (pickerCiudadFinal.text) != ""){
-            ciudadActual=pickerCiudadFinal.text!
-        }
-        
-        if((pickerTraslados.text) != nil && (pickerTraslados.text) != ""){
-        
+            if let data = CargarPickers.ciudadJson![ciudadFinalPickerView.selectedRow(inComponent: 0)] as? Dictionary<String, Any>{
+                ciudadActual = (data["codigo"] as! String?)!;
+            }
         }
         
         if((txtIdentificacion.text) != nil && (txtIdentificacion.text) != ""){
@@ -266,7 +273,14 @@ class FiltrosSolicitudAtencionController: UIViewController, UIPickerViewDelegate
             nombre = txtNombre.text!
         }
         
-        
+        if((pickerTraslados.text) != nil && (pickerTraslados.text) != ""){
+            if (pickerTraslados.text == "SI") {
+                traslado = "1";
+            }else{
+                traslado = "0";
+            }
+        }
+
         var listParams: String = "/SAC/ABCD1234/0";
         listParams+="/"+solAtencion;
         listParams+="/"+nombre;
@@ -278,7 +292,7 @@ class FiltrosSolicitudAtencionController: UIViewController, UIPickerViewDelegate
         
         let url = URL(string: PropertiesProject.URL+service+listParams)
         print(PropertiesProject.URL+service+listParams)
-
+        
         let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
             if error != nil
             {
@@ -292,17 +306,19 @@ class FiltrosSolicitudAtencionController: UIViewController, UIPickerViewDelegate
                     {
                         //Array
                         FiltrosSolicitudAtencionController.solicitudesAtencionJson = try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSArray
-                        if ((FiltrosSolicitudAtencionController.solicitudesAtencionJson) != nil && (FiltrosSolicitudAtencionController.solicitudesAtencionJson?.count)!>0){
-                            let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "consultaSolicitudAtencionView")
-                            self.show(vc as! UIViewController, sender: vc)
-                        }else{
-                            //print(NSLocalizedString("lbl_sin_resultados", comment: "lbl_sin_resultados"));
-                            let alert = UIAlertController(title: NSLocalizedString("lbl_alerta", comment: "lbl_alerta"), message: NSLocalizedString("lbl_sin_resultados", comment: "lbl_sin_resultados"), preferredStyle: UIAlertControllerStyle.alert)
-                            alert.addAction(UIAlertAction(title: NSLocalizedString("lbl_aceptar", comment: "lbl_aceptar"), style: UIAlertActionStyle.default, handler: nil))
-                            self.present(alert, animated: true, completion: nil)
-                            
-                        }
                         
+                        DispatchQueue.main.async {
+                            if ((FiltrosSolicitudAtencionController.solicitudesAtencionJson) != nil && (FiltrosSolicitudAtencionController.solicitudesAtencionJson?.count)!>0){
+                                let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "consultaSolicitudAtencionView")
+                                self.show(vc as! UIViewController, sender: vc)
+                            }else{
+                                //print(NSLocalizedString("lbl_sin_resultados", comment: "lbl_sin_resultados"));
+                                let alert = UIAlertController(title: NSLocalizedString("lbl_alerta", comment: "lbl_alerta"), message: NSLocalizedString("lbl_sin_resultados", comment: "lbl_sin_resultados"), preferredStyle: UIAlertControllerStyle.alert)
+                                alert.addAction(UIAlertAction(title: NSLocalizedString("lbl_aceptar", comment: "lbl_aceptar"), style: UIAlertActionStyle.default, handler: nil))
+                                self.present(alert, animated: true, completion: nil)
+                                
+                            }
+                        }
                     }
                     catch
                     {
@@ -312,7 +328,7 @@ class FiltrosSolicitudAtencionController: UIViewController, UIPickerViewDelegate
             }
         }
         task.resume()
-
+        
     }
     
     

@@ -45,4 +45,5 @@ class PropertiesProject{
     static var complement_ciudades: String = "/ciudades"
     static var complement_tipos_registros: String = "/tipoRegistros"
     static var complement_tipos_servicios: String = "/tipoServicios"
+
 }
