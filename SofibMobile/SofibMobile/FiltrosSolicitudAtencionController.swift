@@ -281,7 +281,8 @@ class FiltrosSolicitudAtencionController: UIViewController, UIPickerViewDelegate
             }
         }
 
-        var listParams: String = "/SAC/ABCD1234/0";
+        var listParams: String = "/SAC/ABCD1234";
+        listParams+="/"+identificacion;
         listParams+="/"+solAtencion;
         listParams+="/"+nombre;
         listParams+="/"+convenio;
