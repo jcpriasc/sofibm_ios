@@ -20,6 +20,7 @@
 		110B9CAA1DEF1EBD0020585A /* DetalleGiro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110B9CA91DEF1EBD0020585A /* DetalleGiro.swift */; };
 		110B9CAC1DEF20340020585A /* DetalleNotaCreditoDebito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110B9CAB1DEF20340020585A /* DetalleNotaCreditoDebito.swift */; };
 		110B9CAE1DEF29A30020585A /* FacturaTabFacturaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110B9CAD1DEF29A30020585A /* FacturaTabFacturaViewController.swift */; };
+		110E7DFC1E00E746004DB17B /* DetalleDocumentoMedicoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110E7DFB1E00E746004DB17B /* DetalleDocumentoMedicoViewController.swift */; };
 		1121738C1DED2C2800BA0DAB /* DetalleSolicitudAprobacionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1121738B1DED2C2800BA0DAB /* DetalleSolicitudAprobacionViewController.swift */; };
 		11227A291DC970C00035959B /* ViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11227A281DC970C00035959B /* ViewControllerTest.swift */; };
 		11227A2C1DC971C80035959B /* FiltrosSolicitudAtencionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11227A2B1DC971C80035959B /* FiltrosSolicitudAtencionController.swift */; };
@@ -169,6 +170,7 @@
 		110B9CA91DEF1EBD0020585A /* DetalleGiro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleGiro.swift; sourceTree = "<group>"; };
 		110B9CAB1DEF20340020585A /* DetalleNotaCreditoDebito.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleNotaCreditoDebito.swift; sourceTree = "<group>"; };
 		110B9CAD1DEF29A30020585A /* FacturaTabFacturaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacturaTabFacturaViewController.swift; sourceTree = "<group>"; };
+		110E7DFB1E00E746004DB17B /* DetalleDocumentoMedicoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleDocumentoMedicoViewController.swift; sourceTree = "<group>"; };
 		1121738B1DED2C2800BA0DAB /* DetalleSolicitudAprobacionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleSolicitudAprobacionViewController.swift; sourceTree = "<group>"; };
 		11227A281DC970C00035959B /* ViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTest.swift; sourceTree = "<group>"; };
 		11227A2B1DC971C80035959B /* FiltrosSolicitudAtencionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiltrosSolicitudAtencionController.swift; sourceTree = "<group>"; };
@@ -429,6 +431,7 @@
 				1181F0451DEFA43400E92A15 /* GiroTabHistoricoViewCellController.swift */,
 				1181F0491DEFBF8900E92A15 /* GiroTabHistoricoDetalleViewController.swift */,
 				A46F98631DEF92A2000B19BE /* LoginViewController.swift */,
+				110E7DFB1E00E746004DB17B /* DetalleDocumentoMedicoViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -913,6 +916,7 @@
 				A46F985F1DEF202C000B19BE /* DetalleBitacoraViewController.swift in Sources */,
 				11309A8C1DED0EE300E79070 /* SolicitudAprobacion.swift in Sources */,
 				A467DA531DDD4E5E004FE4D8 /* DetalleAutorizacionesViewCell.swift in Sources */,
+				110E7DFC1E00E746004DB17B /* DetalleDocumentoMedicoViewController.swift in Sources */,
 				1181F0281DEF3A7100E92A15 /* FacturaTabGlosaViewController.swift in Sources */,
 				11227A291DC970C00035959B /* ViewControllerTest.swift in Sources */,
 				11F894391DDD04B900A58E45 /* GiroHistoricoViewCellController.swift in Sources */,
