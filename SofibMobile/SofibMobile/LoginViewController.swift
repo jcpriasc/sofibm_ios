@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UITextFieldDelegate {
     
     
     //var listParams = "/UP/" + usuario + "/" + password + "/50/PROFILE_MANAGER/sofib";
@@ -103,11 +103,22 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        txtUsuario.delegate = self
+        txtPassword.delegate = self
+        
         DispatchQueue.main.async {
             CargarPickers.cargar_pickers();
         }
         
+        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard)))
+        
         // Do any additional setup after loading the view.
+ 
+    }
+    
+    
+    func dismissKeyboard() {
+        view.endEditing(true)
     }
     
     override func didReceiveMemoryWarning() {
