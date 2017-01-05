@@ -20,6 +20,7 @@ class PropertiesProject{
     static var complement_InformesMedicos: String = "/InformesMedicos"
     static var complement_InformesMedicos_detalle: String = "/InformesMedicos/detalle"
     static var complement_DocumentosMedicos: String = "/DocumentosMedicos"
+    static var complement_DocumentosMedicos_id: String = "/DocumentosMedicos/documento"
     static var complement_Epicrisis: String = "/Epicrisis"
     static var complement_Bitacoras: String = "/Bitacoras"
     static var complement_FuncionariosExternos: String = "/FuncionariosExternos"
@@ -44,6 +45,6 @@ class PropertiesProject{
     static var complement_estados: String = "/estados"
     static var complement_ciudades: String = "/ciudades"
     static var complement_tipos_registros: String = "/tipoRegistros"
-    static var complement_tipos_servicios: String = "/tipoServicios"
+    static var complement_tipos_servicios: String = "/servicios"
 
 }

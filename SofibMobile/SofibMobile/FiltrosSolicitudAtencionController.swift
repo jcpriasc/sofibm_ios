@@ -161,19 +161,19 @@ class FiltrosSolicitudAtencionController: UIViewController, UIPickerViewDelegate
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         
         if pickerView.tag == 1 {
-            return CargarPickers.conveniosJson!.count
+            return (CargarPickers.conveniosJson!.count)+1
         }
         
         if pickerView.tag == 2 {
-            return CargarPickers.estadosJson!.count
+            return (CargarPickers.estadosJson!.count)+1
         }
         
         if pickerView.tag == 3 {
-            return CargarPickers.ciudadJson!.count
+            return (CargarPickers.ciudadJson!.count)+1
         }
         
         if pickerView.tag == 4 {
-            return CargarPickers.ciudadJson!.count
+            return (CargarPickers.ciudadJson!.count)+1
         }
         
         if pickerView.tag ==  5{
@@ -189,7 +189,9 @@ class FiltrosSolicitudAtencionController: UIViewController, UIPickerViewDelegate
         
         if pickerView.tag == 1 {
             var convenioSeleccionado = "";
-            if let data = CargarPickers.conveniosJson![row] as? Dictionary<String, Any>{
+            if row == 0 {
+                convenioSeleccionado = NSLocalizedString("seleccionar_convenio", comment: "seleccionar_convenio")
+            }else if let data = CargarPickers.conveniosJson![row-1] as? Dictionary<String, Any>{
                 convenioSeleccionado = (data["nombre"] as! String?)!;
             }
             return convenioSeleccionado
@@ -197,7 +199,9 @@ class FiltrosSolicitudAtencionController: UIViewController, UIPickerViewDelegate
         
         if pickerView.tag == 2 {
             var estadoSeleccionado = "";
-            if let data = CargarPickers.estadosJson![row] as? Dictionary<String, Any>{
+            if row == 0 {
+                estadoSeleccionado = NSLocalizedString("seleccionar_estado", comment: "seleccionar_estado")
+            }else if let data = CargarPickers.estadosJson![row-1] as? Dictionary<String, Any>{
                 estadoSeleccionado = (data["descripcion"] as! String?)!;
             }
             return estadoSeleccionado
@@ -205,7 +209,9 @@ class FiltrosSolicitudAtencionController: UIViewController, UIPickerViewDelegate
         
         if pickerView.tag == 3 {
             var ciudadIniSeleccionado = "";
-            if let data = CargarPickers.ciudadJson![row] as? Dictionary<String, Any>{
+            if row == 0 {
+                ciudadIniSeleccionado = NSLocalizedString("seleccionar_ciudad_inicial", comment: "seleccionar_ciudad_inicial")
+            }else if let data = CargarPickers.ciudadJson![row-1] as? Dictionary<String, Any>{
                 ciudadIniSeleccionado = (data["ciudad"] as! String?)!;
             }
             return ciudadIniSeleccionado
@@ -213,7 +219,9 @@ class FiltrosSolicitudAtencionController: UIViewController, UIPickerViewDelegate
         
         if pickerView.tag == 4 {
             var ciudadFinSeleccionado = "";
-            if let data = CargarPickers.ciudadJson![row] as? Dictionary<String, Any>{
+            if row == 0 {
+                ciudadFinSeleccionado = NSLocalizedString("seleccionar_ciudad_actual", comment: "seleccionar_ciudad_actual")
+            }else if let data = CargarPickers.ciudadJson![row-1] as? Dictionary<String, Any>{
                 ciudadFinSeleccionado = (data["ciudad"] as! String?)!;
             }
             return ciudadFinSeleccionado
@@ -336,26 +344,26 @@ class FiltrosSolicitudAtencionController: UIViewController, UIPickerViewDelegate
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         
         if pickerView.tag == 1 {
-            if let data = CargarPickers.conveniosJson![row] as? Dictionary<String, Any>{
+            if let data = CargarPickers.conveniosJson![row-1] as? Dictionary<String, Any>{
                 pickeConvenio.text = data["nombre"] as! String?;
             }
             
         }
         
         if pickerView.tag == 2 {
-            if let data = CargarPickers.estadosJson![row] as? Dictionary<String, Any>{
+            if let data = CargarPickers.estadosJson![row-1] as? Dictionary<String, Any>{
                 pickerEstado.text = data["descripcion"] as! String?;
             }
         }
         
         if pickerView.tag == 3 {
-            if let data = CargarPickers.ciudadJson![row] as? Dictionary<String, Any>{
+            if let data = CargarPickers.ciudadJson![row-1] as? Dictionary<String, Any>{
                 pickerCiudadInicial.text = data["ciudad"] as! String?;
             }
         }
         
         if pickerView.tag == 4 {
-            if let data = CargarPickers.ciudadJson![row] as? Dictionary<String, Any>{
+            if let data = CargarPickers.ciudadJson![row-1] as? Dictionary<String, Any>{
                 pickerCiudadFinal.text = data["ciudad"] as! String?;
             }
         }

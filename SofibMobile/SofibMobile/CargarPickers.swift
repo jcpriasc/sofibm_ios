@@ -156,6 +156,7 @@ class CargarPickers{
                     do
                     {
                         CargarPickers.tipoServiciosJson = try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSArray
+                        print ("ok")
                         
                     }
                     catch

@@ -11,8 +11,6 @@ import UIKit
 class FiltroBitacoraViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate {
 
     @IBOutlet var lblBusqueda: UILabel!
-    @IBOutlet var txtNombrePaciente: UITextField!
-    @IBOutlet var pickerCiudad: UITextField!
     @IBOutlet var pickerTipoRegistro: UITextField!
     @IBOutlet var pickerTipoServicio: UITextField!
     
@@ -23,7 +21,6 @@ class FiltroBitacoraViewController: UIViewController, UIPickerViewDelegate, UIPi
     var ciudades = ["CALI", "BOGOTA", "CARTAGENA", "MEDELLIN", "PEREIRA"]
     */
     
-    let ciudadPickerView = UIPickerView()
     let tipoRegistroPickerView = UIPickerView()
     let tipoServicioPickerView = UIPickerView()
     
@@ -31,7 +28,6 @@ class FiltroBitacoraViewController: UIViewController, UIPickerViewDelegate, UIPi
         
         lblBusqueda.text = NSLocalizedString("lbl_titulo_bitacora", comment: "lbl_titulo_bitacora")
         
-        pickerCiudad.placeholder = NSLocalizedString("seleccionar_ciudad", comment: "seleccionar_ciudad")
         pickerTipoRegistro.placeholder = NSLocalizedString("seleccionar_tipo_registro", comment: "seleccionar_tipo_registro")
         pickerTipoServicio.placeholder = NSLocalizedString("seleccionar_tipo_servicio", comment: "seleccionar_tipo_servicio")
 
@@ -41,14 +37,7 @@ class FiltroBitacoraViewController: UIViewController, UIPickerViewDelegate, UIPi
         
         var tipoRegistro: String = "0"
         var tipoServicio: String = "0"
-        var ciudad: String = "0"
-        var nombrePaciente: String = "0"
         
-        if((pickerCiudad.text) != nil && (pickerCiudad.text) != ""){
-            if let data = CargarPickers.ciudadJson![ciudadPickerView.selectedRow(inComponent: 0)] as? Dictionary<String, Any>{
-                ciudad = (data["codigo"] as! String?)!;
-            }
-        }
         
         if((pickerTipoRegistro.text) != nil && (pickerTipoRegistro.text) != ""){
             if let data = CargarPickers.tipoRegistrosJson![tipoRegistroPickerView.selectedRow(inComponent: 0)] as? Dictionary<String, Any>{
@@ -62,13 +51,9 @@ class FiltroBitacoraViewController: UIViewController, UIPickerViewDelegate, UIPi
             }
         }
         
-        if((txtNombrePaciente.text) != nil && (txtNombrePaciente.text) != ""){
-            nombrePaciente = txtNombrePaciente.text!
-        }
-        
         var listParams: String = "/SAC/ABCD1234/"+ConsultaSolicitudesAtencionController.solicitudAtencionSeleccionada.consSolicitud;
-        listParams+="/"+nombrePaciente;
-        listParams+="/"+ciudad;
+        listParams+="/0";
+        listParams+="/0";
         listParams+="/"+tipoRegistro;
         listParams+="/"+tipoServicio;
         listParams+="/dnsepr07";
@@ -120,20 +105,15 @@ class FiltroBitacoraViewController: UIViewController, UIPickerViewDelegate, UIPi
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //Se crea el picker para ciudad
-        
-        ciudadPickerView.delegate = self
-        ciudadPickerView.tag = 1
-        pickerCiudad.inputView = ciudadPickerView
         //Se crea el picker para tipo registro
         
         tipoRegistroPickerView.delegate = self
-        tipoRegistroPickerView.tag = 2
+        tipoRegistroPickerView.tag = 1
         pickerTipoRegistro.inputView = tipoRegistroPickerView
         //Se crea el picker para tipo servicio
         
         tipoServicioPickerView.delegate = self
-        tipoServicioPickerView.tag = 3
+        tipoServicioPickerView.tag = 2
         pickerTipoServicio.inputView = tipoServicioPickerView
         
 
@@ -164,7 +144,6 @@ class FiltroBitacoraViewController: UIViewController, UIPickerViewDelegate, UIPi
         let textBtn = UIBarButtonItem(customView: label)
         toolBar.setItems([defaultButton,flexSpace,textBtn,flexSpace,doneButton], animated: true)
         
-        pickerCiudad.inputAccessoryView = toolBar
         pickerTipoRegistro.inputAccessoryView = toolBar
         pickerTipoServicio.inputAccessoryView = toolBar
 
@@ -177,7 +156,6 @@ class FiltroBitacoraViewController: UIViewController, UIPickerViewDelegate, UIPi
     
     func donePressed(_ sender: UIBarButtonItem) {
         
-        pickerCiudad.resignFirstResponder()
         pickerTipoRegistro.resignFirstResponder()
         pickerTipoServicio.resignFirstResponder()
         
@@ -185,11 +163,9 @@ class FiltroBitacoraViewController: UIViewController, UIPickerViewDelegate, UIPi
     
     func tappedToolBarBtn(_ sender: UIBarButtonItem) {
         
-        pickerCiudad.text = ""
         pickerTipoRegistro.text = ""
         pickerTipoServicio.text = ""
         
-        pickerCiudad.resignFirstResponder()
         pickerTipoRegistro.resignFirstResponder()
         pickerTipoServicio.resignFirstResponder()
         
@@ -206,14 +182,10 @@ class FiltroBitacoraViewController: UIViewController, UIPickerViewDelegate, UIPi
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         
         if pickerView.tag == 1 {
-            return CargarPickers.ciudadJson!.count
-        }
-        
-        if pickerView.tag == 2 {
             return CargarPickers.tipoRegistrosJson!.count
         }
         
-        if pickerView.tag == 3 {
+        if pickerView.tag == 2 {
             return CargarPickers.tipoServiciosJson!.count
         }
         
@@ -223,14 +195,6 @@ class FiltroBitacoraViewController: UIViewController, UIPickerViewDelegate, UIPi
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         
         if pickerView.tag == 1 {
-            var ciudadIniSeleccionado = "";
-            if let data = CargarPickers.ciudadJson![row] as? Dictionary<String, Any>{
-                ciudadIniSeleccionado = (data["ciudad"] as! String?)!;
-            }
-            return ciudadIniSeleccionado
-        }
-        
-        if pickerView.tag == 2 {
             var tipoRegistroSeleccionado = "";
             if let data = CargarPickers.tipoRegistrosJson![row] as? Dictionary<String, Any>{
                 tipoRegistroSeleccionado = (data["descripcion"] as! String?)!;
@@ -238,10 +202,10 @@ class FiltroBitacoraViewController: UIViewController, UIPickerViewDelegate, UIPi
             return tipoRegistroSeleccionado
         }
         
-        if pickerView.tag == 3 {
+        if pickerView.tag == 2 {
             var tipoServicioSeleccionado = "";
             if let data = CargarPickers.tipoServiciosJson![row] as? Dictionary<String, Any>{
-                tipoServicioSeleccionado = (data["descripcion"] as! String?)!;
+                tipoServicioSeleccionado = (data["nombre"] as! String?)!;
             }
             return tipoServicioSeleccionado
         }
@@ -252,20 +216,14 @@ class FiltroBitacoraViewController: UIViewController, UIPickerViewDelegate, UIPi
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         
         if pickerView.tag == 1 {
-            if let data = CargarPickers.ciudadJson![row] as? Dictionary<String, Any>{
-                pickerCiudad.text = (data["ciudad"] as! String?)!;
-            }
-        }
-        
-        if pickerView.tag == 2 {
             if let data = CargarPickers.tipoRegistrosJson![row] as? Dictionary<String, Any>{
                 pickerTipoRegistro.text = (data["descripcion"] as! String?)!;
             }
         }
         
-        if pickerView.tag == 3 {
+        if pickerView.tag == 2 {
             if let data = CargarPickers.tipoServiciosJson![row] as? Dictionary<String, Any>{
-                pickerTipoServicio.text = (data["descripcion"] as! String?)!;
+                pickerTipoServicio.text = (data["nombre"] as! String?)!;
             }
         }
         
