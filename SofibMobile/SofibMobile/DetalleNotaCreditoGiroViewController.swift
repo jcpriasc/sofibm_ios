@@ -38,7 +38,8 @@ class DetalleNotaCreditoGiroViewController: UIViewController {
         lblNombreBeneficiario.text = "\(NSLocalizedString("lbl_nombre_beneficiario", comment: "lbl_nombre_beneficiario")) \(NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.nombreBeneficiario)"
         lblTipoGiro.text = "\(NSLocalizedString("lbl_tipo_giro", comment: "lbl_tipo_giro")) \(NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.tipoGiro)"
         
-        txtCiudad.text = NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.ciudad
+        txtCiudad.text = (NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.ciudad)
+
         txtTipoBeneficiario.text = NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.tipoBeneficiario
         txtEstado.text = NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.estado
         txtValorNota.text = NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.valorNota

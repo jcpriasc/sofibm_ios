@@ -29,7 +29,7 @@ class PropertiesProject{
     
     static var complement_serviciosNoAsistenciales: String = "/serviciosNoAsistenciales"
     static var complement_giro: String = "/giro"
-    static var complement_giro_notaCredito: String = "giro/notaCredito"
+    static var complement_giro_notaCredito: String = "/giro/notaCredito"
     static var complement_factura: String = "/factura"
     static var complement_nota: String = "/nota"
     static var complement_utilizaciones: String = "/utilizaciones"

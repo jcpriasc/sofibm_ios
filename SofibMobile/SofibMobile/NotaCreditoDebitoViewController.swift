@@ -62,7 +62,7 @@ class NotaCreditoDebitoViewController:  UIViewController, UITableViewDataSource,
             NotaCreditoDebitoViewController.notaCreditoDebitoSeleccionado.numeroFactura = (solicitud["numeroFactura"] as? String ?? "");
             NotaCreditoDebitoViewController.notaCreditoDebitoSeleccionado.fechaExpedicion = (solicitud["fechaExpedicion"] as? String ?? "");
             NotaCreditoDebitoViewController.notaCreditoDebitoSeleccionado.fechaAprobacion = (solicitud["fechaAprobacion"] as? String ?? "");
-            NotaCreditoDebitoViewController.notaCreditoDebitoSeleccionado.ciudad = (solicitud["ciudad"] as? String ?? "");
+            NotaCreditoDebitoViewController.notaCreditoDebitoSeleccionado.ciudad = (solicitud["ciudad"] as? String ?? "  ");
             NotaCreditoDebitoViewController.notaCreditoDebitoSeleccionado.proveedor = (solicitud["proveedor"] as? String ?? "");
             NotaCreditoDebitoViewController.notaCreditoDebitoSeleccionado.motivo = (solicitud["motivo"] as? String ?? "");
             NotaCreditoDebitoViewController.notaCreditoDebitoSeleccionado.estado = (solicitud["estado"] as? String ?? "");

@@ -52,7 +52,7 @@ class NotaCreditoDebitoTabInformacionViewController: UIViewController {
         lblValorTotalFactura.text = NSLocalizedString("lbl_valor_total_factura", comment: "lbl_valor_total_factura")
         lblValorTotalPagar.text = NSLocalizedString("lbl_valor_total_pagar", comment: "lbl_valor_total_pagar")
          lblNotaCredito.text = NSLocalizedString("lbl_nota_credito", comment: "lbl_nota_credito")
-         lblNumeroNota.text = NSLocalizedString("lbl_numero_nota", comment: "lbl_numero_nota")
+         lblNumeroNota.text = NSLocalizedString("lbl_nota_credito_debito", comment: "lbl_nota_credito_debito")
          lblFechaExpedicion.text = NSLocalizedString("lbl_fecha_expedicion", comment: "lbl_fecha_expedicion")
          lblMotivo.text = NSLocalizedString("lbl_motivo", comment: "lbl_motivo")
          lblValorTotalNotaCredito.text = NSLocalizedString("lbl_valor_total_nota_credito", comment: "lbl_valor_total_nota_credito")
