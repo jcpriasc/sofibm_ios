@@ -40,13 +40,15 @@ class FiltroBitacoraViewController: UIViewController, UIPickerViewDelegate, UIPi
         
         
         if((pickerTipoRegistro.text) != nil && (pickerTipoRegistro.text) != ""){
-            if let data = CargarPickers.tipoRegistrosJson![tipoRegistroPickerView.selectedRow(inComponent: 0)] as? Dictionary<String, Any>{
+            let rowSelected = tipoRegistroPickerView.selectedRow(inComponent: 0);
+            if let data = CargarPickers.tipoRegistrosJson![rowSelected-1] as? Dictionary<String, Any>{
                 tipoRegistro = (data["codigo"] as! String?)!;
             }
         }
         
         if((pickerTipoServicio.text) != nil && (pickerTipoServicio.text) != ""){
-            if let data = CargarPickers.tipoServiciosJson![tipoServicioPickerView.selectedRow(inComponent: 0)] as? Dictionary<String, Any>{
+            let rowSelected = tipoServicioPickerView.selectedRow(inComponent: 0);
+            if let data = CargarPickers.tipoServiciosJson![rowSelected-1] as? Dictionary<String, Any>{
                 tipoServicio = (data["codigo"] as! String?)!;
             }
         }
@@ -182,11 +184,11 @@ class FiltroBitacoraViewController: UIViewController, UIPickerViewDelegate, UIPi
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         
         if pickerView.tag == 1 {
-            return CargarPickers.tipoRegistrosJson!.count
+            return (CargarPickers.tipoRegistrosJson!.count)+1
         }
         
         if pickerView.tag == 2 {
-            return CargarPickers.tipoServiciosJson!.count
+            return (CargarPickers.tipoServiciosJson!.count)+1
         }
         
         return 0
@@ -196,7 +198,9 @@ class FiltroBitacoraViewController: UIViewController, UIPickerViewDelegate, UIPi
         
         if pickerView.tag == 1 {
             var tipoRegistroSeleccionado = "";
-            if let data = CargarPickers.tipoRegistrosJson![row] as? Dictionary<String, Any>{
+            if row == 0 {
+                tipoRegistroSeleccionado = NSLocalizedString("seleccionar_tipo_registro", comment: "seleccionar_tipo_registro")
+            }else if let data = CargarPickers.tipoRegistrosJson![row-1] as? Dictionary<String, Any>{
                 tipoRegistroSeleccionado = (data["descripcion"] as! String?)!;
             }
             return tipoRegistroSeleccionado
@@ -204,7 +208,9 @@ class FiltroBitacoraViewController: UIViewController, UIPickerViewDelegate, UIPi
         
         if pickerView.tag == 2 {
             var tipoServicioSeleccionado = "";
-            if let data = CargarPickers.tipoServiciosJson![row] as? Dictionary<String, Any>{
+            if row == 0 {
+                tipoServicioSeleccionado = NSLocalizedString("seleccionar_tipo_servicio", comment: "seleccionar_tipo_servicio")
+            }else if let data = CargarPickers.tipoServiciosJson![row-1] as? Dictionary<String, Any>{
                 tipoServicioSeleccionado = (data["nombre"] as! String?)!;
             }
             return tipoServicioSeleccionado
@@ -216,13 +222,17 @@ class FiltroBitacoraViewController: UIViewController, UIPickerViewDelegate, UIPi
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         
         if pickerView.tag == 1 {
-            if let data = CargarPickers.tipoRegistrosJson![row] as? Dictionary<String, Any>{
+            if row == 0 {
+                pickerTipoRegistro.text = "";
+            }else if let data = CargarPickers.tipoRegistrosJson![row-1] as? Dictionary<String, Any>{
                 pickerTipoRegistro.text = (data["descripcion"] as! String?)!;
             }
         }
         
         if pickerView.tag == 2 {
-            if let data = CargarPickers.tipoServiciosJson![row] as? Dictionary<String, Any>{
+            if row == 0 {
+                pickerTipoServicio.text = "";
+            }else if let data = CargarPickers.tipoServiciosJson![row-1] as? Dictionary<String, Any>{
                 pickerTipoServicio.text = (data["nombre"] as! String?)!;
             }
         }

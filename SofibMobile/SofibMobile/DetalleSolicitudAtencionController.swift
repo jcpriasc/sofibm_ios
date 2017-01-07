@@ -23,11 +23,15 @@ class DetalleSolicitudAtencionController:  UIViewController {
     @IBOutlet weak var txtEstado: UILabel!
     @IBOutlet weak var txtFechaCreado: UILabel!
     
+    let lblSolicitud = NSLocalizedString("solicitud_atencion", comment: "solicitud_atencion");
+    let lblId = NSLocalizedString("identificacion", comment: "identificacion");
+    let lblNombre = NSLocalizedString("nombre", comment: "nombre");
+    
     
     override func viewWillAppear(_ animated: Bool) {
-        lblNumeroSolicitud.text = ConsultaSolicitudesAtencionController.solicitudAtencionSeleccionada.consSolicitud
-        lblIdentificacion.text = ConsultaSolicitudesAtencionController.solicitudAtencionSeleccionada.identificacion
-        lblNombrePaciente.text = ConsultaSolicitudesAtencionController.solicitudAtencionSeleccionada.nombre
+        lblNumeroSolicitud.text = lblSolicitud+": "+ConsultaSolicitudesAtencionController.solicitudAtencionSeleccionada.consSolicitud
+        lblIdentificacion.text = lblId+": "+ConsultaSolicitudesAtencionController.solicitudAtencionSeleccionada.identificacion
+        lblNombrePaciente.text = lblNombre+": "+ConsultaSolicitudesAtencionController.solicitudAtencionSeleccionada.nombre
         txtCredencial.text = ConsultaSolicitudesAtencionController.solicitudAtencionSeleccionada.credencial
         txtConvenio.text = ConsultaSolicitudesAtencionController.solicitudAtencionSeleccionada.convenio
         txtCiudadInicial.text = ConsultaSolicitudesAtencionController.solicitudAtencionSeleccionada.ciudadInicial
