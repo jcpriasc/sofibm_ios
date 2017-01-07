@@ -10760,6 +10760,74 @@
             </objects>
             <point key="canvasLocation" x="8192.7999999999993" y="-2515.5922038980511"/>
         </scene>
+        <!--Detalle Epicrisis View Controller-->
+        <scene sceneID="OTM-fr-9WI">
+            <objects>
+                <viewController storyboardIdentifier="detalleEpicrisis" id="LYb-RM-Ddg" customClass="DetalleEpicrisisViewController" customModule="SofibMobile" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lrT-yI-AUW"/>
+                        <viewControllerLayoutGuide type="bottom" id="0qA-08-uc9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IKr-qP-10D">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" backIndicatorImage="icon_buscar" backIndicatorTransitionMaskImage="icon_buscar" translatesAutoresizingMaskIntoConstraints="NO" id="l7W-9b-E12">
+                                <rect key="frame" x="0.0" y="30" width="375" height="47"/>
+                                <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="barTintColor" red="0.0" green="0.40000000000000002" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Epicrisis" id="QBw-FZ-Mvk">
+                                        <barButtonItem key="backBarButtonItem" title="Atras" id="gAw-wK-1Eo"/>
+                                        <barButtonItem key="leftBarButtonItem" systemItem="reply" id="f1z-fb-cZk">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <connections>
+                                                <segue destination="eFk-Xt-CVG" kind="show" id="sPG-SE-XoJ"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" image="icon_settings" id="LI7-FE-QBT">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6LH-Mj-QBc">
+                                <rect key="frame" x="0.0" y="76" width="375" height="591"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gnr-KP-XUs">
+                                <rect key="frame" x="0.0" y="77" width="375" height="541"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Gnr-KP-XUs" secondAttribute="trailing" id="2PI-nJ-Knn"/>
+                            <constraint firstItem="0qA-08-uc9" firstAttribute="top" secondItem="Gnr-KP-XUs" secondAttribute="bottom" id="Cdu-sn-fug"/>
+                            <constraint firstItem="6LH-Mj-QBc" firstAttribute="top" secondItem="lrT-yI-AUW" secondAttribute="bottom" constant="56" id="JWC-1z-FDo"/>
+                            <constraint firstItem="6LH-Mj-QBc" firstAttribute="leading" secondItem="IKr-qP-10D" secondAttribute="leading" id="KwQ-9c-apU"/>
+                            <constraint firstItem="l7W-9b-E12" firstAttribute="top" secondItem="lrT-yI-AUW" secondAttribute="bottom" constant="10" id="SYx-sj-gme"/>
+                            <constraint firstItem="l7W-9b-E12" firstAttribute="height" secondItem="IKr-qP-10D" secondAttribute="height" multiplier="0.07" id="ZaF-3u-FN1"/>
+                            <constraint firstItem="Gnr-KP-XUs" firstAttribute="leading" secondItem="IKr-qP-10D" secondAttribute="leading" id="eQa-MG-Rzl"/>
+                            <constraint firstItem="l7W-9b-E12" firstAttribute="width" secondItem="IKr-qP-10D" secondAttribute="width" id="fAL-ml-6KF"/>
+                            <constraint firstItem="Gnr-KP-XUs" firstAttribute="top" secondItem="l7W-9b-E12" secondAttribute="bottom" id="fbH-BQ-zDx"/>
+                            <constraint firstItem="l7W-9b-E12" firstAttribute="leading" secondItem="IKr-qP-10D" secondAttribute="leading" id="j6I-Bk-UCt"/>
+                            <constraint firstAttribute="trailing" secondItem="6LH-Mj-QBc" secondAttribute="trailing" id="q8D-2F-Ovw"/>
+                            <constraint firstAttribute="bottom" secondItem="6LH-Mj-QBc" secondAttribute="bottom" id="wiS-Ig-bYm"/>
+                        </constraints>
+                    </view>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="webView" destination="Gnr-KP-XUs" id="qs2-zR-SXz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BLD-tC-aVz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8193" y="68"/>
+        </scene>
     </scenes>
     <resources>
         <image name="background_login" width="240" height="426"/>
@@ -10774,8 +10842,8 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="X5d-X6-8yd"/>
-        <segue reference="xnR-IY-vSs"/>
-        <segue reference="OLI-Xy-C31"/>
+        <segue reference="vwu-x2-piV"/>
+        <segue reference="pvY-II-0NW"/>
         <segue reference="kBa-QL-bjD"/>
         <segue reference="BfY-DR-KxF"/>
         <segue reference="x4r-hg-FVX"/>

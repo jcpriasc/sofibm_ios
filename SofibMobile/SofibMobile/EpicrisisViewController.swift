@@ -14,6 +14,8 @@ class EpicrisisViewController: UIViewController, UITableViewDataSource, UITableV
     //let epicrisis = ["epicrisis 1", "epicrisis 2", "epicrisis 3", "epicrisis 4", "epicrisis 5", "epicrisis 6", "epicrisis 7", "epicrisis 9"]
     let jsonEpicrisis: NSArray = OpcionesSecundariasViewController.jsonEpicrisis!
     
+    public static var path : URL?  = nil
+    
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         return (jsonEpicrisis.count)
@@ -28,6 +30,59 @@ class EpicrisisViewController: UIViewController, UITableViewDataSource, UITableV
         }
         
         return (cell)
+    }
+    
+    public func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath?{
+        
+        let fileSeleccionada = indexPath[1]
+        var opcionSeleccionada = ""
+        var file = ""
+        
+        if let solicitud = self.jsonEpicrisis[fileSeleccionada] as? Dictionary<String, Any>{
+            file = (solicitud["nombreDocumento"] as! String?)!;
+            opcionSeleccionada = (solicitud["archivo"] as! String?)!;
+            
+        }
+        
+        if let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
+            
+            let convertedData = Data(base64Encoded: opcionSeleccionada)
+            
+            EpicrisisViewController.path = dir.appendingPathComponent(file)
+            let aweds: String = dir.dataRepresentation.base64EncodedString()
+            print(aweds)
+            //writing
+            do {
+                try convertedData?.write(to: EpicrisisViewController.path!)
+                
+            }
+            catch {/* error handling here */}
+            
+            //reading
+            do {
+                let text2 = try String(contentsOf: EpicrisisViewController.path!, encoding: String.Encoding.utf8)
+                print(text2);
+            }
+                
+            catch {
+                print("ERROR")
+            }
+            
+            
+            
+        }
+        
+        let url = NSURL.fileURL(withPath: (EpicrisisViewController.path?.absoluteString)!)
+        print(url)
+        //webView.loadRequest(url)
+        
+        let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "detalleEpicrisis")
+        self.show(vc as! UIViewController, sender: vc)
+
+        
+        
+        
+        return indexPath
     }
     
     

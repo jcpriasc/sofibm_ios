@@ -10,8 +10,12 @@ import UIKit
 
 class DetalleEpicrisisViewController: UIViewController {
 
+    @IBOutlet var webView: UIWebView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        webView.loadRequest(URLRequest(url: EpicrisisViewController.path!))
 
         // Do any additional setup after loading the view.
     }
