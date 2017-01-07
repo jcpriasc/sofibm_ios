@@ -226,3 +226,4 @@
 "lbl_no"="No";
 "lbl_validacion_usuario"="User and password are required";
 "lbl_usuario_incorrecto"="User and password are incorrect";
+"lbl_nota_credito_debito"= "Credit/Debit Notes";

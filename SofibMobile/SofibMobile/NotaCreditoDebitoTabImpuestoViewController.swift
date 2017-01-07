@@ -27,11 +27,11 @@ class NotaCreditoDebitoTabImpuestoViewController: UIViewController , UITableView
             
             NotaCreditoDebitoTabImpuestoViewController.jsonTabImpuestos = solicitud["facturas"] as? NSArray
             
-            lblTotalServicio.text = "\(NSLocalizedString("lbl_total_servicio", comment: "lbl_total_servicio")) \((solicitud["valorTotalPagar"] as? String ?? ""))"
-            lblTotalSeguroHotelero.text = "\(NSLocalizedString("lbl_total_seguro_hotelero", comment: "lbl_total_seguro_hotelero")) \((solicitud["valorTotalNotaCredito"] as? String ?? ""))"
-            lblTotalNotaCredito.text = "\(NSLocalizedString("lbl_tab_nota_credito", comment: "lbl_tab_nota_credito")) \((solicitud["valorTotalNotaCredito"] as? String ?? ""))"
-            lblValorIva.text = "\(NSLocalizedString("lbl_valor_iva", comment: "lbl_valor_iva")) \((solicitud["valorIva"] as? String ?? ""))"
-            lblValorTotalPagar.text = "\(NSLocalizedString("lbl_valor_total_pagar", comment: "lbl_valor_total_pagar")) \((solicitud["valorTotalPagar"] as? String ?? ""))"
+            lblTotalServicio.text = "\(NSLocalizedString("lbl_total_servicio", comment: "lbl_total_servicio"))\(": ") \((solicitud["valorTotalPagar"] as? String ?? ""))"
+            lblTotalSeguroHotelero.text = "\(NSLocalizedString("lbl_total_seguro_hotelero", comment: "lbl_total_seguro_hotelero"))\(": ") \((solicitud["valorTotalNotaCredito"] as? String ?? ""))"
+            lblTotalNotaCredito.text = "\(NSLocalizedString("lbl_tab_nota_credito", comment: "lbl_tab_nota_credito"))\(": ") \((solicitud["valorTotalNotaCredito"] as? String ?? ""))"
+            lblValorIva.text = "\(NSLocalizedString("lbl_valor_iva", comment: "lbl_valor_iva"))\(": ") \((solicitud["valorIva"] as? String ?? ""))"
+            lblValorTotalPagar.text = "\(NSLocalizedString("lbl_valor_total_pagar", comment: "lbl_valor_total_pagar")) \(": ")\((solicitud["valorTotalPagar"] as? String ?? ""))"
             
             
         }

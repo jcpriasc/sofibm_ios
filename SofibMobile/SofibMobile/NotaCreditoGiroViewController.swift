@@ -62,7 +62,7 @@ class NotaCreditoGiroViewController:  UIViewController, UITableViewDataSource, U
             NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.idGiroAsociado = (solicitud["giroAsociado"] as? String ?? "");
             NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.nombreBeneficiario = (solicitud["beneficiario"] as? String ?? "");
             NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.tipoGiro = (solicitud["tipoGiro"] as? String ?? "");
-            NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.ciudad = (solicitud["ciudad"] as? String ?? "");
+            NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.ciudad = (solicitud["ciudad"] as? String ?? "  ");
             NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.tipoBeneficiario = (solicitud["tipoBeneficiario"] as? String ?? "");
             NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.estado = (solicitud["estado"] as? String ?? "");
             NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.valorNota = (solicitud["valorNota"] as? String ?? "");

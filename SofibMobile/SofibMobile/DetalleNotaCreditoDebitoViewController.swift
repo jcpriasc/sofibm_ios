@@ -35,10 +35,10 @@ class DetalleNotaCreditoDebitoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        lblFechaAprobacion.text = "\(NSLocalizedString("lbl_fecha_aprobacion", comment: "lbl_fecha_aprobacion")) \(NotaCreditoDebitoViewController.notaCreditoDebitoSeleccionado.fechaAprobacion)"
-        lblFechaExpedicion.text = "\(NSLocalizedString("lbl_fecha_expedicion", comment: "lbl_fecha_expedicion")) \(NotaCreditoDebitoViewController.notaCreditoDebitoSeleccionado.fechaExpedicion)"
-        lblNumeroFactura.text = "\(NSLocalizedString("lbl_numero_factura", comment: "lbl_numero_factura")) \(NotaCreditoDebitoViewController.notaCreditoDebitoSeleccionado.numeroFactura)"
-        lblNumeroNota.text = "\(NSLocalizedString("lbl_numero_nota", comment: "lbl_numero_nota")) \(NotaCreditoDebitoViewController.notaCreditoDebitoSeleccionado.numeroNota)"
+        lblFechaAprobacion.text = "\(NSLocalizedString("lbl_fecha_aprobacion", comment: "lbl_fecha_aprobacion")) \(": ")\(NotaCreditoDebitoViewController.notaCreditoDebitoSeleccionado.fechaAprobacion)"
+        lblFechaExpedicion.text = "\(NSLocalizedString("lbl_fecha_expedicion", comment: "lbl_fecha_expedicion"))\(": ") \(NotaCreditoDebitoViewController.notaCreditoDebitoSeleccionado.fechaExpedicion)"
+        lblNumeroFactura.text = "\(NSLocalizedString("lbl_numero_factura", comment: "lbl_numero_factura"))\(": ") \(NotaCreditoDebitoViewController.notaCreditoDebitoSeleccionado.numeroFactura)"
+        lblNumeroNota.text = "\(NSLocalizedString("lbl_numero_nota", comment: "lbl_numero_nota"))\(": ") \(NotaCreditoDebitoViewController.notaCreditoDebitoSeleccionado.numeroNota)"
         
         lblCiudad.text = NSLocalizedString("lbl_ciudad", comment: "lbl_ciudad")
         lblProveedor.text = NSLocalizedString("lbl_proveedor", comment: "lbl_proveedor")

@@ -33,12 +33,13 @@ class DetalleNotaCreditoGiroViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        lblConsecutivoNota.text = "\(NSLocalizedString("lbl_consecutivo_nota_credito", comment: "lbl_consecutivo_nota_credito")) \(NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.consecutivoNota)"
-        lblIdGiroAsociado.text = "\(NSLocalizedString("lbl_id_giro_asociado", comment: "lbl_id_giro_asociado")) \(NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.idGiroAsociado)"
-        lblNombreBeneficiario.text = "\(NSLocalizedString("lbl_nombre_beneficiario", comment: "lbl_nombre_beneficiario")) \(NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.nombreBeneficiario)"
-        lblTipoGiro.text = "\(NSLocalizedString("lbl_tipo_giro", comment: "lbl_tipo_giro")) \(NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.tipoGiro)"
+        lblConsecutivoNota.text = "\(NSLocalizedString("lbl_consecutivo_nota_credito", comment: "lbl_consecutivo_nota_credito")) \(": ")\(NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.consecutivoNota)"
+        lblIdGiroAsociado.text = "\(NSLocalizedString("lbl_id_giro_asociado", comment: "lbl_id_giro_asociado"))\(": ") \(NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.idGiroAsociado)"
+        lblNombreBeneficiario.text = "\(NSLocalizedString("lbl_nombre_beneficiario", comment: "lbl_nombre_beneficiario"))\(": ") \(NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.nombreBeneficiario)"
+        lblTipoGiro.text = "\(NSLocalizedString("lbl_tipo_giro", comment: "lbl_tipo_giro"))\(": ") \(NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.tipoGiro)"
         
-        txtCiudad.text = NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.ciudad
+        txtCiudad.text = (NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.ciudad)
+
         txtTipoBeneficiario.text = NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.tipoBeneficiario
         txtEstado.text = NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.estado
         txtValorNota.text = NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.valorNota

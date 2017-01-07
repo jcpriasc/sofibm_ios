@@ -39,10 +39,10 @@ class DetalleFacturaViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        lblNumeroFactura.text = "\(NSLocalizedString("lbl_numero_factura", comment: "lbl_numero_factura")) \(FacturaViewController.facturaSeleccionada.numeroFactura)"
-        lblFechaExpedicion.text = "\(NSLocalizedString("lbl_fecha_expedicion", comment: "lbl_fecha_expedicion")) \(FacturaViewController.facturaSeleccionada.fechaExpedicion)"
-        lblEstado.text = "\(NSLocalizedString("lbl_estado", comment: "lbl_estado")) \(FacturaViewController.facturaSeleccionada.estado)"
-        lblValorTotalFactura.text = "\(NSLocalizedString("lbl_valor_total_factura", comment: "lbl_valor_total_factura")) \(FacturaViewController.facturaSeleccionada.valorTotalFactura)"
+        lblNumeroFactura.text = "\(NSLocalizedString("lbl_numero_factura", comment: "lbl_numero_factura"))\(": ") \(FacturaViewController.facturaSeleccionada.numeroFactura)"
+        lblFechaExpedicion.text = "\(NSLocalizedString("lbl_fecha_expedicion", comment: "lbl_fecha_expedicion"))\(": ") \(FacturaViewController.facturaSeleccionada.fechaExpedicion)"
+        lblEstado.text = "\(NSLocalizedString("lbl_estado", comment: "lbl_estado"))\(": ") \(FacturaViewController.facturaSeleccionada.estado)"
+        lblValorTotalFactura.text = "\(NSLocalizedString("lbl_valor_total_factura", comment: "lbl_valor_total_factura"))\(": ") \(FacturaViewController.facturaSeleccionada.valorTotalFactura)"
         
         lblCiudad.text = NSLocalizedString("lbl_ciudad", comment: "lbl_ciudad")
         lblFechaRadicacion.text = NSLocalizedString("lbl_fecha_radicacion", comment: "lbl_fecha_radicacion")

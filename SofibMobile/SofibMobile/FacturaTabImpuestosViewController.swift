@@ -23,10 +23,10 @@ class FacturaTabImpuestosViewController: UIViewController , UITableViewDataSourc
         if let solicitud = DetalleFacturaViewController.jsonDetalleFactura  as? Dictionary<String, Any>{
             
             FacturaTabImpuestosViewController.jsonTabImpuestos = solicitud["impuestos"] as? NSArray
-            lblNumeroFactura.text = "\(NSLocalizedString("lbl_numero_factura", comment: "lbl_numero_factura")) \((solicitud["facturaNro"] as? String ?? ""))"
-            lblValorIva.text = "\(NSLocalizedString("lbl_valor_iva", comment: "lbl_valor_iva")) \((solicitud["valorIva"] as? String ?? ""))"
-            lblValorTotalPagar.text = "\(NSLocalizedString("lbl_valor_iva", comment: "lbl_valor_iva")) \((solicitud["valorTotalPagar"] as? String ?? ""))"
-            lblValorTotalFactura.text = "\(NSLocalizedString("lbl_valor_total_factura", comment: "lbl_valor_total_factura")) \((solicitud["valorTotalFactura"] as? String ?? ""))"
+            lblNumeroFactura.text = "\(NSLocalizedString("lbl_numero_factura", comment: "lbl_numero_factura")) \(": ")\((solicitud["facturaNro"] as? String ?? ""))"
+            lblValorIva.text = "\(NSLocalizedString("lbl_valor_iva", comment: "lbl_valor_iva"))\(": ") \((solicitud["valorIva"] as? String ?? ""))"
+            lblValorTotalPagar.text = "\(NSLocalizedString("lbl_valor_total_pagar", comment: "lbl_valor_total_pagar"))\(": ") \((solicitud["valorTotalPagar"] as? String ?? ""))"
+            lblValorTotalFactura.text = "\(NSLocalizedString("lbl_valor_total_factura", comment: "lbl_valor_total_factura"))\(": ") \((solicitud["valorTotalFactura"] as? String ?? ""))"
         }
         
         // Do any additional setup after loading the view.

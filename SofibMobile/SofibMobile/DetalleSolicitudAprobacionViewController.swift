@@ -40,9 +40,9 @@ class DetalleSolicitudAprobacionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        lblNombrePaciente.text = "\(NSLocalizedString("lbl_nombre_paciente", comment: "lbl_nombre_paciente")) \(SolicitudAprobacionViewController.solicitudAprobacionSeleccionado.nombrePaciente)"
-         lblEstado.text = "\(NSLocalizedString("lbl_estado", comment: "lbl_estado")) \(SolicitudAprobacionViewController.solicitudAprobacionSeleccionado.estado)"
-         lblFechaSolicitud.text = "\(NSLocalizedString("lbl_fecha_solicitud", comment: "lbl_fecha_solicitud")) \(SolicitudAprobacionViewController.solicitudAprobacionSeleccionado.fechaSolicitud)"
+        lblNombrePaciente.text = "\(NSLocalizedString("lbl_nombre_paciente", comment: "lbl_nombre_paciente"))\(": ") \(SolicitudAprobacionViewController.solicitudAprobacionSeleccionado.nombrePaciente)"
+         lblEstado.text = "\(NSLocalizedString("lbl_estado", comment: "lbl_estado"))\(": ") \(SolicitudAprobacionViewController.solicitudAprobacionSeleccionado.estado)"
+         lblFechaSolicitud.text = "\(NSLocalizedString("lbl_fecha_solicitud", comment: "lbl_fecha_solicitud"))\(": ") \(SolicitudAprobacionViewController.solicitudAprobacionSeleccionado.fechaSolicitud)"
         
         lblDescripcion.text = NSLocalizedString("lbl_descripcion", comment: "lbl_descripcion")
         lblTipoAutorizacion.text = NSLocalizedString("lbl_tipo_autorizacion", comment: "lbl_tipo_autorizacion")

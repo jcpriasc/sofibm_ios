@@ -58,11 +58,11 @@ class DetalleGiroViewController: UIViewController {
         lblAprobadoGiro.text = NSLocalizedString("lbl_aprobado_giro", comment: "lbl_aprobado_giro")
         lblJustificacionAnulacion.text = NSLocalizedString("lbl_justificacion_anulacion", comment: "lbl_justificacion_anulacion")
         
-        lblNumeroSolicitud.text = "\(NSLocalizedString("lbl_numero_solicitud", comment: "lbl_numero_solicitud")) \(GiroViewController.giroSeleccionado.numeroSolicitud)"
-        lblTipoGiro.text = "\(NSLocalizedString("lbl_tipo_giro", comment: "lbl_tipo_giro")) \(GiroViewController.giroSeleccionado.tipoGiro)"
-        lblIdentificacionBeneficiario.text = "\(NSLocalizedString("lbl_identificacion_beneficiario", comment: "lbl_identificacion_beneficiario")) \(GiroViewController.giroSeleccionado.identificacionBeneficiario)"
-        lblBeneficiario.text = "\(NSLocalizedString("lbl_beneficiario", comment: "lbl_beneficiario")) \(GiroViewController.giroSeleccionado.beneficiario)"
-        lblEstado.text = "\(NSLocalizedString("lbl_estado", comment: "lbl_estado")) \(GiroViewController.giroSeleccionado.estado)"
+        lblNumeroSolicitud.text = "\(NSLocalizedString("lbl_numero_solicitud", comment: "lbl_numero_solicitud"))\(": ") \(GiroViewController.giroSeleccionado.numeroSolicitud)"
+        lblTipoGiro.text = "\(NSLocalizedString("lbl_tipo_giro", comment: "lbl_tipo_giro"))\(": ") \(GiroViewController.giroSeleccionado.tipoGiro)"
+        lblIdentificacionBeneficiario.text = "\(NSLocalizedString("lbl_identificacion_beneficiario", comment: "lbl_identificacion_beneficiario")) \(": ")\(GiroViewController.giroSeleccionado.identificacionBeneficiario)"
+        lblBeneficiario.text = "\(NSLocalizedString("lbl_beneficiario", comment: "lbl_beneficiario"))\(": ") \(GiroViewController.giroSeleccionado.beneficiario)"
+        lblEstado.text = "\(NSLocalizedString("lbl_estado", comment: "lbl_estado"))\(": ") \(GiroViewController.giroSeleccionado.estado)"
         
         txtTipoIdentificacionBeneficiario.text = GiroViewController.giroSeleccionado.tipoIdentificacionBeneficiario
         txtFechaInicio.text = GiroViewController.giroSeleccionado.fechaInicio
