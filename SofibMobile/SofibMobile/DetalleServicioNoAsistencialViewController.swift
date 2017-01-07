@@ -31,8 +31,9 @@ class DetalleServicioNoAsistencialViewController: UIViewController {
         lblJustificacionCancelado.text = NSLocalizedString("lbl_justificacion_cancelacion", comment: "lbl_justificacion_cancelacion")
         
         lblCiudad.text = ServicioNoAsistencialViewController.servicioNoAsistencial.ciudad
-        lblTipoSolicitud.text = "\(NSLocalizedString("lbl_numero_solicitud", comment: "lbl_numero_solicitud")) \(ServicioNoAsistencialViewController.servicioNoAsistencial.tipoSolicitud)"
-        lblNumeroSolicitud.text = "\(NSLocalizedString("lbl_numero_solicitud", comment: "lbl_numero_solicitud")) \(ServicioNoAsistencialViewController.servicioNoAsistencial.numeroSolicitud)"
+        lblTipoSolicitud.text = "\(NSLocalizedString("lbl_tipo_solicitud", comment: "lbl_tipo_solicitud")) \(": ")\(ServicioNoAsistencialViewController.servicioNoAsistencial.tipoSolicitud)"
+        
+        lblNumeroSolicitud.text = "\(NSLocalizedString("lbl_numero_solicitud", comment: "lbl_numero_solicitud"))\(": ") \(ServicioNoAsistencialViewController.servicioNoAsistencial.numeroSolicitud)"
         
         txtJustificacion.text = ServicioNoAsistencialViewController.servicioNoAsistencial.justificacion
         txtEstado.text = ServicioNoAsistencialViewController.servicioNoAsistencial.estado
