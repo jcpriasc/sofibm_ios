@@ -109,6 +109,7 @@
 		A44581031DCD845B00838456 /* OpcionesSecundariasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44581021DCD845B00838456 /* OpcionesSecundariasViewController.swift */; };
 		A44A5B011DC972F400A6553D /* ConsultaSolicitudesAtencionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44A5AFF1DC972F400A6553D /* ConsultaSolicitudesAtencionController.swift */; };
 		A44A5B041DC9832A00A6553D /* SolicitudAtencionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44A5B031DC9832A00A6553D /* SolicitudAtencionTableViewCell.swift */; };
+		A45ABD291E22C650004EE6B4 /* DetalleInformeMedicoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45ABD281E22C650004EE6B4 /* DetalleInformeMedicoViewController.swift */; };
 		A463B4AE1E218D7700AF0981 /* DetalleEpicrisisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A463B4AD1E218D7700AF0981 /* DetalleEpicrisisViewController.swift */; };
 		A467DA531DDD4E5E004FE4D8 /* DetalleAutorizacionesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467DA521DDD4E5E004FE4D8 /* DetalleAutorizacionesViewCell.swift */; };
 		A467DA551DDD50D5004FE4D8 /* DetalleAutorizacionesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467DA541DDD50D5004FE4D8 /* DetalleAutorizacionesViewController.swift */; };
@@ -265,6 +266,7 @@
 		A44581021DCD845B00838456 /* OpcionesSecundariasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpcionesSecundariasViewController.swift; sourceTree = "<group>"; };
 		A44A5AFF1DC972F400A6553D /* ConsultaSolicitudesAtencionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsultaSolicitudesAtencionController.swift; sourceTree = "<group>"; };
 		A44A5B031DC9832A00A6553D /* SolicitudAtencionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SolicitudAtencionTableViewCell.swift; sourceTree = "<group>"; };
+		A45ABD281E22C650004EE6B4 /* DetalleInformeMedicoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleInformeMedicoViewController.swift; sourceTree = "<group>"; };
 		A463B4AD1E218D7700AF0981 /* DetalleEpicrisisViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleEpicrisisViewController.swift; sourceTree = "<group>"; };
 		A467DA521DDD4E5E004FE4D8 /* DetalleAutorizacionesViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleAutorizacionesViewCell.swift; sourceTree = "<group>"; };
 		A467DA541DDD50D5004FE4D8 /* DetalleAutorizacionesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleAutorizacionesViewController.swift; sourceTree = "<group>"; };
@@ -435,6 +437,7 @@
 				A46F98631DEF92A2000B19BE /* LoginViewController.swift */,
 				110E7DFB1E00E746004DB17B /* DetalleDocumentoMedicoViewController.swift */,
 				A463B4AD1E218D7700AF0981 /* DetalleEpicrisisViewController.swift */,
+				A45ABD281E22C650004EE6B4 /* DetalleInformeMedicoViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -890,6 +893,7 @@
 				11309A881DED0DBF00E79070 /* NotaCreditoDebito.swift in Sources */,
 				110B9CA21DEE7A2E0020585A /* UtilizacionesTabAdministracionesViewController.swift in Sources */,
 				1181F02E1DEF775000E92A15 /* NotaCreditoDebitoTabInformacionViewController.swift in Sources */,
+				A45ABD291E22C650004EE6B4 /* DetalleInformeMedicoViewController.swift in Sources */,
 				A4C5E3A91DDB61CA00294883 /* BitacoraViewCell.swift in Sources */,
 				110B9CAC1DEF20340020585A /* DetalleNotaCreditoDebito.swift in Sources */,
 				110B9CA41DEE7A540020585A /* UtilizacionesTabUtilizacionesViewCellController.swift in Sources */,

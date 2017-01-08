@@ -1,24 +1,20 @@
 //
-//  DetalleDocumentoMedicoViewController.swift
+//  DetalleInformeMedicoViewController.swift
 //  SofibMobile
 //
-//  Created by Cesar Lopez on 13/12/16.
-//  Copyright © 2016 vortexbird. All rights reserved.
+//  Created by JUAN CAMILO PUENTE RIASCOS on 1/8/17.
+//  Copyright © 2017 vortexbird. All rights reserved.
 //
 
 import UIKit
 
-class DetalleDocumentoMedicoViewController: UIViewController {
+class DetalleInformeMedicoViewController: UIViewController {
 
     @IBOutlet var webView: UIWebView!
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(DocumentosMedicosViewController.path!)
-        webView.loadRequest(URLRequest(url: DocumentosMedicosViewController.path!))
-        
-        
+        print(InformesMedicosViewController.path!)
+        webView.loadRequest(URLRequest(url: InformesMedicosViewController.path!))
         // Do any additional setup after loading the view.
     }
 

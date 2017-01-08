@@ -36,7 +36,7 @@ class FiltrosSolicitudAtencionController: UIViewController, UIPickerViewDelegate
     let ciudadFinalPickerView = UIPickerView()
     
     override func viewWillAppear(_ animated: Bool) {
-        
+
         lblBusquedaAvanzada.text = NSLocalizedString("busqueda_avanzada", comment: "Busqueda Avanzada")
         txtIdentificacion.placeholder = NSLocalizedString("identificacion", comment: "Identificacion")
         txtSolicitudAtencion.placeholder = NSLocalizedString("solicitud_atencion", comment: "Solicitud Atencion")
