@@ -230,7 +230,7 @@
 "lbl_usuario_incorrecto"="El usuario y la contraseña son incorrectas";
 "lbl_nota_credito_debito"= "Nota Crédito/Débito";
 "lbl_ver_detalle"= "Ver Detalle";
-"lbl_pdf_en"= "Descargar PDF en Español";
-"lbl_pdf_es"= "Descargar PDF en Ingles";
+"lbl_pdf_en"= "Descargar PDF en Ingles";
+"lbl_pdf_es"= "Descargar PDF en Español";
 "lbl_cancelar"= "Cancelar";
 "lbl_seleccionar_opcion"="Por favor seleccione una opción";

@@ -10848,10 +10848,13 @@
                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="Documentos Medicos" id="SRC-58-Z5u">
+                                    <navigationItem title="Informes Médicos" id="SRC-58-Z5u">
                                         <barButtonItem key="backBarButtonItem" title="Atras" id="VGS-zc-hkD"/>
                                         <barButtonItem key="leftBarButtonItem" systemItem="reply" id="Qy6-OK-Bs8">
                                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <connections>
+                                                <segue destination="ENe-nb-J4U" kind="show" id="RQs-EE-xak"/>
+                                            </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" image="icon_settings" id="O3u-qJ-30V">
                                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

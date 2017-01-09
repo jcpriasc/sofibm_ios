@@ -59,6 +59,15 @@ class InformesMedicosViewController: UIViewController, UITableViewDataSource, UI
     
     public func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath?{
         let fileSeleccionada = indexPath[1]
+        
+        var consInformeMedico = 0
+        
+        if let solicitud = self.jsonInformesMedicos[fileSeleccionada] as? Dictionary<String, Any>{
+            //opcionSeleccionada = (solicitud["nombreDocumento"] as! String?)!;
+            //file = (solicitud["archivo"] as! String?)!;
+            consInformeMedico = (solicitud["consInformeMedico"] as! Int?)!;
+        }
+        
         //let actionSheet = UIAlertController(title: "Detalle", message: "Seleccione una opción", preferredStyle: UIAlertControllerStyle.actionSheet)
         let actionSheet = UIAlertController(title: lblVerDetalle, message: lblSeleccionarOpcion, preferredStyle: .actionSheet)
         
@@ -68,7 +77,9 @@ class InformesMedicosViewController: UIViewController, UITableViewDataSource, UI
         
         actionSheet.addAction(UIAlertAction(title: lblPdfEspanol, style: .default, handler: { (action) in
             
-            let pathURL = "http://pruebas-sofib.coomeva.com.co/cni-web/exportDocument?format=pdf&reportName=informe_medico&CONS_INFORME_MEDICO=396&CONS_SOLICITUD_ATENCION=730&nocache=15416516316"
+            let pathURL = PropertiesProject.URL_INFO_MED+String(consInformeMedico)+PropertiesProject.complement1_info_med+ConsultaSolicitudesAtencionController.solicitudAtencionSeleccionada.consSolicitud+PropertiesProject.complement2_info_med;
+            
+            print(pathURL)
             
             let randomNum:UInt32 = arc4random_uniform(1000)
             
@@ -111,19 +122,57 @@ class InformesMedicosViewController: UIViewController, UITableViewDataSource, UI
             }
             task.resume()
             
-            
-            //let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "detalleInformeMedico")
-            //self.show(vc as! UIViewController, sender: vc)
-            
-            //print("pdf Espanol "+String(fileSeleccionada));
         }))
         
         actionSheet.addAction(UIAlertAction(title: lblPdfIngles, style: .default, handler: { (action) in
-            print("pdf Ingles "+String(fileSeleccionada));
+            let pathURL = PropertiesProject.URL_INFO_MED+String(consInformeMedico)+PropertiesProject.complement1_info_med+ConsultaSolicitudesAtencionController.solicitudAtencionSeleccionada.consSolicitud+PropertiesProject.complement2_info_med;
+            
+            print(pathURL)
+            
+            let randomNum:UInt32 = arc4random_uniform(1000)
+            
+            let documentsUrl:URL =  FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first as URL!
+            InformesMedicosViewController.path = documentsUrl.appendingPathComponent("informe_medico"+String(randomNum)+".pdf")
+            
+            let fileURL = URL(string: pathURL)
+            let sessionConfig = URLSessionConfiguration.default
+            let session = URLSession(configuration: sessionConfig)
+            
+            let request = URLRequest(url:fileURL!)
+            
+            let task = session.downloadTask(with: request) { (tempLocalUrl, response, error) in
+                
+                
+                if let tempLocalUrl = tempLocalUrl, error == nil {
+                    // Success
+                    if let statusCode = (response as? HTTPURLResponse)?.statusCode {
+                        print("Successfully downloaded. Status code: \(statusCode)")
+                    }
+                    
+                    do {
+                        try FileManager.default.copyItem(at: tempLocalUrl, to: InformesMedicosViewController.path!)
+                        
+                        let url = NSURL.fileURL(withPath: (InformesMedicosViewController.path?.absoluteString)!)
+                        print(url)
+                        //webView.loadRequest(url)
+                        DispatchQueue.main.async {
+                            let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "detalleInformeMedicoPDF")
+                            self.show(vc as! UIViewController, sender: vc)
+                        }
+                    } catch (let writeError) {
+                        print("Error creating a file \(InformesMedicosViewController.path!) : \(writeError)")
+                    }
+                    
+                } else {
+                    print("Error took place while downloading a file. Error description");
+                }
+                
+            }
+            task.resume()
         }))
         
         actionSheet.addAction(UIAlertAction(title: lblCancelar, style: .cancel, handler: { (action) in
-             print("cancelar "+String(fileSeleccionada));
+            
         }))
         
         

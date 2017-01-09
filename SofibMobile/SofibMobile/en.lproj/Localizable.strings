@@ -228,7 +228,7 @@
 "lbl_usuario_incorrecto"="User and password are incorrect";
 "lbl_nota_credito_debito"= "Credit/Debit Notes";
 "lbl_ver_detalle"= "View Detail";
-"lbl_pdf_en"= "Downloan PDF in Spanish";
-"lbl_pdf_es"= "Downloan PDF in English";
+"lbl_pdf_en"= "Downloan PDF in English";
+"lbl_pdf_es"= "Downloan PDF in Spanish";
 "lbl_cancelar"= "Cancel";
 "lbl_seleccionar_opcion"="Please Choose Option";
