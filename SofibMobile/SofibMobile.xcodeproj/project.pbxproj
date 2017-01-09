@@ -118,6 +118,7 @@
 		A46F985F1DEF202C000B19BE /* DetalleBitacoraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46F985E1DEF202C000B19BE /* DetalleBitacoraViewController.swift */; };
 		A46F98621DEF78FD000B19BE /* CargarPickers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46F98611DEF78FD000B19BE /* CargarPickers.swift */; };
 		A46F98641DEF92A2000B19BE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46F98631DEF92A2000B19BE /* LoginViewController.swift */; };
+		A470AF181E243EB700278113 /* AjustesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470AF171E243EB700278113 /* AjustesViewController.swift */; };
 		A4B6F0891DD2BB42000F5A97 /* InformesMedicosViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B6F0881DD2BB42000F5A97 /* InformesMedicosViewCell.swift */; };
 		A4B6F08B1DD2C539000F5A97 /* InformesMedicosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B6F08A1DD2C539000F5A97 /* InformesMedicosViewController.swift */; };
 		A4B6F08D1DD2DAF5000F5A97 /* DocumentosMedicosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B6F08C1DD2DAF5000F5A97 /* DocumentosMedicosViewController.swift */; };
@@ -275,6 +276,7 @@
 		A46F985E1DEF202C000B19BE /* DetalleBitacoraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleBitacoraViewController.swift; sourceTree = "<group>"; };
 		A46F98611DEF78FD000B19BE /* CargarPickers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CargarPickers.swift; sourceTree = "<group>"; };
 		A46F98631DEF92A2000B19BE /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A470AF171E243EB700278113 /* AjustesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AjustesViewController.swift; sourceTree = "<group>"; };
 		A4B6F0881DD2BB42000F5A97 /* InformesMedicosViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InformesMedicosViewCell.swift; sourceTree = "<group>"; };
 		A4B6F08A1DD2C539000F5A97 /* InformesMedicosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InformesMedicosViewController.swift; sourceTree = "<group>"; };
 		A4B6F08C1DD2DAF5000F5A97 /* DocumentosMedicosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentosMedicosViewController.swift; sourceTree = "<group>"; };
@@ -438,6 +440,7 @@
 				110E7DFB1E00E746004DB17B /* DetalleDocumentoMedicoViewController.swift */,
 				A463B4AD1E218D7700AF0981 /* DetalleEpicrisisViewController.swift */,
 				A45ABD281E22C650004EE6B4 /* DetalleInformeMedicoViewController.swift */,
+				A470AF171E243EB700278113 /* AjustesViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -900,6 +903,7 @@
 				11F894371DDD049200A58E45 /* GiroConceptoViewController.swift in Sources */,
 				11E3625C1DD2B67D00354EB4 /* FacturaViewController.swift in Sources */,
 				A40980DC1DF86B65000C6037 /* Swift3Base64.swift in Sources */,
+				A470AF181E243EB700278113 /* AjustesViewController.swift in Sources */,
 				11E362621DD2B6D400354EB4 /* UtilizacionesViewCellController.swift in Sources */,
 				11F894331DDD046300A58E45 /* GiroManutencionViewController.swift in Sources */,
 				11F8943F1DDD10B500A58E45 /* FacturaInformacionViewController.swift in Sources */,
