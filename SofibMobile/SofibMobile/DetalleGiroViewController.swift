@@ -70,8 +70,7 @@ class DetalleGiroViewController: UIViewController {
         txtTipoIdentificacionBeneficiario.text = GiroViewController.giroSeleccionado.tipoIdentificacionBeneficiario
         txtFechaInicio.text = GiroViewController.giroSeleccionado.fechaInicio
         txtFechaFin.text = GiroViewController.giroSeleccionado.fechaFin
-       // txtValorMonedaExtranjero.text =  FormatoDinero.formatearMoneda(texto: GiroViewController.giroSeleccionado.valorMonedaExtranjero)
-        txtValorMonedaExtranjero.text =  FormatoDinero.formatearMoneda(texto: "")
+        txtValorMonedaExtranjero.text =  FormatoDinero.formatearMoneda(texto: GiroViewController.giroSeleccionado.valorMonedaExtranjero)
 
         txtValorMonedaLocal.text = GiroViewController.giroSeleccionado.valorMonedaLocal
         txtRegistraDevolucion.text = GiroViewController.giroSeleccionado.registraDevolucion

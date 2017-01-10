@@ -14,7 +14,7 @@ class FormatoDinero{
     
     static func formatearMoneda( texto: String?) -> String? {
         
-        if(texto == nil){
+        if(texto == nil || texto! == ""){
             return ""
             
         }else{
