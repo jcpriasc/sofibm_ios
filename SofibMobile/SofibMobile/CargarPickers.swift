@@ -139,7 +139,7 @@ class CargarPickers{
         }
         task.resume()
     }
-    
+
     
     static func cargarTiposServicios(){
         let url = URL(string: PropertiesProject.URL+PropertiesProject.complement_tipos_servicios+listParams)
@@ -168,9 +168,6 @@ class CargarPickers{
         }
         task.resume()
     }
-    
-
-
 
 }
 

@@ -234,3 +234,15 @@
 "lbl_pdf_es"= "Descargar PDF en Español";
 "lbl_cancelar"= "Cancelar";
 "lbl_seleccionar_opcion"="Por favor seleccione una opción";
+"lbl_informacion_general"="Información General";
+"lbl_datos_basicos_paciente"="Datos Básicos del Paciente";
+"lbl_tipo_aprobacion"="Tipo de Aprobación";
+"lbl_nombre_conveio"="Nombre Convenio";
+"lbl_tipo_convenio"="Tipo Convenio";
+"lbl_pais"="País";
+"lbl_diagnostico"="Diagnóstico";
+"lbl_estado_paciente"="Estado del Paciente";
+"lbl_fecha_estimada_regreso"="Fecha Estimada de Regreso";
+"lbl_procedimiento"="Procedimiento";
+"lbl_entidad"="Entidad";
+"lbl_tipo"="Tipo";

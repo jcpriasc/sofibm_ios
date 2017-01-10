@@ -36,6 +36,9 @@ class DetalleSolicitudAprobacionViewController: UIViewController {
     @IBOutlet var txtPrestador: UILabel!
     @IBOutlet var txtJustificacion: UILabel!
     
+    static var jsonDetalleSolicitudAprobacion: NSDictionary?
+    
+    let params: String = "/SAC/ABCD1234/"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -72,6 +75,61 @@ class DetalleSolicitudAprobacionViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func action_verDetalle(_ sender: Any) {
+        obtenerDetalle()
+    }
+    
+    func obtenerDetalle(){
+        
+        
+        let codigoTexto = SolicitudAprobacionViewController.solicitudAprobacionSeleccionado.idAprobacion
+        
+        let url = URL(string: PropertiesProject.URL+PropertiesProject.complement_detalle_aprobacion+params+codigoTexto)
+        
+        let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
+            
+            if error != nil
+            {
+                print ("ERROR")
+            }
+            else
+            {
+                if let content = data
+                {
+                    
+                    do
+                    {
+                     
+                        DetalleSolicitudAprobacionViewController.jsonDetalleSolicitudAprobacion = try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSDictionary
+                        
+                        if ((DetalleSolicitudAprobacionViewController.jsonDetalleSolicitudAprobacion) != nil && (DetalleSolicitudAprobacionViewController.jsonDetalleSolicitudAprobacion?.count)!>0){
+                        
+                            let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "tabSolicitudesAprobacion")
+                            self.show(vc as! UIViewController, sender: vc)
+                            
+                        }else{
+                            //print(NSLocalizedString("lbl_sin_resultados", comment: "lbl_sin_resultados"));
+                            let alert = UIAlertController(title: NSLocalizedString("lbl_alerta", comment: "lbl_alerta"), message: NSLocalizedString("lbl_sin_resultados", comment: "lbl_sin_resultados"), preferredStyle: UIAlertControllerStyle.alert)
+                            alert.addAction(UIAlertAction(title: NSLocalizedString("lbl_aceptar", comment: "lbl_aceptar"), style: UIAlertActionStyle.default, handler: nil))
+                            self.present(alert, animated: true, completion: nil)
+                            
+                        }
+                        
+                    }
+                    catch
+                    {
+                        
+                    }
+                    
+                }
+            }
+        }
+        
+        task.resume()
+        
+    }
+    
     
 
     /*

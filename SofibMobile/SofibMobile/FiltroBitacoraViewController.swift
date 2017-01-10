@@ -46,6 +46,7 @@ class FiltroBitacoraViewController: UIViewController, UIPickerViewDelegate, UIPi
             }
         }
         
+        
         if((pickerTipoServicio.text) != nil && (pickerTipoServicio.text) != ""){
             let rowSelected = tipoServicioPickerView.selectedRow(inComponent: 0);
             if let data = CargarPickers.tipoServiciosJson![rowSelected-1] as? Dictionary<String, Any>{
@@ -157,7 +158,7 @@ class FiltroBitacoraViewController: UIViewController, UIPickerViewDelegate, UIPi
     }
     
     func donePressed(_ sender: UIBarButtonItem) {
-        
+        print(sender)
         pickerTipoRegistro.resignFirstResponder()
         pickerTipoServicio.resignFirstResponder()
         
@@ -206,6 +207,7 @@ class FiltroBitacoraViewController: UIViewController, UIPickerViewDelegate, UIPi
             return tipoRegistroSeleccionado
         }
         
+        
         if pickerView.tag == 2 {
             var tipoServicioSeleccionado = "";
             if row == 0 {
@@ -228,6 +230,7 @@ class FiltroBitacoraViewController: UIViewController, UIPickerViewDelegate, UIPi
                 pickerTipoRegistro.text = (data["descripcion"] as! String?)!;
             }
         }
+        
         
         if pickerView.tag == 2 {
             if row == 0 {

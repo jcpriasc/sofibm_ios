@@ -23,5 +23,6 @@ class SolicitudAprobacion
     var proveedor: String = ""
     var prestador: String = ""
     var justificacion: String = ""
+    var idAprobacion: String = ""
     
 }

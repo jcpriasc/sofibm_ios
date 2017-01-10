@@ -11,7 +11,7 @@ import UIKit
 class SolicitudAprobacionViewController:  UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     let jsonSolicitudAprobacion: NSArray = OpcionesSecundariasLogViewController.jsonSolicitudAprobacion!;
-    let lstSolicitudAprobacion = ["Solicitud 1", "Solicitud 2", "Solicitud 3", "Solicitud 4", "Solicitud 5", "Solicitud 6", "Solicitud 7", "Solicitud 9"]
+    //let lstSolicitudAprobacion = ["Solicitud 1", "Solicitud 2", "Solicitud 3", "Solicitud 4", "Solicitud 5", "Solicitud 6", "Solicitud 7", "Solicitud 9"]
     
     static var solicitudAprobacionSeleccionado = SolicitudAprobacion()
 
@@ -69,7 +69,7 @@ class SolicitudAprobacionViewController:  UIViewController, UITableViewDataSourc
             SolicitudAprobacionViewController.solicitudAprobacionSeleccionado.proveedor = (solicitud["proveedor"] as? String ?? "");
             SolicitudAprobacionViewController.solicitudAprobacionSeleccionado.prestador = (solicitud["prestador"] as? String ?? "");
             SolicitudAprobacionViewController.solicitudAprobacionSeleccionado.justificacion = (solicitud["justificacion"] as? String ?? "");
-            
+            SolicitudAprobacionViewController.solicitudAprobacionSeleccionado.idAprobacion = (solicitud["idAprobacion"] as? String ?? "");
         }
         
         return indexPath

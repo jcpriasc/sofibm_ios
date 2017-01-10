@@ -232,3 +232,15 @@
 "lbl_pdf_es"= "Downloan PDF in Spanish";
 "lbl_cancelar"= "Cancel";
 "lbl_seleccionar_opcion"="Please Choose Option";
+"lbl_informacion_general"= "General Information";
+"lbl_datos_basicos_paciente"= "Basic Patient Data";
+"lbl_tipo_aprobacion"= "Type of Approval";
+"lbl_nombre_conveio"= "Name Contract";
+"lbl_tipo_convenio"= "Type Contract";
+"lbl_pais"= "Country";
+"lbl_diagnostico"= "Diagnostic";
+"lbl_estado_paciente"= "Patient Status";
+"lbl_fecha_estimada_regreso"= "Estimated Date of Return";
+"lbl_procedimiento"= "Procedure";
+"lbl_entidad"= "Entity";
+"lbl_tipo"= "Type";

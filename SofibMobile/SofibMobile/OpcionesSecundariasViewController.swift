@@ -416,7 +416,7 @@ class OpcionesSecundariasViewController: UIViewController, UITableViewDataSource
 
     func obtenerSolicitudAprobacion(){
         
-        let url = URL(string: PropertiesProject.URL+PropertiesProject.complement_aprobacion+"/SAC/ABCD1234/0/0/0/"+ConsultaSolicitudesAtencionController.solicitudAtencionSeleccionada.consSolicitud+"/l")
+        let url = URL(string: PropertiesProject.URL+PropertiesProject.complement_aprobacion+"/SAC/ABCD1234/0/0/0/"+ConsultaSolicitudesAtencionController.solicitudAtencionSeleccionada.consSolicitud+"/m")
         
         let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
             if error != nil
