@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import CoreData
 class AjustesViewController: UIViewController {
 
 
@@ -38,7 +38,14 @@ class AjustesViewController: UIViewController {
     
     
     func handleTapCerrarSesion(_ sender: UITapGestureRecognizer) {
-        print("Cerrar Sesion")
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        if #available(iOS 10.0, *) {
+            let context = appDelegate.persistentContainer.viewContext
+            context.deletedObjects
+            print("delete")
+            exit(0);
+            
+        }
     }
     
     func handleTapCambiarIdioma(_ sender: UITapGestureRecognizer) {
