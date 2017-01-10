@@ -13,6 +13,8 @@ class PropertiesProject{
     static var URL: String = "http://pruebas-sectorsalud.coomeva.com.co/saludmp-ws/jax-rs/saludmp-sofibmobile"
     static var URL_PROFILE: String = "http://pruebas-sectorsalud.coomeva.com.co/saludmp-ws/jax-rs/saludmp-autOficinaVirtual"
     static var URL_INFO_MED: String = "http://pruebas-sofib.coomeva.com.co/cni-web/exportDocument?format=pdf&reportName=informe_medico&CONS_INFORME_MEDICO="
+    static var URL_INFO_DOCU_GIRO: String = "http://pruebas-sofib.coomeva.com.co/cni-web/exportDocument?format=pdf&useDataSource=true&reportName=reporteGiro&ID_GIRO="
+    
     static var complement1_info_med: String = "&CONS_SOLICITUD_ATENCION="
     static var complement2_info_med: String = "&nocache=15416516316"
     

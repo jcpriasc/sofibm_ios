@@ -1,3 +1,4 @@
+
 //
 //  DetalleGiroViewController.swift
 //  SofibMobile
@@ -39,6 +40,8 @@ class DetalleGiroViewController: UIViewController {
     @IBOutlet var txtValorLegalizado: UILabel!
     @IBOutlet var txtAprobadoGiro: UILabel!
     @IBOutlet var txtJustificacionAnulacion: UILabel!
+    
+    public static var path : URL?  = nil
     
     static var jsonDetalleGiro: NSDictionary?
     let params: String = "/SAC/ABCD1234/"
@@ -88,6 +91,60 @@ class DetalleGiroViewController: UIViewController {
         obtenerDetalle()
     }
 
+    @IBAction func action_decargar_archivo(_ sender: AnyObject) {
+        
+        let pathURL = PropertiesProject.URL_INFO_DOCU_GIRO+String(GiroViewController.giroSeleccionado.consecutivo)+"&NOMBRE_ROL=ADMIN";
+       
+        print(pathURL)
+        
+        let randomNum:UInt32 = arc4random_uniform(1000)
+        
+        let documentsUrl:URL =  FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first as URL!
+        DetalleGiroViewController.path = documentsUrl.appendingPathComponent("detalleGiro"+String(randomNum)+".pdf")
+        
+        let fileURL = URL(string: pathURL)
+        let sessionConfig = URLSessionConfiguration.default
+        let session = URLSession(configuration: sessionConfig)
+        
+        let request = URLRequest(url:fileURL!)
+        
+        let task = session.downloadTask(with: request) { (tempLocalUrl, response, error) in
+            
+            
+            if let tempLocalUrl = tempLocalUrl, error == nil {
+                // Success
+                if let statusCode = (response as? HTTPURLResponse)?.statusCode {
+                    print("Successfully downloaded. Status code: \(statusCode)")
+                }
+                
+                do {
+                    try FileManager.default.copyItem(at: tempLocalUrl, to: DetalleGiroViewController.path!)
+                    
+                    let url = NSURL.fileURL(withPath: (DetalleGiroViewController.path?.absoluteString)!)
+                    print(url)
+                    //webView.loadRequest(url)
+                    DispatchQueue.main.async {
+                        let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "documendoGiroPDF")
+                        self.show(vc as! UIViewController, sender: vc)
+                    }
+                } catch (let writeError) {
+                    print("Error creating a file \(DetalleGiroViewController.path!) : \(writeError)")
+                }
+                
+            } else {
+                print("Error took place while downloading a file. Error description");
+            }
+            
+        }
+        task.resume()
+        
+        
+        
+    }
+    
+    
+    
+    
     func obtenerDetalle(){
         
         let codigo = Int(GiroViewController.giroSeleccionado.consecutivo)
