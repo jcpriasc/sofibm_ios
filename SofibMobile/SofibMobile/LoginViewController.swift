@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
     
@@ -17,15 +18,12 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var txtPassword: UITextField!
     @IBOutlet weak var segTipoUsuario: UISegmentedControl!
     
-    
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
     var usuriosJson : NSDictionary?
     
     @IBAction func action_ingresar(_ sender: AnyObject) {
         
-        
-        
         var valido = true;
-        var exitoso = false;
         
         if self.txtUsuario.text == "" {
             valido = false;
@@ -63,7 +61,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                             
                             //Array
                             self.usuriosJson = try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSDictionary
-                            print(self.usuriosJson)
                             
                             DispatchQueue.main.async {
                                 if let error = self.usuriosJson?["errorBean"] as? Dictionary<String, Any>{
@@ -71,6 +68,29 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                                     let resultado = error["codigo"] as! String
                                     
                                     if resultado == "0"{
+                                        
+                                        if #available(iOS 10.0, *) {
+                                            let context = self.appDelegate.persistentContainer.viewContext
+                                            
+                                            let newUser = NSEntityDescription.insertNewObject(forEntityName: "Users", into: context)
+                                            
+                                            newUser.setValue(self.txtUsuario.text, forKey: "user")
+                                            newUser.setValue(self.txtPassword.text, forKey: "pass")
+                                            
+                                            do
+                                            {
+                                                try context.save()
+                                                print("saved")
+                                            }
+                                            catch
+                                            {
+                                                
+                                            }
+                                            
+                                        } else {
+                                            // Fallback on earlier versions
+                                        }
+                                        
                                         let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "filtroSolicitudesView")
                                         self.show(vc as! UIViewController, sender: vc)
                                     }else{
@@ -111,6 +131,47 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         }
         
         self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard)))
+        
+        if #available(iOS 10.0, *) {
+            let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Users")
+            request.returnsObjectsAsFaults = false
+            
+            do
+            {
+                let context = appDelegate.persistentContainer.viewContext
+                let results = try context.fetch(request)
+                
+                if results.count > 0 {
+                    
+                    print("ENTRO")
+                    
+                    /*
+                    for result in results as! [NSManagedObject]{
+                        if let user = result.value(forKey: "user") as? String{
+                            print(user)
+                        }
+                    }
+ 
+                    
+                     let secondViewController:FiltrosSolicitudAtencionController = FiltrosSolicitudAtencionController()
+                     self.present(secondViewController, animated: true, completion: nil)
+                     
+                     let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "filtroSolicitudesView")
+                     self.show(vc as! UIViewController, sender: vc)
+                     
+                     let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "filtroSolicitudesView")
+                     self.present(vc as! UIViewController, animated: true)
+*/
+                    
+                    
+                }
+            
+            }
+            catch
+            {
+                print("ERROR")
+            }
+        }
         
         // Do any additional setup after loading the view.
  

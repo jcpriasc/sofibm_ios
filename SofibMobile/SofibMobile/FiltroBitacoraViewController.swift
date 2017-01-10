@@ -231,7 +231,6 @@ class FiltroBitacoraViewController: UIViewController, UIPickerViewDelegate, UIPi
             }
         }
         
-        
         if pickerView.tag == 2 {
             if row == 0 {
                 pickerTipoServicio.text = "";

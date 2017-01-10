@@ -130,6 +130,7 @@
 		A4B6F0931DD2E0D8000F5A97 /* EpicrisisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B6F0921DD2E0D8000F5A97 /* EpicrisisViewController.swift */; };
 		A4BC21F51E250B76005079C3 /* SolAprobTabDatosBasicosViewCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BC21F41E250B76005079C3 /* SolAprobTabDatosBasicosViewCellController.swift */; };
 		A4BC21F81E251434005079C3 /* SolAprobTipoAprobacionViewCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BC21F71E251434005079C3 /* SolAprobTipoAprobacionViewCellController.swift */; };
+		A4BC21FB1E251E44005079C3 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A4BC21F91E251E44005079C3 /* Model.xcdatamodeld */; };
 		A4C5E3A71DDB619A00294883 /* BitacoraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C5E3A61DDB619A00294883 /* BitacoraViewController.swift */; };
 		A4C5E3A91DDB61CA00294883 /* BitacoraViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C5E3A81DDB61CA00294883 /* BitacoraViewCell.swift */; };
 		A4C5E3AB1DDBB34A00294883 /* ProcedimientosAdicionalesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C5E3AA1DDBB34A00294883 /* ProcedimientosAdicionalesViewCell.swift */; };
@@ -293,6 +294,7 @@
 		A4B6F0921DD2E0D8000F5A97 /* EpicrisisViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpicrisisViewController.swift; sourceTree = "<group>"; };
 		A4BC21F41E250B76005079C3 /* SolAprobTabDatosBasicosViewCellController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SolAprobTabDatosBasicosViewCellController.swift; sourceTree = "<group>"; };
 		A4BC21F71E251434005079C3 /* SolAprobTipoAprobacionViewCellController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SolAprobTipoAprobacionViewCellController.swift; sourceTree = "<group>"; };
+		A4BC21FA1E251E44005079C3 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		A4C5E3A61DDB619A00294883 /* BitacoraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitacoraViewController.swift; sourceTree = "<group>"; };
 		A4C5E3A81DDB61CA00294883 /* BitacoraViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitacoraViewCell.swift; sourceTree = "<group>"; };
 		A4C5E3AA1DDBB34A00294883 /* ProcedimientosAdicionalesViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProcedimientosAdicionalesViewCell.swift; sourceTree = "<group>"; };
@@ -541,6 +543,7 @@
 				11227A281DC970C00035959B /* ViewControllerTest.swift */,
 				11227A331DCA44060035959B /* Localizable.strings */,
 				11227A3C1DCA79420035959B /* Localizable.plist */,
+				A4BC21F91E251E44005079C3 /* Model.xcdatamodeld */,
 			);
 			path = SofibMobile;
 			sourceTree = "<group>";
@@ -889,6 +892,7 @@
 				110B9CA81DEF1DD40020585A /* DetalleFactura.swift in Sources */,
 				1181F0361DEF860C00E92A15 /* NotaCreditoDebitoTabImpuestoDetalleViewController.swift in Sources */,
 				115424881DDD3FFE004EE9E9 /* NotaServicioViewCellController.swift in Sources */,
+				A4BC21FB1E251E44005079C3 /* Model.xcdatamodeld in Sources */,
 				11F894431DDD166F00A58E45 /* FacturaGlosaViewController.swift in Sources */,
 				11F894311DDD044700A58E45 /* GiroManutencionViewCellController.swift in Sources */,
 				11E3626C1DD2B72900354EB4 /* SolicitudAprobacionViewController.swift in Sources */,
@@ -1279,6 +1283,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A4BC21F91E251E44005079C3 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A4BC21FA1E251E44005079C3 /* Model.xcdatamodel */,
+			);
+			currentVersion = A4BC21FA1E251E44005079C3 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A4E7D19A1DC93F1E00C4E977 /* Project object */;
 }
