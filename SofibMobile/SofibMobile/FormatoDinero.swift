@@ -14,7 +14,7 @@ class FormatoDinero{
     
     static func formatearMoneda( texto: String?) -> String? {
         
-        if(texto == nil){
+        if(texto == nil || texto?.trimmingCharacters(in: NSCharacterSet.whitespacesAndNewlines) == ""){
             return ""
             
         }else{
@@ -22,8 +22,8 @@ class FormatoDinero{
             FormatoDinero.currencyFormatter.numberStyle = NumberFormatter.Style.currency
             FormatoDinero.currencyFormatter.locale = Locale.current
             
-            let numeroInt = Int(texto!)
-            let numero = NSNumber(value: numeroInt!)
+            let numeroDouble = Double(texto!)
+            let numero = NSNumber(value: numeroDouble!)
             let textoFormateado = currencyFormatter.string(from: numero)
             
             return textoFormateado

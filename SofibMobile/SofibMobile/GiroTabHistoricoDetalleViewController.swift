@@ -72,12 +72,12 @@ class GiroTabHistoricoDetalleViewController: UIViewController {
         txtBeneficiario.text = GiroTabHistoricoViewController.detalleHistoricoGiro.beneficiario
         txtFechaInicio.text = GiroTabHistoricoViewController.detalleHistoricoGiro.fechaInicio
         txtFechaFin.text = GiroTabHistoricoViewController.detalleHistoricoGiro.fechaFin
-        txtMonedaExtranjera.text = GiroTabHistoricoViewController.detalleHistoricoGiro.valorMonedaExtranjero
-        txtMonedaLocal.text = GiroTabHistoricoViewController.detalleHistoricoGiro.valorMonedaLocal
+        txtMonedaExtranjera.text = FormatoDinero.formatearMoneda(texto: GiroTabHistoricoViewController.detalleHistoricoGiro.valorMonedaExtranjero)
+        txtMonedaLocal.text = FormatoDinero.formatearMoneda(texto: GiroTabHistoricoViewController.detalleHistoricoGiro.valorMonedaLocal)
         txtRegistraDevolucion.text = GiroTabHistoricoViewController.detalleHistoricoGiro.registraDevolucion
-        txtValorDevolucion.text = GiroTabHistoricoViewController.detalleHistoricoGiro.valorDevolucion
+        txtValorDevolucion.text = FormatoDinero.formatearMoneda(texto: GiroTabHistoricoViewController.detalleHistoricoGiro.valorDevolucion)
         txtLegalizado.text = GiroTabHistoricoViewController.detalleHistoricoGiro.legalizado
-        txtValorLegalizado.text = GiroTabHistoricoViewController.detalleHistoricoGiro.valorLegalizado
+        txtValorLegalizado.text = FormatoDinero.formatearMoneda(texto: GiroTabHistoricoViewController.detalleHistoricoGiro.valorLegalizado)
         
         // Do any additional setup after loading the view.
     }
