@@ -67,6 +67,7 @@
 		1181F04A1DEFBF8900E92A15 /* GiroTabHistoricoDetalleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1181F0491DEFBF8900E92A15 /* GiroTabHistoricoDetalleViewController.swift */; };
 		11A7E5751DDBB68D0003275B /* ServiciosAdicionadosViewCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A7E5741DDBB68D0003275B /* ServiciosAdicionadosViewCellController.swift */; };
 		11A7E5771DDBB6A50003275B /* ServiciosAdicionadosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A7E5761DDBB6A50003275B /* ServiciosAdicionadosViewController.swift */; };
+		11A9D7DF1E25681B0003FCDC /* DocumentoGiroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A9D7DE1E25681B0003FCDC /* DocumentoGiroViewController.swift */; };
 		11E362451DCDC10700354EB4 /* OpcionesPrincipalesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E362441DCDC10700354EB4 /* OpcionesPrincipalesViewController.swift */; };
 		11E3624B1DD2760B00354EB4 /* ServicioNoAsistencialViewCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E3624A1DD2760B00354EB4 /* ServicioNoAsistencialViewCellController.swift */; };
 		11E3624D1DD281CD00354EB4 /* ServicioNoAsistencialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E3624C1DD281CD00354EB4 /* ServicioNoAsistencialViewController.swift */; };
@@ -228,6 +229,7 @@
 		1181F0491DEFBF8900E92A15 /* GiroTabHistoricoDetalleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiroTabHistoricoDetalleViewController.swift; sourceTree = "<group>"; };
 		11A7E5741DDBB68D0003275B /* ServiciosAdicionadosViewCellController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiciosAdicionadosViewCellController.swift; sourceTree = "<group>"; };
 		11A7E5761DDBB6A50003275B /* ServiciosAdicionadosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiciosAdicionadosViewController.swift; sourceTree = "<group>"; };
+		11A9D7DE1E25681B0003FCDC /* DocumentoGiroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentoGiroViewController.swift; sourceTree = "<group>"; };
 		11E362441DCDC10700354EB4 /* OpcionesPrincipalesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpcionesPrincipalesViewController.swift; sourceTree = "<group>"; };
 		11E3624A1DD2760B00354EB4 /* ServicioNoAsistencialViewCellController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicioNoAsistencialViewCellController.swift; sourceTree = "<group>"; };
 		11E3624C1DD281CD00354EB4 /* ServicioNoAsistencialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicioNoAsistencialViewController.swift; sourceTree = "<group>"; };
@@ -456,6 +458,7 @@
 				A470AF1D1E24929400278113 /* SolAprobTabTipoAprobacionViewController.swift */,
 				A4BC21F41E250B76005079C3 /* SolAprobTabDatosBasicosViewCellController.swift */,
 				A4BC21F71E251434005079C3 /* SolAprobTipoAprobacionViewCellController.swift */,
+				11A9D7DE1E25681B0003FCDC /* DocumentoGiroViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -972,6 +975,7 @@
 				11E362451DCDC10700354EB4 /* OpcionesPrincipalesViewController.swift in Sources */,
 				11E3624D1DD281CD00354EB4 /* ServicioNoAsistencialViewController.swift in Sources */,
 				11309A861DED0D2500E79070 /* Factura.swift in Sources */,
+				11A9D7DF1E25681B0003FCDC /* DocumentoGiroViewController.swift in Sources */,
 				A46F98621DEF78FD000B19BE /* CargarPickers.swift in Sources */,
 				A4BC21F51E250B76005079C3 /* SolAprobTabDatosBasicosViewCellController.swift in Sources */,
 				A46F98641DEF92A2000B19BE /* LoginViewController.swift in Sources */,
