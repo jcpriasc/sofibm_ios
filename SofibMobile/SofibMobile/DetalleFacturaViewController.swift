@@ -38,11 +38,14 @@ class DetalleFacturaViewController: UIViewController {
      let params: String = "/SAC/ABCD1234/"
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        let valorTotalFact = FormatoDinero.formatearMoneda(texto:FacturaViewController.facturaSeleccionada.valorTotalFactura)
 
         lblNumeroFactura.text = "\(NSLocalizedString("lbl_numero_factura", comment: "lbl_numero_factura"))\(": ") \(FacturaViewController.facturaSeleccionada.numeroFactura)"
         lblFechaExpedicion.text = "\(NSLocalizedString("lbl_fecha_expedicion", comment: "lbl_fecha_expedicion"))\(": ") \(FacturaViewController.facturaSeleccionada.fechaExpedicion)"
         lblEstado.text = "\(NSLocalizedString("lbl_estado", comment: "lbl_estado"))\(": ") \(FacturaViewController.facturaSeleccionada.estado)"
-        lblValorTotalFactura.text = "\(NSLocalizedString("lbl_valor_total_factura", comment: "lbl_valor_total_factura"))\(": ") \(FacturaViewController.facturaSeleccionada.valorTotalFactura)"
+        lblValorTotalFactura.text = "\(NSLocalizedString("lbl_valor_total_factura", comment: "lbl_valor_total_factura"))\(": ") \(valorTotalFact)"
         
         lblCiudad.text = NSLocalizedString("lbl_ciudad", comment: "lbl_ciudad")
         lblFechaRadicacion.text = NSLocalizedString("lbl_fecha_radicacion", comment: "lbl_fecha_radicacion")
@@ -57,8 +60,9 @@ class DetalleFacturaViewController: UIViewController {
         txtFechaRadicacion.text = FacturaViewController.facturaSeleccionada.fechaRadicacion
         txtFechaAprobacionRechazo.text = FacturaViewController.facturaSeleccionada.fechaAprobacionRechazo
         txtFechaAnulacion.text = FacturaViewController.facturaSeleccionada.fechaAnulacion
-        txtValorIva.text = FacturaViewController.facturaSeleccionada.valorIva
-        txtValorTotalPagar.text = FacturaViewController.facturaSeleccionada.valorTotalPagar
+        
+        txtValorIva.text = FormatoDinero.formatearMoneda(texto: FacturaViewController.facturaSeleccionada.valorIva)
+        txtValorTotalPagar.text = FormatoDinero.formatearMoneda(texto: FacturaViewController.facturaSeleccionada.valorTotalPagar)
         txtPrestadorProveedor.text = FacturaViewController.facturaSeleccionada.prestadorProveedor
         txtTipoServicio.text = FacturaViewController.facturaSeleccionada.tipoServicio
         

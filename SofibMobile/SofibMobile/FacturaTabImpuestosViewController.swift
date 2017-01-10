@@ -24,9 +24,9 @@ class FacturaTabImpuestosViewController: UIViewController , UITableViewDataSourc
             
             FacturaTabImpuestosViewController.jsonTabImpuestos = solicitud["impuestos"] as? NSArray
             lblNumeroFactura.text = "\(NSLocalizedString("lbl_numero_factura", comment: "lbl_numero_factura")) \(": ")\((solicitud["facturaNro"] as? String ?? ""))"
-            lblValorIva.text = "\(NSLocalizedString("lbl_valor_iva", comment: "lbl_valor_iva"))\(": ") \((solicitud["valorIva"] as? String ?? ""))"
-            lblValorTotalPagar.text = "\(NSLocalizedString("lbl_valor_total_pagar", comment: "lbl_valor_total_pagar"))\(": ") \((solicitud["valorTotalPagar"] as? String ?? ""))"
-            lblValorTotalFactura.text = "\(NSLocalizedString("lbl_valor_total_factura", comment: "lbl_valor_total_factura"))\(": ") \((solicitud["valorTotalFactura"] as? String ?? ""))"
+            lblValorIva.text = "\(NSLocalizedString("lbl_valor_iva", comment: "lbl_valor_iva"))\(": ") \(FormatoDinero.formatearMoneda(texto:(solicitud["valorIva"] as? String ?? "")))"
+            lblValorTotalPagar.text = "\(NSLocalizedString("lbl_valor_total_pagar", comment: "lbl_valor_total_pagar"))\(": ") \(FormatoDinero.formatearMoneda(texto:(solicitud["valorTotalPagar"] as? String ?? "")))"
+            lblValorTotalFactura.text = "\(NSLocalizedString("lbl_valor_total_factura", comment: "lbl_valor_total_factura"))\(": ") \(FormatoDinero.formatearMoneda(texto:(solicitud["valorTotalFactura"] as? String ?? "")))"
         }
         
         // Do any additional setup after loading the view.
@@ -47,7 +47,7 @@ class FacturaTabImpuestosViewController: UIViewController , UITableViewDataSourc
             cell.txtTipoImpuesto.text = (solicitud["tipoImpuesto"] as? String ?? " ");
             cell.txtServicio.text = (solicitud["servicio"] as? String ?? " ");
             cell.txtPorcentaje.text = (solicitud["porcentaje"] as? String ?? " ");
-            cell.txtValorImpuesto.text = (solicitud["valorImpuesto"] as? String ?? " ");
+            cell.txtValorImpuesto.text = FormatoDinero.formatearMoneda(texto:(solicitud["valorImpuesto"] as? String ?? " "));
             cell.txtAplicaSeguroHotelero.text = (solicitud["aplicaSeguro"] as? String ?? " ");
             
         }
