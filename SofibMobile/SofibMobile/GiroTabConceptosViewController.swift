@@ -28,8 +28,8 @@ class GiroTabConceptosViewController: UIViewController, UITableViewDataSource, U
             lblBeneficiario.text = "\(NSLocalizedString("lbl_beneficiario", comment: "lbl_beneficiario")) \(": ")\((solicitud["beneficiario"] as? String ?? ""))"
             lblFechaInicio.text = "\(NSLocalizedString("lbl_fecha_inicio", comment: "lbl_fecha_inicio")) \(": ")\((solicitud["fechaInicio"] as? String ?? ""))"
              lblFechaFin.text = "\(NSLocalizedString("lbl_fecha_fin", comment: "lbl_fecha_fin"))\(": ") \((solicitud["fechaFin"] as? String ?? ""))"
-             lblSubtotal.text = "\(NSLocalizedString("lbl_subtotal", comment: "lbl_subtotal")) \(": ")\((solicitud["acompañanteMonto"] as? String ?? ""))"
-             lblTotalConcepto.text = "\(NSLocalizedString("lbl_total_concepto", comment: "lbl_total_concepto"))\(": ") \((solicitud["acompañanteMonto"] as? String ?? ""))"
+             lblSubtotal.text = "\(NSLocalizedString("lbl_subtotal", comment: "lbl_subtotal")) \(": ")\(FormatoDinero.formatearMoneda(texto: (solicitud["acompañanteMonto"] as? String ?? "")))"
+             lblTotalConcepto.text = "\(NSLocalizedString("lbl_total_concepto", comment: "lbl_total_concepto"))\(": ") \(FormatoDinero.formatearMoneda(texto: (solicitud["acompañanteMonto"] as? String ?? "")))"
             
         }
         
@@ -52,11 +52,12 @@ class GiroTabConceptosViewController: UIViewController, UITableViewDataSource, U
             cell.txtConcepto.text = (solicitud["concepto"] as? String ?? " ");
             cell.txtDescripcion.text = (solicitud["descripcion"] as? String ?? " ");
             cell.txtCantidad.text = (solicitud["cantidad"] as? String ?? " ");
-            cell.txtValor.text = (solicitud["valor"] as? String ?? " ");
+            cell.txtValor.text = FormatoDinero.formatearMoneda(texto: (solicitud["valor"] as? String ?? " "));
             cell.txtReliquidacion.text = (solicitud["reliquidacion"] as? String ?? " ");
-            cell.txtSubtotal.text = (solicitud["subtotal"] as? String ?? " ");
-            cell.txtTrm.text = (solicitud["trm"] as? String ?? " ");
-            cell.txtTotal.text = (solicitud["total"] as? String ?? " ");
+           
+            cell.txtSubtotal.text =  FormatoDinero.formatearMoneda(texto: (solicitud["subtotal"] as? String ?? " "));
+            cell.txtTrm.text =  FormatoDinero.formatearMoneda(texto: (solicitud["trm"] as? String ?? " "));
+            cell.txtTotal.text =  FormatoDinero.formatearMoneda(texto: (solicitud["total"] as? String ?? " "));
             
         }
         
