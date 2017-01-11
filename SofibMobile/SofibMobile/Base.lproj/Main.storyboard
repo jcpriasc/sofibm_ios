@@ -2642,7 +2642,7 @@
                                         <barButtonItem key="leftBarButtonItem" systemItem="reply" id="h6R-5A-tTu">
                                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <connections>
-                                                <segue destination="0YR-M3-gvk" kind="presentation" id="MHD-vY-sNT"/>
+                                                <action selector="back:" destination="b1F-e8-CC5" id="jgW-6r-yit"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" image="icon_settings" id="06N-dU-S0h">
@@ -2663,7 +2663,7 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="9CR-re-xHJ"/>
                                     <barButtonItem image="icon_menu" id="Av9-TU-WND">
                                         <connections>
-                                            <segue destination="8BK-OZ-b94" kind="show" id="I2v-r2-0EK"/>
+                                            <action selector="ir_opciones:" destination="b1F-e8-CC5" id="2c0-0c-sa3"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="e3G-Ua-wck"/>
@@ -10651,10 +10651,10 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="bXN-KQ-jIM" customClass="DetalleAutorizacionesViewCell" customModule="SofibMobile" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="28" width="345" height="121"/>
+                                                <rect key="frame" x="0.0" y="28" width="346" height="121"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bXN-KQ-jIM" id="gGn-95-KfC">
-                                                    <rect key="frame" x="0.0" y="0.0" width="345" height="120"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="345.5" height="120"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descripcion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QqF-r6-FeI">
@@ -11168,10 +11168,10 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="63" id="yBU-8l-jae" customClass="SolAprobTabDatosBasicosViewCellController" customModule="SofibMobile" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="28" width="345" height="63"/>
+                                                <rect key="frame" x="0.0" y="28" width="346" height="63"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yBU-8l-jae" id="A3X-ix-X2i">
-                                                    <rect key="frame" x="0.0" y="0.0" width="345" height="62"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="345.5" height="62"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="snr-hn-QpQ">
@@ -11489,10 +11489,10 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="64" id="062-k0-QeP" customClass="SolAprobTipoAprobacionViewCellController" customModule="SofibMobile" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="28" width="345" height="64"/>
+                                                <rect key="frame" x="0.0" y="28" width="346" height="64"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="062-k0-QeP" id="3YF-sT-T8K">
-                                                    <rect key="frame" x="0.0" y="0.0" width="345" height="63"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="345.5" height="63"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Número Solicitud" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bb3-16-nAt">
@@ -11652,12 +11652,12 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="8nz-nO-WDf"/>
-        <segue reference="1ZW-8O-K5S"/>
-        <segue reference="Pkr-0O-VMb"/>
-        <segue reference="Pez-Uq-wBc"/>
-        <segue reference="GkM-Tg-j1A"/>
+        <segue reference="JE4-rD-2w7"/>
+        <segue reference="N8S-A1-z8W"/>
+        <segue reference="Vmq-iv-ZLx"/>
         <segue reference="ZCy-zm-gpS"/>
         <segue reference="WhP-bE-U8f"/>
+        <segue reference="Pez-Uq-wBc"/>
         <segue reference="gad-F8-4Rm"/>
         <segue reference="U1i-vb-TDl"/>
         <segue reference="rZg-0H-oql"/>

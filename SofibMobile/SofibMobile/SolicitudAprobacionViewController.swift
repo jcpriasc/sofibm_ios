@@ -50,6 +50,20 @@ class SolicitudAprobacionViewController:  UIViewController, UITableViewDataSourc
         
     }
     
+    
+    @IBAction func back(_ sender: Any) {
+        
+        
+        
+    }
+    
+    @IBAction func ir_opciones(_ sender: Any) {
+        
+        
+    }
+    
+    
+    
     public func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath?
     {
         let opcionSeleccionada = indexPath[1]
