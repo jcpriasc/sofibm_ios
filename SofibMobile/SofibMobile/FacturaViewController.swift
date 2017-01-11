@@ -41,7 +41,7 @@ class FacturaViewController:  UIViewController, UITableViewDataSource, UITableVi
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! FacturaViewCellController
 
         if let solicitud = self.jsonFactura[indexPath.row] as? Dictionary<String, Any>{
-            cell.txtValorTotalFactura.text = (solicitud["valorTotalFactura"] as? String ?? "");
+            cell.txtValorTotalFactura.text = FormatoDinero.formatearMoneda(texto: (solicitud["valorTotalFactura"] as? String ?? ""));
             cell.txtEstado.text = (solicitud["estado"] as? String ?? "");
             cell.txtFechaExpedicion.text = (solicitud["fechaExpedicion"] as? String ?? "");
             cell.txtNumeroFactura.text = (solicitud["facturaNro"] as? String ?? "");

@@ -61,10 +61,10 @@ class FacturaTabGlosaViewController: UIViewController {
             txtFechaVencimientoPago.text = (solicitud["fechaVencimientoPago"] as? String ?? "")
             txtFechaRecibidoCoomeva.text = (solicitud["fechaRecibidoCoomeva"] as? String ?? "")
             txtProveedor.text = (solicitud["proveedor"] as? String ?? "")
-            txtValorTotalFactura.text = (solicitud["valorTotalFactura"] as? String ?? "")
+            txtValorTotalFactura.text = FormatoDinero.formatearMoneda(texto:(solicitud["valorTotalFactura"] as? String ?? ""))
             txtDescripcion.text = (solicitud["descripcion"] as? String ?? "")
             txtMotivo.text = (solicitud["motivo"] as? String ?? "")
-            txtValorGlosa.text = (solicitud["valorGlosa"] as? String ?? "")
+            txtValorGlosa.text = FormatoDinero.formatearMoneda(texto:(solicitud["valorGlosa"] as? String ?? ""))
             
             print(txtDescripcion.text)
             if txtDescripcion.text == nil || txtDescripcion.text == "" {

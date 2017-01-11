@@ -27,11 +27,11 @@ class NotaCreditoDebitoTabImpuestoViewController: UIViewController , UITableView
             
             NotaCreditoDebitoTabImpuestoViewController.jsonTabImpuestos = solicitud["facturas"] as? NSArray
             
-            lblTotalServicio.text = "\(NSLocalizedString("lbl_total_servicio", comment: "lbl_total_servicio"))\(": ") \((solicitud["valorTotalPagar"] as? String ?? ""))"
-            lblTotalSeguroHotelero.text = "\(NSLocalizedString("lbl_total_seguro_hotelero", comment: "lbl_total_seguro_hotelero"))\(": ") \((solicitud["valorTotalNotaCredito"] as? String ?? ""))"
-            lblTotalNotaCredito.text = "\(NSLocalizedString("lbl_tab_nota_credito", comment: "lbl_tab_nota_credito"))\(": ") \((solicitud["valorTotalNotaCredito"] as? String ?? ""))"
-            lblValorIva.text = "\(NSLocalizedString("lbl_valor_iva", comment: "lbl_valor_iva"))\(": ") \((solicitud["valorIva"] as? String ?? ""))"
-            lblValorTotalPagar.text = "\(NSLocalizedString("lbl_valor_total_pagar", comment: "lbl_valor_total_pagar")) \(": ")\((solicitud["valorTotalPagar"] as? String ?? ""))"
+            lblTotalServicio.text = NSLocalizedString("lbl_total_servicio", comment: "lbl_total_servicio")+": "+FormatoDinero.formatearMoneda(texto:(solicitud["valorTotalPagar"] as? String ?? ""))!
+            lblTotalSeguroHotelero.text = NSLocalizedString("lbl_total_seguro_hotelero", comment: "lbl_total_seguro_hotelero")+": "+FormatoDinero.formatearMoneda(texto:(solicitud["valorTotalNotaCredito"] as? String ?? ""))!
+            lblTotalNotaCredito.text =    NSLocalizedString("lbl_tab_nota_credito", comment: "lbl_tab_nota_credito")+": "+FormatoDinero.formatearMoneda(texto:(solicitud["valorTotalNotaCredito"] as? String ?? ""))!
+            lblValorIva.text = NSLocalizedString("lbl_valor_iva", comment: "lbl_valor_iva")+": "+FormatoDinero.formatearMoneda(texto:(solicitud["valorIva"] as? String ?? ""))!
+            lblValorTotalPagar.text = NSLocalizedString("lbl_valor_total_pagar", comment: "lbl_valor_total_pagar")+": "+FormatoDinero.formatearMoneda(texto:(solicitud["valorTotalPagar"] as? String ?? ""))!
             
             
         }
@@ -41,7 +41,12 @@ class NotaCreditoDebitoTabImpuestoViewController: UIViewController , UITableView
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return (NotaCreditoDebitoTabImpuestoViewController.jsonTabImpuestos!.count)
+        if NotaCreditoDebitoTabImpuestoViewController.jsonTabImpuestos==nil{
+            return 0
+        }else
+        {return (NotaCreditoDebitoTabImpuestoViewController.jsonTabImpuestos!.count)}
+        
+        
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
@@ -54,7 +59,7 @@ class NotaCreditoDebitoTabImpuestoViewController: UIViewController , UITableView
             cell.txtProveedor.text = (solicitud["proveedor"] as? String ?? " ");
             cell.txtNumeroOrden.text = (solicitud["ordenServicio"] as? String ?? " ");
             cell.txtServicio.text = (solicitud["servicio"] as? String ?? " ");
-            cell.txtValorServicio.text = (solicitud["valorServicio"] as? String ?? " ");
+            cell.txtValorServicio.text = FormatoDinero.formatearMoneda(texto:(solicitud["valorServicio"] as? String ?? " "));
             
         }
         

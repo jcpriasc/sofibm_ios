@@ -24,13 +24,13 @@ class FacturaTabFacturaViewController: UIViewController, UITableViewDataSource, 
         
         if let solicitud = DetalleFacturaViewController.jsonDetalleFactura as? Dictionary<String, Any>{
             FacturaTabFacturaViewController.jsonTabFactura = solicitud["factura"] as? NSArray
-            
+            let valorTotalFactura = FormatoDinero.formatearMoneda(texto:(solicitud["valorTotalFactura"] as? String ?? ""))
             lblNumeroFactura.text = "\(NSLocalizedString("lbl_numero_factura", comment: "lbl_numero_factura")) \(": ")\((solicitud["facturaNro"] as? String ?? ""))"
             lblFechaEmision.text = "\(NSLocalizedString("lbl_fecha_emision", comment: "lbl_fecha_emision"))\(": ") \((solicitud["fechaEmision"] as? String ?? ""))"
             lblFechaVencimiento.text = "\(NSLocalizedString("lbl_fecha_vencimiento_pago", comment: "lbl_fecha_vencimiento_pago")) \(": ")\((solicitud["fechaVencimientoPago"] as? String ?? ""))"
             lblFechaRecibidoCoomeva.text = "\(NSLocalizedString("lbl_fecha_recibido_coomeva", comment: "lbl_fecha_recibido_coomeva")) \(": ")\((solicitud["fechaRecibidoCoomeva"] as? String ?? ""))"
             lblProveedor.text = "\(NSLocalizedString("lbl_proveedor", comment: "lbl_proveedor")) \(": ")\((solicitud["proveedor"] as? String ?? ""))"
-            lblValorTotalFactura.text = "\(NSLocalizedString("lbl_valor_total_factura", comment: "lbl_valor_total_factura"))\(": ") \((solicitud["valorTotalFactura"] as? String ?? ""))"
+            lblValorTotalFactura.text = NSLocalizedString("lbl_valor_total_factura", comment: "lbl_valor_total_factura")+": "+(valorTotalFactura)!
             
             
         }
@@ -55,8 +55,8 @@ class FacturaTabFacturaViewController: UIViewController, UITableViewDataSource, 
             cell.txtServicio.text = (solicitud["servicio"] as? String ?? " ");
             cell.txtFechaInicio.text = (solicitud["fechaInicio"] as? String ?? " ");
             cell.txtFechaFinalizacion.text = (solicitud["fechaFinalizaServicio"] as? String ?? " ");
-            cell.txtValorServicio.text = (solicitud["valorServicio"] as? String ?? " ");
-            cell.txtSeguroHotelero.text = (solicitud["seguroHotelero"] as? String ?? " ");
+            cell.txtValorServicio.text = FormatoDinero.formatearMoneda(texto:(solicitud["valorServicio"] as? String ?? " "));
+            cell.txtSeguroHotelero.text = FormatoDinero.formatearMoneda(texto:(solicitud["seguroHotelero"] as? String ?? " "));
             cell.txtTipoPago.text = (solicitud["tipoPago"] as? String ?? " ");
             
         }
