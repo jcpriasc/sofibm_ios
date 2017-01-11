@@ -34,11 +34,11 @@ class UtilizacionesTabAdministracionesViewController: UIViewController, UITableV
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! UtilizacionesTabAdministracionesViewCellController
         
         if let solicitud = UtilizacionesTabAdministracionesViewController.jsonTabAdministraciones?[indexPath.row] as? Dictionary<String, Any>{
-            cell.txtTotal.text = (solicitud["total"] as? String ?? " ");
-            cell.txtTrm.text = (solicitud["trm"] as? String ?? " ");
-            cell.txtSubtotal.text = (solicitud["subtotal"] as? String ?? " ");
+            cell.txtTotal.text = FormatoDinero.formatearMoneda(texto: (solicitud["total"] as? String ?? " "))
+            cell.txtTrm.text = FormatoDinero.formatearMoneda(texto: (solicitud["trm"] as? String ?? " "))
+            cell.txtSubtotal.text = FormatoDinero.formatearMoneda(texto: (solicitud["subtotal"] as? String ?? " "))
             cell.txtPorcentajeIva.text = (solicitud["porcentaje"] as? String ?? " ");
-            cell.txtValorIva.text = (solicitud["valorIva"] as? String ?? " ");
+            cell.txtValorIva.text = FormatoDinero.formatearMoneda(texto: (solicitud["valorIva"] as? String ?? " "))
             cell.txtFechaCreado.text = (solicitud["fechaCreado"] as? String ?? " ");
         
         }

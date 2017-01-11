@@ -37,8 +37,8 @@ class UtilizacionesTabUtilizacionesViewController: UIViewController, UITableView
             cell.txtSeguroNumero.text = (solicitud["seguroNumero"] as? String ?? " ");
             cell.txtPrestadorProveedor.text = (solicitud["prestador"] as? String ?? " ");
             cell.txtConcepto.text = (solicitud["concepto"] as? String ?? " ");
-            cell.txtTotal.text = (solicitud["total"] as? String ?? " ");
-            cell.txtTotalGlosa.text = (solicitud["totalGlosa"] as? String ?? " ");
+            cell.txtTotal.text = FormatoDinero.formatearMoneda(texto: (solicitud["total"] as? String ?? " "));
+            cell.txtTotalGlosa.text = FormatoDinero.formatearMoneda(texto: (solicitud["totalGlosa"] as? String ?? " "));
             cell.txtFechaCreado.text = (solicitud["fechaCreado"] as? String ?? " ");
 
         }
