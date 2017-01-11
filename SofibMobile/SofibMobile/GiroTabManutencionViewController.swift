@@ -24,7 +24,7 @@ class GiroTabManutencionViewController: UIViewController, UITableViewDataSource,
             GiroTabManutencionViewController.jsonTabManutencion = solicitud["manutencion"] as? NSArray
             
             lblBeneficiario.text = "\(NSLocalizedString("lbl_beneficiario", comment: "lbl_beneficiario")) \(": ") \((solicitud["beneficiario"] as? String ?? ""))"
-            lblMontoDiario.text = "\(NSLocalizedString("lbl_monto_diario", comment: "lbl_monto_diario")) \(": ") \(FormatoDinero.formatearMoneda(texto: (solicitud["acompañanteMonto"] as? String ?? "")))"
+            lblMontoDiario.text =  NSLocalizedString("lbl_monto_diario", comment: "lbl_monto_diario") + ": " + FormatoDinero.formatearMoneda(texto: (solicitud["acompañanteMonto"] as? String ?? ""))!
             
         }
         

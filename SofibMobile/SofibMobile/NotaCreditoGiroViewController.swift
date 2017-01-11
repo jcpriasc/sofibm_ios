@@ -65,7 +65,7 @@ class NotaCreditoGiroViewController:  UIViewController, UITableViewDataSource, U
             NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.ciudad = (solicitud["ciudad"] as? String ?? "  ");
             NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.tipoBeneficiario = (solicitud["tipoBeneficiario"] as? String ?? "");
             NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.estado = (solicitud["estado"] as? String ?? "");
-            NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.valorNota = (solicitud["valorNota"] as? String ?? "");
+            NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.valorNota = FormatoDinero.formatearMoneda(texto: (solicitud["valorNota"] as? String ?? ""))!;
             NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.fechaRegistro = (solicitud["fechaRegistro"] as? String ?? "");
             NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.fechaLiquidacion = (solicitud["fechaLiquidacion"] as? String ?? "");
             
