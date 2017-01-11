@@ -48,9 +48,9 @@ class NotaCreditoDebitoTabImpuestoDetalleViewController: UIViewController {
         txtServicio.text = NotaCreditoDebitoTabImpuestoViewController.detalleImpuestoSeleccionado.servicio
         txtFechaInicio.text = NotaCreditoDebitoTabImpuestoViewController.detalleImpuestoSeleccionado.fechaInicio
         txtFechaFinalizacion.text = NotaCreditoDebitoTabImpuestoViewController.detalleImpuestoSeleccionado.fechaFinalizacion
-        txtValorServicio.text = NotaCreditoDebitoTabImpuestoViewController.detalleImpuestoSeleccionado.valorServicio
-        txtSeguroHotelero.text = NotaCreditoDebitoTabImpuestoViewController.detalleImpuestoSeleccionado.seguroHotelero
-        txtValorNota.text = NotaCreditoDebitoTabImpuestoViewController.detalleImpuestoSeleccionado.valorNota
+        txtValorServicio.text = FormatoDinero.formatearMoneda(texto:NotaCreditoDebitoTabImpuestoViewController.detalleImpuestoSeleccionado.valorServicio)
+        txtSeguroHotelero.text = FormatoDinero.formatearMoneda(texto:NotaCreditoDebitoTabImpuestoViewController.detalleImpuestoSeleccionado.seguroHotelero)
+        txtValorNota.text = FormatoDinero.formatearMoneda(texto:NotaCreditoDebitoTabImpuestoViewController.detalleImpuestoSeleccionado.valorNota)
         
 
         // Do any additional setup after loading the view.

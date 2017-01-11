@@ -67,7 +67,7 @@ class NotaCreditoDebitoViewController:  UIViewController, UITableViewDataSource,
             NotaCreditoDebitoViewController.notaCreditoDebitoSeleccionado.motivo = (solicitud["motivo"] as? String ?? "");
             NotaCreditoDebitoViewController.notaCreditoDebitoSeleccionado.estado = (solicitud["estado"] as? String ?? "");
             NotaCreditoDebitoViewController.notaCreditoDebitoSeleccionado.tipoNota = (solicitud["tipoNota"] as? String ?? "");
-            NotaCreditoDebitoViewController.notaCreditoDebitoSeleccionado.valorTotalNotaCredito = (solicitud["valorTotalNotaCredito"] as? String ?? "");
+            NotaCreditoDebitoViewController.notaCreditoDebitoSeleccionado.valorTotalNotaCredito = FormatoDinero.formatearMoneda(texto:(solicitud["valorTotalNotaCredito"] as? String ?? ""))!;
             
         }
         

@@ -32,8 +32,12 @@ class NotaCreditoDebitoTabServicioViewController: UIViewController , UITableView
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
+        if NotaCreditoDebitoTabServicioViewController.jsonTabServicios==nil {
+            return 0
+        }else{
+            return (NotaCreditoDebitoTabServicioViewController.jsonTabServicios!.count)
+        }
         
-        return (NotaCreditoDebitoTabServicioViewController.jsonTabServicios!.count)
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
@@ -47,7 +51,7 @@ class NotaCreditoDebitoTabServicioViewController: UIViewController , UITableView
             cell.txtTipoImpuesto.text = (solicitud["tipoImpuesto"] as? String ?? " ");
             cell.txtServicio.text = (solicitud["servicio"] as? String ?? " ");
             cell.txtPorcentaje.text = (solicitud["porcentaje"] as? String ?? " ");
-            cell.txtValorImpuesto.text = (solicitud["valorImpuesto"] as? String ?? " ");
+            cell.txtValorImpuesto.text = FormatoDinero.formatearMoneda(texto:(solicitud["valorImpuesto"] as? String ?? " "));
             cell.txtAplicaSeguroHotelero.text = (solicitud["aplicaSeguro"] as? String ?? " ");
             
             

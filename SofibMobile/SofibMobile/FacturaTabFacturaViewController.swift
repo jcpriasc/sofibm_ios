@@ -30,7 +30,7 @@ class FacturaTabFacturaViewController: UIViewController, UITableViewDataSource, 
             lblFechaVencimiento.text = "\(NSLocalizedString("lbl_fecha_vencimiento_pago", comment: "lbl_fecha_vencimiento_pago")) \(": ")\((solicitud["fechaVencimientoPago"] as? String ?? ""))"
             lblFechaRecibidoCoomeva.text = "\(NSLocalizedString("lbl_fecha_recibido_coomeva", comment: "lbl_fecha_recibido_coomeva")) \(": ")\((solicitud["fechaRecibidoCoomeva"] as? String ?? ""))"
             lblProveedor.text = "\(NSLocalizedString("lbl_proveedor", comment: "lbl_proveedor")) \(": ")\((solicitud["proveedor"] as? String ?? ""))"
-            lblValorTotalFactura.text = "\(NSLocalizedString("lbl_valor_total_factura", comment: "lbl_valor_total_factura"))\(": ") \(valorTotalFactura)"
+            lblValorTotalFactura.text = NSLocalizedString("lbl_valor_total_factura", comment: "lbl_valor_total_factura")+": "+(valorTotalFactura)!
             
             
         }
