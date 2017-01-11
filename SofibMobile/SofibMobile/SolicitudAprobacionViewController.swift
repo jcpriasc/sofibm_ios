@@ -14,6 +14,8 @@ class SolicitudAprobacionViewController:  UIViewController, UITableViewDataSourc
     //let lstSolicitudAprobacion = ["Solicitud 1", "Solicitud 2", "Solicitud 3", "Solicitud 4", "Solicitud 5", "Solicitud 6", "Solicitud 7", "Solicitud 9"]
     
     static var solicitudAprobacionSeleccionado = SolicitudAprobacion()
+    
+    static var viewBack = "";
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,13 +55,15 @@ class SolicitudAprobacionViewController:  UIViewController, UITableViewDataSourc
     
     @IBAction func back(_ sender: Any) {
         
-        
+        let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: SolicitudAprobacionViewController.viewBack)
+        self.show(vc as! UIViewController, sender: vc)
         
     }
     
     @IBAction func ir_opciones(_ sender: Any) {
         
-        
+        let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: SolicitudAprobacionViewController.viewBack)
+        self.show(vc as! UIViewController, sender: vc)
     }
     
     

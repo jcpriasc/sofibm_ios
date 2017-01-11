@@ -428,6 +428,7 @@ class OpcionesSecundariasLogViewController: UIViewController , UITableViewDataSo
                     {
                         OpcionesSecundariasLogViewController.jsonSolicitudAprobacion = try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSArray
                         if (( OpcionesSecundariasLogViewController.jsonSolicitudAprobacion?.count)!>0){
+                            SolicitudAprobacionViewController.viewBack = "tableViewLogisticoController"
                             let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "solicitudesAprobacionController")
                             self.show(vc as! UIViewController, sender: vc)
 
