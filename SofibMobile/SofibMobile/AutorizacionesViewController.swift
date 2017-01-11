@@ -28,7 +28,15 @@ class AutorizacionesViewController: UIViewController , UITableViewDataSource, UI
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! AutorizacionesViewCell
         
         if let resultadoConsulta = self.jsonAutorizaciones[indexPath.row] as? Dictionary<String, Any>{
-            cell.lblAutorizaciones.text = resultadoConsulta["solicitudDescripcion"] as! String?;
+           
+            cell.textDescripcion.text = resultadoConsulta["solicitudDescripcion"] as? String ?? ""
+            cell.textCiudad.text = resultadoConsulta["ciudad"] as? String ?? ""
+            cell.textTipoSolicitud.text = resultadoConsulta["solicitudTipo"] as? String ?? ""
+            cell.textFechaSolicitud.text = resultadoConsulta["solicitaCreadoFecha"] as? String ?? ""
+            cell.textEstado.text = resultadoConsulta["estado"] as? String ?? ""
+            cell.textFechaAprobacion.text = resultadoConsulta["autorizaCreadoFecha"] as? String ?? ""
+            cell.textFechaRechazo.text = resultadoConsulta["fechaRechazo"] as? String ?? ""
+            
         }
         
         return cell
