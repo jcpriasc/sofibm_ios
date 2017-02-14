@@ -413,7 +413,7 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <stackView contentMode="scaleToFill" axis="vertical" distribution="fillEqually" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="12N-ph-new">
+                            <stackView contentMode="scaleToFill" semanticContentAttribute="spatial" axis="vertical" distribution="fillEqually" spacing="5" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="12N-ph-new">
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="852" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tfe-1S-vbg">
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -589,9 +589,9 @@
                             <constraint firstItem="2oq-yw-RmV" firstAttribute="top" secondItem="seK-IJ-cvx" secondAttribute="bottom" constant="5" id="1i9-2b-2mR"/>
                             <constraint firstItem="zEV-i2-3TS" firstAttribute="width" secondItem="cdT-Rv-jlm" secondAttribute="width" id="2kZ-mC-fgr"/>
                             <constraint firstItem="vvq-PX-F9G" firstAttribute="top" secondItem="6yy-ia-uri" secondAttribute="bottom" constant="5" id="36l-fI-Bhr"/>
-                            <constraint firstItem="V3n-1B-htz" firstAttribute="top" secondItem="12N-ph-new" secondAttribute="bottom" constant="10" id="3XI-D7-b4A"/>
+                            <constraint firstItem="V3n-1B-htz" firstAttribute="top" secondItem="12N-ph-new" secondAttribute="bottom" id="3XI-D7-b4A"/>
                             <constraint firstItem="XTG-Om-FyB" firstAttribute="height" secondItem="cdT-Rv-jlm" secondAttribute="height" priority="1" id="6VU-G3-kMP"/>
-                            <constraint firstItem="6yy-ia-uri" firstAttribute="top" secondItem="V3n-1B-htz" secondAttribute="bottom" constant="10" id="7sA-GQ-ak4"/>
+                            <constraint firstItem="6yy-ia-uri" firstAttribute="top" secondItem="V3n-1B-htz" secondAttribute="bottom" constant="5" id="7sA-GQ-ak4"/>
                             <constraint firstItem="seK-IJ-cvx" firstAttribute="leading" secondItem="cdT-Rv-jlm" secondAttribute="leading" constant="10" id="82V-pO-j8K"/>
                             <constraint firstItem="Fdb-OU-vkF" firstAttribute="top" secondItem="vvq-PX-F9G" secondAttribute="bottom" constant="5" id="8UL-eF-696"/>
                             <constraint firstItem="AWX-Vn-YdW" firstAttribute="top" secondItem="2oq-yw-RmV" secondAttribute="bottom" constant="5" id="Cfu-8S-NgY"/>
@@ -616,7 +616,7 @@
                             <constraint firstItem="aly-Nt-zoA" firstAttribute="height" secondItem="cdT-Rv-jlm" secondAttribute="height" priority="250" id="bkl-3K-Hu6"/>
                             <constraint firstItem="AWX-Vn-YdW" firstAttribute="leading" secondItem="cdT-Rv-jlm" secondAttribute="leading" constant="10" id="cCk-ps-VRX"/>
                             <constraint firstItem="seK-IJ-cvx" firstAttribute="top" secondItem="zEV-i2-3TS" secondAttribute="bottom" constant="5" id="cTo-T5-CtX"/>
-                            <constraint firstItem="12N-ph-new" firstAttribute="top" secondItem="VIV-fV-bHc" secondAttribute="bottom" constant="15" id="eub-cn-qda"/>
+                            <constraint firstItem="12N-ph-new" firstAttribute="top" secondItem="VIV-fV-bHc" secondAttribute="bottom" constant="5" id="eub-cn-qda"/>
                             <constraint firstItem="VIV-fV-bHc" firstAttribute="width" secondItem="cdT-Rv-jlm" secondAttribute="width" id="f51-U1-vi8"/>
                             <constraint firstItem="vvq-PX-F9G" firstAttribute="leading" secondItem="cdT-Rv-jlm" secondAttribute="leading" constant="10" id="fFr-OC-Bbu"/>
                             <constraint firstItem="V3n-1B-htz" firstAttribute="width" secondItem="cdT-Rv-jlm" secondAttribute="width" multiplier="0.95" id="go9-HP-5fj"/>
@@ -6714,7 +6714,7 @@
                                                 <rect key="frame" x="0.0" y="28" width="345" height="96"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="i6X-mL-h2C" id="IRl-CQ-oA7">
-                                                    <frame key="frameInset" width="345.5" height="95"/>
+                                                    <frame key="frameInset" width="345" height="95"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="flG-nN-QGS">
@@ -7171,7 +7171,7 @@
                                                 <rect key="frame" x="0.0" y="28" width="345" height="111"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mjl-eL-ChH" id="BDH-pe-TyK">
-                                                    <frame key="frameInset" width="345.5" height="110"/>
+                                                    <frame key="frameInset" width="345" height="110"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xRn-o1-nhi">
@@ -7398,7 +7398,7 @@
                                                 <rect key="frame" x="0.0" y="28" width="345" height="167"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aT7-rO-TZw" id="Nsc-7d-UBm">
-                                                    <frame key="frameInset" width="345.5" height="166"/>
+                                                    <frame key="frameInset" width="345" height="166"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Proveedor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gAF-xE-Wh3">
@@ -8699,7 +8699,7 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="134" id="cjr-ZF-YqO" customClass="NotaCreditoDebitoTabServicioViewCellController" customModule="SofibMobile" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="28" width="346" height="134"/>
+                                                <rect key="frame" x="0.0" y="28" width="345" height="134"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cjr-ZF-YqO" id="a94-Gl-Bg7">
                                                     <frame key="frameInset" width="345.5" height="133"/>
@@ -9147,7 +9147,7 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="134" id="gCv-ws-t1T" customClass="UtilizacionesTabAdministracionesViewCellController" customModule="SofibMobile" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="28" width="346" height="134"/>
+                                                <rect key="frame" x="0.0" y="28" width="345" height="134"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gCv-ws-t1T" id="Ysd-Hl-5C2">
                                                     <frame key="frameInset" width="345.5" height="133"/>
@@ -10751,7 +10751,7 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="64" id="062-k0-QeP" customClass="SolAprobTipoAprobacionViewCellController" customModule="SofibMobile" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="28" width="346" height="64"/>
+                                                <rect key="frame" x="0.0" y="28" width="345" height="64"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="062-k0-QeP" id="3YF-sT-T8K">
                                                     <frame key="frameInset" width="345.5" height="63"/>
@@ -10911,13 +10911,13 @@
         <segue reference="Pez-Uq-wBc"/>
         <segue reference="ZCy-zm-gpS"/>
         <segue reference="JE4-rD-2w7"/>
+        <segue reference="N8S-A1-z8W"/>
         <segue reference="8nz-nO-WDf"/>
         <segue reference="U1i-vb-TDl"/>
-        <segue reference="mPr-0Y-1xk"/>
+        <segue reference="Uai-DN-GAb"/>
         <segue reference="WhP-bE-U8f"/>
-        <segue reference="bhv-YB-urc"/>
-        <segue reference="xM2-e0-Gzh"/>
         <segue reference="rva-Zf-0G7"/>
+        <segue reference="xM2-e0-Gzh"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>
