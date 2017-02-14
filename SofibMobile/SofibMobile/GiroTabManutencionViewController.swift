@@ -16,6 +16,8 @@ class GiroTabManutencionViewController: UIViewController, UITableViewDataSource,
     
     static var jsonTabManutencion: NSArray?
     
+     var montoAcompanante: Double = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,7 +26,10 @@ class GiroTabManutencionViewController: UIViewController, UITableViewDataSource,
             GiroTabManutencionViewController.jsonTabManutencion = solicitud["manutencion"] as? NSArray
             
             lblBeneficiario.text = "\(NSLocalizedString("lbl_beneficiario", comment: "lbl_beneficiario")) \(": ") \((solicitud["beneficiario"] as? String ?? ""))"
-            lblMontoDiario.text =  NSLocalizedString("lbl_monto_diario", comment: "lbl_monto_diario") + ": " + FormatoDinero.formatearMoneda(texto: (solicitud["acompañanteMonto"] as? String ?? ""))!
+            
+           montoAcompanante = solicitud["acompañanteMonto"] as? Double ?? 0
+            
+            lblMontoDiario.text =  NSLocalizedString("lbl_monto_diario", comment: "lbl_monto_diario") + ": " + FormatoDinero.formatearMonedaDouble(texto: montoAcompanante)!
             
         }
         
