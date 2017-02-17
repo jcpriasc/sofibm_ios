@@ -10,6 +10,7 @@ import UIKit
 import CoreData
 class AjustesViewController: UIViewController {
 
+    static var viewBack = "";
 
     @IBOutlet var cerrarSesionView: UIView!
     @IBOutlet var cambiarIdiomaView: UIView!
@@ -52,6 +53,13 @@ class AjustesViewController: UIViewController {
         print("Cambiar Idioma")
     }
     
+    @IBAction func back(_ sender: AnyObject) {
+        
+        let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: AjustesViewController.viewBack)
+        self.show(vc as! UIViewController, sender: vc)
+        
+        
+    }
     
     
 
