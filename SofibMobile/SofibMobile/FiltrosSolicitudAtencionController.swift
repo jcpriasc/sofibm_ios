@@ -25,7 +25,7 @@ class FiltrosSolicitudAtencionController: UIViewController, UIPickerViewDelegate
      var estados = ["PENDIENTE", "ACEPTADA", "RECHAZADA", "FINALIZADO", "EN ESPERA"]
      var ciudadesIncial = ["CALI", "BOGOTA", "CARTAGENA", "MEDELLIN", "PEREIRA"]
      var ciudadesActual = ["CALI", "BOGOTA", "CARTAGENA", "MEDELLIN", "PEREIRA"]*/
-    var traslados = ["SI", "NO"]
+    var traslados = [NSLocalizedString("seleccionar_traslado", comment: "seleccionar_traslado"),"SI", "NO"]
     static var solicitudesAtencionJson : NSArray?
     
     let service =  "/solicitudes";
@@ -291,8 +291,10 @@ class FiltrosSolicitudAtencionController: UIViewController, UIPickerViewDelegate
         if((pickerTraslados.text) != nil && (pickerTraslados.text) != ""){
             if (pickerTraslados.text == "SI") {
                 traslado = "1";
-            }else{
+            }else if (pickerTraslados.text == "NO"){
                 traslado = "0";
+            }else{
+                traslado = "NA";
             }
         }
 
@@ -385,7 +387,11 @@ class FiltrosSolicitudAtencionController: UIViewController, UIPickerViewDelegate
         }
         
         if pickerView.tag == 5 {
-            pickerTraslados.text = traslados[row]
+            if row == 0 {
+                pickerTraslados.text = "";
+            }else{
+                pickerTraslados.text = traslados[row]
+            }
         }
         
     }
