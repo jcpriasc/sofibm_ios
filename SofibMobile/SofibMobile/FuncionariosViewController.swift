@@ -10,8 +10,10 @@ import UIKit
 
 class FuncionariosViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    //let funcionarios = ["funcionarios 1", "funcionarios 2", "funcionarios 3", "funcionarios 4", "funcionarios 5", "funcionarios 6", "funcionarios 7", "funcionarios 9"]
     let jsonFuncionariosExternos: NSArray = OpcionesSecundariasViewController.jsonFuncionariosExternos!
+    
+    static var funcionarioExternoSeleccionado = FuncionarioExterno()
+    
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
@@ -34,12 +36,21 @@ class FuncionariosViewController: UIViewController, UITableViewDataSource, UITab
         return (cell)
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableViewAutomaticDimension
-    }
-    
-    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableViewAutomaticDimension
+    public func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath?
+    {
+        let opcionSeleccionada = indexPath[1]
+        
+        if let solicitud = self.jsonFuncionariosExternos[opcionSeleccionada] as? Dictionary<String, Any>{
+            
+            
+            FuncionariosViewController.funcionarioExternoSeleccionado.funcionarioExterno = (solicitud["prestadorSolicitud"] as? String ?? "");
+            FuncionariosViewController.funcionarioExternoSeleccionado.fechaHoraCita = (solicitud["fechaCita"] as? String ?? "");
+            FuncionariosViewController.funcionarioExternoSeleccionado.medico = (solicitud["nombreMedico"] as? String ?? "");
+            FuncionariosViewController.funcionarioExternoSeleccionado.especialidad = (solicitud["especialidad"] as? String ?? "");
+            
+        }
+        
+        return indexPath
     }
 
     override func viewDidLoad() {
