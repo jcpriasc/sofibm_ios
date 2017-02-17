@@ -18,6 +18,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var txtPassword: UITextField!
     @IBOutlet weak var segTipoUsuario: UISegmentedControl!
     
+    static var nombreCompleto = "";
+    
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     var usuriosJson : NSDictionary?
     
@@ -68,6 +70,23 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                                     let resultado = error["codigo"] as! String
                                     
                                     if resultado == "0"{
+                                        
+                                        if let usuarioDTO = self.usuriosJson?["usuarioDTO"] as? Dictionary<String, Any>{
+                                            
+                                            LoginViewController.nombreCompleto = usuarioDTO["nombre"] as! String;
+                                            LoginViewController.nombreCompleto += " "
+                                            LoginViewController.nombreCompleto += usuarioDTO["primerApellido"] as! String;
+                                            LoginViewController.nombreCompleto += " "
+                                            LoginViewController.nombreCompleto += usuarioDTO["segundoApellido"] as! String;
+                                            
+                                            
+                                            
+                                            /*
+                                            LoginViewController.usuarioSesion?.nombreUsuario = usuarioDTO["nombre"] as! String;
+                                            LoginViewController.usuarioSesion?.nombreUsuario += usuarioDTO["primerApellido"] as! String;
+                                            LoginViewController.usuarioSesion?.nombreUsuario += usuarioDTO["segundoApellido"] as! String;
+ */
+                                        }
                                         
                                         if #available(iOS 10.0, *) {
                                             let context = self.appDelegate.persistentContainer.viewContext

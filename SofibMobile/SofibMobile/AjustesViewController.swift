@@ -10,9 +10,21 @@ import UIKit
 import CoreData
 class AjustesViewController: UIViewController {
 
+    @IBOutlet var lblUsuarioSesion: UILabel!
 
+    @IBOutlet var lblCambiarIdioma: UILabel!
+    @IBOutlet var lblCerrarSesion: UILabel!
     @IBOutlet var cerrarSesionView: UIView!
     @IBOutlet var cambiarIdiomaView: UIView!
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        lblUsuarioSesion.text = LoginViewController.nombreCompleto;
+        lblCerrarSesion.text = NSLocalizedString("lbl_cerrar_sesion", comment: "lbl_cerrar_sesion")
+        lblCambiarIdioma.text = NSLocalizedString("lbl_cambiar_idioma", comment: "lbl_cambiar_idioma")
+        
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

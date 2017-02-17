@@ -18,6 +18,9 @@
 "seleccionar_ciudad" = "Seleccionar Ciudad";
 "seleccionar_tipo_registro" = "Seleccionar Tipo Registro";
 "seleccionar_tipo_servicio" = "Seleccionar Tipo Servicio";
+"lbl_cambiar_idioma" = "Cambiar Idioma";
+"lbl_cerrar_sesion" = "Cerrar Sesión";
+"lbl_aviso_cerrar_sesion" = "¿Estás seguro de que deseas cerrar sesión?";
 
 // Solicitudes de atencion
 "solicitud_atencion" = "Solicitud Atención";
