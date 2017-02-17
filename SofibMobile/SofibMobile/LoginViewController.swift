@@ -79,13 +79,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                                             LoginViewController.nombreCompleto += " "
                                             LoginViewController.nombreCompleto += usuarioDTO["segundoApellido"] as! String;
                                             
-                                            
-                                            
-                                            /*
-                                            LoginViewController.usuarioSesion?.nombreUsuario = usuarioDTO["nombre"] as! String;
-                                            LoginViewController.usuarioSesion?.nombreUsuario += usuarioDTO["primerApellido"] as! String;
-                                            LoginViewController.usuarioSesion?.nombreUsuario += usuarioDTO["segundoApellido"] as! String;
- */
                                         }
                                         
                                         if #available(iOS 10.0, *) {
