@@ -2755,7 +2755,7 @@
                                                     <color key="textColor" red="0.0" green="0.59161788230000001" blue="0.34973502159999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tratamiento dental" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dTY-rV-8Hg">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tratamiento dentaltratamiento dentaltratamiento dentaltratamiento dental" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dTY-rV-8Hg">
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" red="0.60993188620000005" green="0.60666245220000004" blue="0.60625618699999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -2793,9 +2793,11 @@
                                                 <constraint firstItem="Kue-f2-0Fr" firstAttribute="leading" secondItem="UuV-e1-ZBe" secondAttribute="leading" constant="15" id="IOo-1L-8OP"/>
                                                 <constraint firstItem="qmi-mO-eaR" firstAttribute="top" secondItem="dTY-rV-8Hg" secondAttribute="bottom" constant="3" id="Kjg-NB-02E"/>
                                                 <constraint firstItem="xQ2-L7-u0A" firstAttribute="top" secondItem="dTY-rV-8Hg" secondAttribute="bottom" constant="3" id="MKw-AG-XWv"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="dTY-rV-8Hg" secondAttribute="trailing" constant="10" id="Q9P-Kh-Kuq"/>
                                                 <constraint firstItem="qmi-mO-eaR" firstAttribute="height" secondItem="UuV-e1-ZBe" secondAttribute="height" priority="250" id="Qgn-4O-NP8"/>
                                                 <constraint firstItem="fgP-gw-RDF" firstAttribute="width" secondItem="UuV-e1-ZBe" secondAttribute="width" priority="250" id="U3G-no-2iA"/>
                                                 <constraint firstItem="dTY-rV-8Hg" firstAttribute="leading" secondItem="UuV-e1-ZBe" secondAttribute="leading" constant="15" id="b58-s0-9I5"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="fgP-gw-RDF" secondAttribute="trailing" constant="10" id="bbh-7M-CiU"/>
                                                 <constraint firstItem="xQ2-L7-u0A" firstAttribute="width" secondItem="UuV-e1-ZBe" secondAttribute="width" priority="250" id="bmR-jP-lcW"/>
                                                 <constraint firstItem="7Zg-Jx-mG4" firstAttribute="height" secondItem="UuV-e1-ZBe" secondAttribute="height" priority="250" id="gGo-uh-5xj"/>
                                                 <constraint firstItem="7Zg-Jx-mG4" firstAttribute="width" secondItem="UuV-e1-ZBe" secondAttribute="width" priority="250" id="jU6-fW-FNF"/>
@@ -2813,6 +2815,7 @@
                                             <outlet property="txtCiudad" destination="xQ2-L7-u0A" id="ctt-IA-AWC"/>
                                             <outlet property="txtNombreProcedimiento" destination="dTY-rV-8Hg" id="Q7V-PK-vQD"/>
                                             <outlet property="txtPrestador" destination="fgP-gw-RDF" id="Xql-YK-jcZ"/>
+                                            <segue destination="2Qk-4O-JMz" kind="show" id="40D-L7-OFG"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -2860,7 +2863,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6ty-YG-IUf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6864.8000000000002" y="1709.5952023988007"/>
+            <point key="canvasLocation" x="6865" y="1596"/>
         </scene>
         <!--Documentos Medicos View Controller-->
         <scene sceneID="YXC-yh-Ou6">
@@ -8705,7 +8708,7 @@
                                                 <rect key="frame" x="0.0" y="28" width="345" height="134"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cjr-ZF-YqO" id="a94-Gl-Bg7">
-                                                    <frame key="frameInset" width="345.5" height="133"/>
+                                                    <frame key="frameInset" width="345" height="133"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Número Orden Servicio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JL8-Sb-jnP">
@@ -11140,6 +11143,140 @@
             </objects>
             <point key="canvasLocation" x="7832.8000000000002" y="2377.9610194902552"/>
         </scene>
+        <!--Detalle Procedimiento Adicional View Controller-->
+        <scene sceneID="ffP-ay-Imn">
+            <objects>
+                <viewController storyboardIdentifier="detalleProcedimientoAdicional" id="2Qk-4O-JMz" customClass="DetalleProcedimientoAdicionalViewController" customModule="SofibMobile" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="erB-OK-7EC"/>
+                        <viewControllerLayoutGuide type="bottom" id="BB0-Ks-joH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="r4m-cO-rm1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CFP-Kt-wep">
+                                <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="barTintColor" red="0.0" green="0.40000000000000002" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Procedimiento Adicional" id="zxm-3h-4hZ">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="reply" id="rW6-yu-lHD">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <connections>
+                                                <segue destination="oKX-MK-H17" kind="show" id="4ir-2X-ycL"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" image="icon_settings" id="ncl-U5-u7A">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <connections>
+                                                <action selector="btnAjustes:" destination="2Qk-4O-JMz" id="PbV-jb-Qdz"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FxC-Qj-kuU">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre Procedimiento" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TFK-Bl-SiF">
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.21176470589999999" green="0.5568627451" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ciudad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x3w-EY-BWj">
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.21176470589999999" green="0.5568627451" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Proveedor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cjr-aN-mwz">
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.21176470589999999" green="0.5568627451" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="justificacion justificacion justificacion justificacion justificacion justificacion" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yrw-6j-280">
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.086274509799999996" green="0.3921568627" blue="0.62352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CaliCaliCaliCaliCaliCaliCaliCaliCaliCaliCaliCaliCaliCaliCaliCaliCali" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Tz-gH-fC2">
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.086274509799999996" green="0.3921568627" blue="0.62352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Proveedor Proveedor Proveedor Proveedor Proveedor Proveedor Proveedor Proveedor" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YdD-gJ-TVL">
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.086274509799999996" green="0.3921568627" blue="0.62352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="TFK-Bl-SiF" firstAttribute="top" secondItem="FxC-Qj-kuU" secondAttribute="top" constant="17" id="6Bz-OT-rtB"/>
+                                    <constraint firstItem="TFK-Bl-SiF" firstAttribute="leading" secondItem="FxC-Qj-kuU" secondAttribute="leading" constant="13" id="6Pa-6h-AYF"/>
+                                    <constraint firstItem="Yrw-6j-280" firstAttribute="top" secondItem="TFK-Bl-SiF" secondAttribute="bottom" constant="5" id="C88-Yz-qZY"/>
+                                    <constraint firstItem="2Tz-gH-fC2" firstAttribute="top" secondItem="x3w-EY-BWj" secondAttribute="bottom" constant="5" id="I2S-Ja-oRC"/>
+                                    <constraint firstItem="x3w-EY-BWj" firstAttribute="top" secondItem="Yrw-6j-280" secondAttribute="bottom" constant="5" id="Iwb-3k-TnK"/>
+                                    <constraint firstItem="Yrw-6j-280" firstAttribute="width" secondItem="FxC-Qj-kuU" secondAttribute="width" multiplier="0.9" id="SFt-DB-8Fc"/>
+                                    <constraint firstItem="Cjr-aN-mwz" firstAttribute="leading" secondItem="FxC-Qj-kuU" secondAttribute="leading" constant="13" id="Z18-mH-9TD"/>
+                                    <constraint firstAttribute="bottom" secondItem="YdD-gJ-TVL" secondAttribute="bottom" constant="446" id="aPH-8w-FNL"/>
+                                    <constraint firstItem="Cjr-aN-mwz" firstAttribute="top" secondItem="2Tz-gH-fC2" secondAttribute="bottom" constant="5" id="biu-mi-Gvs"/>
+                                    <constraint firstItem="Yrw-6j-280" firstAttribute="leading" secondItem="FxC-Qj-kuU" secondAttribute="leading" constant="13" id="g0q-xI-0mk"/>
+                                    <constraint firstAttribute="trailing" secondItem="TFK-Bl-SiF" secondAttribute="trailing" constant="13" id="gmB-yK-i5Y"/>
+                                    <constraint firstItem="YdD-gJ-TVL" firstAttribute="leading" secondItem="FxC-Qj-kuU" secondAttribute="leading" constant="13" id="rci-J8-mWm"/>
+                                    <constraint firstItem="YdD-gJ-TVL" firstAttribute="top" secondItem="Cjr-aN-mwz" secondAttribute="bottom" constant="5" id="tOK-uK-IMt"/>
+                                    <constraint firstItem="YdD-gJ-TVL" firstAttribute="width" secondItem="FxC-Qj-kuU" secondAttribute="width" multiplier="0.9" id="tUk-uO-W0S"/>
+                                    <constraint firstItem="2Tz-gH-fC2" firstAttribute="leading" secondItem="FxC-Qj-kuU" secondAttribute="leading" constant="13" id="vHS-TP-Oy6"/>
+                                    <constraint firstItem="2Tz-gH-fC2" firstAttribute="width" secondItem="FxC-Qj-kuU" secondAttribute="width" multiplier="0.9" id="x4m-x8-3IC"/>
+                                    <constraint firstItem="x3w-EY-BWj" firstAttribute="leading" secondItem="FxC-Qj-kuU" secondAttribute="leading" constant="13" id="xl6-1Q-vhk"/>
+                                </constraints>
+                            </scrollView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yfi-G3-e3Z">
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Ami-GQ-3iK"/>
+                                    <barButtonItem systemItem="search" id="M4K-9k-Ggt">
+                                        <connections>
+                                            <segue destination="AUZ-n3-4vl" kind="show" id="HC3-NK-CUj"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="doV-aE-Hoq"/>
+                                    <barButtonItem image="icon_menu" id="E3x-DU-RhT">
+                                        <connections>
+                                            <segue destination="8BK-OZ-b94" kind="show" id="AlJ-GO-rxi"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="pHi-5m-fPN"/>
+                                </items>
+                                <color key="tintColor" red="0.07763177902" green="0.42908513549999999" blue="0.68628191949999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FxC-Qj-kuU" firstAttribute="trailing" secondItem="yfi-G3-e3Z" secondAttribute="trailing" id="5On-cs-t4d"/>
+                            <constraint firstItem="FxC-Qj-kuU" firstAttribute="top" secondItem="CFP-Kt-wep" secondAttribute="bottom" id="HaS-0T-FCI"/>
+                            <constraint firstItem="CFP-Kt-wep" firstAttribute="leading" secondItem="r4m-cO-rm1" secondAttribute="leading" id="Pja-zw-Kve"/>
+                            <constraint firstAttribute="trailing" secondItem="CFP-Kt-wep" secondAttribute="trailing" id="Yff-YO-Tw2"/>
+                            <constraint firstItem="FxC-Qj-kuU" firstAttribute="leading" secondItem="yfi-G3-e3Z" secondAttribute="leading" id="bHP-9j-kWF"/>
+                            <constraint firstItem="BB0-Ks-joH" firstAttribute="top" secondItem="yfi-G3-e3Z" secondAttribute="bottom" id="bX0-ZY-Af3"/>
+                            <constraint firstItem="yfi-G3-e3Z" firstAttribute="leading" secondItem="r4m-cO-rm1" secondAttribute="leading" id="jrC-Oj-CJL"/>
+                            <constraint firstItem="FxC-Qj-kuU" firstAttribute="bottom" secondItem="BB0-Ks-joH" secondAttribute="top" id="ml4-9X-VbH"/>
+                            <constraint firstAttribute="trailing" secondItem="yfi-G3-e3Z" secondAttribute="trailing" id="oMd-QE-u2m"/>
+                            <constraint firstItem="CFP-Kt-wep" firstAttribute="top" secondItem="erB-OK-7EC" secondAttribute="bottom" constant="13" id="ymO-Pp-Ys4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblCiudad" destination="x3w-EY-BWj" id="Vbp-Mo-3za"/>
+                        <outlet property="lblNombreProcedimiento" destination="TFK-Bl-SiF" id="e99-gM-KD1"/>
+                        <outlet property="lblProveedor" destination="Cjr-aN-mwz" id="4yw-gj-GbH"/>
+                        <outlet property="txtCiudad" destination="2Tz-gH-fC2" id="efc-Fe-oDe"/>
+                        <outlet property="txtNombreProcedimiento" destination="Yrw-6j-280" id="Wzu-Sh-FH6"/>
+                        <outlet property="txtProveedor" destination="YdD-gJ-TVL" id="Dmf-pZ-t1c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="98u-a8-LkM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7833" y="1672"/>
+        </scene>
     </scenes>
     <resources>
         <image name="background_login" width="240" height="426"/>
@@ -11161,9 +11298,9 @@
         <segue reference="rva-Zf-0G7"/>
         <segue reference="ZCy-zm-gpS"/>
         <segue reference="WhP-bE-U8f"/>
-        <segue reference="aZW-7R-nfz"/>
-        <segue reference="xM2-e0-Gzh"/>
-        <segue reference="bhv-YB-urc"/>
+        <segue reference="AlJ-GO-rxi"/>
+        <segue reference="QXq-Ls-5BA"/>
+        <segue reference="HC3-NK-CUj"/>
         <segue reference="Pez-Uq-wBc"/>
         <segue reference="U1i-vb-TDl"/>
     </inferredMetricsTieBreakers>

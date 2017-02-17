@@ -9,11 +9,10 @@
 import UIKit
 
 class ProcedimientosAdicionalesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-
-    
-    //let procedimientosAdicionales = ["procedimientosAdicionales 1", "procedimientosAdicionales 2", "procedimientosAdicionales 3", "procedimientosAdicionales 4", "procedimientosAdicionales 5", //"procedimientosAdicionales 6", "procedimientosAdicionales 7", "procedimientosAdicionales 9"]
     
     let jsonProcedimientosAdicionales: NSArray = OpcionesSecundariasViewController.jsonProcedimientosAdicionales!
+    
+    static var procedimientoAdicionalSeleccionado = ProcedimientoAdicional()
     
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
@@ -35,6 +34,20 @@ class ProcedimientosAdicionalesViewController: UIViewController, UITableViewData
         return (cell)
     }
     
+    public func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath?
+    {
+        let opcionSeleccionada = indexPath[1]
+        
+        if let solicitud = self.jsonProcedimientosAdicionales[opcionSeleccionada] as? Dictionary<String, Any>{
+            
+            
+            ProcedimientosAdicionalesViewController.procedimientoAdicionalSeleccionado.nombreProcedimiento = (solicitud["procedimientoSolicitado"] as? String ?? "");
+            ProcedimientosAdicionalesViewController.procedimientoAdicionalSeleccionado.ciudad = (solicitud["ciudad"] as? String ?? "");
+            ProcedimientosAdicionalesViewController.procedimientoAdicionalSeleccionado.proveedor = (solicitud["prestadorNombre"] as? String ?? "")
+        }
+        
+        return indexPath
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
