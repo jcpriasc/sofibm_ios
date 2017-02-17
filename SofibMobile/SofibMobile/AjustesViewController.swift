@@ -53,14 +53,24 @@ class AjustesViewController: UIViewController {
     
     
     func handleTapCerrarSesion(_ sender: UITapGestureRecognizer) {
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        if #available(iOS 10.0, *) {
-            let context = appDelegate.persistentContainer.viewContext
-            context.deletedObjects
-            print("delete")
-            exit(0);
-            
+        
+        let alert = UIAlertController(title: NSLocalizedString("lbl_alerta", comment: "lbl_alerta"), message: NSLocalizedString("lbl_aviso_cerrar_sesion", comment: "lbl_aviso_cerrar_sesion"), preferredStyle: UIAlertControllerStyle.alert)
+        
+        let okAction = UIAlertAction(title: NSLocalizedString("lbl_aceptar", comment: "lbl_aceptar"), style: UIAlertActionStyle.default) {
+            UIAlertAction in
+            let appDelegate = UIApplication.shared.delegate as! AppDelegate
+            if #available(iOS 10.0, *) {
+                let context = appDelegate.persistentContainer.viewContext
+                context.deletedObjects
+                exit(0);
+            };
         }
+        
+        alert.addAction(okAction)
+        alert.addAction(UIAlertAction(title: NSLocalizedString("lbl_cancelar", comment: "lbl_cancelar"), style: UIAlertActionStyle.default, handler: nil))
+        
+        self.present(alert, animated: true, completion: nil)
+
     }
     
     func handleTapCambiarIdioma(_ sender: UITapGestureRecognizer) {
