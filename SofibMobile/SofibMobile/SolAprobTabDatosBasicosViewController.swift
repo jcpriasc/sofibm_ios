@@ -41,7 +41,12 @@ class SolAprobTabDatosBasicosViewController: UIViewController, UITableViewDataSo
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return (SolAprobTabDatosBasicosViewController.jsonTabDatosBasicos!.count)
+        
+        if(SolAprobTabDatosBasicosViewController.jsonTabDatosBasicos != nil){
+            return (SolAprobTabDatosBasicosViewController.jsonTabDatosBasicos!.count)
+        }
+         return 0
+       
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell

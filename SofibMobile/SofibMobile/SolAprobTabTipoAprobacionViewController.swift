@@ -13,7 +13,10 @@ class SolAprobTabTipoAprobacionViewController: UIViewController, UITableViewData
     
     @IBOutlet var txtEntidad: UILabel!
     @IBOutlet var txtTipoServicio: UILabel!
+    
     @IBOutlet var txtJustificacion: UILabel!
+    @IBOutlet var txtJustificacionValor: UILabel!
+    
     static var jsonTabTipoAprobacion: NSArray?
     
     override func viewDidLoad() {
@@ -24,7 +27,8 @@ class SolAprobTabTipoAprobacionViewController: UIViewController, UITableViewData
             SolAprobTabTipoAprobacionViewController.jsonTabTipoAprobacion = solicitud["lstDocumentos"] as? NSArray
             txtEntidad.text = "\(NSLocalizedString("lbl_entidad", comment: "lbl_entidad")) \(": ")\((solicitud["entidad"] as? String ?? ""))"
             txtTipoServicio.text = "\(NSLocalizedString("lbl_tipo", comment: "lbl_tipo")) \(": ")\((solicitud["tipo"] as? String ?? ""))"
-            txtJustificacion.text = "\(NSLocalizedString("lbl_justificacion", comment: "lbl_justificacion")) \(": ")\((solicitud["justificacion"] as? String ?? ""))"
+            txtJustificacion.text = NSLocalizedString("lbl_justificacion", comment: "lbl_justificacion")
+            txtJustificacionValor.text = (solicitud["justificacion"] as? String ?? "")
         }
         
         // Do any additional setup after loading the view.
@@ -37,7 +41,13 @@ class SolAprobTabTipoAprobacionViewController: UIViewController, UITableViewData
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return (SolAprobTabTipoAprobacionViewController.jsonTabTipoAprobacion!.count)
+        
+        if(SolAprobTabTipoAprobacionViewController.jsonTabTipoAprobacion != nil){
+            return (SolAprobTabTipoAprobacionViewController.jsonTabTipoAprobacion!.count)
+        }else{
+            return 0
+        }
+        
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell

@@ -33,6 +33,14 @@ class FuncionariosViewController: UIViewController, UITableViewDataSource, UITab
         
         return (cell)
     }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableViewAutomaticDimension
+    }
+    
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableViewAutomaticDimension
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -27,6 +27,7 @@ class OpcionesSecundariasLogViewController: UIViewController , UITableViewDataSo
                     NSLocalizedString("lbl_titulo_notas_credito_debito", comment: "lbl_titulo_notas_credito_debito"),
                     NSLocalizedString("lbl_titulo_utilizaciones", comment: "lbl_titulo_utilizaciones"),
                     NSLocalizedString("lbl_titulo_encuesta_satisfaccion", comment: "lbl_titulo_encuesta_satisfaccion"),
+                    NSLocalizedString("lbl_bitacoras", comment: "lbl_bitacoras"),
                     NSLocalizedString("lbl_consultar_solicitudes_aprobacion", comment: "lbl_consultar_solicitudes_aprobacion")]
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
@@ -59,6 +60,8 @@ class OpcionesSecundariasLogViewController: UIViewController , UITableViewDataSo
             cellOpcion.imgOpcion.image = UIImage(named: "icon_utilizaciones")
         case 6:
             cellOpcion.imgOpcion.image = UIImage(named: "icon_encuestas")
+        case 7:
+            cellOpcion.imgOpcion.image = UIImage(named: "icon_bitacoras")
         default:
             cellOpcion.imgOpcion.image = UIImage(named: "icon_aprobacion")
         }
@@ -88,6 +91,10 @@ class OpcionesSecundariasLogViewController: UIViewController , UITableViewDataSo
             obtenerUtilizaciones()
         case 6:
             obtenerEncuesta()
+        case 7:
+            FiltroBitacoraViewController.viewBack = "tableViewLogisticoController"
+            let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "bitacorasView")
+            self.show(vc as! UIViewController, sender: vc)
         default:
             obtenerSolicitudAprobacion()
         }
