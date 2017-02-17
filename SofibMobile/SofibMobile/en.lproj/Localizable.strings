@@ -19,6 +19,10 @@
 "seleccionar_tipo_registro" = "Select Record Type";
 "seleccionar_tipo_servicio" = "Select Service Type";
 
+"lbl_cambiar_idioma" = "Change Language";
+"lbl_cerrar_sesion" = "Log Out";
+"lbl_aviso_cerrar_sesion" = "You are sure you want to logout?";
+
 // Solicitudes de atencion
 "solicitud_atencion" = "Medical Attention Petition";
 "convenio" = "Contract";
