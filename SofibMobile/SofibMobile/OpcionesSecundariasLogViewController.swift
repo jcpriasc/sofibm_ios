@@ -89,7 +89,12 @@ class OpcionesSecundariasLogViewController: UIViewController , UITableViewDataSo
         case 6:
             obtenerEncuesta()
         default:
-            obtenerSolicitudAprobacion()
+            //obtenerSolicitudAprobacion()
+            FiltroSolAprobViewController.viewBack = "tableViewLogisticoController"
+            FiltroSolAprobViewController.variableServicio = "l"
+            let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "filtroSolAprobView")
+            self.show(vc as! UIViewController, sender: vc)
+            print("The last letter of the alphabet")
         }
         
         return indexPath
@@ -428,7 +433,7 @@ class OpcionesSecundariasLogViewController: UIViewController , UITableViewDataSo
                     {
                         OpcionesSecundariasLogViewController.jsonSolicitudAprobacion = try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSArray
                         if (( OpcionesSecundariasLogViewController.jsonSolicitudAprobacion?.count)!>0){
-                            SolicitudAprobacionViewController.viewBack = "tableViewLogisticoController"
+                            FiltroSolAprobViewController.viewBack = "tableViewLogisticoController"
                             let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "solicitudesAprobacionController")
                             self.show(vc as! UIViewController, sender: vc)
 

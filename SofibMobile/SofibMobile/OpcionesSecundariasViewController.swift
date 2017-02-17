@@ -107,7 +107,12 @@ class OpcionesSecundariasViewController: UIViewController, UITableViewDataSource
             obtenerFuncionariosExternos()
         default:
             //ya
-            obtenerSolicitudAprobacion()
+            //obtenerSolicitudAprobacion()
+            FiltroSolAprobViewController.viewBack = "tableViewMedicoController"
+            FiltroSolAprobViewController.variableServicio = "m"
+            let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "filtroSolAprobView")
+            self.show(vc as! UIViewController, sender: vc)
+            print("The last letter of the alphabet")
         }
         
         return indexPath
@@ -432,7 +437,7 @@ class OpcionesSecundariasViewController: UIViewController, UITableViewDataSource
                         //Array
                         OpcionesSecundariasLogViewController.jsonSolicitudAprobacion = try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSArray
                         if ((OpcionesSecundariasLogViewController.jsonSolicitudAprobacion?.count)!>0){
-                            SolicitudAprobacionViewController.viewBack = "tableViewMedicoController"
+                            FiltroSolAprobViewController.viewBack = "tableViewMedicoController"
                             let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "solicitudesAprobacionController")
                             self.show(vc as! UIViewController, sender: vc)
                         }else{

@@ -18,6 +18,7 @@ class CargarPickers{
     static var ciudadJson : NSArray?
     static var tipoRegistrosJson : NSArray?
     static var tipoServiciosJson : NSArray?
+    static var serviciosJson : NSArray?
     
     static func cargar_pickers(){
         
@@ -26,6 +27,7 @@ class CargarPickers{
         cargarConvenios();
         cargarTiposRegistros();
         cargarTiposServicios();
+        cargarServicios();
         
     }
     
@@ -142,6 +144,7 @@ class CargarPickers{
 
     
     static func cargarTiposServicios(){
+
         let url = URL(string: PropertiesProject.URL+PropertiesProject.complement_tipos_servicios+listParams)
         
         let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
@@ -156,6 +159,35 @@ class CargarPickers{
                     do
                     {
                         CargarPickers.tipoServiciosJson = try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSArray
+                        print ("ok")
+                        
+                    }
+                    catch
+                    {
+                        
+                    }
+                }
+            }
+        }
+        task.resume()
+    }
+    
+    static func cargarServicios(){
+
+        let url = URL(string: PropertiesProject.URL+PropertiesProject.complement_servicios+listParams)
+        
+        let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
+            if error != nil
+            {
+                print ("ERROR")
+            }
+            else
+            {
+                if let content = data
+                {
+                    do
+                    {
+                        CargarPickers.serviciosJson = try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSArray
                         print ("ok")
                         
                     }

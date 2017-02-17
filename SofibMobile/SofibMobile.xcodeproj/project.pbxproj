@@ -139,6 +139,7 @@
 		A4C5E3AD1DDBB37900294883 /* ProcedimientosAdicionalesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C5E3AC1DDBB37900294883 /* ProcedimientosAdicionalesViewController.swift */; };
 		A4C5E3AF1DDBC78C00294883 /* FuncionariosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C5E3AE1DDBC78C00294883 /* FuncionariosViewController.swift */; };
 		A4C5E3B11DDBC7A900294883 /* FuncionariosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C5E3B01DDBC7A900294883 /* FuncionariosTableViewCell.swift */; };
+		A4CB793D1E53DEAE00C9A2ED /* FiltroSolAprobViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CB793C1E53DEAE00C9A2ED /* FiltroSolAprobViewController.swift */; };
 		A4E7D1A61DC93F1E00C4E977 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E7D1A51DC93F1E00C4E977 /* AppDelegate.swift */; };
 		A4E7D1A81DC93F1E00C4E977 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E7D1A71DC93F1E00C4E977 /* ViewController.swift */; };
 		A4E7D1AB1DC93F1E00C4E977 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4E7D1A91DC93F1E00C4E977 /* Main.storyboard */; };
@@ -305,6 +306,7 @@
 		A4C5E3AC1DDBB37900294883 /* ProcedimientosAdicionalesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProcedimientosAdicionalesViewController.swift; sourceTree = "<group>"; };
 		A4C5E3AE1DDBC78C00294883 /* FuncionariosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FuncionariosViewController.swift; sourceTree = "<group>"; };
 		A4C5E3B01DDBC7A900294883 /* FuncionariosTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FuncionariosTableViewCell.swift; sourceTree = "<group>"; };
+		A4CB793C1E53DEAE00C9A2ED /* FiltroSolAprobViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiltroSolAprobViewController.swift; sourceTree = "<group>"; };
 		A4E7D1A21DC93F1E00C4E977 /* SofibMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SofibMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4E7D1A51DC93F1E00C4E977 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4E7D1A71DC93F1E00C4E977 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -463,6 +465,7 @@
 				A4BC21F41E250B76005079C3 /* SolAprobTabDatosBasicosViewCellController.swift */,
 				A4BC21F71E251434005079C3 /* SolAprobTipoAprobacionViewCellController.swift */,
 				11A9D7DE1E25681B0003FCDC /* DocumentoGiroViewController.swift */,
+				A4CB793C1E53DEAE00C9A2ED /* FiltroSolAprobViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -943,6 +946,7 @@
 				11F894331DDD046300A58E45 /* GiroManutencionViewController.swift in Sources */,
 				11F8943F1DDD10B500A58E45 /* FacturaInformacionViewController.swift in Sources */,
 				A44A5B041DC9832A00A6553D /* SolicitudAtencionTableViewCell.swift in Sources */,
+				A4CB793D1E53DEAE00C9A2ED /* FiltroSolAprobViewController.swift in Sources */,
 				A470AF1E1E24929400278113 /* SolAprobTabTipoAprobacionViewController.swift in Sources */,
 				11E362661DD2B6F900354EB4 /* EncuestaViewCellController.swift in Sources */,
 				110B9C9A1DEE4D190020585A /* ServicioNoAsistencialTabServiciosAdicionadosViewController.swift in Sources */,
