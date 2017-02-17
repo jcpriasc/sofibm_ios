@@ -18,6 +18,9 @@ class GiroTabConceptosViewController: UIViewController, UITableViewDataSource, U
     @IBOutlet var lblTotalConcepto: UILabel!
     static var jsonTabConcepto: NSArray?
     
+    var subTotalGlobal: Double = 0
+    var totalGlobal: Double = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -27,11 +30,8 @@ class GiroTabConceptosViewController: UIViewController, UITableViewDataSource, U
             
             lblBeneficiario.text = "\(NSLocalizedString("lbl_beneficiario", comment: "lbl_beneficiario")) \(": ")\((solicitud["beneficiario"] as? String ?? ""))"
             lblFechaInicio.text = "\(NSLocalizedString("lbl_fecha_inicio", comment: "lbl_fecha_inicio")) \(": ")\((solicitud["fechaInicio"] as? String ?? ""))"
-             lblFechaFin.text = "\(NSLocalizedString("lbl_fecha_fin", comment: "lbl_fecha_fin"))\(": ") \((solicitud["fechaFin"] as? String ?? ""))"
+            lblFechaFin.text = "\(NSLocalizedString("lbl_fecha_fin", comment: "lbl_fecha_fin"))\(": ") \((solicitud["fechaFin"] as? String ?? ""))"
             
-             lblSubtotal.text = NSLocalizedString("lbl_subtotal", comment: "lbl_subtotal") + ": " + FormatoDinero.formatearMoneda(texto: (solicitud["acompañanteMonto"] as? String ?? ""))!
-
-             lblTotalConcepto.text = NSLocalizedString("lbl_total_concepto", comment: "lbl_total_concepto") + ": " + FormatoDinero.formatearMoneda(texto: (solicitud["acompañanteMonto"] as? String ?? ""))!
             
         }
         
@@ -58,10 +58,17 @@ class GiroTabConceptosViewController: UIViewController, UITableViewDataSource, U
             cell.txtReliquidacion.text = (solicitud["reliquidacion"] as? String ?? " ");
            
             cell.txtSubtotal.text =  FormatoDinero.formatearMoneda(texto: (solicitud["subtotal"] as? String ?? " "));
+            subTotalGlobal = subTotalGlobal + FormatoDinero.formatearMonedaStringADouble(texto: solicitud["subtotal"] as! String? ?? "")!
+            
             cell.txtTrm.text =  FormatoDinero.formatearMoneda(texto: (solicitud["trm"] as? String ?? " "));
             cell.txtTotal.text =  FormatoDinero.formatearMoneda(texto: (solicitud["total"] as? String ?? " "));
+            totalGlobal = totalGlobal + FormatoDinero.formatearMonedaStringADouble(texto: solicitud["total"] as! String? ?? "")!
             
         }
+        
+        
+        lblSubtotal.text = NSLocalizedString("lbl_subtotal", comment: "lbl_subtotal") + ": " + FormatoDinero.formatearMonedaDouble(texto: subTotalGlobal)!
+        lblTotalConcepto.text = NSLocalizedString("lbl_total_concepto", comment: "lbl_total_concepto") + ": " + FormatoDinero.formatearMonedaDouble(texto: totalGlobal)!
         
         return (cell)
         

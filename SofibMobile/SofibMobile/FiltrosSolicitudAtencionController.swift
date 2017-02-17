@@ -283,7 +283,9 @@ class FiltrosSolicitudAtencionController: UIViewController, UIPickerViewDelegate
         }
         
         if((txtNombre.text) != nil && (txtNombre.text) != ""){
-            nombre = txtNombre.text!
+            
+            let nombreHelper = txtNombre.text!
+            nombre = nombreHelper.replacingOccurrences(of: " ", with: "%20", options: .literal, range: nil)
         }
         
         if((pickerTraslados.text) != nil && (pickerTraslados.text) != ""){

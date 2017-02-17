@@ -93,6 +93,7 @@ class OpcionesSecundariasViewController: UIViewController, UITableViewDataSource
             //ya
             obtenerDocumentosMedicos()
         case 4:
+            FiltroBitacoraViewController.viewBack = "tableViewMedicoController"
             let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "bitacorasView")
             self.show(vc as! UIViewController, sender: vc)
             print("The last letter of the alphabet")
@@ -402,7 +403,6 @@ class OpcionesSecundariasViewController: UIViewController, UITableViewDataSource
                             let alert = UIAlertController(title: NSLocalizedString("lbl_alerta", comment: "lbl_alerta"), message: NSLocalizedString("lbl_sin_resultados", comment: "lbl_sin_resultados"), preferredStyle: UIAlertControllerStyle.alert)
                             alert.addAction(UIAlertAction(title: NSLocalizedString("lbl_aceptar", comment: "lbl_aceptar"), style: UIAlertActionStyle.default, handler: nil))
                             self.present(alert, animated: true, completion: nil)
-                            
                         }
                         
                         

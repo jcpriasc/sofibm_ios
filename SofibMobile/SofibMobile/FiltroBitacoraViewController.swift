@@ -16,6 +16,8 @@ class FiltroBitacoraViewController: UIViewController, UIPickerViewDelegate, UIPi
     
     static var jsonBitacoras: NSArray?
     
+    static var viewBack = "";
+    
     /*var tipoServicio = ["Medicamentos", "Prestador por fuera de la red", "Servicio de Alojamiento", "Servicio de Ambulancia Aérea", "Servicio de Ambulancia Terrestre"]
     var tipoRegistro = ["Devolución", "Solicitud de Atención", "Solicitud No Asistencial", "Giro", "Nota Crédito"]
     var ciudades = ["CALI", "BOGOTA", "CARTAGENA", "MEDELLIN", "PEREIRA"]
@@ -31,6 +33,12 @@ class FiltroBitacoraViewController: UIViewController, UIPickerViewDelegate, UIPi
         pickerTipoRegistro.placeholder = NSLocalizedString("seleccionar_tipo_registro", comment: "seleccionar_tipo_registro")
         pickerTipoServicio.placeholder = NSLocalizedString("seleccionar_tipo_servicio", comment: "seleccionar_tipo_servicio")
 
+    }
+    @IBAction func back(_ sender: AnyObject) {
+        
+        let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: FiltroBitacoraViewController.viewBack)
+        self.show(vc as! UIViewController, sender: vc)
+        
     }
     
     @IBAction func action_consultar_bitacora(_ sender: AnyObject) {

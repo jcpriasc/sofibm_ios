@@ -21,6 +21,7 @@ class DetalleNotaCreditoGiroViewController: UIViewController {
     @IBOutlet var txtValorNota: UILabel!
     @IBOutlet var txtFechaLiquidacion: UILabel!
     @IBOutlet var txtFechaRegistro: UILabel!
+    @IBOutlet var lblNotaCredito: UILabel!
     
     
     @IBOutlet var lblCiudad: UILabel!
@@ -33,7 +34,10 @@ class DetalleNotaCreditoGiroViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        lblConsecutivoNota.text = "\(NSLocalizedString("lbl_consecutivo_nota_credito", comment: "lbl_consecutivo_nota_credito")) \(": ")\(NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.consecutivoNota)"
+        lblConsecutivoNota.text = NSLocalizedString("lbl_consecutivo_nota_credito", comment: "lbl_consecutivo_nota_credito")        
+        lblNotaCredito.text = NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.consecutivoNota
+        
+        
         lblIdGiroAsociado.text = "\(NSLocalizedString("lbl_id_giro_asociado", comment: "lbl_id_giro_asociado"))\(": ") \(NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.idGiroAsociado)"
         lblNombreBeneficiario.text = "\(NSLocalizedString("lbl_nombre_beneficiario", comment: "lbl_nombre_beneficiario"))\(": ") \(NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.nombreBeneficiario)"
         lblTipoGiro.text = "\(NSLocalizedString("lbl_tipo_giro", comment: "lbl_tipo_giro"))\(": ") \(NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.tipoGiro)"
