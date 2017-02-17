@@ -36,6 +36,10 @@
 		11309A901DED1EB300E79070 /* DetalleGiroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11309A8F1DED1EB300E79070 /* DetalleGiroViewController.swift */; };
 		11309A921DED238000E79070 /* DetalleFacturaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11309A911DED238000E79070 /* DetalleFacturaViewController.swift */; };
 		11309A941DED293E00E79070 /* DetalleNotaCreditoDebitoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11309A931DED293E00E79070 /* DetalleNotaCreditoDebitoViewController.swift */; };
+		113BEC4A1E5693A400842278 /* DetalleFuncionarioExternoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BEC491E5693A400842278 /* DetalleFuncionarioExternoViewController.swift */; };
+		113BEC4C1E56957D00842278 /* FuncionarioExterno.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BEC4B1E56957D00842278 /* FuncionarioExterno.swift */; };
+		113BEC4E1E56A40700842278 /* DetalleProcedimientoAdicionalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BEC4D1E56A40700842278 /* DetalleProcedimientoAdicionalViewController.swift */; };
+		113BEC501E56A7D700842278 /* ProcedimientoAdicional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BEC4F1E56A7D700842278 /* ProcedimientoAdicional.swift */; };
 		115424841DDD3FD1004EE9E9 /* NotaImpuestoViewCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115424831DDD3FD1004EE9E9 /* NotaImpuestoViewCellController.swift */; };
 		115424861DDD3FE7004EE9E9 /* NotaImpuestoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115424851DDD3FE7004EE9E9 /* NotaImpuestoViewController.swift */; };
 		115424881DDD3FFE004EE9E9 /* NotaServicioViewCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115424871DDD3FFE004EE9E9 /* NotaServicioViewCellController.swift */; };
@@ -201,6 +205,10 @@
 		11309A8F1DED1EB300E79070 /* DetalleGiroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleGiroViewController.swift; sourceTree = "<group>"; };
 		11309A911DED238000E79070 /* DetalleFacturaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleFacturaViewController.swift; sourceTree = "<group>"; };
 		11309A931DED293E00E79070 /* DetalleNotaCreditoDebitoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleNotaCreditoDebitoViewController.swift; sourceTree = "<group>"; };
+		113BEC491E5693A400842278 /* DetalleFuncionarioExternoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleFuncionarioExternoViewController.swift; sourceTree = "<group>"; };
+		113BEC4B1E56957D00842278 /* FuncionarioExterno.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FuncionarioExterno.swift; sourceTree = "<group>"; };
+		113BEC4D1E56A40700842278 /* DetalleProcedimientoAdicionalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleProcedimientoAdicionalViewController.swift; sourceTree = "<group>"; };
+		113BEC4F1E56A7D700842278 /* ProcedimientoAdicional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProcedimientoAdicional.swift; sourceTree = "<group>"; };
 		115424831DDD3FD1004EE9E9 /* NotaImpuestoViewCellController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotaImpuestoViewCellController.swift; sourceTree = "<group>"; };
 		115424851DDD3FE7004EE9E9 /* NotaImpuestoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotaImpuestoViewController.swift; sourceTree = "<group>"; };
 		115424871DDD3FFE004EE9E9 /* NotaServicioViewCellController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotaServicioViewCellController.swift; sourceTree = "<group>"; };
@@ -466,6 +474,8 @@
 				A4BC21F71E251434005079C3 /* SolAprobTipoAprobacionViewCellController.swift */,
 				11A9D7DE1E25681B0003FCDC /* DocumentoGiroViewController.swift */,
 				A4CB793C1E53DEAE00C9A2ED /* FiltroSolAprobViewController.swift */,
+				113BEC491E5693A400842278 /* DetalleFuncionarioExternoViewController.swift */,
+				113BEC4D1E56A40700842278 /* DetalleProcedimientoAdicionalViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -498,6 +508,8 @@
 				110B9CAB1DEF20340020585A /* DetalleNotaCreditoDebito.swift */,
 				1181F0331DEF82CB00E92A15 /* DetalleNotaCreditoDebitoImpuesto.swift */,
 				1181F0471DEFB15A00E92A15 /* DetalleGiroHistorico.swift */,
+				113BEC4B1E56957D00842278 /* FuncionarioExterno.swift */,
+				113BEC4F1E56A7D700842278 /* ProcedimientoAdicional.swift */,
 			);
 			name = Modelo;
 			sourceTree = "<group>";
@@ -928,6 +940,7 @@
 				110B9CA61DEE7A700020585A /* UtilizacionesTabAdministracionesViewCellController.swift in Sources */,
 				1181F0441DEFA41000E92A15 /* GiroTabHistoricoViewController.swift in Sources */,
 				11E3625E1DD2B69400354EB4 /* NotaCreditoDebitoViewController.swift in Sources */,
+				113BEC4E1E56A40700842278 /* DetalleProcedimientoAdicionalViewController.swift in Sources */,
 				11E3625A1DD2B66F00354EB4 /* FacturaViewCellController.swift in Sources */,
 				11F894451DDD168800A58E45 /* FacturaImpuestoViewCellController.swift in Sources */,
 				11309A881DED0DBF00E79070 /* NotaCreditoDebito.swift in Sources */,
@@ -966,6 +979,7 @@
 				A4B6F0891DD2BB42000F5A97 /* InformesMedicosViewCell.swift in Sources */,
 				A467DA551DDD50D5004FE4D8 /* DetalleAutorizacionesViewController.swift in Sources */,
 				A46F985F1DEF202C000B19BE /* DetalleBitacoraViewController.swift in Sources */,
+				113BEC4C1E56957D00842278 /* FuncionarioExterno.swift in Sources */,
 				11309A8C1DED0EE300E79070 /* SolicitudAprobacion.swift in Sources */,
 				A467DA531DDD4E5E004FE4D8 /* DetalleAutorizacionesViewCell.swift in Sources */,
 				110E7DFC1E00E746004DB17B /* DetalleDocumentoMedicoViewController.swift in Sources */,
@@ -1010,8 +1024,10 @@
 				1181F02A1DEF65E600E92A15 /* FacturaTabImpuestosViewController.swift in Sources */,
 				11E362681DD2B70500354EB4 /* EncuestaViewController.swift in Sources */,
 				A4C5E3AF1DDBC78C00294883 /* FuncionariosViewController.swift in Sources */,
+				113BEC4A1E5693A400842278 /* DetalleFuncionarioExternoViewController.swift in Sources */,
 				11227A3F1DCAA2060035959B /* DetalleSolicitudAtencionController.swift in Sources */,
 				1181F0461DEFA43400E92A15 /* GiroTabHistoricoViewCellController.swift in Sources */,
+				113BEC501E56A7D700842278 /* ProcedimientoAdicional.swift in Sources */,
 				A4BC21F81E251434005079C3 /* SolAprobTipoAprobacionViewCellController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
