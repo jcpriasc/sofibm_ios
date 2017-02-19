@@ -15,13 +15,14 @@ class InformesMedicosViewController: UIViewController, UITableViewDataSource, UI
     let jsonInformesMedicos: NSArray = OpcionesSecundariasViewController.jsonInformesMedicos!
     
     public static var path : URL?  = nil
+    static var jsonDetalleInformeMedico: NSArray?
     
     let lblVerDetalle = NSLocalizedString("lbl_ver_detalle", comment: "lbl_ver_detalle")
     let lblPdfIngles = NSLocalizedString("lbl_pdf_en", comment: "lbl_pdf_en")
     let lblPdfEspanol = NSLocalizedString("lbl_pdf_es", comment: "lbl_pdf_es")
     let lblCancelar = NSLocalizedString("lbl_cancelar", comment: "lbl_cancelar")
     let lblSeleccionarOpcion = NSLocalizedString("lbl_seleccionar_opcion", comment: "lbl_seleccionar_opcion")
-    
+    let params: String = "/SAC/ABCD1234/"
 
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
@@ -72,7 +73,7 @@ class InformesMedicosViewController: UIViewController, UITableViewDataSource, UI
         let actionSheet = UIAlertController(title: lblVerDetalle, message: lblSeleccionarOpcion, preferredStyle: .actionSheet)
         
         actionSheet.addAction(UIAlertAction(title: lblVerDetalle, style: .default, handler: { (action) in
-            print("Ver Detalle "+String(fileSeleccionada));
+            self.obtenerDetalle(consInformeMedico: consInformeMedico)
         }))
         
         actionSheet.addAction(UIAlertAction(title: lblPdfEspanol, style: .default, handler: { (action) in
@@ -192,6 +193,49 @@ class InformesMedicosViewController: UIViewController, UITableViewDataSource, UI
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func obtenerDetalle(consInformeMedico: Int){
+        print(PropertiesProject.URL+PropertiesProject.complement_InformesMedicos_detalle+params+String(consInformeMedico))
+        let url = URL(string: PropertiesProject.URL+PropertiesProject.complement_InformesMedicos_detalle+params+String(consInformeMedico))
+        
+        let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
+            if error != nil
+            {
+                print ("ERROR")
+            }
+            else
+            {
+                if let content = data
+                {
+                    do
+                    {
+                        
+                        InformesMedicosViewController.jsonDetalleInformeMedico = try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSArray
+                        
+                        if ((InformesMedicosViewController.jsonDetalleInformeMedico) != nil && (InformesMedicosViewController.jsonDetalleInformeMedico?.count)!>0){
+                            let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "tabInformesMedicos")
+                            self.show(vc as! UIViewController, sender: vc)
+                        }else{
+                            //print(NSLocalizedString("lbl_sin_resultados", comment: "lbl_sin_resultados"));
+                            let alert = UIAlertController(title: NSLocalizedString("lbl_alerta", comment: "lbl_alerta"), message: NSLocalizedString("lbl_sin_resultados", comment: "lbl_sin_resultados"), preferredStyle: UIAlertControllerStyle.alert)
+                            alert.addAction(UIAlertAction(title: NSLocalizedString("lbl_aceptar", comment: "lbl_aceptar"), style: UIAlertActionStyle.default, handler: nil))
+                            self.present(alert, animated: true, completion: nil)
+                            
+                        }
+                    }
+                    catch
+                    {
+                        
+                    }
+                }
+            }
+        }
+        task.resume()
+        
+    }
+    
+    
+    
     
 
     /*

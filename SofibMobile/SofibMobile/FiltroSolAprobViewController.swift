@@ -73,7 +73,7 @@ class FiltroSolAprobViewController: UIViewController, UIPickerViewDelegate, UIPi
         listParams+="/"+tipoServicio;
         listParams+="/"+ConsultaSolicitudesAtencionController.solicitudAtencionSeleccionada.consSolicitud;
         listParams+="/"+FiltroSolAprobViewController.variableServicio;
-        print(PropertiesProject.URL+PropertiesProject.complement_aprobacion+listParams)
+        //print(PropertiesProject.URL+PropertiesProject.complement_aprobacion+listParams)
         let url = URL(string: PropertiesProject.URL+PropertiesProject.complement_aprobacion+listParams)
         
         let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
