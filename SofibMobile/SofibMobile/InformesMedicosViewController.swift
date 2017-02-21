@@ -195,6 +195,7 @@ class InformesMedicosViewController: UIViewController, UITableViewDataSource, UI
     }
     
     func obtenerDetalle(consInformeMedico: Int){
+        
         print(PropertiesProject.URL+PropertiesProject.complement_InformesMedicos_detalle+params+String(consInformeMedico))
         let url = URL(string: PropertiesProject.URL+PropertiesProject.complement_InformesMedicos_detalle+params+String(consInformeMedico))
         
