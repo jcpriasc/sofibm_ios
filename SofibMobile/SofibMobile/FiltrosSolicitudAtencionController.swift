@@ -401,6 +401,17 @@ class FiltrosSolicitudAtencionController: UIViewController, UIPickerViewDelegate
         return (true)
     }
     
+    
+    @IBAction func btnAjustes(_ sender: AnyObject) {
+        
+        AjustesViewController.viewBack = "filtroSolicitudesView"
+        let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "ajustesController")
+        self.show(vc as! UIViewController, sender: vc)
+        
+    }
+    
+    
+    
     /*
      // MARK: - Navigation
      

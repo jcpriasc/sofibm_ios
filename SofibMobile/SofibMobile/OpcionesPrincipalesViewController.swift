@@ -86,5 +86,13 @@ class OpcionesPrincipalesViewController:  UIViewController, UITableViewDataSourc
      }
      */
     
+    @IBAction func btnAjustes(_ sender: AnyObject) {
+        
+        AjustesViewController.viewBack = "opcionesPrincipalesView"
+        let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "ajustesController")
+        self.show(vc as! UIViewController, sender: vc)
+    }
+    
+  
 
 }

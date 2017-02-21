@@ -196,8 +196,11 @@ class InformesMedicosViewController: UIViewController, UITableViewDataSource, UI
     
     func obtenerDetalle(consInformeMedico: Int){
         
+         let url = URL(string: PropertiesProject.URL+PropertiesProject.complement_InformesMedicos_detalle+params+String(consInformeMedico)+"")
         print(PropertiesProject.URL+PropertiesProject.complement_InformesMedicos_detalle+params+String(consInformeMedico))
-        let url = URL(string: PropertiesProject.URL+PropertiesProject.complement_InformesMedicos_detalle+params+String(consInformeMedico))
+       
+
+        //let url = URL(string: PropertiesProject.URL+PropertiesProject.complement_InformesMedicos_detalle+params)
         
         let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
             if error != nil
