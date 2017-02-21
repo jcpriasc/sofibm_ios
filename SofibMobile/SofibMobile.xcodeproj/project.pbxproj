@@ -1222,6 +1222,7 @@
 			baseConfigurationReference = 5A60DC2194A36FA88E08C869 /* Pods-SofibMobile.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 63959RX9BZ;
 				INFOPLIST_FILE = SofibMobile/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
@@ -1238,6 +1239,7 @@
 			baseConfigurationReference = 252E058316473D19A91D0566 /* Pods-SofibMobile.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 63959RX9BZ;
 				INFOPLIST_FILE = SofibMobile/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
