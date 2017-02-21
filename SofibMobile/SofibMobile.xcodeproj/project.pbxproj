@@ -116,6 +116,12 @@
 		A44581031DCD845B00838456 /* OpcionesSecundariasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44581021DCD845B00838456 /* OpcionesSecundariasViewController.swift */; };
 		A44A5B011DC972F400A6553D /* ConsultaSolicitudesAtencionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44A5AFF1DC972F400A6553D /* ConsultaSolicitudesAtencionController.swift */; };
 		A44A5B041DC9832A00A6553D /* SolicitudAtencionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44A5B031DC9832A00A6553D /* SolicitudAtencionTableViewCell.swift */; };
+		A4519C691E58E41F009DEE96 /* InformesMedTabInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4519C681E58E41F009DEE96 /* InformesMedTabInfoViewController.swift */; };
+		A4519C6B1E58F7D5009DEE96 /* InformesMedTabInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4519C6A1E58F7D5009DEE96 /* InformesMedTabInfoTableViewCell.swift */; };
+		A4519C6D1E5A3851009DEE96 /* InformesMedTabProcedimientoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4519C6C1E5A3851009DEE96 /* InformesMedTabProcedimientoTableViewCell.swift */; };
+		A4519C6F1E5A3AAE009DEE96 /* InformesMedTabMedicinaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4519C6E1E5A3AAE009DEE96 /* InformesMedTabMedicinaTableViewCell.swift */; };
+		A4519C711E5A3BEB009DEE96 /* InformesMedTabProcedimientoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4519C701E5A3BEB009DEE96 /* InformesMedTabProcedimientoViewController.swift */; };
+		A4519C731E5A3C02009DEE96 /* InformesMedTabMedicinaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4519C721E5A3C02009DEE96 /* InformesMedTabMedicinaViewController.swift */; };
 		A45ABD291E22C650004EE6B4 /* DetalleInformeMedicoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45ABD281E22C650004EE6B4 /* DetalleInformeMedicoViewController.swift */; };
 		A463B4AE1E218D7700AF0981 /* DetalleEpicrisisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A463B4AD1E218D7700AF0981 /* DetalleEpicrisisViewController.swift */; };
 		A467DA531DDD4E5E004FE4D8 /* DetalleAutorizacionesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467DA521DDD4E5E004FE4D8 /* DetalleAutorizacionesViewCell.swift */; };
@@ -288,6 +294,12 @@
 		A44581021DCD845B00838456 /* OpcionesSecundariasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpcionesSecundariasViewController.swift; sourceTree = "<group>"; };
 		A44A5AFF1DC972F400A6553D /* ConsultaSolicitudesAtencionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsultaSolicitudesAtencionController.swift; sourceTree = "<group>"; };
 		A44A5B031DC9832A00A6553D /* SolicitudAtencionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SolicitudAtencionTableViewCell.swift; sourceTree = "<group>"; };
+		A4519C681E58E41F009DEE96 /* InformesMedTabInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InformesMedTabInfoViewController.swift; sourceTree = "<group>"; };
+		A4519C6A1E58F7D5009DEE96 /* InformesMedTabInfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InformesMedTabInfoTableViewCell.swift; sourceTree = "<group>"; };
+		A4519C6C1E5A3851009DEE96 /* InformesMedTabProcedimientoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InformesMedTabProcedimientoTableViewCell.swift; sourceTree = "<group>"; };
+		A4519C6E1E5A3AAE009DEE96 /* InformesMedTabMedicinaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InformesMedTabMedicinaTableViewCell.swift; sourceTree = "<group>"; };
+		A4519C701E5A3BEB009DEE96 /* InformesMedTabProcedimientoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InformesMedTabProcedimientoViewController.swift; sourceTree = "<group>"; };
+		A4519C721E5A3C02009DEE96 /* InformesMedTabMedicinaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InformesMedTabMedicinaViewController.swift; sourceTree = "<group>"; };
 		A45ABD281E22C650004EE6B4 /* DetalleInformeMedicoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleInformeMedicoViewController.swift; sourceTree = "<group>"; };
 		A463B4AD1E218D7700AF0981 /* DetalleEpicrisisViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleEpicrisisViewController.swift; sourceTree = "<group>"; };
 		A467DA521DDD4E5E004FE4D8 /* DetalleAutorizacionesViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleAutorizacionesViewCell.swift; sourceTree = "<group>"; };
@@ -478,6 +490,12 @@
 				A4CB793C1E53DEAE00C9A2ED /* FiltroSolAprobViewController.swift */,
 				113BEC491E5693A400842278 /* DetalleFuncionarioExternoViewController.swift */,
 				113BEC4D1E56A40700842278 /* DetalleProcedimientoAdicionalViewController.swift */,
+				A4519C681E58E41F009DEE96 /* InformesMedTabInfoViewController.swift */,
+				A4519C6A1E58F7D5009DEE96 /* InformesMedTabInfoTableViewCell.swift */,
+				A4519C6C1E5A3851009DEE96 /* InformesMedTabProcedimientoTableViewCell.swift */,
+				A4519C6E1E5A3AAE009DEE96 /* InformesMedTabMedicinaTableViewCell.swift */,
+				A4519C701E5A3BEB009DEE96 /* InformesMedTabProcedimientoViewController.swift */,
+				A4519C721E5A3C02009DEE96 /* InformesMedTabMedicinaViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -906,6 +924,7 @@
 				A4B6F08B1DD2C539000F5A97 /* InformesMedicosViewController.swift in Sources */,
 				1181F0261DEF2BDD00E92A15 /* FacturaTabFacturaViewCellController.swift in Sources */,
 				A4204D4C1DEA2610002AE700 /* SolicitudesAtencion.swift in Sources */,
+				A4519C6F1E5A3AAE009DEE96 /* InformesMedTabMedicinaTableViewCell.swift in Sources */,
 				11309A921DED238000E79070 /* DetalleFacturaViewController.swift in Sources */,
 				A4C5E3A71DDB619A00294883 /* BitacoraViewController.swift in Sources */,
 				A4C5E3AB1DDBB34A00294883 /* ProcedimientosAdicionalesViewCell.swift in Sources */,
@@ -914,6 +933,7 @@
 				A4B6F0911DD2E072000F5A97 /* EpicrisisViewCell.swift in Sources */,
 				11F894351DDD048200A58E45 /* GiroConceptoViewCellController.swift in Sources */,
 				11E362541DD2B61600354EB4 /* GiroViewController.swift in Sources */,
+				A4519C731E5A3C02009DEE96 /* InformesMedTabMedicinaViewController.swift in Sources */,
 				A4204D4E1DEA429D002AE700 /* PropertiesProject.swift in Sources */,
 				A4E7D1A61DC93F1E00C4E977 /* AppDelegate.swift in Sources */,
 				A46F985B1DEE63D6000B19BE /* Autorizacion.swift in Sources */,
@@ -940,6 +960,7 @@
 				11309A8E1DED104400E79070 /* DetalleServicioNoAsistencialViewController.swift in Sources */,
 				1154248A1DDD400D004EE9E9 /* NotaServicioViewController.swift in Sources */,
 				A44581031DCD845B00838456 /* OpcionesSecundariasViewController.swift in Sources */,
+				A4519C691E58E41F009DEE96 /* InformesMedTabInfoViewController.swift in Sources */,
 				110B9CA61DEE7A700020585A /* UtilizacionesTabAdministracionesViewCellController.swift in Sources */,
 				1181F0441DEFA41000E92A15 /* GiroTabHistoricoViewController.swift in Sources */,
 				11E3625E1DD2B69400354EB4 /* NotaCreditoDebitoViewController.swift in Sources */,
@@ -955,6 +976,7 @@
 				A470AF1C1E24928000278113 /* SolAprobTabDatosBasicosViewController.swift in Sources */,
 				110B9CA41DEE7A540020585A /* UtilizacionesTabUtilizacionesViewCellController.swift in Sources */,
 				11F894371DDD049200A58E45 /* GiroConceptoViewController.swift in Sources */,
+				A4519C6D1E5A3851009DEE96 /* InformesMedTabProcedimientoTableViewCell.swift in Sources */,
 				11E3625C1DD2B67D00354EB4 /* FacturaViewController.swift in Sources */,
 				A40980DC1DF86B65000C6037 /* Swift3Base64.swift in Sources */,
 				A470AF181E243EB700278113 /* AjustesViewController.swift in Sources */,
@@ -995,6 +1017,7 @@
 				11F8943D1DDD108C00A58E45 /* FacturaInformacionViewCellController.swift in Sources */,
 				110B9CAE1DEF29A30020585A /* FacturaTabFacturaViewController.swift in Sources */,
 				11309A841DED0BBA00E79070 /* Giro.swift in Sources */,
+				A4519C6B1E58F7D5009DEE96 /* InformesMedTabInfoTableViewCell.swift in Sources */,
 				1181F0481DEFB15A00E92A15 /* DetalleGiroHistorico.swift in Sources */,
 				110B9C961DEE4CC90020585A /* SercioNoAsistecialTabServicioProveedorViewController.swift in Sources */,
 				1181F03A1DEF8ADA00E92A15 /* NotaCreditoDebitoTabServicioViewCellController.swift in Sources */,
@@ -1024,6 +1047,7 @@
 				A43FED211DD55F43007B0BFF /* FiltroBitacoraViewController.swift in Sources */,
 				A43D62D81DCDADD20044AB22 /* OpcionesSecundariasLogViewController.swift in Sources */,
 				110B9C9C1DEE52CA0020585A /* ServicioNoAsistencialTabServicioAdicionadoViewCellController.swift in Sources */,
+				A4519C711E5A3BEB009DEE96 /* InformesMedTabProcedimientoViewController.swift in Sources */,
 				11E362601DD2B6B900354EB4 /* NotaCreditoDebitoViewCellController.swift in Sources */,
 				1181F02A1DEF65E600E92A15 /* FacturaTabImpuestosViewController.swift in Sources */,
 				11E362681DD2B70500354EB4 /* EncuestaViewController.swift in Sources */,
@@ -1198,6 +1222,7 @@
 			baseConfigurationReference = 5A60DC2194A36FA88E08C869 /* Pods-SofibMobile.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 63959RX9BZ;
 				INFOPLIST_FILE = SofibMobile/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
@@ -1214,6 +1239,7 @@
 			baseConfigurationReference = 252E058316473D19A91D0566 /* Pods-SofibMobile.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 63959RX9BZ;
 				INFOPLIST_FILE = SofibMobile/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
