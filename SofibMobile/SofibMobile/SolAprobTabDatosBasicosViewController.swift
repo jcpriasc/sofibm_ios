@@ -66,4 +66,9 @@ class SolAprobTabDatosBasicosViewController: UIViewController, UITableViewDataSo
     }
     */
 
+    @IBAction func btnAjustes(_ sender: AnyObject) {
+        AjustesViewController.viewBack = "datosPacienteController"
+        let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "ajustesController")
+        self.show(vc as! UIViewController, sender: vc)
+    }
 }

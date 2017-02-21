@@ -81,6 +81,10 @@ class ServicioNoAsistencialViewController: UIViewController, UITableViewDataSour
     }
 
   
-
+    @IBAction func btnAjustes(_ sender: AnyObject) {
+        AjustesViewController.viewBack = "servicioNoAsistencialController"
+        let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "ajustesController")
+        self.show(vc as! UIViewController, sender: vc)
+    }
     
 }

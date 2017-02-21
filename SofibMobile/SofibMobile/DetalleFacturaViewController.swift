@@ -121,5 +121,9 @@ class DetalleFacturaViewController: UIViewController {
         
     }
   
-
+    @IBAction func btnAjustes(_ sender: AnyObject) {
+        AjustesViewController.viewBack = "detalleFactura"
+        let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "ajustesController")
+        self.show(vc as! UIViewController, sender: vc)
+    }
 }

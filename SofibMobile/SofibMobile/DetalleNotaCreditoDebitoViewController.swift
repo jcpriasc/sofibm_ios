@@ -114,5 +114,11 @@ class DetalleNotaCreditoDebitoViewController: UIViewController {
         task.resume()
         
     }
+    
+    @IBAction func btnAjustes(_ sender: AnyObject) {
+        AjustesViewController.viewBack = "detalleNotaCreditoDebito"
+        let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "ajustesController")
+        self.show(vc as! UIViewController, sender: vc)
+    }
 
 }

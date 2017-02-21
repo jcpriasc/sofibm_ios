@@ -37,5 +37,11 @@ class DetalleDocumentoMedicoViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    @IBAction func btnAjustes(_ sender: AnyObject) {
+        AjustesViewController.viewBack = "detalleDocumentoMedico"
+        let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "ajustesController")
+        self.show(vc as! UIViewController, sender: vc)
+    }
 
 }

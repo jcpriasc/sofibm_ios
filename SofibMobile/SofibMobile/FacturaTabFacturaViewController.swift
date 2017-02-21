@@ -81,4 +81,9 @@ class FacturaTabFacturaViewController: UIViewController, UITableViewDataSource, 
     }
     */
 
+    @IBAction func btnAjustes(_ sender: AnyObject) {
+        AjustesViewController.viewBack = "facturaInformacionController"
+        let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "ajustesController")
+        self.show(vc as! UIViewController, sender: vc)
+    }
 }

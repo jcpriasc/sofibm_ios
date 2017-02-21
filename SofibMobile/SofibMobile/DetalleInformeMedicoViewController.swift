@@ -23,6 +23,12 @@ class DetalleInformeMedicoViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func btnAjustes(_ sender: AnyObject) {
+        AjustesViewController.viewBack = "detalleInformeMedicoPDF"
+        let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "ajustesController")
+        self.show(vc as! UIViewController, sender: vc)
+    }
+    
 
     /*
     // MARK: - Navigation

@@ -36,4 +36,11 @@ class DetalleEpicrisisViewController: UIViewController {
     }
     */
 
+    @IBAction func btnAjustes(_ sender: AnyObject) {
+        AjustesViewController.viewBack = "detalleEpicrisis"
+        let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "ajustesController")
+        self.show(vc as! UIViewController, sender: vc)
+    }
+    
+    
 }

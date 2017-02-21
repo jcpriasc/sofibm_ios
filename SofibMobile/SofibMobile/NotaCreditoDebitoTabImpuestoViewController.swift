@@ -103,5 +103,12 @@ class NotaCreditoDebitoTabImpuestoViewController: UIViewController , UITableView
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+    @IBAction func btnAjustes(_ sender: AnyObject) {
+        AjustesViewController.viewBack = "notaImpuestoController"
+        let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "ajustesController")
+        self.show(vc as! UIViewController, sender: vc)
+    }
+    
+    
 }

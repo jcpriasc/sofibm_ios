@@ -48,6 +48,12 @@ class InformesMedTabProcedimientoViewController: UIViewController, UITableViewDa
         return (cell)
     }
     
+    @IBAction func btnAjustes(_ sender: AnyObject) {
+        AjustesViewController.viewBack = "procedimientoController"
+        let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "ajustesController")
+        self.show(vc as! UIViewController, sender: vc)
+    }
+
 
     /*
     // MARK: - Navigation
