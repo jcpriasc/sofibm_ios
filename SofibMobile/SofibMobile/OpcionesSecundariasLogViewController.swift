@@ -464,6 +464,12 @@ class OpcionesSecundariasLogViewController: UIViewController , UITableViewDataSo
         
     }
 
+    @IBAction func btnAjustes(_ sender: AnyObject) {
+        AjustesViewController.viewBack = "tableViewLogisticoController"
+        let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "ajustesController")
+        self.show(vc as! UIViewController, sender: vc)
+    }
 
+    
 
 }
