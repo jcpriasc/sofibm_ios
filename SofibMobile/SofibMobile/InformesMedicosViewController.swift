@@ -125,7 +125,7 @@ class InformesMedicosViewController: UIViewController, UITableViewDataSource, UI
         }))
         
         actionSheet.addAction(UIAlertAction(title: lblPdfIngles, style: .default, handler: { (action) in
-            let pathURL = PropertiesProject.URL_INFO_MED+String(consInformeMedico)+PropertiesProject.complement1_info_med+ConsultaSolicitudesAtencionController.solicitudAtencionSeleccionada.consSolicitud+PropertiesProject.complement2_info_med;
+            let pathURL = PropertiesProject.URL_INFO_MED+String(consInformeMedico)+PropertiesProject.complement1_info_med+ConsultaSolicitudesAtencionController.solicitudAtencionSeleccionada.consSolicitud+PropertiesProject.complement2_info_med+PropertiesProject.complement3_info_med_ingles;
             
             print(pathURL)
             
