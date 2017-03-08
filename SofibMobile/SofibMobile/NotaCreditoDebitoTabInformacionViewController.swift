@@ -65,9 +65,14 @@ class NotaCreditoDebitoTabInformacionViewController: UIViewController {
              txtFechaEmision.text = (solicitud["fechaEmision"] as? String ?? "")
              txtFechaVencimientoPago.text = (solicitud["fechaVencimiento"] as? String ?? "")
              txtProveedor.text = (solicitud["proveedor"] as? String ?? "")
-             txtValorTotalFactura.text = FormatoDinero.formatearMoneda(texto:(solicitud["valorTotalFactura"] as? String ?? ""))
-             txtValorTotalPagar.text = FormatoDinero.formatearMoneda(texto:(solicitud["valorTotalPagar"] as? String ?? ""))
-             txtNumeroNota.text = (solicitud["nroNota"] as? String ?? "")
+            
+           // txtValorTotalFactura.text = FormatoDinero.formatearMoneda(texto:(solicitud["valorTotalFactura"] as? String ?? ""))
+           //  txtValorTotalPagar.text = FormatoDinero.formatearMoneda(texto:(solicitud["valorTotalPagar"] as? String ?? ""))
+            
+            txtValorTotalFactura.text = FormatoDinero.formatearMoneda(texto:(solicitud["valorTotalPagar"] as? String ?? ""))
+            txtValorTotalPagar.text = FormatoDinero.formatearMoneda(texto:(solicitud["valorTotalFactura"] as? String ?? ""))
+            
+            txtNumeroNota.text = (solicitud["nroNota"] as? String ?? "")
              txtFechaExpedicion.text = (solicitud["fechaExpedicionNota"] as? String ?? "")
              txtmotivo.text = (solicitud["notaMotivo"] as? String ?? "")
              txtFechaRecibidoCoomevaNota.text = (solicitud["fechaRecibidoCoomevaNota"] as? String ?? "")
