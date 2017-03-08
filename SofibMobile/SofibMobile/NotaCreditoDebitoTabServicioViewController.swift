@@ -54,7 +54,6 @@ class NotaCreditoDebitoTabServicioViewController: UIViewController , UITableView
             cell.txtValorImpuesto.text = FormatoDinero.formatearMoneda(texto:(solicitud["valorImpuesto"] as? String ?? " "));
             cell.txtAplicaSeguroHotelero.text = (solicitud["aplicaSeguro"] as? String ?? " ");
             
-            
         }
         
         return (cell)

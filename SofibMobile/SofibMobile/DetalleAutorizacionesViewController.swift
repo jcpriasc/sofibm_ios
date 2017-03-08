@@ -38,7 +38,18 @@ class DetalleAutorizacionesViewController: UIViewController, UITableViewDataSour
         if let resultadoConsulta = self.jsonDetalleAutorizaciones[indexPath.row] as? Dictionary<String, Any>{
             cell.txtDescripcion.text = resultadoConsulta["descripcion"] as? String ?? ""
             cell.txtJustificacion.text = resultadoConsulta["justificacion"] as? String ?? ""
-            cell.txtEstado.text = resultadoConsulta["estado"] as? String ?? ""
+            
+            var estado:Bool = true
+            estado = resultadoConsulta["estado"] as! Bool
+
+            if (estado == false){
+                cell.txtEstado.text = "Pendiente"
+            }else if (estado == true){
+                cell.txtEstado.text = "Aprobado"
+
+            }
+            
+            //cell.txtEstado.text = resultadoConsulta["estado"] as? String ?? ""
         }
         
         return (cell)
