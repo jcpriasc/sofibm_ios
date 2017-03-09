@@ -28,7 +28,10 @@ class BitacoraViewController: UIViewController, UITableViewDataSource, UITableVi
             
             let consSolicitud = resultadoConsulta["consSolicitudAtencion"] as! Int?
             
-            cell.txtSolicitud.text = String(describing: consSolicitud);
+          //  cell.txtSolicitud.text = String(describing: consSolicitud);
+            cell.txtSolicitud.text = consSolicitud?.description
+
+           
             cell.txtNombre.text = resultadoConsulta["nombre"] as! String?;
             cell.txtTipoRegistro.text = resultadoConsulta["tipoRegistro"] as! String?;
             cell.txtTipoAccion.text = resultadoConsulta["tipoAccion"] as! String?;
