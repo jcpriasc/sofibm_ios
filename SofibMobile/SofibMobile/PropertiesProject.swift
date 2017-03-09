@@ -56,5 +56,7 @@ class PropertiesProject{
     static var complement_tipos_servicios: String = "/tipoServicios"
     static var complement_servicios: String = "/servicios"
     static var complement_detalle_aprobacion: String = "/aprobacion/detalle"
+    
+    static var complement_documento_informes_medico: String = "/InformesMedicos/detalle/documento"
 
 }

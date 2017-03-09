@@ -17,6 +17,8 @@ class InformesMedTabInfoViewController: UIViewController, UITableViewDataSource,
     @IBOutlet var lblTipoPaciente: UILabel!
     @IBOutlet var lblDadoAlta: UILabel!
     @IBOutlet var lblFallecido: UILabel!
+    
+    let service =  PropertiesProject.complement_documento_informes_medico;
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -79,9 +81,104 @@ class InformesMedTabInfoViewController: UIViewController, UITableViewDataSource,
     
     public func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath?{
         
-        let alert = UIAlertController(title: NSLocalizedString("lbl_alerta", comment: "lbl_alerta"), message: NSLocalizedString("lbl_sin_resultados", comment: "lbl_sin_resultados"), preferredStyle: UIAlertControllerStyle.alert)
-        alert.addAction(UIAlertAction(title: NSLocalizedString("lbl_aceptar", comment: "lbl_aceptar"), style: UIAlertActionStyle.default, handler: nil))
-        self.present(alert, animated: true, completion: nil)
+        /*
+         String params = "SAC/ABCD1234/"+ InformesMedicosFragment.detalleInformeMedicoSeleccionado.getLstDocumentos().get((int)viewHolder.iconOpcion.getTag()).getId();
+         
+         
+         ConexionServicioListaTask task = new ConexionServicioListaTask(context, getContext().getResources().getString(R.string.complement_documento_informes_medico), params);
+ */
+        
+        
+        //let text = "some text" //just a text
+        let listParams: String = "/SAC/ABCD1234/";
+        let fileSeleccionada = indexPath[1]
+        var opcionSeleccionada = ""
+        var file = ""
+        var idFile = "";
+        
+        
+        if let solicitud = InformesMedTabInfoViewController.jsonTabDocumentos?[fileSeleccionada] as? Dictionary<String, Any>{
+            //opcionSeleccionada = (solicitud["nombreDocumento"] as! String?)!;
+            //file = (solicitud["archivo"] as! String?)!;
+            idFile = (solicitud["id"] as! String?)!;
+        }
+        let url = URL(string: PropertiesProject.URL+service+listParams+idFile)
+        
+        
+        let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
+            if error != nil
+            {
+                print ("ERROR")
+            }
+            else
+            {
+                if let content = data
+                {
+                    do
+                    {
+                        //Array
+                        let fileSeleccionadoJson = try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers) as? Dictionary<String, Any>
+                        
+                        DispatchQueue.main.async {
+                            if ((fileSeleccionadoJson) != nil && (fileSeleccionadoJson?.count)!>0){
+                                
+                                opcionSeleccionada = (fileSeleccionadoJson?["archivo"] as! String?)!
+                                file = (fileSeleccionadoJson?["nombreDocumento"] as! String?)!
+                                
+                                if let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
+                                    
+                                    let convertedData = Data(base64Encoded: opcionSeleccionada)
+                                    
+                                    DocumentosMedicosViewController.path = dir.appendingPathComponent(file)
+                                    let aweds: String = dir.dataRepresentation.base64EncodedString()
+                                    print(aweds)
+                                    //writing
+                                    do {
+                                        try convertedData?.write(to: DocumentosMedicosViewController.path!)
+                                        
+                                    }
+                                    catch {/* error handling here */}
+                                    
+                                    //reading
+                                    do {
+                                        let text2 = try String(contentsOf: DocumentosMedicosViewController.path!, encoding: String.Encoding.utf8)
+                                        print(text2);
+                                    }
+                                        
+                                    catch {
+                                        print("ERROR")
+                                    }
+                                    
+                                    
+                                    
+                                }
+                                
+                                let url = NSURL.fileURL(withPath: (DocumentosMedicosViewController.path?.absoluteString)!)
+                                print(url)
+                                //webView.loadRequest(url)
+                                
+                                let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "detalleDocumentoMedico")
+                                self.show(vc as! UIViewController, sender: vc)
+                                
+                                
+                            }else{
+                                //print(NSLocalizedString("lbl_sin_resultados", comment: "lbl_sin_resultados"));
+                                let alert = UIAlertController(title: NSLocalizedString("lbl_alerta", comment: "lbl_alerta"), message: NSLocalizedString("lbl_sin_resultados", comment: "lbl_sin_resultados"), preferredStyle: UIAlertControllerStyle.alert)
+                                alert.addAction(UIAlertAction(title: NSLocalizedString("lbl_aceptar", comment: "lbl_aceptar"), style: UIAlertActionStyle.default, handler: nil))
+                                self.present(alert, animated: true, completion: nil)
+                                
+                            }
+                        }
+                    }
+                    catch
+                    {
+                        
+                    }
+                }
+            }
+        }
+        task.resume()
+        
         
         return indexPath
     }
