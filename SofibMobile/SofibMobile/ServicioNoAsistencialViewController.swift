@@ -12,22 +12,20 @@ import Alamofire
 class ServicioNoAsistencialViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     
+    
     let jsonServicioNoAsistencial: NSArray = OpcionesSecundariasLogViewController.jsonServicioNoAsistencial!;
     let servicioNoAsistencial = ["Solicitud 1", "Solicitud 2", "Solicitud 3", "Solicitud 4", "Solicitud 5", "Solicitud 6", "Solicitud 7", "Solicitud 9"]
     
      static var servicioNoAsistencial = ServicioNoAsistencial()
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-       // self.lstServicioNoAsistencial.delegate = self;
-       // self.lstServicioNoAsistencial.dataSource = self;
-        
-       // let archivo  = UINib(nibName: idCelda, bundle:nil);
-       // self.lstServicioNoAsistencial.register(archivo, forCellReuseIdentifier: idCelda)
+      
     }
     
     override func viewWillAppear(_ animated: Bool) {
+
         
        // self.obtenerServiciosNoAsistenciales()
     }
