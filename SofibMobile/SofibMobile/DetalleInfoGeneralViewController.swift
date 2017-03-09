@@ -9,10 +9,13 @@
 import UIKit
 
 class DetalleInfoGeneralViewController: UIViewController {
+    
+    @IBOutlet var webView: UIWebView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        webView.loadRequest(URLRequest(url: InformesMedTabInfoViewController.path!))
         // Do any additional setup after loading the view.
     }
 
@@ -31,5 +34,11 @@ class DetalleInfoGeneralViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    @IBAction func btnAjustes(_ sender: AnyObject) {
+        AjustesViewController.viewBack = "detalleInfoGeneral"
+        let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "ajustesController")
+        self.show(vc as! UIViewController, sender: vc)
+    }
 
 }
