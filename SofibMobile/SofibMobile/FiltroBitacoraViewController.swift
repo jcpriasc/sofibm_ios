@@ -226,6 +226,7 @@ class FiltroBitacoraViewController: UIViewController, UIPickerViewDelegate, UIPi
             }else if let data = CargarPickers.tipoServiciosJson![row-1] as? Dictionary<String, Any>{
                 tipoServicioSeleccionado = (data["descripcion"] as! String?)!;
             }
+            
             return tipoServicioSeleccionado
         }
         

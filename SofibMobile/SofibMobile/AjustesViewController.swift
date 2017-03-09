@@ -74,7 +74,55 @@ class AjustesViewController: UIViewController {
     }
     
     func handleTapCambiarIdioma(_ sender: UITapGestureRecognizer) {
-        print("Cambiar Idioma")
+
+        
+        //let message = "Change language of this app including its content."
+        let message = "Cambiar el idioma de esta aplicación, incluido su contenido."
+        
+        
+        //let sheetCtrl = UIAlertController(title: "Choose language", message: message, preferredStyle: .actionSheet)
+        let sheetCtrl = UIAlertController(title: "Seleccionar Lenguaje", message: message, preferredStyle: .actionSheet)
+
+        
+        for languageCode in Bundle.main.localizations.filter({ $0 != "Base" }) {
+            let langName = Locale.current.localizedString(forLanguageCode: languageCode)
+            let action = UIAlertAction(title: langName, style: .default) { _ in
+                self.changeToLanguage(languageCode) // see step #2
+            }
+            sheetCtrl.addAction(action)
+        }
+        
+        let cancelAction = UIAlertAction(title: "Cancelar", style: .cancel, handler: nil)
+        sheetCtrl.addAction(cancelAction)
+        
+        sheetCtrl.popoverPresentationController?.sourceView = self.view
+        sheetCtrl.popoverPresentationController?.sourceRect = self.cambiarIdiomaView.frame
+        present(sheetCtrl, animated: true, completion: nil)
+    
+    }
+    
+    
+    private func changeToLanguage(_ langCode: String) {
+        if Bundle.main.preferredLocalizations.first != langCode {
+           // let message = "In order to change the language, the App must be closed and reopened by you."
+            
+            let message = "Para cambiar el idioma, la aplicación debe ser cerrada y reabierta por usted."
+            
+            
+            let confirmAlertCtrl = UIAlertController(title: "Reinicio de aplicación requerido", message: message, preferredStyle: .alert)
+            
+            let confirmAction = UIAlertAction(title: "Cerrar Ahora", style: .destructive) { _ in
+                UserDefaults.standard.set([langCode], forKey: "AppleLanguages")
+                UserDefaults.standard.synchronize()
+                exit(EXIT_SUCCESS)
+            }
+            confirmAlertCtrl.addAction(confirmAction)
+            
+            let cancelAction = UIAlertAction(title: "Cancelar", style: .cancel, handler: nil)
+            confirmAlertCtrl.addAction(cancelAction)
+            
+            present(confirmAlertCtrl, animated: true, completion: nil)
+        }
     }
     
     @IBAction func back(_ sender: AnyObject) {
