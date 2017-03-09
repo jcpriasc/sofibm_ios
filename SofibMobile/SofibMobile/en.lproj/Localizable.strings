@@ -248,3 +248,12 @@
 "lbl_procedimiento"= "Procedure";
 "lbl_entidad"= "Entity";
 "lbl_tipo"= "Type";
+
+"lbl_cambiar_lenguaje" = "Change language of this app including its content.";
+"lbl_seleccionar_lenguaje" = "Choose language";
+"lbl_mensaje_reinicio_aplicacion" = "In order to change the language, the App must be closed and reopened by you.";
+"lbl_reinicio_requerido" = "App restart required";
+"lbl_cerrar_ahora" = "Close now";
+
+
+

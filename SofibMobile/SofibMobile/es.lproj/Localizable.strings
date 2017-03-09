@@ -249,3 +249,9 @@
 "lbl_procedimiento"="Procedimiento";
 "lbl_entidad"="Entidad";
 "lbl_tipo"="Tipo";
+
+"lbl_cambiar_lenguaje" = "Cambiar el idioma de esta aplicación, incluido su contenido.";
+"lbl_seleccionar_lenguaje" = "Seleccionar Lenguaje";
+"lbl_mensaje_reinicio_aplicacion" = "Para cambiar el idioma, la aplicación debe ser cerrada y reabierta.";
+"lbl_reinicio_requerido" = "Reinicio de aplicación requerido";
+"lbl_cerrar_ahora" = "Cerrar Ahora";

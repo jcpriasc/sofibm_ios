@@ -77,11 +77,11 @@ class AjustesViewController: UIViewController {
 
         
         //let message = "Change language of this app including its content."
-        let message = "Cambiar el idioma de esta aplicación, incluido su contenido."
+        let message = NSLocalizedString("lbl_cambiar_lenguaje", comment: "lbl_cambiar_lenguaje")
         
         
         //let sheetCtrl = UIAlertController(title: "Choose language", message: message, preferredStyle: .actionSheet)
-        let sheetCtrl = UIAlertController(title: "Seleccionar Lenguaje", message: message, preferredStyle: .actionSheet)
+        let sheetCtrl = UIAlertController(title: NSLocalizedString("lbl_seleccionar_lenguaje", comment: "lbl_seleccionar_lenguaje"), message: message, preferredStyle: .actionSheet)
 
         
         for languageCode in Bundle.main.localizations.filter({ $0 != "Base" }) {
@@ -92,7 +92,7 @@ class AjustesViewController: UIViewController {
             sheetCtrl.addAction(action)
         }
         
-        let cancelAction = UIAlertAction(title: "Cancelar", style: .cancel, handler: nil)
+        let cancelAction = UIAlertAction(title: NSLocalizedString("lbl_cancelar", comment: "lbl_cancelar"), style: .cancel, handler: nil)
         sheetCtrl.addAction(cancelAction)
         
         sheetCtrl.popoverPresentationController?.sourceView = self.view
@@ -106,19 +106,19 @@ class AjustesViewController: UIViewController {
         if Bundle.main.preferredLocalizations.first != langCode {
            // let message = "In order to change the language, the App must be closed and reopened by you."
             
-            let message = "Para cambiar el idioma, la aplicación debe ser cerrada y reabierta por usted."
+            let message = NSLocalizedString("lbl_mensaje_reinicio_aplicacion", comment: "lbl_mensaje_reinicio_aplicacion")
             
             
-            let confirmAlertCtrl = UIAlertController(title: "Reinicio de aplicación requerido", message: message, preferredStyle: .alert)
+            let confirmAlertCtrl = UIAlertController(title: NSLocalizedString("lbl_reinicio_requerido", comment: "lbl_reinicio_requerido"), message: message, preferredStyle: .alert)
             
-            let confirmAction = UIAlertAction(title: "Cerrar Ahora", style: .destructive) { _ in
+            let confirmAction = UIAlertAction(title: NSLocalizedString("lbl_cerrar_ahora", comment: "lbl_cerrar_ahora"), style: .destructive) { _ in
                 UserDefaults.standard.set([langCode], forKey: "AppleLanguages")
                 UserDefaults.standard.synchronize()
                 exit(EXIT_SUCCESS)
             }
             confirmAlertCtrl.addAction(confirmAction)
             
-            let cancelAction = UIAlertAction(title: "Cancelar", style: .cancel, handler: nil)
+            let cancelAction = UIAlertAction(title: NSLocalizedString("lbl_cancelar", comment: "lbl_cancelar"), style: .cancel, handler: nil)
             confirmAlertCtrl.addAction(cancelAction)
             
             present(confirmAlertCtrl, animated: true, completion: nil)
