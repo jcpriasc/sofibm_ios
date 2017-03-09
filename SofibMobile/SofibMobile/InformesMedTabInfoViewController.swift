@@ -18,6 +18,8 @@ class InformesMedTabInfoViewController: UIViewController, UITableViewDataSource,
     @IBOutlet var lblDadoAlta: UILabel!
     @IBOutlet var lblFallecido: UILabel!
     
+    public static var path : URL?  = nil
+    
     let service =  PropertiesProject.complement_documento_informes_medico;
 
     override func viewDidLoad() {
@@ -129,19 +131,19 @@ class InformesMedTabInfoViewController: UIViewController, UITableViewDataSource,
                                     
                                     let convertedData = Data(base64Encoded: opcionSeleccionada)
                                     
-                                    DocumentosMedicosViewController.path = dir.appendingPathComponent(file)
+                                    InformesMedTabInfoViewController.path = dir.appendingPathComponent(file)
                                     let aweds: String = dir.dataRepresentation.base64EncodedString()
                                     print(aweds)
                                     //writing
                                     do {
-                                        try convertedData?.write(to: DocumentosMedicosViewController.path!)
+                                        try convertedData?.write(to: InformesMedTabInfoViewController.path!)
                                         
                                     }
                                     catch {/* error handling here */}
                                     
                                     //reading
                                     do {
-                                        let text2 = try String(contentsOf: DocumentosMedicosViewController.path!, encoding: String.Encoding.utf8)
+                                        let text2 = try String(contentsOf: InformesMedTabInfoViewController.path!, encoding: String.Encoding.utf8)
                                         print(text2);
                                     }
                                         
@@ -153,11 +155,11 @@ class InformesMedTabInfoViewController: UIViewController, UITableViewDataSource,
                                     
                                 }
                                 
-                                let url = NSURL.fileURL(withPath: (DocumentosMedicosViewController.path?.absoluteString)!)
+                                let url = NSURL.fileURL(withPath: (InformesMedTabInfoViewController.path?.absoluteString)!)
                                 print(url)
                                 //webView.loadRequest(url)
                                 
-                                let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "detalleDocumentoMedico")
+                                let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "detalleInfoGeneral")
                                 self.show(vc as! UIViewController, sender: vc)
                                 
                                 

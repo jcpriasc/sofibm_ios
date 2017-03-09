@@ -105,6 +105,7 @@
 		5590B139A4FE3ABCDE44DB05 /* Pods_SofibMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 692EC0DDA0C42F4D176CB70A /* Pods_SofibMobile.framework */; };
 		8B75A464F4E22CD2FFF01D38 /* Pods_SofibMobileUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5B9CF158A964CF92923935B /* Pods_SofibMobileUITests.framework */; };
 		A40980DC1DF86B65000C6037 /* Swift3Base64.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40980DB1DF86B65000C6037 /* Swift3Base64.swift */; };
+		A41BB3881E70E11C00771779 /* DetalleInfoGeneralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41BB3871E70E11C00771779 /* DetalleInfoGeneralViewController.swift */; };
 		A4204D4C1DEA2610002AE700 /* SolicitudesAtencion.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4204D4B1DEA2610002AE700 /* SolicitudesAtencion.swift */; };
 		A4204D4E1DEA429D002AE700 /* PropertiesProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4204D4D1DEA429D002AE700 /* PropertiesProject.swift */; };
 		A42DB1C01E569A0100DFE77C /* UsuarioSesion.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42DB1BF1E569A0100DFE77C /* UsuarioSesion.swift */; };
@@ -283,6 +284,7 @@
 		5A60DC2194A36FA88E08C869 /* Pods-SofibMobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SofibMobile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SofibMobile/Pods-SofibMobile.debug.xcconfig"; sourceTree = "<group>"; };
 		692EC0DDA0C42F4D176CB70A /* Pods_SofibMobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SofibMobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A40980DB1DF86B65000C6037 /* Swift3Base64.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swift3Base64.swift; sourceTree = "<group>"; };
+		A41BB3871E70E11C00771779 /* DetalleInfoGeneralViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleInfoGeneralViewController.swift; sourceTree = "<group>"; };
 		A4204D4B1DEA2610002AE700 /* SolicitudesAtencion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SolicitudesAtencion.swift; sourceTree = "<group>"; };
 		A4204D4D1DEA429D002AE700 /* PropertiesProject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertiesProject.swift; sourceTree = "<group>"; };
 		A42DB1BF1E569A0100DFE77C /* UsuarioSesion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsuarioSesion.swift; sourceTree = "<group>"; };
@@ -496,6 +498,7 @@
 				A4519C6E1E5A3AAE009DEE96 /* InformesMedTabMedicinaTableViewCell.swift */,
 				A4519C701E5A3BEB009DEE96 /* InformesMedTabProcedimientoViewController.swift */,
 				A4519C721E5A3C02009DEE96 /* InformesMedTabMedicinaViewController.swift */,
+				A41BB3871E70E11C00771779 /* DetalleInfoGeneralViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -941,6 +944,7 @@
 				1181F0301DEF7E8B00E92A15 /* NotaCreditoDebitoTabImpuestoViewController.swift in Sources */,
 				115A2C911DE893FB003B1C00 /* NotaCreditoGiro.swift in Sources */,
 				11E362641DD2B6E400354EB4 /* UtilizacionesViewController.swift in Sources */,
+				A41BB3881E70E11C00771779 /* DetalleInfoGeneralViewController.swift in Sources */,
 				110B9CA81DEF1DD40020585A /* DetalleFactura.swift in Sources */,
 				1181F0361DEF860C00E92A15 /* NotaCreditoDebitoTabImpuestoDetalleViewController.swift in Sources */,
 				115424881DDD3FFE004EE9E9 /* NotaServicioViewCellController.swift in Sources */,
