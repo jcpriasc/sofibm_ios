@@ -20,6 +20,9 @@ class CargarPickers{
     static var tipoServiciosJson : NSArray?
     static var serviciosJson : NSArray?
     
+    static var tipoServicio : String = "/0"
+
+    
     static func cargar_pickers(){
         
         cargarEstados();
@@ -145,7 +148,11 @@ class CargarPickers{
     
     static func cargarTiposServicios(){
 
-        let url = URL(string: PropertiesProject.URL+PropertiesProject.complement_tipos_servicios+listParams)
+        let uri = PropertiesProject.URL+PropertiesProject.complement_tipos_servicios+listParams+tipoServicio
+        
+        let url = URL(string: uri)
+        
+        print(tipoServicio)
         
         let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
             if error != nil
