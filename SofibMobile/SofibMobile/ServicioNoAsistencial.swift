@@ -19,3 +19,21 @@ class ServicioNoAsistencial{
     var consServicio: Double = 0
 
 }
+
+
+class ServicioAsistencial{
+    
+    var id: Int = 0
+    var numerioSias: String = ""
+    var ciudad: String = ""
+    var idPrestador: Int = 0
+    var nombrePrestador: String = ""
+    var nombreServicio: String = ""
+    var codigoProcedimiento: String = ""
+    var cantidad: Int = 0
+    var nombreEspanol: String = ""
+    var nombreIngles: String = ""
+    var fecha: String = ""
+    var estado: String = ""
+    
+}

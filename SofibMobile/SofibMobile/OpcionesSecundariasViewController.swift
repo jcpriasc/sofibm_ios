@@ -192,7 +192,7 @@ class OpcionesSecundariasViewController: UIViewController, UITableViewDataSource
                         OpcionesSecundariasViewController.jsonServiciosAsistenciales = try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSArray
                         
                         if ((OpcionesSecundariasViewController.jsonServiciosAsistenciales?.count)!>0){
-                            let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "")
+                            let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "serviciosAsistencialesView")
                             self.show(vc as! UIViewController, sender: vc)
                         }else{
                             //print(NSLocalizedString("lbl_sin_resultados", comment: "lbl_sin_resultados"));
