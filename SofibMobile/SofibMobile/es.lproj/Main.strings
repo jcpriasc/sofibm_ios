@@ -1,0 +1,2196 @@
+
+/* Class = "UILabel"; text = "Beneficiario: MARIO ACEVEDO"; ObjectID = "08f-gQ-nj9"; */
+"08f-gQ-nj9.text" = "Beneficiario: MARIO ACEVEDO";
+
+/* Class = "UINavigationItem"; title = "Sofib Mobile"; ObjectID = "0Ac-Rt-SMj"; */
+"0Ac-Rt-SMj.title" = "Sofib Mobile";
+
+/* Class = "UILabel"; text = "APROBADO"; ObjectID = "0C8-Qu-Xyl"; */
+"0C8-Qu-Xyl.text" = "APROBADO";
+
+/* Class = "UILabel"; text = "Documentación del Servicio Solicitado"; ObjectID = "0D6-hX-Avs"; */
+"0D6-hX-Avs.text" = "Documentación del Servicio Solicitado";
+
+/* Class = "UILabel"; text = "Proveedor"; ObjectID = "0DA-G4-7Hg"; */
+"0DA-G4-7Hg.text" = "Proveedor";
+
+/* Class = "UIBarButtonItem"; title = "Atras"; ObjectID = "0GW-tQ-kyk"; */
+"0GW-tQ-kyk.title" = "Atras";
+
+/* Class = "UILabel"; text = "Identificación"; ObjectID = "0Gv-IN-wz2"; */
+"0Gv-IN-wz2.text" = "Identificación";
+
+/* Class = "UILabel"; text = "Aplica Seguro Hotelero"; ObjectID = "0Ig-BY-P2I"; */
+"0Ig-BY-P2I.text" = "Aplica Seguro Hotelero";
+
+/* Class = "UILabel"; text = "Fecha Expedición"; ObjectID = "0Tl-QP-PlI"; */
+"0Tl-QP-PlI.text" = "Fecha Expedición";
+
+/* Class = "UILabel"; text = "Proveedor"; ObjectID = "0Wq-5N-VWG"; */
+"0Wq-5N-VWG.text" = "Proveedor";
+
+/* Class = "UINavigationItem"; title = "Sofib Mobile"; ObjectID = "0bz-8j-FeJ"; */
+"0bz-8j-FeJ.title" = "Sofib Mobile";
+
+/* Class = "UILabel"; text = "12/07/2010"; ObjectID = "0gG-2d-4er"; */
+"0gG-2d-4er.text" = "12/07/2010";
+
+/* Class = "UILabel"; text = "Valor Devolución"; ObjectID = "0iy-TL-1aY"; */
+"0iy-TL-1aY.text" = "Valor Devolución";
+
+/* Class = "UILabel"; text = "INTERNO"; ObjectID = "14X-mh-ZAk"; */
+"14X-mh-ZAk.text" = "INTERNO";
+
+/* Class = "UILabel"; text = "Fallecido?: NO"; ObjectID = "1J5-F1-oFY"; */
+"1J5-F1-oFY.text" = "Fallecido?: NO";
+
+/* Class = "UILabel"; text = "$58.000"; ObjectID = "1Pr-Us-b7d"; */
+"1Pr-Us-b7d.text" = "$58.000";
+
+/* Class = "UITabBarItem"; title = "MANUTENCIÓN"; ObjectID = "1Q4-gN-dsx"; */
+"1Q4-gN-dsx.title" = "MANUTENCIÓN";
+
+/* Class = "UILabel"; text = "Entidad: ksadjlaskjdlsakjdlkajs"; ObjectID = "1WJ-Rr-UTu"; */
+"1WJ-Rr-UTu.text" = "Entidad: ksadjlaskjdlsakjdlkajs";
+
+/* Class = "UILabel"; text = "Id Giro Asociado: 1"; ObjectID = "1ZH-Qi-7iU"; */
+"1ZH-Qi-7iU.text" = "Id Giro Asociado: 1";
+
+/* Class = "UILabel"; text = "Descripción"; ObjectID = "1id-W1-fQz"; */
+"1id-W1-fQz.text" = "Descripción";
+
+/* Class = "UILabel"; text = "TRM"; ObjectID = "1m4-NB-Ys3"; */
+"1m4-NB-Ys3.text" = "TRM";
+
+/* Class = "UINavigationItem"; title = "Historico"; ObjectID = "1mE-1d-8eW"; */
+"1mE-1d-8eW.title" = "Historico";
+
+/* Class = "UILabel"; text = "Tipo de Paciente: HOSPITALIZADO"; ObjectID = "1tR-U2-Js8"; */
+"1tR-U2-Js8.text" = "Tipo de Paciente: HOSPITALIZADO";
+
+/* Class = "UILabel"; text = "Valor Total a Pagar"; ObjectID = "1xA-l6-Z45"; */
+"1xA-l6-Z45.text" = "Valor Total a Pagar";
+
+/* Class = "UILabel"; text = "JUAN DAVID ARAGON"; ObjectID = "2CS-aK-SPj"; */
+"2CS-aK-SPj.text" = "JUAN DAVID ARAGON";
+
+/* Class = "UILabel"; text = "Pregunta"; ObjectID = "2Jv-uo-AVN"; */
+"2Jv-uo-AVN.text" = "Pregunta";
+
+/* Class = "UILabel"; text = "CaliCaliCaliCaliCaliCaliCaliCaliCaliCaliCaliCaliCaliCaliCaliCaliCali"; ObjectID = "2Tz-gH-fC2"; */
+"2Tz-gH-fC2.text" = "CaliCaliCaliCaliCaliCaliCaliCaliCaliCaliCaliCaliCaliCaliCaliCaliCali";
+
+/* Class = "UILabel"; text = "Solicitud de Atención"; ObjectID = "2VC-dY-Wtb"; */
+"2VC-dY-Wtb.text" = "Solicitud de Atención";
+
+/* Class = "UILabel"; text = "Cerrar Sesión"; ObjectID = "2bD-b8-jOB"; */
+"2bD-b8-jOB.text" = "Cerrar Sesión";
+
+/* Class = "UILabel"; text = "Descripción y restricciones"; ObjectID = "2dU-x1-5NB"; */
+"2dU-x1-5NB.text" = "Descripción y restricciones";
+
+/* Class = "UILabel"; text = "Estado"; ObjectID = "2ht-me-iha"; */
+"2ht-me-iha.text" = "Estado";
+
+/* Class = "UILabel"; text = "07/07/2016"; ObjectID = "2kD-1t-yiw"; */
+"2kD-1t-yiw.text" = "07/07/2016";
+
+/* Class = "UILabel"; text = "Fecha Fin: 23/07/1992"; ObjectID = "2v1-9d-acs"; */
+"2v1-9d-acs.text" = "Fecha Fin: 23/07/1992";
+
+/* Class = "UILabel"; text = "Juan Camilo Puente Riascos"; ObjectID = "2wV-gV-lkm"; */
+"2wV-gV-lkm.text" = "Juan Camilo Puente Riascos";
+
+/* Class = "UINavigationItem"; title = "Facturas"; ObjectID = "38E-5B-a7S"; */
+"38E-5B-a7S.title" = "Facturas";
+
+/* Class = "UILabel"; text = "Valor Total Factura"; ObjectID = "3FD-JK-ABt"; */
+"3FD-JK-ABt.text" = "Valor Total Factura";
+
+/* Class = "UILabel"; text = "Valor Impuesto"; ObjectID = "3HN-xN-AvO"; */
+"3HN-xN-AvO.text" = "Valor Impuesto";
+
+/* Class = "UILabel"; text = "Aplica Seguro Hotelero"; ObjectID = "3Wz-yr-ssV"; */
+"3Wz-yr-ssV.text" = "Aplica Seguro Hotelero";
+
+/* Class = "UIBarButtonItem"; title = "Atras"; ObjectID = "3eI-Ok-PVs"; */
+"3eI-Ok-PVs.title" = "Atras";
+
+/* Class = "UILabel"; text = "Fecha Aprobación: 27/09/2010"; ObjectID = "3gy-Er-KvE"; */
+"3gy-Er-KvE.text" = "Fecha Aprobación: 27/09/2010";
+
+/* Class = "UILabel"; text = "Cali"; ObjectID = "3hD-Tb-nq4"; */
+"3hD-Tb-nq4.text" = "Cali";
+
+/* Class = "UILabel"; text = "90880"; ObjectID = "3hT-AT-CTN"; */
+"3hT-AT-CTN.text" = "90880";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "3kH-TY-un3"; */
+"3kH-TY-un3.text" = "Label";
+
+/* Class = "UILabel"; text = "Cali"; ObjectID = "3pP-Dd-xKq"; */
+"3pP-Dd-xKq.text" = "Cali";
+
+/* Class = "UILabel"; text = "SI"; ObjectID = "3tb-VA-0oT"; */
+"3tb-VA-0oT.text" = "SI";
+
+/* Class = "UILabel"; text = "Nombre Contrato"; ObjectID = "3yc-vC-hti"; */
+"3yc-vC-hti.text" = "Nombre Contrato";
+
+/* Class = "UILabel"; text = "163"; ObjectID = "4H5-Dg-aIl"; */
+"4H5-Dg-aIl.text" = "163";
+
+/* Class = "UILabel"; text = "Número Factura"; ObjectID = "4YW-nd-vE8"; */
+"4YW-nd-vE8.text" = "Número Factura";
+
+/* Class = "UITextField"; placeholder = "Nombre"; ObjectID = "4a5-Yh-Mrd"; */
+"4a5-Yh-Mrd.placeholder" = "Nombre";
+
+/* Class = "UILabel"; text = "Estado"; ObjectID = "4bJ-Sd-Ki3"; */
+"4bJ-Sd-Ki3.text" = "Estado";
+
+/* Class = "UILabel"; text = "Valor Iva"; ObjectID = "4nO-JX-RCH"; */
+"4nO-JX-RCH.text" = "Valor Iva";
+
+/* Class = "UINavigationItem"; title = "Sofib Mobile"; ObjectID = "50z-18-zay"; */
+"50z-18-zay.title" = "Sofib Mobile";
+
+/* Class = "UILabel"; text = "Seguro Hotelero"; ObjectID = "54F-x9-uYw"; */
+"54F-x9-uYw.text" = "Seguro Hotelero";
+
+/* Class = "UILabel"; text = "APROBADO"; ObjectID = "5AY-Hp-ABS"; */
+"5AY-Hp-ABS.text" = "APROBADO";
+
+/* Class = "UILabel"; text = "$0,0"; ObjectID = "5Ez-Mt-5me"; */
+"5Ez-Mt-5me.text" = "$0,0";
+
+/* Class = "UILabel"; text = "JUAN DAVID ARAGON"; ObjectID = "5I0-e3-H9g"; */
+"5I0-e3-H9g.text" = "JUAN DAVID ARAGON";
+
+/* Class = "UILabel"; text = "Legalizado"; ObjectID = "5Ja-B6-b98"; */
+"5Ja-B6-b98.text" = "Legalizado";
+
+/* Class = "UILabel"; text = "163"; ObjectID = "5Pl-QB-UmR"; */
+"5Pl-QB-UmR.text" = "163";
+
+/* Class = "UILabel"; text = "Tipo Acción: TIPO DE ACCION"; ObjectID = "5SC-Tx-RIl"; */
+"5SC-Tx-RIl.text" = "Tipo Acción: TIPO DE ACCION";
+
+/* Class = "UINavigationItem"; title = "Ajustes"; ObjectID = "5e9-wE-Kyg"; */
+"5e9-wE-Kyg.title" = "Ajustes";
+
+/* Class = "UILabel"; text = "Estado"; ObjectID = "5fU-0x-CvW"; */
+"5fU-0x-CvW.text" = "Estado";
+
+/* Class = "UITextField"; placeholder = "Seleccionar Ciudad Actual"; ObjectID = "5gJ-rk-Tfm"; */
+"5gJ-rk-Tfm.placeholder" = "Seleccionar Ciudad Actual";
+
+/* Class = "UILabel"; text = "Manutención Acompañante"; ObjectID = "5hK-nx-hd6"; */
+"5hK-nx-hd6.text" = "Manutención Acompañante";
+
+/* Class = "UILabel"; text = "24/08/2016"; ObjectID = "5v3-UZ-kEL"; */
+"5v3-UZ-kEL.text" = "24/08/2016";
+
+/* Class = "UILabel"; text = "Monto Diario"; ObjectID = "5yf-Bp-mfF"; */
+"5yf-Bp-mfF.text" = "Monto Diario";
+
+/* Class = "UILabel"; text = "163"; ObjectID = "6AA-7m-9BC"; */
+"6AA-7m-9BC.text" = "163";
+
+/* Class = "UILabel"; text = "Liquidada"; ObjectID = "6Fm-5C-sH6"; */
+"6Fm-5C-sH6.text" = "Liquidada";
+
+/* Class = "UIBarButtonItem"; title = "Atras"; ObjectID = "6Ji-5C-7vQ"; */
+"6Ji-5C-7vQ.title" = "Atras";
+
+/* Class = "UILabel"; text = "3185226441"; ObjectID = "6NQ-ah-R0w"; */
+"6NQ-ah-R0w.text" = "3185226441";
+
+/* Class = "UIBarButtonItem"; title = "Atras"; ObjectID = "6Vi-fZ-NGl"; */
+"6Vi-fZ-NGl.title" = "Atras";
+
+/* Class = "UILabel"; text = "CL-000852-008"; ObjectID = "6Zv-q2-4yl"; */
+"6Zv-q2-4yl.text" = "CL-000852-008";
+
+/* Class = "UILabel"; text = "2016031602"; ObjectID = "6du-Wx-Hgr"; */
+"6du-Wx-Hgr.text" = "2016031602";
+
+/* Class = "UILabel"; text = "$400.000"; ObjectID = "6f2-Fg-kp3"; */
+"6f2-Fg-kp3.text" = "$400.000";
+
+/* Class = "UILabel"; text = "Proveedor"; ObjectID = "6hc-GZ-Vhl"; */
+"6hc-GZ-Vhl.text" = "Proveedor";
+
+/* Class = "UILabel"; text = "Proveedor"; ObjectID = "6lS-6N-EL0"; */
+"6lS-6N-EL0.text" = "Proveedor";
+
+/* Class = "UILabel"; text = "PA"; ObjectID = "6rE-nS-5J8"; */
+"6rE-nS-5J8.text" = "PA";
+
+/* Class = "UILabel"; text = "Ciudad Inicial"; ObjectID = "6ud-SL-xw8"; */
+"6ud-SL-xw8.text" = "Ciudad Inicial";
+
+/* Class = "UILabel"; text = "COMPLETO"; ObjectID = "71t-fl-BQr"; */
+"71t-fl-BQr.text" = "COMPLETO";
+
+/* Class = "UILabel"; text = "24/07/2010"; ObjectID = "7Aa-d5-pOL"; */
+"7Aa-d5-pOL.text" = "24/07/2010";
+
+/* Class = "UILabel"; text = "Número Solicitud"; ObjectID = "7Zg-Jx-mG4"; */
+"7Zg-Jx-mG4.text" = "Número Solicitud";
+
+/* Class = "UITabBarItem"; title = "FACTURA"; ObjectID = "7ly-nn-yLN"; */
+"7ly-nn-yLN.title" = "FACTURA";
+
+/* Class = "UILabel"; text = "Número Solicitud"; ObjectID = "7mw-Z3-Fre"; */
+"7mw-Z3-Fre.text" = "Número Solicitud";
+
+/* Class = "UILabel"; text = "No"; ObjectID = "80C-i4-DgS"; */
+"80C-i4-DgS.text" = "No";
+
+/* Class = "UILabel"; text = "Autoriza"; ObjectID = "87h-62-pcr"; */
+"87h-62-pcr.text" = "Autoriza";
+
+/* Class = "UILabel"; text = "Traslado"; ObjectID = "8B2-U3-xCy"; */
+"8B2-U3-xCy.text" = "Traslado";
+
+/* Class = "UILabel"; text = "Estado"; ObjectID = "8TI-e9-f4I"; */
+"8TI-e9-f4I.text" = "Estado";
+
+/* Class = "UILabel"; text = "justificacion"; ObjectID = "8dE-No-jB6"; */
+"8dE-No-jB6.text" = "justificacion";
+
+/* Class = "UILabel"; text = "Identificación"; ObjectID = "8dK-8F-fnV"; */
+"8dK-8F-fnV.text" = "Identificación";
+
+/* Class = "UILabel"; text = "Estado"; ObjectID = "8xT-3G-fgG"; */
+"8xT-3G-fgG.text" = "Estado";
+
+/* Class = "UILabel"; text = "Descripción"; ObjectID = "95o-PM-UoV"; */
+"95o-PM-UoV.text" = "Descripción";
+
+/* Class = "UILabel"; text = "[Peluquería][Lavandería][Servicio Alojamiento]"; ObjectID = "962-Fw-0d9"; */
+"962-Fw-0d9.text" = "[Peluquería][Lavandería][Servicio Alojamiento]";
+
+/* Class = "UILabel"; text = "Número Nota"; ObjectID = "96f-ej-etj"; */
+"96f-ej-etj.text" = "Número Nota";
+
+/* Class = "UILabel"; text = "SubTotal"; ObjectID = "9BZ-QQ-lLz"; */
+"9BZ-QQ-lLz.text" = "SubTotal";
+
+/* Class = "UILabel"; text = "Tipo Giro: Manutención"; ObjectID = "9LN-HM-Ivj"; */
+"9LN-HM-Ivj.text" = "Tipo Giro: Manutención";
+
+/* Class = "UILabel"; text = "APROBADO"; ObjectID = "9Mw-ZT-B0d"; */
+"9Mw-ZT-B0d.text" = "APROBADO";
+
+/* Class = "UILabel"; text = "CEM"; ObjectID = "9Zz-Xb-UGB"; */
+"9Zz-Xb-UGB.text" = "CEM";
+
+/* Class = "UILabel"; text = "Estado Paciente: Pendiente"; ObjectID = "9bh-eq-TXZ"; */
+"9bh-eq-TXZ.text" = "Estado Paciente: Pendiente";
+
+/* Class = "UINavigationItem"; title = "Servicio"; ObjectID = "9c0-gR-9dR"; */
+"9c0-gR-9dR.title" = "Servicio";
+
+/* Class = "UILabel"; text = "Fecha Radicación"; ObjectID = "9dH-kg-Ugg"; */
+"9dH-kg-Ugg.text" = "Fecha Radicación";
+
+/* Class = "UILabel"; text = "$6.678.000"; ObjectID = "9ea-Ln-shy"; */
+"9ea-Ln-shy.text" = "$6.678.000";
+
+/* Class = "UILabel"; text = "Identificación"; ObjectID = "9iY-aP-tLJ"; */
+"9iY-aP-tLJ.text" = "Identificación";
+
+/* Class = "UIBarButtonItem"; title = "Atras"; ObjectID = "9jw-Jr-UUb"; */
+"9jw-Jr-UUb.title" = "Atras";
+
+/* Class = "UILabel"; text = "MERYL LOUISE STREEP"; ObjectID = "A31-kX-hDT"; */
+"A31-kX-hDT.text" = "MERYL LOUISE STREEP";
+
+/* Class = "UILabel"; text = "JUAN DAVID ARAGON"; ObjectID = "A6Z-AF-vaB"; */
+"A6Z-AF-vaB.text" = "JUAN DAVID ARAGON";
+
+/* Class = "UITabBarItem"; title = "HISTORICO"; ObjectID = "A7l-jH-3lK"; */
+"A7l-jH-3lK.title" = "HISTORICO";
+
+/* Class = "UILabel"; text = "Tipo Autorización"; ObjectID = "AIn-Ns-UAW"; */
+"AIn-Ns-UAW.text" = "Tipo Autorización";
+
+/* Class = "UILabel"; text = "Prueba Pregunta?"; ObjectID = "AK2-wk-B4C"; */
+"AK2-wk-B4C.text" = "Prueba Pregunta?";
+
+/* Class = "UILabel"; text = "No Aplica"; ObjectID = "ALX-yf-a4G"; */
+"ALX-yf-a4G.text" = "No Aplica";
+
+/* Class = "UILabel"; text = "Fecha Expedición"; ObjectID = "AOQ-fd-LdU"; */
+"AOQ-fd-LdU.text" = "Fecha Expedición";
+
+/* Class = "UILabel"; text = "Cadena de Hoteles Decamerón"; ObjectID = "AZ4-py-rEh"; */
+"AZ4-py-rEh.text" = "Cadena de Hoteles Decamerón";
+
+/* Class = "UILabel"; text = "Valor Total Factura"; ObjectID = "AZi-vj-Mmv"; */
+"AZi-vj-Mmv.text" = "Valor Total Factura";
+
+/* Class = "UILabel"; text = "Cali"; ObjectID = "AbS-Bw-qoo"; */
+"AbS-Bw-qoo.text" = "Cali";
+
+/* Class = "UILabel"; text = "Cantidad"; ObjectID = "Abl-6n-PDY"; */
+"Abl-6n-PDY.text" = "Cantidad";
+
+/* Class = "UILabel"; text = "Convenio"; ObjectID = "AhX-LY-9Rv"; */
+"AhX-LY-9Rv.text" = "Convenio";
+
+/* Class = "UILabel"; text = "Servicio"; ObjectID = "Amm-gb-NTN"; */
+"Amm-gb-NTN.text" = "Servicio";
+
+/* Class = "UILabel"; text = "SI"; ObjectID = "ArD-FB-JnW"; */
+"ArD-FB-JnW.text" = "SI";
+
+/* Class = "UITextField"; placeholder = "Seleccionar Tipo Servicio"; ObjectID = "Aro-a8-tEZ"; */
+"Aro-a8-tEZ.placeholder" = "Seleccionar Tipo Servicio";
+
+/* Class = "UINavigationItem"; title = "Bitacora"; ObjectID = "AsO-rg-skx"; */
+"AsO-rg-skx.title" = "Bitacora";
+
+/* Class = "UILabel"; text = "24/07/2016"; ObjectID = "Awd-A7-ntg"; */
+"Awd-A7-ntg.text" = "24/07/2016";
+
+/* Class = "UILabel"; text = "Ambulatorio"; ObjectID = "B0o-Bf-FO9"; */
+"B0o-Bf-FO9.text" = "Ambulatorio";
+
+/* Class = "UILabel"; text = "Procedimiento"; ObjectID = "B6K-1s-TjQ"; */
+"B6K-1s-TjQ.text" = "Procedimiento";
+
+/* Class = "UILabel"; text = "Funcionario Externo Área Médica"; ObjectID = "BCE-C8-GYf"; */
+"BCE-C8-GYf.text" = "Funcionario Externo Área Médica";
+
+/* Class = "UILabel"; text = "Fecha Finalización"; ObjectID = "BEa-rr-6IU"; */
+"BEa-rr-6IU.text" = "Fecha Finalización";
+
+/* Class = "UILabel"; text = "Valor Total Factura: $658.879"; ObjectID = "BVY-rK-xdr"; */
+"BVY-rK-xdr.text" = "Valor Total Factura: $658.879";
+
+/* Class = "UINavigationItem"; title = "Servicios No Asistenciales"; ObjectID = "BZP-3p-idy"; */
+"BZP-3p-idy.title" = "Servicios No Asistenciales";
+
+/* Class = "UILabel"; text = "Número Solicitud"; ObjectID = "Bb3-16-nAt"; */
+"Bb3-16-nAt.text" = "Número Solicitud";
+
+/* Class = "UILabel"; text = "MERYL LOUISE STREEP"; ObjectID = "BdT-eJ-WhL"; */
+"BdT-eJ-WhL.text" = "MERYL LOUISE STREEP";
+
+/* Class = "UITabBarItem"; title = "SERVICIOS ADICIONADOS"; ObjectID = "BfK-M9-Unp"; */
+"BfK-M9-Unp.title" = "SERVICIOS ADICIONADOS";
+
+/* Class = "UILabel"; text = "28-04-2015 02:48:23 PM"; ObjectID = "BhY-cS-OsP"; */
+"BhY-cS-OsP.text" = "28-04-2015 02:48:23 PM";
+
+/* Class = "UIBarButtonItem"; title = "Atras"; ObjectID = "BmV-RK-mZI"; */
+"BmV-RK-mZI.title" = "Atras";
+
+/* Class = "UIBarButtonItem"; title = "Atras"; ObjectID = "C1g-4m-E7U"; */
+"C1g-4m-E7U.title" = "Atras";
+
+/* Class = "UILabel"; text = "$58.000"; ObjectID = "C5S-ct-ECj"; */
+"C5S-ct-ECj.text" = "$58.000";
+
+/* Class = "UILabel"; text = " "; ObjectID = "CBl-7j-Vmr"; */
+"CBl-7j-Vmr.text" = " ";
+
+/* Class = "UILabel"; text = "Justificación"; ObjectID = "CDZ-Wb-WqG"; */
+"CDZ-Wb-WqG.text" = "Justificación";
+
+/* Class = "UILabel"; text = "Monto Diario: $500.000"; ObjectID = "CF6-hu-bkQ"; */
+"CF6-hu-bkQ.text" = "Monto Diario: $500.000";
+
+/* Class = "UILabel"; text = "27/09/2010"; ObjectID = "CJY-Qc-KEM"; */
+"CJY-Qc-KEM.text" = "27/09/2010";
+
+/* Class = "UILabel"; text = "Solicitud de Atención"; ObjectID = "CJZ-Xc-cwV"; */
+"CJZ-Xc-cwV.text" = "Solicitud de Atención";
+
+/* Class = "UITextField"; placeholder = "Solicitud de Atención"; ObjectID = "CPN-By-PEx"; */
+"CPN-By-PEx.placeholder" = "Solicitud de Atención";
+
+/* Class = "UILabel"; text = "Utilizaciones"; ObjectID = "CX4-7n-sug"; */
+"CX4-7n-sug.text" = "Utilizaciones";
+
+/* Class = "UIBarButtonItem"; title = "Atras"; ObjectID = "CYP-a3-U0W"; */
+"CYP-a3-U0W.title" = "Atras";
+
+/* Class = "UILabel"; text = "Aprobada"; ObjectID = "Cb9-Bo-pNC"; */
+"Cb9-Bo-pNC.text" = "Aprobada";
+
+/* Class = "UILabel"; text = "Valor Total Factura: $658.879"; ObjectID = "CbG-7v-qPd"; */
+"CbG-7v-qPd.text" = "Valor Total Factura: $658.879";
+
+/* Class = "UILabel"; text = "IVA"; ObjectID = "CdJ-Py-qWi"; */
+"CdJ-Py-qWi.text" = "IVA";
+
+/* Class = "UINavigationItem"; title = "Utilizaciones"; ObjectID = "CgC-58-2ZG"; */
+"CgC-58-2ZG.title" = "Utilizaciones";
+
+/* Class = "UILabel"; text = "Proveedor"; ObjectID = "Cjr-aN-mwz"; */
+"Cjr-aN-mwz.text" = "Proveedor";
+
+/* Class = "UILabel"; text = "JUAN DAVID ARAGON"; ObjectID = "D1u-cQ-kLS"; */
+"D1u-cQ-kLS.text" = "JUAN DAVID ARAGON";
+
+/* Class = "UILabel"; text = "Tipo Giro: Manutención"; ObjectID = "D5A-ru-ykV"; */
+"D5A-ru-ykV.text" = "Tipo Giro: Manutención";
+
+/* Class = "UILabel"; text = "Porcentaje"; ObjectID = "DEf-d0-4fO"; */
+"DEf-d0-4fO.text" = "Porcentaje";
+
+/* Class = "UILabel"; text = "Valor Total Nota Crédito"; ObjectID = "DGE-Za-2eS"; */
+"DGE-Za-2eS.text" = "Valor Total Nota Crédito";
+
+/* Class = "UILabel"; text = "$50.000"; ObjectID = "DMQ-Uw-ndN"; */
+"DMQ-Uw-ndN.text" = "$50.000";
+
+/* Class = "UILabel"; text = "18/06/2015"; ObjectID = "DRr-r4-pPx"; */
+"DRr-r4-pPx.text" = "18/06/2015";
+
+/* Class = "UINavigationItem"; title = "Impuestos"; ObjectID = "DYS-a5-zbE"; */
+"DYS-a5-zbE.title" = "Impuestos";
+
+/* Class = "UILabel"; text = "Seguro Hotelero"; ObjectID = "DYn-BZ-atM"; */
+"DYn-BZ-atM.text" = "Seguro Hotelero";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "DZe-NF-VQ6"; */
+"DZe-NF-VQ6.text" = "Label";
+
+/* Class = "UILabel"; text = "Descripción"; ObjectID = "DdC-bg-Hnx"; */
+"DdC-bg-Hnx.text" = "Descripción";
+
+/* Class = "UILabel"; text = "Cali"; ObjectID = "DeG-in-AeP"; */
+"DeG-in-AeP.text" = "Cali";
+
+/* Class = "UILabel"; text = "Fecha Estimada de Regreso:"; ObjectID = "Dew-Qn-tjC"; */
+"Dew-Qn-tjC.text" = "Fecha Estimada de Regreso:";
+
+/* Class = "UILabel"; text = "MANUTENCION"; ObjectID = "DfA-Ui-jKp"; */
+"DfA-Ui-jKp.text" = "MANUTENCION";
+
+/* Class = "UILabel"; text = "Tipo de Registro: TIPO DE REGISTRO"; ObjectID = "Dhe-mc-gxw"; */
+"Dhe-mc-gxw.text" = "Tipo de Registro: TIPO DE REGISTRO";
+
+/* Class = "UILabel"; text = "Estado: APROBADA"; ObjectID = "DjI-jT-x8J"; */
+"DjI-jT-x8J.text" = "Estado: APROBADA";
+
+/* Class = "UINavigationItem"; title = "Utilizaciones"; ObjectID = "DjR-7s-lGL"; */
+"DjR-7s-lGL.title" = "Utilizaciones";
+
+/* Class = "UILabel"; text = "Consecutivo Nota Crédito: 04"; ObjectID = "Du2-xE-hrJ"; */
+"Du2-xE-hrJ.text" = "Consecutivo Nota Crédito: 04";
+
+/* Class = "UITextField"; placeholder = "Seleccionar Convenio"; ObjectID = "E3d-UE-Qb4"; */
+"E3d-UE-Qb4.placeholder" = "Seleccionar Convenio";
+
+/* Class = "UILabel"; text = "Identificacion"; ObjectID = "E5x-xq-Fdk"; */
+"E5x-xq-Fdk.text" = "Identificacion";
+
+/* Class = "UILabel"; text = "Cambiar Idioma"; ObjectID = "E9K-er-Rxk"; */
+"E9K-er-Rxk.text" = "Cambiar Idioma";
+
+/* Class = "UILabel"; text = "Valor"; ObjectID = "ENf-Gr-K6J"; */
+"ENf-Gr-K6J.text" = "Valor";
+
+/* Class = "UILabel"; text = "Fecha Inicio"; ObjectID = "EYR-S0-tMF"; */
+"EYR-S0-tMF.text" = "Fecha Inicio";
+
+/* Class = "UILabel"; text = "Identificación"; ObjectID = "EeU-Da-Wua"; */
+"EeU-Da-Wua.text" = "Identificación";
+
+/* Class = "UILabel"; text = "D20150618"; ObjectID = "Erf-Kb-VOT"; */
+"Erf-Kb-VOT.text" = "D20150618";
+
+/* Class = "UILabel"; text = "Identificación Beneficiario"; ObjectID = "EsZ-HE-yfC"; */
+"EsZ-HE-yfC.text" = "Identificación Beneficiario";
+
+/* Class = "UILabel"; text = "Fecha Creado"; ObjectID = "FKw-G9-slv"; */
+"FKw-G9-slv.text" = "Fecha Creado";
+
+/* Class = "UILabel"; text = "UTILITY SERVICE"; ObjectID = "FSx-y2-FYt"; */
+"FSx-y2-FYt.text" = "UTILITY SERVICE";
+
+/* Class = "UILabel"; text = "Motivo"; ObjectID = "FfO-kA-kkI"; */
+"FfO-kA-kkI.text" = "Motivo";
+
+/* Class = "UILabel"; text = "22/10/2016"; ObjectID = "FjX-av-6GA"; */
+"FjX-av-6GA.text" = "22/10/2016";
+
+/* Class = "UILabel"; text = "Nombre"; ObjectID = "Fku-Tm-SeA"; */
+"Fku-Tm-SeA.text" = "Nombre";
+
+/* Class = "UILabel"; text = "3185226441"; ObjectID = "Fw2-XH-47y"; */
+"Fw2-XH-47y.text" = "3185226441";
+
+/* Class = "UILabel"; text = "16%"; ObjectID = "Fzo-9g-Glj"; */
+"Fzo-9g-Glj.text" = "16%";
+
+/* Class = "UILabel"; text = "Cadena de hoteles Decameron"; ObjectID = "G6Y-VV-VHD"; */
+"G6Y-VV-VHD.text" = "Cadena de hoteles Decameron";
+
+/* Class = "UILabel"; text = "Fecha Recibido Coomeva"; ObjectID = "GNl-1b-ftd"; */
+"GNl-1b-ftd.text" = "Fecha Recibido Coomeva";
+
+/* Class = "UILabel"; text = "Nombre"; ObjectID = "GRg-Mz-FcF"; */
+"GRg-Mz-FcF.text" = "Nombre";
+
+/* Class = "UINavigationItem"; title = "Solicitudes de Aprobación"; ObjectID = "GSO-hd-Dnm"; */
+"GSO-hd-Dnm.title" = "Solicitudes de Aprobación";
+
+/* Class = "UILabel"; text = "12321.12"; ObjectID = "GSi-N7-OQX"; */
+"GSi-N7-OQX.text" = "12321.12";
+
+/* Class = "UILabel"; text = "Peluquería"; ObjectID = "GZ2-T1-Pgv"; */
+"GZ2-T1-Pgv.text" = "Peluquería";
+
+/* Class = "UILabel"; text = "$189.000.00"; ObjectID = "GdL-rj-kEm"; */
+"GdL-rj-kEm.text" = "$189.000.00";
+
+/* Class = "UILabel"; text = "Tipo Pago"; ObjectID = "GiH-Jc-l2v"; */
+"GiH-Jc-l2v.text" = "Tipo Pago";
+
+/* Class = "UILabel"; text = "3185226441"; ObjectID = "GlB-um-POG"; */
+"GlB-um-POG.text" = "3185226441";
+
+/* Class = "UILabel"; text = "20/03/2015"; ObjectID = "Gq0-IP-iee"; */
+"Gq0-IP-iee.text" = "20/03/2015";
+
+/* Class = "UILabel"; text = " "; ObjectID = "Gxd-ka-0GC"; */
+"Gxd-ka-0GC.text" = " ";
+
+/* Class = "UILabel"; text = "852-1"; ObjectID = "H46-wF-fNl"; */
+"H46-wF-fNl.text" = "852-1";
+
+/* Class = "UILabel"; text = "Nombre Beneficiario: Harold Ferrin"; ObjectID = "H7c-iL-gep"; */
+"H7c-iL-gep.text" = "Nombre Beneficiario: Harold Ferrin";
+
+/* Class = "UITabBarItem"; title = "MEDICINA"; ObjectID = "H7q-52-PNg"; */
+"H7q-52-PNg.title" = "MEDICINA";
+
+/* Class = "UITabBarItem"; title = "FACTURA"; ObjectID = "HH4-St-llT"; */
+"HH4-St-llT.title" = "FACTURA";
+
+/* Class = "UILabel"; text = "Número Factura"; ObjectID = "HHZ-cR-gNt"; */
+"HHZ-cR-gNt.text" = "Número Factura";
+
+/* Class = "UILabel"; text = "Nombre de Servicio"; ObjectID = "HIj-X8-QdJ"; */
+"HIj-X8-QdJ.text" = "Nombre de Servicio";
+
+/* Class = "UILabel"; text = "Fecha"; ObjectID = "HJJ-Da-jI4"; */
+"HJJ-Da-jI4.text" = "Fecha";
+
+/* Class = "UILabel"; text = "Identificación"; ObjectID = "HKO-cx-OTs"; */
+"HKO-cx-OTs.text" = "Identificación";
+
+/* Class = "UITextField"; placeholder = "Seleccionar Tipo Servicio"; ObjectID = "HSC-yy-Rsa"; */
+"HSC-yy-Rsa.placeholder" = "Seleccionar Tipo Servicio";
+
+/* Class = "UILabel"; text = "Total"; ObjectID = "HXk-jA-ea6"; */
+"HXk-jA-ea6.text" = "Total";
+
+/* Class = "UILabel"; text = "Pruebas"; ObjectID = "HbW-bY-e9g"; */
+"HbW-bY-e9g.text" = "Pruebas";
+
+/* Class = "UILabel"; text = "Tipo Nota"; ObjectID = "HcO-ZG-ic8"; */
+"HcO-ZG-ic8.text" = "Tipo Nota";
+
+/* Class = "UILabel"; text = "Total Nota Crédito: $0,0"; ObjectID = "HgD-Li-R5L"; */
+"HgD-Li-R5L.text" = "Total Nota Crédito: $0,0";
+
+/* Class = "UILabel"; text = "Fecha Inicio: 23/07/1992"; ObjectID = "HzJ-dr-NKJ"; */
+"HzJ-dr-NKJ.text" = "Fecha Inicio: 23/07/1992";
+
+/* Class = "UILabel"; text = "Fecha Solicitud"; ObjectID = "IJt-86-sNO"; */
+"IJt-86-sNO.text" = "Fecha Solicitud";
+
+/* Class = "UILabel"; text = "POST_PAGO"; ObjectID = "ITK-v5-3i3"; */
+"ITK-v5-3i3.text" = "POST_PAGO";
+
+/* Class = "UILabel"; text = "APROBADA"; ObjectID = "ITo-xH-cvg"; */
+"ITo-xH-cvg.text" = "APROBADA";
+
+/* Class = "UILabel"; text = "Servicio"; ObjectID = "IXk-GM-vyo"; */
+"IXk-GM-vyo.text" = "Servicio";
+
+/* Class = "UITabBarItem"; title = "UTILIZACIONES"; ObjectID = "IY3-34-jfM"; */
+"IY3-34-jfM.title" = "UTILIZACIONES";
+
+/* Class = "UILabel"; text = "Valor Devolución"; ObjectID = "IhM-YU-vdK"; */
+"IhM-YU-vdK.text" = "Valor Devolución";
+
+/* Class = "UILabel"; text = "Cadena de Hoteles Decamerón"; ObjectID = "Ii2-WH-f8i"; */
+"Ii2-WH-f8i.text" = "Cadena de Hoteles Decamerón";
+
+/* Class = "UILabel"; text = "JUAN DAVID ARAGON"; ObjectID = "Iin-yn-rYt"; */
+"Iin-yn-rYt.text" = "JUAN DAVID ARAGON";
+
+/* Class = "UILabel"; text = "Prueba"; ObjectID = "J6E-vN-A2j"; */
+"J6E-vN-A2j.text" = "Prueba";
+
+/* Class = "UILabel"; text = "Cali"; ObjectID = "JGB-3k-ih2"; */
+"JGB-3k-ih2.text" = "Cali";
+
+/* Class = "UILabel"; text = "Número Orden Servicio"; ObjectID = "JL8-Sb-jnP"; */
+"JL8-Sb-jnP.text" = "Número Orden Servicio";
+
+/* Class = "UILabel"; text = "163"; ObjectID = "JNA-3Q-6gU"; */
+"JNA-3Q-6gU.text" = "163";
+
+/* Class = "UILabel"; text = "Valor Total Nota Crédito"; ObjectID = "JeK-HR-pfS"; */
+"JeK-HR-pfS.text" = "Valor Total Nota Crédito";
+
+/* Class = "UISegmentedControl"; Jhq-2T-nhE.segmentTitles[0] = "Interno"; ObjectID = "Jhq-2T-nhE"; */
+"Jhq-2T-nhE.segmentTitles[0]" = "Interno";
+
+/* Class = "UISegmentedControl"; Jhq-2T-nhE.segmentTitles[1] = "Externo"; ObjectID = "Jhq-2T-nhE"; */
+"Jhq-2T-nhE.segmentTitles[1]" = "Externo";
+
+/* Class = "UILabel"; text = "Peluquería"; ObjectID = "Jkc-8e-MGn"; */
+"Jkc-8e-MGn.text" = "Peluquería";
+
+/* Class = "UITextField"; placeholder = "Contraseña"; ObjectID = "JuV-wi-k8p"; */
+"JuV-wi-k8p.placeholder" = "Contraseña";
+
+/* Class = "UINavigationItem"; title = "Giros"; ObjectID = "K2B-Gj-gzR"; */
+"K2B-Gj-gzR.title" = "Giros";
+
+/* Class = "UILabel"; text = "Autorización para la Solicitud de Alojamiento"; ObjectID = "K2u-iZ-7HM"; */
+"K2u-iZ-7HM.text" = "Autorización para la Solicitud de Alojamiento";
+
+/* Class = "UILabel"; text = "Solicitante"; ObjectID = "K3q-z5-oQt"; */
+"K3q-z5-oQt.text" = "Solicitante";
+
+/* Class = "UILabel"; text = "Nombre Beneficiario"; ObjectID = "K44-w0-gfT"; */
+"K44-w0-gfT.text" = "Nombre Beneficiario";
+
+/* Class = "UINavigationItem"; title = "Solicitudes de Aprobación"; ObjectID = "K7F-3E-B9Y"; */
+"K7F-3E-B9Y.title" = "Solicitudes de Aprobación";
+
+/* Class = "UILabel"; text = "Fecha"; ObjectID = "K7b-R0-Vg6"; */
+"K7b-R0-Vg6.text" = "Fecha";
+
+/* Class = "UILabel"; text = "Dado Alta?: NO"; ObjectID = "K96-sE-BJK"; */
+"K96-sE-BJK.text" = "Dado Alta?: NO";
+
+/* Class = "UILabel"; text = "Prestador"; ObjectID = "KIX-VO-TOw"; */
+"KIX-VO-TOw.text" = "Prestador";
+
+/* Class = "UILabel"; text = "Test"; ObjectID = "KJi-1C-HXa"; */
+"KJi-1C-HXa.text" = "Test";
+
+/* Class = "UILabel"; text = "Edad Hasta"; ObjectID = "KJw-OI-yQy"; */
+"KJw-OI-yQy.text" = "Edad Hasta";
+
+/* Class = "UINavigationItem"; title = "Notas Crédito de Giro"; ObjectID = "KMR-Ab-Mb6"; */
+"KMR-Ab-Mb6.title" = "Notas Crédito de Giro";
+
+/* Class = "UILabel"; text = "Id. Giro Asociado"; ObjectID = "KN7-wu-LCK"; */
+"KN7-wu-LCK.text" = "Id. Giro Asociado";
+
+/* Class = "UILabel"; text = "Fecha Emisión"; ObjectID = "KPa-bM-P4D"; */
+"KPa-bM-P4D.text" = "Fecha Emisión";
+
+/* Class = "UINavigationItem"; title = "Sofib Mobile"; ObjectID = "KWb-mm-oIX"; */
+"KWb-mm-oIX.title" = "Sofib Mobile";
+
+/* Class = "UINavigationItem"; title = "Solicitudes Aprobación"; ObjectID = "KcF-qV-mea"; */
+"KcF-qV-mea.title" = "Solicitudes Aprobación";
+
+/* Class = "UILabel"; text = "163"; ObjectID = "Kik-TI-NkK"; */
+"Kik-TI-NkK.text" = "163";
+
+/* Class = "UILabel"; text = "Viviana Valencia"; ObjectID = "Kmj-pU-G4K"; */
+"Kmj-pU-G4K.text" = "Viviana Valencia";
+
+/* Class = "UILabel"; text = "$0,0"; ObjectID = "KoJ-mj-DYN"; */
+"KoJ-mj-DYN.text" = "$0,0";
+
+/* Class = "UILabel"; text = "@\"Busqueda Avanzada\""; ObjectID = "Ksf-pi-zzU"; */
+"Ksf-pi-zzU.text" = "@\"Busqueda Avanzada\"";
+
+/* Class = "UILabel"; text = "Convenio"; ObjectID = "KuC-50-evR"; */
+"KuC-50-evR.text" = "Convenio";
+
+/* Class = "UILabel"; text = "Prestador/Proveedor"; ObjectID = "Kue-f2-0Fr"; */
+"Kue-f2-0Fr.text" = "Prestador/Proveedor";
+
+/* Class = "UILabel"; text = "Servicio de Peluquería"; ObjectID = "Kuk-1X-pM3"; */
+"Kuk-1X-pM3.text" = "Servicio de Peluquería";
+
+/* Class = "UILabel"; text = " "; ObjectID = "KxG-yS-J39"; */
+"KxG-yS-J39.text" = " ";
+
+/* Class = "UILabel"; text = "856-1"; ObjectID = "KxW-TN-3p0"; */
+"KxW-TN-3p0.text" = "856-1";
+
+/* Class = "UILabel"; text = "20150618"; ObjectID = "L2e-Nq-uKL"; */
+"L2e-Nq-uKL.text" = "20150618";
+
+/* Class = "UILabel"; text = "@\"Busqueda Avanzada\""; ObjectID = "L3Y-Fd-agP"; */
+"L3Y-Fd-agP.text" = "@\"Busqueda Avanzada\"";
+
+/* Class = "UILabel"; text = "Cali"; ObjectID = "L9n-93-vrW"; */
+"L9n-93-vrW.text" = "Cali";
+
+/* Class = "UILabel"; text = "24/07/2016"; ObjectID = "LCX-1s-b2a"; */
+"LCX-1s-b2a.text" = "24/07/2016";
+
+/* Class = "UILabel"; text = "23/09/2010"; ObjectID = "LGd-EF-w72"; */
+"LGd-EF-w72.text" = "23/09/2010";
+
+/* Class = "UILabel"; text = "01/03/2010"; ObjectID = "LIb-na-zXH"; */
+"LIb-na-zXH.text" = "01/03/2010";
+
+/* Class = "UILabel"; text = "Justificación de Cancelación"; ObjectID = "LIs-Mc-WSm"; */
+"LIs-Mc-WSm.text" = "Justificación de Cancelación";
+
+/* Class = "UILabel"; text = "Proveedor"; ObjectID = "LR4-WH-rl9"; */
+"LR4-WH-rl9.text" = "Proveedor";
+
+/* Class = "UILabel"; text = "CEM"; ObjectID = "LXH-Lt-e9p"; */
+"LXH-Lt-e9p.text" = "CEM";
+
+/* Class = "UILabel"; text = "2"; ObjectID = "LZ7-oc-9BD"; */
+"LZ7-oc-9BD.text" = "2";
+
+/* Class = "UILabel"; text = "Descripción"; ObjectID = "Lke-Ib-yvz"; */
+"Lke-Ib-yvz.text" = "Descripción";
+
+/* Class = "UILabel"; text = "Impuesto"; ObjectID = "LlU-NN-U9K"; */
+"LlU-NN-U9K.text" = "Impuesto";
+
+/* Class = "UILabel"; text = "163"; ObjectID = "LmG-7G-9Wg"; */
+"LmG-7G-9Wg.text" = "163";
+
+/* Class = "UILabel"; text = "$1.800.000"; ObjectID = "M3m-Fd-ItK"; */
+"M3m-Fd-ItK.text" = "$1.800.000";
+
+/* Class = "UILabel"; text = "Cadena de Hotelelllllllls Decamerón"; ObjectID = "M48-qq-LI7"; */
+"M48-qq-LI7.text" = "Cadena de Hotelelllllllls Decamerón";
+
+/* Class = "UILabel"; text = "UTILITY SERVICES"; ObjectID = "M80-8U-QJO"; */
+"M80-8U-QJO.text" = "UTILITY SERVICES";
+
+/* Class = "UILabel"; text = "No"; ObjectID = "MHG-Ii-RYJ"; */
+"MHG-Ii-RYJ.text" = "No";
+
+/* Class = "UILabel"; text = "Tipo de Contrato"; ObjectID = "MIG-Ei-Hvv"; */
+"MIG-Ei-Hvv.text" = "Tipo de Contrato";
+
+/* Class = "UITabBarItem"; title = "DOCUMENTACIÓN"; ObjectID = "MVu-JV-g6F"; */
+"MVu-JV-g6F.title" = "DOCUMENTACIÓN";
+
+/* Class = "UILabel"; text = "Proveedor: Cadena de Hoteles Decameron"; ObjectID = "MdN-Nd-qfV"; */
+"MdN-Nd-qfV.text" = "Proveedor: Cadena de Hoteles Decameron";
+
+/* Class = "UILabel"; text = "Cancelado"; ObjectID = "MgI-GC-fwC"; */
+"MgI-GC-fwC.text" = "Cancelado";
+
+/* Class = "UILabel"; text = "Respuesta"; ObjectID = "Moo-GL-QjH"; */
+"Moo-GL-QjH.text" = "Respuesta";
+
+/* Class = "UILabel"; text = "Descripción:"; ObjectID = "MrR-Od-0xk"; */
+"MrR-Od-0xk.text" = "Descripción:";
+
+/* Class = "UILabel"; text = "163"; ObjectID = "Mvf-Eh-Y3Y"; */
+"Mvf-Eh-Y3Y.text" = "163";
+
+/* Class = "UILabel"; text = "$189.000.00"; ObjectID = "N5a-a8-Tdr"; */
+"N5a-a8-Tdr.text" = "$189.000.00";
+
+/* Class = "UILabel"; text = "Fecha Recibido Coomeva: 23/07/1992"; ObjectID = "N8u-jQ-dtN"; */
+"N8u-jQ-dtN.text" = "Fecha Recibido Coomeva: 23/07/1992";
+
+/* Class = "UILabel"; text = "852-1"; ObjectID = "NCH-2a-yx7"; */
+"NCH-2a-yx7.text" = "852-1";
+
+/* Class = "UILabel"; text = "JUAN CAMILO PUENTE RIASCOS"; ObjectID = "NMK-vv-Lmn"; */
+"NMK-vv-Lmn.text" = "JUAN CAMILO PUENTE RIASCOS";
+
+/* Class = "UILabel"; text = "Fecha Expedición: 24/08/2016"; ObjectID = "NO1-AA-oZB"; */
+"NO1-AA-oZB.text" = "Fecha Expedición: 24/08/2016";
+
+/* Class = "UINavigationItem"; title = "Sofib Mobile"; ObjectID = "NQK-la-504"; */
+"NQK-la-504.title" = "Sofib Mobile";
+
+/* Class = "UINavigationItem"; title = "Servicios No Asistenciales"; ObjectID = "NVZ-Is-upg"; */
+"NVZ-Is-upg.title" = "Servicios No Asistenciales";
+
+/* Class = "UINavigationItem"; title = "Detalle"; ObjectID = "NZY-Kt-nfO"; */
+"NZY-Kt-nfO.title" = "Detalle";
+
+/* Class = "UILabel"; text = "Autoriza"; ObjectID = "Nig-ow-8tm"; */
+"Nig-ow-8tm.text" = "Autoriza";
+
+/* Class = "UINavigationItem"; title = "Autorización"; ObjectID = "Nii-ag-q0B"; */
+"Nii-ag-q0B.title" = "Autorización";
+
+/* Class = "UITabBarItem"; title = "IMPUESTO"; ObjectID = "Nks-TQ-Oc3"; */
+"Nks-TQ-Oc3.title" = "IMPUESTO";
+
+/* Class = "UINavigationItem"; title = "Datos Básicos del Paciente"; ObjectID = "Nm4-Me-KbP"; */
+"Nm4-Me-KbP.title" = "Datos Básicos del Paciente";
+
+/* Class = "UILabel"; text = "Estado"; ObjectID = "NpZ-fn-yr1"; */
+"NpZ-fn-yr1.text" = "Estado";
+
+/* Class = "UILabel"; text = "Valor Glosa"; ObjectID = "Nw0-Xf-TqD"; */
+"Nw0-Xf-TqD.text" = "Valor Glosa";
+
+/* Class = "UILabel"; text = "Seguro Número"; ObjectID = "OEA-Uv-nN4"; */
+"OEA-Uv-nN4.text" = "Seguro Número";
+
+/* Class = "UINavigationItem"; title = "Notas Crédito de Giros"; ObjectID = "OWo-8I-Lcp"; */
+"OWo-8I-Lcp.title" = "Notas Crédito de Giros";
+
+/* Class = "UILabel"; text = "Valor Legalizado"; ObjectID = "OiF-q4-KfK"; */
+"OiF-q4-KfK.text" = "Valor Legalizado";
+
+/* Class = "UILabel"; text = " "; ObjectID = "OiV-Wp-Dp3"; */
+"OiV-Wp-Dp3.text" = " ";
+
+/* Class = "UILabel"; text = "Fecha Fin"; ObjectID = "Olb-yo-aRT"; */
+"Olb-yo-aRT.text" = "Fecha Fin";
+
+/* Class = "UILabel"; text = "Valor Total a Pagar: $77,400"; ObjectID = "OmI-hD-zk6"; */
+"OmI-hD-zk6.text" = "Valor Total a Pagar: $77,400";
+
+/* Class = "UINavigationItem"; title = "Sofib Mobile"; ObjectID = "OmQ-sb-IAh"; */
+"OmQ-sb-IAh.title" = "Sofib Mobile";
+
+/* Class = "UIBarButtonItem"; title = "Atras"; ObjectID = "Ou6-QU-f2k"; */
+"Ou6-QU-f2k.title" = "Atras";
+
+/* Class = "UILabel"; text = "Pruebas"; ObjectID = "OuR-vB-Mj0"; */
+"OuR-vB-Mj0.text" = "Pruebas";
+
+/* Class = "UILabel"; text = "Tipo de Registro"; ObjectID = "OwC-47-r5W"; */
+"OwC-47-r5W.text" = "Tipo de Registro";
+
+/* Class = "UILabel"; text = "Númerp Factura: 24"; ObjectID = "Ozh-wR-b0n"; */
+"Ozh-wR-b0n.text" = "Númerp Factura: 24";
+
+/* Class = "UILabel"; text = "Cali"; ObjectID = "P4b-vA-xIJ"; */
+"P4b-vA-xIJ.text" = "Cali";
+
+/* Class = "UILabel"; text = "04/04/3020"; ObjectID = "P4d-rk-61r"; */
+"P4d-rk-61r.text" = "04/04/3020";
+
+/* Class = "UILabel"; text = "3185226441"; ObjectID = "PM9-zP-fp3"; */
+"PM9-zP-fp3.text" = "3185226441";
+
+/* Class = "UILabel"; text = "3185226441"; ObjectID = "PWl-QM-xbT"; */
+"PWl-QM-xbT.text" = "3185226441";
+
+/* Class = "UILabel"; text = "Proveedor"; ObjectID = "PcY-wC-tLB"; */
+"PcY-wC-tLB.text" = "Proveedor";
+
+/* Class = "UILabel"; text = "$30.000"; ObjectID = "Ped-mY-gkl"; */
+"Ped-mY-gkl.text" = "$30.000";
+
+/* Class = "UILabel"; text = "Total Seguro Hotelero: $0,0"; ObjectID = "Pie-5g-KaF"; */
+"Pie-5g-KaF.text" = "Total Seguro Hotelero: $0,0";
+
+/* Class = "UILabel"; text = "Estado"; ObjectID = "Pkn-47-qdL"; */
+"Pkn-47-qdL.text" = "Estado";
+
+/* Class = "UILabel"; text = "Cali"; ObjectID = "Ppy-4a-4hz"; */
+"Ppy-4a-4hz.text" = "Cali";
+
+/* Class = "UILabel"; text = "78900.34"; ObjectID = "Q3n-8o-RZl"; */
+"Q3n-8o-RZl.text" = "78900.34";
+
+/* Class = "UINavigationItem"; title = "Epicrisis"; ObjectID = "QBw-FZ-Mvk"; */
+"QBw-FZ-Mvk.title" = "Epicrisis";
+
+/* Class = "UILabel"; text = "163"; ObjectID = "QK2-Gm-Pyv"; */
+"QK2-Gm-Pyv.text" = "163";
+
+/* Class = "UILabel"; text = "163"; ObjectID = "QMQ-s7-Oo5"; */
+"QMQ-s7-Oo5.text" = "163";
+
+/* Class = "UILabel"; text = "Valor Nota"; ObjectID = "QMi-ho-9Bl"; */
+"QMi-ho-9Bl.text" = "Valor Nota";
+
+/* Class = "UILabel"; text = "Cali"; ObjectID = "QWX-my-JJ2"; */
+"QWX-my-JJ2.text" = "Cali";
+
+/* Class = "UILabel"; text = "sasadasd"; ObjectID = "QYO-rU-fFr"; */
+"QYO-rU-fFr.text" = "sasadasd";
+
+/* Class = "UILabel"; text = "Moneda Ext."; ObjectID = "QbX-9t-DWn"; */
+"QbX-9t-DWn.text" = "Moneda Ext.";
+
+/* Class = "UILabel"; text = "Valor Iva: $0,0"; ObjectID = "Qcx-aj-ERU"; */
+"Qcx-aj-ERU.text" = "Valor Iva: $0,0";
+
+/* Class = "UILabel"; text = "Descripcion"; ObjectID = "QqF-r6-FeI"; */
+"QqF-r6-FeI.text" = "Descripcion";
+
+/* Class = "UILabel"; text = "Fecha Vencimiento Pago: 23/07/1992"; ObjectID = "Qug-hU-Fzb"; */
+"Qug-hU-Fzb.text" = "Fecha Vencimiento Pago: 23/07/1992";
+
+/* Class = "UILabel"; text = "Colaborador Aseguradora Catalina 1"; ObjectID = "RBd-3K-C13"; */
+"RBd-3K-C13.text" = "Colaborador Aseguradora Catalina 1";
+
+/* Class = "UILabel"; text = "$58.000"; ObjectID = "RQ7-Cr-TvU"; */
+"RQ7-Cr-TvU.text" = "$58.000";
+
+/* Class = "UIBarButtonItem"; title = "Atras"; ObjectID = "RYq-nT-bn2"; */
+"RYq-nT-bn2.title" = "Atras";
+
+/* Class = "UILabel"; text = "Total Servicio: $77.744"; ObjectID = "Rcf-Mj-7hF"; */
+"Rcf-Mj-7hF.text" = "Total Servicio: $77.744";
+
+/* Class = "UILabel"; text = "No"; ObjectID = "RrK-iA-lbE"; */
+"RrK-iA-lbE.text" = "No";
+
+/* Class = "UILabel"; text = "$0,0"; ObjectID = "RsS-Ko-P9x"; */
+"RsS-Ko-P9x.text" = "$0,0";
+
+/* Class = "UINavigationItem"; title = "Sofib Mobile"; ObjectID = "Rsw-Lw-Uft"; */
+"Rsw-Lw-Uft.title" = "Sofib Mobile";
+
+/* Class = "UILabel"; text = "$9.560.000"; ObjectID = "Rxm-Cn-2UA"; */
+"Rxm-Cn-2UA.text" = "$9.560.000";
+
+/* Class = "UILabel"; text = "Peluquería"; ObjectID = "RyN-kY-iow"; */
+"RyN-kY-iow.text" = "Peluquería";
+
+/* Class = "UILabel"; text = "$34.000"; ObjectID = "Rzu-0b-5yx"; */
+"Rzu-0b-5yx.text" = "$34.000";
+
+/* Class = "UILabel"; text = "Peluquería"; ObjectID = "S9O-Dx-lib"; */
+"S9O-Dx-lib.text" = "Peluquería";
+
+/* Class = "UILabel"; text = "Fecha Rechazo: 2016/07/24"; ObjectID = "SAv-xV-KBH"; */
+"SAv-xV-KBH.text" = "Fecha Rechazo: 2016/07/24";
+
+/* Class = "UILabel"; text = "Si"; ObjectID = "SJV-qo-4Yo"; */
+"SJV-qo-4Yo.text" = "Si";
+
+/* Class = "UILabel"; text = "$56.000"; ObjectID = "SKa-5m-Gn6"; */
+"SKa-5m-Gn6.text" = "$56.000";
+
+/* Class = "UILabel"; text = "fghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfgh"; ObjectID = "SNM-DU-NDo"; */
+"SNM-DU-NDo.text" = "fghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfghfgh";
+
+/* Class = "UILabel"; text = "Coomeva"; ObjectID = "SNu-Td-6qk"; */
+"SNu-Td-6qk.text" = "Coomeva";
+
+/* Class = "UILabel"; text = "Número Nota: 123456789"; ObjectID = "SP1-J0-CCO"; */
+"SP1-J0-CCO.text" = "Número Nota: 123456789";
+
+/* Class = "UILabel"; text = "Cancelado"; ObjectID = "SPd-M8-qg0"; */
+"SPd-M8-qg0.text" = "Cancelado";
+
+/* Class = "UINavigationItem"; title = "Informes Médicos"; ObjectID = "SRC-58-Z5u"; */
+"SRC-58-Z5u.title" = "Informes Médicos";
+
+/* Class = "UIBarButtonItem"; title = "Atras"; ObjectID = "SZ5-cJ-80c"; */
+"SZ5-cJ-80c.title" = "Atras";
+
+/* Class = "UILabel"; text = "Prestador/Proveedor:"; ObjectID = "Sba-PO-jYs"; */
+"Sba-PO-jYs.text" = "Prestador/Proveedor:";
+
+/* Class = "UILabel"; text = "Id: 278361827"; ObjectID = "Sex-Pz-1hB"; */
+"Sex-Pz-1hB.text" = "Id: 278361827";
+
+/* Class = "UILabel"; text = "Fecha Aprobación"; ObjectID = "SfF-hW-I7F"; */
+"SfF-hW-I7F.text" = "Fecha Aprobación";
+
+/* Class = "UILabel"; text = "Entidad: InformeMedico"; ObjectID = "Sgx-ee-rfF"; */
+"Sgx-ee-rfF.text" = "Entidad: InformeMedico";
+
+/* Class = "UITabBarItem"; title = "GLOSA"; ObjectID = "T0g-Jp-Jxl"; */
+"T0g-Jp-Jxl.title" = "GLOSA";
+
+/* Class = "UILabel"; text = "24/07/2016"; ObjectID = "T1O-fW-qPM"; */
+"T1O-fW-qPM.text" = "24/07/2016";
+
+/* Class = "UITabBarItem"; title = "SERVICIO/PROVEEDOR"; ObjectID = "T6t-II-Wuk"; */
+"T6t-II-Wuk.title" = "SERVICIO/PROVEEDOR";
+
+/* Class = "UINavigationItem"; title = "Encuesta Satisfacción"; ObjectID = "T9A-Si-iQK"; */
+"T9A-Si-iQK.title" = "Encuesta Satisfacción";
+
+/* Class = "UILabel"; text = "Subtotal Concepto: $56.000"; ObjectID = "TBk-He-Bje"; */
+"TBk-He-Bje.text" = "Subtotal Concepto: $56.000";
+
+/* Class = "UITabBarItem"; title = "GLOSA"; ObjectID = "TCw-ky-31S"; */
+"TCw-ky-31S.title" = "GLOSA";
+
+/* Class = "UILabel"; text = "Nombre Procedimiento"; ObjectID = "TFK-Bl-SiF"; */
+"TFK-Bl-SiF.text" = "Nombre Procedimiento";
+
+/* Class = "UILabel"; text = "Subtotal"; ObjectID = "TNl-83-abf"; */
+"TNl-83-abf.text" = "Subtotal";
+
+/* Class = "UILabel"; text = "Estado"; ObjectID = "TNz-5K-ibT"; */
+"TNz-5K-ibT.text" = "Estado";
+
+/* Class = "UINavigationItem"; title = "Facturas"; ObjectID = "TON-9L-wr4"; */
+"TON-9L-wr4.title" = "Facturas";
+
+/* Class = "UILabel"; text = "PACIENTE"; ObjectID = "TT3-JQ-Zo2"; */
+"TT3-JQ-Zo2.text" = "PACIENTE";
+
+/* Class = "UILabel"; text = "Hasta"; ObjectID = "TVG-cI-eOb"; */
+"TVG-cI-eOb.text" = "Hasta";
+
+/* Class = "UILabel"; text = "Coomeva"; ObjectID = "Tfw-pz-HEX"; */
+"Tfw-pz-HEX.text" = "Coomeva";
+
+/* Class = "UILabel"; text = "Número Orden Servicio"; ObjectID = "Tii-yh-A4R"; */
+"Tii-yh-A4R.text" = "Número Orden Servicio";
+
+/* Class = "UILabel"; text = "Fecha de Aprobación"; ObjectID = "Tn8-t6-gKL"; */
+"Tn8-t6-gKL.text" = "Fecha de Aprobación";
+
+/* Class = "UILabel"; text = "24/07/2016"; ObjectID = "Tpz-qH-yYb"; */
+"Tpz-qH-yYb.text" = "24/07/2016";
+
+/* Class = "UILabel"; text = "$0,0"; ObjectID = "Tt6-gx-2B5"; */
+"Tt6-gx-2B5.text" = "$0,0";
+
+/* Class = "UILabel"; text = "Cali"; ObjectID = "TtD-At-DOV"; */
+"TtD-At-DOV.text" = "Cali";
+
+/* Class = "UILabel"; text = "Nombre Paciente"; ObjectID = "U1i-yD-Ac2"; */
+"U1i-yD-Ac2.text" = "Nombre Paciente";
+
+/* Class = "UILabel"; text = "$30.000"; ObjectID = "U3B-0d-Ld3"; */
+"U3B-0d-Ld3.text" = "$30.000";
+
+/* Class = "UINavigationItem"; title = "Tipo de Aprobación"; ObjectID = "U5f-8J-xg2"; */
+"U5f-8J-xg2.title" = "Tipo de Aprobación";
+
+/* Class = "UITabBarItem"; title = "NOTA CREDITO"; ObjectID = "U6b-af-KLJ"; */
+"U6b-af-KLJ.title" = "NOTA CREDITO";
+
+/* Class = "UILabel"; text = "Fecha Finalización"; ObjectID = "UGh-Qd-GGM"; */
+"UGh-Qd-GGM.text" = "Fecha Finalización";
+
+/* Class = "UILabel"; text = "Valor Moneda Extranjero"; ObjectID = "UGn-zk-SyZ"; */
+"UGn-zk-SyZ.text" = "Valor Moneda Extranjero";
+
+/* Class = "UILabel"; text = "Justificación de Cancelación"; ObjectID = "Ub9-ba-cmc"; */
+"Ub9-ba-cmc.text" = "Justificación de Cancelación";
+
+/* Class = "UILabel"; text = "Número Solicitud: 163-1"; ObjectID = "Ujn-Xp-MkX"; */
+"Ujn-Xp-MkX.text" = "Número Solicitud: 163-1";
+
+/* Class = "UINavigationItem"; title = "Documentos Medicos"; ObjectID = "UlR-mY-pjH"; */
+"UlR-mY-pjH.title" = "Documentos Medicos";
+
+/* Class = "UILabel"; text = "$400.000"; ObjectID = "Uw8-v4-Kkv"; */
+"Uw8-v4-Kkv.text" = "$400.000";
+
+/* Class = "UILabel"; text = "Fecha Anulación: "; ObjectID = "Uyd-aq-hE8"; */
+"Uyd-aq-hE8.text" = "Fecha Anulación: ";
+
+/* Class = "UILabel"; text = "JUAN DAVID ARAGON"; ObjectID = "Uzz-2v-mNM"; */
+"Uzz-2v-mNM.text" = "JUAN DAVID ARAGON";
+
+/* Class = "UILabel"; text = "Especialidad"; ObjectID = "V07-Yf-LuU"; */
+"V07-Yf-LuU.text" = "Especialidad";
+
+/* Class = "UILabel"; text = "Tipo Giro"; ObjectID = "V6o-98-4gv"; */
+"V6o-98-4gv.text" = "Tipo Giro";
+
+/* Class = "UIBarButtonItem"; title = "Atras"; ObjectID = "V7F-3V-9ZO"; */
+"V7F-3V-9ZO.title" = "Atras";
+
+/* Class = "UIBarButtonItem"; title = "Atras"; ObjectID = "VGS-zc-hkD"; */
+"VGS-zc-hkD.title" = "Atras";
+
+/* Class = "UILabel"; text = "JUAN CAMILO PUENTE RIASCOS"; ObjectID = "VGu-a7-TOU"; */
+"VGu-a7-TOU.text" = "JUAN CAMILO PUENTE RIASCOS";
+
+/* Class = "UILabel"; text = "Fecha Recibido Coomeva"; ObjectID = "VJe-by-8kh"; */
+"VJe-by-8kh.text" = "Fecha Recibido Coomeva";
+
+/* Class = "UILabel"; text = "Total Concepto: $9.456.000"; ObjectID = "VKH-9A-MyF"; */
+"VKH-9A-MyF.text" = "Total Concepto: $9.456.000";
+
+/* Class = "UILabel"; text = "Servicio"; ObjectID = "VLu-hS-iia"; */
+"VLu-hS-iia.text" = "Servicio";
+
+/* Class = "UILabel"; text = "Cadena de Hoteles Decameron"; ObjectID = "VZC-8x-wzM"; */
+"VZC-8x-wzM.text" = "Cadena de Hoteles Decameron";
+
+/* Class = "UILabel"; text = "UTILITY SERVICES"; ObjectID = "Vh6-PQ-7sa"; */
+"Vh6-PQ-7sa.text" = "UTILITY SERVICES";
+
+/* Class = "UILabel"; text = "Evolución del paciente: laskdñkasñdkañsdklñaskl"; ObjectID = "VhU-kL-0ZQ"; */
+"VhU-kL-0ZQ.text" = "Evolución del paciente: laskdñkasñdkañsdklñaskl";
+
+/* Class = "UILabel"; text = "Tipo de Servicio"; ObjectID = "WBA-sP-Xa5"; */
+"WBA-sP-Xa5.text" = "Tipo de Servicio";
+
+/* Class = "UILabel"; text = "Manutención"; ObjectID = "WMe-TO-7qS"; */
+"WMe-TO-7qS.text" = "Manutención";
+
+/* Class = "UIBarButtonItem"; title = "Atras"; ObjectID = "WNO-QK-fjt"; */
+"WNO-QK-fjt.title" = "Atras";
+
+/* Class = "UILabel"; text = "Estado"; ObjectID = "WNm-PX-hpl"; */
+"WNm-PX-hpl.text" = "Estado";
+
+/* Class = "UIBarButtonItem"; title = "Atras"; ObjectID = "WVK-Ay-yyO"; */
+"WVK-Ay-yyO.title" = "Atras";
+
+/* Class = "UILabel"; text = "Aprobada"; ObjectID = "Wgh-Lh-LeL"; */
+"Wgh-Lh-LeL.text" = "Aprobada";
+
+/* Class = "UILabel"; text = "Total Glosa"; ObjectID = "Wq6-Pc-Anw"; */
+"Wq6-Pc-Anw.text" = "Total Glosa";
+
+/* Class = "UILabel"; text = "UTILITY SERVICE"; ObjectID = "WuI-kZ-lTz"; */
+"WuI-kZ-lTz.text" = "UTILITY SERVICE";
+
+/* Class = "UILabel"; text = "Prestador/Proveedor"; ObjectID = "Wva-s6-KV0"; */
+"Wva-s6-KV0.text" = "Prestador/Proveedor";
+
+/* Class = "UIBarButtonItem"; title = "Atras"; ObjectID = "X64-ft-Ytc"; */
+"X64-ft-Ytc.title" = "Atras";
+
+/* Class = "UILabel"; text = "$125.000"; ObjectID = "XSK-6L-ZRk"; */
+"XSK-6L-ZRk.text" = "$125.000";
+
+/* Class = "UILabel"; text = "Funcionario Externo Área Médica"; ObjectID = "XUa-mG-Ykl"; */
+"XUa-mG-Ykl.text" = "Funcionario Externo Área Médica";
+
+/* Class = "UILabel"; text = "3185226441"; ObjectID = "XWt-b3-niG"; */
+"XWt-b3-niG.text" = "3185226441";
+
+/* Class = "UILabel"; text = "852-1"; ObjectID = "Xfz-Ik-nya"; */
+"Xfz-Ik-nya.text" = "852-1";
+
+/* Class = "UILabel"; text = "Medicina"; ObjectID = "Xll-a6-2yr"; */
+"Xll-a6-2yr.text" = "Medicina";
+
+/* Class = "UINavigationItem"; title = "Notas Crédito/Débito"; ObjectID = "XmI-gk-pRo"; */
+"XmI-gk-pRo.title" = "Notas Crédito/Débito";
+
+/* Class = "UILabel"; text = "Concepto"; ObjectID = "Xof-BP-Sy8"; */
+"Xof-BP-Sy8.text" = "Concepto";
+
+/* Class = "UINavigationItem"; title = "Procedimiento"; ObjectID = "XpH-5f-QPX"; */
+"XpH-5f-QPX.title" = "Procedimiento";
+
+/* Class = "UILabel"; text = "Fecha Registro"; ObjectID = "XqG-H2-0q9"; */
+"XqG-H2-0q9.text" = "Fecha Registro";
+
+/* Class = "UILabel"; text = "Nombre Paciente: Juan Camilo Puente Riascos"; ObjectID = "Y3r-JS-NgY"; */
+"Y3r-JS-NgY.text" = "Nombre Paciente: Juan Camilo Puente Riascos";
+
+/* Class = "UILabel"; text = "Médico GeneralMédico GeneralMédico GeneralMédico GeneralMédico General"; ObjectID = "YLh-WL-xLQ"; */
+"YLh-WL-xLQ.text" = "Médico GeneralMédico GeneralMédico GeneralMédico GeneralMédico General";
+
+/* Class = "UITextField"; placeholder = "Seleccionar Tipo Registro"; ObjectID = "YP3-QK-kCW"; */
+"YP3-QK-kCW.placeholder" = "Seleccionar Tipo Registro";
+
+/* Class = "UILabel"; text = "Proveedor Proveedor Proveedor Proveedor Proveedor Proveedor Proveedor Proveedor"; ObjectID = "YdD-gJ-TVL"; */
+"YdD-gJ-TVL.text" = "Proveedor Proveedor Proveedor Proveedor Proveedor Proveedor Proveedor Proveedor";
+
+/* Class = "UILabel"; text = "Fecha Emisión"; ObjectID = "YeS-KO-uCQ"; */
+"YeS-KO-uCQ.text" = "Fecha Emisión";
+
+/* Class = "UINavigationItem"; title = "Información General"; ObjectID = "YiK-tR-DmR"; */
+"YiK-tR-DmR.title" = "Información General";
+
+/* Class = "UIBarButtonItem"; title = "Atras"; ObjectID = "YkQ-hM-Xyf"; */
+"YkQ-hM-Xyf.title" = "Atras";
+
+/* Class = "UINavigationItem"; title = "Giros"; ObjectID = "YrS-MS-Lrn"; */
+"YrS-MS-Lrn.title" = "Giros";
+
+/* Class = "UILabel"; text = "justificacion justificacion justificacion justificacion justificacion justificacion"; ObjectID = "Yrw-6j-280"; */
+"Yrw-6j-280.text" = "justificacion justificacion justificacion justificacion justificacion justificacion";
+
+/* Class = "UILabel"; text = "Cadena de hoteles Decameron"; ObjectID = "YsA-Qo-PzX"; */
+"YsA-Qo-PzX.text" = "Cadena de hoteles Decameron";
+
+/* Class = "UILabel"; text = "Tipo Entidad"; ObjectID = "YxE-ia-SPW"; */
+"YxE-ia-SPW.text" = "Tipo Entidad";
+
+/* Class = "UILabel"; text = "Fecha de Rechazo"; ObjectID = "YxQ-hy-iCw"; */
+"YxQ-hy-iCw.text" = "Fecha de Rechazo";
+
+/* Class = "UIBarButtonItem"; title = "Atras"; ObjectID = "Z0c-uV-0F4"; */
+"Z0c-uV-0F4.title" = "Atras";
+
+/* Class = "UILabel"; text = "Cadena de Hoteles Decamerón"; ObjectID = "Z6Y-HJ-e1d"; */
+"Z6Y-HJ-e1d.text" = "Cadena de Hoteles Decamerón";
+
+/* Class = "UILabel"; text = "Servicio"; ObjectID = "ZDw-0H-4Gf"; */
+"ZDw-0H-4Gf.text" = "Servicio";
+
+/* Class = "UILabel"; text = "Juan Camilo Puente Riascos"; ObjectID = "ZQw-UT-hN9"; */
+"ZQw-UT-hN9.text" = "Juan Camilo Puente Riascos";
+
+/* Class = "UILabel"; text = "Número Nota"; ObjectID = "Zrq-Bu-HIQ"; */
+"Zrq-Bu-HIQ.text" = "Número Nota";
+
+/* Class = "UILabel"; text = "$0"; ObjectID = "Zuf-vj-ZdZ"; */
+"Zuf-vj-ZdZ.text" = "$0";
+
+/* Class = "UILabel"; text = "163"; ObjectID = "a2D-ao-hCy"; */
+"a2D-ao-hCy.text" = "163";
+
+/* Class = "UILabel"; text = "163"; ObjectID = "a3D-az-LD1"; */
+"a3D-az-LD1.text" = "163";
+
+/* Class = "UINavigationItem"; title = "Conceptos"; ObjectID = "a8G-QP-kbe"; */
+"a8G-QP-kbe.title" = "Conceptos";
+
+/* Class = "UILabel"; text = "01/05/2010"; ObjectID = "a8Z-8K-MW3"; */
+"a8Z-8K-MW3.text" = "01/05/2010";
+
+/* Class = "UILabel"; text = "JUAN DAVID ARAGON"; ObjectID = "a9U-l3-21X"; */
+"a9U-l3-21X.text" = "JUAN DAVID ARAGON";
+
+/* Class = "UILabel"; text = "$189.000.00"; ObjectID = "aDV-vM-aLR"; */
+"aDV-vM-aLR.text" = "$189.000.00";
+
+/* Class = "UIBarButtonItem"; title = "Atras"; ObjectID = "aTA-B9-htx"; */
+"aTA-B9-htx.title" = "Atras";
+
+/* Class = "UILabel"; text = "Justificacion Justificacion Justificacion Justificacion Justificacion Justificacion Justificacion"; ObjectID = "abp-ag-NrX"; */
+"abp-ag-NrX.text" = "Justificacion Justificacion Justificacion Justificacion Justificacion Justificacion Justificacion";
+
+/* Class = "UILabel"; text = "Justificacion: Solicitud de aprobacion de ..."; ObjectID = "abu-io-S7h"; */
+"abu-io-S7h.text" = "Justificacion: Solicitud de aprobacion de ...";
+
+/* Class = "UILabel"; text = "Fecha Solicitud: 2016/07/24"; ObjectID = "agx-Yf-3fM"; */
+"agx-Yf-3fM.text" = "Fecha Solicitud: 2016/07/24";
+
+/* Class = "UILabel"; text = "Tipo Giro"; ObjectID = "aj0-W8-oGn"; */
+"aj0-W8-oGn.text" = "Tipo Giro";
+
+/* Class = "UILabel"; text = "Acompañante"; ObjectID = "ajB-Oe-dlR"; */
+"ajB-Oe-dlR.text" = "Acompañante";
+
+/* Class = "UILabel"; text = "$6.678.000"; ObjectID = "aoW-Bz-m1Q"; */
+"aoW-Bz-m1Q.text" = "$6.678.000";
+
+/* Class = "UINavigationItem"; title = "Bitacora"; ObjectID = "b7x-lw-4oM"; */
+"b7x-lw-4oM.title" = "Bitacora";
+
+/* Class = "UILabel"; text = "$326.000"; ObjectID = "bC1-b6-KAA"; */
+"bC1-b6-KAA.text" = "$326.000";
+
+/* Class = "UITabBarItem"; title = "SERVICIO"; ObjectID = "bLZ-UZ-55t"; */
+"bLZ-UZ-55t.title" = "SERVICIO";
+
+/* Class = "UITabBarItem"; title = "PROCEDIMIENTO"; ObjectID = "bMz-KM-gJx"; */
+"bMz-KM-gJx.title" = "PROCEDIMIENTO";
+
+/* Class = "UILabel"; text = "Proveedor"; ObjectID = "bN3-v0-jBc"; */
+"bN3-v0-jBc.text" = "Proveedor";
+
+/* Class = "UILabel"; text = "Ciudad: Cali"; ObjectID = "bTk-Xm-q0S"; */
+"bTk-Xm-q0S.text" = "Ciudad: Cali";
+
+/* Class = "UINavigationItem"; title = "Impuesto"; ObjectID = "bbo-Fg-nWU"; */
+"bbo-Fg-nWU.title" = "Impuesto";
+
+/* Class = "UILabel"; text = "Ciudad Final"; ObjectID = "bk7-Zf-idb"; */
+"bk7-Zf-idb.text" = "Ciudad Final";
+
+/* Class = "UILabel"; text = "Fecha de Aprobación: 2016/07/24"; ObjectID = "bpa-2q-BQV"; */
+"bpa-2q-BQV.text" = "Fecha de Aprobación: 2016/07/24";
+
+/* Class = "UITabBarItem"; title = "TIPO_APROBACION"; ObjectID = "bvc-wH-lG6"; */
+"bvc-wH-lG6.title" = "TIPO_APROBACION";
+
+/* Class = "UILabel"; text = " "; ObjectID = "bzz-qn-Fxm"; */
+"bzz-qn-Fxm.text" = " ";
+
+/* Class = "UILabel"; text = "Fecha Vencimiento Pago"; ObjectID = "c0M-8t-NW7"; */
+"c0M-8t-NW7.text" = "Fecha Vencimiento Pago";
+
+/* Class = "UILabel"; text = "Fecha Inicio"; ObjectID = "c4U-de-Ngf"; */
+"c4U-de-Ngf.text" = "Fecha Inicio";
+
+/* Class = "UILabel"; text = "Valor Moneda Local"; ObjectID = "c59-Kc-vKx"; */
+"c59-Kc-vKx.text" = "Valor Moneda Local";
+
+/* Class = "UILabel"; text = "Beneficiario: PACIENTE"; ObjectID = "c6d-3H-nYP"; */
+"c6d-3H-nYP.text" = "Beneficiario: PACIENTE";
+
+/* Class = "UILabel"; text = "Prestador"; ObjectID = "cCf-dx-tl6"; */
+"cCf-dx-tl6.text" = "Prestador";
+
+/* Class = "UILabel"; text = "No Aplica"; ObjectID = "cQn-bs-6fY"; */
+"cQn-bs-6fY.text" = "No Aplica";
+
+/* Class = "UITabBarItem"; title = "CONCEPTOS"; ObjectID = "cTz-Z0-fP8"; */
+"cTz-Z0-fP8.title" = "CONCEPTOS";
+
+/* Class = "UILabel"; text = "Juan camilo r"; ObjectID = "cZG-8C-tFo"; */
+"cZG-8C-tFo.text" = "Juan camilo r";
+
+/* Class = "UILabel"; text = "Número de Orden"; ObjectID = "cZy-5s-Dlh"; */
+"cZy-5s-Dlh.text" = "Número de Orden";
+
+/* Class = "UINavigationItem"; title = "Información Factura"; ObjectID = "ccj-ae-yyD"; */
+"ccj-ae-yyD.title" = "Información Factura";
+
+/* Class = "UILabel"; text = "Número Solicitud"; ObjectID = "cd6-cj-h58"; */
+"cd6-cj-h58.text" = "Número Solicitud";
+
+/* Class = "UILabel"; text = "Harold Adrian Bolaños"; ObjectID = "cii-Eh-5wL"; */
+"cii-Eh-5wL.text" = "Harold Adrian Bolaños";
+
+/* Class = "UILabel"; text = "Ciudad"; ObjectID = "cmG-Co-a8s"; */
+"cmG-Co-a8s.text" = "Ciudad";
+
+/* Class = "UINavigationItem"; title = "Administraciones"; ObjectID = "cqg-Sg-2oy"; */
+"cqg-Sg-2oy.title" = "Administraciones";
+
+/* Class = "UILabel"; text = "12/12/2016 08:30 pm"; ObjectID = "d3A-lw-vMe"; */
+"d3A-lw-vMe.text" = "12/12/2016 08:30 pm";
+
+/* Class = "UILabel"; text = "Proveedor"; ObjectID = "d8r-mN-4xi"; */
+"d8r-mN-4xi.text" = "Proveedor";
+
+/* Class = "UILabel"; text = "Diagnostico: DOLOR AGUDO"; ObjectID = "dH7-oX-2ka"; */
+"dH7-oX-2ka.text" = "Diagnostico: DOLOR AGUDO";
+
+/* Class = "UILabel"; text = "CEM"; ObjectID = "dI1-cd-Vah"; */
+"dI1-cd-Vah.text" = "CEM";
+
+/* Class = "UILabel"; text = "tratamiento dentaltratamiento dentaltratamiento dentaltratamiento dental"; ObjectID = "dTY-rV-8Hg"; */
+"dTY-rV-8Hg.text" = "tratamiento dentaltratamiento dentaltratamiento dentaltratamiento dental";
+
+/* Class = "UILabel"; text = "JUAN DAVID ARAGON"; ObjectID = "dnl-u4-0PV"; */
+"dnl-u4-0PV.text" = "JUAN DAVID ARAGON";
+
+/* Class = "UINavigationItem"; title = "Documento Giro"; ObjectID = "dp6-ie-92e"; */
+"dp6-ie-92e.title" = "Documento Giro";
+
+/* Class = "UILabel"; text = "163"; ObjectID = "dr3-6l-wDE"; */
+"dr3-6l-wDE.text" = "163";
+
+/* Class = "UILabel"; text = "eferferferferferfreeferferferferferfreeferferferferferfre"; ObjectID = "dvL-cM-Ch5"; */
+"dvL-cM-Ch5.text" = "eferferferferferfreeferferferferferfreeferferferferferfre";
+
+/* Class = "UILabel"; text = "Descripción"; ObjectID = "dxK-4L-Xxx"; */
+"dxK-4L-Xxx.text" = "Descripción";
+
+/* Class = "UILabel"; text = "Tipo de Seguro"; ObjectID = "eB5-6i-4c6"; */
+"eB5-6i-4c6.text" = "Tipo de Seguro";
+
+/* Class = "UILabel"; text = "  "; ObjectID = "eBR-61-ufg"; */
+"eBR-61-ufg.text" = "  ";
+
+/* Class = "UILabel"; text = "APROBADA"; ObjectID = "eBj-38-ziY"; */
+"eBj-38-ziY.text" = "APROBADA";
+
+/* Class = "UILabel"; text = "3185226441"; ObjectID = "eLd-IX-xqK"; */
+"eLd-IX-xqK.text" = "3185226441";
+
+/* Class = "UILabel"; text = "Justificación de Cancelación"; ObjectID = "ePw-qB-Hux"; */
+"ePw-qB-Hux.text" = "Justificación de Cancelación";
+
+/* Class = "UILabel"; text = "20/03/2015"; ObjectID = "eU8-lK-txT"; */
+"eU8-lK-txT.text" = "20/03/2015";
+
+/* Class = "UILabel"; text = "Estado"; ObjectID = "ebS-vN-qoE"; */
+"ebS-vN-qoE.text" = "Estado";
+
+/* Class = "UILabel"; text = "18/06/2016"; ObjectID = "eci-T4-1Lf"; */
+"eci-T4-1Lf.text" = "18/06/2016";
+
+/* Class = "UILabel"; text = "16"; ObjectID = "ehc-eE-xow"; */
+"ehc-eE-xow.text" = "16";
+
+/* Class = "UILabel"; text = "18/06/2016"; ObjectID = "elN-Wr-Zwl"; */
+"elN-Wr-Zwl.text" = "18/06/2016";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "epv-2E-kiT"; */
+"epv-2E-kiT.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Fecha Expedición"; ObjectID = "esR-MG-8gX"; */
+"esR-MG-8gX.text" = "Fecha Expedición";
+
+/* Class = "UILabel"; text = "Nombre"; ObjectID = "ez2-6e-epe"; */
+"ez2-6e-epe.text" = "Nombre";
+
+/* Class = "UILabel"; text = "$500.078"; ObjectID = "f9M-8m-Hff"; */
+"f9M-8m-Hff.text" = "$500.078";
+
+/* Class = "UILabel"; text = "Estado"; ObjectID = "fBG-2g-3ca"; */
+"fBG-2g-3ca.text" = "Estado";
+
+/* Class = "UILabel"; text = "Ciudad"; ObjectID = "fMe-1d-T6s"; */
+"fMe-1d-T6s.text" = "Ciudad";
+
+/* Class = "UILabel"; text = "JUAN DAVID ARAGON"; ObjectID = "fT3-YB-0SP"; */
+"fT3-YB-0SP.text" = "JUAN DAVID ARAGON";
+
+/* Class = "UILabel"; text = "FAC20150618-1"; ObjectID = "fUf-3o-vaP"; */
+"fUf-3o-vaP.text" = "FAC20150618-1";
+
+/* Class = "UILabel"; text = "Colombia"; ObjectID = "fWZ-we-Gpu"; */
+"fWZ-we-Gpu.text" = "Colombia";
+
+/* Class = "UILabel"; text = "Servicio"; ObjectID = "fen-va-sYO"; */
+"fen-va-sYO.text" = "Servicio";
+
+/* Class = "UILabel"; text = "Fecha Inicio"; ObjectID = "ffQ-gZ-8nu"; */
+"ffQ-gZ-8nu.text" = "Fecha Inicio";
+
+/* Class = "UILabel"; text = "CENTRO MEDICO IMBANACO S.A"; ObjectID = "fgP-gw-RDF"; */
+"fgP-gw-RDF.text" = "CENTRO MEDICO IMBANACO S.A";
+
+/* Class = "UILabel"; text = "Número Orden Servicio: 852-1"; ObjectID = "fiE-QD-6eR"; */
+"fiE-QD-6eR.text" = "Número Orden Servicio: 852-1";
+
+/* Class = "UILabel"; text = "Estado"; ObjectID = "flG-nN-QGS"; */
+"flG-nN-QGS.text" = "Estado";
+
+/* Class = "UILabel"; text = "01/03/2010"; ObjectID = "fx9-xS-bwV"; */
+"fx9-xS-bwV.text" = "01/03/2010";
+
+/* Class = "UILabel"; text = "Tipo Autorización"; ObjectID = "fyx-Ai-4fL"; */
+"fyx-Ai-4fL.text" = "Tipo Autorización";
+
+/* Class = "UIBarButtonItem"; title = "Atras"; ObjectID = "g41-Tb-2VG"; */
+"g41-Tb-2VG.title" = "Atras";
+
+/* Class = "UILabel"; text = "JUAN CAMILO PUENTE RIASCOS"; ObjectID = "g6m-08-B9B"; */
+"g6m-08-B9B.text" = "JUAN CAMILO PUENTE RIASCOS";
+
+/* Class = "UILabel"; text = "Proveedor"; ObjectID = "gAF-xE-Wh3"; */
+"gAF-xE-Wh3.text" = "Proveedor";
+
+/* Class = "UIBarButtonItem"; title = "Atras"; ObjectID = "gAw-wK-1Eo"; */
+"gAw-wK-1Eo.title" = "Atras";
+
+/* Class = "UILabel"; text = "Justificación Anulación"; ObjectID = "gFO-Tx-cFf"; */
+"gFO-Tx-cFf.text" = "Justificación Anulación";
+
+/* Class = "UILabel"; text = "Fecha Creado"; ObjectID = "gUj-cH-bcX"; */
+"gUj-cH-bcX.text" = "Fecha Creado";
+
+/* Class = "UILabel"; text = "Registra Devolución"; ObjectID = "gVJ-fN-t8a"; */
+"gVJ-fN-t8a.text" = "Registra Devolución";
+
+/* Class = "UILabel"; text = "Peluqueria"; ObjectID = "gaM-OR-RM9"; */
+"gaM-OR-RM9.text" = "Peluqueria";
+
+/* Class = "UILabel"; text = "Motivo"; ObjectID = "gft-OU-YUK"; */
+"gft-OU-YUK.text" = "Motivo";
+
+/* Class = "UINavigationItem"; title = "Epicrisis"; ObjectID = "gg6-hm-zbr"; */
+"gg6-hm-zbr.title" = "Epicrisis";
+
+/* Class = "UINavigationItem"; title = "Sofib Mobile"; ObjectID = "ggj-qd-J64"; */
+"ggj-qd-J64.title" = "Sofib Mobile";
+
+/* Class = "UITextField"; placeholder = "Seleccionar Estado"; ObjectID = "ggw-cx-mZj"; */
+"ggw-cx-mZj.placeholder" = "Seleccionar Estado";
+
+/* Class = "UILabel"; text = "$400.000"; ObjectID = "giI-j5-KrX"; */
+"giI-j5-KrX.text" = "$400.000";
+
+/* Class = "UILabel"; text = "Consecutivo Nota Crédito: 04"; ObjectID = "gjw-Lg-DTa"; */
+"gjw-Lg-DTa.text" = "Consecutivo Nota Crédito: 04";
+
+/* Class = "UILabel"; text = "Estado: Aprobada"; ObjectID = "gu1-dK-ItD"; */
+"gu1-dK-ItD.text" = "Estado: Aprobada";
+
+/* Class = "UILabel"; text = "06/06/2015"; ObjectID = "gva-7U-qTE"; */
+"gva-7U-qTE.text" = "06/06/2015";
+
+/* Class = "UILabel"; text = "Valor Total Factura: $180.000.000"; ObjectID = "gy9-wx-hKZ"; */
+"gy9-wx-hKZ.text" = "Valor Total Factura: $180.000.000";
+
+/* Class = "UILabel"; text = "163"; ObjectID = "gyF-fV-WH0"; */
+"gyF-fV-WH0.text" = "163";
+
+/* Class = "UILabel"; text = "CEM"; ObjectID = "h3n-TU-Kgt"; */
+"h3n-TU-Kgt.text" = "CEM";
+
+/* Class = "UILabel"; text = "$58.000"; ObjectID = "h6Y-9p-kje"; */
+"h6Y-9p-kje.text" = "$58.000";
+
+/* Class = "UINavigationItem"; title = "Sofib Mobile"; ObjectID = "h97-tt-yTb"; */
+"h97-tt-yTb.title" = "Sofib Mobile";
+
+/* Class = "UILabel"; text = "Nombre Paciente"; ObjectID = "hD0-Wr-kDl"; */
+"hD0-Wr-kDl.text" = "Nombre Paciente";
+
+/* Class = "UILabel"; text = "856-1"; ObjectID = "hFP-JY-43w"; */
+"hFP-JY-43w.text" = "856-1";
+
+/* Class = "UILabel"; text = "Porcentaje"; ObjectID = "hGW-2V-a3p"; */
+"hGW-2V-a3p.text" = "Porcentaje";
+
+/* Class = "UILabel"; text = "06/06/2015"; ObjectID = "hMc-wk-12C"; */
+"hMc-wk-12C.text" = "06/06/2015";
+
+/* Class = "UILabel"; text = "Valor Iva:"; ObjectID = "hQ7-4g-oqo"; */
+"hQ7-4g-oqo.text" = "Valor Iva:";
+
+/* Class = "UILabel"; text = "asdsad"; ObjectID = "hTC-uw-Hg8"; */
+"hTC-uw-Hg8.text" = "asdsad";
+
+/* Class = "UILabel"; text = "Tipo Beneficiario"; ObjectID = "hWK-9A-Xn8"; */
+"hWK-9A-Xn8.text" = "Tipo Beneficiario";
+
+/* Class = "UILabel"; text = "3185226441"; ObjectID = "hbv-bF-Cce"; */
+"hbv-bF-Cce.text" = "3185226441";
+
+/* Class = "UILabel"; text = "Servicios Adicionados"; ObjectID = "hdz-xo-f29"; */
+"hdz-xo-f29.text" = "Servicios Adicionados";
+
+/* Class = "UILabel"; text = "Historico Giro"; ObjectID = "hhF-kN-46B"; */
+"hhF-kN-46B.text" = "Historico Giro";
+
+/* Class = "UILabel"; text = "Fecha Expedición: 27/09/2010"; ObjectID = "hiE-iu-NTu"; */
+"hiE-iu-NTu.text" = "Fecha Expedición: 27/09/2010";
+
+/* Class = "UINavigationItem"; title = "Funcionario Externo"; ObjectID = "hmS-3b-xss"; */
+"hmS-3b-xss.title" = "Funcionario Externo";
+
+/* Class = "UILabel"; text = "Concepto"; ObjectID = "hpV-zV-qXJ"; */
+"hpV-zV-qXJ.text" = "Concepto";
+
+/* Class = "UILabel"; text = "Fecha/Hora Cita"; ObjectID = "hqZ-7S-UDf"; */
+"hqZ-7S-UDf.text" = "Fecha/Hora Cita";
+
+/* Class = "UILabel"; text = "Tipo Solicitud"; ObjectID = "hsL-T7-VBf"; */
+"hsL-T7-VBf.text" = "Tipo Solicitud";
+
+/* Class = "UINavigationItem"; title = "Bitacora"; ObjectID = "hss-5Q-kH3"; */
+"hss-5Q-kH3.title" = "Bitacora";
+
+/* Class = "UILabel"; text = "Estado: Aprobado"; ObjectID = "hw3-89-oRH"; */
+"hw3-89-oRH.text" = "Estado: Aprobado";
+
+/* Class = "UINavigationItem"; title = "Información General"; ObjectID = "hwk-PY-cTP"; */
+"hwk-PY-cTP.title" = "Información General";
+
+/* Class = "UILabel"; text = "Número Solicitud: 163-1"; ObjectID = "i05-6l-j7J"; */
+"i05-6l-j7J.text" = "Número Solicitud: 163-1";
+
+/* Class = "UILabel"; text = "Prestador"; ObjectID = "i2g-D5-m4H"; */
+"i2g-D5-m4H.text" = "Prestador";
+
+/* Class = "UILabel"; text = "Valor Legalizado"; ObjectID = "i3t-0Y-cqe"; */
+"i3t-0Y-cqe.text" = "Valor Legalizado";
+
+/* Class = "UINavigationItem"; title = "Solicitudes Aprobación"; ObjectID = "iAu-FG-qmt"; */
+"iAu-FG-qmt.title" = "Solicitudes Aprobación";
+
+/* Class = "UILabel"; text = "12/12/2016 08:30 pm"; ObjectID = "iFl-rM-cCB"; */
+"iFl-rM-cCB.text" = "12/12/2016 08:30 pm";
+
+/* Class = "UILabel"; text = "MERYL LOUISE STREEP"; ObjectID = "iJd-pl-fy6"; */
+"iJd-pl-fy6.text" = "MERYL LOUISE STREEP";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "iM9-Fe-GXO"; */
+"iM9-Fe-GXO.text" = "Label";
+
+/* Class = "UILabel"; text = "22/10/2016"; ObjectID = "iNb-Bt-yS0"; */
+"iNb-Bt-yS0.text" = "22/10/2016";
+
+/* Class = "UILabel"; text = "Valor Impuesto"; ObjectID = "iNm-Hi-3BU"; */
+"iNm-Hi-3BU.text" = "Valor Impuesto";
+
+/* Class = "UILabel"; text = "Cadena de Hoteles Decameron"; ObjectID = "iOg-w6-SgO"; */
+"iOg-w6-SgO.text" = "Cadena de Hoteles Decameron";
+
+/* Class = "UILabel"; text = "$400.000"; ObjectID = "iP9-3K-Fff"; */
+"iP9-3K-Fff.text" = "$400.000";
+
+/* Class = "UINavigationItem"; title = "Funcionario Externo"; ObjectID = "iXR-Hf-8Q7"; */
+"iXR-Hf-8Q7.title" = "Funcionario Externo";
+
+/* Class = "UILabel"; text = "Justificación"; ObjectID = "iiT-zl-YD9"; */
+"iiT-zl-YD9.text" = "Justificación";
+
+/* Class = "UITabBarItem"; title = "INFO GENERAL"; ObjectID = "ikJ-6S-EB0"; */
+"ikJ-6S-EB0.title" = "INFO GENERAL";
+
+/* Class = "UILabel"; text = "Legalizado"; ObjectID = "imf-TN-jfk"; */
+"imf-TN-jfk.text" = "Legalizado";
+
+/* Class = "UILabel"; text = "Fecha Emisión: 23/07/1992"; ObjectID = "ivi-wD-oSL"; */
+"ivi-wD-oSL.text" = "Fecha Emisión: 23/07/1992";
+
+/* Class = "UILabel"; text = "Fecha Recibido Coomeva"; ObjectID = "j96-c3-Qcp"; */
+"j96-c3-Qcp.text" = "Fecha Recibido Coomeva";
+
+/* Class = "UILabel"; text = "Desde"; ObjectID = "j9Z-80-f7x"; */
+"j9Z-80-f7x.text" = "Desde";
+
+/* Class = "UILabel"; text = "@\"Busqueda Avanzada\""; ObjectID = "jBx-C3-Mwx"; */
+"jBx-C3-Mwx.text" = "@\"Busqueda Avanzada\"";
+
+/* Class = "UILabel"; text = "Fecha Aprobación o Rechazo:"; ObjectID = "jDR-on-uQm"; */
+"jDR-on-uQm.text" = "Fecha Aprobación o Rechazo:";
+
+/* Class = "UILabel"; text = "Consecutivo Nota Crédito"; ObjectID = "jdI-uo-xzm"; */
+"jdI-uo-xzm.text" = "Consecutivo Nota Crédito";
+
+/* Class = "UILabel"; text = "TRM"; ObjectID = "jf4-6V-VU9"; */
+"jf4-6V-VU9.text" = "TRM";
+
+/* Class = "UILabel"; text = "Tipo Entidad"; ObjectID = "jhf-vq-2jk"; */
+"jhf-vq-2jk.text" = "Tipo Entidad";
+
+/* Class = "UILabel"; text = "Valor Nota"; ObjectID = "jnZ-LH-P2r"; */
+"jnZ-LH-P2r.text" = "Valor Nota";
+
+/* Class = "UITabBarItem"; title = "DATOS_BASICOS"; ObjectID = "jr1-Ah-7IO"; */
+"jr1-Ah-7IO.title" = "DATOS_BASICOS";
+
+/* Class = "UILabel"; text = "Cadena de hoteles Decameron"; ObjectID = "jth-am-D91"; */
+"jth-am-D91.text" = "Cadena de hoteles Decameron";
+
+/* Class = "UILabel"; text = "Fecha Vencimiento Pago"; ObjectID = "kHq-OZ-Ljr"; */
+"kHq-OZ-Ljr.text" = "Fecha Vencimiento Pago";
+
+/* Class = "UILabel"; text = "Historico Giro"; ObjectID = "kWg-qO-4pv"; */
+"kWg-qO-4pv.text" = "Historico Giro";
+
+/* Class = "UILabel"; text = "No se encontró"; ObjectID = "kdM-pL-LBY"; */
+"kdM-pL-LBY.text" = "No se encontró";
+
+/* Class = "UINavigationItem"; title = "Documentos Medicos"; ObjectID = "kfw-2D-SdF"; */
+"kfw-2D-SdF.title" = "Documentos Medicos";
+
+/* Class = "UILabel"; text = "Beneficiario"; ObjectID = "koD-8U-05z"; */
+"koD-8U-05z.text" = "Beneficiario";
+
+/* Class = "UILabel"; text = "$1.800.000"; ObjectID = "kpq-SR-zXG"; */
+"kpq-SR-zXG.text" = "$1.800.000";
+
+/* Class = "UILabel"; text = "Estado: Aprobado"; ObjectID = "ktd-Vu-1yP"; */
+"ktd-Vu-1yP.text" = "Estado: Aprobado";
+
+/* Class = "UITextField"; placeholder = "Seleccionar Ciudad Iinicial"; ObjectID = "ktl-wb-rWE"; */
+"ktl-wb-rWE.placeholder" = "Seleccionar Ciudad Iinicial";
+
+/* Class = "UILabel"; text = "Número Solicitud: CL-000730-001"; ObjectID = "kwn-Ea-QbD"; */
+"kwn-Ea-QbD.text" = "Número Solicitud: CL-000730-001";
+
+/* Class = "UILabel"; text = "No"; ObjectID = "l79-5X-Pag"; */
+"l79-5X-Pag.text" = "No";
+
+/* Class = "UILabel"; text = "CL-000852-008"; ObjectID = "lAA-Ag-RrF"; */
+"lAA-Ag-RrF.text" = "CL-000852-008";
+
+/* Class = "UILabel"; text = "Fecha Inicio"; ObjectID = "lEP-kI-4yp"; */
+"lEP-kI-4yp.text" = "Fecha Inicio";
+
+/* Class = "UILabel"; text = "Número Solicitud"; ObjectID = "lFf-3F-5ll"; */
+"lFf-3F-5ll.text" = "Número Solicitud";
+
+/* Class = "UILabel"; text = "Fecha Fin"; ObjectID = "lN3-IG-NUG"; */
+"lN3-IG-NUG.text" = "Fecha Fin";
+
+/* Class = "UILabel"; text = "Médico"; ObjectID = "lOO-Ed-kOJ"; */
+"lOO-Ed-kOJ.text" = "Médico";
+
+/* Class = "UILabel"; text = "Información Factura"; ObjectID = "lXt-bZ-MDk"; */
+"lXt-bZ-MDk.text" = "Información Factura";
+
+/* Class = "UILabel"; text = "Tipo Solicitud: Servicio Médico No Asistencial"; ObjectID = "lxE-Rs-XRg"; */
+"lxE-Rs-XRg.text" = "Tipo Solicitud: Servicio Médico No Asistencial";
+
+/* Class = "UILabel"; text = "$189.000.00"; ObjectID = "lya-o7-OmR"; */
+"lya-o7-OmR.text" = "$189.000.00";
+
+/* Class = "UILabel"; text = "24/07/2010"; ObjectID = "m07-DO-KV1"; */
+"m07-DO-KV1.text" = "24/07/2010";
+
+/* Class = "UILabel"; text = "Identificación"; ObjectID = "m1d-gw-51Z"; */
+"m1d-gw-51Z.text" = "Identificación";
+
+/* Class = "UILabel"; text = "Id"; ObjectID = "m4Q-Yf-g5z"; */
+"m4Q-Yf-g5z.text" = "Id";
+
+/* Class = "UILabel"; text = "Proveedor"; ObjectID = "m9J-Y9-50V"; */
+"m9J-Y9-50V.text" = "Proveedor";
+
+/* Class = "UILabel"; text = "Manutención"; ObjectID = "mGw-Gi-k2f"; */
+"mGw-Gi-k2f.text" = "Manutención";
+
+/* Class = "UILabel"; text = "50"; ObjectID = "mOC-pM-SB3"; */
+"mOC-pM-SB3.text" = "50";
+
+/* Class = "UILabel"; text = "24/07/2016"; ObjectID = "mOJ-gr-nvs"; */
+"mOJ-gr-nvs.text" = "24/07/2016";
+
+/* Class = "UILabel"; text = "Motivo"; ObjectID = "mUj-uV-lmt"; */
+"mUj-uV-lmt.text" = "Motivo";
+
+/* Class = "UILabel"; text = "Servicio: Cadena de Hoteles Decameron"; ObjectID = "mk2-hd-M6H"; */
+"mk2-hd-M6H.text" = "Servicio: Cadena de Hoteles Decameron";
+
+/* Class = "UILabel"; text = "Cadena de Hoteles Decameron"; ObjectID = "mmg-ig-5Uu"; */
+"mmg-ig-5Uu.text" = "Cadena de Hoteles Decameron";
+
+/* Class = "UILabel"; text = "[No. Factura]= 5678 [Servicio]= ALOJAMIENTO [Proveedor]= Hotel Los Heroes [Valor Total Factura]= $1,310,000.00 [Valor IVA]= $160,000.00 [Fecha Emisión]= 20/03/2015 [Fecha Vencimiento]= 31/03/2015 [Fecha Recibido en Coomeva]= 20/03/2015 [No. Orden Servicio]= 730-1 [Valor Servicio]= $1,000,000.00 [Seguro Hotelero]= $150,000.00 [Tipo Impuesto]= IVA [Porcentaje]= 16% [Valor Impuesto]= $160,000.00 [Aplica a Seguro Hotelero]= No"; ObjectID = "mn6-WZ-0Nd"; */
+"mn6-WZ-0Nd.text" = "[No. Factura]= 5678 [Servicio]= ALOJAMIENTO [Proveedor]= Hotel Los Heroes [Valor Total Factura]= $1,310,000.00 [Valor IVA]= $160,000.00 [Fecha Emisión]= 20/03/2015 [Fecha Vencimiento]= 31/03/2015 [Fecha Recibido en Coomeva]= 20/03/2015 [No. Orden Servicio]= 730-1 [Valor Servicio]= $1,000,000.00 [Seguro Hotelero]= $150,000.00 [Tipo Impuesto]= IVA [Porcentaje]= 16% [Valor Impuesto]= $160,000.00 [Aplica a Seguro Hotelero]= No";
+
+/* Class = "UITabBarItem"; title = "ADMINISTRACIONES"; ObjectID = "myR-x3-J4z"; */
+"myR-x3-J4z.title" = "ADMINISTRACIONES";
+
+/* Class = "UILabel"; text = "Porcentaje Iva"; ObjectID = "n0u-Yo-MdW"; */
+"n0u-Yo-MdW.text" = "Porcentaje Iva";
+
+/* Class = "UILabel"; text = "24/07/2016"; ObjectID = "n24-UH-g6a"; */
+"n24-UH-g6a.text" = "24/07/2016";
+
+/* Class = "UILabel"; text = "Total"; ObjectID = "nGR-Lg-9OZ"; */
+"nGR-Lg-9OZ.text" = "Total";
+
+/* Class = "UIBarButtonItem"; title = "Atras"; ObjectID = "nHk-PK-bH7"; */
+"nHk-PK-bH7.title" = "Atras";
+
+/* Class = "UILabel"; text = "Nombre"; ObjectID = "nNV-Ch-9aJ"; */
+"nNV-Ch-9aJ.text" = "Nombre";
+
+/* Class = "UILabel"; text = "Número Solicitud: 163"; ObjectID = "nTF-Gz-6cW"; */
+"nTF-Gz-6cW.text" = "Número Solicitud: 163";
+
+/* Class = "UILabel"; text = "435"; ObjectID = "nTR-3C-5Xx"; */
+"nTR-3C-5Xx.text" = "435";
+
+/* Class = "UILabel"; text = "Aplica Glosa"; ObjectID = "nXo-dn-fTj"; */
+"nXo-dn-fTj.text" = "Aplica Glosa";
+
+/* Class = "UILabel"; text = "Número Factura"; ObjectID = "nXr-xD-PD7"; */
+"nXr-xD-PD7.text" = "Número Factura";
+
+/* Class = "UILabel"; text = "Valor Servicio"; ObjectID = "nb0-vY-uTR"; */
+"nb0-vY-uTR.text" = "Valor Servicio";
+
+/* Class = "UILabel"; text = "Información General"; ObjectID = "nl2-hU-SAA"; */
+"nl2-hU-SAA.text" = "Información General";
+
+/* Class = "UILabel"; text = "Número Solicitud"; ObjectID = "nzC-xa-dno"; */
+"nzC-xa-dno.text" = "Número Solicitud";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "o45-ZN-MNo"; */
+"o45-ZN-MNo.text" = "0";
+
+/* Class = "UILabel"; text = "2016-03-01"; ObjectID = "o7i-n4-UUn"; */
+"o7i-n4-UUn.text" = "2016-03-01";
+
+/* Class = "UILabel"; text = "852-1"; ObjectID = "o93-Pe-3l1"; */
+"o93-Pe-3l1.text" = "852-1";
+
+/* Class = "UILabel"; text = "UTILITY SERVICES PRUEBA"; ObjectID = "oKJ-r9-mpl"; */
+"oKJ-r9-mpl.text" = "UTILITY SERVICES PRUEBA";
+
+/* Class = "UILabel"; text = "$400.000"; ObjectID = "oLv-ud-ijC"; */
+"oLv-ud-ijC.text" = "$400.000";
+
+/* Class = "UILabel"; text = "Total"; ObjectID = "oQg-Kf-FUr"; */
+"oQg-Kf-FUr.text" = "Total";
+
+/* Class = "UITextField"; placeholder = "Identificación"; ObjectID = "oR2-8P-Awd"; */
+"oR2-8P-Awd.placeholder" = "Identificación";
+
+/* Class = "UITabBarItem"; title = "IMPUESTO"; ObjectID = "oSc-R7-AVh"; */
+"oSc-R7-AVh.title" = "IMPUESTO";
+
+/* Class = "UILabel"; text = "Ciudad"; ObjectID = "oe9-Lq-dyq"; */
+"oe9-Lq-dyq.text" = "Ciudad";
+
+/* Class = "UILabel"; text = "Identificación Beneficiario: 6333302"; ObjectID = "orP-QR-JIW"; */
+"orP-QR-JIW.text" = "Identificación Beneficiario: 6333302";
+
+/* Class = "UILabel"; text = "Información del Servicio y Proveedor"; ObjectID = "p1E-K9-YWl"; */
+"p1E-K9-YWl.text" = "Información del Servicio y Proveedor";
+
+/* Class = "UILabel"; text = "Beneficiario"; ObjectID = "p4p-wu-oDi"; */
+"p4p-wu-oDi.text" = "Beneficiario";
+
+/* Class = "UILabel"; text = "852-1"; ObjectID = "pBq-md-oYg"; */
+"pBq-md-oYg.text" = "852-1";
+
+/* Class = "UILabel"; text = "Servicio"; ObjectID = "pGf-IY-dcv"; */
+"pGf-IY-dcv.text" = "Servicio";
+
+/* Class = "UILabel"; text = "Ciudad"; ObjectID = "pcv-WE-6DH"; */
+"pcv-WE-6DH.text" = "Ciudad";
+
+/* Class = "UILabel"; text = "$89.000"; ObjectID = "pgR-ah-WVg"; */
+"pgR-ah-WVg.text" = "$89.000";
+
+/* Class = "UILabel"; text = "Aprobada"; ObjectID = "ph7-eq-9Nh"; */
+"ph7-eq-9Nh.text" = "Aprobada";
+
+/* Class = "UILabel"; text = "163"; ObjectID = "ppe-Fm-9hE"; */
+"ppe-Fm-9hE.text" = "163";
+
+/* Class = "UINavigationItem"; title = "Sofib Mobile"; ObjectID = "pri-zr-iys"; */
+"pri-zr-iys.title" = "Sofib Mobile";
+
+/* Class = "UILabel"; text = "Ciudad Inicial"; ObjectID = "q02-gK-pYM"; */
+"q02-gK-pYM.text" = "Ciudad Inicial";
+
+/* Class = "UILabel"; text = "Servicio"; ObjectID = "q0X-jy-1pp"; */
+"q0X-jy-1pp.text" = "Servicio";
+
+/* Class = "UINavigationItem"; title = "Notas Crédito/Débito"; ObjectID = "q1Y-Pe-GSf"; */
+"q1Y-Pe-GSf.title" = "Notas Crédito/Débito";
+
+/* Class = "UILabel"; text = "Valor Iva: $90.000"; ObjectID = "qLB-Xb-eJd"; */
+"qLB-Xb-eJd.text" = "Valor Iva: $90.000";
+
+/* Class = "UILabel"; text = "Juan Camilo PuenteJuan Camilo PuenteJuan Camilo PuenteJuan Camilo Puente"; ObjectID = "qPX-AA-0eg"; */
+"qPX-AA-0eg.text" = "Juan Camilo PuenteJuan Camilo PuenteJuan Camilo PuenteJuan Camilo Puente";
+
+/* Class = "UILabel"; text = "Convenio"; ObjectID = "qd5-c8-VYC"; */
+"qd5-c8-VYC.text" = "Convenio";
+
+/* Class = "UILabel"; text = "Tipo Acción"; ObjectID = "qke-DD-fpZ"; */
+"qke-DD-fpZ.text" = "Tipo Acción";
+
+/* Class = "UILabel"; text = "Ciudad"; ObjectID = "qmi-mO-eaR"; */
+"qmi-mO-eaR.text" = "Ciudad";
+
+/* Class = "UILabel"; text = "CL-123245-1"; ObjectID = "qqn-ot-uJZ"; */
+"qqn-ot-uJZ.text" = "CL-123245-1";
+
+/* Class = "UILabel"; text = "06/06/2006"; ObjectID = "qr2-Yb-JgY"; */
+"qr2-Yb-JgY.text" = "06/06/2006";
+
+/* Class = "UILabel"; text = "Cancelado"; ObjectID = "qvX-nH-uCf"; */
+"qvX-nH-uCf.text" = "Cancelado";
+
+/* Class = "UINavigationItem"; title = "Solicitudes de Aprobación"; ObjectID = "r3v-F9-A0f"; */
+"r3v-F9-A0f.title" = "Solicitudes de Aprobación";
+
+/* Class = "UILabel"; text = "Número de Orden"; ObjectID = "r5Z-RN-diG"; */
+"r5Z-RN-diG.text" = "Número de Orden";
+
+/* Class = "UILabel"; text = "Fecha Autorizacion"; ObjectID = "rCE-nW-Vsh"; */
+"rCE-nW-Vsh.text" = "Fecha Autorizacion";
+
+/* Class = "UILabel"; text = "SI"; ObjectID = "rSl-su-YG9"; */
+"rSl-su-YG9.text" = "SI";
+
+/* Class = "UILabel"; text = "$500.078"; ObjectID = "rTw-lh-FMy"; */
+"rTw-lh-FMy.text" = "$500.078";
+
+/* Class = "UILabel"; text = "Número Solicitud"; ObjectID = "rUW-rZ-cDl"; */
+"rUW-rZ-cDl.text" = "Número Solicitud";
+
+/* Class = "UILabel"; text = "Pais"; ObjectID = "rcE-Vc-hVh"; */
+"rcE-Vc-hVh.text" = "Pais";
+
+/* Class = "UILabel"; text = "$908.000"; ObjectID = "rdY-zR-XvO"; */
+"rdY-zR-XvO.text" = "$908.000";
+
+/* Class = "UILabel"; text = "CL-000852-008"; ObjectID = "reC-HL-Sea"; */
+"reC-HL-Sea.text" = "CL-000852-008";
+
+/* Class = "UILabel"; text = "852-1"; ObjectID = "red-er-U6U"; */
+"red-er-U6U.text" = "852-1";
+
+/* Class = "UILabel"; text = "Tipo Identificación Beneficiario"; ObjectID = "ri7-Hp-twG"; */
+"ri7-Hp-twG.text" = "Tipo Identificación Beneficiario";
+
+/* Class = "UINavigationItem"; title = "Manutención"; ObjectID = "rip-Da-7Px"; */
+"rip-Da-7Px.title" = "Manutención";
+
+/* Class = "UINavigationItem"; title = "Servicios No Asistenciales"; ObjectID = "rmL-7W-EXO"; */
+"rmL-7W-EXO.title" = "Servicios No Asistenciales";
+
+/* Class = "UILabel"; text = "Convenio"; ObjectID = "rvb-HE-fe9"; */
+"rvb-HE-fe9.text" = "Convenio";
+
+/* Class = "UILabel"; text = "Aprobado Giro"; ObjectID = "s4I-d6-M04"; */
+"s4I-d6-M04.text" = "Aprobado Giro";
+
+/* Class = "UILabel"; text = "Nombre: MARIO ACEVEDO"; ObjectID = "sRC-d6-d22"; */
+"sRC-d6-d22.text" = "Nombre: MARIO ACEVEDO";
+
+/* Class = "UILabel"; text = "163"; ObjectID = "sYV-jT-sNF"; */
+"sYV-jT-sNF.text" = "163";
+
+/* Class = "UILabel"; text = "Valor Total a Pagar: $400.000"; ObjectID = "sad-wu-i6Z"; */
+"sad-wu-i6Z.text" = "Valor Total a Pagar: $400.000";
+
+/* Class = "UILabel"; text = "Justificacion: Solicitud de aprobacion de ..."; ObjectID = "sft-QT-wcZ"; */
+"sft-QT-wcZ.text" = "Justificacion: Solicitud de aprobacion de ...";
+
+/* Class = "UILabel"; text = "Tipo: SERVICIO_MEDICO_ASISTENCIAL"; ObjectID = "smq-De-9CI"; */
+"smq-De-9CI.text" = "Tipo: SERVICIO_MEDICO_ASISTENCIAL";
+
+/* Class = "UILabel"; text = "Nombre"; ObjectID = "snr-hn-QpQ"; */
+"snr-hn-QpQ.text" = "Nombre";
+
+/* Class = "UILabel"; text = "Valor Total Factura"; ObjectID = "sqq-oX-nzR"; */
+"sqq-oX-nzR.text" = "Valor Total Factura";
+
+/* Class = "UITabBarItem"; title = "GLOSA"; ObjectID = "srT-z9-aX7"; */
+"srT-z9-aX7.title" = "GLOSA";
+
+/* Class = "UILabel"; text = "Número Factura: 5657"; ObjectID = "swI-vj-jdo"; */
+"swI-vj-jdo.text" = "Número Factura: 5657";
+
+/* Class = "UILabel"; text = "Valor Servicio"; ObjectID = "t0z-qf-BXy"; */
+"t0z-qf-BXy.text" = "Valor Servicio";
+
+/* Class = "UINavigationItem"; title = "Glosa"; ObjectID = "t3P-GI-Rpx"; */
+"t3P-GI-Rpx.title" = "Glosa";
+
+/* Class = "UINavigationItem"; title = "Solicitudes de Aprobación"; ObjectID = "t6A-Cd-HYN"; */
+"t6A-Cd-HYN.title" = "Solicitudes de Aprobación";
+
+/* Class = "UILabel"; text = "Concepto"; ObjectID = "tGg-J7-73m"; */
+"tGg-J7-73m.text" = "Concepto";
+
+/* Class = "UILabel"; text = "Tipo Solicitud"; ObjectID = "tHl-zH-uig"; */
+"tHl-zH-uig.text" = "Tipo Solicitud";
+
+/* Class = "UILabel"; text = "Ciudad"; ObjectID = "teP-mR-xai"; */
+"teP-mR-xai.text" = "Ciudad";
+
+/* Class = "UILabel"; text = "852"; ObjectID = "tfe-1S-vbg"; */
+"tfe-1S-vbg.text" = "852";
+
+/* Class = "UILabel"; text = "Moneda Local"; ObjectID = "tio-P9-AE8"; */
+"tio-P9-AE8.text" = "Moneda Local";
+
+/* Class = "UILabel"; text = "Ciudad"; ObjectID = "tpb-ml-vXV"; */
+"tpb-ml-vXV.text" = "Ciudad";
+
+/* Class = "UILabel"; text = "Tipo Giro"; ObjectID = "tx0-Aw-aNG"; */
+"tx0-Aw-aNG.text" = "Tipo Giro";
+
+/* Class = "UILabel"; text = "Nombre"; ObjectID = "u0c-0Z-6jJ"; */
+"u0c-0Z-6jJ.text" = "Nombre";
+
+/* Class = "UILabel"; text = "Médico"; ObjectID = "u7o-nT-FSh"; */
+"u7o-nT-FSh.text" = "Médico";
+
+/* Class = "UILabel"; text = "Justificacion Justificacion Justificacion Justificacion Justificacion Justificacion JustificacionJustificacion Justificacion Justificacion Justificacion Justificacion Justificacion JustificacionJustificacion Justificacion Justificacion Justificacion Justificacion Justificacion JustificacionJustificacion Justificacion Justificacion Justificacion Justificacion Justificacion Justificacion"; ObjectID = "uAC-23-hI2"; */
+"uAC-23-hI2.text" = "Justificacion Justificacion Justificacion Justificacion Justificacion Justificacion JustificacionJustificacion Justificacion Justificacion Justificacion Justificacion Justificacion JustificacionJustificacion Justificacion Justificacion Justificacion Justificacion Justificacion JustificacionJustificacion Justificacion Justificacion Justificacion Justificacion Justificacion Justificacion";
+
+/* Class = "UITextField"; placeholder = "Usuario"; ObjectID = "uCY-Zi-rhD"; */
+"uCY-Zi-rhD.placeholder" = "Usuario";
+
+/* Class = "UILabel"; text = "Servicio de Ambulacia"; ObjectID = "uF2-Eg-I3T"; */
+"uF2-Eg-I3T.text" = "Servicio de Ambulacia";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "uIR-9g-Hae"; */
+"uIR-9g-Hae.normalTitle" = "Button";
+
+/* Class = "UINavigationItem"; title = "Informes Médicos"; ObjectID = "uJi-cf-8AJ"; */
+"uJi-cf-8AJ.title" = "Informes Médicos";
+
+/* Class = "UINavigationItem"; title = "Detalle"; ObjectID = "ubc-8E-VeV"; */
+"ubc-8E-VeV.title" = "Detalle";
+
+/* Class = "UILabel"; text = "Registra Devolución"; ObjectID = "uc8-RV-cpT"; */
+"uc8-RV-cpT.text" = "Registra Devolución";
+
+/* Class = "UILabel"; text = "Edad Desde"; ObjectID = "uhK-4K-zTl"; */
+"uhK-4K-zTl.text" = "Edad Desde";
+
+/* Class = "UILabel"; text = "Valor Servicio"; ObjectID = "uqO-SN-wAF"; */
+"uqO-SN-wAF.text" = "Valor Servicio";
+
+/* Class = "UILabel"; text = "Nombre"; ObjectID = "uvk-g1-k57"; */
+"uvk-g1-k57.text" = "Nombre";
+
+/* Class = "UILabel"; text = "AA-93785-9-0"; ObjectID = "v3D-k5-67m"; */
+"v3D-k5-67m.text" = "AA-93785-9-0";
+
+/* Class = "UILabel"; text = "Descripción"; ObjectID = "v5y-d9-7UA"; */
+"v5y-d9-7UA.text" = "Descripción";
+
+/* Class = "UILabel"; text = "Número Factura"; ObjectID = "v9W-Oc-U3w"; */
+"v9W-Oc-U3w.text" = "Número Factura";
+
+/* Class = "UILabel"; text = "Relidiquidación"; ObjectID = "vOx-iw-gKv"; */
+"vOx-iw-gKv.text" = "Relidiquidación";
+
+/* Class = "UILabel"; text = "Tipo de Servicio:"; ObjectID = "vRB-uA-uKz"; */
+"vRB-uA-uKz.text" = "Tipo de Servicio:";
+
+/* Class = "UILabel"; text = "Información Factura"; ObjectID = "vTk-bk-JfL"; */
+"vTk-bk-JfL.text" = "Información Factura";
+
+/* Class = "UILabel"; text = "Tipo Beneficiario"; ObjectID = "vna-GP-ieX"; */
+"vna-GP-ieX.text" = "Tipo Beneficiario";
+
+/* Class = "UILabel"; text = "Fecha/Hora Cita"; ObjectID = "vqL-Qk-A0Y"; */
+"vqL-Qk-A0Y.text" = "Fecha/Hora Cita";
+
+/* Class = "UILabel"; text = "Número Orden Servicio:"; ObjectID = "vvT-Qu-NtW"; */
+"vvT-Qu-NtW.text" = "Número Orden Servicio:";
+
+/* Class = "UILabel"; text = "Nombre"; ObjectID = "vw5-nt-SvN"; */
+"vw5-nt-SvN.text" = "Nombre";
+
+/* Class = "UILabel"; text = "Proveedor"; ObjectID = "w08-k5-bih"; */
+"w08-k5-bih.text" = "Proveedor";
+
+/* Class = "UILabel"; text = "Administraciones"; ObjectID = "w9p-WO-0W7"; */
+"w9p-WO-0W7.text" = "Administraciones";
+
+/* Class = "UILabel"; text = "Servicio"; ObjectID = "wBe-CQ-fXk"; */
+"wBe-CQ-fXk.text" = "Servicio";
+
+/* Class = "UILabel"; text = " "; ObjectID = "wEv-Dj-76S"; */
+"wEv-Dj-76S.text" = " ";
+
+/* Class = "UILabel"; text = "Número Factura: 123456789"; ObjectID = "wPt-rj-v7G"; */
+"wPt-rj-v7G.text" = "Número Factura: 123456789";
+
+/* Class = "UILabel"; text = "Nota Crédito"; ObjectID = "wez-C5-noR"; */
+"wez-C5-noR.text" = "Nota Crédito";
+
+/* Class = "UILabel"; text = "06/06/2006"; ObjectID = "whf-Iy-50l"; */
+"whf-Iy-50l.text" = "06/06/2006";
+
+/* Class = "UILabel"; text = "Fecha Liquidacion"; ObjectID = "wmz-xf-itO"; */
+"wmz-xf-itO.text" = "Fecha Liquidacion";
+
+/* Class = "UILabel"; text = "Manutención Acompañante"; ObjectID = "wnu-Cb-w52"; */
+"wnu-Cb-w52.text" = "Manutención Acompañante";
+
+/* Class = "UILabel"; text = "Estado"; ObjectID = "wqK-3W-gmQ"; */
+"wqK-3W-gmQ.text" = "Estado";
+
+/* Class = "UILabel"; text = "Ciudad"; ObjectID = "x3w-EY-BWj"; */
+"x3w-EY-BWj.text" = "Ciudad";
+
+/* Class = "UILabel"; text = "CL-000852-008"; ObjectID = "xBh-bx-XOE"; */
+"xBh-bx-XOE.text" = "CL-000852-008";
+
+/* Class = "UINavigationItem"; title = "Notas Crédito/Débito"; ObjectID = "xCw-gb-UEP"; */
+"xCw-gb-UEP.title" = "Notas Crédito/Débito";
+
+/* Class = "UILabel"; text = "JUAN DAVID ARAGON"; ObjectID = "xG7-ak-akU"; */
+"xG7-ak-akU.text" = "JUAN DAVID ARAGON";
+
+/* Class = "UILabel"; text = "Glosa"; ObjectID = "xKV-kz-jxa"; */
+"xKV-kz-jxa.text" = "Glosa";
+
+/* Class = "UILabel"; text = "Cali"; ObjectID = "xQ2-L7-u0A"; */
+"xQ2-L7-u0A.text" = "Cali";
+
+/* Class = "UILabel"; text = "Servicion No Asistencial"; ObjectID = "xgc-DP-2Gp"; */
+"xgc-DP-2Gp.text" = "Servicion No Asistencial";
+
+/* Class = "UILabel"; text = "$0"; ObjectID = "xk5-ZE-D0l"; */
+"xk5-ZE-D0l.text" = "$0";
+
+/* Class = "UILabel"; text = "Fecha Solicitud"; ObjectID = "xqA-24-uKR"; */
+"xqA-24-uKR.text" = "Fecha Solicitud";
+
+/* Class = "UINavigationItem"; title = "Servicios No Asistenciales"; ObjectID = "xqg-uu-bqf"; */
+"xqg-uu-bqf.title" = "Servicios No Asistenciales";
+
+/* Class = "UILabel"; text = "Cadena de Hoteles Decamerón"; ObjectID = "xt5-Yy-9ex"; */
+"xt5-Yy-9ex.text" = "Cadena de Hoteles Decamerón";
+
+/* Class = "UILabel"; text = "Valor Total A Pagar:"; ObjectID = "xti-G9-XOC"; */
+"xti-G9-XOC.text" = "Valor Total A Pagar:";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "xvo-8D-d3m"; */
+"xvo-8D-d3m.text" = "Label";
+
+/* Class = "UILabel"; text = "Número Solicitud"; ObjectID = "xwd-uG-KYN"; */
+"xwd-uG-KYN.text" = "Número Solicitud";
+
+/* Class = "UINavigationItem"; title = "Información General"; ObjectID = "y26-xi-Qfk"; */
+"y26-xi-Qfk.title" = "Información General";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "yD5-Re-79O"; */
+"yD5-Re-79O.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Número Factura: 5657"; ObjectID = "yDx-za-L0b"; */
+"yDx-za-L0b.text" = "Número Factura: 5657";
+
+/* Class = "UILabel"; text = "Convenio"; ObjectID = "yG2-Nt-fSk"; */
+"yG2-Nt-fSk.text" = "Convenio";
+
+/* Class = "UILabel"; text = "Tipo Impuesto"; ObjectID = "yMz-u1-kqv"; */
+"yMz-u1-kqv.text" = "Tipo Impuesto";
+
+/* Class = "UILabel"; text = "3185226441"; ObjectID = "yTD-Hp-a29"; */
+"yTD-Hp-a29.text" = "3185226441";
+
+/* Class = "UILabel"; text = "Cali"; ObjectID = "ybF-qX-qCt"; */
+"ybF-qX-qCt.text" = "Cali";
+
+/* Class = "UILabel"; text = "Tipo de Usuario"; ObjectID = "yeh-Pg-9dQ"; */
+"yeh-Pg-9dQ.text" = "Tipo de Usuario";
+
+/* Class = "UILabel"; text = "163"; ObjectID = "yiS-V3-Wi1"; */
+"yiS-V3-Wi1.text" = "163";
+
+/* Class = "UILabel"; text = "Número Orden Servicio"; ObjectID = "yk7-jA-Tps"; */
+"yk7-jA-Tps.text" = "Número Orden Servicio";
+
+/* Class = "UINavigationItem"; title = "Medicina"; ObjectID = "ylJ-vl-hw1"; */
+"ylJ-vl-hw1.title" = "Medicina";
+
+/* Class = "UILabel"; text = "Ciudad"; ObjectID = "ymq-9r-3LB"; */
+"ymq-9r-3LB.text" = "Ciudad";
+
+/* Class = "UITextField"; placeholder = "Seleccionar Traslado"; ObjectID = "ynb-bW-7Pj"; */
+"ynb-bW-7Pj.placeholder" = "Seleccionar Traslado";
+
+/* Class = "UILabel"; text = "Credito"; ObjectID = "yuM-pd-FeN"; */
+"yuM-pd-FeN.text" = "Credito";
+
+/* Class = "UITabBarItem"; title = "INFORMACION_GENERAL"; ObjectID = "z2F-5h-A71"; */
+"z2F-5h-A71.title" = "INFORMACION_GENERAL";
+
+/* Class = "UILabel"; text = "Observación"; ObjectID = "zGO-ZE-8iX"; */
+"zGO-ZE-8iX.text" = "Observación";
+
+/* Class = "UILabel"; text = "Tipo Impuesto"; ObjectID = "zGp-3O-Gp6"; */
+"zGp-3O-Gp6.text" = "Tipo Impuesto";
+
+/* Class = "UILabel"; text = "Tipo Giro"; ObjectID = "zHi-tg-l1w"; */
+"zHi-tg-l1w.text" = "Tipo Giro";
+
+/* Class = "UILabel"; text = "JUAN DAVID ARAGON"; ObjectID = "zHq-U0-TgC"; */
+"zHq-U0-TgC.text" = "JUAN DAVID ARAGON";
+
+/* Class = "UIBarButtonItem"; title = "Atras"; ObjectID = "zOP-wq-I4R"; */
+"zOP-wq-I4R.title" = "Atras";
+
+/* Class = "UILabel"; text = "Credencial Paciente"; ObjectID = "zWe-nt-Thc"; */
+"zWe-nt-Thc.text" = "Credencial Paciente";
+
+/* Class = "UILabel"; text = "Especialidad"; ObjectID = "zZl-YI-RhB"; */
+"zZl-YI-RhB.text" = "Especialidad";
+
+/* Class = "UILabel"; text = "163"; ObjectID = "zZs-yk-rf9"; */
+"zZs-yk-rf9.text" = "163";
+
+/* Class = "UILabel"; text = "utility service prueba"; ObjectID = "zeh-TT-mGy"; */
+"zeh-TT-mGy.text" = "utility service prueba";
+
+/* Class = "UINavigationItem"; title = "Procedimientos Adicionales"; ObjectID = "ziR-Zq-tmS"; */
+"ziR-Zq-tmS.title" = "Procedimientos Adicionales";
+
+/* Class = "UINavigationItem"; title = "Procedimiento Adicional"; ObjectID = "zxm-3h-4hZ"; */
+"zxm-3h-4hZ.title" = "Procedimiento Adicional";
+
+/* Class = "UILabel"; text = "Beneficiario: PACIENTE"; ObjectID = "zzF-hg-u6g"; */
+"zzF-hg-u6g.text" = "Beneficiario: PACIENTE";
