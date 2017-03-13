@@ -12,7 +12,6 @@ class FiltroSolAprobViewController: UIViewController, UIPickerViewDelegate, UIPi
     
     
     @IBOutlet var pickerTipoServicio: UITextField!
-    @IBOutlet var pickerConvenio: UITextField!
     @IBOutlet var lblBusqueda: UILabel!
 
     
@@ -21,7 +20,6 @@ class FiltroSolAprobViewController: UIViewController, UIPickerViewDelegate, UIPi
     static var viewBack = "";
     static var variableServicio = "";
     
-    let convenioPickerView = UIPickerView()
     let tipoServicioPickerView = UIPickerView()
     
     
@@ -29,7 +27,6 @@ class FiltroSolAprobViewController: UIViewController, UIPickerViewDelegate, UIPi
         
         lblBusqueda.text = NSLocalizedString("lbl_titulo_bitacora", comment: "lbl_titulo_bitacora")
         
-        pickerConvenio.placeholder = NSLocalizedString("seleccionar_convenio", comment: "seleccionar_convenio")
         pickerTipoServicio.placeholder = NSLocalizedString("seleccionar_tipo_servicio", comment: "seleccionar_tipo_servicio")
         
     }
@@ -48,21 +45,14 @@ class FiltroSolAprobViewController: UIViewController, UIPickerViewDelegate, UIPi
 
     @IBAction func action_consultar_sol_aprobacion(_ sender: AnyObject) {
         
-        var convenio: String = "0"
+        let convenio: String = "0"
         var tipoServicio: String = "0"
-        
-        if((pickerConvenio.text) != nil && (pickerConvenio.text) != ""){
-            let rowSelected = convenioPickerView.selectedRow(inComponent: 0);
-            if let data = CargarPickers.conveniosJson![rowSelected-1] as? Dictionary<String, Any>{
-                convenio = (data["codigo"] as! String?)!;
-            }
-        }
-        
         
         if((pickerTipoServicio.text) != nil && (pickerTipoServicio.text) != ""){
             let rowSelected = tipoServicioPickerView.selectedRow(inComponent: 0);
             if let data = CargarPickers.serviciosJson![rowSelected-1] as? Dictionary<String, Any>{
-                tipoServicio = (data["codigo"] as! String?)!;
+                let aux = data["codigo"] as! Int?
+                tipoServicio = (aux?.description)!
             }
         }
         
@@ -118,11 +108,7 @@ class FiltroSolAprobViewController: UIViewController, UIPickerViewDelegate, UIPi
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //Se crea el picker para tipo registro
         
-        convenioPickerView.delegate = self
-        convenioPickerView.tag = 1
-        pickerConvenio.inputView = convenioPickerView
         //Se crea el picker para tipo servicio
         
         tipoServicioPickerView.delegate = self
@@ -157,24 +143,19 @@ class FiltroSolAprobViewController: UIViewController, UIPickerViewDelegate, UIPi
         let textBtn = UIBarButtonItem(customView: label)
         toolBar.setItems([defaultButton,flexSpace,textBtn,flexSpace,doneButton], animated: true)
         
-        pickerConvenio.inputAccessoryView = toolBar
         pickerTipoServicio.inputAccessoryView = toolBar
     }
     
     
     func donePressed(_ sender: UIBarButtonItem) {
         print(sender)
-        pickerConvenio.resignFirstResponder()
         pickerTipoServicio.resignFirstResponder()
         
     }
     
     func tappedToolBarBtn(_ sender: UIBarButtonItem) {
         
-        pickerConvenio.text = ""
         pickerTipoServicio.text = ""
-        
-        pickerConvenio.resignFirstResponder()
         pickerTipoServicio.resignFirstResponder()
         
     }
@@ -189,10 +170,7 @@ class FiltroSolAprobViewController: UIViewController, UIPickerViewDelegate, UIPi
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        
-        if pickerView.tag == 1 {
-            return (CargarPickers.conveniosJson!.count)+1
-        }
+      
         
         if pickerView.tag == 2 {
             return (CargarPickers.serviciosJson!.count)+1
@@ -203,16 +181,6 @@ class FiltroSolAprobViewController: UIViewController, UIPickerViewDelegate, UIPi
     
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        
-        if pickerView.tag == 1 {
-            var convenioSeleccionado = "";
-            if row == 0 {
-                convenioSeleccionado = NSLocalizedString("seleccionar_convenio", comment: "seleccionar_convenio")
-            }else if let data = CargarPickers.conveniosJson![row-1] as? Dictionary<String, Any>{
-                convenioSeleccionado = (data["nombre"] as! String?)!;
-            }
-            return convenioSeleccionado
-        }
         
         
         if pickerView.tag == 2 {
@@ -229,14 +197,6 @@ class FiltroSolAprobViewController: UIViewController, UIPickerViewDelegate, UIPi
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        
-        if pickerView.tag == 1 {
-            if row == 0 {
-                pickerConvenio.text = "";
-            }else if let data = CargarPickers.conveniosJson![row-1] as? Dictionary<String, Any>{
-                pickerConvenio.text = (data["nombre"] as! String?)!;
-            }
-        }
         
         if pickerView.tag == 2 {
             if row == 0 {

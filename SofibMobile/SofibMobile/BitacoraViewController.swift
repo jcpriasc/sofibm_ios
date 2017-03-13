@@ -27,8 +27,7 @@ class BitacoraViewController: UIViewController, UITableViewDataSource, UITableVi
         if let resultadoConsulta = self.jsonBitacoras[indexPath.row] as? Dictionary<String, Any>{
             
             let consSolicitud = resultadoConsulta["consSolicitudAtencion"] as! Int?
-            
-            cell.txtSolicitud.text =  "\(consSolicitud)";
+            cell.txtSolicitud.text = consSolicitud?.description
             cell.txtNombre.text = resultadoConsulta["nombre"] as! String?;
             cell.txtTipoRegistro.text = resultadoConsulta["tipoRegistro"] as! String?;
             cell.txtTipoAccion.text = resultadoConsulta["tipoAccion"] as! String?;
