@@ -25,7 +25,7 @@ class ServicioNoAsistencialViewCellController: UITableViewCell {
         
         // Initialization code
         lblNumeroSolicitud.text = NSLocalizedString("lbl_numero_solicitud", comment: "lbl_numero_solicitud")
-        lblIdentificacion.text = NSLocalizedString("identificacion", comment: "identificacion")
+        lblIdentificacion.text = NSLocalizedString("lbl_tipo_solicitud", comment: "lbl_tipo_solicitud")
         lblNombre.text = NSLocalizedString("nombre", comment: "nombre")
     }
     
