@@ -923,10 +923,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellOpcion" rowHeight="63" id="E9A-R3-poM" customClass="OpcionesSecundariasViewCell" customModule="SofibMobile" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="1000" height="63"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="63"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="E9A-R3-poM" id="jep-xM-TeK">
-                                            <frame key="frameInset" width="1000" height="62"/>
+                                            <frame key="frameInset" width="375" height="62"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_more" translatesAutoresizingMaskIntoConstraints="NO" id="bbF-Jh-Ecn"/>
@@ -984,7 +984,7 @@
                         <constraints>
                             <constraint firstItem="yqC-tD-ytX" firstAttribute="width" secondItem="GmQ-wD-XzA" secondAttribute="width" id="6g6-Ci-N9o"/>
                             <constraint firstItem="yqC-tD-ytX" firstAttribute="leading" secondItem="GmQ-wD-XzA" secondAttribute="leading" id="7s8-kS-Ouw"/>
-                            <constraint firstItem="99E-Ql-hdP" firstAttribute="height" secondItem="GmQ-wD-XzA" secondAttribute="height" multiplier="0.81" priority="250" id="BNE-pJ-dsQ"/>
+                            <constraint firstItem="99E-Ql-hdP" firstAttribute="height" secondItem="GmQ-wD-XzA" secondAttribute="height" multiplier="0.78" priority="250" id="BNE-pJ-dsQ"/>
                             <constraint firstAttribute="trailing" secondItem="x8R-So-ZoW" secondAttribute="trailing" id="Ibr-p9-mZj"/>
                             <constraint firstAttribute="bottom" secondItem="x8R-So-ZoW" secondAttribute="bottom" id="K7w-5U-vTp"/>
                             <constraint firstItem="99E-Ql-hdP" firstAttribute="top" secondItem="wTD-xA-9Vb" secondAttribute="bottom" constant="61" id="SwD-DS-jJO"/>
@@ -5526,7 +5526,7 @@
                                         <color key="textColor" red="0.61568627450000002" green="0.61176470589999998" blue="0.61176470589999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="highlightedColor" red="0.61568627450000002" green="0.61176470589999998" blue="0.61176470589999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tipo Autorización" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AIn-Ns-UAW">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tipo AutorizaciónTipo AutorizaciónTipo AutorizaciónTipo Autorización" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AIn-Ns-UAW">
                                         <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                         <color key="textColor" red="0.61568627450000002" green="0.61176470589999998" blue="0.61176470589999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -5687,6 +5687,7 @@
                                     <constraint firstItem="K3q-z5-oQt" firstAttribute="top" secondItem="YxE-ia-SPW" secondAttribute="bottom" constant="2" id="YcS-2f-cVc"/>
                                     <constraint firstItem="Cb9-Bo-pNC" firstAttribute="width" secondItem="aLH-qo-djT" secondAttribute="width" multiplier="0.67" id="ZBm-up-mk3"/>
                                     <constraint firstItem="95o-PM-UoV" firstAttribute="top" secondItem="X0j-qj-psc" secondAttribute="bottom" constant="8" id="Zd5-Q9-rB9"/>
+                                    <constraint firstItem="fyx-Ai-4fL" firstAttribute="height" secondItem="AIn-Ns-UAW" secondAttribute="height" id="aCj-sr-6jk"/>
                                     <constraint firstItem="Nig-ow-8tm" firstAttribute="leading" secondItem="aLH-qo-djT" secondAttribute="leading" constant="20" id="aHs-Id-ib4"/>
                                     <constraint firstItem="jhf-vq-2jk" firstAttribute="top" secondItem="fyx-Ai-4fL" secondAttribute="bottom" constant="2" id="azl-1X-U9R"/>
                                     <constraint firstItem="87h-62-pcr" firstAttribute="top" secondItem="Cb9-Bo-pNC" secondAttribute="bottom" constant="2" id="cXR-xG-mIt"/>
@@ -5708,6 +5709,7 @@
                                     <constraint firstAttribute="trailing" secondItem="RZK-gf-GGS" secondAttribute="trailing" constant="10" id="tCN-4c-ZBu"/>
                                     <constraint firstItem="jhf-vq-2jk" firstAttribute="top" secondItem="fyx-Ai-4fL" secondAttribute="bottom" constant="2" id="tbs-Dl-h09"/>
                                     <constraint firstItem="jhf-vq-2jk" firstAttribute="leading" secondItem="YxE-ia-SPW" secondAttribute="trailing" constant="5" id="u26-iu-JD3"/>
+                                    <constraint firstItem="AIn-Ns-UAW" firstAttribute="width" secondItem="aLH-qo-djT" secondAttribute="width" multiplier="0.6" id="uU7-JU-kSG"/>
                                     <constraint firstItem="wBe-CQ-fXk" firstAttribute="leading" secondItem="fen-va-sYO" secondAttribute="trailing" constant="5" id="vbW-aH-Ofh"/>
                                     <constraint firstItem="PcY-wC-tLB" firstAttribute="width" secondItem="aLH-qo-djT" secondAttribute="width" multiplier="0.68" id="wzR-cM-dNp"/>
                                     <constraint firstItem="RZK-gf-GGS" firstAttribute="top" secondItem="aLH-qo-djT" secondAttribute="top" constant="20" id="xc7-1k-5Bs"/>
@@ -10739,7 +10741,7 @@
                             </navigationBar>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s2n-Gk-WSv">
                                 <subviews>
-                                    <stackView contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="3Yp-xh-9K8">
+                                    <stackView contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3Yp-xh-9K8">
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entidad: InformeMedico" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sgx-ee-rfF">
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -10756,7 +10758,7 @@
                                                 <color key="textColor" red="0.086274509799999996" green="0.3921568627" blue="0.62352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Justificacion: Solicitud de aprobacion de ..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sft-QT-wcZ">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Justificacion: Solicitud de aprobacion de ...Justificacion: Solicitud de aprobacion de ..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sft-QT-wcZ">
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <color key="textColor" red="0.086274509799999996" green="0.3921568627" blue="0.62352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -10764,6 +10766,9 @@
                                         </subviews>
                                         <color key="backgroundColor" red="0.69411764710000001" green="0.13490927659999999" blue="0.10439131510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="tintColor" red="0.098039215690000001" green="0.43529411759999997" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="sft-QT-wcZ" firstAttribute="width" secondItem="3Yp-xh-9K8" secondAttribute="width" id="P9F-Q7-dCL"/>
+                                        </constraints>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1g0-Mi-OeG">
                                         <color key="backgroundColor" red="0.91764705879999997" green="0.91764705879999997" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -10817,6 +10822,7 @@
                                     <constraint firstItem="1g0-Mi-OeG" firstAttribute="width" secondItem="s2n-Gk-WSv" secondAttribute="width" multiplier="0.9" id="ACa-My-lC2"/>
                                     <constraint firstItem="1g0-Mi-OeG" firstAttribute="leading" secondItem="s2n-Gk-WSv" secondAttribute="leading" constant="10" id="Ddu-1r-BWU"/>
                                     <constraint firstAttribute="bottom" secondItem="upH-hd-LQz" secondAttribute="bottom" id="EFV-cj-QrX"/>
+                                    <constraint firstAttribute="trailing" secondItem="3Yp-xh-9K8" secondAttribute="trailing" constant="20" id="Gv0-DZ-ObY"/>
                                     <constraint firstItem="upH-hd-LQz" firstAttribute="top" secondItem="1g0-Mi-OeG" secondAttribute="bottom" constant="8" id="LNP-2v-qD4"/>
                                     <constraint firstItem="3Yp-xh-9K8" firstAttribute="top" secondItem="s2n-Gk-WSv" secondAttribute="top" constant="20" id="Lyl-Z1-pZ7"/>
                                     <constraint firstAttribute="trailing" secondItem="1g0-Mi-OeG" secondAttribute="trailing" constant="28" id="UKY-Ho-DaP"/>
@@ -12231,15 +12237,15 @@
     <inferredMetricsTieBreakers>
         <segue reference="BYf-Au-ijD"/>
         <segue reference="8nz-nO-WDf"/>
+        <segue reference="1ZW-8O-K5S"/>
+        <segue reference="OqC-do-sro"/>
+        <segue reference="Vmq-iv-ZLx"/>
         <segue reference="ZCy-zm-gpS"/>
         <segue reference="2yO-Qs-5da"/>
         <segue reference="RQs-EE-xak"/>
         <segue reference="Ix9-lI-qAz"/>
-        <segue reference="4E7-6R-wT6"/>
-        <segue reference="Sct-K1-gGV"/>
         <segue reference="Pez-Uq-wBc"/>
         <segue reference="xM2-e0-Gzh"/>
-        <segue reference="JE4-rD-2w7"/>
         <segue reference="Z5o-d0-ZF8"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
