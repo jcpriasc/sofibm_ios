@@ -12023,7 +12023,7 @@
                             </navigationBar>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pEY-YA-44u">
                                 <subviews>
-                                    <stackView contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="kPc-PD-6k8">
+                                    <stackView contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="kPc-PD-6k8">
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Número de orden: 5763683" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SeG-05-eyN">
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -12065,7 +12065,7 @@
                                                 <color key="textColor" red="0.086274509799999996" green="0.3921568627" blue="0.62352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MEDIO DE CONTRASTE PARA IMAGEN DIAGNOSTICA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LZz-rG-gBL">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MEDIO DE CONTRASTE PARA IMAGEN DIAGNOSTICA" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LZz-rG-gBL">
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <color key="textColor" red="0.086274509799999996" green="0.3921568627" blue="0.62352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -12075,7 +12075,7 @@
                                                 <color key="textColor" red="0.086274509799999996" green="0.3921568627" blue="0.62352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MEDIO DE CONTRASTE PARA IMAGEN DIAGNOSTICA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fz4-za-7oH">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MEDIO DE CONTRASTE PARA IMAGEN DIAGNOSTICA" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fz4-za-7oH">
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <color key="textColor" red="0.086274509799999996" green="0.3921568627" blue="0.62352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -12098,6 +12098,9 @@
                                         </subviews>
                                         <color key="backgroundColor" red="0.69411764710000001" green="0.13490927659999999" blue="0.10439131510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="tintColor" red="0.098039215690000001" green="0.43529411759999997" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="fz4-za-7oH" firstAttribute="width" secondItem="kPc-PD-6k8" secondAttribute="width" id="bW7-Iw-W0Y"/>
+                                        </constraints>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s6l-QY-Q1s">
                                         <color key="backgroundColor" red="0.91764705879999997" green="0.91764705879999997" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -12112,10 +12115,10 @@
                                         </constraints>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="58" id="BGY-qA-9sV" customClass="DetalleServicioAsistencialViewCell" customModule="SofibMobile" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="28" width="343" height="58"/>
+                                                <rect key="frame" x="0.0" y="28" width="333" height="58"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BGY-qA-9sV" id="c9o-1I-lRZ">
-                                                    <frame key="frameInset" width="343" height="57"/>
+                                                    <frame key="frameInset" width="333" height="57"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Proveedor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x9t-7h-DuA">
@@ -12173,6 +12176,7 @@
                                     <constraint firstAttribute="trailing" secondItem="gH2-Am-wKz" secondAttribute="trailing" constant="14" id="RJk-y2-L0a"/>
                                     <constraint firstItem="s6l-QY-Q1s" firstAttribute="top" secondItem="kPc-PD-6k8" secondAttribute="bottom" constant="8" symbolic="YES" id="SLB-sk-pGY"/>
                                     <constraint firstItem="s6l-QY-Q1s" firstAttribute="centerX" secondItem="pEY-YA-44u" secondAttribute="centerX" id="TvD-ln-wgo"/>
+                                    <constraint firstItem="LZz-rG-gBL" firstAttribute="width" secondItem="pEY-YA-44u" secondAttribute="width" multiplier="0.9" id="Vvs-cL-hEV"/>
                                     <constraint firstAttribute="trailing" secondItem="kPc-PD-6k8" secondAttribute="trailing" constant="7" id="fTT-BZ-ned"/>
                                     <constraint firstAttribute="trailing" secondItem="kPc-PD-6k8" secondAttribute="trailing" constant="7" id="feV-fs-dIP"/>
                                     <constraint firstItem="gH2-Am-wKz" firstAttribute="top" secondItem="s6l-QY-Q1s" secondAttribute="bottom" constant="8" symbolic="YES" id="k34-eB-ryX"/>
