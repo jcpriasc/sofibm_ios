@@ -8120,10 +8120,258 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0v7-8R-EsX">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha Vencimiento Pago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kHq-OZ-Ljr">
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.21176470589999999" green="0.5568627451" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha Recibido Coomeva" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GNl-1b-ftd">
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.21176470589999999" green="0.5568627451" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Proveedor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LR4-WH-rl9">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="67" id="rt2-Hw-IcU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.21176470589999999" green="0.5568627451" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Valor Total Factura" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3FD-JK-ABt">
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.21176470589999999" green="0.5568627451" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Valor Total a Pagar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1xA-l6-Z45">
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.21176470589999999" green="0.5568627451" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Número Nota" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="96f-ej-etj">
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.21176470589999999" green="0.5568627451" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha Expedición" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AOQ-fd-LdU">
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.21176470589999999" green="0.5568627451" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="856-1" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KxW-TN-3p0">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="244" id="Nvu-Hu-pCZ"/>
+                                        </constraints>
+                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                        <color key="textColor" red="0.61568627450000002" green="0.61176470589999998" blue="0.61176470589999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="highlightedColor" red="0.61568627450000002" green="0.61176470589999998" blue="0.61176470589999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha Emisión" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YeS-KO-uCQ">
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.21176470589999999" green="0.5568627451" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Número Factura" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4YW-nd-vE8">
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.21176470589999999" green="0.5568627451" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Zis-FF-8bR">
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Información Factura" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lXt-bZ-MDk">
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" red="0.086274509799999996" green="0.3921568627" blue="0.62352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.69411764710000001" green="0.13490927659999999" blue="0.10439131510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" red="0.098039215690000001" green="0.43529411759999997" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </stackView>
+                                    <stackView contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="6Jr-8T-aCO">
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nota Crédito" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wez-C5-noR">
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" red="0.086274509799999996" green="0.3921568627" blue="0.62352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.69411764710000001" green="0.13490927659999999" blue="0.10439131510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" red="0.098039215690000001" green="0.43529411759999997" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E7L-ov-vRt">
+                                        <color key="backgroundColor" red="0.91614076389999999" green="0.91614076389999999" blue="0.91614076389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24/07/2016" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Awd-A7-ntg">
+                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                        <color key="textColor" red="0.61568627450000002" green="0.61176470589999998" blue="0.61176470589999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="highlightedColor" red="0.61568627450000002" green="0.61176470589999998" blue="0.61176470589999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24/07/2016" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mOJ-gr-nvs">
+                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                        <color key="textColor" red="0.61568627450000002" green="0.61176470589999998" blue="0.61176470589999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="highlightedColor" red="0.61568627450000002" green="0.61176470589999998" blue="0.61176470589999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24/07/2016" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T1O-fW-qPM">
+                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                        <color key="textColor" red="0.61568627450000002" green="0.61176470589999998" blue="0.61176470589999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="highlightedColor" red="0.61568627450000002" green="0.61176470589999998" blue="0.61176470589999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CEM" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h3n-TU-Kgt">
+                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                        <color key="textColor" red="0.61568627450000002" green="0.61176470589999998" blue="0.61176470589999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="highlightedColor" red="0.61568627450000002" green="0.61176470589999998" blue="0.61176470589999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CL-123245-1" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qqn-ot-uJZ">
+                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                        <color key="textColor" red="0.61568627450000002" green="0.61176470589999998" blue="0.61176470589999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="highlightedColor" red="0.61568627450000002" green="0.61176470589999998" blue="0.61176470589999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$189.000.00" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lya-o7-OmR">
+                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                        <color key="textColor" red="0.61568627450000002" green="0.61176470589999998" blue="0.61176470589999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="highlightedColor" red="0.61568627450000002" green="0.61176470589999998" blue="0.61176470589999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Motivo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gft-OU-YUK">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="44" id="g5Z-vc-PqZ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.21176470589999999" green="0.5568627451" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TQa-j0-nZ0">
+                                        <color key="backgroundColor" red="0.91614076389999999" green="0.91614076389999999" blue="0.91614076389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$189.000.00" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N5a-a8-Tdr">
+                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                        <color key="textColor" red="0.61568627450000002" green="0.61176470589999998" blue="0.61176470589999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="highlightedColor" red="0.61568627450000002" green="0.61176470589999998" blue="0.61176470589999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24/07/2010" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m07-DO-KV1">
+                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                        <color key="textColor" red="0.61568627450000002" green="0.61176470589999998" blue="0.61176470589999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="highlightedColor" red="0.61568627450000002" green="0.61176470589999998" blue="0.61176470589999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24/07/2010" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Aa-d5-pOL">
+                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                        <color key="textColor" red="0.61568627450000002" green="0.61176470589999998" blue="0.61176470589999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="highlightedColor" red="0.61568627450000002" green="0.61176470589999998" blue="0.61176470589999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pruebas" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OuR-vB-Mj0">
+                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                        <color key="textColor" red="0.61568627450000002" green="0.61176470589999998" blue="0.61176470589999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="highlightedColor" red="0.61568627450000002" green="0.61176470589999998" blue="0.61176470589999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha Recibido Coomeva" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j96-c3-Qcp">
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.21176470589999999" green="0.5568627451" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Valor Total Nota Crédito" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DGE-Za-2eS">
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.21176470589999999" green="0.5568627451" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$189.000.00" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDV-vM-aLR">
+                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                        <color key="textColor" red="0.61568627450000002" green="0.61176470589999998" blue="0.61176470589999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="highlightedColor" red="0.61568627450000002" green="0.61176470589999998" blue="0.61176470589999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="YeS-KO-uCQ" firstAttribute="height" secondItem="T1O-fW-qPM" secondAttribute="height" id="0JI-Gy-q5l"/>
+                                    <constraint firstItem="Zis-FF-8bR" firstAttribute="leading" secondItem="0v7-8R-EsX" secondAttribute="leading" constant="20" id="3T5-3W-nWa"/>
+                                    <constraint firstItem="KxW-TN-3p0" firstAttribute="leading" secondItem="4YW-nd-vE8" secondAttribute="trailing" constant="5" id="3gw-ha-HUl"/>
+                                    <constraint firstItem="aDV-vM-aLR" firstAttribute="top" secondItem="j96-c3-Qcp" secondAttribute="bottom" constant="2" id="3vw-h1-j4k"/>
+                                    <constraint firstItem="KxW-TN-3p0" firstAttribute="centerX" secondItem="T1O-fW-qPM" secondAttribute="centerX" id="4Be-B9-5jB"/>
+                                    <constraint firstItem="m07-DO-KV1" firstAttribute="leading" secondItem="AOQ-fd-LdU" secondAttribute="trailing" constant="5" id="55A-jp-Dqv"/>
+                                    <constraint firstAttribute="trailing" secondItem="T1O-fW-qPM" secondAttribute="trailing" constant="-7" id="6oK-PC-aST"/>
+                                    <constraint firstAttribute="trailing" secondItem="E7L-ov-vRt" secondAttribute="trailing" constant="17" id="7IA-WF-wmM"/>
+                                    <constraint firstItem="LR4-WH-rl9" firstAttribute="height" secondItem="h3n-TU-Kgt" secondAttribute="height" id="7Vh-FQ-dgu"/>
+                                    <constraint firstItem="4YW-nd-vE8" firstAttribute="top" secondItem="E7L-ov-vRt" secondAttribute="bottom" constant="8" id="7mt-sm-zT2"/>
+                                    <constraint firstItem="96f-ej-etj" firstAttribute="top" secondItem="6Jr-8T-aCO" secondAttribute="bottom" constant="20" id="7uf-PY-Pg8"/>
+                                    <constraint firstItem="T1O-fW-qPM" firstAttribute="top" secondItem="4YW-nd-vE8" secondAttribute="bottom" constant="2" id="7zO-L2-gox"/>
+                                    <constraint firstItem="j96-c3-Qcp" firstAttribute="leading" secondItem="DGE-Za-2eS" secondAttribute="leading" id="8rS-vN-I5N"/>
+                                    <constraint firstItem="N5a-a8-Tdr" firstAttribute="top" secondItem="lya-o7-OmR" secondAttribute="bottom" constant="1" id="Bcx-bn-Fn4"/>
+                                    <constraint firstItem="DGE-Za-2eS" firstAttribute="top" secondItem="j96-c3-Qcp" secondAttribute="bottom" constant="2" id="BnE-k7-rlY"/>
+                                    <constraint firstItem="E7L-ov-vRt" firstAttribute="leading" secondItem="4YW-nd-vE8" secondAttribute="leading" id="C1o-Yi-u1V"/>
+                                    <constraint firstItem="Zis-FF-8bR" firstAttribute="top" secondItem="0v7-8R-EsX" secondAttribute="top" constant="20" id="C8n-bn-4F6"/>
+                                    <constraint firstItem="E7L-ov-vRt" firstAttribute="trailing" secondItem="TQa-j0-nZ0" secondAttribute="trailing" id="DA3-gb-LM9"/>
+                                    <constraint firstItem="6Jr-8T-aCO" firstAttribute="leading" secondItem="TQa-j0-nZ0" secondAttribute="leading" id="DR5-cK-aY0"/>
+                                    <constraint firstAttribute="trailing" secondItem="KxW-TN-3p0" secondAttribute="trailing" constant="2" id="FDg-3u-kc3"/>
+                                    <constraint firstItem="qqn-ot-uJZ" firstAttribute="leading" secondItem="96f-ej-etj" secondAttribute="trailing" constant="5" id="G0Q-f0-Gtr"/>
+                                    <constraint firstAttribute="bottom" secondItem="DGE-Za-2eS" secondAttribute="bottom" constant="212" id="GDZ-Yx-MmO"/>
+                                    <constraint firstItem="lya-o7-OmR" firstAttribute="top" secondItem="h3n-TU-Kgt" secondAttribute="bottom" constant="2" id="Gl4-Qw-lpF"/>
+                                    <constraint firstItem="E7L-ov-vRt" firstAttribute="top" secondItem="Zis-FF-8bR" secondAttribute="bottom" constant="13" id="H5y-Gz-EsS"/>
+                                    <constraint firstItem="TQa-j0-nZ0" firstAttribute="leading" secondItem="96f-ej-etj" secondAttribute="leading" id="HsB-CZ-Y66"/>
+                                    <constraint firstItem="4YW-nd-vE8" firstAttribute="height" secondItem="KxW-TN-3p0" secondAttribute="height" id="Htl-hl-if3"/>
+                                    <constraint firstItem="T1O-fW-qPM" firstAttribute="leading" secondItem="YeS-KO-uCQ" secondAttribute="trailing" constant="5" id="INr-31-xDP"/>
+                                    <constraint firstItem="N5a-a8-Tdr" firstAttribute="leading" secondItem="1xA-l6-Z45" secondAttribute="trailing" constant="5" id="JLa-N6-LsV"/>
+                                    <constraint firstItem="KxW-TN-3p0" firstAttribute="top" secondItem="E7L-ov-vRt" secondAttribute="bottom" constant="8" id="KD5-ks-6fn"/>
+                                    <constraint firstItem="1xA-l6-Z45" firstAttribute="top" secondItem="3FD-JK-ABt" secondAttribute="bottom" constant="2" id="LzV-6Z-sLz"/>
+                                    <constraint firstItem="YeS-KO-uCQ" firstAttribute="top" secondItem="4YW-nd-vE8" secondAttribute="bottom" constant="2" id="Mhp-rK-AIC"/>
+                                    <constraint firstItem="h3n-TU-Kgt" firstAttribute="leading" secondItem="LR4-WH-rl9" secondAttribute="trailing" constant="5" id="N2e-tF-CL2"/>
+                                    <constraint firstItem="h3n-TU-Kgt" firstAttribute="top" secondItem="GNl-1b-ftd" secondAttribute="bottom" constant="2" id="NPs-k0-1vf"/>
+                                    <constraint firstItem="7Aa-d5-pOL" firstAttribute="leading" secondItem="j96-c3-Qcp" secondAttribute="trailing" constant="5" id="OAQ-YS-Vmx"/>
+                                    <constraint firstItem="7Aa-d5-pOL" firstAttribute="top" secondItem="OuR-vB-Mj0" secondAttribute="bottom" constant="1" id="OHv-Mc-Unf"/>
+                                    <constraint firstItem="6Jr-8T-aCO" firstAttribute="top" secondItem="1xA-l6-Z45" secondAttribute="bottom" constant="10" id="PhK-Mp-Wu7"/>
+                                    <constraint firstItem="Zis-FF-8bR" firstAttribute="leading" secondItem="4YW-nd-vE8" secondAttribute="leading" id="Pkq-v8-qlW"/>
+                                    <constraint firstItem="kHq-OZ-Ljr" firstAttribute="top" secondItem="YeS-KO-uCQ" secondAttribute="bottom" constant="2" id="QvP-dX-iDl"/>
+                                    <constraint firstItem="OuR-vB-Mj0" firstAttribute="leading" secondItem="gft-OU-YUK" secondAttribute="trailing" constant="5" id="SF8-1V-deL"/>
+                                    <constraint firstItem="LR4-WH-rl9" firstAttribute="top" secondItem="GNl-1b-ftd" secondAttribute="bottom" constant="2" id="SKc-tQ-LIv"/>
+                                    <constraint firstItem="m07-DO-KV1" firstAttribute="top" secondItem="qqn-ot-uJZ" secondAttribute="bottom" constant="2" id="T4t-Qt-fIV"/>
+                                    <constraint firstItem="lya-o7-OmR" firstAttribute="leading" secondItem="3FD-JK-ABt" secondAttribute="trailing" constant="5" id="U1s-RZ-Cf8"/>
+                                    <constraint firstItem="96f-ej-etj" firstAttribute="leading" secondItem="AOQ-fd-LdU" secondAttribute="leading" id="Vn8-Zz-Qrf"/>
+                                    <constraint firstItem="gft-OU-YUK" firstAttribute="top" secondItem="AOQ-fd-LdU" secondAttribute="bottom" constant="2" id="X82-tP-zEH"/>
+                                    <constraint firstItem="4YW-nd-vE8" firstAttribute="top" secondItem="Zis-FF-8bR" secondAttribute="bottom" constant="24" id="XWC-ye-Jvy"/>
+                                    <constraint firstItem="mOJ-gr-nvs" firstAttribute="leading" secondItem="GNl-1b-ftd" secondAttribute="trailing" constant="5" id="Y2E-qZ-Vch"/>
+                                    <constraint firstItem="1xA-l6-Z45" firstAttribute="leading" secondItem="6Jr-8T-aCO" secondAttribute="leading" id="YXH-qa-LQL"/>
+                                    <constraint firstItem="qqn-ot-uJZ" firstAttribute="top" secondItem="6Jr-8T-aCO" secondAttribute="bottom" constant="20" id="a8A-CZ-bDw"/>
+                                    <constraint firstItem="AOQ-fd-LdU" firstAttribute="top" secondItem="96f-ej-etj" secondAttribute="bottom" constant="2" id="aaS-q2-Yaq"/>
+                                    <constraint firstItem="Awd-A7-ntg" firstAttribute="leading" secondItem="kHq-OZ-Ljr" secondAttribute="trailing" constant="5" id="ada-l8-vOg"/>
+                                    <constraint firstItem="GNl-1b-ftd" firstAttribute="leading" secondItem="LR4-WH-rl9" secondAttribute="leading" id="afF-AI-Ssr"/>
+                                    <constraint firstItem="TQa-j0-nZ0" firstAttribute="trailing" secondItem="OuR-vB-Mj0" secondAttribute="trailing" id="ey8-Ed-FhL"/>
+                                    <constraint firstItem="3FD-JK-ABt" firstAttribute="leading" secondItem="1xA-l6-Z45" secondAttribute="leading" id="gsr-hI-0TZ"/>
+                                    <constraint firstItem="OuR-vB-Mj0" firstAttribute="top" secondItem="AOQ-fd-LdU" secondAttribute="bottom" constant="2" id="hMy-8w-LlX"/>
+                                    <constraint firstItem="GNl-1b-ftd" firstAttribute="top" secondItem="kHq-OZ-Ljr" secondAttribute="bottom" constant="2" id="hiM-17-cmf"/>
+                                    <constraint firstItem="YeS-KO-uCQ" firstAttribute="leading" secondItem="kHq-OZ-Ljr" secondAttribute="leading" id="hiR-J0-RV6"/>
+                                    <constraint firstItem="gft-OU-YUK" firstAttribute="leading" secondItem="j96-c3-Qcp" secondAttribute="leading" id="jrm-pZ-45R"/>
+                                    <constraint firstItem="j96-c3-Qcp" firstAttribute="top" secondItem="gft-OU-YUK" secondAttribute="bottom" constant="1" id="lZ8-e7-8bP"/>
+                                    <constraint firstItem="AOQ-fd-LdU" firstAttribute="leading" secondItem="gft-OU-YUK" secondAttribute="leading" id="mfm-wO-8S5"/>
+                                    <constraint firstAttribute="trailing" secondItem="h3n-TU-Kgt" secondAttribute="trailing" constant="20" id="nWj-iZ-WFz"/>
+                                    <constraint firstItem="TQa-j0-nZ0" firstAttribute="top" secondItem="6Jr-8T-aCO" secondAttribute="bottom" constant="8" id="ppa-RH-nPV"/>
+                                    <constraint firstItem="LR4-WH-rl9" firstAttribute="leading" secondItem="3FD-JK-ABt" secondAttribute="leading" id="r58-K5-ri6"/>
+                                    <constraint firstItem="gft-OU-YUK" firstAttribute="height" secondItem="OuR-vB-Mj0" secondAttribute="height" id="vC3-rR-pta"/>
+                                    <constraint firstItem="aDV-vM-aLR" firstAttribute="leading" secondItem="DGE-Za-2eS" secondAttribute="trailing" constant="5" id="wwd-gF-qSC"/>
+                                    <constraint firstItem="kHq-OZ-Ljr" firstAttribute="leading" secondItem="GNl-1b-ftd" secondAttribute="leading" id="wzF-cL-lgD"/>
+                                    <constraint firstItem="mOJ-gr-nvs" firstAttribute="top" secondItem="Awd-A7-ntg" secondAttribute="bottom" constant="3" id="xT8-PD-qub"/>
+                                    <constraint firstItem="3FD-JK-ABt" firstAttribute="top" secondItem="LR4-WH-rl9" secondAttribute="bottom" constant="2" id="xyn-Sh-BBP"/>
+                                    <constraint firstItem="Awd-A7-ntg" firstAttribute="top" secondItem="YeS-KO-uCQ" secondAttribute="bottom" constant="2" id="yDG-2b-vvN"/>
+                                    <constraint firstItem="qqn-ot-uJZ" firstAttribute="top" secondItem="TQa-j0-nZ0" secondAttribute="bottom" constant="9" id="zbL-za-dwT"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="0v7-8R-EsX" firstAttribute="leading" secondItem="Dac-XM-6gP" secondAttribute="leading" id="21g-Bb-PcD"/>
+                            <constraint firstItem="0v7-8R-EsX" firstAttribute="top" secondItem="Dac-XM-6gP" secondAttribute="bottom" constant="3" id="HTM-5i-jRv"/>
+                            <constraint firstItem="0v7-8R-EsX" firstAttribute="trailing" secondItem="Dac-XM-6gP" secondAttribute="trailing" id="Oih-lu-HAJ"/>
                             <constraint firstItem="Dac-XM-6gP" firstAttribute="top" secondItem="AK9-Sf-GqN" secondAttribute="bottom" constant="8" id="ZC7-PR-brd"/>
+                            <constraint firstItem="0v7-8R-EsX" firstAttribute="bottom" secondItem="fu9-CO-Z1p" secondAttribute="top" id="hav-eF-k1q"/>
                             <constraint firstItem="Dac-XM-6gP" firstAttribute="leading" secondItem="J6k-Df-kjI" secondAttribute="leading" id="pLl-aZ-W6j"/>
                             <constraint firstAttribute="trailing" secondItem="Dac-XM-6gP" secondAttribute="trailing" id="pv1-CZ-rvB"/>
                         </constraints>
@@ -8131,6 +8379,34 @@
                     <tabBarItem key="tabBarItem" title="NOTA CREDITO" id="U6b-af-KLJ">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-15"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="lblFechaEmision" destination="YeS-KO-uCQ" id="tul-bJ-wge"/>
+                        <outlet property="lblFechaExpedicion" destination="AOQ-fd-LdU" id="wgW-NJ-tXK"/>
+                        <outlet property="lblFechaRecibidoCoomeva" destination="GNl-1b-ftd" id="Eyt-Ai-6ME"/>
+                        <outlet property="lblFechaRecibidoCoomevaNota" destination="j96-c3-Qcp" id="jIQ-2x-Gwr"/>
+                        <outlet property="lblFechaVencimientoPago" destination="kHq-OZ-Ljr" id="KLQ-aj-PHw"/>
+                        <outlet property="lblInformacionFactura" destination="lXt-bZ-MDk" id="kjT-di-4ia"/>
+                        <outlet property="lblMotivo" destination="gft-OU-YUK" id="8N4-jo-bjZ"/>
+                        <outlet property="lblNotaCredito" destination="wez-C5-noR" id="AwL-vO-Ce8"/>
+                        <outlet property="lblNumeroFactura" destination="4YW-nd-vE8" id="E77-nU-Maq"/>
+                        <outlet property="lblNumeroNota" destination="96f-ej-etj" id="RjI-UI-sPw"/>
+                        <outlet property="lblProveedor" destination="LR4-WH-rl9" id="huQ-XI-OjX"/>
+                        <outlet property="lblValorTotalFactura" destination="3FD-JK-ABt" id="27v-Ez-qKq"/>
+                        <outlet property="lblValorTotalNotaCredito" destination="DGE-Za-2eS" id="Et7-le-oo3"/>
+                        <outlet property="lblValorTotalPagar" destination="1xA-l6-Z45" id="fpo-dC-9Dx"/>
+                        <outlet property="txtFechaEmision" destination="T1O-fW-qPM" id="egw-nI-LIx"/>
+                        <outlet property="txtFechaExpedicion" destination="m07-DO-KV1" id="x1Y-6K-oTD"/>
+                        <outlet property="txtFechaRecibidoCoomeva" destination="mOJ-gr-nvs" id="GAN-5G-lXq"/>
+                        <outlet property="txtFechaRecibidoCoomevaNota" destination="7Aa-d5-pOL" id="bSk-bV-nIl"/>
+                        <outlet property="txtFechaVencimientoPago" destination="Awd-A7-ntg" id="Ryl-6T-OM1"/>
+                        <outlet property="txtNumeroFactura" destination="KxW-TN-3p0" id="s1U-PJ-w5Y"/>
+                        <outlet property="txtNumeroNota" destination="OuR-vB-Mj0" id="vlE-Th-PpE"/>
+                        <outlet property="txtProveedor" destination="h3n-TU-Kgt" id="sTU-0f-ix8"/>
+                        <outlet property="txtValorTotalFactura" destination="lya-o7-OmR" id="huz-4S-HQ4"/>
+                        <outlet property="txtValorTotalNotaCredito" destination="aDV-vM-aLR" id="bkG-Nf-8Zc"/>
+                        <outlet property="txtValorTotalPagar" destination="N5a-a8-Tdr" id="cmd-0z-7nI"/>
+                        <outlet property="txtmotivo" destination="OuR-vB-Mj0" id="Uf2-D1-NNG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BJd-9b-mtc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
