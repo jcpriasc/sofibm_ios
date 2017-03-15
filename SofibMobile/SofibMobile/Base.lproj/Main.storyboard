@@ -7044,6 +7044,7 @@
                                             <outlet property="txtFecha" destination="d3A-lw-vMe" id="P3f-P2-E4d"/>
                                             <outlet property="txtFuncionario" destination="ZQw-UT-hN9" id="PZi-L9-x2Y"/>
                                             <outlet property="txtMedico" destination="qPX-AA-0eg" id="iCE-XK-8FT"/>
+                                            <segue destination="UB2-zg-tqC" kind="show" id="xbq-9g-aYg"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -11961,14 +11962,6 @@
                                         <color key="textColor" red="0.086274509799999996" green="0.3921568627" blue="0.62352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2iN-e1-V9L">
-                                        <rect key="frame" x="164" y="210" width="48" height="48"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="icon_more"/>
-                                        <connections>
-                                            <action selector="action_ver_detalle:" destination="UB2-zg-tqC" eventType="touchUpInside" id="BYG-Ym-ypa"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="iFl-rM-cCB" firstAttribute="top" secondItem="vqL-Qk-A0Y" secondAttribute="bottom" constant="5" id="3uz-Pn-tQ7"/>
@@ -13190,18 +13183,18 @@
         <image name="row_right" width="64" height="64"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="iwC-m0-CfA"/>
-        <segue reference="Z5o-d0-ZF8"/>
-        <segue reference="1eB-vW-eKC"/>
-        <segue reference="9nJ-zS-xUW"/>
-        <segue reference="BYf-Au-ijD"/>
-        <segue reference="2yO-Qs-5da"/>
         <segue reference="Pez-Uq-wBc"/>
         <segue reference="8nz-nO-WDf"/>
+        <segue reference="BYf-Au-ijD"/>
+        <segue reference="aZW-7R-nfz"/>
+        <segue reference="bhv-YB-urc"/>
+        <segue reference="xM2-e0-Gzh"/>
         <segue reference="JE4-rD-2w7"/>
-        <segue reference="YGn-sO-95y"/>
-        <segue reference="ZCy-zm-gpS"/>
         <segue reference="RQs-EE-xak"/>
+        <segue reference="ZCy-zm-gpS"/>
+        <segue reference="Z5o-d0-ZF8"/>
+        <segue reference="iwC-m0-CfA"/>
+        <segue reference="2yO-Qs-5da"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>
