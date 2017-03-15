@@ -25,7 +25,7 @@ class FiltroSolAprobViewController: UIViewController, UIPickerViewDelegate, UIPi
     
     override func viewWillAppear(_ animated: Bool) {
         
-        lblBusqueda.text = NSLocalizedString("lbl_titulo_bitacora", comment: "lbl_titulo_bitacora")
+        lblBusqueda.text = NSLocalizedString("busqueda_avanzada", comment: "busqueda_avanzada")
         
         pickerTipoServicio.placeholder = NSLocalizedString("seleccionar_tipo_servicio", comment: "seleccionar_tipo_servicio")
         

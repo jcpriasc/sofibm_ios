@@ -52,6 +52,9 @@ class FiltrosSolicitudAtencionController: UIViewController, UIPickerViewDelegate
     override func viewDidLoad() {
         super.viewDidLoad()
         
+      //  UINavigationBar.appearance().setBackgroundImage(image, for: .default)
+
+        
         self.txtIdentificacion.delegate = self
         self.txtSolicitudAtencion.delegate = self
         self.txtNombre.delegate = self

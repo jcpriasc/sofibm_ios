@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DetalleServicioAsistencialViewController: UIViewController {
+class DetalleServicioAsistencialViewController: UIViewController, UITableViewDataSource, UITableViewDelegate  {
 
     
     @IBOutlet var txtNumeroOrden: UILabel!
@@ -26,6 +26,26 @@ class DetalleServicioAsistencialViewController: UIViewController {
     @IBOutlet var lblTipoServicio: UILabel!
     @IBOutlet var lblProcedimientoEsp: UILabel!
     @IBOutlet var lblProcedimientoIng: UILabel!
+    
+    
+    let jsonDetalleServicioAsistencial: NSArray = ServiciosAsistencialesViewController.servicioAsistencial.detalleServicio!
+    
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
+        return (jsonDetalleServicioAsistencial.count)
+    }
+    
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! DetalleServicioAsistencialViewCell
+        if let resultadoConsulta = self.jsonDetalleServicioAsistencial[indexPath.row] as? Dictionary<String, Any>{
+            cell.txtEstado.text = resultadoConsulta["estado"] as? String ?? ""
+            cell.txtFecha.text = resultadoConsulta["fecha"] as? String ?? ""
+        
+        }
+        
+        return (cell)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

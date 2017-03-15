@@ -197,7 +197,10 @@ class FiltroBitacoraViewController: UIViewController, UIPickerViewDelegate, UIPi
         }
         
         if pickerView.tag == 2 {
+            if(CargarPickers.tipoServiciosJson != nil){
             return (CargarPickers.tipoServiciosJson!.count)+1
+            }
+            
         }
         
         return 0
@@ -221,8 +224,9 @@ class FiltroBitacoraViewController: UIViewController, UIPickerViewDelegate, UIPi
             if row == 0 {
                 tipoServicioSeleccionado = NSLocalizedString("seleccionar_tipo_servicio", comment: "seleccionar_tipo_servicio")
             }else if let data = CargarPickers.tipoServiciosJson![row-1] as? Dictionary<String, Any>{
-                tipoServicioSeleccionado = (data["nombre"] as! String?)!;
+                tipoServicioSeleccionado = (data["descripcion"] as! String?)!;
             }
+            
             return tipoServicioSeleccionado
         }
         
@@ -234,8 +238,15 @@ class FiltroBitacoraViewController: UIViewController, UIPickerViewDelegate, UIPi
         if pickerView.tag == 1 {
             if row == 0 {
                 pickerTipoRegistro.text = "";
+                 CargarPickers.tipoServicio = "/0"
+                 CargarPickers.cargarTiposServicios()
             }else if let data = CargarPickers.tipoRegistrosJson![row-1] as? Dictionary<String, Any>{
                 pickerTipoRegistro.text = (data["descripcion"] as! String?)!;
+                
+                CargarPickers.tipoServicio = "/" + (data["codigo"] as! String?)!;
+                
+                CargarPickers.cargarTiposServicios()
+
             }
         }
         
@@ -243,7 +254,7 @@ class FiltroBitacoraViewController: UIViewController, UIPickerViewDelegate, UIPi
             if row == 0 {
                 pickerTipoServicio.text = "";
             }else if let data = CargarPickers.tipoServiciosJson![row-1] as? Dictionary<String, Any>{
-                pickerTipoServicio.text = (data["nombre"] as! String?)!;
+                pickerTipoServicio.text = (data["descripcion"] as! String?)!;
             }
         }
         

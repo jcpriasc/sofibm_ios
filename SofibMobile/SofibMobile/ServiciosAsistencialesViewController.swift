@@ -87,7 +87,47 @@ class ServiciosAsistencialesViewController: UIViewController, UITableViewDataSou
     
     func consultarDetalle(codigo: String){
         let url = URL(string: PropertiesProject.URL+PropertiesProject.complement_ServiciosAsistenciales_detalle+params+codigo)
-        print(url)
+        
+        let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
+            if error != nil
+            {
+                print ("ERROR")
+            }
+            else
+            {
+                if let content = data
+                {
+                    do
+                    {
+                        
+                        let jsonSolicitudDetalleServicioAsistencial: NSDictionary? = try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSDictionary
+                        DispatchQueue.main.async {
+                        if ((jsonSolicitudDetalleServicioAsistencial?.count)!>0){
+                            //print(jsonSolicitudDetalleServicioAsistencial)
+                            ServiciosAsistencialesViewController.servicioAsistencial.detalleServicio = jsonSolicitudDetalleServicioAsistencial?["historico"] as? NSArray
+                            print(ServiciosAsistencialesViewController.servicioAsistencial.detalleServicio)
+                            let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "detalleServicioAsis")
+                            self.show(vc as! UIViewController, sender: vc)
+                        }else{
+                            //print(NSLocalizedString("lbl_sin_resultados", comment: "lbl_sin_resultados"));
+                            let alert = UIAlertController(title: NSLocalizedString("lbl_alerta", comment: "lbl_alerta"), message: NSLocalizedString("lbl_sin_resultados", comment: "lbl_sin_resultados"), preferredStyle: UIAlertControllerStyle.alert)
+                            alert.addAction(UIAlertAction(title: NSLocalizedString("lbl_aceptar", comment: "lbl_aceptar"), style: UIAlertActionStyle.default, handler: nil))
+                            self.present(alert, animated: true, completion: nil)
+                        }
+                        }
+                        
+                    }
+                    catch
+                    {
+                        
+                    }
+                }
+            }
+        }
+        task.resume()
+        //{"orden":"57636383","historico":[{"estado":"IMPRESA","fecha":"2015-01-19"}]}
+        
+        
     }
     
 

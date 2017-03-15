@@ -36,4 +36,6 @@ class ServicioAsistencial{
     var fecha: String = ""
     var estado: String = ""
     
+    var detalleServicio : NSArray?
+    
 }

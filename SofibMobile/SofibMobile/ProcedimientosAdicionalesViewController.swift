@@ -25,9 +25,9 @@ class ProcedimientosAdicionalesViewController: UIViewController, UITableViewData
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ProcedimientosAdicionalesViewCell
 
         if let resultadoConsulta = self.jsonProcedimientosAdicionales[indexPath.row] as? Dictionary<String, Any>{
-            cell.txtNombreProcedimiento.text = resultadoConsulta["procedimientoSolicitado"] as! String?;
-            cell.txtCiudad.text = resultadoConsulta["ciudad"] as! String?;
-            cell.txtPrestador.text = resultadoConsulta["prestadorNombre"] as! String?;
+            cell.txtNombreProcedimiento.text = resultadoConsulta["procedimientoSolicitado"] as? String ?? "";
+            cell.txtCiudad.text = resultadoConsulta["ciudad"] as? String ?? "";
+            cell.txtPrestador.text = resultadoConsulta["prestadorNombre"] as? String ?? "";
         }
         
         

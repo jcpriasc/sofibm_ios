@@ -17,11 +17,24 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var txtUsuario: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
     @IBOutlet weak var segTipoUsuario: UISegmentedControl!
+    @IBOutlet weak var lblTipoUsuario: UILabel!
+    
+    let items = [NSLocalizedString("lbl_interno", comment: "lbl_interno"), NSLocalizedString("lbl_externo", comment: "lbl_externo")]
     
     static var nombreCompleto = "";
     
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     var usuriosJson : NSDictionary?
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+        lblTipoUsuario.text = NSLocalizedString("lbl_tipo_usuario", comment: "lbl_tipo_usuario")
+        txtUsuario.placeholder = NSLocalizedString("lbl_usuario", comment: "lbl_usuario")
+        txtPassword.placeholder = NSLocalizedString("lbl_cotrasena", comment: "lbl_cotrasena")
+        self.segTipoUsuario.setTitle(NSLocalizedString("lbl_interno", comment: "lbl_interno"), forSegmentAt: 0)
+        self.segTipoUsuario.setTitle(NSLocalizedString("lbl_externo", comment: "lbl_externo"), forSegmentAt: 1)
+    }
+    
     
     @IBAction func action_ingresar(_ sender: AnyObject) {
         
@@ -134,6 +147,10 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //segTipoUsuario = UISegmentedControl(items: items)
+        
+        
         
         txtUsuario.delegate = self
         txtPassword.delegate = self

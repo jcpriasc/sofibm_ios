@@ -21,6 +21,7 @@ class FormatoDinero{
             FormatoDinero.currencyFormatter.usesGroupingSeparator = true
             FormatoDinero.currencyFormatter.numberStyle = NumberFormatter.Style.currency
             FormatoDinero.currencyFormatter.locale = Locale.current
+            FormatoDinero.currencyFormatter.currencyCode = " $"
             
             let numeroDouble = Double(texto!)
             let numero = NSNumber(value: numeroDouble!)
