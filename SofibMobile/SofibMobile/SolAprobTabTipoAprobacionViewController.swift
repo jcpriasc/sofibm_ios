@@ -18,6 +18,7 @@ class SolAprobTabTipoAprobacionViewController: UIViewController, UITableViewData
     @IBOutlet var txtJustificacionValor: UILabel!
     
     static var jsonTabTipoAprobacion: NSArray?
+    public static var path : URL?  = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,11 +60,34 @@ class SolAprobTabTipoAprobacionViewController: UIViewController, UITableViewData
             
             cell.txtNombreArchivo.text = (solicitud["nombreDocumento"] as? String ?? " ");
             
+            
         }
         
         return (cell)
     }
-
+    
+    
+    public func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath?{
+        
+        
+        let fileSeleccionada = indexPath[1]
+        var opcionSeleccionada = ""
+        var file = ""
+        
+        if let solicitud = SolAprobTabTipoAprobacionViewController.jsonTabTipoAprobacion?[fileSeleccionada] as? Dictionary<String, Any>{
+            
+            file = (solicitud["nombreDocumento"] as? String ?? " ")
+            opcionSeleccionada = (solicitud["archivo"] as? String ?? " ")
+            
+            if let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
+                let convertedData = Data(base64Encoded: opcionSeleccionada)
+                print("exito")
+            }
+        }
+        
+        return indexPath
+        
+    }
     /*
     // MARK: - Navigation
 
