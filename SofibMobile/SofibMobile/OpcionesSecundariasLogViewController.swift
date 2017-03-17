@@ -134,7 +134,7 @@ class OpcionesSecundariasLogViewController: UIViewController , UITableViewDataSo
       
         let url = URL(string: PropertiesProject.URL+PropertiesProject.complement_serviciosNoAsistenciales+params)
         //let url = URL(string: "http://pruebas-sectorsalud.coomeva.com.co/saludmp-ws/jax-rs/saludmp-sofibmobile/serviciosNoAsistenciales/SAC/ABCD1234/852")
-        
+        print(url)
         let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
             if error != nil
             {

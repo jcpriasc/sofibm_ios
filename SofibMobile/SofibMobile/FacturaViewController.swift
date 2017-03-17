@@ -69,7 +69,7 @@ class FacturaViewController:  UIViewController, UITableViewDataSource, UITableVi
             FacturaViewController.facturaSeleccionada.valorIva = (solicitud["valorIva"] as? String ?? "");
             FacturaViewController.facturaSeleccionada.valorTotalPagar = (solicitud["valorTotalPagar"] as? String ?? "");
             FacturaViewController.facturaSeleccionada.prestadorProveedor = (solicitud["proveedor"] as? String ?? "");
-            FacturaViewController.facturaSeleccionada.tipoServicio = (solicitud["tipoSolicitud"] as? String ?? "");
+            FacturaViewController.facturaSeleccionada.tipoServicio = (solicitud["tipoServicio"] as? String ?? "");
             FacturaViewController.facturaSeleccionada.consFactura = (solicitud["consFactura"] as! Double?)!;
             
     

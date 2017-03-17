@@ -254,3 +254,5 @@
 "lbl_mensaje_reinicio_aplicacion" = "In order to change the language, the App must be closed and reopened by you.";
 "lbl_reinicio_requerido" = "App restart required";
 "lbl_cerrar_ahora" = "Close now";
+"lbl_fecha_tentativa" = "Final Date(Tentative)";
+"lbl_ubicacion" = "Location Destination";

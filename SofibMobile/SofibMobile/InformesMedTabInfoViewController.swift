@@ -28,13 +28,26 @@ class InformesMedTabInfoViewController: UIViewController, UITableViewDataSource,
         for det in InformesMedicosViewController.jsonDetalleInformeMedico! {
             if let solicitud = det  as? Dictionary<String, Any>{
                 
+                let dadoAlta = solicitud["dadoAlta"] as! Bool?;
+                let fallecido = solicitud["fallecido"] as! Bool?;
+                
+                if dadoAlta! {
+                    lblDadoAlta.text = "\(NSLocalizedString("lbl_dado_alta", comment: "lbl_dado_alta")) \(": ")\(NSLocalizedString("lbl_si", comment: "lbl_si"))"
+                }else{
+                    lblDadoAlta.text = "\(NSLocalizedString("lbl_dado_alta", comment: "lbl_dado_alta")) \(": ")\(NSLocalizedString("lbl_no", comment: "lbl_no"))"
+                }
+                
+                if fallecido! {
+                    lblFallecido.text = "\(NSLocalizedString("lbl_fallecio", comment: "lbl_fallecio")) \(": ")\(NSLocalizedString("lbl_si", comment: "lbl_si"))"
+                }else{
+                    lblFallecido.text = "\(NSLocalizedString("lbl_fallecio", comment: "lbl_fallecio")) \(": ")\(NSLocalizedString("lbl_no", comment: "lbl_no"))"
+                }
+                
+                
                 InformesMedTabInfoViewController.jsonTabDocumentos = solicitud["archivo"] as? NSArray
                 lblEntidad.text = "\(NSLocalizedString("lbl_entidad_prestadora", comment: "lbl_entidad_prestadora")) \(": ")\((solicitud["prestador"] as? String ?? ""))"
                 lblEvolucionPaciente.text = "\(NSLocalizedString("lbl_evolucion", comment: "lbl_evolucion")) \(": ")\((solicitud["evoluciondelpaciente"] as? String ?? ""))"
                 lblTipoPaciente.text = "\(NSLocalizedString("lbl_tipo_paciente", comment: "lbl_tipo_paciente")) \(": ")\((solicitud["pacienteEstado"] as? String ?? ""))"
-                lblDadoAlta.text = "\(NSLocalizedString("lbl_dado_alta", comment: "lbl_dado_alta")) \(": ")\((solicitud["dadoAlta"] as? String ?? ""))"
-                lblFallecido.text = "\(NSLocalizedString("lbl_fallecio", comment: "lbl_fallecio")) \(": ")\((solicitud["fallecido"] as? String ?? ""))"
-                
                 
             }
         }
