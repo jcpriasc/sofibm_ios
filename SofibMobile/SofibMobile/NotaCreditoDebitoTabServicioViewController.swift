@@ -22,7 +22,7 @@ class NotaCreditoDebitoTabServicioViewController: UIViewController , UITableView
             
             NotaCreditoDebitoTabServicioViewController.jsonTabServicios = solicitud["impuestos"] as? NSArray
             
-            lblNumeroOrdenServicio.text = "\(NSLocalizedString("lbl_numero_orden_servicio", comment: "lbl_numero_orden_servicio")) \(": ")\((solicitud["nroNota"] as? String ?? ""))"
+            lblNumeroOrdenServicio.text = "\(NSLocalizedString("lbl_numero_orden_servicio", comment: "lbl_numero_orden_servicio")) \(": ")\((solicitud["orderServicio"] as? String ?? ""))"
             lblServicio.text = "\(NSLocalizedString("lbl_servicio", comment: "lbl_servicio")) \(": ")\((solicitud["servicio"] as? String ?? ""))"
             
         }
