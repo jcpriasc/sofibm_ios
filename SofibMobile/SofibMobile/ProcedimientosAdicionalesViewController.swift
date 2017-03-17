@@ -26,7 +26,7 @@ class ProcedimientosAdicionalesViewController: UIViewController, UITableViewData
 
         if let resultadoConsulta = self.jsonProcedimientosAdicionales[indexPath.row] as? Dictionary<String, Any>{
             cell.txtNombreProcedimiento.text = resultadoConsulta["procedimientoSolicitado"] as? String ?? "";
-            cell.txtCiudad.text = resultadoConsulta["ciudad"] as? String ?? "";
+            cell.txtCiudad.text = resultadoConsulta["ciudad"] as? String ?? " ";
             cell.txtPrestador.text = resultadoConsulta["prestadorNombre"] as? String ?? "";
         }
         

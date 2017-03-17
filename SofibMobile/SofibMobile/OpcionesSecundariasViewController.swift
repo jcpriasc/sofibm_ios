@@ -135,7 +135,7 @@ class OpcionesSecundariasViewController: UIViewController, UITableViewDataSource
     func obtenerAutorizaciones(){
         
         let url = URL(string: PropertiesProject.URL+PropertiesProject.complement_Autorizaciones+params)
-        
+        print(url)
         let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
             if error != nil
             {
