@@ -81,8 +81,38 @@ class SolAprobTabTipoAprobacionViewController: UIViewController, UITableViewData
             
             if let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
                 let convertedData = Data(base64Encoded: opcionSeleccionada)
-                print("exito")
+
+                SolAprobTabTipoAprobacionViewController.path = dir.appendingPathComponent(file)
+                let aweds: String = dir.dataRepresentation.base64EncodedString()
+                print(aweds)
+                //writing
+                do {
+                    try convertedData?.write(to: SolAprobTabTipoAprobacionViewController.path!)
+                    
+                }
+                catch {/* error handling here */}
+                
+                //reading
+                //do {
+                 //   let text2 = try String(contentsOf: SolAprobTabTipoAprobacionViewController.path!, encoding: String.Encoding.utf8)
+                   // print(text2);
+               // }
+                    
+               // catch {
+                //    print("ERROR")
+               // }
+                
+            
             }
+            
+            let url = NSURL.fileURL(withPath: (SolAprobTabTipoAprobacionViewController.path?.absoluteString)!)
+            
+            print(url)
+            
+            
+            let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "detalleTipoAprobacion")
+            self.show(vc as! UIViewController, sender: vc)
+
         }
         
         return indexPath

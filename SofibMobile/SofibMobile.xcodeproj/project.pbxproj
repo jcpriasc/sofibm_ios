@@ -40,6 +40,7 @@
 		113BEC4C1E56957D00842278 /* FuncionarioExterno.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BEC4B1E56957D00842278 /* FuncionarioExterno.swift */; };
 		113BEC4E1E56A40700842278 /* DetalleProcedimientoAdicionalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BEC4D1E56A40700842278 /* DetalleProcedimientoAdicionalViewController.swift */; };
 		113BEC501E56A7D700842278 /* ProcedimientoAdicional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BEC4F1E56A7D700842278 /* ProcedimientoAdicional.swift */; };
+		1147ABB81E80D65D006C27F4 /* DocumentoTipoAprobacionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1147ABB71E80D65D006C27F4 /* DocumentoTipoAprobacionViewController.swift */; };
 		115424841DDD3FD1004EE9E9 /* NotaImpuestoViewCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115424831DDD3FD1004EE9E9 /* NotaImpuestoViewCellController.swift */; };
 		115424861DDD3FE7004EE9E9 /* NotaImpuestoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115424851DDD3FE7004EE9E9 /* NotaImpuestoViewController.swift */; };
 		115424881DDD3FFE004EE9E9 /* NotaServicioViewCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115424871DDD3FFE004EE9E9 /* NotaServicioViewCellController.swift */; };
@@ -222,6 +223,7 @@
 		113BEC4B1E56957D00842278 /* FuncionarioExterno.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FuncionarioExterno.swift; sourceTree = "<group>"; };
 		113BEC4D1E56A40700842278 /* DetalleProcedimientoAdicionalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleProcedimientoAdicionalViewController.swift; sourceTree = "<group>"; };
 		113BEC4F1E56A7D700842278 /* ProcedimientoAdicional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProcedimientoAdicional.swift; sourceTree = "<group>"; };
+		1147ABB71E80D65D006C27F4 /* DocumentoTipoAprobacionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentoTipoAprobacionViewController.swift; sourceTree = "<group>"; };
 		115424831DDD3FD1004EE9E9 /* NotaImpuestoViewCellController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotaImpuestoViewCellController.swift; sourceTree = "<group>"; };
 		115424851DDD3FE7004EE9E9 /* NotaImpuestoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotaImpuestoViewController.swift; sourceTree = "<group>"; };
 		115424871DDD3FFE004EE9E9 /* NotaServicioViewCellController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotaServicioViewCellController.swift; sourceTree = "<group>"; };
@@ -514,6 +516,7 @@
 				A41BB38B1E71A90A00771779 /* ServicioAsistencialViewCell.swift */,
 				A41BB38D1E71B77200771779 /* DetalleServicioAsistencialViewController.swift */,
 				A44488691E77695900A70BB7 /* DetalleServicioAsistencialViewCell.swift */,
+				1147ABB71E80D65D006C27F4 /* DocumentoTipoAprobacionViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -967,6 +970,7 @@
 				11F894431DDD166F00A58E45 /* FacturaGlosaViewController.swift in Sources */,
 				11F894311DDD044700A58E45 /* GiroManutencionViewCellController.swift in Sources */,
 				11E3626C1DD2B72900354EB4 /* SolicitudAprobacionViewController.swift in Sources */,
+				1147ABB81E80D65D006C27F4 /* DocumentoTipoAprobacionViewController.swift in Sources */,
 				1181F0321DEF7EA100E92A15 /* NotaCreditoDebitoTabImpuestoViewCellController.swift in Sources */,
 				1181F02C1DEF660500E92A15 /* FacturaTabImpuestosViewCellController.swift in Sources */,
 				A43D62DA1DCDD36F0044AB22 /* AutorizacionesViewController.swift in Sources */,
