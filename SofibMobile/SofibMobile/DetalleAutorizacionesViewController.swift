@@ -20,6 +20,10 @@ class DetalleAutorizacionesViewController: UIViewController, UITableViewDataSour
     @IBOutlet weak var lblFechaRechazo: UILabel!
     
     let jsonDetalleAutorizaciones: NSArray = AutorizacionesViewController.autorizacionSeleccionada.detalleAutorizacion!
+
+    static var autorizacionDetalle = AutorizacionDetalle()
+
+    
     
     //NSLocalizedString("lbl_si", comment: "lbl_si")
     
@@ -37,7 +41,8 @@ class DetalleAutorizacionesViewController: UIViewController, UITableViewDataSour
         
         if let resultadoConsulta = self.jsonDetalleAutorizaciones[indexPath.row] as? Dictionary<String, Any>{
             cell.txtDescripcion.text = resultadoConsulta["descripcion"] as? String ?? ""
-            cell.txtJustificacion.text = resultadoConsulta["justificacion"] as? String ?? ""
+            
+            cell.txtJustificacion.text = resultadoConsulta["justificacion"] as? String ?? "" 
             
             var estado:Bool = true
             estado = resultadoConsulta["estado"] as! Bool
@@ -54,6 +59,40 @@ class DetalleAutorizacionesViewController: UIViewController, UITableViewDataSour
         
         return (cell)
     }
+    
+    
+    public func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath?{
+        
+        let fileSeleccionada = indexPath[1]
+         var estado:Bool = true
+        
+        if let solicitud = self.jsonDetalleAutorizaciones[fileSeleccionada] as? Dictionary<String, Any>{
+            
+            DetalleAutorizacionesViewController.autorizacionDetalle.descripcion = solicitud["descripcion"] as? String ?? ""
+            DetalleAutorizacionesViewController.autorizacionDetalle.justificacion = solicitud["justificacion"] as? String ?? ""
+           
+            estado = solicitud["estado"] as! Bool
+            
+            if (estado == false){
+                DetalleAutorizacionesViewController.autorizacionDetalle.estado = "Pendiente"
+            }else if (estado == true){
+                DetalleAutorizacionesViewController.autorizacionDetalle.estado = "Aprobado"
+                
+            }
+            
+            
+        }
+        
+        
+        let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "detalleListaAutorizacion")
+        self.show(vc as! UIViewController, sender: vc)
+        
+        
+        return indexPath
+    }
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

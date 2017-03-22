@@ -27,6 +27,8 @@
 		11227A311DCA44060035959B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 11227A331DCA44060035959B /* Localizable.strings */; };
 		11227A3D1DCA79420035959B /* Localizable.plist in Resources */ = {isa = PBXBuildFile; fileRef = 11227A3C1DCA79420035959B /* Localizable.plist */; };
 		11227A3F1DCAA2060035959B /* DetalleSolicitudAtencionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11227A3E1DCAA2060035959B /* DetalleSolicitudAtencionController.swift */; };
+		112DA9D41E82DF5500A535F8 /* DetalleListaAutorizacionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112DA9D31E82DF5500A535F8 /* DetalleListaAutorizacionViewController.swift */; };
+		112DA9D61E82E34000A535F8 /* AutorizacionDetalle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112DA9D51E82E34000A535F8 /* AutorizacionDetalle.swift */; };
 		11309A841DED0BBA00E79070 /* Giro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11309A831DED0BBA00E79070 /* Giro.swift */; };
 		11309A861DED0D2500E79070 /* Factura.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11309A851DED0D2500E79070 /* Factura.swift */; };
 		11309A881DED0DBF00E79070 /* NotaCreditoDebito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11309A871DED0DBF00E79070 /* NotaCreditoDebito.swift */; };
@@ -210,6 +212,8 @@
 		11227A3A1DCA545F0035959B /* es */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = es; path = es.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11227A3C1DCA79420035959B /* Localizable.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Localizable.plist; sourceTree = "<group>"; };
 		11227A3E1DCAA2060035959B /* DetalleSolicitudAtencionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleSolicitudAtencionController.swift; sourceTree = "<group>"; };
+		112DA9D31E82DF5500A535F8 /* DetalleListaAutorizacionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleListaAutorizacionViewController.swift; sourceTree = "<group>"; };
+		112DA9D51E82E34000A535F8 /* AutorizacionDetalle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutorizacionDetalle.swift; sourceTree = "<group>"; };
 		11309A831DED0BBA00E79070 /* Giro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Giro.swift; sourceTree = "<group>"; };
 		11309A851DED0D2500E79070 /* Factura.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Factura.swift; sourceTree = "<group>"; };
 		11309A871DED0DBF00E79070 /* NotaCreditoDebito.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotaCreditoDebito.swift; sourceTree = "<group>"; };
@@ -517,6 +521,7 @@
 				A41BB38D1E71B77200771779 /* DetalleServicioAsistencialViewController.swift */,
 				A44488691E77695900A70BB7 /* DetalleServicioAsistencialViewCell.swift */,
 				1147ABB71E80D65D006C27F4 /* DocumentoTipoAprobacionViewController.swift */,
+				112DA9D31E82DF5500A535F8 /* DetalleListaAutorizacionViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -552,6 +557,7 @@
 				113BEC4B1E56957D00842278 /* FuncionarioExterno.swift */,
 				113BEC4F1E56A7D700842278 /* ProcedimientoAdicional.swift */,
 				A42DB1BF1E569A0100DFE77C /* UsuarioSesion.swift */,
+				112DA9D51E82E34000A535F8 /* AutorizacionDetalle.swift */,
 			);
 			name = Modelo;
 			sourceTree = "<group>";
@@ -1034,6 +1040,7 @@
 				113BEC4C1E56957D00842278 /* FuncionarioExterno.swift in Sources */,
 				11309A8C1DED0EE300E79070 /* SolicitudAprobacion.swift in Sources */,
 				A467DA531DDD4E5E004FE4D8 /* DetalleAutorizacionesViewCell.swift in Sources */,
+				112DA9D41E82DF5500A535F8 /* DetalleListaAutorizacionViewController.swift in Sources */,
 				110E7DFC1E00E746004DB17B /* DetalleDocumentoMedicoViewController.swift in Sources */,
 				1181F0281DEF3A7100E92A15 /* FacturaTabGlosaViewController.swift in Sources */,
 				11227A291DC970C00035959B /* ViewControllerTest.swift in Sources */,
@@ -1068,6 +1075,7 @@
 				A4BC21F51E250B76005079C3 /* SolAprobTabDatosBasicosViewCellController.swift in Sources */,
 				A46F98641DEF92A2000B19BE /* LoginViewController.swift in Sources */,
 				11E362561DD2B64700354EB4 /* NotaCreditoGiroViewCellController.swift in Sources */,
+				112DA9D61E82E34000A535F8 /* AutorizacionDetalle.swift in Sources */,
 				115A2C931DE8D985003B1C00 /* DetalleNotaCreditoGiroViewController.swift in Sources */,
 				A43D62D61DCD89320044AB22 /* OpcionesSecundariasViewCell.swift in Sources */,
 				11309A8A1DED0E9F00E79070 /* Utilizaciones.swift in Sources */,
