@@ -185,7 +185,7 @@
 "lbl_entidad_prestadora"= "Entidad prestadora";
 "lbl_evolucion"= "Evolución del paciente";
 "lbl_tipo_paciente"= "Tipo de paciente";
-"lbl_fecha_hospitalizacion"= "Fecha Inicio Hopitalización";
+"lbl_fecha_hospitalizacion"= "Fecha Inicio Hospitalización";
 "lbl_procedimientos_adicionales"= "Procedimientos Adicionales";
 "lbl_nombre_procedimiento"= "Nombre del Procedimiento";
 "lbl_funcionarios_externos"= "Funcionarios Externos (Citas)";

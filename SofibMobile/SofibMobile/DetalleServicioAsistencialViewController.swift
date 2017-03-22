@@ -21,6 +21,7 @@ class DetalleServicioAsistencialViewController: UIViewController, UITableViewDat
     @IBOutlet var txtCantidad: UILabel!
     @IBOutlet var txtEstado: UILabel!
     @IBOutlet var txtFecha: UILabel!
+    @IBOutlet var txtCodigoProcedimiento: UILabel!
     
     @IBOutlet var lblNombrePrestador: UILabel!
     @IBOutlet var lblTipoServicio: UILabel!
@@ -55,6 +56,7 @@ class DetalleServicioAsistencialViewController: UIViewController, UITableViewDat
         lblProcedimientoEsp.text = NSLocalizedString("lbl_procedimiento_espanol", comment: "lbl_procedimiento_espanol")
         lblProcedimientoIng.text = NSLocalizedString("lbl_procedimiento_ingles", comment: "lbl_procedimiento_ingles")
         
+        txtCodigoProcedimiento.text = "\(NSLocalizedString("lbl_codigo_procedimiento", comment: "lbl_codigo_procedimiento")) \(": ")\(ServiciosAsistencialesViewController.servicioAsistencial.codigoProcedimiento)"
         
         txtNumeroOrden.text = "\(NSLocalizedString("lbl_numero_orden", comment: "lbl_numero_orden")) \(": ")\(ServiciosAsistencialesViewController.servicioAsistencial.numerioSias)"
         txtCiudadOficina.text = "\(NSLocalizedString("lbl_ciudad", comment: "lbl_ciudad")) \(": ")\(ServiciosAsistencialesViewController.servicioAsistencial.ciudad)"
