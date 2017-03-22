@@ -37,7 +37,17 @@ class UtilizacionesTabAdministracionesViewController: UIViewController, UITableV
             cell.txtTotal.text = FormatoDinero.formatearMoneda(texto: (solicitud["total"] as? String ?? " "))
             cell.txtTrm.text = FormatoDinero.formatearMoneda(texto: (solicitud["trm"] as? String ?? " "))
             cell.txtSubtotal.text = FormatoDinero.formatearMoneda(texto: (solicitud["subtotal"] as? String ?? " "))
-            cell.txtPorcentajeIva.text = (solicitud["porcentaje"] as? String ?? " ");
+           
+            let porcentajeString = (solicitud["porcentaje"] as? String ?? "")
+            
+            if(porcentajeString == ""){
+                cell.txtPorcentajeIva.text = "";
+            }else{
+                cell.txtPorcentajeIva.text = porcentajeString + "%";
+            }
+            
+            
+           
             cell.txtValorIva.text = FormatoDinero.formatearMoneda(texto: (solicitud["valorIva"] as? String ?? " "))
             cell.txtFechaCreado.text = (solicitud["fechaCreado"] as? String ?? " ");
         
