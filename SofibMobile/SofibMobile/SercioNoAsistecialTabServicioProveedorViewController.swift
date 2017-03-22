@@ -15,6 +15,7 @@ class SercioNoAsistecialTabServicioProveedorViewController: UIViewController {
     @IBOutlet var lblProveedor: UILabel!
     @IBOutlet var lblServicio: UILabel!
     @IBOutlet var lblFecha: UILabel!
+    
     @IBOutlet var lblUbicacion: UILabel!
     
     @IBOutlet var txtProveedor: UILabel!
