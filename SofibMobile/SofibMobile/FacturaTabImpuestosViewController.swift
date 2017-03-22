@@ -46,7 +46,15 @@ class FacturaTabImpuestosViewController: UIViewController , UITableViewDataSourc
             cell.txtNumeroOrdenServicio.text = (solicitud["ordenServicio"] as? String ?? " ");
             cell.txtTipoImpuesto.text = (solicitud["tipoImpuesto"] as? String ?? " ");
             cell.txtServicio.text = (solicitud["servicio"] as? String ?? " ");
-            cell.txtPorcentaje.text = (solicitud["porcentaje"] as? String ?? " ");
+            
+            let porcentajeString = (solicitud["porcentaje"] as? String ?? "");
+            
+            if(porcentajeString == ""){
+                cell.txtPorcentaje.text = " ";
+            }else{
+                cell.txtPorcentaje.text = porcentajeString+"%"
+            }
+            
             cell.txtValorImpuesto.text = FormatoDinero.formatearMoneda(texto:(solicitud["valorImpuesto"] as? String ?? " "));
             cell.txtAplicaSeguroHotelero.text = (solicitud["aplicaSeguro"] as? String ?? " ");
             
