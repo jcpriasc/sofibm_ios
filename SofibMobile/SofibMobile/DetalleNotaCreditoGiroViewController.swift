@@ -12,49 +12,58 @@ class DetalleNotaCreditoGiroViewController: UIViewController {
 
     
     @IBOutlet var lblConsecutivoNota: UILabel!
-    @IBOutlet var lblIdGiroAsociado: UILabel!
-    @IBOutlet var lblNombreBeneficiario: UILabel!
-    @IBOutlet var lblTipoGiro: UILabel!
-    @IBOutlet var txtCiudad: UILabel!
-    @IBOutlet var txtTipoBeneficiario: UILabel!
-    @IBOutlet var txtEstado: UILabel!
-    @IBOutlet var txtValorNota: UILabel!
-    @IBOutlet var txtFechaLiquidacion: UILabel!
-    @IBOutlet var txtFechaRegistro: UILabel!
     @IBOutlet var lblNotaCredito: UILabel!
     
-    
     @IBOutlet var lblCiudad: UILabel!
+    @IBOutlet var lblIdGiroAsociado: UILabel!
+    
     @IBOutlet var lblTipoBeneficiario: UILabel!
+    @IBOutlet var txtTipoBeneficiario: UILabel!
+    
+    @IBOutlet var lblNombreBeneficiario: UILabel!
+    @IBOutlet var txtNombreBeneficiario: UILabel!
+    
     @IBOutlet var lblEstado: UILabel!
+    @IBOutlet var txtEstado: UILabel!
+    
+    @IBOutlet var lblTipoGiro: UILabel!
+    @IBOutlet var txtTipoGiro: UILabel!
     @IBOutlet var lblValorNota: UILabel!
+    @IBOutlet var txtValorNota: UILabel!
     @IBOutlet var lblFechaRegistro: UILabel!
+    @IBOutlet var txtFechaRegistro: UILabel!
+    
     @IBOutlet var lblFechaLiquidacion: UILabel!
+    @IBOutlet var txtFechaLiquidacion: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         lblConsecutivoNota.text = NSLocalizedString("lbl_consecutivo_nota_credito", comment: "lbl_consecutivo_nota_credito")        
         lblNotaCredito.text = NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.consecutivoNota
-        
-        
+        lblCiudad.text = "\(NSLocalizedString("lbl_ciudad", comment: "lbl_ciudad"))\(": ") \(NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.ciudad)"
         lblIdGiroAsociado.text = "\(NSLocalizedString("lbl_id_giro_asociado", comment: "lbl_id_giro_asociado"))\(": ") \(NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.idGiroAsociado)"
-        lblNombreBeneficiario.text = "\(NSLocalizedString("lbl_nombre_beneficiario", comment: "lbl_nombre_beneficiario"))\(": ") \(NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.nombreBeneficiario)"
-        lblTipoGiro.text = "\(NSLocalizedString("lbl_tipo_giro", comment: "lbl_tipo_giro"))\(": ") \(NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.tipoGiro)"
         
-        txtCiudad.text = (NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.ciudad)
-
-        txtTipoBeneficiario.text = NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.tipoBeneficiario
-        txtEstado.text = NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.estado
-        txtValorNota.text = NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.valorNota
-        txtFechaLiquidacion.text = NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.fechaLiquidacion
-        txtFechaRegistro.text = NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.fechaRegistro
-        
-        lblCiudad.text = NSLocalizedString("lbl_ciudad", comment: "lbl_ciudad")
         lblTipoBeneficiario.text = NSLocalizedString("lbl_tipo_beneficiario", comment: "lbl_tipo_beneficiario")
+        txtTipoBeneficiario.text = NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.tipoBeneficiario
+
+        
+        lblNombreBeneficiario.text = NSLocalizedString("lbl_nombre_beneficiario", comment: "lbl_nombre_beneficiario")
+        txtNombreBeneficiario.text = NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.nombreBeneficiario
+        
         lblEstado.text = NSLocalizedString("lbl_estado", comment: "lbl_estado")
+        txtEstado.text = NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.estado
+
+        lblTipoGiro.text = NSLocalizedString("lbl_tipo_giro", comment: "lbl_tipo_giro")
+        txtTipoGiro.text = NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.tipoGiro
+        
         lblValorNota.text = NSLocalizedString("lbl_valor_nota", comment: "lbl_valor_nota")
+        txtValorNota.text = NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.valorNota
+
         lblFechaRegistro.text = NSLocalizedString("lbl_fecha_registro", comment: "lbl_fecha_registro")
+        txtFechaRegistro.text = NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.fechaRegistro
+
+        txtFechaLiquidacion.text = NotaCreditoGiroViewController.notaCreditoGiroSeleccionado.fechaLiquidacion
         lblFechaLiquidacion.text = NSLocalizedString("lbl_fecha_liquidacion", comment: "lbl_fecha_liquidacion")
         
         // Do any additional setup after loading the view.

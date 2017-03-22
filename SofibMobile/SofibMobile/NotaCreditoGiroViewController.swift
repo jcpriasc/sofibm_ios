@@ -41,9 +41,8 @@ class NotaCreditoGiroViewController:  UIViewController, UITableViewDataSource, U
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! NotaCreditoGiroViewCellController
         
         if let solicitud = self.jsonNotaCreditoGiro[indexPath.row] as? Dictionary<String, Any>{
-            cell.txtTipoGiro.text = (solicitud["tipoGiro"] as? String ?? "");
-            cell.txtNombreBeneficiario.text = (solicitud["beneficiario"] as? String ?? "");
-            cell.txtIdGiroAsociado.text = (solicitud["giroAsociado"] as? String ?? "");
+           
+            cell.txtIdGiroAsociado.text = (solicitud["ciudad"] as? String ?? "");
             cell.txtConsecutivoNotaCredito.text = (solicitud["notaCredito"] as? String ?? "");
         }
 
