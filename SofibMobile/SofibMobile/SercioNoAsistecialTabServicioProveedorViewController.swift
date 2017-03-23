@@ -22,6 +22,8 @@ class SercioNoAsistecialTabServicioProveedorViewController: UIViewController {
     @IBOutlet var txtServicio: UILabel!
     @IBOutlet var txtFecha: UILabel!
     @IBOutlet var txtUbicacion: UILabel!
+    @IBOutlet var lblFechaFinTentativa: UILabel!
+    @IBOutlet var txtFechaFinTentativa: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,15 +31,17 @@ class SercioNoAsistecialTabServicioProveedorViewController: UIViewController {
          lblInformacionServicioProveedor.text = NSLocalizedString("lbl_titulo_servicio_proveedor", comment: "lbl_titulo_servicio_proveedor")
          lblProveedor.text = NSLocalizedString("lbl_proveedor", comment: "lbl_proveedor")
          lblServicio.text = NSLocalizedString("lbl_servicio", comment: "lbl_servicio")
-         lblFecha.text = NSLocalizedString("lbl_fecha_tentativa", comment: "lbl_fecha_tentativa")
+         lblFechaFinTentativa.text = NSLocalizedString("lbl_fecha_tentativa", comment: "lbl_fecha_tentativa")
+        lblFecha.text = NSLocalizedString("lbl_fecha", comment: "lbl_fecha")
         
         lblUbicacion.text = NSLocalizedString("lbl_ubicacion", comment: "lbl_ubicacion")
         
         if let solicitud = DetalleServicioNoAsistencialViewController.jsonDetalleServicioNoAsistencial as? Dictionary<String, Any>{
             txtProveedor.text = (solicitud["proveedor"] as? String ?? "")
             txtServicio.text = (solicitud["servicio"] as? String ?? "")
-            txtFecha.text = (solicitud["fecha"] as? String ?? "  ")
+            txtFechaFinTentativa.text = (solicitud["fechaFinTentativa"] as? String ?? "  ")
             txtUbicacion.text = (solicitud["ubicacionDestino"] as? String ?? "")
+            txtFecha.text = (solicitud["fecha"] as? String ?? "")
         }
         
         // Do any additional setup after loading the view.

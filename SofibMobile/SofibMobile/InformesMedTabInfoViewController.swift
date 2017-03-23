@@ -18,6 +18,7 @@ class InformesMedTabInfoViewController: UIViewController, UITableViewDataSource,
     @IBOutlet var lblDadoAlta: UILabel!
     @IBOutlet var lblFallecido: UILabel!
     @IBOutlet var lblFechaInicioHospitalizacion: UILabel!
+    @IBOutlet var lblFechaFinHospitalizacion: UILabel!
     
     public static var path : URL?  = nil
     
@@ -45,6 +46,9 @@ class InformesMedTabInfoViewController: UIViewController, UITableViewDataSource,
                 }
                 
                 lblFechaInicioHospitalizacion.text = "\(NSLocalizedString("lbl_fecha_hospitalizacion", comment: "lbl_fecha_hospitalizacion")) \(": ")\((solicitud["fechaInicioHospitaliza"] as? String ?? ""))"
+                
+                 lblFechaFinHospitalizacion.text = "\(NSLocalizedString("lbl_fecha_fin_hospitalizacion", comment: "lbl_fecha_fin_hospitalizacion")) \(": ")\((solicitud["fechaFinHospitaliza"] as? String ?? ""))"
+                
                 
                 InformesMedTabInfoViewController.jsonTabDocumentos = solicitud["archivo"] as? NSArray
                 lblEntidad.text = "\(NSLocalizedString("lbl_entidad_prestadora", comment: "lbl_entidad_prestadora")) \(": ")\((solicitud["prestador"] as? String ?? ""))"

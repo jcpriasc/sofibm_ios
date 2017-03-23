@@ -256,3 +256,5 @@
 "lbl_cerrar_ahora" = "Close now";
 "lbl_fecha_tentativa" = "Final Date(Tentative)";
 "lbl_ubicacion" = "Location Destination";
+"lbl_fecha_fin_hospitalizacion" = "End date hospitalization";
+

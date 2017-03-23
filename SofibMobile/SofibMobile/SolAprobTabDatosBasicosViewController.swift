@@ -54,6 +54,15 @@ class SolAprobTabDatosBasicosViewController: UIViewController, UITableViewDataSo
     
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! SolAprobTabDatosBasicosViewCellController
         
+        
+        if let solicitud = SolAprobTabDatosBasicosViewController.jsonTabDatosBasicos?[indexPath.row] as? Dictionary<String, Any>{
+            cell.txtNombre.text = solicitud["nombre"] as? String ?? " "
+            cell.txtPrestador.text = solicitud["prestador"] as? String ?? " "
+            
+            
+        }
+
+        
         return (cell)
     }
     /*
