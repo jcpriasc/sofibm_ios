@@ -73,9 +73,9 @@ class GiroViewController:  UIViewController, UITableViewDataSource, UITableViewD
             GiroViewController.giroSeleccionado.valorMonedaExtranjero = (solicitud["valorMonedaExtranjera"] as? String ?? "");
             GiroViewController.giroSeleccionado.valorMonedaLocal = (solicitud["valorMonedaLocal"] as? String ?? "");
             GiroViewController.giroSeleccionado.registraDevolucion = (solicitud["registraDevolucion"] as? String ?? "");
-            GiroViewController.giroSeleccionado.valorDevolucion = (solicitud["valorDevolucion"] as? String ?? "");
+            GiroViewController.giroSeleccionado.valorDevolucion = (solicitud["valorDevolucion"] as? String ?? "0");
             GiroViewController.giroSeleccionado.legalizado = (solicitud["legalizado"] as? String ?? "");
-            GiroViewController.giroSeleccionado.valorLegalizado = (solicitud["valorLegalizado"] as? String ?? "");
+            GiroViewController.giroSeleccionado.valorLegalizado = (solicitud["valorLegalizado"] as? String ?? "0");
             GiroViewController.giroSeleccionado.justificacionAnulacion = (solicitud["justificacionAnulacion"] as? String ?? "");
             GiroViewController.giroSeleccionado.aprobadoGiro = (solicitud["aprobadorGiro"] as? String ?? "");
             
