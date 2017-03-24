@@ -26,7 +26,7 @@ class ServicioNoAsistencialViewCellController: UITableViewCell {
         // Initialization code
         lblNumeroSolicitud.text = NSLocalizedString("lbl_numero_solicitud", comment: "lbl_numero_solicitud")
         lblIdentificacion.text = NSLocalizedString("lbl_tipo_solicitud", comment: "lbl_tipo_solicitud")
-        lblNombre.text = NSLocalizedString("nombre", comment: "nombre")
+        lblNombre.text = NSLocalizedString("lbl_ciudad", comment: "lbl_ciudad")
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
