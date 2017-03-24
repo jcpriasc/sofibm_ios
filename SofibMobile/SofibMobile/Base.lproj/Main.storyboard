@@ -4581,7 +4581,7 @@
                                     <constraint firstItem="bC1-b6-KAA" firstAttribute="leading" secondItem="c59-Kc-vKx" secondAttribute="trailing" constant="5" id="wc8-jf-0Cq"/>
                                     <constraint firstAttribute="bottom" secondItem="xzw-8f-eEA" secondAttribute="bottom" constant="147" id="x2d-Vc-Crd"/>
                                     <constraint firstItem="i3t-0Y-cqe" firstAttribute="leading" secondItem="d5K-FK-uOL" secondAttribute="leading" constant="20" id="ye7-bU-hGH"/>
-                                    <constraint firstItem="hTC-uw-Hg8" firstAttribute="width" secondItem="d5K-FK-uOL" secondAttribute="width" multiplier="0.5" id="yhw-yu-dHy"/>
+                                    <constraint firstItem="hTC-uw-Hg8" firstAttribute="width" secondItem="d5K-FK-uOL" secondAttribute="width" multiplier="0.45" id="yhw-yu-dHy"/>
                                 </constraints>
                                 <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
                             </scrollView>
