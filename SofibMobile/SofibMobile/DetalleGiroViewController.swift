@@ -44,7 +44,7 @@ class DetalleGiroViewController: UIViewController {
     public static var path : URL?  = nil
     
     static var jsonDetalleGiro: NSDictionary?
-    let params: String = "/SAC/ABCD1234/"
+    let params: String = "/SAC/"+PropertiesProject.TOKEN+"/"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -154,7 +154,7 @@ class DetalleGiroViewController: UIViewController {
         let url = URL(string: PropertiesProject.URL+PropertiesProject.complement_giro_detalle+params+codigoTexto)
         
         print(url)
-        //let url = URL(string: "http://pruebas-sectorsalud.coomeva.com.co/saludmp-ws/jax-rs/saludmp-sofibmobile/giro/detalle/SAC/ABCD1234/475")
+        //let url = URL(string: "http://pruebas-sectorsalud.coomeva.com.co/saludmp-ws/jax-rs/saludmp-sofibmobile/giro/detalle/SAC/"+PropertiesProject.TOKEN+"/475")
         
         let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
             if error != nil

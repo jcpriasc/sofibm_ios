@@ -57,7 +57,7 @@ class FiltroSolAprobViewController: UIViewController, UIPickerViewDelegate, UIPi
         }
         
         
-        var listParams: String = "/SAC/ABCD1234";
+        var listParams: String = "/SAC/"+PropertiesProject.TOKEN+"";
         listParams+="/0";
         listParams+="/"+convenio;
         listParams+="/"+tipoServicio;

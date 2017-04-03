@@ -103,7 +103,7 @@ class InformesMedTabInfoViewController: UIViewController, UITableViewDataSource,
     public func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath?{
         
         /*
-         String params = "SAC/ABCD1234/"+ InformesMedicosFragment.detalleInformeMedicoSeleccionado.getLstDocumentos().get((int)viewHolder.iconOpcion.getTag()).getId();
+         String params = "SAC/"+PropertiesProject.TOKEN+"/"+ InformesMedicosFragment.detalleInformeMedicoSeleccionado.getLstDocumentos().get((int)viewHolder.iconOpcion.getTag()).getId();
          
          
          ConexionServicioListaTask task = new ConexionServicioListaTask(context, getContext().getResources().getString(R.string.complement_documento_informes_medico), params);
@@ -111,7 +111,7 @@ class InformesMedTabInfoViewController: UIViewController, UITableViewDataSource,
         
         
         //let text = "some text" //just a text
-        let listParams: String = "/SAC/ABCD1234/";
+        let listParams: String = "/SAC/"+PropertiesProject.TOKEN+"/";
         let fileSeleccionada = indexPath[1]
         var opcionSeleccionada = ""
         var file = ""

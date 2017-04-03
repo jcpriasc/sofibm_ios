@@ -17,7 +17,7 @@ class UtilizacionesViewController:  UIViewController, UITableViewDataSource, UIT
     
     static var jsonDetalleUtilizaciones: NSDictionary?
 
-    let params: String = "/SAC/ABCD1234/"+ConsultaSolicitudesAtencionController.solicitudAtencionSeleccionada.consSolicitud
+    let params: String = "/SAC/"+PropertiesProject.TOKEN+"/"+ConsultaSolicitudesAtencionController.solicitudAtencionSeleccionada.consSolicitud
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -87,7 +87,7 @@ class UtilizacionesViewController:  UIViewController, UITableViewDataSource, UIT
         
         let url = URL(string: PropertiesProject.URL+PropertiesProject.complement_utilizaciones_detalle+params+"/"+codigoTexto+"/"+fechaInicioR+"/"+fechaFinR)
         
-        //let url = URL(string: "http://pruebas-sectorsalud.coomeva.com.co/saludmp-ws/jax-rs/saludmp-sofibmobile/utilizaciones/detalle/SAC/ABCD1234/852/44/01-04-2011/30-04-2011")
+        //let url = URL(string: "http://pruebas-sectorsalud.coomeva.com.co/saludmp-ws/jax-rs/saludmp-sofibmobile/utilizaciones/detalle/SAC/"+PropertiesProject.TOKEN+"/852/44/01-04-2011/30-04-2011")
        
           let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
             if error != nil

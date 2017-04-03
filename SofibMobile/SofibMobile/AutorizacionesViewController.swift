@@ -10,7 +10,8 @@ import UIKit
 
 class AutorizacionesViewController: UIViewController , UITableViewDataSource, UITableViewDelegate{
 
-    let params: String = "/SAC/ABCD1234/"
+    //let params: String = "/SAC/ABCD1234/"
+    let params: String = "/SAC/"+PropertiesProject.TOKEN+"/"
     static var autorizacionSeleccionada = Autorizacion()
     
     let jsonAutorizaciones: NSArray = OpcionesSecundariasViewController.jsonAutorizaciones!

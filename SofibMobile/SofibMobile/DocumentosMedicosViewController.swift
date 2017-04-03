@@ -36,7 +36,7 @@ class DocumentosMedicosViewController: UIViewController, UITableViewDataSource, 
         
         
         //let text = "some text" //just a text
-        let listParams: String = "/SAC/ABCD1234/";
+        let listParams: String = "/SAC/"+PropertiesProject.TOKEN+"/";
         let fileSeleccionada = indexPath[1]
         var opcionSeleccionada = ""
         var file = ""

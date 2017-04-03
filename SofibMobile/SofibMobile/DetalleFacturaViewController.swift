@@ -35,7 +35,7 @@ class DetalleFacturaViewController: UIViewController {
     @IBOutlet var txtTipoServicio: UILabel!
     
     static var jsonDetalleFactura: NSDictionary?
-     let params: String = "/SAC/ABCD1234/"
+     let params: String = "/SAC/"+PropertiesProject.TOKEN+"/"
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -82,7 +82,7 @@ class DetalleFacturaViewController: UIViewController {
         let codigoTexto = String(codigo)
         let url = URL(string: PropertiesProject.URL+PropertiesProject.complement_factura_detalle+params+codigoTexto)
 
-        //let url = URL(string: "http://pruebas-sectorsalud.coomeva.com.co/saludmp-ws/jax-rs/saludmp-sofibmobile/factura/detalle/SAC/ABCD1234/315")
+        //let url = URL(string: "http://pruebas-sectorsalud.coomeva.com.co/saludmp-ws/jax-rs/saludmp-sofibmobile/factura/detalle/SAC/"+PropertiesProject.TOKEN+"/315")
         
         let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
             if error != nil

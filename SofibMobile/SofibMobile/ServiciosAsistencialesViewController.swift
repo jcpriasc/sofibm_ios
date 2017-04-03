@@ -12,7 +12,7 @@ class ServiciosAsistencialesViewController: UIViewController, UITableViewDataSou
 
 
     let jsonServicioAsistencial: NSArray = OpcionesSecundariasViewController.jsonServiciosAsistenciales!;
-    let params: String = "/SAC/ABCD1234/"
+    let params: String = "/SAC/"+PropertiesProject.TOKEN+"/"
     static var servicioAsistencial = ServicioAsistencial()
     
     override func viewDidLoad() {

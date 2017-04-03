@@ -62,7 +62,7 @@ class FiltroBitacoraViewController: UIViewController, UIPickerViewDelegate, UIPi
             }
         }
         
-        var listParams: String = "/SAC/ABCD1234/"+ConsultaSolicitudesAtencionController.solicitudAtencionSeleccionada.consSolicitud;
+        var listParams: String = "/SAC/"+PropertiesProject.TOKEN+"/"+ConsultaSolicitudesAtencionController.solicitudAtencionSeleccionada.consSolicitud;
         listParams+="/0";
         listParams+="/0";
         listParams+="/"+tipoRegistro;

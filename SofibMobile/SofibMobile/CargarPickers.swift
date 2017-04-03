@@ -12,7 +12,7 @@ import Foundation
 
 class CargarPickers{
     
-    static var listParams: String = "/SAC/ABCD1234";
+    static var listParams: String = "/SAC/"+PropertiesProject.TOKEN+"";
     static var conveniosJson : NSArray?
     static var estadosJson : NSArray?
     static var ciudadJson : NSArray?

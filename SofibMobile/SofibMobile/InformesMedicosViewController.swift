@@ -22,7 +22,7 @@ class InformesMedicosViewController: UIViewController, UITableViewDataSource, UI
     let lblPdfEspanol = NSLocalizedString("lbl_pdf_es", comment: "lbl_pdf_es")
     let lblCancelar = NSLocalizedString("lbl_cancelar", comment: "lbl_cancelar")
     let lblSeleccionarOpcion = NSLocalizedString("lbl_seleccionar_opcion", comment: "lbl_seleccionar_opcion")
-    let params: String = "/SAC/ABCD1234/"
+    let params: String = "/SAC/"+PropertiesProject.TOKEN+"/"
 
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {

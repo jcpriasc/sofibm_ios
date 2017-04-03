@@ -18,7 +18,7 @@ class OpcionesSecundariasLogViewController: UIViewController , UITableViewDataSo
     static var jsonUtilizaciones: NSArray?
     static var jsonEncuesta: NSArray?
     static var jsonSolicitudAprobacion: NSArray?
-    let params: String = "/SAC/ABCD1234/"+ConsultaSolicitudesAtencionController.solicitudAtencionSeleccionada.consSolicitud
+    let params: String = "/SAC/"+PropertiesProject.TOKEN+"/"+ConsultaSolicitudesAtencionController.solicitudAtencionSeleccionada.consSolicitud
     
     let opciones = [NSLocalizedString("lbl_servicio_no_asistencial", comment: "lbl_servicio_no_asistencial"),
                     NSLocalizedString("lbl_titulo_giro", comment: "lbl_titulo_giro"),
@@ -133,7 +133,7 @@ class OpcionesSecundariasLogViewController: UIViewController , UITableViewDataSo
     func obtenerServiciosNoAsistenciales(){
       
         let url = URL(string: PropertiesProject.URL+PropertiesProject.complement_serviciosNoAsistenciales+params)
-        //let url = URL(string: "http://pruebas-sectorsalud.coomeva.com.co/saludmp-ws/jax-rs/saludmp-sofibmobile/serviciosNoAsistenciales/SAC/ABCD1234/852")
+        //let url = URL(string: "http://pruebas-sectorsalud.coomeva.com.co/saludmp-ws/jax-rs/saludmp-sofibmobile/serviciosNoAsistenciales/SAC/"+PropertiesProject.TOKEN+"/852")
         print(url)
         let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
             if error != nil
@@ -175,7 +175,7 @@ class OpcionesSecundariasLogViewController: UIViewController , UITableViewDataSo
     func obtenerGiros(){
         
         let url = URL(string: PropertiesProject.URL+PropertiesProject.complement_giro+params)
-        //let url = URL(string: "http://pruebas-sectorsalud.coomeva.com.co/saludmp-ws/jax-rs/saludmp-sofibmobile/giro/SAC/ABCD1234/852")
+        //let url = URL(string: "http://pruebas-sectorsalud.coomeva.com.co/saludmp-ws/jax-rs/saludmp-sofibmobile/giro/SAC/"+PropertiesProject.TOKEN+"/852")
         
         let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
             if error != nil
@@ -219,7 +219,7 @@ class OpcionesSecundariasLogViewController: UIViewController , UITableViewDataSo
     func obtenerNotasCreditoGiros(){
         
         let url = URL(string: PropertiesProject.URL+PropertiesProject.complement_giro_notaCredito+params)
-        //let url = URL(string: "http://pruebas-sectorsalud.coomeva.com.co/saludmp-ws/jax-rs/saludmp-sofibmobile/giro/notaCredito/SAC/ABCD1234/789")
+        //let url = URL(string: "http://pruebas-sectorsalud.coomeva.com.co/saludmp-ws/jax-rs/saludmp-sofibmobile/giro/notaCredito/SAC/"+PropertiesProject.TOKEN+"/789")
         
         let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
             if error != nil
@@ -260,7 +260,7 @@ class OpcionesSecundariasLogViewController: UIViewController , UITableViewDataSo
     func obtenerFacturas(){
         
         let url = URL(string: PropertiesProject.URL+PropertiesProject.complement_factura+params)
-        //let url = URL(string: "http://pruebas-sectorsalud.coomeva.com.co/saludmp-ws/jax-rs/saludmp-sofibmobile/factura/SAC/ABCD1234/852")
+        //let url = URL(string: "http://pruebas-sectorsalud.coomeva.com.co/saludmp-ws/jax-rs/saludmp-sofibmobile/factura/SAC/"+PropertiesProject.TOKEN+"/852")
         
         let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
             if error != nil
@@ -301,7 +301,7 @@ class OpcionesSecundariasLogViewController: UIViewController , UITableViewDataSo
     func obtenerNotaCreditoDebito(){
         
         let url = URL(string: PropertiesProject.URL+PropertiesProject.complement_nota+params)
-        //let url = URL(string: "http://pruebas-sectorsalud.coomeva.com.co/saludmp-ws/jax-rs/saludmp-sofibmobile/nota/SAC/ABCD1234/848")
+        //let url = URL(string: "http://pruebas-sectorsalud.coomeva.com.co/saludmp-ws/jax-rs/saludmp-sofibmobile/nota/SAC/"+PropertiesProject.TOKEN+"/848")
         
         let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
             if error != nil
@@ -343,7 +343,7 @@ class OpcionesSecundariasLogViewController: UIViewController , UITableViewDataSo
     func obtenerUtilizaciones(){
         
         let url = URL(string: PropertiesProject.URL+PropertiesProject.complement_utilizaciones+params)
-        //let url = URL(string: "http://pruebas-sectorsalud.coomeva.com.co/saludmp-ws/jax-rs/saludmp-sofibmobile/utilizaciones/SAC/ABCD1234/852")
+        //let url = URL(string: "http://pruebas-sectorsalud.coomeva.com.co/saludmp-ws/jax-rs/saludmp-sofibmobile/utilizaciones/SAC/"+PropertiesProject.TOKEN+"/852")
         
         let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
             if error != nil
@@ -384,7 +384,7 @@ class OpcionesSecundariasLogViewController: UIViewController , UITableViewDataSo
     func obtenerEncuesta(){
         
         let url = URL(string: PropertiesProject.URL+PropertiesProject.complement_encuesta+params)
-        //let url = URL(string: "http://pruebas-sectorsalud.coomeva.com.co/saludmp-ws/jax-rs/saludmp-sofibmobile/encuesta/SAC/ABCD1234/730")
+        //let url = URL(string: "http://pruebas-sectorsalud.coomeva.com.co/saludmp-ws/jax-rs/saludmp-sofibmobile/encuesta/SAC/"+PropertiesProject.TOKEN+"/730")
         
         let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
             if error != nil
@@ -424,8 +424,8 @@ class OpcionesSecundariasLogViewController: UIViewController , UITableViewDataSo
     
     func obtenerSolicitudAprobacion(){
         
-        let url = URL(string: PropertiesProject.URL+PropertiesProject.complement_aprobacion+"/SAC/ABCD1234/0/0/0/"+ConsultaSolicitudesAtencionController.solicitudAtencionSeleccionada.consSolicitud+"/l")
-        //let url = URL(string: "http://pruebas-sectorsalud.coomeva.com.co/saludmp-ws/jax-rs/saludmp-sofibmobile/aprobacion/SAC/ABCD1234/0/0/0/0/l")
+        let url = URL(string: PropertiesProject.URL+PropertiesProject.complement_aprobacion+"/SAC/"+PropertiesProject.TOKEN+"/0/0/0/"+ConsultaSolicitudesAtencionController.solicitudAtencionSeleccionada.consSolicitud+"/l")
+        //let url = URL(string: "http://pruebas-sectorsalud.coomeva.com.co/saludmp-ws/jax-rs/saludmp-sofibmobile/aprobacion/SAC/"+PropertiesProject.TOKEN+"/0/0/0/0/l")
         
         let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
             if error != nil

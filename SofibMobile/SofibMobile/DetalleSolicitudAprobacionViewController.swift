@@ -38,7 +38,7 @@ class DetalleSolicitudAprobacionViewController: UIViewController {
     
     static var jsonDetalleSolicitudAprobacion: NSDictionary?
     
-    let params: String = "/SAC/ABCD1234/"
+    let params: String = "/SAC/"+PropertiesProject.TOKEN+"/"
     
     override func viewDidLoad() {
         super.viewDidLoad()
