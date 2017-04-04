@@ -194,7 +194,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                                             
                                             newUser.setValue(self.txtUsuario.text, forKey: "user")
                                             newUser.setValue(self.txtPassword.text, forKey: "pass")
-                                            newUser.setValue(self.txtPassword.text, forKey: "rol")
+                                            newUser.setValue(LoginViewController.usuarioSesion.rol, forKey: "rol")
                                             do
                                             {
                                                 try context.save()
