@@ -148,7 +148,7 @@ class OpcionesSecundariasLogViewController: UIViewController , UITableViewDataSo
                     {
                         
                         OpcionesSecundariasLogViewController.jsonServicioNoAsistencial = try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSArray
-                        if ((OpcionesSecundariasLogViewController.jsonServicioNoAsistencial?.count)!>0){
+                        if (OpcionesSecundariasLogViewController.jsonServicioNoAsistencial != nil && (OpcionesSecundariasLogViewController.jsonServicioNoAsistencial?.count)!>0){
                             let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "servicioNoAsistencialController")
                             self.show(vc as! UIViewController, sender: vc)
                         }else{
@@ -190,7 +190,7 @@ class OpcionesSecundariasLogViewController: UIViewController , UITableViewDataSo
                     {
                     
                         OpcionesSecundariasLogViewController.jsonGiros = try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSArray
-                        if ((OpcionesSecundariasLogViewController.jsonGiros?.count)!>0){
+                        if (OpcionesSecundariasLogViewController.jsonGiros != nil && (OpcionesSecundariasLogViewController.jsonGiros?.count)!>0){
                             let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "girosController")
                             self.show(vc as! UIViewController, sender: vc)
                         }else{
@@ -274,7 +274,7 @@ class OpcionesSecundariasLogViewController: UIViewController , UITableViewDataSo
                     do
                     {
                         OpcionesSecundariasLogViewController.jsonFacturas = try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSArray
-                        if ((OpcionesSecundariasLogViewController.jsonFacturas?.count)!>0){
+                        if (OpcionesSecundariasLogViewController.jsonFacturas != nil && (OpcionesSecundariasLogViewController.jsonFacturas?.count)!>0){
                             let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "facturasController")
                             self.show(vc as! UIViewController, sender: vc)
                         }else{
@@ -315,7 +315,7 @@ class OpcionesSecundariasLogViewController: UIViewController , UITableViewDataSo
                     do
                     {
                         OpcionesSecundariasLogViewController.jsonNotasCreditoDebito = try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSArray
-                        if ((OpcionesSecundariasLogViewController.jsonNotasCreditoDebito?.count)!>0){
+                        if ((OpcionesSecundariasLogViewController.jsonNotasCreditoDebito != nil ) && (OpcionesSecundariasLogViewController.jsonNotasCreditoDebito?.count)!>0){
                             let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "notaCreditoDebitoController")
                             self.show(vc as! UIViewController, sender: vc)
                         }else{
@@ -357,7 +357,7 @@ class OpcionesSecundariasLogViewController: UIViewController , UITableViewDataSo
                     do
                     {
                         OpcionesSecundariasLogViewController.jsonUtilizaciones = try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSArray
-                        if ((OpcionesSecundariasLogViewController.jsonUtilizaciones?.count)!>0){
+                        if (OpcionesSecundariasLogViewController.jsonUtilizaciones != nil && (OpcionesSecundariasLogViewController.jsonUtilizaciones?.count)!>0){
                             let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "utilizacionesController")
                             self.show(vc as! UIViewController, sender: vc)
                         }else{
@@ -398,7 +398,7 @@ class OpcionesSecundariasLogViewController: UIViewController , UITableViewDataSo
                     do
                     {
                          OpcionesSecundariasLogViewController.jsonEncuesta = try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSArray
-                        if (( OpcionesSecundariasLogViewController.jsonEncuesta?.count)!>0){
+                        if (OpcionesSecundariasLogViewController.jsonEncuesta != nil && ( OpcionesSecundariasLogViewController.jsonEncuesta?.count)!>0){
                             let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "encuestaController")
                             self.show(vc as! UIViewController, sender: vc)
                         }else{
@@ -439,7 +439,7 @@ class OpcionesSecundariasLogViewController: UIViewController , UITableViewDataSo
                     do
                     {
                         OpcionesSecundariasLogViewController.jsonSolicitudAprobacion = try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSArray
-                        if (( OpcionesSecundariasLogViewController.jsonSolicitudAprobacion?.count)!>0){
+                        if (OpcionesSecundariasLogViewController.jsonSolicitudAprobacion != nil && ( OpcionesSecundariasLogViewController.jsonSolicitudAprobacion?.count)!>0){
                             FiltroSolAprobViewController.viewBack = "tableViewLogisticoController"
                             let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "solicitudesAprobacionController")
                             self.show(vc as! UIViewController, sender: vc)
@@ -470,6 +470,10 @@ class OpcionesSecundariasLogViewController: UIViewController , UITableViewDataSo
         self.show(vc as! UIViewController, sender: vc)
     }
 
+    @IBAction func btnAtras(_ sender: AnyObject) {
+        let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: DetalleSolicitudAtencionController.viewBack)
+        self.show(vc as! UIViewController, sender: vc)
+    }
     
 
 }

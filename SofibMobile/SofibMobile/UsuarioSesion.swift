@@ -12,5 +12,6 @@ class UsuarioSesion{
     
     var nombreUsuario: String = ""
     var tipoUsuario: String = ""
+    var rol: String = ""
     
 }

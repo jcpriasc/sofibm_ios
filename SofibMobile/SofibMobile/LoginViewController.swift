@@ -11,6 +11,15 @@ import CoreData
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
     
+    static var jsonRolesPrestador: NSArray?
+    
+    static var arrayRoles = [String]()
+    
+    static let rolesMedico = ["SOFIB_COORDINADOR_MEDICO_NIwedewdwed"]
+    static let rolesLogistico = ["SOFIB_COORDINADOR_MEDICO_NI","SOFIB_AUX_SERV_AMB","SOFIB_AUDITOR_MEDICO", "SOFIB_ANA_MEDICO","SOFIB_AUX_CRAUH", "SOFIB_FUN_EXT_MED", "SOFIB_MED_ESP_ISLA", "SOFIB_COL_MED_ASEG","SOFIB_SOPORTE","SOFIB_DIRECTOR_NACIONAL","SOFIB_COORDINADOR_NACIONAL","SOFIB_SOP_TEC","SOFIB_ADMIN","SOFIB_FUN_GIRO","SOFIB_ANALISTA_FINANCIERO", "SOFIB_ANA_CUE_MED", "SOFIB_ANALISTA_CARTERA", "SOFIB_COL_ASEG", "SOFIB_ANA_LOGISTICA"]
+    static let rolesAdministrador = ["asd"]
+    
+    public static var usuarioSesion = UsuarioSesion()
     
     //var listParams = "/UP/" + usuario + "/" + password + "/50/PROFILE_MANAGER/sofib";
     
@@ -92,6 +101,90 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                                             LoginViewController.nombreCompleto += " "
                                             LoginViewController.nombreCompleto += usuarioDTO["segundoApellido"] as! String;
                                             
+                                            LoginViewController.jsonRolesPrestador = usuarioDTO["roles"] as! NSArray
+                                            
+                                            LoginViewController.usuarioSesion.nombreUsuario = LoginViewController.nombreCompleto
+
+                                            LoginViewController.arrayRoles = [String]()
+                                            let cont = LoginViewController.jsonRolesPrestador!.count
+                                            
+                                            for i in 0 ..< cont {
+                                                if let solicitud = LoginViewController.jsonRolesPrestador?[i] as? Dictionary<String, Any>{
+                                                    LoginViewController.arrayRoles.append(solicitud["claveRol"] as? String ?? "");
+                                                }
+                                            }
+                                            
+                                            //Se crean las variables para saber si son logisitca, medica o admin
+                                            var esMedico: Bool = false
+                                            var esLogistico: Bool = false
+                                            var esAdmin: Bool = false
+
+                                            //Se recorre el array administrado
+                                            for i in 0 ..< LoginViewController.rolesAdministrador.count {
+                                                
+                                                for j in 0 ..< LoginViewController.arrayRoles.count{
+                                                    
+                                                    if(LoginViewController.rolesAdministrador[i] == LoginViewController.arrayRoles[j]){
+                                                        esAdmin = true
+                                                        break
+                                                    }
+                                                    
+                                                }
+                                                
+                                                if(esAdmin == true){
+                                                    break
+                                                }
+                                                
+                                            }
+
+                                            //Se recorre el array medico
+                                            for i in 0 ..< LoginViewController.rolesMedico.count {
+                                                
+                                                for j in 0 ..< LoginViewController.arrayRoles.count{
+                                                    
+                                                    if(LoginViewController.rolesMedico[i] == LoginViewController.arrayRoles[j]){
+                                                        esMedico = true
+                                                        break
+                                                    }
+                                                    
+                                                }
+                                                
+                                                if(esMedico == true){
+                                                    break
+                                                }
+                                                
+                                            }
+
+                                            
+                                            //Se recorre el array logistio
+                                            for i in 0 ..< LoginViewController.rolesLogistico.count {
+                                                
+                                                for j in 0 ..< LoginViewController.arrayRoles.count{
+                                                    
+                                                    if(LoginViewController.rolesLogistico[i] == LoginViewController.arrayRoles[j]){
+                                                        esLogistico = true
+                                                        break
+                                                    }
+                                                    
+                                                }
+                                                
+                                                if(esLogistico == true){
+                                                    break
+                                                }
+                                                
+                                            }
+                                            
+                                            
+                                            if(esAdmin == true || (esLogistico == true && esMedico == true)){
+                                                LoginViewController.usuarioSesion.rol = Constantes.usuarioAdmin
+                                            }else if(esLogistico == true && esMedico == false){
+                                                LoginViewController.usuarioSesion.rol = Constantes.usuarioLogistico
+                                            }else if(esLogistico == false && esMedico == true){
+                                                LoginViewController.usuarioSesion.rol = Constantes.usuarioMedico
+                                            }
+                                            
+                                            print(LoginViewController.usuarioSesion.rol)
+
                                         }
                                         
                                         if #available(iOS 10.0, *) {
@@ -101,7 +194,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                                             
                                             newUser.setValue(self.txtUsuario.text, forKey: "user")
                                             newUser.setValue(self.txtPassword.text, forKey: "pass")
-                                            
+                                            newUser.setValue(self.txtPassword.text, forKey: "rol")
                                             do
                                             {
                                                 try context.save()

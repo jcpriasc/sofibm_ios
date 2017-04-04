@@ -477,6 +477,10 @@ class OpcionesSecundariasViewController: UIViewController, UITableViewDataSource
         
     }
     
+    @IBAction func btnAtras(_ sender: AnyObject) {
+        let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: DetalleSolicitudAtencionController.viewBack)
+        self.show(vc as! UIViewController, sender: vc)
+    }
     
 
 }

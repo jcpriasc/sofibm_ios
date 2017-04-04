@@ -10,6 +10,7 @@ import UIKit
 
 class DetalleSolicitudAtencionController:  UIViewController {
 
+    static var viewBack = "";
     
     @IBOutlet weak var lblNumeroSolicitud: UILabel!
     @IBOutlet weak var lblIdentificacion: UILabel!
@@ -73,6 +74,26 @@ class DetalleSolicitudAtencionController:  UIViewController {
         self.show(vc as! UIViewController, sender: vc)
     }
     
+    @IBAction func btnDetalle(_ sender: AnyObject) {
+        
+        
+        if(LoginViewController.usuarioSesion.rol == Constantes.usuarioMedico){
+            DetalleSolicitudAtencionController.viewBack = "detalleSolicitudAtencionView"
+            let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "tableViewMedicoController")
+            self.show(vc as! UIViewController, sender: vc)
+        }else if(LoginViewController.usuarioSesion.rol == Constantes.usuarioLogistico){
+            DetalleSolicitudAtencionController.viewBack = "detalleSolicitudAtencionView"
+            let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "tableViewLogisticoController")
+            self.show(vc as! UIViewController, sender: vc)
+        }else{
+            DetalleSolicitudAtencionController.viewBack = "opcionesPrincipalesView"
+            let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "opcionesPrincipalesView")
+            self.show(vc as! UIViewController, sender: vc)
+            
+        }
+        
+
+    }
     
     
 }
