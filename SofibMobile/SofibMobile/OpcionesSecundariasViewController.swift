@@ -217,7 +217,7 @@ class OpcionesSecundariasViewController: UIViewController, UITableViewDataSource
     func obtenerInformesMedicos(){
         
         let url = URL(string: PropertiesProject.URL+PropertiesProject.complement_InformesMedicos+params)
-        
+        print(PropertiesProject.URL+PropertiesProject.complement_InformesMedicos+params)
         let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
             if error != nil
             {

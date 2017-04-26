@@ -64,7 +64,15 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             
             //var listParams = "/UP/" + txtUsuario.text + "/" + txtPassword.text + "/50/PROFILE_MANAGER/sofib";
             
-            let listParams: String = "/UP/"+self.txtUsuario.text!+"/"+self.txtPassword.text!+"/50/PROFILE_MANAGER/sofib"
+            var paramTipoUsuario = "";
+            
+            if self.segTipoUsuario.selectedSegmentIndex == 0 {
+                paramTipoUsuario = "UP";
+            } else if self.segTipoUsuario.selectedSegmentIndex == 1 {
+                paramTipoUsuario = "UI";
+            }
+            
+            let listParams: String = "/"+paramTipoUsuario+"/"+self.txtUsuario.text!+"/"+self.txtPassword.text!+"/50/PROFILE_MANAGER/sofib"
             
             print(PropertiesProject.URL_PROFILE+listParams);
             let url = URL(string: PropertiesProject.URL_PROFILE+listParams)
