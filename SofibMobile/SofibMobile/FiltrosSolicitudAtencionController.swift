@@ -28,7 +28,7 @@ class FiltrosSolicitudAtencionController: UIViewController, UIPickerViewDelegate
     var traslados = [NSLocalizedString("seleccionar_traslado", comment: "seleccionar_traslado"),"SI", "NO"]
     static var solicitudesAtencionJson : NSArray?
     
-    let service =  "/solicitudes";
+    let service =  "/solicitudes/usuario";
     
     let convenioPickerView = UIPickerView()
     let eestadoPickerView = UIPickerView()
@@ -247,6 +247,8 @@ class FiltrosSolicitudAtencionController: UIViewController, UIPickerViewDelegate
         var identificacion = "0";
         var solAtencion = "0";
         var nombre = "0";
+        var usuario = "0";
+
         
         if((pickeConvenio.text) != nil && (pickeConvenio.text) != ""){
             let rowSelected = convenioPickerView.selectedRow(inComponent: 0);
@@ -300,7 +302,12 @@ class FiltrosSolicitudAtencionController: UIViewController, UIPickerViewDelegate
                 traslado = "NA";
             }
         }
-
+ 
+        usuario = "0"
+        if (LoginViewController.usuarioSesion.tipoUsuario == Constantes.usuarioTipoExterno){
+            usuario = LoginViewController.usuarioSesion.codigoUsuario
+        }
+        
         var listParams: String = "/SAC/"+PropertiesProject.TOKEN+"";
         listParams+="/"+identificacion;
         listParams+="/"+solAtencion;
@@ -310,6 +317,8 @@ class FiltrosSolicitudAtencionController: UIViewController, UIPickerViewDelegate
         listParams+="/"+ciudadInicial;
         listParams+="/"+ciudadActual;
         listParams+="/"+traslado;
+        listParams+="/"+usuario;
+
         
         let url = URL(string: PropertiesProject.URL+service+listParams)
         print(PropertiesProject.URL+service+listParams)

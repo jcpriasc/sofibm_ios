@@ -27,7 +27,7 @@ class CargarPickers{
         
         cargarEstados();
         cargarCiudades();
-        cargarConvenios();
+        //cargarConvenios();
         cargarTiposRegistros();
         cargarTiposServicios();
         cargarServicios();
@@ -63,7 +63,15 @@ class CargarPickers{
     
     
     static func cargarConvenios(){
-        let url = URL(string: PropertiesProject.URL+PropertiesProject.complement_convenios+listParams+"/0")
+        
+        var usuario = "0";
+        
+        if (LoginViewController.usuarioSesion.tipoUsuario == Constantes.usuarioTipoExterno){
+            usuario = LoginViewController.usuarioSesion.codigoUsuario
+        }
+
+        
+        let url = URL(string: PropertiesProject.URL+PropertiesProject.complement_convenios+listParams+"/"+usuario)
         
         let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
             if error != nil

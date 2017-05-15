@@ -13,5 +13,8 @@ class Constantes{
     static let usuarioAdmin = "ADMIN"
     static let usuarioMedico = "MEDICO"
     static let usuarioLogistico = "LOGISTICO"
-    
+
+    static let usuarioTipoExterno = "EXTERNO"
+    static let usuarioTipoInterno = "INTERNO"
+
 }

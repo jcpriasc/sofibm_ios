@@ -68,9 +68,13 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             
             if self.segTipoUsuario.selectedSegmentIndex == 0 {
                 paramTipoUsuario = "UP";
+                LoginViewController.usuarioSesion.tipoUsuario = Constantes.usuarioTipoInterno
             } else if self.segTipoUsuario.selectedSegmentIndex == 1 {
                 paramTipoUsuario = "UI";
+                LoginViewController.usuarioSesion.tipoUsuario = Constantes.usuarioTipoExterno
             }
+            
+           
             
             let listParams: String = "/"+paramTipoUsuario+"/"+self.txtUsuario.text!+"/"+self.txtPassword.text!+"/50/PROFILE_MANAGER/sofib"
             
@@ -121,6 +125,10 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                                                     LoginViewController.arrayRoles.append(solicitud["claveRol"] as? String ?? "");
                                                 }
                                             }
+                                            
+                                            LoginViewController.usuarioSesion.codigoUsuario = self.txtUsuario.text!
+                                            
+                                             CargarPickers.cargarConvenios();
                                             
                                             //Se crean las variables para saber si son logisitca, medica o admin
                                             var esMedico: Bool = false
@@ -190,6 +198,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                                             }else if(esLogistico == false && esMedico == true){
                                                 LoginViewController.usuarioSesion.rol = Constantes.usuarioMedico
                                             }
+                                            
                                             
                                             print(LoginViewController.usuarioSesion.rol)
 
