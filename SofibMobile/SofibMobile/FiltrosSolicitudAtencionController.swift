@@ -164,7 +164,13 @@ class FiltrosSolicitudAtencionController: UIViewController, UIPickerViewDelegate
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         
         if pickerView.tag == 1 {
-            return (CargarPickers.conveniosJson!.count)+1
+            if(CargarPickers.conveniosJson != nil){
+                 return (CargarPickers.conveniosJson!.count)+1
+            }else{
+                 return 0
+            }
+            
+           
         }
         
         if pickerView.tag == 2 {

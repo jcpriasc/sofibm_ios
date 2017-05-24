@@ -17,18 +17,18 @@ class PropertiesProject{
     static var TOKEN: String = "ABCD1234"
     */
     
-    /*
+    
     static var URL: String = "https://oficinavirtualmp.coomeva.com.co/saludmp-ws/jax-rs/saludmp-sofibmobile"
     static var URL_PROFILE: String = "https://oficinavirtualmp.coomeva.com.co/saludmp-ws/jax-rs/saludmp-autOficinaVirtual"
     static var URL_INFO_MED: String = "http://sofib.coomeva.com.co/cni-web/exportDocument?format=pdf&reportName=informe_medico&CONS_INFORME_MEDICO="
     static var TOKEN: String = "0c9a9a03a6c518c7e2c27d9b81336a26294f8cc4"
-       */
+
     
-    static var URL: String = "http://pruebas-sectorsalud.coomeva.com.co/saludmp-ws/jax-rs/saludmp-sofibmobile"
+   /* static var URL: String = "http://pruebas-sectorsalud.coomeva.com.co/saludmp-ws/jax-rs/saludmp-sofibmobile"
     static var URL_PROFILE: String = "https://oficinavirtualmp.coomeva.com.co/saludmp-ws/jax-rs/saludmp-autOficinaVirtual"
     static var URL_INFO_MED: String = "http://pruebas-sofib.coomeva.com.co/cni-web/exportDocument?format=pdf&reportName=informe_medico&CONS_INFORME_MEDICO="
     static var TOKEN: String = "0c9a9a03a6c518c7e2c27d9b81336a26294f8cc4"
-    
+    */
     
     static var URL_INFO_DOCU_GIRO: String = "http://sofib.coomeva.com.co/cni-web/exportDocument?format=pdf&useDataSource=true&reportName=reporteGiro&ID_GIRO="
     
